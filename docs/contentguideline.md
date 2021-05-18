@@ -37,5 +37,5 @@ Non-playable races can be continuously added to the game, however they will rema
 The current set of ten playable races is final, and will not increase.
 If you have some lore behind the race, consider adding a [lore entry](project/twee/lore/race.twee)
 for them.
-See [here](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/faq.md#new-races) for information about
+See [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/faq.md#new-races) for information about
 playable races.

@@ -21,7 +21,7 @@ which will drastically **slow down** development.
 
 The game has a little support if you want to be "secretly submissive", however.
 But it is also still lacking, and contributors are welcome to add to this.
-See [here](https://gitgud.io/darkofocdarko/foc/-/blob/master/project/twee/interaction/Quiver/give_oral.twee#L38) for an example.
+See [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/project/twee/interaction/Quiver/give_oral.twee#L38) for an example.
 
 ## Does this game contain [insert fetish here]?
 
@@ -78,7 +78,7 @@ See [here](https://gitgud.io/darkofocdarko/foc/-/blob/master/project/twee/intera
 The current list of features are in this table. The game is already feature complete,
 so if the feature you ask is not
 inside this table, then it is unlikely to be implemented. Exceptions (if any)
-are listed [here](https://gitgud.io/darkofocdarko/foc/-/issues).
+are listed [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/issues).
 
 <table>
   <tr>
@@ -512,7 +512,7 @@ the unit portraits by going to `Settings`, then `(Reset unit portraits)`.
 
 ## New traits?
 
-See [here](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/content.md#traits) for more information.
+See [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/content.md#traits) for more information.
 
 ## New races?
 
@@ -540,30 +540,30 @@ will only be added when some contributors are really supporting the addition.
 
 Existing subraces examples:
 
-- [Tigerkin](https://gitgud.io/darkofocdarko/foc/-/blob/master/project/twee/unitpool/race/tigerkin.twee): Catkin with fully furry body
-- [Fairy](https://gitgud.io/darkofocdarko/foc/-/blob/master/project/twee/unitpool/race/fairy.twee): Elf with butterfly wings
-- [Angel](https://gitgud.io/darkofocdarko/foc/-/blob/master/project/twee/unitpool/race/angel.twee): Human with feathery wings
-- [Dragonkin](https://gitgud.io/darkofocdarko/foc/-/blob/master/project/twee/unitpool/race/dragonkin.twee): Lizarkin with wings
+- [Tigerkin](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/project/twee/unitpool/race/tigerkin.twee): Catkin with fully furry body
+- [Fairy](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/project/twee/unitpool/race/fairy.twee): Elf with butterfly wings
+- [Angel](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/project/twee/unitpool/race/angel.twee): Human with feathery wings
+- [Dragonkin](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/project/twee/unitpool/race/dragonkin.twee): Lizarkin with wings
 
 Here are the full requirements to add a new subrace to the game:
 
-- Write out the [basic trait information](https://gitgud.io/darkofocdarko/foc/-/blob/master/project/twee/trait/subrace.twee)
+- Write out the [basic trait information](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/project/twee/trait/subrace.twee)
 
-- Write out the [flavor texts for the race](https://gitgud.io/darkofocdarko/foc/-/blob/master/project/twee/trait/_texts.twee#L9)
+- Write out the [flavor texts for the race](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/project/twee/trait/_texts.twee#L9)
 
-- Write out the [full trait preferences](https://gitgud.io/darkofocdarko/foc/-/blob/master/project/twee/unitpool/race/tigerkin.twee)
+- Write out the [full trait preferences](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/project/twee/unitpool/race/tigerkin.twee)
 
-- Write out the [unit groups](https://gitgud.io/darkofocdarko/foc/-/tree/master/project/twee/unitgroup/race)
+- Write out the [unit groups](https://gitgud.io/darkofocdarko/fort-of-chains/-/tree/master/project/twee/unitgroup/race)
 
-- At least 20 new images, 10 of each gender. If your subrace is commonly encountered, this should be even higher, which can go up to 100 images (50 per gender) (see lizardkin for example). If your subrace is extremely rare (like tigerkins), 20 is enough. Make sure to follow [image guide](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/images.md#adding-new-portraits-to-the-repository) for these portraits.
+- At least 20 new images, 10 of each gender. If your subrace is commonly encountered, this should be even higher, which can go up to 100 images (50 per gender) (see lizardkin for example). If your subrace is extremely rare (like tigerkins), 20 is enough. Make sure to follow [image guide](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/images.md#adding-new-portraits-to-the-repository) for these portraits.
 
-- [Nameset](https://gitgud.io/darkofocdarko/foc/-/tree/master/src/scripts/names)
+- [Nameset](https://gitgud.io/darkofocdarko/fort-of-chains/-/tree/master/src/scripts/names)
 
-- Lore. Come up with a believeable lore for the subrace, written down. [Example](https://gitgud.io/darkofocdarko/foc/-/blob/master/project/twee/lore/race.twee#L22) (can be much longer)
+- Lore. Come up with a believeable lore for the subrace, written down. [Example](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/project/twee/lore/race.twee#L22) (can be much longer)
 
-- Bodypart text: come up with texts for the bodyparts. [Example](https://gitgud.io/darkofocdarko/foc/-/blob/master/project/twee/trait/_texts.twee#L555)
+- Bodypart text: come up with texts for the bodyparts. [Example](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/project/twee/trait/_texts.twee#L555)
 
-- Icon. [Example](https://gitgud.io/darkofocdarko/foc/-/blob/master/dist/img/trait/subrace_werewolf.svg)
+- Icon. [Example](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/dist/img/trait/subrace_werewolf.svg)
 
 - Company, unless the race is already extinct or extremely rare. This includes writing:
   - Company Ire events (minimum 3)
@@ -604,7 +604,7 @@ Example races that may be possible to be added as a playable race, if you contri
 
 ## Common Compiling Problems
 
-- Make sure to [compile again](https://gitgud.io/darkofocdarko/foc#compiling-instructions) each time you edit the file!
+- Make sure to [compile again](https://gitgud.io/darkofocdarko/fort-of-chains#compiling-instructions) each time you edit the file!
 
 - Make sure you open `dist/index.html`, not `dist/precompiled.html`. Also, each time you compile, the `index.html` file will be re-generated and have to be re-opened.
 

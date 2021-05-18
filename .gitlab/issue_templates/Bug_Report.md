@@ -22,4 +22,4 @@ It shouldn't crash.
 
 ## Any other information that might be useful?
 
-It's probably caused by [this line](https://gitgud.io/darkofocdarko/foc/-/blob/master/project/twee/story.twee#L159).
+It's probably caused by [this line](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/project/twee/story.twee#L159).

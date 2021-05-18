@@ -18,10 +18,10 @@ Welcome to <b>Fort of Chains</b>.
 </p>
 
 <p>
-[[(Download latest version)|https://gitgud.io/darkofocdarko/foc]] |
+[[(Download latest version)|https://gitgud.io/darkofocdarko/fort-of-chains]] |
 [[(Play on browser)|https://darkofoc.itch.io/fort-of-chains]] |
-[[(Contribute)|https://gitgud.io/darkofocdarko/foc#how-to-contribute-content]] |
-[[(F.A.Q)|https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/faq.md]] |
+[[(Contribute)|https://gitgud.io/darkofocdarko/fort-of-chains#how-to-contribute-content]] |
+[[(F.A.Q)|https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/faq.md]] |
 [[(Official Discord server)|https://discord.com/invite/PTD9D7mZyg]] |
 [[(Official subreddit)|https://www.reddit.com/r/FortOfChains/]]
 </p>
@@ -39,7 +39,7 @@ check out the GUI-based <<successtext 'Content Creation Tool'>> below.
 This game is a passion project and will <<successtext 'always be a free game'>>.
 Contributing content is the preferred way to support this game -- you can contribute
 story, code, art, anything
-[[(more information)|https://gitgud.io/darkofocdarko/foc#how-to-contribute-content]]!
+[[(more information)|https://gitgud.io/darkofocdarko/fort-of-chains#how-to-contribute-content]]!
 There is also a
 [[Patreon|'https://www.patreon.com/darkofoc']] for tipping, if you'd like to give something in
 return instead, but nothing is pay-walled behind it.
@@ -49,7 +49,7 @@ return instead, but nothing is pay-walled behind it.
 
 <p>
 <b>Fort of Chains</b> is an
-[[open source|https://gitgud.io/darkofocdarko/foc]] |
+[[open source|https://gitgud.io/darkofocdarko/fort-of-chains]] |
 <b>TEXT-ONLY</b> fantasy game set in an entirely fictional world.
 The game contains explicit sexual content. By proceeding, you consent that
 you are of legal age, and it is legal for you to play this game in your demesne.
@@ -67,7 +67,7 @@ The game would like to express its deepest gratitude to the various contributors
 <<focmove "(Author Credits)" "AuthorCredits">> 
 <<focmove "(Coder Credits)" "CoderCredits">> 
 <<focmove "(Other Credits)" "OtherCredits">>
-[[(License)|https://gitgud.io/darkofocdarko/foc#license]]
+[[(License)|https://gitgud.io/darkofocdarko/fort-of-chains#license]]
 
 <hr/>
 
@@ -78,7 +78,7 @@ The game would like to express its deepest gratitude to the various contributors
     [[itch.io|https://darkofoc.itch.io/fort-of-chains]].
     This version has <<dangertext 'less content'>> compared to the download-able full version,
     because itch.io has a strict 1000 files limit, which this game has exceeded.
-    Consider downloading the [[full version with source code here|https://gitgud.io/darkofocdarko/foc/]] or
+    Consider downloading the [[full version with source code here|https://gitgud.io/darkofocdarko/fort-of-chains/]] or
     [[just the full version at the bottom of this page|https://darkofoc.itch.io/fort-of-chains]].
   </div>
 

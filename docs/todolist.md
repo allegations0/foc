@@ -2,7 +2,7 @@
 
 Note that these are just suggestions, if you want to contribute something else,
 feel free to tell us the idea!
-Also check out [ongoing issues](https://gitgud.io/darkofocdarko/foc/-/issues) for another
+Also check out [ongoing issues](https://gitgud.io/darkofocdarko/fort-of-chains/-/issues) for another
 set of current todos.
 
 ### Writing
@@ -35,7 +35,7 @@ set of current todos.
 
 ### Code
 
-Check out the [list of issues](https://gitgud.io/darkofocdarko/foc/-/issues), and see if anything
+Check out the [list of issues](https://gitgud.io/darkofocdarko/fort-of-chains/-/issues), and see if anything
 meets your fancy! Alternatively, you can also help out by adding the content that writers have submitted
 into the game, via converting them into proper merge requests.
 

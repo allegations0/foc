@@ -1,26 +1,26 @@
 ## Fort of Chains v1.4 is here! Text-only slaver management game. Contributors welcome!
 
 [(Play in your browser)](https://darkofoc.itch.io/fort-of-chains) |
-[(Contributing)](https://gitgud.io/darkofocdarko/foc#how-to-contribute-content) |
+[(Contributing)](https://gitgud.io/darkofocdarko/fort-of-chains#how-to-contribute-content) |
 [(Download)](https://www.reddit.com/r/FortOfChains/comments/jlhivr/fort_of_chains_and_download_link/) |
 [(Discord)](https://discord.gg/PTD9D7mZyg) |
 [(Subreddit)](https://www.reddit.com/r/FortOfChains/) |
-[(v1.3.0.0 release notes)](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/update/readme_1_3.md) |
-[(Changelog)](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/changelog_summary.md) |
-[(F.A.Q)](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/faq.md)
+[(v1.3.0.0 release notes)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/update/readme_1_3.md) |
+[(Changelog)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/changelog_summary.md) |
+[(F.A.Q)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/faq.md)
 
 **Fort of Chains** is a completed, free, moddable,
-[open-source](https://gitgud.io/darkofocdarko/foc),
+[open-source](https://gitgud.io/darkofocdarko/fort-of-chains),
 TEXT-ONLY
 sandbox management NSFW game where you lead and manage a band of slavers in a fantasy world.
 The game is configurable and can cover all gender orientations: MM, MF, and FF.
 Be warned that the game contains heavy themes of slavery and non-consensual sex.
-There are [no support](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/faq.md#can-you-play-a-submissive-in-this-game)
+There are [no support](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/faq.md#can-you-play-a-submissive-in-this-game)
 for playing as a submissive character.
 More information 
 [here](https://www.reddit.com/r/FortOfChains/comments/jlhivr/fort_of_chains_and_download_link/).
 
-FoC v1.4 follows after the extra-large [v1.3 update](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/update/readme_1_3.md),
+FoC v1.4 follows after the extra-large [v1.3 update](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/update/readme_1_3.md),
 which was released three weeks ago.
 And oh boy v1.4 would not lose in term of update size:
 v1.4 introduces many new content and features,
@@ -45,10 +45,10 @@ Legal stuffs: Lilith's Throne is released under
 While Lilith's Throne creator, Innoxia, has given her permission for the texts to be used in this game,
 she in no way offer her endorsement for this game.
 
-v1.4 marks a milestone where the [issues list](https://gitgud.io/darkofocdarko/foc/-/issues) no longer
+v1.4 marks a milestone where the [issues list](https://gitgud.io/darkofocdarko/fort-of-chains/-/issues) no longer
 contains any major todo, and most of the remaining todos are QoL and content todos.
 This means that the main focus should start to shift into **supporting writers** who wants to add content into the game.
-You are invited too! See details [here](https://gitgud.io/darkofocdarko/foc#how-to-contribute-content).
+You are invited too! See details [here](https://gitgud.io/darkofocdarko/fort-of-chains#how-to-contribute-content).
 
 A summary of all the changes in v1.4 are listed at the end, but the biggest changes in v1.4 are:
 
@@ -64,13 +64,13 @@ be it writers, programmers, artists, or even moderation help!
 Unlike most other games, to add content into the game, you **do not have to write code at all**.
 This is since the game came shipped with an **in-game GUI tool** for
 adding content.
-More details [here](https://gitgud.io/darkofocdarko/foc#how-to-contribute-content).
+More details [here](https://gitgud.io/darkofocdarko/fort-of-chains#how-to-contribute-content).
 As of v1.4, there has been over twenty contributors who directly contributed into the project,
 while many other have helped by either reporting bugs or spreading the word.
 
 ---
 
-Full changelog [here](https://gitgud.io/darkofocdarko/foc/-/blob/master/changelog.txt).
+Full changelog [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/changelog.txt).
 
 v1.4.0.0 (January 15, 2021): Content, interactive sex, lovers, tigerkin
 
@@ -138,4 +138,4 @@ v1.4.0.0 (January 15, 2021): Content, interactive sex, lovers, tigerkin
  - Display option for markets menu.
  - Many Typos and Bugfixes
 
-[v1.3.x (December 26, 2020): Lots of content, new features, UI rewrites, icon rewrite, heavy QoL changes](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/changelog_summary.md)
+[v1.3.x (December 26, 2020): Lots of content, new features, UI rewrites, icon rewrite, heavy QoL changes](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/changelog_summary.md)

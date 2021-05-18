@@ -2,7 +2,7 @@
 
 This document is mainly for adding unit portraits and quest/event images.
 For adding new room images, see [here](docs/roomimages.md).
-For adding quest or event images, see [here](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/images.md#adding-images-to-quests-or-events).
+For adding quest or event images, see [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/images.md#adding-images-to-quests-or-events).
 For adding unit portraits, read on.
 
 ## How unit portrait works
@@ -174,7 +174,7 @@ You are done!
 ### Verifying image pack and syntax checking
 
 If you have `nodejs` installed, there is a script you can run to verify 
-the correctness of your image pack and check the syntax [here](https://gitgud.io/darkofocdarko/foc/-/blob/master/dev/checkImageMetas.js). (Made by contributor Naraden)
+the correctness of your image pack and check the syntax [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/dev/checkImageMetas.js). (Made by contributor Naraden)
 
 Example use:
 
@@ -244,7 +244,7 @@ Quest and event images largely use the same format as unit images above.
 The step-by-step to add images to quests is as follows:
 
 1. First, add your image data into the game:
-  1. Open your own local copy of [this file](https://gitgud.io/darkofocdarko/foc/-/blob/master/dist/img/content/imagemeta.js) using a text editor
+  1. Open your own local copy of [this file](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/dist/img/content/imagemeta.js) using a text editor
   2. Append your image info. For example, if your image is titled "abc.jpg", you can add:
   ```
     "abc.jpg": {
@@ -254,11 +254,11 @@ The step-by-step to add images to quests is as follows:
       license: "CC-BY-NC 3.0",
     },
   ```
-  3. Add the image into your own local copy of [this directory](https://gitgud.io/darkofocdarko/foc/-/tree/master/dist/img/content/all)
+  3. Add the image into your own local copy of [this directory](https://gitgud.io/darkofocdarko/fort-of-chains/-/tree/master/dist/img/content/all)
 2. Next, add it into the quest / event
-  1. Open your copy of the corresponding quest file, for example [this file](https://gitgud.io/darkofocdarko/foc/-/blob/master/project/twee/quest/darko/city/GiftExchange.twee) 
+  1. Open your copy of the corresponding quest file, for example [this file](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/project/twee/quest/darko/city/GiftExchange.twee) 
   2. Add the image using the `<<questimage 'a.jpg'>>` command.
-  In [that file](https://gitgud.io/darkofocdarko/foc/-/blob/master/project/twee/quest/darko/city/GiftExchange.twee), there are two possible variations of the image, based on the gender of the slave.
+  In [that file](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/project/twee/quest/darko/city/GiftExchange.twee), there are two possible variations of the image, based on the gender of the slave.
   Hence, you would find:
   ```
     <<if $gOutcome == 'crit'>>
@@ -269,7 +269,7 @@ The step-by-step to add images to quests is as follows:
       <</if>>
     <</if>>
   ```
-3. Finally, [compile and open index.html](https://gitgud.io/darkofocdarko/foc#compiling-instructions)
+3. Finally, [compile and open index.html](https://gitgud.io/darkofocdarko/fort-of-chains#compiling-instructions)
 
 Note that if you do this via the content creator, it will also work, but you MUST
 put the images and edit the `imagemeta.js` file BEFORE you open the content creator.

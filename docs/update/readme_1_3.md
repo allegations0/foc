@@ -1,20 +1,20 @@
 ## Fort of Chains v1.3 is here! Text-only slaver management game. Contributors welcome!
 
 [(Play in your browser)](https://darkofoc.itch.io/fort-of-chains) |
-[(Contributing)](https://gitgud.io/darkofocdarko/foc) |
+[(Contributing)](https://gitgud.io/darkofocdarko/fort-of-chains) |
 [(Download)](https://www.reddit.com/r/FortOfChains/comments/jlhivr/fort_of_chains_and_download_link/) |
 [(Subreddit)](https://www.reddit.com/r/FortOfChains/) |
 [(Discord)](https://discord.gg/PTD9D7mZyg) |
-[(v1.2.0.0 release notes)](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/update/readme_1_2.md) |
-[(Changelog)](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/changelog_summary.md)
+[(v1.2.0.0 release notes)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/update/readme_1_2.md) |
+[(Changelog)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/changelog_summary.md)
 
 **Fort of Chains** is a completed, free, moddable,
-[open-source](https://gitgud.io/darkofocdarko/foc),
+[open-source](https://gitgud.io/darkofocdarko/fort-of-chains),
 TEXT-ONLY
 sandbox management NSFW game where you lead and manage a band of slavers in a fantasy world.
 The game is configurable and can cover all gender orientations: MM, MF, and FF.
 Be warned that the game contains heavy themes of slavery and non-consensual sex.
-There are [no support](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/faq.md#can-you-play-a-submissive-in-this-game)
+There are [no support](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/faq.md#can-you-play-a-submissive-in-this-game)
 for playing as a submissive character.
 More information 
 [here](https://www.reddit.com/r/FortOfChains/comments/jlhivr/fort_of_chains_and_download_link/).
@@ -37,14 +37,14 @@ be it writers, programmers, artists, or even moderation help!
 Unlike most other games, to add content into the game, you **do not have to write code at all**.
 This is since the game came shipped with an **in-game GUI tool** for
 adding content.
-More details [here](https://gitgud.io/darkofocdarko/foc).
+More details [here](https://gitgud.io/darkofocdarko/fort-of-chains).
 As of v1.3,
 there have been over twelve people who have contributed content into the game,
 while much more have helped playtesting, giving feedbacks, and reporting bugs.
 
 ---
 
-Full changelog [here](https://gitgud.io/darkofocdarko/foc/-/blob/master/changelog.txt).
+Full changelog [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/changelog.txt).
 
 v1.3.0.0 (December 26, 2020): Lots of content, new features, UI rewrites, icon rewrite, heavy QoL changes
  - 18 new quests, 8 new opportunity, 45 new events, 1 new interaction, 1 new unit action (thanks to Alberich, acciabread, Zerutti)
@@ -163,4 +163,4 @@ v1.3.0.0 (December 26, 2020): Lots of content, new features, UI rewrites, icon r
  - Criterias rebalanced to have 5+ traits
  - Many bugfixes
 
-[v1.2.x (December 05, 2020) Artist-focused, engine changes, content, features](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/changelog_summary.md)
+[v1.2.x (December 05, 2020) Artist-focused, engine changes, content, features](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/changelog_summary.md)

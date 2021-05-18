@@ -1923,7 +1923,7 @@ v1.4.5.8:
 
 v1.4.5.7:
 
-  - All trait effects rebalanced (adapted from acciabread version, see https://gitgud.io/darkofocdarko/foc/-/issues/112)
+  - All trait effects rebalanced (adapted from acciabread version, see https://gitgud.io/darkofocdarko/fort-of-chains/-/issues/112)
   - Generous -> lavish, thrifty -> frugal renames.
   - Favor decay threshold adjusted to make it easier: 85 now from 75.
   - Recreation wing price adjustments (nerf).

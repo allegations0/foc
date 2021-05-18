@@ -79,12 +79,12 @@ such as healing potions.
 The third is for items that can be used directly, but does not target any unit.
 
 To make the items you created appear in the game,
-you to [compile the game](https://gitgud.io/darkofocdarko/foc#compiling-instructions) after adding them.
+you to [compile the game](https://gitgud.io/darkofocdarko/fort-of-chains#compiling-instructions) after adding them.
 
 # Living
 
 New living can be freely added.
-See [here](https://gitgud.io/darkofocdarko/foc/-/tree/master/project/twee/living) for existing ones
+See [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/tree/master/project/twee/living) for existing ones
 to template on.
 
 # Not really needed
@@ -106,7 +106,7 @@ be given after the player done something noteworthy.
 There is absolutely no plan to add more **primary races** into the game.
 But **subrace** can be added, albeit needing
 a lot of efforts to. See
-[here](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/faq.md#new-races) for more information,
+[here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/faq.md#new-races) for more information,
 including all the requirements to add new subrace.
 
 # Regarding submissive (i.e., opposite of dominant) content
@@ -141,7 +141,7 @@ and add the following at the end:
 ```
 
 The game will automatically detect the changes once you
-[compile the game](https://gitgud.io/darkofocdarko/foc#compiling-instructions) after adding them.
+[compile the game](https://gitgud.io/darkofocdarko/fort-of-chains#compiling-instructions) after adding them.
 
 ## Building, Living, 
 
@@ -149,4 +149,4 @@ First, open the [building](project/twee/building) or [living](project/twee/livin
 Then, copy one of the files there as a base template, and edit it into your new building/living.
 The game will automatically detect these files and convert them into new building/livings
 once you
-[compile the game](https://gitgud.io/darkofocdarko/foc#compiling-instructions) after adding them.
+[compile the game](https://gitgud.io/darkofocdarko/fort-of-chains#compiling-instructions) after adding them.

@@ -3,10 +3,10 @@
 [(Play in your browser)](https://darkofoc.itch.io/fort-of-chains) |
 [(Download links)](https://www.reddit.com/r/FortOfChains/comments/jlhivr/fort_of_chains_and_download_link/) |
 [(Subreddit)](https://www.reddit.com/r/FortOfChains/) |
-[(Changelog summary)](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/changelog_summary.md)
+[(Changelog summary)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/changelog_summary.md)
 
 **Fort of Chains** (FoC) is a completed, free, moddable,
-[open-source](https://gitgud.io/darkofocdarko/foc),
+[open-source](https://gitgud.io/darkofocdarko/fort-of-chains),
 TEXT-ONLY
 sandbox management NSFW game where you manage a band of slavers in a fantasy world.
 The game is strongly inspired by
@@ -26,9 +26,9 @@ performance, new features, and bazilion other things.
 - **New features**: familial connections (siblings etc), bodyswap, unit histories, scheduled events, harems for you and your slavers
 - New **content creator** features: quest/opportunities involving company units, conditional rewards, slave orders, variables, quest with overlapping text, persistent units
 - Full **documentation** for content creator, including
-[Tutorial](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/contentcreatorguide.md),
-[Text guide](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/text.md),
-[Trait list](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/traits.md),
+[Tutorial](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/contentcreatorguide.md),
+[Text guide](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/text.md),
+[Trait list](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/traits.md),
 etc.
 - (Partial) **mobile** support. [Play in browser](https://darkofoc.itch.io/fort-of-chains)
 
@@ -37,7 +37,7 @@ be it writers, artists, programmers, or even moderation help!
 Unlike most other games, to add content into the game, you **do not have to write code at all**.
 This is since the game came shipped with an **in-game GUI tool** for
 adding content.
-More details [here](https://gitgud.io/darkofocdarko/foc).
+More details [here](https://gitgud.io/darkofocdarko/fort-of-chains).
 As of v1.1, there have been five kind people who has contributed content into the game,
 while much more have helped playtesting, giving feedbacks, and reporting bugs.
 
@@ -46,7 +46,7 @@ Game is now two months old since its inception. Woo!
 ---
 
 Changelog summary from v1.0 (which was released two weeks ago):
-[(Full changelog)](https://gitgud.io/darkofocdarko/foc/-/blob/master/changelog.txt)
+[(Full changelog)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/changelog.txt)
 
 v1.1.x (November 20, 2020) Game is stable.
 
@@ -83,4 +83,4 @@ v1.1.x (November 20, 2020) Game is stable.
 - Balance improvements
 - Tons of bugfixes
 
-[v1.0.x (November 6, 2020) Game is released.](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/changelog_summary.md)
+[v1.0.x (November 6, 2020) Game is released.](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/changelog_summary.md)

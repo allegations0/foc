@@ -1,6 +1,6 @@
 ### Changelog
 
-Full changelog [here](https://gitgud.io/darkofocdarko/foc/-/blob/master/changelog.txt).
+Full changelog [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/changelog.txt).
 
 v1.6.4.0 (14 May 2021):
   - Content
@@ -205,7 +205,7 @@ v1.6.1.4 (24 April 2021):
   you can try loading them, and the game will do its best to convert it into a New Game Plus.
 
   **LOOKING FOR ARTISTIC CONTRIBUTIONS**: see
-  [this issue](https://gitgud.io/darkofocdarko/foc/-/issues/290) for more information
+  [this issue](https://gitgud.io/darkofocdarko/fort-of-chains/-/issues/290) for more information
 
   - Content
     - Fort Restoration Awards

@@ -1,24 +1,24 @@
 ## Fort of Chains v1.6 is here! Text-only slaver management game. Contributors welcome!
 
 [(Play in your browser)](https://darkofoc.itch.io/fort-of-chains) |
-[(Contributing)](https://gitgud.io/darkofocdarko/foc#how-to-contribute-content) |
+[(Contributing)](https://gitgud.io/darkofocdarko/fort-of-chains#how-to-contribute-content) |
 [(Download)](https://www.reddit.com/r/FortOfChains/comments/jlhivr/fort_of_chains_and_download_link/) |
 [(Discord)](https://discord.gg/PTD9D7mZyg) |
 [(Subreddit)](https://www.reddit.com/r/FortOfChains/) |
-[(v1.5.0.0 release notes)](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/update/readme_1_5.md) |
-[(Changelog)](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/changelog_summary.md) |
-[(F.A.Q)](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/faq.md)
+[(v1.5.0.0 release notes)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/update/readme_1_5.md) |
+[(Changelog)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/changelog_summary.md) |
+[(F.A.Q)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/faq.md)
 
 **Fort of Chains** is a completed, free, moddable,
-[open-source](https://gitgud.io/darkofocdarko/foc),
+[open-source](https://gitgud.io/darkofocdarko/fort-of-chains),
 TEXT-ONLY
 sandbox management NSFW game where you lead and manage a band of slavers in a fantasy world.
 The game is configurable and can cover all gender orientations: MM, MF, and FF.
 The game contains heavy themes of slavery and non-consensual sex.
-There are [no support](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/faq.md#can-you-play-a-submissive-in-this-game)
+There are [no support](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/faq.md#can-you-play-a-submissive-in-this-game)
 for playing as a submissive character.
 [(More information)](https://www.reddit.com/r/FortOfChains/comments/jlhivr/fort_of_chains_and_download_link/)
-[(Feature / Fetish list)](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/faq.md#does-this-game-contain-insert-fetish-here)
+[(Feature / Fetish list)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/faq.md#does-this-game-contain-insert-fetish-here)
 
 FoC v1.6 adds new content, new features, as well as many Engine work and QoL changes.
 It's quite large, to put it mildly, so I hope you will enjoy them.
@@ -33,7 +33,7 @@ A summary (although given its length its still pretty much an essay) of all the 
 - **Other new features**: Specialists, Blessing, Curse, Skill boost, Contact units, In-Game Database
 
 If you enjoy the game, makes sure to thank the many contributors and people who have helped with this project! The project could not reach this version without them.
-[You are invited too!](https://gitgud.io/darkofocdarko/foc#how-to-contribute-content)
+[You are invited too!](https://gitgud.io/darkofocdarko/fort-of-chains#how-to-contribute-content)
 The current contributors include:
 - Writers: Alberich, Milk Maid Sona, Da_Shem, Blueflame451, Quiver, Innoxia (Lilith's Throne), FCdev, Atacama, Dporentel, Fos, Kyiper, Thavil, Zerutti, anonymouse21212, Anon, mynameis123, Kyrozis, AwooWolfWoof, J1009
 - Coders: Naraden, alarmedcat, Arkerthan, and sssk
@@ -48,7 +48,7 @@ This does not change with v1.5 or v1.6.
 be it writers, proofreaders, programmers, artists, or even discord moderation help!
 Unlike most other games, to add content into the game, you **do not have to write code at all**.
 This is since the game came shipped with an **in-game GUI tool** for adding content.
-More details [here](https://gitgud.io/darkofocdarko/foc#how-to-contribute-content).
+More details [here](https://gitgud.io/darkofocdarko/fort-of-chains#how-to-contribute-content).
 
 v1.6 marks a little after **six months** since the inception of this game. As
 of this version, around thirty-five people have helped contribute directly
@@ -58,7 +58,7 @@ contributor for the project.
 
 ---
 
-Full changelog [here](https://gitgud.io/darkofocdarko/foc/-/blob/master/changelog.txt).
+Full changelog [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/changelog.txt).
 
 v1.6.0.0 (16 April 2021): Content, Retirement, New Game Plus, Blessings, Engine work
 
@@ -505,4 +505,4 @@ v1.6.0.0 (16 April 2021): Content, Retirement, New Game Plus, Blessings, Engine 
     - Text fixes for IreAtLeast and training text.
     - Fix their -> them typo in huge_tits.
 
-[v1.5.0.0 (26 February 2021): Huge amount of content, subraces, Text polish, QoL, Balancing](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/changelog_summary.md)
+[v1.5.0.0 (26 February 2021): Huge amount of content, subraces, Text polish, QoL, Balancing](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/changelog_summary.md)

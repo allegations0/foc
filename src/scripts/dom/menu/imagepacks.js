@@ -38,7 +38,7 @@ setup.DOM.Menu.imagepacks = function () {
               </p>
 
               <p>
-                <a target="_blank" href="https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/images.md#creating-your-own-image-pack">
+                <a target="_blank" href="https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/images.md#creating-your-own-image-pack">
                   How to create a new image pack
                 </a>
               </p>

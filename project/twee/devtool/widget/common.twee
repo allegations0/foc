@@ -1,10 +1,10 @@
 :: LoadDevToolHelpTexts [nobr widget]
 
 <<focwidget 'twinehelptext'>>
-  [[(Content Creator Cheat Sheet)|https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/textcheatsheet.md]]
+  [[(Content Creator Cheat Sheet)|https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/textcheatsheet.md]]
   <<message '(Help and Formatting)'>>
     For additional game-specific commands not covered in the toolbar,
-    see [[here|https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/text.md]].
+    see [[here|https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/text.md]].
     For SugarCube 2 commands, see [[here|http://www.motoslave.net/sugarcube/2/docs/]].
   <</message>>
 <</focwidget>>
@@ -50,7 +50,7 @@ The second option is to add it to the code directly, and it's also very easy!
 <<message "Click for guide on how to add it to the game code yourself">>
   <div class='helpcard'>
     <p>
-    First, go to https://gitgud.io/darkofocdarko/foc and download the repository.
+    First, go to https://gitgud.io/darkofocdarko/fort-of-chains and download the repository.
     Next, create the following file:
     <<successtext _filename>>,
     and copy paste all the code later below to that file.
@@ -59,8 +59,8 @@ The second option is to add it to the code directly, and it's also very easy!
     You may need to create a new directory here.
     Make sure the file ends with ".twee", instead of ".txt" or any other extension.
     )
-    [[(Example)|https://gitgud.io/darkofocdarko/foc/-/blob/master/project/twee/quest/Dporentel/goblin_resque.twee]]
-    Finally, compile the game, which is really easy! See [[here|https://gitgud.io/darkofocdarko/foc#compiling-instructions]]
+    [[(Example)|https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/project/twee/quest/Dporentel/goblin_resque.twee]]
+    Finally, compile the game, which is really easy! See [[here|https://gitgud.io/darkofocdarko/fort-of-chains#compiling-instructions]]
     for compiling instructions.
     </p>
 
@@ -73,7 +73,7 @@ The second option is to add it to the code directly, and it's also very easy!
       Your $args[0] will be at their corresponding pool (or at "Other Quests" if it does not belong to any pool).
     <</if>>
     Once that works, all you need to do is
-    [[send a merge request to the repository|https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/mergerequest.md]].
+    [[send a merge request to the repository|https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/mergerequest.md]].
     (Again, you don't need to install anything to do so.)
     </p>
   </div>

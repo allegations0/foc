@@ -4,12 +4,12 @@
 [(Download links)](https://www.reddit.com/r/FortOfChains/comments/jlhivr/fort_of_chains_and_download_link/) |
 [(Subreddit)](https://www.reddit.com/r/FortOfChains/) |
 [(Discord)](https://discord.gg/PTD9D7mZyg) |
-[(Changelog summary)](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/changelog_summary.md)
-[(v1.2.0 release notes)](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/update/readme_1_2.md)
-[(v1.1.0.0 release notes)](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/update/readme_1_1.md)
+[(Changelog summary)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/changelog_summary.md)
+[(v1.2.0 release notes)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/update/readme_1_2.md)
+[(v1.1.0.0 release notes)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/update/readme_1_1.md)
 
 **Fort of Chains** (FoC) is a completed, free, moddable,
-[open-source](https://gitgud.io/darkofocdarko/foc),
+[open-source](https://gitgud.io/darkofocdarko/fort-of-chains),
 TEXT-ONLY
 sandbox management NSFW game where you manage a band of slavers in a fantasy world.
 The game is strongly inspired by
@@ -38,7 +38,7 @@ be it writers, artists, programmers, or even moderation help!
 Unlike most other games, to add content into the game, you **do not have to write code at all**.
 This is since the game came shipped with an **in-game GUI tool** for
 adding content.
-More details [here](https://gitgud.io/darkofocdarko/foc).
+More details [here](https://gitgud.io/darkofocdarko/fort-of-chains).
 As of v1.2,
 there have been over ten people who have contributed content into the game,
 while much more have helped playtesting, giving feedbacks, and reporting bugs.
@@ -46,7 +46,7 @@ while much more have helped playtesting, giving feedbacks, and reporting bugs.
 ---
 
 Changelog summary from v1.1 (which was released two weeks ago):
-[(Full changelog)](https://gitgud.io/darkofocdarko/foc/-/blob/master/changelog.txt)
+[(Full changelog)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/changelog.txt)
 
 v1.2.x (December 05, 2020) Artist-focused, engine changes, content, features
 
@@ -76,5 +76,5 @@ be used to group slavers now. Ad-hoc teams no longer need to be designated
 - Skill focus is more focused now
 - Many bugfixes and QoL features
 
-[v1.1.x (November 20, 2020) Game is stable.](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/changelog_summary.md)
+[v1.1.x (November 20, 2020) Game is stable.](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/changelog_summary.md)
 

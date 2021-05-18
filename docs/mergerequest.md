@@ -15,7 +15,7 @@ If you have already installed `git`, or if you are looking for a more robust opt
 1. First, fork the repository:
 
   - Create a gitgud.io account if you have not already, and log in.
-  - Navigate to [this page](https://gitgud.io/darkofocdarko/foc)
+  - Navigate to [this page](https://gitgud.io/darkofocdarko/fort-of-chains)
   - On the top right corner of this page, click the "Fork" button ![fork](docs/img/fork.png)
   - Click the "Select" button under your username
   - Wait until the forking process is complete (this may take a few minutes)
@@ -38,14 +38,14 @@ If you have already installed `git`, or if you are looking for a more robust opt
       - Select "New directory". Put the directory name, e.g., [YOUR_USERNAME]. As the commit message, you can put something descriptive, for example, "New quest directory for [YOUR_USERNAME]".
 
 3. Create merge request:
-  - Navigate back to [https://gitgud.io/darkofocdarko/foc](https://gitgud.io/darkofocdarko/foc)
+  - Navigate back to [https://gitgud.io/darkofocdarko/fort-of-chains](https://gitgud.io/darkofocdarko/fort-of-chains)
   - From the menu on the left sidebar, select "Merge Requests" ![button](docs/img/merge.png)
   - Click new merge request ![button](docs/img/newmerge.png)
   - For the source branch, select your fork, and the branch named "master"
   
    ![mergebranch](docs/img/mergebranch.png)
 
-  - For the target branch, select `darkofocdarko/foc`, and `master`.
+  - For the target branch, select `darkofocdarko/fort-of-chains`, and `master`.
   - Click `Compare branches and continue`
   - Write in the details of your merge request
     - For example, in the title, you can write "Water Well quest"
@@ -84,7 +84,7 @@ Once you have both `git` and preferably `Visual Studio Code` installed, continue
 1. First, fork the repository:
 
   - Create a gitgud.io account if you have not already, and log in.
-  - Navigate to [this page](https://gitgud.io/darkofocdarko/foc)
+  - Navigate to [this page](https://gitgud.io/darkofocdarko/fort-of-chains)
   - On the top right corner of this page, click the "Fork" button ![fork](docs/img/fork.png)
   - Click the "Select" button under your username
   - Wait until the forking process is complete (this may take a few minutes)
@@ -136,7 +136,7 @@ Once you have both `git` and preferably `Visual Studio Code` installed, continue
   - Add "upstream" branch by running:
 
   ```
-    git remote add upstream https://gitgud.io/darkofocdarko/foc.git
+    git remote add upstream https://gitgud.io/darkofocdarko/fort-of-chains.git
   ```
 
 3. Update version to master
@@ -165,7 +165,7 @@ Once you have both `git` and preferably `Visual Studio Code` installed, continue
   - Change your files! Add your quest, edit the files to your liking, etc. This should be where the bulk of your time will be spent.
 
 5. Test your game!
-  - [Compile the game](https://gitgud.io/darkofocdarko/foc#compiling-instructions)
+  - [Compile the game](https://gitgud.io/darkofocdarko/fort-of-chains#compiling-instructions)
   - Open `dist/index.html` and test the game! (Don't mistakenly open `dist/precompiled.html`)
 
 5. Commit your changes to your fork
@@ -189,14 +189,14 @@ Once you have both `git` and preferably `Visual Studio Code` installed, continue
 
 6. Create a merge request
 
-  - Navigate back to [https://gitgud.io/darkofocdarko/foc](https://gitgud.io/darkofocdarko/foc)
+  - Navigate back to [https://gitgud.io/darkofocdarko/fort-of-chains](https://gitgud.io/darkofocdarko/fort-of-chains)
   - From the menu on the left sidebar, select "Merge Requests" ![button](docs/img/merge.png)
   - Click new merge request ![button](docs/img/newmerge.png)
   - For the source branch, select your fork, and the branch named "master"
   
    ![mergebranch](docs/img/mergebranch.png)
 
-  - For the target branch, select `darkofocdarko/foc`, and `master`.
+  - For the target branch, select `darkofocdarko/fort-of-chains`, and `master`.
   - Click `Compare branches and continue`
   - Write in the details of your merge request
     - For example, in the title, you can write "Water Well quest"

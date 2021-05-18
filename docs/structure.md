@@ -7,7 +7,7 @@ The key difference is the concept of `passage`. A passage is basically a URL.
 You can move from passage to passage by clicking a link that leads to a different `passage`
 (i.e., akin to clicking a link in URL), or by being redirected there.
 
-The first passage the game opens is [this one](https://gitgud.io/darkofocdarko/foc/-/blob/master/project/twee/story.twee): the passage named `Start`.
+The first passage the game opens is [this one](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/project/twee/story.twee): the passage named `Start`.
 That passage `includes` another passage named `Init`, which is directly below it.
 Scrolling to the bottom, you will see:
 
@@ -18,7 +18,7 @@ Scrolling to the bottom, you will see:
 This creates a link titled `New Game` that will take the player to the `ProloguePlayerGen` passage.
 
 More information about SugarCube 2 syntax is in its [official docs](https://www.motoslave.net/sugarcube/2/).
-For a list of important passages, see [here](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/structure.md#gui).
+For a list of important passages, see [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/structure.md#gui).
 
 ## Navigation caveats
 
@@ -76,10 +76,10 @@ attached to the passage via the `attach` macro. This way, the UI code is actuall
 ## Code / Logic / Javascript Files
 
 All javascript code are located in 
-[here](https://gitgud.io/darkofocdarko/foc/-/tree/master/src/scripts).
-Css codes are in [here](https://gitgud.io/darkofocdarko/foc/-/tree/master/src/styles).
-NPM / Yarn will compile them into [here for javascript files](https://gitgud.io/darkofocdarko/foc/-/tree/master/project/scripts)
-and [here for css files](https://gitgud.io/darkofocdarko/foc/-/tree/master/project/styles).
+[here](https://gitgud.io/darkofocdarko/fort-of-chains/-/tree/master/src/scripts).
+Css codes are in [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/tree/master/src/styles).
+NPM / Yarn will compile them into [here for javascript files](https://gitgud.io/darkofocdarko/fort-of-chains/-/tree/master/project/scripts)
+and [here for css files](https://gitgud.io/darkofocdarko/fort-of-chains/-/tree/master/project/styles).
 
 The load order of the javascript files is alphabetical. It is still good practice to use imports instead,
 but some legacy code relies on this load order to function.
@@ -155,7 +155,7 @@ In the Twine files (`.twee`), these variables can be referred with a shorthand:
 
 ## Data and GUI Files
 
-Most data are located in the [twine files](https://gitgud.io/darkofocdarko/foc/-/tree/master/project/twee).
+Most data are located in the [twine files](https://gitgud.io/darkofocdarko/fort-of-chains/-/tree/master/project/twee).
 There are several exceptions of data that are located in the javascript files.
 The first exception are duties, because they tend to have a unique effect.
 The second exception are some banter texts, because they have too many
@@ -173,10 +173,10 @@ Many of the UI are written in javascript, which is attached into the twine via t
 What this means is that we set the variable `_dom` to be the document fragment returned
 by the `setup.DOM.Card.quest` function.
 The functions that generate document fragment are all located under the `setup.DOM` namespace,
-and can be found [here](https://gitgud.io/darkofocdarko/foc/-/tree/master/src/scripts/dom).
-For example, `setup.DOM.Card.quest` is found [here](https://gitgud.io/darkofocdarko/foc/-/blob/master/src/scripts/dom/card/quest.js).
+and can be found [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/tree/master/src/scripts/dom).
+For example, `setup.DOM.Card.quest` is found [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/src/scripts/dom/card/quest.js).
 
-For ease of writing these functions, we have several helper methods [here](https://gitgud.io/darkofocdarko/foc/-/blob/master/src/scripts/dom/AAA_domutils.js).
+For ease of writing these functions, we have several helper methods [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/src/scripts/dom/AAA_domutils.js).
 The most important function there is the `html` template tag, e.g.:
 
 ```
@@ -193,7 +193,7 @@ const fragment = html`
 The `html` template tag will take care all of these and turn it into a proper document fragment.
 
 The second most important helper function is the `setup.DOM.create` function, which you can find
-[here](https://gitgud.io/darkofocdarko/foc/-/blob/master/src/scripts/dom/AAA_domutils.js).
+[here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/src/scripts/dom/AAA_domutils.js).
 For example,
 
 ```
@@ -213,20 +213,20 @@ See [dom writing guidelines](#dom-writing-guidelines) for more information.
 ## Important Files
 
 Some important files:
-- Entry point is [here](https://gitgud.io/darkofocdarko/foc/-/blob/master/project/twee/story.twee)
-- Backwards compatibility is handled [here](https://gitgud.io/darkofocdarko/foc/-/blob/master/src/scripts/util/backwardscompat.js)
-- Sidebar menu is [here](https://gitgud.io/darkofocdarko/foc/-/blob/master/project/twee/meta/menu.twee)
-- Initialization code is [here](https://gitgud.io/darkofocdarko/foc/-/tree/master/project/twee/initvars). Also includes definitions of skills, traits, item classes, etc.
-- Passage transition code is [here](https://gitgud.io/darkofocdarko/foc/-/blob/master/src/scripts/macro/navigation.js)
+- Entry point is [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/project/twee/story.twee)
+- Backwards compatibility is handled [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/src/scripts/util/backwardscompat.js)
+- Sidebar menu is [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/project/twee/meta/menu.twee)
+- Initialization code is [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/tree/master/project/twee/initvars). Also includes definitions of skills, traits, item classes, etc.
+- Passage transition code is [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/src/scripts/macro/navigation.js)
 
 ## Dom Writing Guidelines
 
 This is a guideline on how to write the DOM-generating code in javascript.
 
-All dom-related code should be located in [this directory](https://gitgud.io/darkofocdarko/foc/-/tree/master/src/scripts/dom).
+All dom-related code should be located in [this directory](https://gitgud.io/darkofocdarko/fort-of-chains/-/tree/master/src/scripts/dom).
 
 - The `dom/card` directory is for showing cards, e.g., unit card, quest card, etc. From twine, you will usually
-just call a card, and then attach it. [Example for quest](https://gitgud.io/darkofocdarko/foc/-/blob/master/project/twee/widget/quest.twee#L9).
+just call a card, and then attach it. [Example for quest](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/project/twee/widget/quest.twee#L9).
 - The `dom/menu` directory is for showing menus, such as unit detail menu.
 - `dom/util` directory is for all util functions that returns a Document Fragment object.
 - `dom/helper` directory is for all util functions that does NOT return a Document Fragment object.
@@ -238,5 +238,5 @@ those in `dom/util` are accessed in `setup.DOM.Util`.
 
 # Looking for something to do?
 
-Check out the [list of issues](https://gitgud.io/darkofocdarko/foc/-/issues)! If it is unassigned, it is
+Check out the [list of issues](https://gitgud.io/darkofocdarko/fort-of-chains/-/issues)! If it is unassigned, it is
 up for grabs!

@@ -206,7 +206,7 @@ Merge: 968de2d6a ee6e9a5bd
 Author: Matthew Lang
 Date:   Mon May 17 23:49:10 2021 +1000
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
     Updating version to fix CC GUI bug
 
 commit f99ac1374cb974b8fc0dfafca6fa6ec1dcf7afad
@@ -262,7 +262,7 @@ Merge: 5859793a4 103b26dc6
 Author: Matthew Lang
 Date:   Mon May 17 18:29:37 2021 +1000
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
     Updating branch to current
 
 commit 103b26dc6e6fe45062cd17a2a04c7d1b1d75de5d
@@ -388,7 +388,7 @@ Date:   Sun May 16 09:02:01 2021 +0000
     
     Fixed typo - in a Very Special Wine Order
     
-    See merge request darkofocdarko/foc!215
+    See merge request darkofocdarko/fort-of-chains!215
 
 commit 801dd3bbc92733988d1fa6cc70a44221c1e1040c
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -612,7 +612,7 @@ Merge: a5f37d12c 70e1e8152
 Author: Matthew Lang
 Date:   Sun May 16 01:33:53 2021 +1000
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
     
     # Conflicts:
     #       project/twee/quest/Matthew_Lang/Raid_Elven_Village.twee
@@ -666,7 +666,7 @@ Date:   Sat May 15 12:53:58 2021 +0000
     
     Closes #305
     
-    See merge request darkofocdarko/foc!213
+    See merge request darkofocdarko/fort-of-chains!213
 
 commit b462109140ca8c114c7949a3820e54f93405801f
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -751,7 +751,7 @@ Merge: f4d99b60d 66b146917
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Fri May 14 22:02:27 2021 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 66b146917aafeb088590d85d5baf29770a8992bc
 Merge: 4c6463f01 e8c9a9252
@@ -762,7 +762,7 @@ Date:   Fri May 14 15:02:20 2021 +0000
     
     Quest text/grammar edits and clean up.
     
-    See merge request darkofocdarko/foc!212
+    See merge request darkofocdarko/fort-of-chains!212
 
 commit e8c9a9252cea8076c4337a12202ea3b7518620b8
 Author: Matthew Lang <21751-keldaryth@users.noreply.gitgud.io>
@@ -858,7 +858,7 @@ Date:   Fri May 14 07:34:59 2021 +0000
     
     New Lore:Location added
     
-    See merge request darkofocdarko/foc!211
+    See merge request darkofocdarko/fort-of-chains!211
 
 commit 4fb244f1b4983a35614f90c602402e8bd65aa1bc
 Author: Matthew Lang <21751-keldaryth@users.noreply.gitgud.io>
@@ -955,7 +955,7 @@ Date:   Thu May 13 17:53:40 2021 +0000
     
     Closes #301 and #292
     
-    See merge request darkofocdarko/foc!202
+    See merge request darkofocdarko/fort-of-chains!202
 
 commit 92dc764f83bae3ddb87921d72a46558c6ba7757e
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -1701,7 +1701,7 @@ Date:   Wed May 12 04:27:26 2021 +0000
     
     Visiting the injured minor update
     
-    See merge request darkofocdarko/foc!208
+    See merge request darkofocdarko/fort-of-chains!208
 
 commit b4e04d788cfd277d1e4eaeca7596aa62c36b27d9
 Author: keldaryth <21751-keldaryth@users.noreply.gitgud.io>
@@ -1738,7 +1738,7 @@ Merge: ba8395e5d 1da775146
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Wed May 12 00:33:40 2021 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit ba8395e5dc303bc16e7c88148710dfa6e737691d
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -1755,7 +1755,7 @@ Date:   Tue May 11 17:18:00 2021 +0000
     
     Update investment_banking.twee quest - edit for grammar, flow, tense and gender tags - Matthew Lang
     
-    See merge request darkofocdarko/foc!207
+    See merge request darkofocdarko/fort-of-chains!207
 
 commit 008241d2daf3e49743ceb8ae7118ae597f8e6d13
 Merge: 86b081fb4 a367cd145
@@ -1766,7 +1766,7 @@ Date:   Tue May 11 17:14:50 2021 +0000
     
     Replace QuestingSquire.twee - Quest edit for grammar and spelling - Matthew Lang
     
-    See merge request darkofocdarko/foc!206
+    See merge request darkofocdarko/fort-of-chains!206
 
 commit a4efaa6870f99b7cce76a80545cd01e3e9dcad0c
 Author: keldaryth <21751-keldaryth@users.noreply.gitgud.io>
@@ -1819,7 +1819,7 @@ Date:   Tue May 11 12:44:08 2021 +0000
     
     Update _texts.twee - grammar and spelling check. All adverbs now work as...
     
-    See merge request darkofocdarko/foc!205
+    See merge request darkofocdarko/fort-of-chains!205
 
 commit 9da737e48d19d6953c4db8945f6e69af2eeb8347
 Author: keldaryth <21751-keldaryth@users.noreply.gitgud.io>
@@ -1884,7 +1884,7 @@ Date:   Mon May 10 14:59:17 2021 +0000
     
     Edit for spelling, grammar, text flow, slightly more realistic wolf behaviour...
     
-    See merge request darkofocdarko/foc!203
+    See merge request darkofocdarko/fort-of-chains!203
 
 commit 5fa4a868793275cf88ab6e6a2fdcca14541f04cb
 Author: keldaryth <21751-keldaryth@users.noreply.gitgud.io>
@@ -2131,7 +2131,7 @@ Date:   Sat May 8 16:40:28 2021 +0000
     
     Closes #297
     
-    See merge request darkofocdarko/foc!201
+    See merge request darkofocdarko/fort-of-chains!201
 
 commit 7398a7b5ebcd4f994f610805812763230c93fabf
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -2884,7 +2884,7 @@ Merge: aac727b3e b68e80ae7
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Sat Apr 24 11:51:01 2021 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit aac727b3ec6672e1fe39e7cdd41f7433e21fed74
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -2921,7 +2921,7 @@ Date:   Fri Apr 23 18:08:25 2021 +0000
     
     Closes #285
     
-    See merge request darkofocdarko/foc!200
+    See merge request darkofocdarko/fort-of-chains!200
 
 commit 864e2f960d164184c79d5e753cce0ce37d8474e8
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -3525,7 +3525,7 @@ Merge: 1a2bc3b57 34eebc14b
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Fri Apr 16 23:13:56 2021 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 1a2bc3b576b9eef17d15080d6eb9303e9ae5b7fe
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -4076,7 +4076,7 @@ Date:   Mon Apr 12 15:08:53 2021 +0000
     
     Closes #282
     
-    See merge request darkofocdarko/foc!199
+    See merge request darkofocdarko/fort-of-chains!199
 
 commit 64c6470414516e123803d450dfc3e3b74fdf82e8
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -4359,7 +4359,7 @@ Merge: 03a611ec8 64aa5d34e
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Thu Apr 8 00:23:26 2021 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 64aa5d34e544d0944c1da0025057a1adacf2cfe4
 Merge: 41428dffb 1ab34440a
@@ -4372,7 +4372,7 @@ Date:   Wed Apr 7 17:23:19 2021 +0000
     
     Closes #270
     
-    See merge request darkofocdarko/foc!197
+    See merge request darkofocdarko/fort-of-chains!197
 
 commit 1ab34440acab29b2f41b39367ee3b53ffaae4998
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -4547,7 +4547,7 @@ Date:   Mon Apr 5 18:47:25 2021 +0000
     
     Closes #273
     
-    See merge request darkofocdarko/foc!198
+    See merge request darkofocdarko/fort-of-chains!198
 
 commit 6724da078d5f8a6f0855eb92ae2829ac76177a3f
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -4628,7 +4628,7 @@ Merge: ca99a84a3 ff7d4a702
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Fri Apr 2 20:48:29 2021 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit ca99a84a3ac903b46d87935a0d38b17ca4b14f22
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -4687,7 +4687,7 @@ Date:   Fri Apr 2 08:29:52 2021 +0000
     
     Harbinger of Bad Luck quest chain
     
-    See merge request darkofocdarko/foc!196
+    See merge request darkofocdarko/fort-of-chains!196
 
 commit c3b9eb5cc2dc360a2ab593eb8d3fdbb8e6658d5a
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -5026,7 +5026,7 @@ Date:   Thu Mar 25 15:49:47 2021 +0000
     
     Closes #265
     
-    See merge request darkofocdarko/foc!194
+    See merge request darkofocdarko/fort-of-chains!194
 
 commit ab7a8211e44eec47e0317ba6e6603da16790e209
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -5055,7 +5055,7 @@ Date:   Thu Mar 25 04:40:38 2021 +0000
     
     Minor grammar fixes
     
-    See merge request darkofocdarko/foc!195
+    See merge request darkofocdarko/fort-of-chains!195
 
 commit d698c2dd36620c132a01bdaeb6f5448571fef584
 Author: Elannil <20473-Elannil@users.noreply.gitgud.io>
@@ -5176,7 +5176,7 @@ Merge: d8ce7072a 5e3b9085e
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Sat Mar 20 12:36:44 2021 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit d8ce7072aca8ef0d558b58a8ecc85c7ea885fe3f
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -5303,7 +5303,7 @@ Date:   Thu Mar 18 20:51:51 2021 +0000
     
     Closes #263
     
-    See merge request darkofocdarko/foc!193
+    See merge request darkofocdarko/fort-of-chains!193
 
 commit dbeecc9771b76d0ee1f000750004fe9967476e3a
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -5382,7 +5382,7 @@ Merge: 9586659e7 c2293839a
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Wed Mar 17 18:36:34 2021 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 9586659e7bfd87de9df00906ab50234762ee929b
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -5489,7 +5489,7 @@ Date:   Sat Mar 13 13:34:18 2021 +0000
     
     [Spacebar] shortcuts galore
     
-    See merge request darkofocdarko/foc!192
+    See merge request darkofocdarko/fort-of-chains!192
 
 commit 16c15c8200d251b56b2bdbb16fb1282c997c8aa7
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -5826,7 +5826,7 @@ Date:   Tue Mar 9 19:10:29 2021 +0000
     
     Closes #262 and #261
     
-    See merge request darkofocdarko/foc!190
+    See merge request darkofocdarko/fort-of-chains!190
 
 commit 5ba9ff744e87d3dddff3d5308e0cb7be9c019b52
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -5917,7 +5917,7 @@ Date:   Mon Mar 8 13:42:37 2021 +0000
     
     Closes #260
     
-    See merge request darkofocdarko/foc!189
+    See merge request darkofocdarko/fort-of-chains!189
 
 commit dc067b8ae2b221d0c5cd75c82f13d2315328b1f7
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -6014,7 +6014,7 @@ Merge: b6de29f21 dabd30f15
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Mon Mar 8 12:23:07 2021 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit dabd30f157b58256822c792914a648d126f6e6fe
 Merge: 9d103c626 e98883f61
@@ -6025,7 +6025,7 @@ Date:   Mon Mar 8 05:22:59 2021 +0000
     
     Lore fixes
     
-    See merge request darkofocdarko/foc!188
+    See merge request darkofocdarko/fort-of-chains!188
 
 commit e98883f617c1ef8fd9823ed9ab68d3e7d5a9874c
 Author: Elannil <20473-Elannil@users.noreply.gitgud.io>
@@ -6200,7 +6200,7 @@ Merge: 729d94905 e098178dc
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Sat Mar 6 12:19:55 2021 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit e098178dc46df0db1346ac872414970eec930e0a
 Merge: ab84d6ac4 0d4e12dd8
@@ -6211,7 +6211,7 @@ Date:   Sat Mar 6 05:19:36 2021 +0000
     
     Minor typo fixes
     
-    See merge request darkofocdarko/foc!187
+    See merge request darkofocdarko/fort-of-chains!187
 
 commit 0d4e12dd815ccf0d1ccc15778271924c36897c39
 Author: Kyrozis <20372-Kyrozis@users.noreply.gitgud.io>
@@ -6324,7 +6324,7 @@ Date:   Thu Mar 4 18:27:20 2021 +0000
     
     Update play_with_the_slave.twee - If else at the "warm cum" part was unnecessary
     
-    See merge request darkofocdarko/foc!186
+    See merge request darkofocdarko/fort-of-chains!186
 
 commit 0b2ff1555e9c481e0a263b09c1aa222ff6902318
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -6427,7 +6427,7 @@ Merge: f60ae9093 43e9f34ee
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Thu Mar 4 01:11:26 2021 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 43e9f34ee4da4d6f6ea78d545977e6ed265475fc
 Merge: ebb3447c0 e1a79c088
@@ -6438,7 +6438,7 @@ Date:   Wed Mar 3 18:11:08 2021 +0000
     
     Titfuck
     
-    See merge request darkofocdarko/foc!185
+    See merge request darkofocdarko/fort-of-chains!185
 
 commit e1a79c088856bb24f1dcc4716bc7bdb85634569c
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -6469,7 +6469,7 @@ Merge: 244f5af2b d842dab22
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Tue Mar 2 23:50:22 2021 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit d842dab22bcafd50f8be5bf1f1bfe6f7555e0bf5
 Merge: 24c494e38 9db67af1e
@@ -6480,7 +6480,7 @@ Date:   Tue Mar 2 16:50:11 2021 +0000
     
     DnD quest chain
     
-    See merge request darkofocdarko/foc!184
+    See merge request darkofocdarko/fort-of-chains!184
 
 commit 9db67af1ec210f2e60dcde96cf078377c1facacd
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -6533,7 +6533,7 @@ Date:   Tue Mar 2 06:50:43 2021 +0000
     
     Master
     
-    See merge request darkofocdarko/foc!183
+    See merge request darkofocdarko/fort-of-chains!183
 
 commit dbc915a466888ec4b84102a01dc1ffc49f62531a
 Author: Kyrozis <20372-Kyrozis@users.noreply.gitgud.io>
@@ -6824,7 +6824,7 @@ Merge: 77b47be61 875949471
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Sat Feb 27 17:04:08 2021 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 77b47be6175fade7e9b95b6f443b3c8ff325dcba
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -6841,7 +6841,7 @@ Date:   Sat Feb 27 10:02:42 2021 +0000
     
     Lunatic slaver event/quest
     
-    See merge request darkofocdarko/foc!182
+    See merge request darkofocdarko/fort-of-chains!182
 
 commit c76e72202ffbf0d36ed7dc14b754706fd6ef16e3
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -7448,7 +7448,7 @@ Merge: 3dc4286a3 502c280a7
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Tue Feb 23 22:46:25 2021 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 502c280a7d451c6e1dfdfce8498e92fab2df496f
 Merge: a55b8a900 02f44b3c1
@@ -7461,7 +7461,7 @@ Date:   Tue Feb 23 15:46:10 2021 +0000
     
     Closes #258
     
-    See merge request darkofocdarko/foc!181
+    See merge request darkofocdarko/fort-of-chains!181
 
 commit 02f44b3c132150b8af561cc25f9156ccbb973698
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -7702,7 +7702,7 @@ Date:   Sun Feb 21 19:06:42 2021 +0000
     
     Brothel quest chain (part 1)
     
-    See merge request darkofocdarko/foc!170
+    See merge request darkofocdarko/fort-of-chains!170
 
 commit ce7e600928f658f3ad8596be1249a3a5d5df19ff
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -7779,7 +7779,7 @@ Date:   Sat Feb 20 07:03:23 2021 +0000
     
     Trait Sorting and Overhaul
     
-    See merge request darkofocdarko/foc!180
+    See merge request darkofocdarko/fort-of-chains!180
 
 commit adaf4e03071aca5d2e06233dec655fb6628281af
 Author: RikuAotsuki <20134-RikuAotsuki@users.noreply.gitgud.io>
@@ -7882,7 +7882,7 @@ Date:   Fri Feb 19 08:44:36 2021 +0000
     
     Closes #257
     
-    See merge request darkofocdarko/foc!178
+    See merge request darkofocdarko/fort-of-chains!178
 
 commit ffa51f47bc970d531c204ea5db96b6e9e8b5d1ac
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -7929,7 +7929,7 @@ Date:   Thu Feb 18 14:09:52 2021 +0000
     
     Predefined Mission Role Trait Overhaul
     
-    See merge request darkofocdarko/foc!177
+    See merge request darkofocdarko/fort-of-chains!177
 
 commit 54724c14f4ace186563ca60507d0474d22d34728
 Author: RikuAotsuki <20134-RikuAotsuki@users.noreply.gitgud.io>
@@ -8126,7 +8126,7 @@ Date:   Tue Feb 16 19:44:09 2021 +0000
     
     Furging a New Path equipment reward.
     
-    See merge request darkofocdarko/foc!176
+    See merge request darkofocdarko/fort-of-chains!176
 
 commit 97901efcbaf3c5a78d5ce72ed8d762d2b9d993b8
 Author: ChristianS <19870-ChristianS@users.noreply.gitgud.io>
@@ -8199,7 +8199,7 @@ Merge: ed9277e5a 88f9b4b14
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Tue Feb 16 15:52:30 2021 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 88f9b4b14679a3072246bab12d86e5e0054f6113
 Merge: 51bee1a3f 2544f20d0
@@ -8210,7 +8210,7 @@ Date:   Tue Feb 16 08:52:16 2021 +0000
     
     Paws from the past quest chain by Milk Maid Sona
     
-    See merge request darkofocdarko/foc!174
+    See merge request darkofocdarko/fort-of-chains!174
 
 commit 2544f20d089918b21f2a636364e8a6cd0848fb3a
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -8233,7 +8233,7 @@ Date:   Tue Feb 16 05:03:26 2021 +0000
     
     Fixed some spelling and grammar issues I noticed.
     
-    See merge request darkofocdarko/foc!175
+    See merge request darkofocdarko/fort-of-chains!175
 
 commit 4b602066bef52c46f6d9ee6055325de85863f4df
 Author: AbleCharlie <19942-AbleCharlie@users.noreply.gitgud.io>
@@ -8282,7 +8282,7 @@ Merge: 3ec86623b 67fd12329
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Mon Feb 15 16:41:32 2021 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 3ec86623b9c88d4c223902c5303d00aa3e2e75a0
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -8349,7 +8349,7 @@ Merge: 6ee8d6b6a aa232c34c
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Mon Feb 15 11:34:15 2021 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit aa232c34c32ea14bdd41c0dc35aa59ae808b703c
 Merge: 699b69aae 5fab44826
@@ -8360,7 +8360,7 @@ Date:   Mon Feb 15 04:34:07 2021 +0000
     
     Fixed some issues with grammar.
     
-    See merge request darkofocdarko/foc!173
+    See merge request darkofocdarko/fort-of-chains!173
 
 commit 6ee8d6b6a84c053e79443776c79c406a0be5cf04
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -8601,7 +8601,7 @@ Merge: 964e3a9e3 0df7a13ea
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Sat Feb 13 11:48:39 2021 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 964e3a9e3ee2ee532ae9c64a6b68f9e36d8433cd
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -8620,7 +8620,7 @@ Date:   Sat Feb 13 04:27:27 2021 +0000
     
     Update ValeFarmRaid.twee
     
-    See merge request darkofocdarko/foc!172
+    See merge request darkofocdarko/fort-of-chains!172
 
 commit 9ddda5ba1694cddb899f5317b3da62fe3ce58381
 Merge: 28fe38ea1 b69e8fc09
@@ -8631,7 +8631,7 @@ Date:   Sat Feb 13 04:26:40 2021 +0000
     
     Update fertility_rite.twee
     
-    See merge request darkofocdarko/foc!171
+    See merge request darkofocdarko/fort-of-chains!171
 
 commit ac0a45c239114b6c83e08c712842f41c55b8ac86
 Author: AbleCharlie <19942-AbleCharlie@users.noreply.gitgud.io>
@@ -8708,7 +8708,7 @@ Date:   Fri Feb 12 13:45:13 2021 +0000
     
     RemoveDuty cost and UnitGroupHasUnit in content creator
     
-    See merge request darkofocdarko/foc!169
+    See merge request darkofocdarko/fort-of-chains!169
 
 commit b93a74f2a2eacec2f8252a0d1d2883ab88138eb6
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -8991,7 +8991,7 @@ Merge: 9d89f8deb e3e13d482
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Wed Feb 10 16:14:04 2021 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 9d89f8deb99114231ed931f70526e016983adc8b
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -9008,7 +9008,7 @@ Date:   Wed Feb 10 06:37:14 2021 +0000
     
     Update river_spirit.twee
     
-    See merge request darkofocdarko/foc!168
+    See merge request darkofocdarko/fort-of-chains!168
 
 commit ba0d6c02fa7a2cd1967a5e8ec3cbdfc0933b1a38
 Author: AbleCharlie <19942-AbleCharlie@users.noreply.gitgud.io>
@@ -9025,7 +9025,7 @@ Date:   Tue Feb 9 23:12:08 2021 +0000
     
     Update training.twee to fix some spelling and grammatical errors.
     
-    See merge request darkofocdarko/foc!167
+    See merge request darkofocdarko/fort-of-chains!167
 
 commit c7537a17c74ba06629b05287f5ff4295251a6d19
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -9176,7 +9176,7 @@ Date:   Tue Feb 9 13:22:18 2021 +0000
     
     Closes #250
     
-    See merge request darkofocdarko/foc!166
+    See merge request darkofocdarko/fort-of-chains!166
 
 commit 7becd686187c0b3568b88e9bb07a7a2286d55bf6
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -9219,7 +9219,7 @@ Merge: b4aa3801e 0bad5d94e
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Tue Feb 9 01:01:49 2021 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 0bad5d94ef6d81417545d1ee2b4e422ce9fa3801
 Merge: af874c53f a76b28783
@@ -9230,7 +9230,7 @@ Date:   Mon Feb 8 18:01:46 2021 +0000
     
     Fruit of Lewdity Quest Chain
     
-    See merge request darkofocdarko/foc!165
+    See merge request darkofocdarko/fort-of-chains!165
 
 commit a76b28783be1749251338ec9b50526471079d841
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -9351,7 +9351,7 @@ Date:   Mon Feb 8 08:47:22 2021 +0000
     
     Closes #112
     
-    See merge request darkofocdarko/foc!164
+    See merge request darkofocdarko/fort-of-chains!164
 
 commit 92d68dcf12a52aa36b0c3a904d1fac23ada583a5
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -9782,7 +9782,7 @@ Date:   Fri Feb 5 10:38:19 2021 +0000
     
     Random events that have flavor decisions to be made.
     
-    See merge request darkofocdarko/foc!163
+    See merge request darkofocdarko/fort-of-chains!163
 
 commit 2fe7920872c07656c7f42f5aac8f418c288ec32d
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -9901,7 +9901,7 @@ Merge: 1de26218d 5a1b016cd
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Thu Feb 4 12:35:38 2021 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 1de26218d7b62d829a228b10907933c034fef0ee
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -9988,7 +9988,7 @@ Date:   Mon Feb 1 12:34:48 2021 +0000
     
     Closes #246
     
-    See merge request darkofocdarko/foc!162
+    See merge request darkofocdarko/fort-of-chains!162
 
 commit 3eb5baabf56be016b2c7394363dc309401f8ed56
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -10007,7 +10007,7 @@ Date:   Mon Feb 1 12:21:09 2021 +0000
     
     Rival blackmail quest chain (part 2)
     
-    See merge request darkofocdarko/foc!161
+    See merge request darkofocdarko/fort-of-chains!161
 
 commit e2cf02bc57573c02bb3623d5a974fb6c44fb9ffa
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -10042,7 +10042,7 @@ Date:   Mon Feb 1 04:53:21 2021 +0000
     
     Rival Blackmail quest chain (part 1)
     
-    See merge request darkofocdarko/foc!160
+    See merge request darkofocdarko/fort-of-chains!160
 
 commit e9b73d1070d286b4f26d974b9e0d3c822b884636
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -10111,7 +10111,7 @@ Merge: aa7dd3c31 702204eba
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Sun Jan 31 12:59:09 2021 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit aa7dd3c316d150f1ab24b14f8dabe53e2137ac45
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -10296,7 +10296,7 @@ Date:   Fri Jan 29 10:17:29 2021 +0000
     
     Obedience Lesson quest chain
     
-    See merge request darkofocdarko/foc!159
+    See merge request darkofocdarko/fort-of-chains!159
 
 commit 7a98aef9d9bda95cf54c2eac6c074d36ae94c9e8
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -10367,7 +10367,7 @@ Date:   Thu Jan 28 11:27:00 2021 +0000
     
     Mist apprenticeship quest chain
     
-    See merge request darkofocdarko/foc!156
+    See merge request darkofocdarko/fort-of-chains!156
 
 commit b43e651815c640497389d89ab9220f2e5b71bb7f
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -10391,7 +10391,7 @@ Date:   Thu Jan 28 04:52:05 2021 +0000
     
     Unsorted skills option
     
-    See merge request darkofocdarko/foc!157
+    See merge request darkofocdarko/fort-of-chains!157
 
 commit 5a48bd40d471a65d228dd4d45eb40d245c6aa4b4
 Merge: c926fcee0 62bca757f
@@ -10402,7 +10402,7 @@ Date:   Thu Jan 28 04:49:54 2021 +0000
     
     Add parenthesis to skill tooltip
     
-    See merge request darkofocdarko/foc!158
+    See merge request darkofocdarko/fort-of-chains!158
 
 commit 62bca757fec3a45c6588e8da9f3c931e27cac53e
 Author: sssk <sssk>
@@ -10501,7 +10501,7 @@ Date:   Wed Jan 27 10:33:39 2021 +0000
     
     Closes #234
     
-    See merge request darkofocdarko/foc!155
+    See merge request darkofocdarko/fort-of-chains!155
 
 commit 2e7923311d2efd78d9245c939bdba9a53199f84e
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -10556,7 +10556,7 @@ Date:   Tue Jan 26 13:31:26 2021 +0000
     
     Closes #236
     
-    See merge request darkofocdarko/foc!154
+    See merge request darkofocdarko/fort-of-chains!154
 
 commit cf448b204587082f4fb3340107e0dd7fa15cd315
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -10583,7 +10583,7 @@ Date:   Tue Jan 26 11:21:18 2021 +0000
     
     Closes #146
     
-    See merge request darkofocdarko/foc!153
+    See merge request darkofocdarko/fort-of-chains!153
 
 commit 65c92d6dd283b3a251cd15f1cf3b41da0012c685
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -10638,7 +10638,7 @@ Date:   Mon Jan 25 18:35:40 2021 +0000
     
     Closes #233 and #235
     
-    See merge request darkofocdarko/foc!152
+    See merge request darkofocdarko/fort-of-chains!152
 
 commit 05d6ac3baf2bc2888e5692f58a9a1fcbd7d17a22
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -10711,7 +10711,7 @@ Date:   Sun Jan 24 18:32:53 2021 +0000
     
     Closes #230
     
-    See merge request darkofocdarko/foc!151
+    See merge request darkofocdarko/fort-of-chains!151
 
 commit 3c68c4dd01d7b3611cb4b30a37172966163bf3be
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -10828,7 +10828,7 @@ Date:   Sat Jan 23 16:35:33 2021 +0000
     
     Closes #229
     
-    See merge request darkofocdarko/foc!150
+    See merge request darkofocdarko/fort-of-chains!150
 
 commit 9b2562545fe0f37c144545d508651148386ee8ff
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -10863,7 +10863,7 @@ Date:   Sat Jan 23 12:34:51 2021 +0000
     
     Finding Fairy quest chain (part 1)
     
-    See merge request darkofocdarko/foc!149
+    See merge request darkofocdarko/fort-of-chains!149
 
 commit 70b6ea8beb2e79de81d619a224f5ff6bc3d1fc8b
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -10904,7 +10904,7 @@ Date:   Sat Jan 23 07:31:18 2021 +0000
     
     Fairy subrace implemented and fix example imagepack.
     
-    See merge request darkofocdarko/foc!148
+    See merge request darkofocdarko/fort-of-chains!148
 
 commit 8824940a11c1a1e327991661663b96fcf2435a54
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -10989,7 +10989,7 @@ Date:   Fri Jan 22 07:09:01 2021 -0800
     
     Closes #227
     
-    See merge request darkofocdarko/foc!147
+    See merge request darkofocdarko/fort-of-chains!147
 
 commit c19357fa779fc19ae7bd4817e958b8ac81645315
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -11030,7 +11030,7 @@ Date:   Thu Jan 21 12:46:26 2021 -0800
     
     Closes #225
     
-    See merge request darkofocdarko/foc!146
+    See merge request darkofocdarko/fort-of-chains!146
 
 commit da509a84c924f5ca21abd1e23cdf3b422d81bea1
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -11113,7 +11113,7 @@ Date:   Wed Jan 20 10:43:37 2021 -0800
     
     Broken Wings quest chain (part 1)
     
-    See merge request darkofocdarko/foc!145
+    See merge request darkofocdarko/fort-of-chains!145
 
 commit a603f0257d6987bf993f048e98b9c4fa9e0ef328
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -11154,7 +11154,7 @@ Date:   Wed Jan 20 08:08:24 2021 -0800
     
     Fix unit history not converted from a|their syntax.
     
-    See merge request darkofocdarko/foc!144
+    See merge request darkofocdarko/fort-of-chains!144
 
 commit 47f7517d04ca7308e1fecffa9897365adf0a665c
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -11209,7 +11209,7 @@ Date:   Tue Jan 19 09:20:24 2021 -0800
     
     Closes #170 and #222
     
-    See merge request darkofocdarko/foc!143
+    See merge request darkofocdarko/fort-of-chains!143
 
 commit 8aa348cff79e93a98e08f9c379cdfc3260a625ea
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -11555,7 +11555,7 @@ Date:   Sat Jan 16 05:37:08 2021 -0800
     
     Closes #184
     
-    See merge request darkofocdarko/foc!138
+    See merge request darkofocdarko/fort-of-chains!138
 
 commit 8433377cf5e8391d6edd8ba09b9f3ae8a467cd43
 Author: alarmedcat <19493-alarmedcat@users.noreply.gitgud.io>
@@ -11756,7 +11756,7 @@ Date:   Fri Jan 15 03:28:57 2021 -0800
     
     Use source mapping in webpack.
     
-    See merge request darkofocdarko/foc!142
+    See merge request darkofocdarko/fort-of-chains!142
 
 commit 88f43db625d6a7ad45473617f9a63ed1c96fa0b8
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -11829,7 +11829,7 @@ Date:   Thu Jan 14 11:16:36 2021 -0800
     
     Closes #212
     
-    See merge request darkofocdarko/foc!141
+    See merge request darkofocdarko/fort-of-chains!141
 
 commit 648e763502940c594a38188d6cf9778f75c8d654
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -11902,7 +11902,7 @@ Date:   Wed Jan 13 10:44:39 2021 -0800
     
     Closes #210
     
-    See merge request darkofocdarko/foc!140
+    See merge request darkofocdarko/fort-of-chains!140
 
 commit e1e7f9c157eb1e779d44b049ca0e38a5ec06f803
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -11977,7 +11977,7 @@ Date:   Tue Jan 12 02:03:29 2021 -0800
     
     Closes #209 and #208
     
-    See merge request darkofocdarko/foc!139
+    See merge request darkofocdarko/fort-of-chains!139
 
 commit d46233a0312d4196117e20e27e02f21aa67cce4b
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -12032,7 +12032,7 @@ Date:   Mon Jan 11 02:13:03 2021 -0800
     
     Closes #207
     
-    See merge request darkofocdarko/foc!137
+    See merge request darkofocdarko/fort-of-chains!137
 
 commit a49decfde6eea50c11daf3a2b4210aa936bc5681
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -12139,7 +12139,7 @@ Date:   Sun Jan 10 02:05:04 2021 -0800
     
     Closes #204
     
-    See merge request darkofocdarko/foc!136
+    See merge request darkofocdarko/fort-of-chains!136
 
 commit 120af91b7e21ba4ba09bc42d6054385d52785eeb
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -12182,7 +12182,7 @@ Date:   Sat Jan 9 23:32:56 2021 -0800
     
     Closes #200
     
-    See merge request darkofocdarko/foc!135
+    See merge request darkofocdarko/fort-of-chains!135
 
 commit 04616cd05d6e8e863fcf13a018c88b121a398d87
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -12291,7 +12291,7 @@ Date:   Sat Jan 9 05:35:30 2021 -0800
     
     echoMessage and echoError didn't exist
     
-    See merge request darkofocdarko/foc!134
+    See merge request darkofocdarko/fort-of-chains!134
 
 commit 62719a768e33803761aadabc4720cfb806a450f9
 Author: alarmedcat <alarmedcat2@protonmail.com>
@@ -12308,7 +12308,7 @@ Date:   Sat Jan 9 05:28:37 2021 -0800
     
     Fix typos for acquaintance
     
-    See merge request darkofocdarko/foc!133
+    See merge request darkofocdarko/fort-of-chains!133
 
 commit 9320201be1b9fb40646f7ea30379a3111303c2b4
 Author: alarmedcat <alarmedcat2@protonmail.com>
@@ -12427,7 +12427,7 @@ Date:   Fri Jan 8 20:11:37 2021 -0800
     
     optimize png files using optipng
     
-    See merge request darkofocdarko/foc!132
+    See merge request darkofocdarko/fort-of-chains!132
 
 commit 375eeb41bbef1240e7d0e39847fe81da4717335f
 Author: alarmedcat <alarmedcat2@protonmail.com>
@@ -12490,7 +12490,7 @@ Date:   Fri Jan 8 08:32:59 2021 -0800
     
     Items converted to javascript.
     
-    See merge request darkofocdarko/foc!130
+    See merge request darkofocdarko/fort-of-chains!130
 
 commit aa012740ca53755e3b9c4a024a09ecbc856ccb8d
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -12655,7 +12655,7 @@ Date:   Thu Jan 7 06:19:31 2021 -0800
     
     Closes #197
     
-    See merge request darkofocdarko/foc!129
+    See merge request darkofocdarko/fort-of-chains!129
 
 commit 4380ea731a6f06d579a6813f1a33a6452e0c0b48
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -12710,7 +12710,7 @@ Date:   Wed Jan 6 11:21:19 2021 -0800
     
     Kiss Sex Action. Deprecate Kiss interaction.
     
-    See merge request darkofocdarko/foc!128
+    See merge request darkofocdarko/fort-of-chains!128
 
 commit 6943c621c3ec047c2c2fe7ad3bf9089e85f6ff81
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -12757,7 +12757,7 @@ Date:   Wed Jan 6 07:07:30 2021 -0800
     
     Closes #193
     
-    See merge request darkofocdarko/foc!127
+    See merge request darkofocdarko/fort-of-chains!127
 
 commit 8a377fc88b5d20da8c4b7ef7726692fdf6a2c133
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -12843,7 +12843,7 @@ Date:   Tue Jan 5 08:13:15 2021 -0800
     
     Mouth - Hole sex actions
     
-    See merge request darkofocdarko/foc!126
+    See merge request darkofocdarko/fort-of-chains!126
 
 commit 1c06eb11c462711b1a49b1051e3f583d9c0d8599
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -12893,7 +12893,7 @@ Date:   Tue Jan 5 00:52:52 2021 -0800
     
     Facesitting position.
     
-    See merge request darkofocdarko/foc!125
+    See merge request darkofocdarko/fort-of-chains!125
 
 commit be24b15a896da49fb4502e3e46a3d40e1d4b1121
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -12978,7 +12978,7 @@ Date:   Mon Jan 4 10:40:33 2021 -0800
     
     Closes #167, #179, #177, #176, #175, #173, #172, and #171
     
-    See merge request darkofocdarko/foc!123
+    See merge request darkofocdarko/fort-of-chains!123
 
 commit a8e4bb49bb6bdb94245a873f10057e01ba5e0b03
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -13297,7 +13297,7 @@ Merge: e2453ba9a 05015ac74
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Sat Jan 2 09:33:21 2021 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit e2453ba9af69fde753c52721711dcdf3db6d8112
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -13320,7 +13320,7 @@ Date:   Fri Jan 1 10:54:59 2021 -0800
     
     Sarsatically -> Sarcastically typo
     
-    See merge request darkofocdarko/foc!124
+    See merge request darkofocdarko/fort-of-chains!124
 
 commit a74f73ed6a106ec71fbfcb685e2c8168c0443ebb
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -13411,7 +13411,7 @@ Date:   Thu Dec 31 20:00:35 2020 -0800
     
     New quest + opportunity
     
-    See merge request darkofocdarko/foc!119
+    See merge request darkofocdarko/fort-of-chains!119
 
 commit 07d96f961ad13eb426884eb0337e8d6986914dbf
 Merge: 9c7e5b76a ebaa92b81
@@ -13422,7 +13422,7 @@ Date:   Thu Dec 31 19:52:19 2020 -0800
     
     Fix typo: "Invinsible"
     
-    See merge request darkofocdarko/foc!122
+    See merge request darkofocdarko/fort-of-chains!122
 
 commit ebaa92b8100db1f18cd02cef8fc57bf0067a3206
 Author: Anu
@@ -13511,7 +13511,7 @@ Date:   Wed Dec 30 07:53:10 2020 -0800
     
     Closes #164
     
-    See merge request darkofocdarko/foc!121
+    See merge request darkofocdarko/fort-of-chains!121
 
 commit 450e686f288e6ca252de678707e958e7dcc3603b
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -13549,7 +13549,7 @@ Date:   Wed Dec 30 05:48:10 2020 -0800
     
     Closes #169
     
-    See merge request darkofocdarko/foc!120
+    See merge request darkofocdarko/fort-of-chains!120
 
 commit 0502d8d0f578d2cb8bb63626feb49235fa89c2e0
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -13630,7 +13630,7 @@ Date:   Tue Dec 29 05:02:34 2020 -0800
     
     Closes #162
     
-    See merge request darkofocdarko/foc!118
+    See merge request darkofocdarko/fort-of-chains!118
 
 commit d8625c1389b4d5da808c569b3b7d574501f3e37e
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -13723,7 +13723,7 @@ Date:   Mon Dec 28 07:06:05 2020 -0800
     
     Future Assassin quest chain
     
-    See merge request darkofocdarko/foc!117
+    See merge request darkofocdarko/fort-of-chains!117
 
 commit 509009e325830835bc146e1d3a48880c380a4639
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -13776,7 +13776,7 @@ Date:   Sun Dec 27 09:21:10 2020 -0800
     
     Trial of Love quest chain
     
-    See merge request darkofocdarko/foc!116
+    See merge request darkofocdarko/fort-of-chains!116
 
 commit 5ab272ed068b5e6a36957c1ef5774c01c0bc39e6
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -13819,7 +13819,7 @@ Date:   Sun Dec 27 02:03:16 2020 -0800
     
     Feature: Lovers
     
-    See merge request darkofocdarko/foc!115
+    See merge request darkofocdarko/fort-of-chains!115
 
 commit d1ca3ce70066cb7db56bf725a55678419a5ee3c0
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -14042,7 +14042,7 @@ Date:   Fri Dec 25 23:15:09 2020 -0800
     
     The rear deal is now repeatable. Potion of orifice tighening now required for anus/vagina healing.
     
-    See merge request darkofocdarko/foc!114
+    See merge request darkofocdarko/fort-of-chains!114
 
 commit 726086a2e20f5f234e8851a9cb9ae9efc26892bc
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -14220,7 +14220,7 @@ Date:   Fri Dec 25 03:45:05 2020 -0800
     
     Closes #155
     
-    See merge request darkofocdarko/foc!112
+    See merge request darkofocdarko/fort-of-chains!112
 
 commit e91ed2799f6c17330c0dd69853d0ea45bceffbbb
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -14305,7 +14305,7 @@ Merge: 75736809c 47d4fa8be
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Fri Dec 25 10:41:02 2020 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 75736809c301e4a87f37f571de34ff909d32cb24
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -14324,7 +14324,7 @@ Date:   Thu Dec 24 15:12:43 2020 -0800
     
     Closes #144
     
-    See merge request darkofocdarko/foc!108
+    See merge request darkofocdarko/fort-of-chains!108
 
 commit 33b3f58f60651f229f40bd076f284c65ad6122af
 Merge: 6be119948 fe515a430
@@ -14371,7 +14371,7 @@ Date:   Thu Dec 24 10:15:01 2020 -0800
     
     Closes #152
     
-    See merge request darkofocdarko/foc!111
+    See merge request darkofocdarko/fort-of-chains!111
 
 commit e34216f8ca264fdd0143c3a735876bb5866f7c4a
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -14413,7 +14413,7 @@ Date:   Thu Dec 24 06:03:20 2020 -0800
     
     Closes #136
     
-    See merge request darkofocdarko/foc!109
+    See merge request darkofocdarko/fort-of-chains!109
 
 commit 6e0ba0fc6883879bc200b4fbc93ba774570a40f1
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -14468,7 +14468,7 @@ Date:   Thu Dec 24 00:26:37 2020 -0800
     
     Closes #141
     
-    See merge request darkofocdarko/foc!107
+    See merge request darkofocdarko/fort-of-chains!107
 
 commit 0a6babaa2a88c7b7f49f3967f7b08e631f08c3ff
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -14495,7 +14495,7 @@ Date:   Wed Dec 23 22:58:07 2020 -0800
     
     Closes #139
     
-    See merge request darkofocdarko/foc!106
+    See merge request darkofocdarko/fort-of-chains!106
 
 commit bec68e096a50fe902f98bebc85a156bd2167ee50
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -14534,7 +14534,7 @@ Date:   Wed Dec 23 20:34:03 2020 -0800
     
     Closes #126
     
-    See merge request darkofocdarko/foc!105
+    See merge request darkofocdarko/fort-of-chains!105
 
 commit 17a48abf5097c4d3be5e39bbe2acf52a7add8dbc
 Merge: 19ac0ec58 721de9484
@@ -14547,7 +14547,7 @@ Date:   Wed Dec 23 20:23:20 2020 -0800
     
     Closes #128
     
-    See merge request darkofocdarko/foc!104
+    See merge request darkofocdarko/fort-of-chains!104
 
 commit ba1e3b6d79293abb5c5bde93444afe417c5f1844
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -14690,7 +14690,7 @@ Date:   Tue Dec 22 18:33:37 2020 -0800
     
     Replace old map with new map
     
-    See merge request darkofocdarko/foc!103
+    See merge request darkofocdarko/fort-of-chains!103
 
 commit 6e1ab376ac5431bc527e59da3de469de870a96d9
 Author: Naraden <18700-Naraden@users.noreply.gitgud.io>
@@ -14763,7 +14763,7 @@ Merge: 271ee8d5b 7b47f16f1
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Tue Dec 22 21:36:10 2020 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 271ee8d5b3a22d1d66e3833f2cbdc52c9c4da189
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -14784,7 +14784,7 @@ Date:   Tue Dec 22 05:47:16 2020 -0800
     
     Closes #132
     
-    See merge request darkofocdarko/foc!102
+    See merge request darkofocdarko/fort-of-chains!102
 
 commit 76b1d0e4975994a373ed3bceb18a5814fa77a423
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -14821,7 +14821,7 @@ Date:   Tue Dec 22 02:25:09 2020 -0800
     
     Closes #122
     
-    See merge request darkofocdarko/foc!100
+    See merge request darkofocdarko/fort-of-chains!100
 
 commit 98217efe52f1c2ff9e7280140d5a1c08c29633b4
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -14842,7 +14842,7 @@ Date:   Tue Dec 22 01:44:23 2020 -0800
     
     Closes #130
     
-    See merge request darkofocdarko/foc!99
+    See merge request darkofocdarko/fort-of-chains!99
 
 commit 7e1778f27455c4ce61a1e8d39cf160f5357749ec
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -14883,7 +14883,7 @@ Date:   Mon Dec 21 12:02:03 2020 -0800
     
     typo - "every becoming a man" to "ever becoming a man"
     
-    See merge request darkofocdarko/foc!98
+    See merge request darkofocdarko/fort-of-chains!98
 
 commit ac9141831f408e8e734c681e19cb94ecf88c236c
 Author: nezzanine <19077-nezzanine@users.noreply.gitgud.io>
@@ -14914,7 +14914,7 @@ Merge: 259621a0e b5356cf8c
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Tue Dec 22 01:29:11 2020 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 259621a0e02e90a50c8dcfffad059b7adae0ba8c
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -14935,7 +14935,7 @@ Date:   Mon Dec 21 10:03:31 2020 -0800
     
     Closes #133
     
-    See merge request darkofocdarko/foc!97
+    See merge request darkofocdarko/fort-of-chains!97
 
 commit 164289824159f9393dbefbc6e77bcf956c0a559c
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -14956,7 +14956,7 @@ Date:   Mon Dec 21 09:16:40 2020 -0800
     
     Closes #50
     
-    See merge request darkofocdarko/foc!96
+    See merge request darkofocdarko/fort-of-chains!96
 
 commit 62450d178cb6f5b0e71e3008b897bd6f3d98ee23
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -14995,7 +14995,7 @@ Date:   Mon Dec 21 06:33:28 2020 -0800
     
     Rewrote quest tag filter to make it reusable for other parts
     
-    See merge request darkofocdarko/foc!95
+    See merge request darkofocdarko/fort-of-chains!95
 
 commit d41797b2415eb33bb48866a2480902fb5d44e865
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -15016,7 +15016,7 @@ Date:   Mon Dec 21 04:35:45 2020 -0800
     
     Closes #116
     
-    See merge request darkofocdarko/foc!94
+    See merge request darkofocdarko/fort-of-chains!94
 
 commit 841cd8607fe31ade7653476df73c7aba2fecf6e8
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -15045,7 +15045,7 @@ Date:   Mon Dec 21 02:50:58 2020 -0800
     
     Closes #36
     
-    See merge request darkofocdarko/foc!93
+    See merge request darkofocdarko/fort-of-chains!93
 
 commit ec2af32eddea2d113c3d085289867dab7d273873
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -15070,7 +15070,7 @@ Date:   Sun Dec 20 22:36:18 2020 -0800
     
     Intrigue equipment tags, Weed quest spelling error
     
-    See merge request darkofocdarko/foc!92
+    See merge request darkofocdarko/fort-of-chains!92
 
 commit 6853d536ea1e9eaf11e17214b67778acc84c322d
 Author: acciabread <19016-acciabread@users.noreply.gitgud.io>
@@ -15093,7 +15093,7 @@ Date:   Sun Dec 20 11:22:32 2020 -0800
     
     Investment banking quest
     
-    See merge request darkofocdarko/foc!91
+    See merge request darkofocdarko/fort-of-chains!91
 
 commit ceccb90bff0e6b2403d59ea01fb9dc1b7f1d1d73
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -15138,7 +15138,7 @@ Date:   Sun Dec 20 09:28:04 2020 -0800
     
     Potion of isolation and isolation treatment.
     
-    See merge request darkofocdarko/foc!90
+    See merge request darkofocdarko/fort-of-chains!90
 
 commit 5d737505a0794e516034224842c7bee52fe81647
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -15159,7 +15159,7 @@ Date:   Sun Dec 20 08:32:30 2020 -0800
     
     Closes #84
     
-    See merge request darkofocdarko/foc!89
+    See merge request darkofocdarko/fort-of-chains!89
 
 commit 9807282e753ed7d66a5a0e329685dd48c8c68853
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -15198,7 +15198,7 @@ Date:   Sun Dec 20 06:46:51 2020 -0800
     
     Closes #95
     
-    See merge request darkofocdarko/foc!88
+    See merge request darkofocdarko/fort-of-chains!88
 
 commit 7b9e155d8ace6be79a5e4f2ac4db0fae8bed9deb
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -15225,7 +15225,7 @@ Date:   Sun Dec 20 05:51:08 2020 -0800
     
     Closes #96
     
-    See merge request darkofocdarko/foc!87
+    See merge request darkofocdarko/fort-of-chains!87
 
 commit 73d401b9b78abdc67af7d5a034b13abbe7d21599
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -15280,7 +15280,7 @@ Date:   Sat Dec 19 20:19:49 2020 -0800
     
     Added unique icons for equipment items
     
-    See merge request darkofocdarko/foc!86
+    See merge request darkofocdarko/fort-of-chains!86
 
 commit daf487d8a1b0552283cd1bd802135d8a275fe0c0
 Author: Naraden <18700-Naraden@users.noreply.gitgud.io>
@@ -15347,7 +15347,7 @@ Date:   Sat Dec 19 10:06:03 2020 -0800
     
     Closes #118
     
-    See merge request darkofocdarko/foc!85
+    See merge request darkofocdarko/fort-of-chains!85
 
 commit 41369515c7652485ee9f5b07645a27e8d9c4393b
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -15373,7 +15373,7 @@ Date:   Sat Dec 19 08:34:50 2020 -0800
     
     Closes #65 and #91
     
-    See merge request darkofocdarko/foc!84
+    See merge request darkofocdarko/fort-of-chains!84
 
 commit f0851b44f5d7ff303909f1bb68310b7b1428f5a1
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -15394,7 +15394,7 @@ Date:   Sat Dec 19 05:39:02 2020 -0800
     
     Closes #90
     
-    See merge request darkofocdarko/foc!83
+    See merge request darkofocdarko/fort-of-chains!83
 
 commit c7a258a214d277358371ff3bbd5c1b6713f4c752
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -15407,7 +15407,7 @@ Merge: f4dc7affc e5b8a9038
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Sat Dec 19 17:37:14 2020 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit f4dc7affc3c6c1437d9d6b6e98272e859744f268
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -15426,7 +15426,7 @@ Date:   Fri Dec 18 23:50:56 2020 -0800
     
     Can ignore quests.
     
-    See merge request darkofocdarko/foc!82
+    See merge request darkofocdarko/fort-of-chains!82
 
 commit c9ac4e82901fa7520d951c3afc6d66d70560281e
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -15479,7 +15479,7 @@ Date:   Fri Dec 18 21:49:07 2020 -0800
     
     Renamed inquisitive to curious. Merged dec/patient to agg/calm.
     
-    See merge request darkofocdarko/foc!81
+    See merge request darkofocdarko/fort-of-chains!81
 
 commit bde4c38e78e702f3bfd260a08143db11c7af95a1
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -15506,7 +15506,7 @@ Merge: 9547bd41d 03a2a1dfa
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Sat Dec 19 11:34:14 2020 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 9547bd41de14d4f80037fc062e9fb676ad18e8d3
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -15521,9 +15521,9 @@ Date:   Fri Dec 18 20:16:33 2020 -0800
 
     Merge branch 'master' into 'master'
     
-    Applied tags as per https://gitgud.io/darkofocdarko/foc/-/issues/106
+    Applied tags as per https://gitgud.io/darkofocdarko/fort-of-chains/-/issues/106
     
-    See merge request darkofocdarko/foc!80
+    See merge request darkofocdarko/fort-of-chains!80
 
 commit f2b89914ea42b25fcd53f0f793ca8b25bab87825
 Author: acciabread <19016-acciabread@users.noreply.gitgud.io>
@@ -15582,7 +15582,7 @@ Date:   Fri Dec 18 08:43:25 2020 -0800
     
     Closes #20
     
-    See merge request darkofocdarko/foc!79
+    See merge request darkofocdarko/fort-of-chains!79
 
 commit ec09b920604c500b7b6c06b21cda2bd8c8f24960
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -15617,7 +15617,7 @@ Date:   Fri Dec 18 05:58:46 2020 -0800
     
     Closes #109
     
-    See merge request darkofocdarko/foc!78
+    See merge request darkofocdarko/fort-of-chains!78
 
 commit f5a0252c4e14202dfa98475dd6e270a3f71af8bf
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -15638,9 +15638,9 @@ Date:   Fri Dec 18 02:32:35 2020 -0800
 
     Merge branch 'master' into 'master'
     
-    Rebalanced equipment from https://gitgud.io/darkofocdarko/foc/-/issues/106
+    Rebalanced equipment from https://gitgud.io/darkofocdarko/fort-of-chains/-/issues/106
     
-    See merge request darkofocdarko/foc!77
+    See merge request darkofocdarko/fort-of-chains!77
 
 commit 98ee9bafaf8cc66394190f6f3bc70c21192ce6b3
 Author: acciabread <19016-acciabread@users.noreply.gitgud.io>
@@ -15671,7 +15671,7 @@ Date:   Thu Dec 17 22:33:36 2020 -0800
     
     Closes #101
     
-    See merge request darkofocdarko/foc!75
+    See merge request darkofocdarko/fort-of-chains!75
 
 commit ec531b6e0727b20ee4b964351d688be5f683ce19
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -15688,7 +15688,7 @@ Date:   Thu Dec 17 21:48:51 2020 -0800
     
     Genital and weapon equipment slots.
     
-    See merge request darkofocdarko/foc!74
+    See merge request darkofocdarko/fort-of-chains!74
 
 commit efd5bab577fb32715530fc66271a1850d1135e10
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -15707,7 +15707,7 @@ Date:   Thu Dec 17 21:14:16 2020 -0800
     
     Closes #97
     
-    See merge request darkofocdarko/foc!73
+    See merge request darkofocdarko/fort-of-chains!73
 
 commit 84de687a34fc70dfa2fcdddb3629be8f4263046e
 Merge: 0c0ad6130 650ddf124
@@ -15731,7 +15731,7 @@ Date:   Thu Dec 17 20:44:47 2020 -0800
     
     Converted trait icons to SVG, and lots of revisions
     
-    See merge request darkofocdarko/foc!71
+    See merge request darkofocdarko/fort-of-chains!71
 
 commit 809d921792ed05d3a7c0cbdafae1775ab9dc1242
 Author: acciabread <19016-acciabread@users.noreply.gitgud.io>
@@ -15760,9 +15760,9 @@ Date:   Thu Dec 17 10:44:12 2020 -0800
 
     Merge branch 'master' into 'master'
     
-    Made changes from https://gitgud.io/darkofocdarko/foc/-/issues/100
+    Made changes from https://gitgud.io/darkofocdarko/fort-of-chains/-/issues/100
     
-    See merge request darkofocdarko/foc!67
+    See merge request darkofocdarko/fort-of-chains!67
 
 commit 1a01a2a852fd57177f9b429d29508fd0b75b1922
 Author: acciabread <19016-acciabread@users.noreply.gitgud.io>
@@ -15818,7 +15818,7 @@ Date:   Thu Dec 17 08:01:22 2020 -0800
     
     Added lores to content creator toolbar. plainsfolk -> northfolk
     
-    See merge request darkofocdarko/foc!69
+    See merge request darkofocdarko/fort-of-chains!69
 
 commit 9b40626092c2ab405e19ed301d58babecdfca46c
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -15835,7 +15835,7 @@ Date:   Thu Dec 17 07:45:37 2020 -0800
     
     Lore feature (implementation)
     
-    See merge request darkofocdarko/foc!68
+    See merge request darkofocdarko/fort-of-chains!68
 
 commit 2c3d939d9051388d8a048da6b44c150cf709d88d
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -15865,7 +15865,7 @@ commit 4689bef027fa6e2dfa8d21e348697cd2f77d2e84
 Author: acciabread <19016-acciabread@users.noreply.gitgud.io>
 Date:   Wed Dec 16 12:07:19 2020 -0800
 
-    Made changes from https://gitgud.io/darkofocdarko/foc/-/issues/100
+    Made changes from https://gitgud.io/darkofocdarko/fort-of-chains/-/issues/100
 
 commit 1452bbf4246c69a4a525b4aab5b34bc14c45c226
 Merge: d3316a8df 766c7b89e
@@ -15878,7 +15878,7 @@ Date:   Wed Dec 16 11:19:52 2020 -0800
     
     Closes #98
     
-    See merge request darkofocdarko/foc!66
+    See merge request darkofocdarko/fort-of-chains!66
 
 commit 766c7b89e4f4d7bd4fe7ca37a395298b93f24a5c
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -15901,7 +15901,7 @@ Date:   Wed Dec 16 10:15:13 2020 -0800
     
     Quest team assignment rewritten. For #20
     
-    See merge request darkofocdarko/foc!65
+    See merge request darkofocdarko/fort-of-chains!65
 
 commit d3c912c50816fb99d4d4459fb98ddfd9c9f2ff09
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -15942,7 +15942,7 @@ Date:   Wed Dec 16 00:47:08 2020 -0800
     
     Update verb.js
     
-    See merge request darkofocdarko/foc!64
+    See merge request darkofocdarko/fort-of-chains!64
 
 commit 39dac2cdc9fead81d4a64b70e57db40dd1251815
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -15977,7 +15977,7 @@ Date:   Tue Dec 15 23:50:33 2020 -0800
     
     Tagged most quests, added a new one
     
-    See merge request darkofocdarko/foc!63
+    See merge request darkofocdarko/fort-of-chains!63
 
 commit 66b40267591fc761941898e8a6de3656d9a20ff9
 Author: acciabread <19016-acciabread@users.noreply.gitgud.io>
@@ -16060,7 +16060,7 @@ Merge: 0b4ab30de 63f9cd650
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Wed Dec 16 01:16:33 2020 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 63f9cd6503a3fe708d58ef5c7f7ca8fc05da9c83
 Author: Naraden <18700-Naraden@users.noreply.gitgud.io>
@@ -16109,7 +16109,7 @@ Date:   Tue Dec 15 08:17:06 2020 -0800
     
     Closes #53
     
-    See merge request darkofocdarko/foc!61
+    See merge request darkofocdarko/fort-of-chains!61
 
 commit 99d249e4e47f95ad37ea314fa2762e6284c48edb
 Merge: 586bbacd5 d177b7a6c
@@ -16151,7 +16151,7 @@ Date:   Tue Dec 15 07:06:03 2020 -0800
     
     Closes #87
     
-    See merge request darkofocdarko/foc!62
+    See merge request darkofocdarko/fort-of-chains!62
 
 commit f019a615d7cb4e6da0bf84ed87ed77673ea7cc56
 Author: Naraden <18700-Naraden@users.noreply.gitgud.io>
@@ -16202,7 +16202,7 @@ Date:   Mon Dec 14 05:19:49 2020 -0800
     
     add missing dynamic gender to success description
     
-    See merge request darkofocdarko/foc!59
+    See merge request darkofocdarko/fort-of-chains!59
 
 commit 91ad2bad88e9b012510abf092d98883f60cde455
 Merge: 7efa16d20 63091c563
@@ -16213,7 +16213,7 @@ Date:   Mon Dec 14 05:19:28 2020 -0800
     
     add more missing dynamic genders in training
     
-    See merge request darkofocdarko/foc!60
+    See merge request darkofocdarko/fort-of-chains!60
 
 commit 63091c563957e00c906225a7a13f3b01d653eab7
 Author: Stiletto
@@ -16248,7 +16248,7 @@ Date:   Sun Dec 13 20:56:56 2020 -0800
     
     Replaced some trait icons (elf race, gagged, very slutty, fire/dark master)
     
-    See merge request darkofocdarko/foc!58
+    See merge request darkofocdarko/fort-of-chains!58
 
 commit d61205a5162d49a3b10cd31a24e449bf9079e110
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -16291,7 +16291,7 @@ Date:   Sun Dec 13 11:58:31 2020 -0800
     
     Closes #29
     
-    See merge request darkofocdarko/foc!57
+    See merge request darkofocdarko/fort-of-chains!57
 
 commit 5c5b421037a43d03dafa4aa634fa62c674015b7c
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -16322,7 +16322,7 @@ Merge: 291766c9c 73a31fc42
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Sun Dec 13 23:15:12 2020 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 291766c9c0554c1d6e44dd70eda979c080ad2b32
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -16341,7 +16341,7 @@ Date:   Sun Dec 13 08:01:55 2020 -0800
     
     Closes #79
     
-    See merge request darkofocdarko/foc!56
+    See merge request darkofocdarko/fort-of-chains!56
 
 commit 37f14dc10776211664e519763ffc5fce8fc163d5
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -16366,7 +16366,7 @@ Date:   Sun Dec 13 05:55:21 2020 -0800
     
     Closes #80
     
-    See merge request darkofocdarko/foc!55
+    See merge request darkofocdarko/fort-of-chains!55
 
 commit 06dfb55740e7f51b1bc47959e3506f29b45ba1a1
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -16419,7 +16419,7 @@ Date:   Sat Dec 12 23:00:14 2020 -0800
     
     Closes #78
     
-    See merge request darkofocdarko/foc!54
+    See merge request darkofocdarko/fort-of-chains!54
 
 commit 8297397ae0e01486083cc7fe84d1697cfae4dc65
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -16588,7 +16588,7 @@ Date:   Sat Dec 12 01:25:22 2020 -0800
     
     Closes #14
     
-    See merge request darkofocdarko/foc!53
+    See merge request darkofocdarko/fort-of-chains!53
 
 commit 90fdff9d0c1d970530b680cfe041e9f0c5cea07e
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -16608,7 +16608,7 @@ Merge: de6261efe 5da75238a
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Sat Dec 12 16:19:04 2020 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 8e681c80beaa679e29dcbcf9be2a56a0963c3d1e
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -16639,7 +16639,7 @@ Date:   Fri Dec 11 08:47:18 2020 -0800
     
     Closes #70
     
-    See merge request darkofocdarko/foc!52
+    See merge request darkofocdarko/fort-of-chains!52
 
 commit 25ea6d810ed4e67b9dac8b4dadebfdac66deb0c5
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -16676,7 +16676,7 @@ Date:   Fri Dec 11 06:56:01 2020 -0800
     
     Closes #73
     
-    See merge request darkofocdarko/foc!51
+    See merge request darkofocdarko/fort-of-chains!51
 
 commit 11d67b0f7cb8edddcc94a6e33b944fe0438d2b00
 Author: Naraden <18700-Naraden@users.noreply.gitgud.io>
@@ -16719,7 +16719,7 @@ Date:   Fri Dec 11 06:22:24 2020 -0800
     
     Closes #74
     
-    See merge request darkofocdarko/foc!50
+    See merge request darkofocdarko/fort-of-chains!50
 
 commit 441c0a374d18ea596b6957f427079cc4ccaf8d1e
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -16872,7 +16872,7 @@ Date:   Thu Dec 10 20:34:16 2020 -0800
     
     Closes #68
     
-    See merge request darkofocdarko/foc!49
+    See merge request darkofocdarko/fort-of-chains!49
 
 commit bd0100a6e8aa5477d7abe02515ad27acef969576
 Merge: cb644303e 8263015c3
@@ -16890,7 +16890,7 @@ Date:   Thu Dec 10 20:27:03 2020 -0800
     
     Code editor: preview output
     
-    See merge request darkofocdarko/foc!45
+    See merge request darkofocdarko/fort-of-chains!45
 
 commit 19425fbc89cccaf0a5d02c59742bff5c4aa56e50
 Merge: 04b9024aa be3e0d8f8
@@ -16950,7 +16950,7 @@ Date:   Thu Dec 10 10:32:57 2020 -0800
     
     Adjustments on critical and disaster chance computations.
     
-    See merge request darkofocdarko/foc!48
+    See merge request darkofocdarko/fort-of-chains!48
 
 commit bd10201bf205ba005704688111aed1c64a0f0e30
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -16971,7 +16971,7 @@ Date:   Thu Dec 10 08:44:50 2020 -0800
     
     Closes #67
     
-    See merge request darkofocdarko/foc!47
+    See merge request darkofocdarko/fort-of-chains!47
 
 commit cb510ea5bccc4aca42878bbbfcd3613c7580ec41
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -17014,7 +17014,7 @@ Date:   Thu Dec 10 07:42:49 2020 -0800
     
     Closes #66
     
-    See merge request darkofocdarko/foc!46
+    See merge request darkofocdarko/fort-of-chains!46
 
 commit 71abef62ac3a912b30c530a84b4fdca6ce0c8f14
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -17113,7 +17113,7 @@ Merge: 322437cdb 9aa638df0
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Thu Dec 10 00:01:48 2020 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 322437cdb6a1a95d02d3362d426e71cd0104347a
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -17144,7 +17144,7 @@ Date:   Wed Dec 9 06:47:03 2020 -0800
     
     Closes #48
     
-    See merge request darkofocdarko/foc!44
+    See merge request darkofocdarko/fort-of-chains!44
 
 commit b20c3302a2675849a0b07d931e8d6e565da6107f
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -17163,7 +17163,7 @@ Date:   Wed Dec 9 06:34:11 2020 -0800
     
     Navigation rewrites
     
-    See merge request darkofocdarko/foc!42
+    See merge request darkofocdarko/fort-of-chains!42
 
 commit 2baf3188e5a95177465c50013ab772b7bd3122d6
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -17182,7 +17182,7 @@ Date:   Wed Dec 9 05:09:51 2020 -0800
     
     Closes #57
     
-    See merge request darkofocdarko/foc!43
+    See merge request darkofocdarko/fort-of-chains!43
 
 commit cbe7a0d29c0bf5d15a44de28eedf9a9b0b7707d9
 Author: Naraden <18700-Naraden@users.noreply.gitgud.io>
@@ -17225,7 +17225,7 @@ Merge: 2304d835c f40304ed8
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Wed Dec 9 17:45:15 2020 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 2304d835c7e0c5f9987228409d2a16cc2f918806
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -17300,7 +17300,7 @@ Merge: 148eb3c83 1e47f11ee
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Wed Dec 9 00:44:33 2020 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 148eb3c83bc854f9709221d946665a7654750003
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -17333,7 +17333,7 @@ Date:   Tue Dec 8 09:11:54 2020 -0800
     
     Closes #43
     
-    See merge request darkofocdarko/foc!39
+    See merge request darkofocdarko/fort-of-chains!39
 
 commit 3dfca855cc03c0e3eaaa3ea7fbcb8f07dae55d85
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -17350,7 +17350,7 @@ Date:   Tue Dec 8 09:11:00 2020 -0800
     
     devtools: added twee code editor (beta)
     
-    See merge request darkofocdarko/foc!41
+    See merge request darkofocdarko/fort-of-chains!41
 
 commit f263fe0d10e092911df5d26eec04b036ab045215
 Author: Naraden <18700-Naraden@users.noreply.gitgud.io>
@@ -17391,7 +17391,7 @@ Date:   Tue Dec 8 01:00:21 2020 -0800
     
     DevTool: added box to search quests by name
     
-    See merge request darkofocdarko/foc!40
+    See merge request darkofocdarko/fort-of-chains!40
 
 commit ef0f0ccf459b28ec9f0e93791b77014674ed93be
 Author: Naraden <18700-Naraden@users.noreply.gitgud.io>
@@ -17488,7 +17488,7 @@ Date:   Mon Dec 7 08:36:34 2020 -0800
     
     Closes #47 and #44
     
-    See merge request darkofocdarko/foc!37
+    See merge request darkofocdarko/fort-of-chains!37
 
 commit 2465453b2f515845d493becf9ddac9238cbe4186
 Author: Naraden <18700-Naraden@users.noreply.gitgud.io>
@@ -17613,7 +17613,7 @@ Date:   Sun Dec 6 07:43:37 2020 -0800
     
     Event pool generation fix
     
-    See merge request darkofocdarko/foc!38
+    See merge request darkofocdarko/fort-of-chains!38
 
 commit de9584ec4e3685a76fcd2a4edf8db7de56cbd5d4
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -17828,7 +17828,7 @@ Date:   Sat Dec 5 07:51:13 2020 -0800
     
     Support for multiple imagepacks
     
-    See merge request darkofocdarko/foc!36
+    See merge request darkofocdarko/fort-of-chains!36
 
 commit d4d9c04a6825f45a3ccaae8599c66e4235629c10
 Author: Naraden <18700-Naraden@users.noreply.gitgud.io>
@@ -17889,7 +17889,7 @@ Merge: 0f278bd5b e307f29d4
 Author: Naraden <18700-Naraden@users.noreply.gitgud.io>
 Date:   Sat Dec 5 07:50:07 2020 +0100
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 0f278bd5bb47b629c08901756121e2b730f0931b
 Author: Naraden <18700-Naraden@users.noreply.gitgud.io>
@@ -17902,7 +17902,7 @@ Merge: d78d4dca1 d952e7635
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Sat Dec 5 13:46:45 2020 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit d78d4dca1cbf97c7932778727b94f0c93fb2d614
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -17915,7 +17915,7 @@ Merge: 4334c6d36 da93793e5
 Author: Naraden <18700-Naraden@users.noreply.gitgud.io>
 Date:   Sat Dec 5 07:38:04 2020 +0100
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 4334c6d362d10c8efa1dd7410ab64326ae4a0527
 Author: Naraden <18700-Naraden@users.noreply.gitgud.io>
@@ -17968,14 +17968,14 @@ Date:   Fri Dec 4 20:03:48 2020 -0800
     
     checkImageMetas.js: added option to merge all imagemeta.js into one file
     
-    See merge request darkofocdarko/foc!35
+    See merge request darkofocdarko/fort-of-chains!35
 
 commit 4e405c69e2cf76e7d48884aacb28f621ef04c30b
 Merge: 42187a5ef 0c512902f
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Sat Dec 5 10:52:04 2020 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 42187a5efb3b8d83c2e01ff58c71866e273600a6
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -18044,7 +18044,7 @@ Merge: 81c592971 214da57b5
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Sat Dec 5 00:57:55 2020 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 81c592971074ee930b8b1e1637572fb4f0fc302b
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -18085,7 +18085,7 @@ Date:   Fri Dec 4 09:00:43 2020 -0800
     
     Classpocalypse 2: Electric Boogaloo
     
-    See merge request darkofocdarko/foc!34
+    See merge request darkofocdarko/fort-of-chains!34
 
 commit 68ac083b134ecc9840472ec733a44f8a5f397ba2
 Author: Naraden <18700-Naraden@users.noreply.gitgud.io>
@@ -18120,7 +18120,7 @@ Date:   Fri Dec 4 07:28:05 2020 -0800
     
     Rarity 0 documentation in content creator.
     
-    See merge request darkofocdarko/foc!33
+    See merge request darkofocdarko/fort-of-chains!33
 
 commit be233cdb8d57758d5cd0e47dcee1d98be9dfe3fe
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -18149,7 +18149,7 @@ Date:   Fri Dec 4 04:22:30 2020 -0800
     
     Implements rarity 0 for #38.
     
-    See merge request darkofocdarko/foc!32
+    See merge request darkofocdarko/fort-of-chains!32
 
 commit 8676c201e611201598fa955253cc9a4293ae5076
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -18186,7 +18186,7 @@ Merge: 91465628e e764d84af
 Author: Naraden <18700-Naraden@users.noreply.gitgud.io>
 Date:   Fri Dec 4 09:52:56 2020 +0100
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 91465628e30d756bce25bcc4b417d9e8c0dd02ae
 Author: Naraden <18700-Naraden@users.noreply.gitgud.io>
@@ -18301,7 +18301,7 @@ Date:   Thu Dec 3 20:54:41 2020 -0800
     
     Closes #13
     
-    See merge request darkofocdarko/foc!31
+    See merge request darkofocdarko/fort-of-chains!31
 
 commit 159e79d7cdd1661e4fb305495da8887b8bb8d0d9
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -18318,7 +18318,7 @@ Date:   Thu Dec 3 20:13:12 2020 -0800
     
     Repo structure changes to avoid user.min.js conflicts (issue #33)
     
-    See merge request darkofocdarko/foc!30
+    See merge request darkofocdarko/fort-of-chains!30
 
 commit fa9aabff2948687133a4415269a0b113573b48bb
 Author: Naraden <18700-Naraden@users.noreply.gitgud.io>
@@ -18372,7 +18372,7 @@ Date:   Thu Dec 3 09:22:20 2020 -0800
     
     Excalibur quest 4/10. Restriction: must have unit on duty. Trait adjustments. Favicon
     
-    See merge request darkofocdarko/foc!29
+    See merge request darkofocdarko/fort-of-chains!29
 
 commit 5070954442561821748610c62ec699ef24efe43f
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -18391,7 +18391,7 @@ Merge: c2b9b650d 157664688
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Thu Dec 3 22:39:06 2020 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 157664688497e98e95d6a946868e6a822b1077d7
 Author: Naraden <18700-Naraden@users.noreply.gitgud.io>
@@ -18434,7 +18434,7 @@ Date:   Thu Dec 3 02:48:42 2020 -0800
     
     Closes #23
     
-    See merge request darkofocdarko/foc!27
+    See merge request darkofocdarko/fort-of-chains!27
 
 commit 8a64e479dadedb3f7e67bbb037a05ec4666b6a24
 Author: Naraden <18700-Naraden@users.noreply.gitgud.io>
@@ -18453,7 +18453,7 @@ Merge: 7f3a95e2c 5d03a432b
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Thu Dec 3 15:36:32 2020 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 7f3a95e2c88a07b6bc0ed9a8b4fb24afbef25833
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -18470,7 +18470,7 @@ Date:   Thu Dec 3 00:30:05 2020 -0800
     
     Converted almost all classes to ES6 syntax
     
-    See merge request darkofocdarko/foc!25
+    See merge request darkofocdarko/fort-of-chains!25
 
 commit d342984f93cabe42c9ef4acecc55b5b7880aa9bb
 Author: Naraden <18700-Naraden@users.noreply.gitgud.io>
@@ -18537,7 +18537,7 @@ Date:   Wed Dec 2 12:01:33 2020 -0800
     
     Closes #12
     
-    See merge request darkofocdarko/foc!26
+    See merge request darkofocdarko/fort-of-chains!26
 
 commit 1bd32d9df4570910ff0addfc2746035d4d8a076e
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -18554,7 +18554,7 @@ Date:   Wed Dec 2 03:56:21 2020 -0800
     
     devtool: fixed if-then-else incorrectly showing then/else block content
     
-    See merge request darkofocdarko/foc!24
+    See merge request darkofocdarko/fort-of-chains!24
 
 commit 331566aa8bc762289c7046f6df8ae6007bd95a7c
 Author: Naraden <18700-Naraden@users.noreply.gitgud.io>
@@ -18583,7 +18583,7 @@ Date:   Wed Dec 2 00:31:40 2020 -0800
     
     Class object serialization change, for future-proofing
     
-    See merge request darkofocdarko/foc!23
+    See merge request darkofocdarko/fort-of-chains!23
 
 commit c329ad8eaa51d122bb0ff347dd904d92bc35f3b4
 Author: Naraden <18700-Naraden@users.noreply.gitgud.io>
@@ -18600,7 +18600,7 @@ Date:   Wed Dec 2 00:13:37 2020 -0800
     
     Support editing costs/restrictions in devtool
     
-    See merge request darkofocdarko/foc!21
+    See merge request darkofocdarko/fort-of-chains!21
 
 commit 8de34bb884ebf241a0a7d53ca202f0c5d15a38dd
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -18673,7 +18673,7 @@ Date:   Tue Dec 1 05:59:10 2020 -0800
     
     Closes #7
     
-    See merge request darkofocdarko/foc!22
+    See merge request darkofocdarko/fort-of-chains!22
 
 commit d3656097ff2742f48a3f717791afff805a00b2d6
 Author: Naraden <18700-Naraden@users.noreply.gitgud.io>
@@ -18698,7 +18698,7 @@ Date:   Mon Nov 30 04:42:11 2020 -0800
     
     Closes #10
     
-    See merge request darkofocdarko/foc!20
+    See merge request darkofocdarko/fort-of-chains!20
 
 commit 134ba547c68788abfbadcc8fb097ca836af220fd
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -18820,7 +18820,7 @@ Date:   Sun Nov 29 07:39:38 2020 -0800
     
     Refactored duties to prevent storing static data in saves, + some fixes
     
-    See merge request darkofocdarko/foc!18
+    See merge request darkofocdarko/fort-of-chains!18
 
 commit bdb3318c804e8378833d0d8a57d7b763e8c58630
 Author: Naraden <18700-Naraden@users.noreply.gitgud.io>
@@ -18963,7 +18963,7 @@ Date:   Sun Nov 29 00:03:24 2020 -0800
     
     UI changes on equipment/furniture slots
     
-    See merge request darkofocdarko/foc!19
+    See merge request darkofocdarko/fort-of-chains!19
 
 commit 66f7fdaad3982d903846b0c95a5d83b96f7d02d9
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -19456,7 +19456,7 @@ Date:   Mon Nov 23 07:23:26 2020 -0800
     
     3-col grids, trainee on quest cards, bugfix for version being a string
     
-    See merge request darkofocdarko/foc!16
+    See merge request darkofocdarko/fort-of-chains!16
 
 commit 49317233653c4279e01372f69bc27ea8e5c04620
 Author: Naraden <18700-Naraden@users.noreply.gitgud.io>
@@ -19519,7 +19519,7 @@ Date:   Sun Nov 22 19:46:07 2020 -0800
     
     Changes on the equipment sets slots UI
     
-    See merge request darkofocdarko/foc!13
+    See merge request darkofocdarko/fort-of-chains!13
 
 commit f70e953d98aca6c08fd2faaa8bd644814393c61a
 Merge: e02b27c13 1dee99e17
@@ -19539,7 +19539,7 @@ Merge: 12b54a3d3 edd233060
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Mon Nov 23 02:02:55 2020 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 12b54a3d3eb6a35c20246069a51f404942dcb15d
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -19562,7 +19562,7 @@ Date:   Sun Nov 22 09:24:44 2020 -0800
     
     Update caged_tomato.twee, adding a missing "and" in the text and a couple of...
     
-    See merge request darkofocdarko/foc!14
+    See merge request darkofocdarko/fort-of-chains!14
 
 commit 102a15e54bc25fb91b75eafa5ce86dd770c841bb
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -19599,7 +19599,7 @@ Merge: c2d0348ec cacec53d0
 Author: Naraden <18700-Naraden@users.noreply.gitgud.io>
 Date:   Sun Nov 22 16:55:13 2020 +0100
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit c2d0348ece9b452b05deff92cd445ae940fc1a31
 Author: Naraden <18700-Naraden@users.noreply.gitgud.io>
@@ -19640,7 +19640,7 @@ Date:   Sun Nov 22 03:13:31 2020 -0800
     
     A few QOL changes and text fixes
     
-    See merge request darkofocdarko/foc!12
+    See merge request darkofocdarko/fort-of-chains!12
 
 commit cc072a2d868551a1951367d3e39dc88dc20072ba
 Author: Naraden <18700-Naraden@users.noreply.gitgud.io>
@@ -19747,7 +19747,7 @@ Date:   Sun Nov 22 01:18:58 2020 -0800
     
     Script to fix pre-1.1.1.6 save with duties with invalid traits
     
-    See merge request darkofocdarko/foc!11
+    See merge request darkofocdarko/fort-of-chains!11
 
 commit 59c7b013b9ea9143e68049016873efc6ebb9a18b
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -19800,7 +19800,7 @@ Date:   Sat Nov 21 22:52:26 2020 -0800
     
     Fixes for duty success chance calculation
     
-    See merge request darkofocdarko/foc!10
+    See merge request darkofocdarko/fort-of-chains!10
 
 commit ff71467033173157e4d896edb98282f8b950a100
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -19837,7 +19837,7 @@ Date:   Sat Nov 21 19:48:27 2020 -0800
     
     Update Abuse.twee correcting pronouns
     
-    See merge request darkofocdarko/foc!9
+    See merge request darkofocdarko/fort-of-chains!9
 
 commit 6e0b2e89cb4bccbb3f0a667f70baa303db04c18d
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -20016,7 +20016,7 @@ Date:   Fri Nov 20 08:44:54 2020 -0800
     
     Updated .gitignore to exclude .save-s and custom images
     
-    See merge request darkofocdarko/foc!8
+    See merge request darkofocdarko/fort-of-chains!8
 
 commit fab25fc253e13963d8cdc0fb9b8b4bf2a496e7a1
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -20045,7 +20045,7 @@ Date:   Fri Nov 20 03:47:29 2020 -0800
     
     Fix some typos and the persons in the message.
     
-    See merge request darkofocdarko/foc!7
+    See merge request darkofocdarko/fort-of-chains!7
 
 commit f812f261dd5eb27e9397baa02393e9d32fc5e907
 Author: Hermenegild <Hermenegild 18488-hermenegild@users.noreply.gigud.io>
@@ -20923,7 +20923,7 @@ Merge: 0f841ba0f acc937518
 Author: Darko <darko@darko.com>
 Date:   Tue Nov 10 23:24:19 2020 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit 0f841ba0f922bae96be67375786660b25e01edd1
 Author: Darko <darko@darko.com>
@@ -21018,7 +21018,7 @@ Date:   Sun Nov 8 19:57:32 2020 -0800
     
     some fixes
     
-    See merge request darkofocdarko/foc!6
+    See merge request darkofocdarko/fort-of-chains!6
 
 commit dacf4aa4c3e213032897e27c84279bb9a40c80cf
 Author: unluckyton <>
@@ -21085,7 +21085,7 @@ Merge: d2b96c6d0 a778e9c84
 Author: Darko <darko@darko.com>
 Date:   Sun Nov 8 16:11:06 2020 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit d2b96c6d053c91ce68e8f941f19f9920c8e62df3
 Author: Darko <darko@darko.com>
@@ -21102,7 +21102,7 @@ Date:   Sat Nov 7 20:51:22 2020 -0800
     
     pronouns
     
-    See merge request darkofocdarko/foc!5
+    See merge request darkofocdarko/fort-of-chains!5
 
 commit 068956438bdde8c723f2586ff31ac334c419b1cd
 Author: unluckyton <>
@@ -21121,7 +21121,7 @@ Merge: ae7d7a520 bdc78a940
 Author: Darko <darko@darko.com>
 Date:   Sun Nov 8 10:48:35 2020 +0700
 
-    Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
+    Merge branch 'master' of https://gitgud.io/darkofocdarko/fort-of-chains
 
 commit ae7d7a5200a9fbc58127a7aad64967515ddb8ebf
 Author: Darko <darko@darko.com>
@@ -21138,7 +21138,7 @@ Date:   Sat Nov 7 10:18:01 2020 -0800
     
     anal tooltip fix
     
-    See merge request darkofocdarko/foc!4
+    See merge request darkofocdarko/fort-of-chains!4
 
 commit 78cd738abea41667b75a559089778385d96c0d1c
 Author: unluckyton <>
@@ -21966,7 +21966,7 @@ Date:   Tue Oct 20 18:58:06 2020 -0700
     
     Upload New File
     
-    See merge request darkofocdarko/foc!3
+    See merge request darkofocdarko/fort-of-chains!3
 
 commit a23416416327bcb45559c66ef3a4480ae21c87c1
 Author: Atacama <17432-Atacama@users.noreply.gitgud.io>

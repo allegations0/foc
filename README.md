@@ -1,30 +1,30 @@
 ## Fort of Chains
 
-[(v1.6.0.0 release notes)](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/update/readme_1_6.md)
+[(v1.6.0.0 release notes)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/update/readme_1_6.md)
 |
-[(Download instructions)](https://gitgud.io/darkofocdarko/foc#how-to-play-the-latest-version-of-the-game)
+[(Download instructions)](https://gitgud.io/darkofocdarko/fort-of-chains#how-to-play-the-latest-version-of-the-game)
 |
 [(Play in Browser (slightly outdated))](https://darkofoc.itch.io/fort-of-chains)
 |
-[(Contributing)](https://gitgud.io/darkofocdarko/foc#how-to-contribute-content)
+[(Contributing)](https://gitgud.io/darkofocdarko/fort-of-chains#how-to-contribute-content)
 |
-[(F.A.Q)](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/faq.md)
+[(F.A.Q)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/faq.md)
 |
-[(Feature / Fetish list)](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/faq.md#does-this-game-contain-insert-fetish-here)
+[(Feature / Fetish list)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/faq.md#does-this-game-contain-insert-fetish-here)
 |
 [(Subreddit)](https://www.reddit.com/r/FortOfChains/)
 |
 [(Discord)](https://discord.com/invite/PTD9D7mZyg)
 
 **Fort of Chains** is a completed, free, moddable,
-[open-source](https://gitgud.io/darkofocdarko/foc),
+[open-source](https://gitgud.io/darkofocdarko/fort-of-chains),
 TEXT-ONLY
 sandbox management NSFW game where you lead and manage a band of slavers in a fantasy world.
 The game is configurable and can cover all gender orientations: MM, MF, and FF.
 Be warned that the game contains heavy themes of slavery and non-consensual sex.
-There are [no support](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/faq.md#can-you-play-a-submissive-in-this-game)
+There are [no support](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/faq.md#can-you-play-a-submissive-in-this-game)
 for playing as a submissive character.
-[(Feature / Fetish list)](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/faq.md#does-this-game-contain-insert-fetish-here)
+[(Feature / Fetish list)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/faq.md#does-this-game-contain-insert-fetish-here)
 
 **Key designs.**
 This game is designed to be a **short-story-teller** machine:
@@ -36,7 +36,7 @@ But improvements and community-made contributions are still being added continuo
 
 **Contributing.**
 The game is always looking for all and any kind of contributions.
-More details [here](https://gitgud.io/darkofocdarko/foc#how-to-contribute-content).
+More details [here](https://gitgud.io/darkofocdarko/fort-of-chains#how-to-contribute-content).
 As of v1.6, around 35 kind contributors have helped by directly adding content into the game,
 while much more have helped playtest the game and give feedbacks.
 
@@ -57,20 +57,20 @@ If you need help in the game, make sure to click the `(?)` help menu found every
 When you are done, you can submit the finished story either
 in the [subreddit](https://www.reddit.com/r/FortOfChains/)
 ([example submission in the subreddit](https://www.reddit.com/r/FortOfChains/comments/jpo8hg/the_honest_slaver_example_quest_submission/)),
-or directly in the [repository](https://gitgud.io/darkofocdarko/foc).
+or directly in the [repository](https://gitgud.io/darkofocdarko/fort-of-chains).
 If the story fits the game, it will be added pronto, with a lot of thanks!
-[(More information)](https://gitgud.io/darkofocdarko/foc#submitting-your-content).
+[(More information)](https://gitgud.io/darkofocdarko/fort-of-chains#submitting-your-content).
 (If you use Discord, you can tell us your discord name too so we can give you a Discord role,
 which among other things allows you to bypass the seven days wait required there.)
 
 **Contributing art.**
 The game welcomes artistic contributions!
-Please check [this document](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/images.md) for more details.
+Please check [this document](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/images.md) for more details.
 
 **Contributing code and others.**
-This game is [open-source](https://gitgud.io/darkofocdarko/foc).
+This game is [open-source](https://gitgud.io/darkofocdarko/fort-of-chains).
 Coding help, play-testing, and all other kinds of contributions are also welcomed.
-See [here](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/todolist.md#other) for other contribution
+See [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/todolist.md#other) for other contribution
 ideas.
 
 **Questions?**
@@ -80,7 +80,7 @@ If you are hoping to contribute something and have questions, please do not hesi
 discord ID here so we can give you a Discord role, which among other things allows you to bypass the
 seven days wait there.)
 Don't know what to contribute?
-See [here](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/todolist.md) for ideas.
+See [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/todolist.md) for ideas.
 
 **Vision**
 Fort of Chains is a passion project. My hope is that one day, the project will be entirely community-led,
@@ -97,7 +97,7 @@ and I can take a back seat as just a regular contributor :)
 ### Contributing
 [Content Guidelines](docs/contentguideline.md) |
 [What Kind of Content to Add](docs/content.md) |
-[Content Creator Cheat Sheet](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/textcheatsheet.md) |
+[Content Creator Cheat Sheet](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/textcheatsheet.md) |
 [Adding Sex Actions](docs/sexaction.md) |
 [Special Commands in Content Creator](docs/text.md) |
 [Merge Request Tutorial](docs/mergerequest.md)
@@ -105,8 +105,8 @@ and I can take a back seat as just a regular contributor :)
 ### Wiki
 [Lore](docs/lore.md) |
 [Traits](docs/traits.md) |
-[Features](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/faq.md#is-insert-feature-here-planned-for-the-game) |
-[Fetishes](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/faq.md#does-this-game-contain-insert-fetish-here)
+[Features](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/faq.md#is-insert-feature-here-planned-for-the-game) |
+[Fetishes](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/faq.md#does-this-game-contain-insert-fetish-here)
 
 ### Miscellaneous
 [F.A.Q](docs/faq.md) |
@@ -154,7 +154,7 @@ See [repository structure and code guidelines](docs/structure.md) to ease your e
 An option is to give the project permission to use some of your existing
 artworks, which is greatly appreciated. The game will try its best to credit you properly.
 
-**Don't know what to contribute?** See [here](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/todolist.md#other) for ideas.
+**Don't know what to contribute?** See [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/todolist.md#other) for ideas.
 
 ## Compiling Instructions
 
@@ -185,11 +185,11 @@ Compiling is very easy to do, the instructions are as follows.
 
 That's it! The code is compiled. Note that you need to compile again
 and reload the `index.html` file each time you make changes to the files.
-See [here](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/faq.md#common-compiling-problems)
+See [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/faq.md#common-compiling-problems)
 for common problems you might encounter.
 
-**If you are a programmer:** This compilation method only compiles the [twine files](https://gitgud.io/darkofocdarko/foc/-/tree/master/project/twee),
-and not the [javascript or css files](https://gitgud.io/darkofocdarko/foc/-/tree/master/src).
+**If you are a programmer:** This compilation method only compiles the [twine files](https://gitgud.io/darkofocdarko/fort-of-chains/-/tree/master/project/twee),
+and not the [javascript or css files](https://gitgud.io/darkofocdarko/fort-of-chains/-/tree/master/src).
 To compile the javascript or css files, see instructions [here](docs/javascript.md).
 
 ## Submitting your Content
@@ -262,7 +262,7 @@ which can be found in game ("Artists Credits" from the main menu, and from
 clicking the portraits), and also in the `imagemeta.js` file in their corresponding
 folders. The copyrights of these artworks remain with their original holders.
 Icon credits are found here:
-https://gitgud.io/darkofocdarko/foc/-/blob/master/project/twee/image_credits.twee
+https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/project/twee/image_credits.twee
 .
 
 - Authors contributing writings into this game agree to allow the

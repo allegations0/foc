@@ -60,10 +60,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitgud.io/darkofocdarko/foc.git"
+    "url": "git+https://gitgud.io/darkofocdarko/fort-of-chains.git"
   },
   "bugs": {
-    "url": "https://gitgud.io/darkofocdarko/foc/-/issues"
+    "url": "https://gitgud.io/darkofocdarko/fort-of-chains/-/issues"
   },
-  "homepage": "https://gitgud.io/darkofocdarko/foc"
+  "homepage": "https://gitgud.io/darkofocdarko/fort-of-chains"
 }

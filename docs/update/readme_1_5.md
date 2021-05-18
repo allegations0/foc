@@ -1,24 +1,24 @@
 ## Fort of Chains v1.5 is here! Text-only slaver management game. Contributors welcome!
 
 [(Play in your browser)](https://darkofoc.itch.io/fort-of-chains) |
-[(Contributing)](https://gitgud.io/darkofocdarko/foc#how-to-contribute-content) |
+[(Contributing)](https://gitgud.io/darkofocdarko/fort-of-chains#how-to-contribute-content) |
 [(Download)](https://www.reddit.com/r/FortOfChains/comments/jlhivr/fort_of_chains_and_download_link/) |
 [(Discord)](https://discord.gg/PTD9D7mZyg) |
 [(Subreddit)](https://www.reddit.com/r/FortOfChains/) |
-[(v1.4.0.0 release notes)](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/update/readme_1_4.md) |
-[(Changelog)](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/changelog_summary.md) |
-[(F.A.Q)](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/faq.md)
+[(v1.4.0.0 release notes)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/update/readme_1_4.md) |
+[(Changelog)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/changelog_summary.md) |
+[(F.A.Q)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/faq.md)
 
 **Fort of Chains** is a completed, free, moddable,
-[open-source](https://gitgud.io/darkofocdarko/foc),
+[open-source](https://gitgud.io/darkofocdarko/fort-of-chains),
 TEXT-ONLY
 sandbox management NSFW game where you lead and manage a band of slavers in a fantasy world.
 The game is configurable and can cover all gender orientations: MM, MF, and FF.
 Be warned that the game contains heavy themes of slavery and non-consensual sex.
-There are [no support](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/faq.md#can-you-play-a-submissive-in-this-game)
+There are [no support](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/faq.md#can-you-play-a-submissive-in-this-game)
 for playing as a submissive character.
 [(More information)](https://www.reddit.com/r/FortOfChains/comments/jlhivr/fort_of_chains_and_download_link/)
-[(Feature / Fetish list)](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/faq.md#does-this-game-contain-insert-fetish-here)
+[(Feature / Fetish list)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/faq.md#does-this-game-contain-insert-fetish-here)
 
 FoC v1.5 is the largest update to the game by far, adding a silly amount of content in
 **85 new quests** (!!!), **43 new mails**, **131 new events**, as well as more than 100 new portraits.
@@ -30,7 +30,7 @@ new smaller features are also added. They are listed at the end of this write-up
 The game engine and feature-set is already complete, and
 the focus of this game starting from v1.4 has been to **support contributors** who wants to add content into the game.
 This does not change with v1.5.
-You are invited too! See details [here](https://gitgud.io/darkofocdarko/foc#how-to-contribute-content).
+You are invited too! See details [here](https://gitgud.io/darkofocdarko/fort-of-chains#how-to-contribute-content).
 
 A summary (but still ridiculously long list) of all the changes in v1.5 are listed at the end, but the biggest changes in v1.5 are:
 
@@ -49,7 +49,7 @@ Many thanks to the contributors and people who have helped with this project, in
 be it writers, proofreaders, programmers, artists, or even discord moderation help!
 Unlike most other games, to add content into the game, you **do not have to write code at all**.
 This is since the game came shipped with an **in-game GUI tool** for adding content.
-More details [here](https://gitgud.io/darkofocdarko/foc#how-to-contribute-content).
+More details [here](https://gitgud.io/darkofocdarko/fort-of-chains#how-to-contribute-content).
 
 v1.5 marks **five months** since the inception of this game. As of this version, around thirty people
 has helped contribute directly into the game, and I am very grateful for their help. My hope is that one day,
@@ -57,7 +57,7 @@ the game can be community-led, where I am nothing but a regular contributor for 
 
 ---
 
-Full changelog [here](https://gitgud.io/darkofocdarko/foc/-/blob/master/changelog.txt).
+Full changelog [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/changelog.txt).
 
 v1.5.0.0 (26 February 2021): Huge amount of content, subraces, Text polish, QoL, Balancing
 
@@ -383,4 +383,4 @@ v1.5.0.0 (26 February 2021): Huge amount of content, subraces, Text polish, QoL,
     - Fix broken ascent human having wings as innate traits.
     - Fix "typo" in werewolf camp raid.
 
-[v1.4.0.0 (January 15, 2021): Content, interactive sex, lovers, tigerkin](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/changelog_summary.md)
+[v1.4.0.0 (January 15, 2021): Content, interactive sex, lovers, tigerkin](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/changelog_summary.md)

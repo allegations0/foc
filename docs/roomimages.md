@@ -17,7 +17,7 @@ The format is similar with [unit images](docs/images.md), but with two key diffe
 ## Image guidelines
 
 The game is very welcome if you would like to contribute room images!
-[(Related to this issue)](https://gitgud.io/darkofocdarko/foc/-/issues/290)
+[(Related to this issue)](https://gitgud.io/darkofocdarko/fort-of-chains/-/issues/290)
 
 The following is a guideline so that the images mesh well with each other:
 
@@ -41,13 +41,13 @@ an image before), you should make a new folder as well as the `imagemeta.js` (wh
 copy-paste from the ones found in the other room folders).
 
 Many of the current images are made using [Tiled](https://www.mapeditor.org/).
-See [here](https://gitgud.io/darkofocdarko/foc/-/blob/master/docs/tileset_credits.md) for the full list of tileset, their licenses, and their credits.
+See [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/tileset_credits.md) for the full list of tileset, their licenses, and their credits.
 The tileset used in this game are [here](docs/tilesets).
 
 ### Verifying syntax
 
 If you have `nodejs` installed, there is a script you can run to verify 
-the correctness of your image pack and check the syntax [here](https://gitgud.io/darkofocdarko/foc/-/blob/master/dev/checkImageMetas.js). (Made by contributor Naraden)
+the correctness of your image pack and check the syntax [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/dev/checkImageMetas.js). (Made by contributor Naraden)
 
 Example use:
 
