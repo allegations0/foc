@@ -1,0 +1,31 @@
+/* use an item */
+:: ItemUnitUsableUse [nobr]
+
+<<set _target = setup.item[$gUseItem_key]>>
+
+Use <<rep _target>> on whom?
+
+<<set _unitlist = State.variables.company.player.getUnits()>>
+<<set _unitlist = _unitlist.filter(unit => _target.isUsableOn(unit) && unit.isHome())>>
+
+<<selectunit _unitlist 'ItemUnitUsableUseOn'>>
+
+
+:: ItemUnitUsableUseOn [nobr]
+<<set _unit = State.variables.unit[$gUnitSelected_key]>>
+<<set _target = setup.item[$gUseItem_key]>>
+
+<<run _target.use(_unit)>>
+
+<<run setup.notify(`Used ${_target.rep()} on a|rep.`, {a: _unit})>>
+
+<<if $inventory.isHasItem(setup.item[$gUseItem_key])>>
+  <<unset $gUnitSelected_key>>
+  <<focgoto>>
+<<else>>
+  <<unset $gUnitSelected_key>>
+  <<unset $gUseItem_key>>
+  <<focgoto "Inventory">>
+<</if>>
+
+

@@ -1,0 +1,1350 @@
+### Changelog
+
+Full changelog [here](https://gitgud.io/darkofocdarko/foc/-/blob/master/changelog.txt).
+
+v1.6.4.0 (14 May 2021):
+  - Content
+    - Hospital visit + Visiting the injured (by Matthew Lang) (2 events 1 opportunity)
+    - Harvesting the Fields (by Matthew Lang)
+    - New hobbies texts for traits (thanks to Matthew Lang)
+    - The Wailing Woods (by Matthew Lang)
+    - Bandits on the Road (by Matthew Lang) (1 quest 2 events)
+    - Raid Elven Village (by Matthew Lang)
+    - Prince of Cups (by Matthew Lang)
+    - A Merchant's Revenge (by Matthew Lang)
+    - Test of Sex (2 quest, 1 event, 1 mail)
+    - Lazy Napping
+    - Tidying up Bedroom
+    - Doctor Deskjob
+  - New feature: Activity template
+    - This is a pure flavor feature
+    - Available slavers that are idling at home can engage in activities
+    - They can be found in your fort, and hovering over them give you a one liner or two
+    - Fully integrated with content creator: you can make new activities with it
+    - Fully integrated with testing too
+    - At the moment, only very few activities are available
+  - New feature: Speech bubbles
+    - Some texts can have fancy inline speech bubbles now
+    - Speech bubbles for "Like me" event.
+  - New feature: Fort pathing
+    - There are auto-generated paths in the fort now
+    - The middle path at the outdoors area is removed.
+    - Added path for indoor areas
+    - Existing saves might need to do a New Game Plus to reap the new changes
+  - Content Creator
+    - Toolbar has tooltips now
+    - New toolbar options:
+      - Inline effects
+      - Letter card formatting
+      - Formatting
+      - Building and item conditionals
+      - Nicknames
+      - Greetings
+      - Adverbs for care and abuse scenarios
+    - New restrictions:
+      - ZeroTitle
+    - Articles in contents are now automatically parsed to be "a" or "an".
+    - Added setup.getUnit with parameters
+    - Content creator now auto-saves when clicking CREATE.
+    - Removed autocomplete in codejar.
+  - Writing Improvements
+    - Replace QuestingSquire.twee - Quest edit for grammar and spelling - Matthew Lang (thanks to Matthew Lang)
+    - Update investment_banking.twee quest - edit for grammar, flow, tense and gender of the elven attendant being descriptively stuck as female. - Matthew Lang. Note deliberately used 'their' in some cases as am referring to the slavers collectively. (thanks to Matthew Lang)
+    - Update trait texts - grammar and spelling check. (thanks to Matthew Lang)
+  - Quest
+    - Added Rare and Legendary quest tags
+  - Content Images
+    - A lot of new content images, particularly for slave training quests (thanks to Matthew Lang)
+  - Perk
+    - New standard perk: Switch
+    - New special perk: Chaotic Personality
+    - Make it easier to get harbinger of chaos perk instead of harbinger of crows
+    - Buffed most perks slightly
+  - Portraits
+    - New Image Pack: CCSubmission Image Pack by Matthew Lang
+    - Refactored default imagepack into a regular imagpeack.
+    - Support for default image packs that comes shipped with the game
+    - Removed several immersion-breaking male images now that we have the CCSubmission pack by Matthew Lang (thanks to Matthew Lang)
+    - Some new portraits
+  - Rooms and fort map
+    - Auto-place will now try to place close to center of the map
+    - Fort loading is made much faster via asynchronous loading
+    - Fort grid saves scroll position more liberally now.
+    - Yard and farm no longer passable.
+    - Path images now consists of 2x2 16px tiles.
+  - Engine
+    - Removed cached tiles / gFortGridControl cached infos from save files to make its size smaller
+    - Added whether it was [itch.io] version or not to error log
+    - Imagepacks moved to DOM
+  - Visuals
+    - Added gradient border for rare, legendary, or special quest.
+    - Borders are now square without radius
+  - Documentation
+    - Added Content Creator Cheatsheet
+    - Updated documentation for articles formatting
+    - Links to content creator cheatsheet.
+    - Updated help text for friendship/rivalry.
+  - QoL
+    - Can hide buildings.
+  - Balancing
+    - Rivalry and friendship bonus now always active whenever both are slavers, but toned down by 20%.
+    - Fortgrid tile multiplier upped from 1.2 to 1.25.
+  - Misc
+    - Unstable bodyshifter and doppelganger now only shapeshift at home.
+    - Having a missing content image now throws an error in debug mode.
+    - Added some jsdocs for available.js
+    - Added warning on itch.io compiled version
+    - Some new fantasy naems
+    - Change of Heart potion renamed to Potion of Submissive Cure
+    - Jobs are now consistent in content creator and debug try content
+  - Bugfixes
+    - Fix Content Creator slowdown from rooms
+    - Fix the _Elf in wailing woods sometimes not having a unit there.
+    - Fix errors when saving on the fort grid menu
+    - Fixed code editor tooltip staying after scrolling down
+    - Fixed lodgings price roadblock being at 14 instead of 18.
+    - Fix New Game Plus removing game version number
+    - Fix missing commas at qres.Available
+    - Fixed broken custom imagepack
+    - Fix error when auto-generating opportunity with player character
+    - Fix if any  role has not working more than once and cheatsheet.
+    - Fix tigerkin and fairy not using neko and elf names.
+    - Fix itch.io map and room embeds.
+    - Fix Auto-place broken by pathing changes
+    - Fix rec wing buildings having the door in the wrong column
+    - Fix walls overlapping buildings images.
+    - Fix error when trying to upgrade by mass clicking.
+    - Fix "Violin Girl" image in the wrong gender.
+    - Fix lodgings missing "2 extra spaces".
+    - Fix checkImageMetas to not be strict by default.
+    - Fix infinite portal of potion shaping in alchemist shop
+  - Text fixes
+    - Fix chests -> chest
+    - Some "of of" fixes
+    - Available help text fixed.
+    - Fixed `</else>`
+    - Fix dialogue having extra space and newlines.
+    - Fixed missing words and some coding errors on Hospital Visit quest - Matthew Lang (thanks to Matthew Lang)
+    - Fix wrong pronoun in bear hunt.
+    - Fix renovation office text.
+
+
+v1.6.3.0 (7 May 2021):
+  - Content
+    - Test of Social.
+    - The Slave Merchant
+  - New feature: Room images:
+    - Almost all rooms have proper images now in your fort
+    - Comes shipped with over 650 different images
+  - New feature: Content images
+    - Quest outcome / description, events, and opportunities can now have images
+    - Content images for:
+      - Chart the vale (descripption)
+      - Raid elven forest (description)
+      - Carnal experience (female)
+      - Unit training pet basic (male)
+      - Unit training pet basic (female)
+      - Unit training pet advanced (male)
+      - Unit training pet advanced (female)
+      - Unit training dominance advanced (male)
+      - Gift exchange (male, critical)
+      - Gift exchange (female, critical)
+    - Content image credits page
+    - Added content image count to statistics
+    - Contributing guide updated for adding content images
+  - Rewriting
+    - Rewrote raid elven forest description
+  - Portrait:
+    - Some new portraits
+  - Balancing
+    - Massive rebalancing of fort expansion prices
+    - Building relocate cost: 120g / tile now becomes 20g / tile
+  - QoL
+    - Can Auto-place rooms now in fort
+    - Add message when getting opportunity without having a mail room.
+  - Documentation
+    - Added used tilesets into the repo.
+  - Misc
+    - Added whip item image
+  - Bugfixes
+    - Fixed some changelog links leading to nowhere
+    - Fix wall-less room not showing walls for top room.
+    - Fix inn missing adjacency in market.
+    - Fix for entrance on nowalls buildings.
+    - Fix room auto-place duplicating upgrade rooms.
+    - Fix broken room artist credits.
+    - Fix wall interaction with passables.
+    - Fix passable buildings + wall again.
+    - Fix backwards compat with disconnected empty spaces
+  - Text fixes
+    - Fix "a a"
+
+v1.6.2.0 (30 April 2021):
+
+  - Content
+    - Test of Survival
+    - Ex-Reserved (FCdev)
+  - Balancing
+    - Standardize training room sizes to 3x3.
+  - QoL
+    - Remove background from interactive sex cards. Closes #294
+    - Clicking the room after building on confirm build now undoes it
+  - Engine
+    - Added Passage info in sugarcube
+    - Implements backwards compatibility when some of the room changes size
+  - Documentation
+    - Changed full changelog "here" url to absolute url.
+  - Bugfixes
+    - Fixed farm giving wrong skill bonus/penalty
+    - Fixed broken links in content.md
+    - Fix road not calculated in expansion costs
+
+v1.6.1.4 (24 April 2021):
+
+  **SAVES FROM VERSION 1.6.0.7 OR LOWER NOT COMPATIBLE WITH 1.6.1.0 OR HIGHER**, but
+  you can try loading them, and the game will do its best to convert it into a New Game Plus.
+
+  **LOOKING FOR ARTISTIC CONTRIBUTIONS**: see
+  [this issue](https://gitgud.io/darkofocdarko/foc/-/issues/290) for more information
+
+  - Content
+    - Fort Restoration Awards
+    - Test of Intrigue.
+    - Rioter for sale (FCdev)
+  - New feature: Fort map
+    - Your fort has a 2D map now!
+    - You can place your buildings on the map, eg your office, your room
+    - Rooms have adjacency / near bonus once you build the landscaping office
+      - Pathing matters for this, e.g., if you block the path between the entrances it will cause them to not be nearby
+    - Room images are moddable using the same structure as unit images
+    - You can do all sort of things to the rooms: rotate, move around, zoom, ...
+    - Fort improvement is completely removed and replaced with map expansion
+    - Comes with a brand new tutorial
+    - Includes a slew of new buildings like garden, yard, and even portals
+  - Interactive Sex
+    - PenisHoleDomSlapAss more text.
+  - Balancing
+    - Seniority threshold reduced to 4 years from 5 years.
+    - Choosing new pc in new game plus now allows choosing 3 slavers to retire with now, instead of 2
+  - Engine
+    - Converted improvement constructor to objects.
+  - QoL
+    - Pressing space when you have mail to end week will now go to mail room
+    - item/equipment texts now colorized based on rarity
+    - Show unbuild room count in menus
+  - Misc
+    - Incompatible game versions will now try to load backwards compatibility.
+    - Added ire quest tag and manually marked quests that obviously give ire with the tag
+    - Flag games that have been tampered with debug mode for aiding debugging efforts
+    - Some new angel names
+  - Documentation
+    - Room images FAQ.
+    - Room artwork contribution texts.
+  - Bugfixes
+    - Fix half werewolf broken when you lack mail room.
+    - Fix black tiles when all slots are occupied from top to bottom in a column
+    - Fix tooltip misaligned on various places
+    - Fix missing living when retiring units
+    - Fix learn perk from unit detail menu causing error afterwards.
+    - Fix relations office in favor tooltip not formatted correctly
+    - Fix filtering in new game plus cause the entire process to restart.
+    - Fix bug with change banned tags reverting to previous day
+  - Text fixes
+    - Fix portal duplicate "distant"
+    - Goblin rescue and eternal youth text fixes.
+    - Werewolf hunt story writing fixes (thanks to J1009).
+
+v1.6.0.0 (16 April 2021): Content, Retirement, New Game Plus, Blessings, Engine work
+
+  **SAVES FROM VERSION 1.5.3.3 OR LOWER NOT COMPATIBLE WITH 1.5.3.4 OR HIGHER**
+
+  - Content
+    - 31 new quests, 16 new mails, 1 new interaction, 72 new events, 132 new traits, 7 new buildings, 27 new items, 6 new equipments, 18 new titles, 11 new lore entries, 13 new sex actions, 79 new portraits
+    - Werewolf Hunt (J1009)
+    - Wishing Well
+    - Innocent Tourist (FCdev)
+    - Used thug for sale (FCdev)
+    - Used Maid for Sale (FCdev)
+    - Used Housekeeper for Sale (FCdev)
+    - Used Angelic Slave for Sale (FCdev)
+    - Debtor for Sale (FCdev)
+    - Attractive Slaver (FCdev)
+    - Ex Leader
+    - Retirement
+    - Slavecoming
+    - Test of Combat
+    - A Letter of Challenge
+    - Harbinger of Crows
+    - Out of Retirement
+    - Retired XXX (ten variations)
+    - Alchemist Orders
+    - Test of Knowledge
+    - Curse Bestowed
+    - Elvish Hex
+    - Fallen Knight
+    - Asspussy (FCdev)
+    - Virgin Raider
+    - Test of Combat
+    - Southern Isle Pit Fights
+    - In Debt
+    - Doctor molestation
+    - Rivals
+    - Good Slaver Bad Slaver
+    - Blessing of Protection
+    - Totally Pirates
+    - Impossible Orders
+    - Go Fish
+    - Snowclaw Challenge (AwooWolfWoof)
+    - Sea Escort
+    - Open for Visitors
+    - Magic Gravity Room event (FCdev)
+    - Magic Bondage Room event (FCdev)
+    - Pilgrim Visit event
+    - Trading Mission: Neko Port City (mynameis123).
+    - Veteran Slaver
+    - Fetters with Pulleys
+    - Under new Management: Quality Time (Kyrozis)
+    - Dungeons and Dragons
+    - Mist Vacation
+    - Living God
+    - Meek Slaver
+    - Bondage Cage
+  - New Feature: Perks
+    - You can teach slavers special perk traits at level 25 and 45
+    - Which perks available to which slaver is unique, but the basic skill perk is always available
+      - PC gets access to all perks, however
+    - Comes shipped with more than 30 different perks, with various effects
+    - New associated building: War Room
+    - New Potion of Past-Erasure that can reset perks
+    - Perks can be auto-assigned for the lazy
+  - New Feature: Slaver Retirements
+    - Instead of dismissing slavers, you can retire sufficiently senior slavers instead
+    - You will keep contacts with senior slavers, and you can even hire them at a later date if you change your mind
+    - New building: Guest rooms, to unlock this feature
+      - Upgradable: increase the number of retired slavers you can maintain contact with
+    - Retired slaver will get a short epilogue
+      - Feature shipped with around 50 different epilogues
+      - Can be tested in debug mode
+      - Also added to the in-game database
+    - Comes with a brand new job: retired slaver (blue-colored)
+    - Retired slavers can even participate in quests and events!
+  - New Feature: New Game Plus
+    - Once you build the veteran hall, you too can retire from being the leader of the company
+    - Accessible at the bottom of the `Company` menu.
+    - You an either start with a new company but with the same player character, or create a brand new one
+    - You can bring along at most 3 slavers and 3 slaves (less if you decide to start with a new char)
+    - Comes shipped with a fully fleshed epilogue for your former company
+  - New feature: Specialists
+    - Unlock by building the Specialist Office building
+    - On duty units can now remain at their duties by passively hiring specialists in their absence
+    - These specialists need to be paid weekly
+  - New feature: Blessing Traits
+    - Units can be bestowed blessing traits during their career, each can stack up to 8 times.
+    - Blessings may prevent various bad things happening to the units.
+    - Blessing types:
+      - Blessing of Protection: prevent injuries
+      - Blessing of Sanity: prevent trauma
+      - Blessing of Purity: prevent corruption
+      - Blessing of Life: prevent slaver from going missing
+      - Blessing of Luck: may prevent disaster quest result.
+      - Blessing of Virginity: prevents anus and vaginas from being gaped
+    - There are also potions that grant a stack of blessing to a unit.
+  - New feature: Curses.
+    - This is the opposite of blessings.
+    - A cursed unit may receive more injuries, corruption, or trauma than usual.
+    - Shipped with six different types of curses:
+      - Curse of weakness (amplify injuries)
+      - Curse of madness (amplify trauma)
+      - Curse of vice (amplify corruption)
+      - Curse of demise (deduct money when they leave your company)
+      - Curse of crow (turn critical success into regular success)
+      - Curse of agape (prevent anus/vagina from being tightened)
+    - Modified some existing content to give out curses
+  - New Feature: Permanent Skill Boosts
+    - Units can gain some permanent skill boosts in their career now
+    - These have severe limitations, and in practice you could never get more than 5 stats this way
+    - These stats are added to unit's base stats, meaning they will be multiplied by multipliers
+    - Shipped with ten new potions.
+  - New feature: Contact units
+    - Contacts can have an associated unit with them now, e.g., your blacksmith contact is now an actual unit
+    - Currently, the following contacts have actual units:
+      - Blacksmith
+      - Tailor
+      - Weaver
+      - Alchemist
+      - Lumberjack
+      - Sex Shop Owner
+    - Contact have tags now
+    - Updated Romeo and Slave and Bondage Cage events to use the contact units
+  - New Feature: In-game Database:
+    - Shows a filter-able and sort-able list of all the content in the game, including:
+      - Quests
+      - Mails
+      - Events
+      - Traits
+      - Items and Furniture
+      - Equipment
+      - Buildings
+      - Sex Actions
+      - Companies
+      - Lore
+      - Title
+  - Massive UI rewrite almost across the entire menus
+  - Duty
+    - Pimp rebalanced
+      - Replaced pimp duty with 5 different pimps, each managing three to four different slaves
+      - Overall profit roughly cut by half
+      - Pimp critical multiplier upped from 1.25 to 1.5
+    - Completely rewritten duty code into DutyTemplate and DutyInstance
+    - New duty: Leader
+    - Mystic duty now increases boon duration instead of reducing injuries.
+    - Peddler contacts now only give 1 item per week, instead of 3
+    - Items / Equipment sold by peddler contacts are now more expensive compared to those sold by favor bonus
+    - Peddler buildings are now streamlined to just 2, instead of 5
+  - Traits
+    - Demonic dick now has 0 value instead of -1000.
+    - Demonic tail penalty: arcane -> sex.
+    - Magic traits now also affect other skill a little.
+  - Balancing
+    - Content specific
+      - Finding fairy finale no longer has failure/disaster, to prevent soft-locking
+      - Battery lease disaster now inflict masochism too.
+      - Outcasts of dragon now have their recruit bg reset to unemployed.
+      - Raid factory for male now only give titanic balls, not both balls and dick
+      - Noble games now always give the good bed instead of a random furniture.
+      - Apprentice background slavers is also allowed to go on magical candlestick event now.
+    - Others
+      - Most quest chains should now chain one into another much easier with their rarities moved from common to always
+      - Slaver hard cap decreased from 34 to 30 for a nicer number.
+      - Increase EXP required to level up from level 1 to 40 by 10%.
+      - Standardize slaver recruitment cost, making them equal with slave buying price
+      - Ex-slave becoming a slaver now gain the "Ex-Slave" title.
+      - Remove prestige requirements from scout harbor/outpost.
+      - Lovers now combines the effects of both rivalry and friendship, instead of being a super friendship.
+      - Fairy is now spawn-able in all unit groups with a tiny chance, not just in forests.
+      - Reduce dragonkin apperance chance in random sea encounters.
+      - Remove sluttiness from boxer equipments.
+      - Fix inconsistent nipple clamp sluttines.
+      - Surgery, slaver corruption, and targeted purification now require master magic.
+      - Added extremely thin/strong preferences to human sea.
+  - Content Creator
+    - FirstName and Surname changer in content creator
+    - Undo and redo now works in content editor, and also added to toolbar.
+    - Gain/lose contact added to content creator.
+    - Contact NPC added to content creator.
+    - ItemIfNew added
+    - PerkChoice and HasPerkChoice added to CC.
+    - SkillAtLeast added to CC.
+    - MoneyAtMost restriction
+    - Add "if any role has trait" to CC.
+    - Trait, building, item, equipment can now be chosen in content creator toolbar.
+    - Add various texts describing stripping equipment.
+    - Added cleavage descriptor
+    - Added unit homeland
+    - Rarity / pool of quest and mail are now shown when making one from a template
+  - Interactive Sex
+    - Implemented Titfuck and Pecjob sex interaction, as well as two associated sex manuals (not obtainable yet)
+    - AI will now calm down appropriately when they cannot orgasm due to chastity / slave rule.
+    - Calm Down Sex Interaction variations.
+    - Chastity will give discomfort during sex now when aroused.
+    - Phallus home dom variation.
+    - Cum variation for dom eat cum.
+    - More variations for anal preference texts during sex.
+    - Text variations for rest sex action.
+    - New sex pose: Upside-Down (not obtainable yet)
+    - More variations for some existing sex interactions
+  - Engine
+    - End week processing performance improvements:
+      - End week processing is now much faster, overall 3x faster than before.
+      - Auto-save is now performed asynchronously
+      - Auto-save can now be set to save every X weeks (default 5 weeks)
+      - End of week processing code is rewritten in JavaScript for speed
+    - Quest outcome chances are now cached at the end of the first week, which indirectly buffs boons and make traumas more deadly.
+    - Implemented unit.getHomeCompany()
+    - Separate debug statistics from debug start and added passages/word count
+    - Errors now contain more information and expanded by default.
+    - Error no longer wrapped in pre tag.
+    - Event cooldown and quest expiration is now a setup constant.
+    - Rewrote item and furniture initialization code
+    - Add visibility requirements to opportunity options (not used yet, due to making autoAnswer sometimes not working)
+  - Images
+    - Unit images reworked. It now picks from all available images, instead of just from one matching background (e.g., a maid + knight unit will have access to both maid and knight images)
+    - New portraits.
+  - Lore
+    - Added lorebook item class, which unlocks lore entries
+    - Added some real book quotes to some lores
+    - Added new lore entry for doppelganger
+  - Rewrites and Text Expansion
+    - Mind mend now has proper text quest, by Milk Maid Sona.
+    - Added trait-based conditionals for a huge amount of quests in the game.
+    - Improved and modernized prologue and landing page
+    - Manual Labor event extended a little.
+    - Magic lore expanded a little.
+    - Race lore expanded greatly.
+  - QoL
+    - Easier to mass-use items now.
+    - Prestige slave now update their prestige values at end of each week.
+    - Can filter unit by traits arbitrarily now.
+    - Lore selector in Content Creator looks slightly better now.
+    - Quests now shown in right sidebar.
+    - Slave order now shown in right sidebar.
+    - Quest level / difficulty added to sidebar quests.
+    - Cancel quest added to team menu.
+    - Can replace equipment on unit from equip menu.
+    - Can change equipmentset from unit menu now
+    - Equipment, items, and furniture now have rarity indicator like traits
+    - Paid slave/slaver gained now show their price in notification
+    - Party has "eligible for auto assign" toggle
+    - Menu position adjustments.
+    - Can auto-furnish bedchamber
+    - Can sort / filter by skill in furniture/equipment menu
+    - Item and equipment has a functional default sort now
+    - Equipment set now shows its unit restrictions
+    - Unit card now has a link to see all the inactive titles
+    - Added some help texts for active/inactive titles
+    - Added filters to contact menu
+    - Added spacebar shortcuts for various menus.
+    - Perk, trauma, and blessing traits are hidden by default in trait selector to reduce clutter
+    - MissingUnitForever now informs you about it.
+  - Misc
+    - Debug menu adjustments
+      - Better debug mode toggle in Settings
+      - Add (Bless), (Curse), and (Level up) to debug edit
+      - Unit's duration with company can be edited in debug-mode
+      - And added [DEBUG] to title bar when playing with debug mode active
+      - Object keys now shown in cards when debug mode is active
+      - Faster TEST EVERYTHING by re-using units
+    - Market objects now show where they originated from
+    - Equipment sets now display 3 icons instead of 2 at max
+    - Units record their origin quest/event now in their histories
+    - Furniture icons now follow the skill colors, like equipments
+    - Player character now starts at level 1 instead of level 3
+    - Max quest difficulty increased to level 100
+    - Added more elf names.
+    - Added missing sources for arabic names.
+    - Some new demonkin names
+    - Farmer Harvest event now can also gives the Enchanted Cucumber.
+    - Added Heal trauma to debug menu.
+    - Lover gender pairings are more fine-grained now.
+  - Refactoring
+    - Apothecary internal building name renamed to market properly.
+    - Job initialization moved to JS
+    - Rewrote unit details and roster actions to Javascript
+    - Equipment set converted to JS
+    - Contact initialization rewritten to passage tag.
+    - Bedchamber converted to JS
+    - Remove deprecated is_destructible from buildings.
+    - Remove deprecated max_copies from buildings.
+    - Unify icon css classes across all icons
+    - Move equipment texts in the twine files to their respective objects.
+    - Remove overflow: hidden for most cards
+    - Opportunity options refactor into object
+    - Remove obsolete weekend files.
+    - Refactored DOM.Card into DOM.Card and DOM.Menu
+    - Company is now refactored, each company has its own file
+    - Rewrote manual quest assignment to JavaScript.
+    - Refactored quest, event, opportunity folders
+    - CYOA quest triggers rewritten to events
+    - Upgrade logic of tower of roses quest/opportunity to modern version
+    - Refactor Furniture bedchamber texts to one place
+    - Refactor quest/event/template common fields into one parent class.
+  - Depreciation
+    - Pastebin -> Ghostbin
+    - Removed several deprecated quests and unit actions
+    - Deprecate cost helper.
+    - Removed obsolete todos.
+  - Documentation
+    - Added notes on discord seven days wait for contributors added to readme.
+    - Moved most key references to the new in-game Database
+    - Added help texts for unit quest assignments
+    - Added selectUnit to docs.
+    - Add blessing traits to docs.
+    - Documentation for adding race updated
+    - Free Cities license is now mentioned in the credits.
+  - Bugfix
+    - Fix shepherd of men dark magic user reference
+    - Fix Slave Order High Demon Society posession option not working.
+    - Fix qc.Blessing error when final trait is null.
+    - Fix empty credits for custom image causing image picker to break
+    - Fix slavercard/slavecard/unemployecard min weight causing issues in CC
+    - Fix flesh shaping for dummies and Test subjects wanted quests missing the veteran hall requirement
+    - Fix equipment set unit not shown when they are on a quest
+    - Fix unit history clipping over unit image in unit description
+    - Fix backwards compat on importing unassigned duties
+    - Fix retiring with a retired slaver causing the slaver not to show up
+    - Fix some visual bugs in retire screen.
+    - Fix de-leveling building not refunding upgrade slot.
+    - Fix Loving Lover furniture issue and letter of challenge actor issue
+    - Fix disaster dominanc/horny training granting extra trait instead of removing existing ones
+    - Fixed MoneyCustom bugged if its used non non content template
+    - Fix furniture icon not colored in item list.
+    - Unit seniority resets when converted between jobs. Fix #277
+    - Fix change portrait not working.
+    - Fix auto-money reward not scaling based on number of slavers on the quest
+    - Fix furniture missing its value.
+    - Fix stuck in bedchamber/furniture edit menu when double clicking edit
+    - Fix auto assign furniture crashing when missing a furniture of any slot
+    - Fix unit quick list sort crashing
+    - Fixed error when sorting units in quest based on crit/failure/success chances.
+    - Fix equipment auto assign menu clipping in edit equipment set.
+    - Fix init state order.
+    - Fix fleshshaping breasts able to grow breasts on male units
+    - Hotfix for error caused by Go Fish event missing a comma.
+    - Fix Broken soul wizard needing basic magic not both basic or master
+    - Fix error when dismissing a slaver that owns a bedchamber
+    - Fix game never autosaving when autosave interval is set to 1.
+    - Fix wrong actor mentioned in stand with the lizardkins.
+    - Fix doppelganger show event not proccing when you made them your slaver.
+    - Fix basic perks duplicated on PC.
+    - Fix perk descriptor shown in unit description for non-slavers.
+    - Special perks now properly excluded from PC default ones.
+    - Fix qres.Through requirement being odd.
+    - Fix undefined in file names in non quest CC.
+    - Fix brave sword description missing its text
+    - Fix cape aid bonus incorrectly set to 1.0 instead of 0.01
+    - Fix duty specialist not costing money.
+    - Fix OneRandom not inheriting its parent cost restrictions.
+    - Fix slave price in market being lower than intended.
+    - Fix personalities for default starting scenarios.
+    - Fix marketer slave order notification bug.
+    - Fix serial bodyswapper third option not working.
+    - Fix enlightenment of the soul using slave to impregnate, not slavers
+    - Fix corrupted computed trait reducing demon values.
+    - Fix missing url for AyyaSap mercy.
+    - Fix mention of bg_inventor to bg_engineer.
+    - Fix prestige slave duty instance storing prestige in the setup obj.
+    - Fix prestige text.
+    - Fix duty database not working.
+    - Fix duty slaves being leveled up by drill sgt.
+    - Fix snowclaw challenge quest rarity from never to common.
+    - Fix debug quest/opp/event lumping the generator actors in the outcome
+    - Fix missing quest tags on 30+ content.
+    - Fixed author credits broken.
+    - Fix armory auto-equip sometimes unequip the set from the unit
+    - Fix mouth tag missing in some spitroast sex actions
+    - Fixed wrong unit referred to in Fruit of Sluttiness.
+    - Fixed favor requirements not displayed correctly.
+    - Fix sort name filter on units, and some other text fixes.
+    - Fix unit group similarity not checked correctly.
+    - Fix subrace pools incorrectly copied over but not modifier properly for some subraces.
+    - Fix vagina/anus tightening missing on slavers.
+    - Fix parties reset with game update.
+    - Fix story container overflowing in Content Creator with both sidebars on.
+    - Fix sparring event comparing intrigue instead of combat
+    - Fix raider instinct awarding wrong favor.
+    - Fix brothel quests being tagged with angel.
+    - Fix multi action muscle/anus not working properly.
+    - Fix shadow wrapper not working correctly with `<<choose>>`
+    - Fix missing home company for demonkin
+    - Fix unable to break will for lizardkin, wolfkin, and catkin
+    - Fix TraitReplace not working with strings
+  - Typo and text fixes
+    - Fix "the the" in "Werewolf Hunt"
+    - Fix finding fairy missing passage
+    - Fix missing scout reference in Werewolf Hunt
+    - Fix some wordings in starting new game plus
+    - Fix incorrect maid reference in Used Housekeeper for Sale event
+    - Potentially allow -> just allow in retire help text
+    - Fixed wrong help text for retire continue.
+    - Fix stray p tag in Vagabond living.
+    - Fix missing "is" in out of retirement.
+    - Fix blacksmith order typo.
+    - Fix missing p tag in standard punishmetn event.
+    - Fix some desert snakes typos.
+    - Fix stray asterisk in an orc name.
+    - Fix perk help texts.
+    - Ambivalent sleeping fix.
+    - Fix consensual topping missing pronoun
+    - Minor grammar fixes in Grand Lunacy (thanks to Elannil)
+    - Fix typo in select unit macro toolbar.
+    - Fix missing dot in unit description.
+    - Fix slavebed "unobtainable" incorrectly placed.
+    - Updated blessing of luck wording.
+    - Fix wrong actor referred to in stand with the lizardkin quest.
+    - Fixed "them" in new quest.
+    - Fix midwork confessions incorrectly placed if.
+    - Marketing office and marketer office has their help texts swapped now.
+    - Fix typos in good slaver bad salver.
+    - Fix doctor double mention in hospital
+    - Various text fixes.
+    - Fix blessing in changelog.
+    - Demonkin female name fixes.
+    - Fix brothel manager duty name.
+    - Vmuscle -> muscle bugfix.
+    - Fix some mistake in go fish quest.
+    - Fix wrong unit referred to in milk oasis text.
+    - Remove 'order' tag from snowclaw challenge since it's hidden.
+    - Opposting -> opposing.
+    - Lore text fixes (thanks to Elannil)
+    - Fix Alberich's quest referring to PC not with name but with "you".
+    - Various text fixes.
+    - Fix missing space in "softskin".
+    - Minor typo fixes (thanks to Kyrozis)
+    - Customer -> customers
+    - "Occassionally" typo fixes
+    - Update play_with_the_slave.twee - If else at the "warm cum" part was unnecessary (thanks to Kyrozis)
+    - Amongst -> among, and other grammar fixes.
+    - Some interaction text fix by Kyrozis
+    - Various other text fixes.
+    - Various grammar bugfixes.
+    - Text fixes.
+    - Fix Typos in domestic matter.
+    - Various event text fixes.
+    - Aspect of Wisdom clarified.
+    - Brothel training typos fixes.
+    - Fix typos and missing tags on some quests.
+    - Fix wrong pronoun on leave, and plant of lewdity being done-able by MC.
+    - Tower of roses typo fix.
+    - Fix tutelage typo.
+    - Text fixes for IreAtLeast and training text.
+    - Fix their -> them typo in huge_tits.
+
+
+v1.5.0.0 (26 February 2021): Huge amount of content, subraces, Text polish, QoL, Balancing
+
+<details>
+
+  **SAVES MADE ON VERSION OLDER THAN v1.4.4.0 IS NOT COMPATIBLE WITH THIS VERSION, NOR IT CAN BE UPGRADED**
+
+  - Special thanks to contributors:
+    - Writers: Milk Maid Sona, Da_Shem, Blueflame451, Bigal, Innoxia (Lilith's Throne), and FCdev
+    - Coders: Naraden, alarmedcat, Arkerthan, and sssk
+    - Others: acciabread, RikuAotsuki, AbleCharlie, gorbo1, bug reporters, as well as Patreon tippers
+  - A gigantic amount of content, more than quadrupling those added in v1.4:
+    - 85 new quests, 43 new mails, 1 duty, 1 new interaction, 131 new events, 14 new traits, 2 new buildings, 16 new items, 9 new equipments, 23 new titles, 5 new lore entries, 6 new sex actions, 167 new portraits, 1 duty
+  - New feature: Primary race and subrace
+    - Each unit has a primary race trait and a subrace trait
+    - The game now has the following races:
+      - Primary race: human, wolfkin, catkin, elves, greenskin, lizardkin, demon
+        - This is final, no additional primary race is planned to be added
+      - Subrace: human (kingdom), human (vale), human (desert), human (sea), angel, werewolf, neko, tigerkin, common elf, fairy, orc, lizardkin, dragonkin, demonkin, demon
+        - Four of these are completely new: fairy, lizardkin, demonkin, and angel
+        - More may be added in the future
+    - You can start the game as any of the subraces now, including tigerkins, dragonkins, angel, and fairy.
+    - These new races come with new quests, portraits, and sometimes new company, new events, and new name pools
+  - New feature: Player character is now referred to in second person for most content in the game
+    - E.g., "you" and "your" instead of "playername" and "playername's"
+    - Includes unit descriptions, quests, events, opportunities, and much more
+  - New feature: Party
+    - Units can be grouped into parties
+    - Units in parties cannot be dismissed manually or be sold in slave orders or in quests that sell them (e.g., Caged Tomato)
+    - Permanent teams are removed. All teams are ad-hoc now. All permanent team functionality moved to party
+    - Team names are now randomized
+  - New feature: a side-bar containing quick information about all your units on larger screens (width at least 1400px)
+    - Includes basic sorting and filtering
+  - New Feature: Resistant Slaves
+    - Some slaves are harder than others to break, requiring specialized treatments
+    - Defiant and Indomitable traits implemented.
+    - These units are banned from going on content until broken properly.
+    - Some existing now give out these traits
+  - Existing content rewrites
+    - A silly amount of text and logic fixes in all content in the game, as a pass were made on all of the (400+ quests, 100+ mails, 150+ events) in the game. These are far too many to list one by one in this changelog (1000+ fixes). There are also many stories that were rewritten to increase the overall writing quality of the game.
+    - New texts for some slave training quests:
+      - Obedience, endurance, masochist, anal, oral (special thanks to FCdev)
+    - Some new banter variations.
+    - Added mentions of tail in various texts
+  - Interactive Sex
+    - Added ambience texts to interactive sex
+    - All sex locations now have furniture.
+    - New sex action: Feet licking (from Lilith's Throne and Innoxia)
+    - New sex action: Nibble neck
+    - New sex action: Tentacle Spitroast
+    - Ear pull sex action now doubles as horn pull against demons and demonkin
+    - Greatly expanded "Do Nothing" interactive sex text, especially on mindbroken units.
+    - Added some variation to several sex actions:
+      - Equip strapon
+      - Move to all fours
+      - Grope balls
+      - Grope breasts
+      - Lick balls
+      - Blowjob
+      - Fondle chest
+    - You can disable specific sex actions in the classroom now.
+    - Add submissive sex penetrations to classroom.
+    - Interactions are now locked behind sex manuals as appropriate.
+    - Can have sex on the floor of bedchambers now.
+  - Content creator:
+    - Authors can add URLs now, linking to either the source or their own websites.
+    - Code editor preview now works for partial results.
+    - Added loop in content creator. Now you can do things such as: gape all slaves, traumatize all slavers, etc
+    - Added the ability to explicitly set a cooldown for other quest/event/opportunity, instead of having to use variables
+    - Makes it possible for a quest outcome to apply the result of another outcome, e.g., critical applying all success results
+    - Approximate min, max, and median unit values for unit groups and unit pools are now shown.
+    - New cost/restrictions: AllowLovers, QuestDirect, TraitReplaceExisting, Equipped, OnDuty, XTraits, HomeOrOnLeave, IsCanPhysicallyXXX, ExpUnit
+    - Injury requirement can set duration now.
+    - Trait restrictions are simplified now
+    - Repfull deprecated in favor of yourrep, theslaver, therace to support first person.
+    - New writing macros
+    - Refactor many existing quests to use these new modern tools.
+  - Trait
+    - Trait effects are completely rebalanced to make all skills more even (thanks to acciabread)
+    - Support for equipments that can give advanced traits like personality / background / magic traits.
+    - Flight is now a computed trait.
+    - Ugly / hideous traits family repurposed to scary / frightening traits.
+    - Weak trait family repurposed to narrow waisted / thin trait family
+    - Added face_scary and face_hideous to multiple criterias.
+    - Trait renames: Generous -> lavish, thrifty -> frugal, Deceitful -> sly. honest -> direct
+    - Renamed wings_feathery to wings_angel
+    - Frugal, Lavish, Sly trait icons updated.
+    - Restrained no longer remove flight.
+    - New adjectives / adverbs for most traits
+  - Images:
+    - 165 new portraits
+  - Engine
+    - DOM conversions are all done
+    - Support for random events that have flavor decisions to be made.
+    - Unit's "number of weeks have been with your company" is no longer reset to 0 when they leave your company
+    - Initial skill focus is now lazily generated.
+    - Add generator quest/opportunity to unit info for future debugging.
+    - Sorted, added a few crit traits, removed a few disaster traits from roles in quests (thanks to RikuAotsuki)
+    - All quest inclusion passage updated to new format using tag "quest"
+    - Implemented semaphore for disabling notification.
+    - Swap success and disaster modifier weights on auto-assign when maximizing critical
+    - [TEST EVERYTHING] is now much faster
+    - Deprecate rear helper costs.
+    - Auto-Save now only takes one slot.
+    - Lovers restriction more fine-grained now, allowing gay, lesbian, or same-sex only.
+    - Replace throw "string" with throw new Error("string").
+    - FilterAll now has graceful failure.
+    - LZString compression is back due to memory issues. Various fixes
+    - Opportunity is now consistent with event/quests in that it will finalize after the texts are rendered instead of before
+    - Choose macro now show notification results at the end of choosing an option.
+  - Refactoring
+    - UnitGroup refactored to reuse existing unit group when the pool distribution is the same.
+    - Unit trait code split to two files and refactored.
+    - Pet Shopping code is untangled and rewritten
+    - Serial bodyswapper code is untangled and rewritten
+    - Refactored raw banter text to a separate folder
+    - Bodypart adjectives refactored
+    - Opportunity folder refactored
+    - Event twee folder refactored refactoring.
+    - Refactored myadv and theiradv out in favor of a|eagerly in sex actions
+    - Initializations of equipmentslot and furnitureslot moved to JS
+  - Balancing
+    - Quest-related
+      - Critical results no longer doubles EXP gained.
+      - Updated critical and disaster traits for many criterias to be more logical and in line with the rebalance, and sorted them into their proper order. (thanks to RikuAotsuki)
+      - Difficulty adjusted slightly to account for the above.
+      - Slave training master now require either magic wind master or magic earth master.
+      - Basic and advanced slave trainings no longer give out traits on critical.
+      - Monetary reward is flattened a bit over difficulties.
+      - Neko statue quest can now generate female nekos
+      - King of Dragons quest is now repeatable, gives you favor with dragonkins on repeat.
+      - Serial bodyswapper now has 250 weeks cooldown.
+      - Swap tall/short in houndmastery to playful/serious.
+      - Can no longer change height in flesh-shaping
+      - Forbidden Fruit orifice tigtening only works on frugal slavers now
+      - The Fire Taketh no longer requires mindmend potion.
+      - Cold Dish is now banned if you ban `maleonly`
+      - Removed mist apprentice strict slaver requirements.
+      - Finding fairy is easier now
+      - Tower of roses now regenerate the unit if you ignore the first quest, so you can choose between a prince or a princess by ignoring the quest
+      - Bodyswap Experiment is now rare.
+      - Unlawfull party title is now unique. It is also buffed. Also make the quest give out a rare furniture on repeat with the unit.
+      - CYOA quest line and 7 sins quest lines now have cooldowns
+      - CYOA quest line for best ending disturbance limit is increased to 3.
+      - Balance adjustments to Milking the Oasis quests
+      - Future Sight no longer give quests on outside regions before you build their scout buildings.
+      - Future Sight is rarer and unique now
+    - Trait
+      - Magic trait is limited to 3 now, down from 4. Skills are unaffected, e.g., 3 magic 1 skill is ok.
+      - Lunatic trait has a money value now.
+    - Race
+      - Race values rebalance, and werewolf race adjustments.
+      - Werewolf is slightly more common now
+      - Demonkins now appear more often in the desert.
+      - Fairy magical preference switched to wind from earth. Lizardkin from light to water
+    - Buildings
+      - New unit/team hard caps (soft cap unaffected): 34 slavers, 120 slaves, 6 teams
+      - Lodgings, dungeons, and armory have their max level and costs standardized now (max level 15)
+      - Fort upgrade costs adjusted
+      - Recreation wing price adjustments
+      - Relations office no longer requires veteran hall, and instead becomes a prerequisite for veteran hall
+    - Others
+      - Lower favor requirement for unlocking sex manual from 100 to 80
+      - Catch-up training is removed. Instead, Drill Sergeant now passively train low-leveled units when on duty.
+      - Increased potion markup from 3x to 5x.
+      - Favor decay threshold adjusted to make it easier: 80 now from 75.
+      - Allow regenerating starting slavers, but nerf number of starting slavers choices to 10.
+      - Increase default event cooldown to 1000 weeks.
+  - QoL
+    - Criteria traits are now displayed in sorted order.
+    - Bedchamber without assigned units now show the duties in its description
+    - Filters for team
+    - Prevent equipping an incompatible equipment on equipment sets that are currently being used
+    - Separate sort/filter for slaver/slaves.
+    - Can sort unit by their duty effectiveness.
+    - More duty sort options (by success chance, prestige, and default sort)
+    - Hovering over skill value now also show their additive factor, instead of just multiplicative factor.
+    - Slave order are filterable, and made into DOM
+    - Slave orders are now shown in the multi-training page
+    - Slave order can be (ignore)d now.
+    - Units that satisfy a slave order requirements except for price are now shown
+  - Misc
+    - More team adjectives
+    - Team name is now: "Team xx" name.
+    - Recommend pastebin to add password
+    - Added a short "new player guide".
+    - Some new name variations
+    - Added help text for defiant slaves
+    - Unify missing unit text into a macro.
+    - Marketer capping at 40 is now written in-game.
+    - Challenge mode is now tagged as "difficulty", and is under (EXPERIMENTAL), and added warning to not turn it on.
+    - Unsortedskills option (thanks to sssk)
+    - Can edit friendship / lovers via unit debug menu (thanks to alarmedcat)
+    - Prestige now hidden until recreation wing is built.
+    - Bump deck retries from 50 to 200.
+    - Changelog renamed to changelog.txt from changelog.md for performance reason
+    - Skill focus clarified: a level up always give 6 skills.
+    - Traumatize/Boonize added to debug menu.
+  - Documentation
+    - ucbody and other ucxxx syntaxes added to documentations.
+    - Add comments warnings on image blob interaction with replace macro.
+    - Added information about image verification script to documentation.
+    - Help text for the a|was syntax in content creator gain unit, history and title
+    - FAQ updated for session storage problems.
+    - Normalize FCdev crediting.
+    - In-game link to license
+    - Innoxia credit updated due to the many new original texts.
+    - Credits updated.
+    - FAQ updated with races.
+    - Earth effect magic on FAQ.
+    - FAQ for session storage exceeded
+    - Updated list of fetishes
+    - Updated documentation with list of fetish and feature
+    - Updated FAQ
+    - Content guidelines updated.
+    - FAQ for compiling problem
+    - Updated instruction for quest creation.
+  - Depreciation
+    - Fully deprecate some of the bonus sex texts that have been converted to events.
+  - Bugfixes
+    - Fix illegible outcome in Your Ransom order
+    - Many spelling and grammar fixes (thanks to AbleCharlie)
+    - Fix requirements being costs instead for some unit training buildings
+    - Remove duplicated names in all units of all races
+    - Fix typo in ValeContact.
+    - Fixed scary and hideous trait adjectives.
+    - Fix Aspect of Experience slave order giving subrace as crit trait
+    - Fix qc.opportunity that does not use strings
+    - Fix "was" to "a|was"
+    - Fix orcish bait text not matching its reward
+    - Fix mistakes in Submission cure quest
+    - Fix physical adjectives completely missing.
+    - Fix the inconsistent traits in Crimson robber quest
+    - Fix incorrect person referred to in dowry of roses.
+    - Fix "clotheses" and missing body flavor text in unit description
+    - Fix "Anal Virgin" to "Virgin" in "Sweet taste of virginity"
+    - Fix setup.trait.job_slave in setup.qres.Job
+    - Fix setParent setting parent's surname instead of child's surname
+    - Fix eternal youth quest failure text.
+    - Fix mastery of magic missing verb.
+    - Fix ancient elven prison being generate-able without the sniffer.
+    - Fix duplicated lore: location_lucgate -> region_city
+    - Fix missing price to build dungeons / armory
+    - Various performance fixes on itch.io build
+    - Fix error when looking at unit history.
+    - Fix kidnap male specimen victim having vagina in text.
+    - Fix some more duplicated traits in role restrictions.
+    - Fix decrease trait not appearing in notification.
+    - Fix duplicated role traits in 30+ places.
+    - Fix weird sentence in resistant slave banter.
+    - Fix filter throwing error when a filter menu name got changed.
+    - Fix for CYOA questline throwing error when displaying gender.
+    - Fix errors in opportunity debug menu.
+    - Fix inconsistent darko and FCdev mention order.
+    - Fix unit description not twining skill desc properly.
+    - Fix for wrong pronouns on mouth-neck, sex scene start with lover, and ob training basic
+    - Fix unit desc on afk onduty unit.
+    - Fix Enlightenment of the Soul event sometimes not firing.
+    - Fix Chart the Vale and Raid Werewolf Camp not being present in the game
+    - Fixed some missing pronoun in Embrace interaction
+    - Fixed Domestic Shoes being a legwear instead of footwear
+    - Fixed incorrect "you" in Gift of the Magi quest
+    - Fix missing equipment set check in unit status page.
+    - Fix image picker not refreshing
+    - Fix woodsman background using the same text with seaman.
+    - Fix incorrect uses of IsMale and IsFemale
+    - Fix traine -> trainee typo.
+    - Fix CYOA error message, and opportunity error message.
+    - Fix incorrect muscle trait skill effects.
+    - Fix missing space in "if you like it".
+    - Fix capture the protagonist has an extra paragraph on failure.
+    - Fix dragonkin mystic portraits unable to use its parents
+    - Fix the gender of demon of choices from CYOA questline.
+    - Some Text fixes (thanks to AbleCharlie)
+    - Fix gained traits hidden on non-mindbroken units.
+    - Fix for sorting using price in slave orders
+    - Fix favor description numbers being incorrect.
+    - Bugfix for tigerkins always generated as female.
+    - Fix the parent of branching timeline son on switching body.
+    - Fix bedchamber mouth equipment wrong rep.
+    - Fix `<<per>>` instead of `<<rep>>`
+    - Fix $g.potter instead of $g.spotter.
+    - Fix unable to recruit with negative money.
+    - Fix Content Creator opportunity create from scratch having the wrong name and author
+    - Fix unable to start out as a fairy.
+    - Fix some swapped female and male roman imperial names.
+    - Fix many incorrect uses of IsHasTrait, IsHasTraitExact, and replace them with IsHasRemovableTrait
+    - Fix missing company favor toggle
+    - Fix setup.DOM.Util.help disappearing after first click
+    - Fix infinite loop in be cleansed in fire when a unit has wings.
+    - Fix removable traits not being checked properly.
+    - Fix Raiding the Oasis passage name.
+    - Fix mentions of "normal mouth", "normal eyes", and "normal ears".
+    - Fix formattings for Oh What a Show quest.
+    - Fix doubled EXP when using qc.Outcomes
+    - Fix unit slaver bug in master the dark
+    - Add parenthesis to skill mod (thanks to sssk)
+    - Fix unit images resetting after F5.
+    - Fix "xxx weeks left" for actors in quests that are not assigned to team yet.
+    - Fix 'cooldown' instaed of 'cooldowns' in backwardscompat (thanks to gorbo1)
+    - Fix missing veteran hall requirements on Finding Fairy
+    - Fix title bug taking % into account. Fix sidebars in mobile dipslays.
+    - Fix multiple filters causing their numbers to get gobbled together
+    - Fix skill focus wrong modifiers
+    - Fix not being able to vaginally orgasm when being fucked.
+    - Fix memory leak in EmptyUnitGroup
+    - Fix for ritual ruanway again.
+    - Fix roles for some events not being an array.
+    - Fix double underscore in generated keys.
+    - getAnySlaver now takes forbidden slavers
+    - Fix injured unit being deleted.
+    - Fix unit history not converted from a|their
+    - Chivalrous -> Chivalrious typo.
+    - Fix dick corruption thrown an error on girls.
+    - Fix wanderer help search for themself.
+    - Elf clarification for mindmend potion.
+    - Convert trait texts to use first person properly.
+    - Fix history of slave order high demon.
+    - Fix wrong comman in vaginal sex texts.
+    - Fix kiss using the wrong texts.
+    - Fix kiss actors being swapped in resist-kiss variations, and reduce redundancy.
+    - Fix blowjob reaction on giving orals.
+    - Fix always trigger event error when not having any options.
+    - Fix on leave units can banter with each other.
+    - Fix broken ascent human having wings as innate traits.
+    - Fix "typo" in werewolf camp raid.
+
+</details>
+
+
+v1.4.0.0 (January 15, 2021): Content, interactive sex, lovers, tigerkin
+
+<details>
+
+ - 21 new quests, 7 new mails, 1 new interaction, 23 new events, 3 new buildings, 22 new items, 2 new equipments, 10 new titles, 136 new sex actions (thanks to Innoxia, Fos, Quiver, Thavil, anonymouse21212, Anon)
+ - New Feature: Interactive Sex. Most writing credits go to Lilith's Throne and Innoxia. See [here](https://github.com/Innoxia/liliths-throne-public/blob/master/license.md) for their license. Consider giving Lilith's Throne game a try! While Innoxia has given permission for their use in this game, she in no way give her endorsement for this game.
+   - Sex between you and slavers or slaves
+   - 136 sex actions to choose from
+   - 16 sex manuals to unlock new actions
+   - New classroom building
+   - Multiple variations depending on various conditions like traits, position, location, furniture, etc
+ - New feature: Lovers
+   - Slavers can become lovers between each other, including you
+   - Will boost each others skills a lot, as well as having bonus texts here and there
+   - Can adjust in settings what kind of gender pairings you'd like to see
+ - New Feature: Subraces support
+   - Subrace acts like races most of the time, but reuse its parent race for most text, therefore minimizing maintenance cost
+   - Tigerkins are implemented as a proper subrace of the neko race, to demonstrate this feature
+   - Tigerkin is shipped with 3 quests, 2 opportunities, and 3 events, and more
+   - Unitpool code rewritten to support this
+ - New Feature: Multi-training
+   - Once you have a vice leader, can assign multiple slave training in one go
+ - New Feature: Potion shop
+   - You can rebuy potions you have ever acquired at a steep markup
+ - Quest and event generation is now deck-based, instead of completely random
+   - Will guarantee that you will see all quests if you scout long enough
+   - Rarity is adjusted to be a category instead of a full spectrum
+ - The game is using a modded SugarCube 2 engine now (thanks to Arkerthan for the suggestion):
+   - Remove save game compression to make loading faster.
+   - Errors now show more meaningful information
+ - Images
+   - A lot more portraits (total number of portraits is now over 1000)
+   - Optimize png and jpg files using optipng and optijpeg (thanks to alarmedcat)
+   - Can reset unit image from settings
+ - Unit Action
+   - Removed equipment requirement from pet/pony trainings.
+   - Unit action now will auto assign units to it by default (adjustable in settings)
+   - Unit actions that are already performed (e.g., obsolete trainings) are hidden
+ - Traits
+   - Cached unit traits for performance.
+   - Nimble and Tough are physical traits now.
+   - Trait filtering and sorting options
+   - job_slave, job_slaver, job_unemployed are now traits
+   - join_junior and join_senior traits are now applicable to slaves
+   - Renamed bg_demon to bg_mist.
+   - Bodyswap no longer swaps gender. Genderswap in debug mode.
+   - Children now inherits their parents innate traits
+ - Duty
+   - Vice-Leader now remains effective even when injured / on a quest.
+   - Preferred traits for slave duties.
+ - Engine work
+   - Major performance improvements for: Equipments, Filter, Duty, Building, Item, Trait Picker, Unit Card, Quest card
+   - Repository size cleanup (300MB -> 100MB)
+ - Text
+   - Support for first-person sentences in some places like unit histories and banters
+   - Money now formatted with commas.
+ - Content Creator
+   - Can condition on quest seed in content creator
+ - Quests
+   - Add support for consecutive quests.
+   - Remove Success+ from quest settings.
+   - The rear deal is now repeatable. Potion of orifice tighening now required for anus/vagina healing.
+ - Documentations are updated in many places
+ - Remove sluttiness limit on player character.
+ - Display option for markets menu.
+ - Drop support for family relationship, due to maintenance and legal reasons.
+ - Many Typos and Bugfixes
+
+</details>
+
+
+v1.3.0.0 (December 26, 2020): Lots of content, new features, UI rewrites, icon rewrite, heavy QoL changes
+
+<details>
+
+ - 18 new quests, 8 new opportunity, 45 new events, 1 new interaction, 1 new unit action (thanks to Alberich, acciabread, Zerutti)
+ - New feature: Ire and Favor. You can gain favor and ire with other companies out there, which will have
+ various in-game effects
+ - New feature: lore
+   - 20 new lore entries
+   - The Continent named as Mestia
+   - New map (thanks to acciabread)
+   - Interactive map regions (thanks to Naraden)
+ - Tooltips are much less intrusive now (thanks to Naraden)
+ - Renamed Northern Plains to Northern Vale
+ - Quest and quest UI:
+   - Quest menu is completely rewritten
+   - Assignment UI is completely rewritten
+   - Quest now hints on what kind of rewards you will get from them (acciabread)
+   - New quests that you have never done before are marked
+   - Panorama in quest cards and mail cards
+   - Quests have icons now
+   - Can set quests as ignored, which will hide them from the UI
+   - Increase default quest expiration from 4 to 6 wks.
+   - Hide quest hub flavor text after grand hall is built
+ - Unit portraits:
+   - Direct support for custom image-packs (thanks to Naraden)
+   - Unit portrait picker (Naraden)
+   - Clicking unit portrait shows a large version of it now
+   - Many new unit portraits
+ - Content Creator Tool:
+   - Built-in text editor (thanks to Naraden)
+     - Macro insertion toolbar
+     - Syntax highlighting
+     - Macro validation
+     - Macro tooltips
+     - Result preview
+       - List of actors editable
+   - Search quests and opportunities by name (thanks to Naraden)
+   - Cost and restriction are restructured to make them easier to use
+   - Content Creator Guide is in-game now
+   - Direct support for making chained quest/opportunity/event
+   - Stackable trait ifs in content creator toolbar.
+   - Internally, the code is rewritten to despaghettify it.
+ - Filter code rewritten from scratch. Everything can be filtered now and they stick to the top, while
+ being less intrusive than usual. Has options to disable or unsticky them
+ - Equipment 
+   - New feature: can automatically attach equipments to equipment set
+   - Merged vagina and dick equipment slots to genital, and added weapon equipment slot
+   - Shuffled equipment to make them spread over slots better (acciabread)
+   - Equipment items now have unique icons (thanks to Naraden)
+   - Equipment traits such as gagged or blinded give hefty skill penalty now.
+ - Trait:
+   - Skin traits can now be innate. E.g., if you got an elf with butterfly wing and they lose the wings later, you can purify them to restore the wings.
+   - Trait have rarity indicator now
+   - Diligent become studious, energetic becomes active, careful becomes cautious, inquisitive becomes curious,
+   violent becomes proud, peaceful becomes humble, perceptive becomes attentive
+   - New traits: dreamy, courtesan background, boss background, artist background, metalworker background
+   - Removed traits: patient (merged to calm), decisive (merged to aggressive), miner, student, sadistic, slutty
+   - Adjusted the skills some of them affect
+   - Orcs now have pointy ears
+   - Many icons are replaced with a better one (acciabread, Naraden)
+   - Human (Exotic) is renamed to Human (Sea)
+   - Long-term slaves converted to slaver gains the slave in addition to their existing background
+   - Upgraded backgrounds of pre-built starting units to their rare version.
+ - Duty:
+   - On duty units can go on quests now
+   - Duties have unique icons
+   - Relationship manager now costs upkeep
+ - Unit Action:
+   - Hides unit actions before unlocking their buildings.
+   - Unit actions appear together now in [Action] menu.
+   - Advanced slaver training is nerfed and requires potion to do
+   - Basic slaver training is nerfed and requires money to do
+   - Flesh shaping now needs basic obedience training
+ - Slave Order
+   - Slave order can be fulfilled directly using free slaves from slave pens
+   - Can do multiple menial slave orders in the same week instead of once per week
+ - Buildings:
+   - New building: Library
+   - Building display adjusted to make it less spammy for new player
+   - Stores building as object in fort now for faster searching.
+ - All icons are stored as SVG now
+ - Slavers can be away from your fort / unavailable for various reasons now
+ - Nerfed overall number of slavers from 36 to 24 before hitting a soft cap
+ - Documentation updated, including for creationg of image packs
+ - Import / Export save as text for mobile users under Settings.
+ - Modified most important links in all menus to buttons.
+ - Several changes to interact screen (thanks to Naraden)
+ - Preparation for converting twine code to JS for performance with DOM tool code (Naraden)
+ - Limit level up to 5 per quest, except catch-up quest
+ - Debug initialization now starts with much more things by default
+ - Issue templates in repository
+ - Update itch.io build command.
+ - Player getting captured is no longer a game over.
+ - Made itch.io bundle flatten the unit images into a single directory (thanks to Naraden)
+ - Moved from gulp to webpack
+ - Backwards compatibility code is now fully in JS
+ - Support for bodyshifting units
+ - Some opportunities have to be answered now
+ - More banter texts (thanks to acciabread).
+ - Success calculation rebalanced from scratch
+ - Childbirth support
+ - Various code cleanups: navigation rewrite, focwidget, etc.
+ - Criterias rebalanced to have 5+ traits
+ - Many bugfixes
+
+</details>
+
+v1.2.x (December 05, 2020) Artist-focused, engine changes, content, features
+
+<details>
+
+- Image sizes are increased 16-fold.
+- Artist credits can be seen in the game by clicking the unit image, or by going to (Interact with unit) page
+- 25+ new quests (special thanks to contributor writer Alberich and Dporentel)
+- 12+ new interactions, including bedchamber/harem-exclusive ones (thanks to Quiver)
+- several new events (thanks to Kyiper)
+- Improved the writings for most quests that were written in v0.9.x
+- New feature: unit titles
+- Content creator: can edit nested conditions as well as remove the unnecessary scrolling required to add multiple restrictions / costs (thanks to Naraden)
+- Teams reworked. Now Mission control governs maximum number of teams you can deploy at the same time. Teams can
+be used to group slavers now. Ad-hoc teams no longer need to be designated
+- Performance fix by making all objects minimal now and no longer duplicate their methods (thanks to Naraden)
+- Added support for easy installation of custom image packs, including from urls (thanks to Naraden)
+- Can choose asset size in character creation
+- Wings are rarer. Dragonkins can choose non-wing skills
+- Tons of engine cleanup for making future development faster (thanks to Naraden), including: version scripts, ES6 compatibility, repository structure changes, webpack instead of gulp, duty refactor, code refactor to use ES6 classes on all files
+- Unit images repeat far less often now
+- Limit to skill and background traits
+- Automated word / sentence generations in content creator (e.g., random insult, random good adjective, etc)
+- Make it easier to add new content into the game (removes needing to "include" them)
+- Several new traits (fairy wings, draconic ear)
+- Several traits have been reworked to be more applicable in more situation and having less overlap. Removed: squire, militia, gardener, great memory, charming, trainer. Added: assassin, monk, scholar, animal whisperer, intimidating, creative
+- UI improvements for equipment sets, duties, markets, bedchamber (thanks to Naraden)
+- Difficulty adjustments
+- Skill focus is more focused now
+- Many bugfixes and QoL features
+
+</details>
+
+v1.1.x (November 20, 2020) Stability, polish, QoL, content, features, everything really!
+
+<details>
+
+- 20+ new quests (special thanks to contributor writer Alberich)
+- 20+ new opportunities (most are part of a quest chain)
+- Game is now completely lagless by making several things load asynchronously
+- Implemented unit histories
+- Implemented variables for content creator
+- Implemented bedchambers (allow keeping harem)
+- Implemented familial connections (e.g., siblings)
+- Implemented bodyswap mechanics and descriptions
+- Implemented conditionals, clauses, and other recursive operations in Content Creator
+- Implemented scheduled events
+- Implemented slave orders in content creator
+- Implemented quests / opportunities that can involve units in your company (e.g., a runaway slave)
+- Second way to write quests in content creator
+- Easier testing in content creator
+- Back button now works to undo to previous weeks
+- More skin traits
+- More background traits
+- More computed traits
+- More restriction options in content creator
+- Make compiling game dirt easy
+- Proper use of articles
+- Tooltips on mobile
+- Flavor texts for unit tags
+- Skill focus UI changes
+- Better map (thanks to contributor mars_in_leather)
+- Requirements QoL (now hidden when satisfied)
+- Keyboard shortcut for ending week
+- AutoSave now works
+- Insurer duty
+- Tons of tutorial and documentation on Content Creator
+- Balance improvements
+- Tons of bugfixes
+
+</details>
+
+v1.0.x (November 6, 2020) Game is released! Polish, QoL, documentation
+
+<details>
+
+- Implemented temporary traits
+- Implemented unit speech types
+- Wrote unit full description
+- Implemented procedural banter texts
+- Adapted around 15 unit interactions from Free Cities
+- Recreation wing flavor texts
+- Flavor texts for duties and building levels
+- Implemented company statistics
+- Improved Content Creator user interface
+- Filters
+- Multiple display options
+- Sorting
+- Implemented building upgrades
+- Implemented editable unit images
+- Drastically reduces save file size (around 85%)
+- Implemented conversion from slave to slaver
+- Implemented Ad-Hoc teams
+- Implemented unt tags
+
+</details>
+
+v0.12.x (October 30, 2020) More core quests
+
+<details>
+
+- 20-ish quests
+- Bugfixes
+
+</details>
+
+v0.11.x (October 27, 2020) Balancing galore
+
+<details>
+
+- Balances all aspects of the game
+- Implemented potions
+- Implemented treatment
+- Implemented friendship
+- Implemented vice-leader
+- Implemented different names per races
+- Implemented character creation
+- Tons of bugfixes
+
+</details>
+
+v0.10.x (October 20, 2020) Core quests
+
+<details>
+
+- Initial 60-ish quests.
+- Implemented the Content Creator
+- Implemented corruption / purification mechanics
+- Performance fixes (part 1)
+- And tons of bugfixes
+
+</details>
+
+v0.9.x (October 7, 2020) Hello world woo!
+
+<details>
+
+- Engine work done
+- Fort-related content done
+
+</details>

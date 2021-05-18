@@ -1,0 +1,437 @@
+:: BedchamberDescription [nobr]
+
+<<set _owner = _bedchamber.getSlaver()>>
+<<set _slaves = _bedchamber.getSlaves()>>
+<<set _isyou = (_owner == $unit.player)>>
+
+  <p>
+  <<rep _bedchamber>>
+  belongs to
+  <<if _isyou>>
+  you.
+  <<else>>
+  <<rep _owner>>
+  <</if>>
+  <<if !_slaves.length>>
+    There are currently <<dangertextlite 'no slaves'>> in the room.
+    You can assign some by assigning slaves into the
+    <<for _duty range _bedchamber.getDuties()>>
+      <<rep _duty>>
+    <</for>>
+    duties.
+  <<else>>
+    There are <<successtext _slaves.length>> slaves in this room, to be used
+    by
+    <<if _isyou>> you as you see fit.
+    <<else>>
+      <<= _owner.getName()>> as <<they _owner>> see fit.
+    <</if>>
+
+    <<for _islave, _slave range _slaves>>
+      <<set _training = setup.UnitTitle.getMainTraining(_slave)>>
+      <<set _description = setup.Text.Unit.Trait.description(_slave, _training)>>
+      <<rep _slave>> is currently wearing <<uequipment _slave>>, and <<= _description>>.
+      <<set _relation = $family.getRelation(_slave, _owner)>>
+      <<if _relation>>
+        This slave is <<= _owner.getName()>>'s <<rep _relation>>.
+        <<if _owner.getSpeech() == setup.speech.friendly>>
+          <<= _owner.getName()>> tries <<their _owner>> best to be nice to <<their _owner>> <<rep _relation>>.
+        <<elseif _owner.getSpeech() == setup.speech.cool>>
+          <<= _owner.getName()>> uses <<their _owner>> <<rep _relation>> like any other slave for <<their _owner>> own enjoyment.
+        <<elseif _owner.getSpeech() == setup.speech.proud>>
+          <<= _owner.getName()>> enjoys teaching <<their _owner>> <<rep _relation>> their proper place in the world.
+        <<else>>
+          <<= _owner.getName()>> enjoys the perversity of having <<their _owner>> <<rep _relation>> as a personal slave.
+        <</if>>
+      <</if>>
+    <</for>>
+
+    <<if _slaves.length == 2>>
+      <<set _relation = $family.getRelation(_slaves[0], _slaves[1])>>
+      <<if _relation>>
+        <<= _slaves[0].getName()>> is <<= _slaves[1].getName()>>'s <<rep _relation>>
+      <</if>>
+    <</if>>
+  <</if>>
+  </p>
+
+  <<set _busyslaves = _bedchamber.getAssignedSlaves().filter(unit => !unit.isAvailable())>>
+  <<if _busyslaves.length>>
+    <p>
+      <<for _busyslave range _busyslaves>>
+        <<Yourrep _busyslave>> is assigned to this bedchamber, but is currently
+        unavailable for use.
+      <</for>>
+    </p>
+  <</if>>
+
+  <p>
+  <<if _slaves.length>>
+    <<if _isyou>>You have<<else>><<rep _owner>> has<</if>> written some rules that the slaves
+    are forced to follow.
+    <<if _bedchamber.getOption('walk') == 'crawl'>>
+      The slaves are not allowed to stand on equal footing with
+      <<if _isyou>>you<<else>>the slaver<</if>> and are forced to crawl on all fours at all times.
+      <<if _slaves[0].isHasTrait(setup.trait.eq_restrained)>>
+        It's not like they have a choice either, given the
+        restraints that <<= _slaves[0].rep()>> is wearing.
+      <</if>>
+    <<elseif _bedchamber.getOption('walk') == 'walk'>>
+      The slaves are allowed to move by walking like a normal humanlike.
+      <<if _slaves[0].isHasTrait(setup.trait.eq_restrained)>>
+        Although given the
+        restraints that <<= _slaves[0].rep()>> is wearing, walking is a difficult task.
+      <</if>>
+    <</if>>
+
+    <<if _bedchamber.getOption('orgasm') == 'no'>>
+      None of the slaves are ever allowed to orgasm.
+      <<if _slaves[0].isHasTrait(setup.trait.eq_chastity)>>
+        A somewhat redundant rule given the state of <<= _slaves[0].rep()>>'s <<udickall _slaves[0]>>.
+      <</if>>
+      <<if _slaves.length > 1 && _slaves[1].isHasTrait(setup.trait.eq_chastity)>>
+        The rule has little effect on <<= _slaves[1].rep()>> and <<udickall _slaves[1]>>.
+      <</if>>
+    <<elseif _bedchamber.getOption('orgasm') == 'yes'>>
+      occasionally, <<if _isyou>>you allow<<else>><<rep _owner>> allows<</if>> the slaves to climax.
+      <<if _slaves[0].isHasTrait(setup.trait.eq_chastity)>>
+        It's a rare occasion however, and most of the time
+        <<= _slaves[0].rep()>> displays their <<udickall _slaves[0]>>.
+      <</if>>
+      <<if _slaves.length > 1 && _slaves[1].isHasTrait(setup.trait.eq_chastity)>>
+        Even so, <<= _slaves[1].rep()>> rarely reaches orgasm --- the reason is obvious when you look at <<their _slaves[1]>> <<udickall _slaves[1]>>.
+      <</if>>
+    <</if>>
+
+    <<if _bedchamber.getOption('speech') == 'full'>>
+      The slaves are allowed to communicate like a human being
+      <<if _slaves[0].isHasTrait(setup.trait.eq_gagged)>>
+        during the rare moments when <<= _slaves[0].rep()>>'s <<ucmouth _slaves[0]>>
+        are taken off
+      <</if>>.
+      <<if _slaves.length > 1 && _slaves[1].isHasTrait(setup.trait.eq_gagged)>>
+        The priviledge is somewhat lost to <<= _slaves[1].rep()>> whose <<umouth _slaves[1]>>
+        remains gagged with  <<ucmouth _slaves[1]>>
+        most of the time.
+      <</if>>
+    <<elseif _bedchamber.getOption('speech') == 'animal'>>
+      The slaves are only allowed to communicate using animal-like sounds, like barks and moos.
+      <<if _slaves[0].isHasTrait(setup.trait.eq_gagged)>>
+        Even then, <<= _slaves[0].rep()>> can only do it
+        during the rare moments when <<= _slaves[0].rep()>>'s <<ucmouth _slaves[0]>>
+        are taken off.
+      <</if>>
+      <<if _slaves.length > 1 && _slaves[1].isHasTrait(setup.trait.eq_gagged)>>
+        The degrading priviledge is somewhat lost to <<= _slaves[1].rep()>> whose <<umouth _slaves[1]>>
+        remains gagged with  <<ucmouth _slaves[1]>>
+        most of the time.
+      <</if>>
+    <<elseif _bedchamber.getOption('speech') == 'none'>>
+      The slaves are not allowed to make any sound, and must remain quiet most of the time lest
+      they receive harsh punishment.
+      <<if _slaves[0].isHasTrait(setup.trait.eq_gagged)>>
+        As an extra insurance, <<= _slaves[0].rep()>>'s <<umouth _slaves[0]>>
+        is stuffed with <<ucmouth _slaves[0]>>
+        most of the time.
+      <</if>>
+      <<if _slaves.length > 1 && _slaves[1].isHasTrait(setup.trait.eq_gagged)>>
+        <<= _slaves[1].rep()>> also wears <<ucmouth _slaves[1]>>
+        for most of the time to ensure compliance with the rules.
+      <</if>>
+    <</if>>
+
+    <<if !_bedchamber.isPrivate()>>
+      <<if _isyou>>
+        You have
+      <<else>>
+        <<name _owner>> has
+      <</if>>
+        generously allowed your private slaves to be used by your other slavers.
+    <<else>>
+      <<if _isyou>>
+        You have
+      <<else>>
+        <<name _owner>> has
+      <</if>>
+        strictly disallowed anyone else to use the slaves.
+    <</if>>
+
+  <<else>>
+    There are no slaves around to be forced to follow
+    <<if _isyou>>your<<else>><<rep _owner>>'s<</if>> rules.
+  <</if>>
+  </p>
+
+  <p>
+    <<set _f = _bedchamber.getFurniture(setup.furnitureslot.slaverbed)>>
+    The centerpiece of the room is the <<rep _f>>, where
+    <<if _isyou>>you can make use of your slaves.<<else>>
+    <<rep _owner>> can make use of <<their _owner>> slaves.
+    <</if>>
+    <<if !_slaves.length>>There are none right now, however.<</if>>
+    <<= _f.getBedchamberText()>>
+
+    <<set _f = _bedchamber.getFurniture(setup.furnitureslot.slavebed)>>
+    On its feet is the <<rep _f>>, where the slaves sleep.
+    <<= _f.getBedchamberText()>>
+  </p>
+
+  <p>
+    <<set _f = _bedchamber.getFurniture(setup.furnitureslot.foodtray)>>
+    The slaves<<if !_slaves.length>>, were there to be any,<</if>>
+    <<if _bedchamber.getOption('food') == 'normal'>>
+    are given standard food to eat on the
+    <<elseif _bedchamber.getOption('food') == 'cum'>>
+    can only eat food that has been tainted with cum on the
+    <<elseif _bedchamber.getOption('food') == 'milk'>>
+    can only eat food that has been mixed with humanlik cum on the
+    <</if>>
+    <<rep _f>>.
+    <<if _slaves.length && _bedchamber.getOption('food') == 'cum'>>
+      <<if _slaves[0].isHasDick()>>
+        Sometimes, <<= _slaves[0].rep()>> mixed <<their _slaves[0]>> own cum into
+        <<their _slaves[0]>> own food.
+      <<elseif _slaves.length > 1 && _slaves[1].isHasDick()>>
+        Sometimes, <<= _slaves[1].rep()>> mixed <<their _slaves[1]>> own cum into
+        <<their _slaves[1]>> own food.
+      <</if>>
+    <</if>>
+    <<= _f.getBedchamberText()>>
+    <<if _owner.isHasDick() && _slaves.length && _owner.Seed('slavecum') % 3 == 0>>
+      <<if _isyou>>
+        You
+      <<else>>
+        <<rep _owner>>
+      <</if>>
+      sometimes provide fresh desserts to the slaves and allow them to suck
+      the cream directly from
+      <<if _isyou>>
+        your
+      <<else>>
+        <<their _owner>>
+      <</if>>
+      "eclair".
+    <</if>>
+
+    <<set _f2 = _f>>
+    <<set _f = _bedchamber.getFurniture(setup.furnitureslot.drinktray)>>
+    The slaves nourishes their thirst by drinking from the <<rep _f>>.
+    <<if _slaves.length && !$settings.bannedtags.watersport && _owner.Seed('piss') % 5 == 0>>
+      Sometimes,
+      <<if _isyou>>
+        you adds a little of your
+      <<else>>
+        <<rep _owner>> adds a little
+      <</if>>
+      piss to spice up their drink.
+    <</if>>
+    <<= _f.getBedchamberText()>>
+  </p>
+
+  <p>
+    <<set _f = _bedchamber.getFurniture(setup.furnitureslot.reward)>>
+    <<if _f.isBasic()>>
+      The room is not equipped with any amusements for the slaves.
+    <<else>>
+      To amuse the slaves when their owners are not in the room,
+      the room is equipped with <<rep _f>>.
+    <</if>>
+    <<= _f.getBedchamberText()>>
+    <<if _bedchamber.getOption('walk') == 'crawl'>>
+      The slaves must remain on all fours, of course.
+    <</if>>
+
+    <<set _f = _bedchamber.getFurniture(setup.furnitureslot.punishment)>>
+    <<if _slaves.length>>
+      When the slaves misbehaves,
+    <<else>>
+      <<if _isyou>>
+      You have
+      <<else>>
+      <<rep _owner>> has
+      <</if>>
+      planned what to do when a slave misbehaves. When they misbehave,
+    <</if>>
+    they will be punished using
+    <<if _f.isBasic()>>
+      nothing but bare <<uhands $unit.player>>.
+    <<else>>
+      <<rep _f>>.
+    <</if>>
+    <<= _f.getBedchamberText()>>
+    <<if _f.getTags().includes('upsidedown')>>
+      <<rep _f>> allows you to hang slaves upside-down from the ceiling,
+      <<if $inventory.isHasItem('sexmanual_upsidedown')>>
+        which unlocks the <<rep setup.sexpose.upsidedown>> for sex in the room.
+      <<else>>
+        but you <<dangertext "don't know">> how to use that in sex for now...
+      <</if>>
+    <</if>>
+  </p>
+
+  <p>
+    <<set _f = _bedchamber.getFurniture(setup.furnitureslot.lighting)>>
+    The room is illuminated by the <<rep _f>>.
+    <<= _f.getBedchamberText()>>
+
+    <<set _f = _bedchamber.getFurniture(setup.furnitureslot.tile)>>
+    <<if _f.isBasic()>>
+      Nothing is covering the worn-out floor.
+    <<else>>
+      The floor is covered with <<rep _f>>.
+    <</if>>
+    <<= _f.getBedchamberText()>>
+
+    <<set _f = _bedchamber.getFurniture(setup.furnitureslot.object)>>
+    <<if _f.isBasic()>>
+      There are no decorative furniture placed on the floor.
+    <<else>>
+      On the corner of the room is a decorative <<rep _f>>.
+    <</if>>
+    <<= _f.getBedchamberText()>>
+
+    <<set _f = _bedchamber.getFurniture(setup.furnitureslot.wall)>>
+    <<if _f.isBasic()>>
+      Nothing is covering the worn out walls of the room.
+    <<else>>
+      The walls of the room is decorated with <<rep _f>>.
+    <</if>>
+    <<= _f.getBedchamberText()>>
+  </p>
+
+  <p>
+    <<if _slaves.length>>
+      <<if _isyou>>
+        <<for _islave, _slave range _slaves>>
+          <<if _islave>>Next, you turn your attention to <<rep _slave>>.<</if>>
+          You command <<rep _slave>> to
+
+          <<if _bedchamber.getOption('walk') == 'crawl'>>
+            crawl over to you like a dog, since <<they _slave>> is not allowed to walk.
+          <<else>>
+            approach you.
+          <</if>>
+
+          <<if _slave.isHasDick()>>
+            <<ustripdick _slave>>
+            <<if _bedchamber.getOption('orgasm') == 'yes'>>
+              <<if Math.random() < 0.5>>
+                You fondle <<their _slave>> <<uballs _slave>>, eliciting moans from the slave.
+              <<else>>
+                You fondle <<their _slave>> leaking <<udick _slave>>, eliciting moans from the slave.
+              <</if>>
+            <<else>>
+              You fondle <<their _slave>> overly full <<uballs _slave>>, which is practically begging for release.
+            <</if>>
+            <<if _slave.isHasTrait(setup.trait.eq_chastity)>>
+              You locked <<their _slave>> <<udick _slave>> back in the chastity cage.
+            <</if>> 
+          <<else>>
+            <<if _bedchamber.getOption('orgasm') == 'yes'>>
+              You fondle <<their _slave>> wet pussy and play with <<their _slave>> clit.
+            <<else>>
+              You fondle <<their _slave>> wet pussy and play with <<their _slave>> clit, which is practically begging for climax after so much time in denial.
+            <</if>>
+          <</if>>
+
+          <<if _slave.isHasTrait(setup.trait.eq_gagged)>>
+            <<They _slave>> moaned through <<their _slave>> <<ucmouth _slave>>
+            as you continue to manhandle <<them _slave>>.
+          <<elseif _bedchamber.getOption('speech') == 'full'>>
+            <<They _slave>> moaned verbally as you continue to manhandle <<them _slave>>.
+          <<elseif _bedchamber.getOption('speech') == 'animal'>>
+            <<They _slave>> gave <<their _slave>> best impression of a cow moo as
+            you continue to manhandle <<them _slave>>.
+          <<elseif _bedchamber.getOption('speech') == 'none'>>
+            <<They _slave>> tried <<their _slave>> best avoiding making any sound
+            as continue to manhandle <<them _slave>>.
+          <</if>>
+        <</for>>
+        <<set _f = _bedchamber.getFurniture(setup.furnitureslot.foodtray)>>
+        Finally, it is time to feed your slaves.
+        You place their food on the <<rep _f>>
+        <<if _bedchamber.getOption('food') == 'normal'>>
+          , a nutritious mixture of ingredients to keep them healthy.
+          Your slaves giddily lap up the food.
+        <<elseif _bedchamber.getOption('food') == 'cum'>>
+          <<if $unit.player.isHasDick()>>
+            . Shoving your <<udick $unit.player>> into <<= _slaves[0].rep()>>'s mouth,
+            you quicky orgasmed ---
+            you spray your cum over the slaves' food to make it edible for your slaves.
+          <<elseif _slaves[0].isHasDick()>>
+            . You proceed to milk <<rep _slaves[0]>>'s <<udick _slaves[0]>>
+            and spray the cum over the food.
+          <<else>>
+            . You opened the bottle of cum you brought to the room and emptied it on
+            the <<rep _f>>.
+          <</if>>
+          Your slaves lap up the cum-soaked food as their only option to not starve.
+        <<elseif _bedchamber.getOption('food') == 'milk'>>
+          <<if _slaves[0].isHasBreasts()>>
+            . You proceed to milk <<rep _slaves[0]>>'s <<ubreast _slaves[0]>>
+            and spill the milk over the food.
+          <<else>>
+            . You opened the bottle of humanlike milk you brought to the room and emptied it on
+            the <<rep _f>>.
+          <</if>>
+          Your slaves lap up the milk-soaked food as their only option to not starve.
+        <</if>>
+      <<else>>
+        <<rep _owner>> often play with <<their _owner>> slaves in the room.
+        <<if _bedchamber.getOption('walk') == 'crawl'>>
+          Sometimes, <<rep _owner>> plays catch with <<their _owner>> slaves who are
+          forced to crawl on all fours and grab the thrown ball.
+        <</if>>
+
+        <<set _slave = _slaves[0]>>
+        <<if _bedchamber.getOption('orgasm') == 'yes'>>
+          <<rep _owner>> often came together with <<their _owner>> slaves,
+          resting all together on the
+          <<set _f = _bedchamber.getFurniture(setup.furnitureslot.slaverbed)>>
+          <<rep _f>>.
+        <<else>>
+          <<rep _owner>> enjoys tormenting <<their _owner>> slaves' genitals,
+          who are forbidden to orgasm.
+        <</if>>
+
+        <<if _bedchamber.getOption('food') == 'normal'>>
+          <<rep _owner>> likes to keep <<their _owner>> slaves healthy by feeding
+          them with standard nutritious diet.
+        <<elseif _bedchamber.getOption('food') == 'cum'>>
+          <<rep _owner>> keeps <<their _owner>> slaves in strict cum-added diet,
+          <<if _slave.isHasDick()>>
+            using the slaves' own dick to produce the cum.
+          <<elseif _owner.isHasDick()>>
+            often adding <<their _owner>> own cum to the slaves' diet.
+          <<else>>
+            borrowing the cum from elsewhere.
+          <</if>>
+        <<elseif _bedchamber.getOption('food') == 'milk'>>
+          <<rep _owner>> keeps <<their _owner>> slaves in strict milk-added diet,
+          <<if _slave.isHasBreasts()>>
+            using the slaves' own udders to produce the milk.
+          <<else>>
+            obtaining the humanlike milk from elsewhere.
+          <</if>>
+        <</if>>
+      <</if>>
+    <<else>>
+      <<if _isyou>>
+        You cannot wait until you get some slaves to play with here.
+      <<else>>
+        <<rep _owner>> is eagerly waiting for <<their _owner>> own personal slaves to play with.
+      <</if>>
+    <</if>>
+  </p>
+
+  <<if !_isyou && _owner.isHasTrait('per_cruel') && _slaves.length>>
+    <<set _text = `(Watch ${_owner.getName()} cruelly uses a slave)`>>
+    <<capture _owner, _slaves>>
+      <<message _text>>
+        <<set _u = _owner>>
+        <<set _victim = setup.rng.choice(_slaves)>>
+        <<include 'BedchamberCruelSlaver'>>
+      <</message>>
+    <</capture>>
+  <</if>>
+

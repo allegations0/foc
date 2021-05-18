@@ -1,0 +1,48 @@
+:: EventSetup_company_rug [nobr event]
+
+<<run new setup.Event(
+'company_rug', /* key */
+"Company Rug", /* Title */
+{ /* Author */
+  name: "darko",
+  url: "",
+},
+[ /* tags */
+  'fort',
+],
+'Event_company_rug',
+{ /* roles (LEGACY) */
+},
+{ /* actors */
+  'you': [
+    setup.qres.You(),
+    setup.qres.Home(),
+  ],
+  'slaver': [
+    setup.qres.Job(setup.job.slaver),
+    setup.qres.NotYou(),
+    setup.qres.Available(),
+    setup.qres.Home(),
+    setup.qres.AllTraits([setup.trait.bg_artisan, setup.trait.join_senior], true),
+  ],
+},
+[ /* outcomes */
+  setup.qc.Item(setup.item.f_tile_good_slaver),
+  setup.qc.BoonizeRandom('slaver', 5),
+],
+[ /* restrictions */
+  setup.qres.Building(setup.buildingtemplate.bedchamberwing),
+],
+setup.EVENT_DEFAULT_COOLDOWN, /* Cooldown */
+setup.rarity.rare, /* Rarity */
+)>>
+
+:: Event_company_rug [nobr]
+<p>
+<<Yourrep $g.slaver>> slaver|is pretty good with <<their $g.slaver>> <<uhands $g.slaver>>, and often slaver|use them to make various small crafts before and still after your joining your company.
+In fact, <<they $g.slaver>> slaver|have just gifted you one of <<their $g.slaver>> creations: a rug embroided with the logo of your company.
+</p>
+
+<p>
+It's a very well-crafted rug, and it must have taken <<therace $g.slaver>> quite some time to finish it. The edges are soft, the materials are durable, and the logo is most certainly drawing attention to the rug. After thanking the slaver, you retreat to your office and place the rug at its entrance for the time being, before you decide a more permanent use of it.
+</p>

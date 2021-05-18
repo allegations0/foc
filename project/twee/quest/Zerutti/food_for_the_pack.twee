@@ -1,0 +1,144 @@
+:: QuestSetup_food_for_the_pack [nobr quest]
+
+/* PROOFREAD COMPLETE */
+
+<<run new setup.QuestTemplate(
+'food_for_the_pack', /* key */
+"Food for the Pack", /* Title */
+{  /* Author */
+  name: "Zerutti",
+  url: 'https://www.reddit.com/r/FortOfChains/comments/kk9fhu/food_for_the_pack_test_quest/',
+},
+[ /* tags */
+'anthro',
+'vale',
+'money',
+],
+1, /* weeks */
+4, /* expiration weeks */
+{ /* roles */
+'tracker': [ setup.qu.trapper, 1],
+'hunter1': [ setup.qu.hunter, 1],
+'hunter2': [ setup.qu.hunter, 1],
+},
+{ /* actors */
+},
+[ /* costs */
+],
+'Quest_food_for_the_pack',
+setup.qdiff.easier2, /* difficulty */
+[ /* outcomes */
+[
+'Quest_food_for_the_packCrit',
+[
+setup.qc.MoneyCustom(2400),
+setup.qc.Favor('werewolf', 30),
+],
+],
+[
+'Quest_food_for_the_packCrit',
+[
+setup.qc.MoneyCustom(1200),
+setup.qc.Favor('werewolf', 15),
+],
+],
+[
+'Quest_food_for_the_packCrit',
+[
+],
+],
+[
+'Quest_food_for_the_packCrit',
+[
+setup.qc.Injury('tracker', 1),
+setup.qc.Injury('hunter1', 1),
+setup.qc.Injury('hunter2', 1),
+],
+],
+],
+[ /* quest pool and rarity */
+[setup.questpool.vale, setup.rarity.common],
+],
+[ /* restrictions */
+],
+[ /* expiration outcomes */
+],
+)>>
+
+
+:: Quest_food_for_the_pack [nobr]
+
+<p>
+In the <<lore region_vale>>, many werewolf tribes call the empty vales as their home long before the humans have settled into the land.
+These wolves are known to be territorial and vicious by their own bestial nature, but that is simply only one facet of their being. They are a proud species with strong ties to their packs, and with a certain kind of honesty that is seldom seen in the more civilized species. If one weren't concerned with their fangs and their claws, one could almost call it naivety.
+</p>
+
+<p>
+It is with this certain kind of 'honesty' that you managed to befriend a contact within the werewolf tribes. They have informed you that the growing cold war between the humans and the werewolves have been heating up lately and the more able of them was fully occupied, in order to maintain the balance.
+This has taken the manpower away from hunting parties, and they hope to borrow your assistance in shoring up the numbers.
+</p>
+
+<p>
+In consideration, this is hardly a difficult request. Your slavers should not have any problems in hunting game animals, given their usual activities. If they did, well, maybe you should start looking for new recruits.
+</p>
+
+
+:: Quest_food_for_the_packCrit [nobr]
+
+
+<p>
+<<if $g.hunter1.isHasTrait('bg_hunter')>>
+  Recalling <<reps $g.hunter1>> past as a hunter, you made the wise decision to send the slaver
+  out on this quest. <<Therace $g.hunter1>> quite enjoyed the prospect of returning to <<their $g.hunter1>>
+  pastime.
+  <<run setup.qc.MoneyCustom(500).apply($gQuest)>>
+  On the other hand, while
+<<elseif $g.hunter1.isHasTrait('per_proud')>>
+  <<Reps $g.hunter1>> pride was slightly damaged at the idea of such a remedial job and while
+  <<run setup.qc.TraumatizeRandom('hunter1', 2).apply($gQuest)>>
+<<elseif $g.hunter1.isHasTrait('per_humble')>>
+  <<Rep $g.hunter1>> humbly accepted the meager job, but <<their $g.hunter1>> teammates were less accepting of it.
+  While
+<<elseif $g.hunter1.isHasTrait('per_calm')>>
+  <<Rep $g.hunter1>> stoically nod at the idea of such an easy job. But while
+<<elseif $g.hunter1.isHasTrait('per_kind')>>
+  <<Rep $g.hunter1>> looked a little down from having to do such a bloody job. While
+  <<run setup.qc.TraumatizeRandom('hunter1', 4).apply($gQuest)>>
+<<else>>
+  <<Rep $g.hunter1>> had <<uadv $g.hunter1>> scoffed at the idea of such a remedial job and while
+<</if>>
+<<rep $g.hunter2>> and <<utheirrel $g.hunter2 $g.tracker>> <<rep $g.tracker>> did not outwardly protest,
+the looks on their faces were enough to hint at their displeasure.
+</p>
+
+
+<<if $gOutcome == 'crit'>>
+<p>
+Still, it looked as if they made the best out of their situation. When they returned, they were chatting up a storm with the rest of the hunting party, trading stories and hunting tips quite amicably. They had exceeded their quota twofold and was invited to the celebration feast afterward. Your contact sent in a bonus in addition to the promised payment, as well as promising to put in some good words for your company to the other werewolf clans.
+</p>
+
+<<elseif $gOutcome == 'success'>>
+<p>
+Still, they did the job as requested. When they returned, <<rep $g.hunter1>> and <<rep $g.hunter2>> immediately ran off to the taverns as <<rep $g.tracker>> reported back (grumbling the entire time as they drew the short straw) to you with the payment for the work done. Your contact perfunctorily thanked you for the job and stated that they will put you in consideration for any more work that the tribes need assistance with.
+</p>
+
+<<elseif $gOutcome == 'failure'>>
+<p>
+The hunting turned to be a failure. Apparently, <<rep $g.tracker>> made the wrong call and had the entire party circling around the same trail for quite some time. While they were able to collect some game, it was not enough to meet the tribes' quota.
+</p>
+
+<p>
+Your contact refused payment for the work and you could only grimace at the time wasted.
+</p>
+<<else>>
+
+<p>
+When your slavers returned, they returned bruised and battered. From what you understand, <<rep $g.hunter1>> hunter1|was overexcited in following up a trail. He ran into a giant bear who attacked your slaving team.
+The party was injured and had to flee back to the tribes to recover.
+</p>
+
+<p>
+Your contact was sympathetic enough to not blame <<rep $g.hunter1>> for the botched job, but he did refuse payment. You felt exasperated at the time wasted and the fact that your slavers would have to be laid up for a week.
+</p>
+<</if>>
+

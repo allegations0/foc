@@ -1,0 +1,83 @@
+:: InitFurnitureWall [nobr]
+
+<<run new setup.Furniture(
+  'f_wall_none',
+  'wall',
+  'The walls are unevenly painted', 
+  /* value = */ 0,
+  setup.furnitureslot.wall,
+  ['basic'],
+  {},
+  {  /* texts */
+    bedchamber: "Perhaps something could help cover the worn-outness of the walls.",
+  },
+)>>
+
+<<run new setup.Furniture(
+  'f_wall_normal',
+  'painting',
+  'Some paintings bought for cheap in the <<lore region_city>>', 
+  /* value = */ setup.FURNITURE_PRICE_NORMAL,
+  setup.furnitureslot.wall,
+  ['normal'],
+  {
+    arcane: setup.FURNITURE_SKILL_NORMAL,
+  },
+  {  /* texts */
+    ambience: [
+      "the man in the a|painting eyes the sex menacingly",
+    ],
+    bedchamber: "The cheap painting does its job well enough diverting attention from the worn-down areas of the walls.",
+  },
+)>>
+
+<<run new setup.Furniture(
+  'f_wall_good',
+  '[UNOBTAINABLE] exotic painting',
+  'Beautiful paintings of various natural sceneries', 
+  /* value = */ setup.FURNITURE_PRICE_GOOD,
+  setup.furnitureslot.wall,
+  ['good'],
+  {
+    arcane: setup.FURNITURE_SKILL_GOOD,
+  },
+  {  /* texts */
+    ambience: [
+      "the exotic painting makes for quite a backdrop in the background of the ensuing debauchery",
+    ],
+    bedchamber: "The beautiful painting lifts the spirit of anyone who gaze upon it.",
+  },
+)>>
+
+<<run new setup.Furniture(
+  'f_wall_master',
+  'PLACEHOLDER wall master title',
+  'PLACEHOLDER wall master description',
+  /* value = */ setup.FURNITURE_PRICE_MASTER,
+  setup.furnitureslot.wall,
+  ['master'],
+  {
+    arcane: setup.FURNITURE_SKILL_MASTER,
+  },
+  {  /* texts */
+  },
+)>>
+
+<<run new setup.Furniture(
+  'f_wall_good_slaver',
+  'painting of your company',
+  'A painting of your company, drawn by one of your more artistic slavers', 
+  /* value = */ setup.FURNITURE_PRICE_GOOD,
+  setup.furnitureslot.wall,
+  ['good'],
+  {
+    slaving: 1,
+    arcane: setup.FURNITURE_SKILL_NORMAL,
+  },
+  {  /* texts */
+    ambience: [
+      'your figure inside the a|rep watches over the ensuing debauchery',
+    ],
+    bedchamber: "A figure much to your liking is painted on it too, alongside some of the slavers you are very familiar with.",
+  },
+)>>

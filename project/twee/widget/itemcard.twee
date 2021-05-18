@@ -1,0 +1,42 @@
+:: ItemCardWidget [nobr widget]
+
+<<focwidget "itemcardcompact">>
+  <<set _dom = setup.DOM.Card.itemcompact($args[0], $args[1])>>
+  <<attach _dom>>
+<</focwidget>>
+
+
+<<focwidget "itemcard">>
+  <<set _dom = setup.DOM.Card.item($args[0], $args[1])>>
+  <<attach _dom>>
+<</focwidget>>
+
+
+<<focwidget "itemcardkey">>
+  <<itemcard setup.item[$args[0]] $args[1]>>
+<</focwidget>>
+
+
+<<focwidget 'itempoolcard'>>
+  <<set _pool = $args[0]>>
+  <<capture _pool>>
+    <div class='itemcard'>
+      <<nameof _pool>>
+      <<for _ieq, _eq range _pool.item_chances >>
+        <br/><<= (_eq * 100).toFixed(2)>>
+        weight
+        <<message '(?)'>>
+          Weight affects the probability of this being chosen. The higher the weight, the higher the chance.
+        <</message>>
+        <<= setup.item[_ieq].rep()>>
+      <</for>>
+    </div>
+  <</capture>>
+<</focwidget>>
+
+<<focwidget 'itempoolcardkey'>>
+  <<itempoolcard setup.itempool[$args[0]]>>
+<</focwidget>>
+
+
+

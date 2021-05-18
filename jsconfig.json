@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "noEmit": true,
+        "target": "esnext",
+        "module": "es2020",
+        "moduleResolution": "node",
+        "checkJs": true
+    },
+    "include": [
+        "src/scripts/**/*.js",
+        "src/scripts/**/*.d.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}

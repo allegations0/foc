@@ -1,0 +1,10 @@
+:: TeamNameChange [nobr]
+<<set $gMenuVisible = false>>
+
+/* Assumes $gTeam_key is set */
+<<set $gTeam = State.variables.team[$gTeam_key]>>
+
+Change <<=$gTeam.name>>'s name to <<textbox "$gTeam.name" $gTeam.name autofocus>>
+
+<<focreturn Done>>
+

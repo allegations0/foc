@@ -1,0 +1,34 @@
+:: InitUnitGroupSlaves [nobr]
+
+<<run new setup.UnitGroup(
+  'missingslaves',
+  'Special: Missing Slaves',
+  [
+  ],
+  1.0,
+  [
+  ]
+)>>
+
+
+<<run new setup.UnitGroup(
+  'soldslaves',
+  'Special: Sold Slaves',
+  [
+  ],
+  0,
+  [
+  ]
+)>>
+
+
+<<run new setup.UnitGroup(
+  'escapedslaves',
+  'Special: Escaped Slaves',
+  [
+  ],
+  1.0,
+  [
+  ]
+)>>
+

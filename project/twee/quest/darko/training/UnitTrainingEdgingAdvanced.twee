@@ -1,0 +1,96 @@
+:: QuestSetupUnitTrainingEdgingAdvanced [nobr quest]
+
+<<run new setup.QuestTemplate(
+  'training_edging_advanced',  /* id */
+  'Edging Training: Advanced',  /* Title */
+  'darko',   /* author */
+  ['fort', 'trait'],  /* tags */
+  1, /* = weeks */
+  1, /* = expired in */
+  {  /* your actors */
+    'head': setup.qu.training_head,
+    'trainer1': setup.qu.training_trainer_sex,
+    'trainer2': setup.qu.training_trainer_sex,
+  },
+  {  /* generated actors */
+    'trainee': null,
+  },
+  [],  /* costs */
+  'QuestUnitTrainingEdgingAdvanced',  /* description */
+  setup.qdiff.harder39,
+  [
+    [
+      'QuestUnitTrainingEdgingAdvancedCrit',
+      [
+        setup.qc.Trait('trainee', setup.trait.training_edging_advanced),
+        
+      ]
+    ],
+    [
+      'QuestUnitTrainingEdgingAdvancedSuccess',
+      [
+        setup.qc.Trait('trainee', setup.trait.training_edging_advanced),
+        
+      ],
+    ],
+    [
+      'QuestUnitTrainingEdgingAdvancedFailure',
+      [],
+    ],
+    [
+      'QuestUnitTrainingEdgingAdvancedDisaster',
+      [
+        setup.qc.Trait('trainee', null, setup.trait.training_edging_master.getTraitGroup()),
+      ],
+    ],
+  ],
+  [],
+  [],
+)>>
+
+:: QuestUnitTrainingEdgingAdvanced [nobr]
+<p>
+This training further improves the proficiency of the slave in edging
+others, but more importantly teaches them how to also properly edge
+themselves without bringing themselves to climax.
+Such a display must be learned to elicit as much pleasure as
+possible into the viewers.
+Training this properly usually require a strict instructor which properly
+castise them whenever they use the training as an opportunity to relief
+themselves.
+</p>
+
+:: QuestUnitTrainingEdgingAdvancedCrit [nobr]
+
+<<if $g.trainee.isMale()>>
+  <<questimage 'unit_training_edging_advanced_male_demon.jpg'>>
+<<else>>
+<</if>>
+
+<p>
+<<Rep $g.trainee>> turned out to be natural at edging.
+The training went so smoothly that
+<<rep $g.head>> and your slavers managed to study other things
+and gain a lot of experience from their spare time during the training.
+</p>
+
+:: QuestUnitTrainingEdgingAdvancedSuccess [nobr]
+<p>
+It was not easy, but through both <<reps $g.trainee>> willingness,
+as well as your slaver's dedications, <<rep $g.trainee>>
+managed to acquire all the necessary skils to graduate from this
+training.
+</p>
+
+:: QuestUnitTrainingEdgingAdvancedFailure [nobr]
+<p>
+Unfortunately, the training was unsuccessful, and the lessons were
+lost in <<reps $g.trainee>> thick skull.
+</p>
+
+:: QuestUnitTrainingEdgingAdvancedDisaster [nobr]
+<p>
+Unfortunately, the lessons proved too much for <<rep $g.trainee>>.
+It is clear that <<reps $g.trainee>> prior training must be
+repeated before another attempt at this training.
+</p>

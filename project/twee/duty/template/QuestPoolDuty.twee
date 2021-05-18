@@ -1,0 +1,39 @@
+:: DutyScoutVale [nobr]
+
+<p>
+Has a chance to grant quests from <<= setup.questpool.vale.rep() >>.
+(If the chance is higher than 100%, then there is a chance that even more quests will be found.)
+</p>
+
+
+:: DutyScoutForest [nobr]
+
+<p>
+Has a chance to grant quests from <<= setup.questpool.forest.rep() >>.
+(If the chance is higher than 100%, then there is a chance that even more quests will be found.)
+</p>
+
+
+:: DutyScoutCity [nobr]
+
+<p>
+Has a chance to grant quests from <<= setup.questpool.city.rep() >>.
+(If the chance is higher than 100%, then there is a chance that even more quests will be found.)
+</p>
+
+
+:: DutyScoutDesert [nobr]
+
+<p>
+Has a chance to grant quests from <<= setup.questpool.desert.rep() >>.
+(If the chance is higher than 100%, then there is a chance that even more quests will be found.)
+</p>
+
+
+:: DutyScoutSea [nobr]
+
+<p>
+Has a chance to grant quests from <<= setup.questpool.sea.rep() >>.
+(If the chance is higher than 100%, then there is a chance that even more quests will be found.)
+</p>
+

@@ -1,0 +1,66 @@
+:: EventSetup_painting_of_your_company [nobr event]
+
+<<run new setup.Event(
+'painting_of_your_company', /* key */
+"Painting of Your Company", /* Title */
+{ /* Author */
+  name: "darko",
+  url: "",
+},
+[ /* tags */
+  'fort',
+],
+'Event_painting_of_your_company',
+{ /* roles (LEGACY) */
+},
+{ /* actors */
+  'you': [
+    setup.qres.You(),
+    setup.qres.Home(),
+  ],
+  'slaver': [
+    setup.qres.Job(setup.job.slaver),
+    setup.qres.NotYou(),
+    setup.qres.Available(),
+    setup.qres.Home(),
+    setup.qres.AllTraits([setup.trait.bg_artist, setup.trait.join_senior], true),
+  ],
+  'slaver2': [
+    setup.qres.Job(setup.job.slaver),
+    setup.qres.NoTraits([setup.trait.join_junior], true),
+  ],
+  'slaver3': [
+    setup.qres.Job(setup.job.slaver),
+    setup.qres.NoTraits([setup.trait.join_junior], true),
+  ],
+},
+[ /* outcomes */
+  setup.qc.Item(setup.item.f_wall_good_slaver),
+  setup.qc.BoonizeRandom('slaver', 5),
+],
+[ /* restrictions */
+  setup.qres.Building(setup.buildingtemplate.museum),
+],
+setup.EVENT_DEFAULT_COOLDOWN, /* Cooldown */
+setup.rarity.rare, /* Rarity */
+)>>
+
+:: Event_painting_of_your_company [nobr]
+<p>
+<<Yourrep $g.slaver>> slaver|have been with you for a long time now, and you know <<therace $g.slaver>> to be a good painter.
+Ever since you've built the <<rep setup.buildingtemplate.museum>>, <<they $g.slaver>> slaver|have often be seen spending <<their $g.slaver>> free time inside, doing something you're not sure what exactly it is.
+</p>
+
+<p>
+Today, you finally know what <<theslaver $g.slaver>> slaver|have been doing all the time inside: apparently drawing. The slaver
+<<if $g.slaver.isHasTrait('per_proud')>>
+pridefully
+<<else>>
+humbly
+<</if>>
+slaver|present the finished painting to you. It is a beautiful painting of your company, including many slavers within. You can see a drawing of
+<<yourrep $g.slaver2>> <<uhobbyverb $g.slaver2>>, and also
+<<yourrep $g.slaver3>> standing next to <<them $g.slaver2>>.
+In the middle of the painting, there is a <<uadjphys $g.you>> <<man $g.you>> — a painting of your own liking.
+Some of your favorite slaves are also drawn in the painting. Overall, the painting is a fitting one for a slaving company such as yourself, and <<yourrep $g.slaver>> slaver|have gifted the painting to you, to do with as you see fit.
+</p>

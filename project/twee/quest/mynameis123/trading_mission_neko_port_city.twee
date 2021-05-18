@@ -1,0 +1,180 @@
+:: QuestSetup_trading_mission_neko_port_city [nobr quest]
+
+<<run new setup.QuestTemplate(
+'trading_mission_neko_port_city', /* key */
+"Trading Mission: Neko Port City", /* Title */
+{ /* Author */
+  name: "mynameis123",
+  url: "",
+},
+[ /* tags */
+  'money',
+  'forest',
+],
+4, /* weeks */
+4, /* expiration weeks */
+{ /* roles */
+  'trader1': [ setup.qu.trader, 1],
+  'trader2': [ setup.qu.trader, 1],
+  'briber': [ setup.qu.briber, 1],
+},
+{ /* actors */
+},
+[ /* costs */
+  setup.qc.MoneyCustom(-4000),
+],
+'Quest_trading_mission_neko_port_city',
+setup.qdiff.normal48, /* difficulty */
+[ /* outcomes */
+  [
+    'Quest_trading_mission_neko_port_cityCrit',
+    [
+      setup.qc.Favor('neko', 300),
+      setup.qc.MoneyCustom(10000),
+    ],
+  ],
+  [
+    'Quest_trading_mission_neko_port_cityCrit',
+    [
+      setup.qc.MoneyCustom(10000),
+    ],
+  ],
+  [
+    'Quest_trading_mission_neko_port_cityFailure',
+    [
+      setup.qc.MoneyCustom(5000),
+    ],
+  ],
+  [
+    'Quest_trading_mission_neko_port_cityDisaster',
+    [
+      setup.qc.MoneyCustom(-2000),
+      setup.qc.Ire('neko', 5),
+    ],
+  ],
+],
+[ /* quest pool and rarity */
+[setup.questpool.forest, setup.rarity.uncommon],
+],
+[ /* restrictions */
+  setup.qres.QuestUnique(),
+  setup.qres.VarEqual('quest_furging_a_new_path_completed', '1'),
+],
+[ /* expiration outcomes */
+],
+)>>
+
+:: Quest_trading_mission_neko_port_city [nobr]
+<p>
+With <<lore location_npc>> being THE bustling trade-hub in the <<lore
+geo_pawninsula>>, normally it would be difficult for some small-time
+trader to get any profitable deals without an insider willing to smooth
+things out.
+</p>
+
+<p>
+But with your new-found reputation among the <<rep $company.neko>> (no small
+part thanks to a certain elderly neko),
+you can actually expect to make a tidy amount of profit, as long as your
+traders are able to navigate through the labyrinth of
+<<rep $company.neko>>... and not
+waste most of their earnings on the many famous brothels lining out the streets.
+</p>
+
+
+:: Quest_trading_mission_neko_port_cityCrit [nobr]
+
+<p>
+Your <<uadj $g.trader1>> traders brought a large sum of money into your table,
+and you can't help but grin at the sum.
+
+<<if $gOutcome == 'crit'>>
+
+While they may have also nipped some of them for a "tour-de-relations" with the local
+nekos, it surprisingly was not wasted, and your neko contacts spoke highly about
+your slavers' "performances", increasing your reputation with them.
+Still, you
+
+<<else>>
+
+But your keen senses are telling you that there are no way your slavers were able to
+pass up the opportunity to make use of the local sluts, and you would have earned
+so much more coins were some of them not spent on the streets.
+You
+
+<</if>>
+
+let out an accusotary stare for the wasted money, and
+<<if $g.trader1.isHasTrait('per_chaste')>>
+  <<rep $g.trader1>> blushed as <<they $g.trader1>> trader1|was reminded of the
+  "entertainment" provided.
+<<elseif $g.trader1.isHasTrait('per_sly')>>
+  <<rep $g.trader1>> feigned ignorance at your accusations, still pretending nothing
+  had happened back in the city.
+<<elseif $g.trader2.isHasTrait('per_chaste')>>
+  <<rep $g.trader2>> blushed as <<they $g.trader2>> trader2|was reminded of the
+  "entertainment" provided.
+<<elseif $g.trader2.isHasTrait('per_sly')>>
+  <<rep $g.trader2>> feigned ignorance at your accusations, still pretending nothing
+  had happened back in the city.
+<<elseif $g.briber.isHasTrait('per_chaste')>>
+  <<rep $g.briber>> blushed as <<they $g.briber>> briber|was reminded of the
+  "entertainment" provided.
+<<elseif $g.briber.isHasTrait('per_sly')>>
+  <<rep $g.briber>> feigned ignorance at your accusations, still pretending nothing
+  had happened back in the city.
+<<else>>
+  the trio of slavers accused each other for wasting the money, earning you a sigh.
+<</if>>
+</p>
+
+
+:: Quest_trading_mission_neko_port_cityFailure [nobr]
+<p>
+Your <<uadj $g.trader2>> traders managed to earn a decent amount of money.
+Unfortunately your traders were a bit too zealous on providing charity to the
+poor harlots in <<lore location_npc>>, and only came back with a fraction of
+the potential earnings. At least your usual grumblings are justified this time.
+</p>
+
+
+
+:: Quest_trading_mission_neko_port_cityDisaster [nobr]
+
+<p>
+You thought to yourself, "Where did I go wrong?".
+</p>
+
+<p>
+Not only did your <<uadjbad $g.trader1>> traders failed to negotiate a deal and in the process made fools of themselves in front of the <<rep $company.neko>>. Not only did they waste ALL of your hard earned money on literal pussy whores. They had the audacity to come back with DEBT that YOU have to pay.
+</p>
+
+<p>
+You took a deep breath, perhaps this weren't your <<uadjbad $g.trader2>>
+slavers fault but instead your own. Perhaps if you were more respectable to
+your slavers, treat them like fellow brothers-in-slaves rather than
+brain-dead peons that you won't hesitate to sacrifice if it made a quick
+buck, then they would actually put in the effort to do the job right. Maybe
+start paying them actual decent wages.
+</p>
+
+<<if !$g.briber.isYou() && $unit.player.isDominant() && !$g.briber1.isDominant()>>
+<p>
+You stopped your pondering, and decided to unleash your frustration
+by dominantly commanding <<rep $g.briber1>> to take off <<their $g.briber1>> pants,
+before moving behind them.
+Without warning, you <<ustrippantsand $unit.player>>
+shove your <<udickorstrap $unit.player>> deep inside
+<<reps $g.briber>> <<uanus $g.briber>>.
+You let out every ounce of frustration in the form of a cathartic climax, using
+your slavers as if <<they $g.briber>> briber|was a slave, while the other two
+watched, horrified by your actions.
+</p>
+
+<p>
+You breathed a sigh of relief, but as post-nut-clarity sets in, you realized
+that's the dumbest idea you had all week.
+Still, the punishment was well deserved, and you allow them to exit your office,
+including the butt-hurt <<rep $g.briber>>.
+</p>
+<</if>>

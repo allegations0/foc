@@ -1,0 +1,25 @@
+:: GeneratableDebug [nobr]
+
+<<focreturn 'Back'>>
+
+<h2>Select questpool</h2>
+
+<<for _ipool, _pool range setup.questpool>>
+  <<capture _pool>>
+    <<set _linktext = `${_pool.getName()}`>>
+    <<message _linktext>>
+      <<set _generatable = _pool.getAllQuestsAndOpportunities()>>
+      <<run _generatable.sort((a, b) => a.template.getDifficulty().getLevel() - b.template.getDifficulty().getLevel())>>
+      <<for _can range _generatable>>
+        <<if _can.template.isCanGenerate()>>
+          <div>
+            <<rep _can.rarity>>: (<<= _can.template.getDifficulty().rep()>>) <<= _can.template.getName() >>
+          </div>
+        <</if>>
+      <</for>>
+    <</message>>
+  <</capture>>
+  <br/>
+<</for>>
+
+

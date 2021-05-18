@@ -1,0 +1,138 @@
+:: LORESETUP_location_fort [lore]
+
+<<run new setup.Lore(
+  'location_fort',  /* key */
+  'Your Fort',  /* name */
+  [  /* tags */
+    'location',
+  ],
+  [  /* visibility requirements */
+  ],
+)>>
+
+:: LORE_location_fort [nobr]
+<p>
+Your home.
+</p>
+
+:: LORESETUP_location_institute_of_higher_learning [lore]
+
+<<run new setup.Lore(
+  'location_institute_of_higher_learning',  /* key */
+  'Institute of Higher Learning',  /* name */
+  [  /* tags */
+    'location',
+  ],
+  [  /* visibility requirements */
+  ],
+)>>
+
+
+
+:: LORE_location_institute_of_higher_learning [nobr]
+<p>
+The Institute of Higher Learning is an infamous academy in <<lore region_city>>.
+The name "institute" is only in appearance -- in reality they are more akin to prisons
+or jail -- nobles having problem children would often send them away to "study" in
+the institute.
+It is unclear what happens within the institute, but all of its graduates came out
+sweet and pliable regardless of how obstinate or headstrong they were at the time of admission.
+</p>
+
+<p>
+The school strictly separate its men and women divisions, aptly named
+the Institute of Higher Learning for Men and the Institute of Higher Learning for Women.
+While the school officially stated that they do so in order to keep their
+students chaste and free of temptations, rumors speak of a very, very different reasons...
+</p>
+
+
+
+:: LORESETUP_location_npc [lore]
+
+<<run new setup.Lore(
+  'location_npc',  /* key */
+  'Neko Port City',  /* name */
+  [  /* tags */
+    'location',
+  ],
+  [  /* visibility requirements */
+  ],
+)>>
+
+:: LORE_location_npc [nobr]
+<p>
+The Neko Port City, often abbreviated as NPC, is the largest settlement in the western forests.
+As its name suggest, it is a large fort city in the <<lore geo_pawninsula>>,
+and many traders call this port a home.
+</p>
+
+<p>
+The Neko Port City is mostly governed by a circle of commoners, and while the
+Neko royalty still exists, they are mostly considered symbolic and usually take no
+part in the government of the city.
+</p>
+
+
+
+:: LORESETUP_location_princeofcups [lore]
+
+<<run new setup.Lore(
+  'location_princeofcups',  /* key */
+  'The Prince of Cups',  /* name */
+  [  /* tags */
+    'location',
+  ],
+  [  /* visibility requirements */
+  ],
+)>>
+
+:: LORE_location_princeofcups [nobr]
+<p>
+A quiet and very exclusive wine house in <<lore region_city>>, known for its private booths and the discretion of its staff.
+Serving sumptuous wines, excellent food, and commanding a view far enough away from the lower city for the buildings to look beautiful, The Prince of Cups is favoured by the city's Merchant Princes, and those merchants aspiring to join their ranks. It is said that many deals, both commercial and dubious, are struck here, and it is not uncommon to see scruffy mercenaries and other less savoury characters walking tentatively through the doors, unsure of their reception in such a place.
+</p>
+
+
+
+:: LORESETUP_location_purrloin [lore]
+
+<<run new setup.Lore(
+  'location_purrloin',  /* key */
+  'Purrloin',  /* name */
+  [  /* tags */
+    'location',
+  ],
+  [  /* visibility requirements */
+  ],
+)>>
+
+:: LORE_location_purrloin [nobr]
+<p>
+A famous high-end whore-house in the <<lore location_npc>>, specializing in delivering neko and
+elven whores for the most tasteful clients.
+As a high-end brothel, it maintains a highly professional workforce, although there are rumors
+that deep down in its basement dwell many unfortunate slaves offered only to the wealthiest
+clients...
+</p>
+
+
+
+:: LORESETUP_location_qarma [lore]
+
+<<run new setup.Lore(
+  'location_qarma',  /* key */
+  'City of Qarma',  /* name */
+  [  /* tags */
+    'location',
+  ],
+  [  /* visibility requirements */
+  ],
+)>>
+
+:: LORE_location_qarma [nobr]
+<p>
+The largest city in the eastern deserts, many call this dusty place a home.
+Every since the <<rep $company.humankingdom>> banned slavery, the city economy
+has boomed with the influx of slaves coming from all around the place.
+</p>

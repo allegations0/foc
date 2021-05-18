@@ -1,0 +1,29 @@
+#!/bin/sh
+#
+# NOTE: need to run 'git config core.hooksPath .githooks' to enable this! 
+#
+# Called by "git commit" with no arguments.  The hook should
+# exit with non-zero status after issuing an appropriate message if
+# it wants to stop the commit.
+
+function check_diffs () {
+  FILES_PATTERN="$1"
+  FORBIDDEN="$2"
+  MESSAGE="$3"
+  CHANGED_FILES=$(git diff --cached --name-only | egrep $FILES_PATTERN)
+  OK=1
+  for FILE in $CHANGED_FILES ; do
+    git diff --cached --no-color -U0 $FILE | egrep '^\+[^\+]' | egrep -q "$FORBIDDEN"
+    if [[ "$?" -eq 0 ]]; then
+      OK=0
+      echo "$FILE"
+    fi
+  done
+  if [[ "$OK" -eq 0 ]]; then
+    echo "COMMIT REJECTED: $MESSAGE"
+    exit 1
+  fi
+}
+
+# Ensure that changelog.txt doesn't contain '[TODO BEFORE COMMIT]'
+check_diffs '^changelog.txt$' '[TODO BEFORE COMMIT]' 'changelog.txt needs manual revising after version change (remove "[TODO BEFORE COMMIT]" to allow commit)'

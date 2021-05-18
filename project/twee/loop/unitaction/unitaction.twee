@@ -1,0 +1,22 @@
+:: UnitActionChoose [nobr]
+
+<<set $gMenuVisible = false>>
+
+<<set _unit = $unit[$gUnitSelected_key]>>
+
+What would you like to do for <<rep _unit>>?
+
+<<unitactionlist setup.unitaction _unit>>
+
+
+:: TrainingDo[nobr]
+
+<<set _unit = $unit[$gUnitSelected_key]>>
+<<set _unittraining = setup.unitaction[$gTrainingSelected_key]>>
+<<unset $gTrainingSelected_key>>
+<<unset $gUnitSelected_key>>
+
+<<run _unittraining.generateQuest(_unit)>>
+
+<<focgoto 'QuestHub'>>
+

@@ -1,0 +1,64 @@
+:: LoadArmoryWidgets [nobr widget]
+
+<<focwidget 'equipmentcard'>>
+  <<set _dom = setup.DOM.Card.equipment($args[0], $args[1])>>
+  <<attach _dom>>
+<</focwidget>>
+
+<<focwidget 'equipmentcardcompact'>>
+  <<set _dom = setup.DOM.Card.equipmentcompact($args[0], $args[1])>>
+  <<attach _dom>>
+<</focwidget>>
+
+<<focwidget 'equipmentcardkey'>>
+  <<equipmentcard setup.equipment[$args[0]] $args[1]>>
+<</focwidget>>
+
+
+<<focwidget 'equipmentsetcard'>>
+  <<set _dom = setup.DOM.Card.equipmentset($args[0], $args[1])>>
+  <<attach _dom>>
+<</focwidget>>
+
+<<focwidget 'equipmentsetcardcompact'>>
+  <<set _dom = setup.DOM.Card.equipmentsetcompact($args[0], $args[1])>>
+  <<attach _dom>>
+<</focwidget>>
+
+<<focwidget 'equipmentsetcardkey'>>
+  <<equipmentsetcard $equipmentset[$args[0]] $args[1]>>
+<</focwidget>>
+
+
+<<focwidget 'equipmentpoolcard'>><<foctimed 0s>>
+  <<set _pool = $args[0]>>
+  <<capture _pool>>
+    <div class='equipmentsetcard card'>
+      <<nameof _pool>>
+      <<if 'group_chances' in _pool>>
+        <<for _igcpool, _gcpool range _pool.group_chances>>
+          <br/>
+          <<= (_gcpool * 100).toFixed(2)>> weight
+          <<message '(?)'>>
+            Weight affects the probability of this being chosen. The higher the weight, the higher the chance.
+          <</message>>
+          for <<= setup.equipmentpool[_igcpool].rep()>>
+        <</for>>
+      <<else>>
+        <<for _ieq, _eq range _pool.equip_chances >>
+          <br/><<= (_eq * 100).toFixed(2)>>
+          weight
+          <<message '(?)'>>
+            Weight affects the probability of this being chosen. The higher the weight, the higher the chance.
+          <</message>>
+          for <<= setup.equipment[_ieq].rep()>>
+        <</for>>
+      <</if>>
+    </div>
+  <</capture>>
+<</foctimed>><</focwidget>>
+
+<<focwidget 'equipmentpoolcardkey'>>
+  <<equipmentpoolcard setup.equipmentpool[$args[0]]>>
+<</focwidget>>
+

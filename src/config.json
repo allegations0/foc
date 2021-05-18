@@ -1,0 +1,23 @@
+{
+
+    "minify": false,
+
+    "directories": {
+        "user-js": "./src/scripts/**/*.js",
+        "user-css": "./src/styles/**/*.css",
+        "vendor-js": "./vendor/**/*.js",
+        "vendor-css": "./vendor/**/*.css",
+        
+        "out-js": "./generated/dist/scripts",
+        "out-css": "./generated/dist/styles",
+        
+        "out-js-debug": "./generated/dev/scripts",
+        "out-css-debug": "./generated/dev/styles",
+
+        "vendor-file-js": "bundle.min.js",
+        "vendor-file-css": "bundle.min.css",
+        "user-file-js": "user.min.js",
+        "user-file-css": "user.min.css"
+    }
+
+}

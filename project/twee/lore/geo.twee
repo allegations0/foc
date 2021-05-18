@@ -1,0 +1,57 @@
+:: LORESETUP_geo_pawninsula [lore]
+
+<<run new setup.Lore(
+  'geo_pawninsula',  /* key */
+  'Pawninsula',  /* name */
+  [  /* tags */
+    'geo',
+  ],
+  [  /* visibility requirements */
+  ],
+)>>
+
+:: LORE_geo_pawninsula [nobr]
+<p>
+A small peninsula located on the western <<lore continent_main>>.
+The <<lore location_npc>> is located here.
+</p>
+
+
+:: LORESETUP_geo_cerna [lore]
+
+<<run new setup.Lore(
+  'geo_cerna',  /* key */
+  'Cerna River',  /* name */
+  [  /* tags */
+    'geo',
+  ],
+  [  /* visibility requirements */
+  ],
+)>>
+
+:: LORE_geo_cerna [nobr]
+
+<p>
+The largest river on <<lore continent_main>>.
+The river passes right next to <<lore location_fort>>
+before meeting the sea at the port of the <<lore region_city>>.
+</p>
+
+
+:: LORESETUP_geo_varde [lore]
+
+<<run new setup.Lore(
+  'geo_varde',  /* key */
+  'River Varde',  /* name */
+  [  /* tags */
+    'geo',
+  ],
+  [  /* visibility requirements */
+  ],
+)>>
+
+:: LORE_geo_varde [nobr]
+
+<p>
+A river making its way through the icy valleys of the <<lore region_vale>>.
+</p>

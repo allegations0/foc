@@ -1,0 +1,67 @@
+:: BedchamberCruelSlaver [nobr]
+
+/* By FCdev from Free Cities game */
+
+<<set $i = {}>>
+<<set $i1 = {}>>
+<<set $i2 = {}>>
+<<pronounload $i1 _u>>
+<<pronounload $i2 _victim>>
+<<set _v = _victim>>
+
+<<loadinteractioncommon _u>>
+
+You watch as <<rep _u>> approached one of <<their _u>> private slaves <<rep _v>>.
+Poor <<name _v>> cringes at <<name _u>> predatory expression,
+but the cruel slaver doesn't pounce at once.
+Instead, $i1.he starts to walk around <<name _v>>, whose
+<<ubody _v>> is nude for bed,
+groping and prodding $i2.him as <<name _v>> shivers with fear.
+Finally <<name _u>> sidles up behind <<name _v>> snaking $i1.his <<uarms _u>>
+around <<name _v>>'s
+waist to cup $i2.his
+<<if _v.isHasDick()>><<udick _v>><<else>>pussy<</if>>
+possessively with one <<uhand _u>>.
+<<name _v>> closes $i2.his <<ueyes _v>>.
+<br><br>
+<<name _u>> chuckles into <<name _v>>'s <<uears _v>>, crooning,
+"<<uinsultrape _u _v>>"
+$i1.He grinds against the wilting <<name _v>>, and then continues,
+"I felt your butt clench just now."
+$i1.He gives <<name _v>>'s <<if _v.isHasBalls()>>balls a gentle squeeze<<elseif _v.isHasDick()>>
+dick a gentle tug<<else>>pussylips a gentle massage<</if>>.
+"It's going to hurt, you little bitch.
+I'm going to hold you down and shove my
+<<if _u.isHasDick()>>cockhead<<else>>strap-on<</if>>
+right up against this tight little hole."
+$i1.He gropes the quivering slave's anus.
+"You're going to do your best to relax like a good little <<girl _v>>.
+But it's going to be so big.
+It's going to burn.
+And then you're going to panic, and struggle,
+and I'm going to hold you down and rape your butt while you scream and cry."
+
+<br><br>
+/*
+<<name _v>>
+keeps $i2.his eyes clamped shut and $i2.his <<uhands _v>> down at $i2.his sides,
+balled into fists,
+but $i2.his self-control finally cracks and $i2.he lets out a great gasping sob before bursting into tears.
+*/
+
+<<name _u>> suddenly shove <<name _v>> towards the $i.bed.
+$i2.He crashes facedown into the $i.bed, already sobbing in terror.
+$i1.He places a <<uhand _u>> on $i2.his back to hold $i2.him down and then use the other to
+apply some lube to $i1.his <<if _u.isHasDick()>>penis<<else>>strap-on<</if>> before
+pressing it against the quivering slave's anus.
+$i2.He shakes with anguish, causing <<if _u.isHasDick()>><<name _u>>'s cock to rub deliciously
+<<else>>the strap-on to slide amusingly<</if>> up and down $i2.his asscrack.
+<<name _v>> desperately takes in a huge breath.
+Here <<name _u>> begin to apply inexorable pressure.
+<<name _v>> manages one more deep breath, but it becomes a squeal of
+anguish and $i2.he tries frantically to burrow into the $i.bed, away from the penetrating
+<<if _u.isHasDick()>>cock<<else>>strap-on<</if>>.
+In the end, <<name _v>> is a mess, but hurries fearfully to obey <<name _u>>'s instructions
+to go clean <<themselves _v>>.
+
+<<questauthorcardtext 'FCdev'>>

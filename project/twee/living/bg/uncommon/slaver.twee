@@ -1,0 +1,31 @@
+:: LIVINGSETUP_slaver [nobr living]
+
+<<run new setup.Living({
+  key: 'slaver',
+  name: 'Slaver',
+  tags: ['uncommon', ],
+  unit_restrictions: [],
+  default_preference: setup.LIVING_VERYCOMMON_PREFERENCE,
+  trait_preferences: {
+    bg_slaver: setup.LIVING_COMMON_PREFERENCE,
+    bg_thug: setup.LIVING_MORECOMMON_PREFERENCE,
+  },
+  business: [
+    'going on a Lv. 60 hard quest',
+    'training a slave',
+    'enjoying the services of a slave',
+  ],
+  location: 'company fort',
+})>>
+
+:: LIVING_slaver [nobr]
+
+<p>
+Once a slaver, always a slaver.
+After leaving your company, <<rep $g.a>> simply join another one of the many
+slaving companies in the area.
+a|They would rise in the ranks,
+no small part thanks to a|their <<upraisenoun $g.a>> as well as a|their wealth
+of experience,
+before eventually becoming the second in command of a|their new company.
+</p>

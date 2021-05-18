@@ -1,0 +1,19 @@
+:: LORESETUP_continent_main [lore]
+
+<<run new setup.Lore(
+  'continent_main',  /* key */
+  'Mestia',  /* name */
+  [  /* tags */
+    'geo',
+  ],
+  [  /* visibility requirements */
+  ],
+)>>
+
+:: LORE_continent_main [nobr]
+<p>
+The continent where your fort is located at. Its central location hosts
+many different biomes, from cold tundras on the north, scorching deserts to the east,
+and dense forests to the west.
+</p>
+

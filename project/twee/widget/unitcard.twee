@@ -1,0 +1,12 @@
+:: UnitCardWidget [nobr widget]
+
+<<focwidget "unitcard">>
+  <<set _dom = setup.DOM.Card.unit($args[0], $args[1])>>
+  <<attach _dom>>
+<</focwidget>>
+
+
+<<focwidget "unitcardkey">>
+  <<unitcard $unit[$args[0]] $args[1]>>
+<</focwidget>>
+

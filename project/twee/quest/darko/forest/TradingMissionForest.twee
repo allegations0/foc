@@ -1,0 +1,159 @@
+:: QuestSetupTradingMissionForest [nobr quest]
+
+/* PROOFREAD COMPLETE */
+
+<<set _trader = setup.CriteriaHelper.CritTraits(
+  [
+    setup.trait.race_elf,
+    setup.trait.race_catkin,
+    setup.trait.magic_earth,
+    setup.trait.magic_earth_master,
+  ],
+  setup.CriteriaHelper.DisasterTraits(
+    [
+      setup.trait.subrace_humankingdom,
+      setup.trait.magic_wind,
+      setup.trait.magic_wind_master,
+    ],
+    setup.qu.trader,
+  )
+)>>
+
+
+<<run new setup.QuestTemplate(
+  'trading_mission_forest', /* key */
+  'Trading Mission: Forest', /* Title */
+  'darko',   /* author */
+  ['forest', 'money'],  /* tags */
+  1,  /* weeks */
+  4,  /* quest expiration weeks */
+  { /* roles */
+    'trader1': _trader,
+    'trader2': _trader,
+    'guard': setup.qu.guard,
+  },
+  { /* actors */
+  },
+  [ /* costs */
+    setup.qc.MoneyNormal(-0.5),
+  ],
+  'QuestTradingMissionForest', /* passage description */
+  setup.qdiff.easy17, /* difficulty */
+  [ /* outcomes */
+    [
+      'QuestTradingMissionForestCrit',
+      [
+        setup.qc.MoneyNormal(3),
+        setup.qc.Favor('elf', 30),
+      ],
+    ],
+    [
+      'QuestTradingMissionForestSuccess',
+      [
+        setup.qc.MoneyNormal(2),
+        setup.qc.Favor('elf', 30),
+      ],
+    ],
+    [
+      'QuestTradingMissionForestFailure',
+      [
+        setup.qc.MoneyNormal(0.1),
+      ],
+    ],
+    [
+      'QuestTradingMissionForestDisaster',
+      [
+        setup.qc.TraitIncreaseExisting('guard', setup.trait.anus_gape),
+        setup.qc.TraitIncreaseExisting('guard', setup.trait.vagina_gape),
+        setup.qc.Injury('guard', 1),
+      ],
+    ],
+  ],
+  [[setup.questpool.forest, setup.rarity.common],], /* quest pool and rarity */
+  [], /* prerequisites to generate */
+)>>
+
+
+:: QuestTradingMissionForest [nobr]
+
+<p>
+Some settlements in the <<lore region_forest>>
+do not always have good relationship with the <<rep $company.humankingdom>>.
+This makes their trading situation somewhat awkward, as the forests they reside in are lacking in
+some critical materials such as bronze and iron.
+These settlements often request trade caravans from faraway land, and would compensate them greatly
+should the caravan managed to survive the dangers of the land and arrived unscathed.
+</p>
+
+<p>
+There is money to be made here, if you are willing to act as a mediator. Buy some iron from the city
+and sell them to the forest settlements.
+This would definitely net your company a tidy profit, if you are willing to risk
+exposing your slavers to whatever monsters residing in the forests...
+</p>
+
+
+:: QuestTradingMissionForestCrit [nobr]
+
+<p>
+<<Yourrep $g.trader1>> and <<utheirrel $g.trader1 $g.trader2>> <<rep $g.trader2>> managed to
+<<uadv $g.trader1>>
+find a very cheap supplier of iron in the <<lore region_city>>.
+<<set _con = setup.selectUnit([$g.trader1, $g.trader2], {trait: 'skill_connected'})>>
+<<set _fru = setup.selectUnit([$g.trader1, $g.trader2], {trait: 'per_frugal'})>>
+<<set _lav = setup.selectUnit([$g.trader1, $g.trader2], {trait: 'per_lavish'})>>
+<<if _con>>
+  Using <<their _con>> connections, <<rep _con>> even managed to bring the price further down.
+<<elseif _fru>>
+  <<Reps _fru>> strong affinity to saving money certainly helped find the best deal around.
+<<elseif _lav>>
+  <<Rep _lav>> might not have found the best deal around, but it was still a very good one.
+<</if>>
+Thanks to the shrewd deal, your slavers
+made a huge amount of profit, more than quadrupling
+the amount of investment they put.
+With such a silly amount of profit, you did not begrudge your slavers at all
+even if they pocketed some of the money for themselves.
+</p>
+
+
+:: QuestTradingMissionForestSuccess [nobr]
+
+<p>
+The trading mission went about as well as expected, with your slavers
+making tidy amount of profit from their shrewd deal-making.
+The only thing of note was their encounter with a particularly nasty shapeshifting monster
+in the forests, who was rumored to often masquerade as an innocent elf.
+But fortunately, <<rep $g.guard>> managed to see through the disguise,
+saving your slavers from a surely horrible fate.
+</p>
+
+
+:: QuestTradingMissionForestFailure [nobr]
+
+<p>
+The roads and trails in the vast <<lore region_forest>> are very much unclearly marked.
+This caused your slavers to get completely lost within, never actually arriving in the
+settlements with the cargo of iron they procured from the city.
+They eventually gave up and returned back to the fort, pawning the iron for whatever
+price they could find.
+</p>
+
+
+:: QuestTradingMissionForestDisaster [nobr]
+
+<p>
+Your slavers had a close encounter with a creature masquerading as an elf
+who pretended to offering help to guide your slavers to his village.
+But none of the three slavers were able to see through the disguise, and so they
+accepted.
+The creature lured the team into a swamp. To the horror of your slavers,
+the creature reverted into its original form, while grabbing <<reps $g.guard>> unfortunate
+body with its appendages.
+<<Reps $g.guard>> holes were completely ravaged by the creature's
+numerous liquid-absorbing tentacles spawning from the swamp.
+Your other slavers watched in horror as <<reps $g.guard>> holes were ravaged
+over and over again until the creature's appetite was satisfied, who mercifully threw
+<<reps $g.guard>> body aside.
+<<Rep $g.guard>> will need some time to recover from such experience.
+</p>

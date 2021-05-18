@@ -1,0 +1,12 @@
+:: CustomUtilWidgets [nobr widget]
+
+<<focwidget "includereplace">>
+  <<set _dom = setup.DOM.Util.include_replace($args[0])>>
+  <<attach _dom>>
+<</focwidget>>
+
+
+<<focwidget "unitcardkey">>
+  <<unitcard $unit[$args[0]] $args[1]>>
+<</focwidget>>
+

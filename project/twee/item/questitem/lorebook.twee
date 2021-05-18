@@ -1,0 +1,12 @@
+:: InitLorebook [nobr]
+
+/* ==============
+   RACE
+============== */
+
+<<run new setup.ItemLorebook({
+  key: 'lorebook_doppelganger',
+  name: 'Lorebook: Doppelganger',
+  description: "Unlocks the doppelganger lore once you build the <<rep setup.buildingtemplate.library>>",
+  tags: [],
+})>>

@@ -1,0 +1,13 @@
+:: InitFamilyRelation [nobr]
+
+<<set setup.familyrelation = {}>>
+
+<<run new setup.FamilyRelation('brother', 'brother', ['sibling'])>>
+<<run new setup.FamilyRelation('sister', 'sister', ['sibling'])>>
+<<run new setup.FamilyRelation('twinbrother', 'twin brother', ['twin', 'sibling'])>>
+<<run new setup.FamilyRelation('twinsister', 'twin sister', ['twin', 'sibling'])>>
+<<run new setup.FamilyRelation('father', 'father', ['parent'])>>
+<<run new setup.FamilyRelation('mother', 'mother', ['parent'])>>
+<<run new setup.FamilyRelation('son', 'son', ['child'])>>
+<<run new setup.FamilyRelation('daughter', 'daughter', ['child'])>>
+

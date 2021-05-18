@@ -1,0 +1,86 @@
+:: InitComputedTraits [nobr]
+
+<<run new setup.TraitGroup([
+  new setup.Trait(
+    'value_low',
+    'low value slave',
+    'A low-valued slave unsuitable for higher-end uses',
+    0,
+    {},
+  ),
+  null,
+  new setup.Trait(
+    'value_high1',
+    'valuable slave',
+    'Quite a valuable slave that will fetch a nice sum in the market',
+    0,
+    {},
+    [],
+    { tier: 1 }
+  ),
+  new setup.Trait(
+    'value_high2',
+    'high-value slave',
+    'Very valuable slave that will earn you a great deal of coin in the market',
+    0,
+    {},
+    [],
+    { tier: 2 }
+  ),
+  new setup.Trait(
+    'value_high3',
+    'very valuable slave',
+    'Greatly valuable slave which will make anyone a tidy sum should they get their hands on the slave',
+    0,
+    {},
+    [],
+    { tier: 3 }
+  ),
+  new setup.Trait(
+    'value_high4',
+    'extremely valuable slave',
+    'A rare specimen of a slave that will fetch an exorbitant sum in auctions',
+    0,
+    {},
+    [],
+    { tier: 4 }
+  ),
+  new setup.Trait(
+    'value_high5',
+    'mythical slave',
+    'Slave whose value rises far beyond those of normal slaves --- they say only very few of these slaves exists in the world',
+    0,
+    {},
+    [],
+    { tier: 5 }
+  ),
+  new setup.Trait(
+    'value_high6',
+    'god-valued slave',
+    'Where slaving becomes a work of art',
+    0,
+    {},
+    [],
+    { tier: 6 }
+  ),
+], ['value', 'computed',])>>
+
+
+<<run new setup.TraitGroup([
+  new setup.Trait(
+    'join_junior',
+    'new',
+    'A new member of your company and has been with you for less than a year',
+    0,
+    {},
+  ),
+  null,
+  new setup.Trait(
+    'join_senior',
+    'senior',
+    'Has been with your company for a long time, more than four years',
+    0,
+    {},
+  ),
+], ['join', 'computed',])>>
+

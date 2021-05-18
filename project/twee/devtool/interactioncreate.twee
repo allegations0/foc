@@ -1,0 +1,45 @@
+:: IGCreate [autosave]
+<<nobr>>
+
+<<devtoolcontentdonebegin 'interaction'>>
+
+<<link '(Test your interaction)' 'InteractionDebugDo'>>
+  <<set setup.interaction[$dtquest.key] = $dtquest>>
+  <<set $qDebugInteractionTemplate_key = $dtquest.key>>
+  <<set setup.DEVTOOL_idesc = $idesc>>
+<</link>>
+[[(Back to edit interaction)|InteractionGen]]
+
+<br/>
+<br/>
+
+<<devtoolcontentdonemid 'interaction'>>
+
+<</nobr>>
+<div class='companycard'> <code>
+"""::""" <<= $ipassagesetup >> [nobr interaction]
+
+<<dtprintmeta>>
+"""<<run new setup.Interaction("""
+  '<<= $ikey>>', """/* key */"""
+  <<dtprinttitle>>
+  <<dtprintauthor>>
+  <<dtprinttags>>
+  '<<= $ipassagedesc>>',
+  <<dtprintcosts>>
+  <<dtprintrestrictions 'prerequisites'>>
+  [ """/* unit requirements */"""
+    <<for _irestriction, _restriction range $dtquest.unit_requirements >><<nobr>>
+      &nbsp;
+      <<= _restriction.text()>>,
+    <</nobr>>
+    <</for>> ],
+  <<dtprintoutcomes 'rewards'>>
+  <<= $dtquest.cooldown >>,
+  setup.interactionpool.unit,
+)>>
+
+"""::""" <<= $ipassagedesc >> [nobr]
+<<= setup.devToolFormat($idesc)>>
+
+</code></div>

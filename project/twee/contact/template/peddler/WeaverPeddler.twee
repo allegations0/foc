@@ -1,0 +1,21 @@
+:: InitContactWeaverPeddler [nobr contact]
+
+<<run new setup.ContactTemplate(
+  'weaverpeddler',
+  'Weaver',
+  ['hasunit'],
+  'ContactWeaverPeddler',
+  [
+    setup.qc.EquipmentForSale(
+      'combatequipmentmarket',
+      setup.equipmentpool.weaver,
+      /* amount = */ 1,
+      /* markup = */ setup.CONTACT_PEDDLER_MARKUP,
+    ),
+  ],
+)>>
+
+
+:: ContactWeaverPeddler [nobr]
+
+A vendor from the south selling various colored robes for your perusal.
