@@ -99,7 +99,7 @@ Date:   Tue May 18 16:41:15 2021 +0700
     Geo lores.
 
 commit d7691273491d2e2624e1e101db3090418b9ca2e7
-Author: Matthew Lang <yuhan.lim@gmail.com>
+Author: Matthew Lang
 Date:   Tue May 18 19:02:01 2021 +1000
 
     Fixed comment tag to prevent code comments showing up in game
@@ -184,7 +184,7 @@ Date:   Tue May 18 01:11:28 2021 +0700
     Debug content full rewrite to DOM + interaction wiki. Closes #313
 
 commit 624bdfbe0560beb39dda6de7beb012377414bc52
-Author: Matthew Lang <yuhan.lim@gmail.com>
+Author: Matthew Lang
 Date:   Tue May 18 03:55:32 2021 +1000
 
     Edited quests "Raid Elven Forest", "Bounty Hunt Bear" and "Monk Business" for consistency, grammar, spelling and flow.
@@ -203,7 +203,7 @@ Date:   Mon May 17 21:24:23 2021 +0700
 
 commit e90e09e7ff7db132ee52cff9da29a0fd07de818f
 Merge: 968de2d6a ee6e9a5bd
-Author: Matthew Lang <yuhan.lim@gmail.com>
+Author: Matthew Lang
 Date:   Mon May 17 23:49:10 2021 +1000
 
     Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
@@ -259,7 +259,7 @@ Date:   Mon May 17 17:07:40 2021 +0700
 
 commit 968de2d6ad05900eb9fca15437d6d47173147166
 Merge: 5859793a4 103b26dc6
-Author: Matthew Lang <yuhan.lim@gmail.com>
+Author: Matthew Lang
 Date:   Mon May 17 18:29:37 2021 +1000
 
     Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
@@ -332,19 +332,19 @@ Date:   Sun May 16 22:07:05 2021 +0700
     Fix Test of Arcane description fatally bugged.
 
 commit 5859793a4c1f737ce192a5cc39a654316c330db2
-Author: Matthew Lang <yuhan.lim@gmail.com>
+Author: Matthew Lang
 Date:   Mon May 17 01:00:05 2021 +1000
 
     More New Portraits Imagemeta.js fixes
 
 commit 93bef35e1c1279746ffb04346066ed319b588f54
-Author: Matthew Lang <yuhan.lim@gmail.com>
+Author: Matthew Lang
 Date:   Mon May 17 00:50:26 2021 +1000
 
     New portrait images
 
 commit e6f011113ee818153e2ba5055e2a8590c4964bd2
-Author: Matthew Lang <yuhan.lim@gmail.com>
+Author: Matthew Lang
 Date:   Sun May 16 23:18:05 2021 +1000
 
     Bugfix - A Merchant's Revenge - Trait Checks now firing correctly
@@ -356,7 +356,7 @@ Date:   Sun May 16 20:07:50 2021 +0700
     New activites: sparring, praying
 
 commit b6afb8f02eb42aaa88fdb58f15a5d15a368b946e
-Author: Matthew Lang <yuhan.lim@gmail.com>
+Author: Matthew Lang
 Date:   Sun May 16 21:57:02 2021 +1000
 
     Bugfix - Quest: A Merchant's Revenge the Search Continues - fixed flirt variable implementation.
@@ -403,7 +403,7 @@ Date:   Sun May 16 16:00:20 2021 +0700
     Change title moved to DOM. Closes #288
 
 commit d218946412de685020ed7dfda6ec07aae2b18c41
-Author: Matthew Lang <yuhan.lim@gmail.com>
+Author: Matthew Lang
 Date:   Sun May 16 18:55:13 2021 +1000
 
     Fixed typo - in a Very Special Wine Order
@@ -548,7 +548,7 @@ Date:   Sun May 16 01:25:35 2021 +0700
     Content images: capital of slaves faemale, sunken barge i male.
 
 commit 21313d42aeef527b0f402596cf711c2adf82937e
-Author: Matthew Lang <yuhan.lim@gmail.com>
+Author: Matthew Lang
 Date:   Sun May 16 04:14:27 2021 +1000
 
     Updated Event 'A Very Special Wine Order' to include the intended slave order and fix some pronouns
@@ -584,32 +584,32 @@ Date:   Sun May 16 00:52:57 2021 +0700
     Auto-indent button and auto-indent content before printing it
 
 commit 81606e895426f07162f5e5097c27b3e8d87e74dd
-Author: Matthew Lang <yuhan.lim@gmail.com>
+Author: Matthew Lang
 Date:   Sun May 16 02:52:21 2021 +1000
 
     Upate to Raid Elven Village again - fixing name tags and If statements
 
 commit 61bf25bcaa2bb5752515edbc0fa1158f86f02fa7
-Author: Matthew Lang <yuhan.lim@gmail.com>
+Author: Matthew Lang
 Date:   Sun May 16 02:29:09 2021 +1000
 
     Updated to set text back to intended edits - adds variant text in case PC goes on quest.
 
 commit 36083ae7244bd8efbd0a6d61f699a8d6b6d3eb5e
-Author: Matthew Lang <yuhan.lim@gmail.com>
+Author: Matthew Lang
 Date:   Sun May 16 01:49:06 2021 +1000
 
     Added new Portrait - Vale Male
 
 commit 5fdec4d6c452b1da15049f9bc2b9ce6415365b63
-Author: Matthew Lang <yuhan.lim@gmail.com>
+Author: Matthew Lang
 Date:   Sun May 16 01:38:31 2021 +1000
 
     Adding 2 new image files AGAIN because git is being a git
 
 commit ee3dd1b8795ac056c2db97a125830cbc76e922bc
 Merge: a5f37d12c 70e1e8152
-Author: Matthew Lang <yuhan.lim@gmail.com>
+Author: Matthew Lang
 Date:   Sun May 16 01:33:53 2021 +1000
 
     Merge branch 'master' of https://gitgud.io/darkofocdarko/foc
@@ -625,7 +625,7 @@ Date:   Sat May 15 15:28:12 2021 +0000
 
 commit a5f37d12cd51c17a202a48d6cd3553b6d8d7e00f
 Merge: 6e39ff477 b5ff9d3a7
-Author: Matthew Lang <yuhan.lim@gmail.com>
+Author: Matthew Lang
 Date:   Sun May 16 01:27:36 2021 +1000
 
     Fixed merge conflict - no conflict
@@ -649,7 +649,7 @@ Date:   Sat May 15 15:12:52 2021 +0000
     Upload New File
 
 commit 6e39ff4777530919128c88cc045a5a32d93cedab
-Author: Matthew Lang <yuhan.lim@gmail.com>
+Author: Matthew Lang
 Date:   Sun May 16 01:09:19 2021 +1000
 
     New image files
@@ -13425,19 +13425,19 @@ Date:   Thu Dec 31 19:52:19 2020 -0800
     See merge request darkofocdarko/foc!122
 
 commit ebaa92b8100db1f18cd02cef8fc57bf0067a3206
-Author: Anu <barrychahal@gmail.com>
+Author: Anu
 Date:   Thu Dec 31 18:41:35 2020 -0800
 
     Typo: "Invinsible" -> invisible
 
 commit d83a0412a6546328d8262544c6e6962179594ad7
-Author: Anu <barrychahal@gmail.com>
+Author: Anu
 Date:   Thu Dec 31 18:40:47 2020 -0800
 
     Typo: "Invinsible" -> invisible
 
 commit cb26ae305d3cce5cf6ce7e3d4d18efab63afe994
-Author: Anu <barrychahal@gmail.com>
+Author: Anu
 Date:   Thu Dec 31 18:40:20 2020 -0800
 
     Typo: "Invinsible" -> invisible
@@ -16216,7 +16216,7 @@ Date:   Mon Dec 14 05:19:28 2020 -0800
     See merge request darkofocdarko/foc!60
 
 commit 63091c563957e00c906225a7a13f3b01d653eab7
-Author: Stiletto <cd.stiletto@gmail.com>
+Author: Stiletto
 Date:   Mon Dec 14 07:34:26 2020 -0500
 
     add more missing dynamic genders in training
