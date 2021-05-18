@@ -23,6 +23,9 @@ export function debug_do_one_title(instance, is_all) {
         You can load your existing save file
         ${setup.DOM.Text.danger('FROM THIS SCREEN')}
         if you want to try playing with the content you just add in an actual game.
+        (Note that if you are editing an existing content, the previous content will NOT
+          get replaced by the new one. Instead, you will have two versions of the content,
+          the old one and the new one you just created.)
       `
       : ''}
     </div>
