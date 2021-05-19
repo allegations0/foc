@@ -277,7 +277,7 @@ To strip out of shirt, if any, use:
 ```
 <<set _eq = $g.a.getChestCovering()>>
 <<if _eq>>
-  <<Rep $g.a>> <<ustripverb $g.a _eq>> revealing
+  <<Rep $g.a>> <<ustripverb $g.a _eq>> <<their $g.a>> <<rep _eq>> revealing
 <<else>>
   Nothing is covering
 <</if>>
@@ -289,7 +289,7 @@ To strip ouf ot pants, if any, use:
 ```
 <<set _eq = $g.a.getGenitalCovering()>>
 <<if _eq>>
-  <<Rep $g.a>> <<ustripverb $g.a _eq>> revealing
+  <<Rep $g.a>> <<ustripverb $g.a _eq>> <<their $g.a>> <<rep _eq>> revealing
 <<else>>
   Nothing is covering
 <</if>>

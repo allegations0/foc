@@ -70,7 +70,7 @@
 }
 
 .fortgrid-table td:hover:not(.fortgrid-expansion)>:not(.activity-unit-container),
-.fortgrid-highlight>* {
+.fortgrid-highlight>:not(.activity-unit-container) {
   opacity: .5;
 }
 
