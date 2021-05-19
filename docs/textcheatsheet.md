@@ -270,6 +270,36 @@ Other common example includes:
 ## Not in Toolbar
 
 <details>
+<summary markdown="span">Strip out of shirt/pants if the unit is wearing one</summary>
+
+To strip out of shirt, if any, use:
+
+```
+<<set _eq = $g.a.getChestCovering()>>
+<<if _eq>>
+  <<Rep $g.a>> <<ustripverb $g.a _eq>> revealing
+<<else>>
+  Nothing is covering
+<</if>>
+<<their $g.a>> <<ubreasts $g.a>>.
+```
+
+To strip ouf ot pants, if any, use:
+
+```
+<<set _eq = $g.a.getGenitalCovering()>>
+<<if _eq>>
+  <<Rep $g.a>> <<ustripverb $g.a _eq>> revealing
+<<else>>
+  Nothing is covering
+<</if>>
+<<their $g.a>> <<ugenital $g.a>>.
+```
+
+</details>
+
+
+<details>
 <summary markdown="span">Based on if unit has at least X points in some skill</summary>
 
 ```
