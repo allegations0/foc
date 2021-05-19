@@ -62,6 +62,11 @@ increased, and what better way than a couple of runs on the track?
 
 :: QuestUnitTrainingEnduranceBasicCrit [nobr]
 
+<<if $g.trainee.isMale()>>
+<<else>>
+  <<questimage 'unit_training_endurance_basic_female.jpg'>>
+<</if>>
+
 <p>
 The first step to become an endurance slut is to increase the slave's stamina, and what
 better way than a couple of "motivated" run in your <<rep setup.buildingtemplate.trainingfield>>?

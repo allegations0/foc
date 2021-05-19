@@ -61,6 +61,11 @@ their owners, for otherwise it would have the opposite effect instead.
 
 :: QuestUnitTrainingRoleplayAdvancedCrit [nobr]
 
+<<if $g.trainee.isMale()>>
+<<else>>
+  <<questimage 'unit_training_roleplay_advanced_female.jpg'>>
+<</if>>
+
 <<if $gOutcome == 'crit'>>
 
 <p>

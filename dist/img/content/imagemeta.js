@@ -1,6 +1,18 @@
 (function () {
   /* Image credit information. */
   IMAGE_CREDITS = {
+    "mist_apprenticeship_male.jpg": {
+      title: "Twin Sex Demons and a Fallen Warrior",
+      artist: "fujimachine",
+      url: "https://www.newgrounds.com/art/view/fujimachine/twin-sex-demons-and-a-fallen-warrior",
+      license: "CC-BY-NC 3.0",
+    },
+    "pirates_ahoy_female.jpg": {
+      title: "Pirates have the best booty (event of the week)",
+      artist: "knotgames",
+      url: "https://www.newgrounds.com/art/view/knotgames/pirates-have-the-best-booty-event-of-the-week",
+      license: "CC-BY-NC 3.0",
+    },
     "gift_exchange_female.jpg": {
       title: "Christmas Party",
       artist: "Liang-Xing",
@@ -36,6 +48,12 @@
       artist: "Vojageyr",
       url: "https://www.deviantart.com/vojageyr/art/Rider-735446836",
       license: "CC-BY-NC-ND 3.0",
+    },
+    "unit_training_roleplay_advanced_female.jpg": {
+      title: "Advanced dirty talk",
+      artist: "knotgames",
+      url: "https://www.newgrounds.com/art/view/knotgames/advanced-dirty-talk",
+      license: "CC-BY-NC-SA 3.0",
     },
     "unit_training_pet_basic_female.jpg": {
       title: "Kitten",
@@ -240,6 +258,18 @@
       artist: "Zoftig",
       url: "https://www.newgrounds.com/art/view/zoftig/eliza-sex-slave-party",
       license: "CC-BY-NC-ND 3.0",
+    },
+    "unit_training_oral_advanced_female_humandesert.jpg": {
+      title: "Starfire's roleplay - DCAU",
+      artist: "SkaJrZombie",
+      url: "https://www.newgrounds.com/art/view/skajrzombie/starfire-s-roleplay-dcau",
+      license: "CC-BY-NC 3.0",
+    },
+    "unit_training_endurance_basic_female.jpg": {
+      title: "BDSM lessons",
+      artist: "knotgames",
+      url: "https://www.newgrounds.com/art/view/knotgames/bdsm-lessons",
+      license: "CC-BY-NC-SA 3.0",
     },
     "bounty_hunt_aberration_female.jpg": {
       title: "[COMM] Korwa's Tentacle Garden",

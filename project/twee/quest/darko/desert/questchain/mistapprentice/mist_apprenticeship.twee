@@ -183,6 +183,11 @@ knowledge...
 
 :: Quest_mist_apprenticeshipCrit [nobr]
 
+<<if $g.apprentice.isMale()>>
+<<questimage 'mist_apprenticeship_male.jpg'>>
+<<else>>
+<</if>>
+
 <p>
 With <<rep $g.scout1>> and <<utheirrel $g.scout1 $g.scout2>> <<rep
 $g.scout2>> guiding the way, <<yourrep $g.apprentice>> managed to arrive at
