@@ -813,16 +813,24 @@ setup.getAnySlaver = function (forbidden) {
  * @param {{
  * trait?: setup.Trait | string
  * anytrait?: Array<setup.Trait | string>
+ * notrait?: Array<setup.Trait | string>
+ * alltrait?: Array<setup.Trait | string>
  * }} args
  * 
  * @returns {setup.Unit | null}
  */
-setup.selectUnit = function (units, { trait, anytrait }) {
+setup.selectUnit = function (units, { trait, anytrait, notrait, alltrait }) {
   if (trait) {
     units = units.filter(unit => unit.isHasTrait(setup.selfOrObject(trait, setup.trait)))
   }
   if (anytrait) {
     units = units.filter(unit => unit.isHasAnyTraitExact(anytrait.map(key => setup.selfOrObject(key, setup.trait))))
+  }
+  if (notrait) {
+    units = units.filter(unit => !unit.isHasAnyTraitExact(notrait.map(key => setup.selfOrObject(key, setup.trait))))
+  }
+  if (alltrait) {
+    units = units.filter(unit => !unit.isHasTraitsExact(alltrait.map(key => setup.selfOrObject(key, setup.trait))))
   }
   if (units.length) {
     return setup.rng.choice(units)

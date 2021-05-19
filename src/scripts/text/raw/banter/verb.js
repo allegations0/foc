@@ -718,14 +718,14 @@ export const BANTER_TRAINING_OBJECT = {
     `your permission to cum`,
     `your next order`,
   ],
-  training_edging_basic: [
-    `dicks to edge`,
-    `slave to edge for hours`,
-    `a|their owner's permission to edge other slaves`,
-    `a|their owner to edge`,
-    `other defiant slaves to edge`,
-    `other obedient slaves to edge`,
-    `your permission to edge other slaves`,
+  training_roleplay_basic: [
+    `fantasies to fulfill`,
+    `plays to enact`,
+    `a|their owner's darkest desires`,
+    `a|their owner's secret desires`,
+    `a|their owner's fantasies`,
+    `mirror to practice speech`,
+    `your deepest secret fantasies`,
   ],
   training_domestic_basic: [
     `rooms to clean`,

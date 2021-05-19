@@ -21,6 +21,7 @@
       type: "near",
       skill_key: "social",
       room_keys: [
+        'bath',
         'gym',
         'kennel',
         'museum',

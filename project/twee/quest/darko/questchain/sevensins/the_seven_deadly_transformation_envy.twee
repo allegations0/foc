@@ -52,7 +52,7 @@ setup.qc.MoneyNormal(), ],
 'Quest_the_seven_deadly_transformation__envyCrit',
 [
 setup.qc.Trait('fated', setup.trait.training_obedience_basic),
-setup.qc.Trait('fated', setup.trait.training_edging_basic),
+setup.qc.Trait('fated', setup.trait.training_roleplay_basic),
 setup.qc.TraitReplace('fated', setup.trait.legs_demon), ],
 ], [
 'Quest_the_seven_deadly_transformation__envyCrit',

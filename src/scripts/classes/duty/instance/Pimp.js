@@ -118,6 +118,7 @@ setup.dutytemplate.entertainmentpimp = () => new setup.DutyTemplatePimp({
     'ponyslave',
     'decorationslave',
     'punchingbagslave',
+    'toiletslave',
   ],
 })
 
@@ -140,7 +141,6 @@ setup.dutytemplate.servicepimp = () => new setup.DutyTemplatePimp({
   managed_duties: [
     'milkcowslave',
     'cumcowslave',
-    'serverslave',
     'maidslave',
     'theatreslave',
     'furnitureslave',
@@ -165,7 +165,7 @@ setup.dutytemplate.sexpimp = () => new setup.DutyTemplatePimp({
     sex: setup.DUTY_SKILL_MULTIPLIER_TOTAL / 2,
   },
   managed_duties: [
-    'toiletslave',
+    'sissyslave',
     'dominatrixslave',
     'analfuckholeslave',
     'oralfuckholeslave',

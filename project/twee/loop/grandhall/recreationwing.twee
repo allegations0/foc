@@ -7,7 +7,7 @@
 <<set _analfuckhole = $dutylist.getDuty('analfuckholeslave')>>
 <<set _vaginafuckhole = $dutylist.getDuty('vaginafuckholeslave')>>
 <<set _oralfuckhole = $dutylist.getDuty('oralfuckholeslave')>>
-<<set _server = $dutylist.getDuty('serverslave')>>
+<<set _sissy = $dutylist.getDuty('sissyslave')>>
 <<set _toilet = $dutylist.getDuty('toiletslave')>>
 <<set _maid = $dutylist.getDuty('maidslave')>>
 <<set _furniture = $dutylist.getDuty('furnitureslave')>>
@@ -20,7 +20,7 @@
 <<set _cumcow = $dutylist.getDuty('cumcowslave')>>
 <<set _milkcow = $dutylist.getDuty('milkcowslave')>>
 <<set _duties = [_entertainment, _analfuckhole, _vaginafuckhole, _oralfuckhole,
-_server, _toilet, _maid, _furniture, _punchingbag, _dog,
+_sissy, _toilet, _maid, _furniture, _punchingbag, _dog,
  _decoration, _pony, _dominatrix, _theatre, _cumcow, _milkcow]>>
 
 <h2><<= _room.getTitleRep()>></h2>
@@ -203,23 +203,29 @@ can host guests and visitors alike.
 
 
 <p>
-<<if _server>>
-  <<set _unit = _server.getAssignedUnit()>>
+<<if _sissy>>
+  <<set _unit = _sissy.getAssignedUnit()>>
   <<if _unit && _unit.isAvailable()>>
-    Many customers are visiting the bar, in which
-    <<rep _unit>> performs <<their _unit>> duties as a <<rep _server>>.
-    <<= setup.Text.Duty.slavevalue(_server)>> wants being edged by <<= _unit.getName()>>.
-
-    As your patrons enjoyed their drinks, <<= _unit.getName()>> went under the table
-    to service their
-    genitals<<if !_unit.isHasTrait('training_edging_advanced')>>, albeit reluctantly<</if>>.
+    Some kinky customers can be seen patroning the Rent-A-Sissy booth.
+    <<Rep _unit>> is currently stationed there,
+    advertising <<themself _unit>> as an available <<rep _sissy>>.
+    <<= setup.Text.Duty.slavevalue(_sissy)>> wants to rent the confusingly-gendered slave.
+    <<if _unit.isHasTrait('training_sissy_master')>>
+      Without the big sissy signpost, nobody would ever suspect that <<= _unit.getName()>> was once a man,
+      <<their _unit>> useless dick never becoming erect no matter what.
+    <<elseif _unit.isHasTrait('training_sissy_advanced')>>
+      Many enjoy the sight of <<= _unit.getName()>> performing debauched sex actions while <<their _unit>>
+      useless dick never becoming erect.
+    <<else>>
+      <<= _unit.getName()>> has learned that their dick is now useless, but it still occasionally
+      twitches during particularly raunchy use.
+    <</if>>
   <<elseif _unit>>
     While <<yourrep _unit>> is assigned here, <<they _unit>> is currently
     unavailable to attend to <<their _unit>> duty.
   <<else>>
-    If you fancy a drink, the entrace of the
-    <<rep setup.buildingtemplate.bar>> is clearly marked behind the reception area.
-    You can additionally staff it with a <<rep _server>> later.
+    Unfortunately, it is empty right now.
+    You can additionally staff it with a <<rep _sissy>> later.
   <</if>>
 <</if>>
 </p>
@@ -469,19 +475,19 @@ can host guests and visitors alike.
   <<if _unit && _unit.isAvailable()>>
     In the <<rep setup.buildingtemplate.theatre>>,
     your <<rep _theatre>> <<rep _unit>> 
-    is busy giving surprise shows to the customers.
-    <<= setup.Text.Duty.slavevalue(_theatre)>> enjoy the sight of the sissy.
-
+    is busy giving believable plays to the customers.
+    <<= setup.Text.Duty.slavevalue(_theatre)>> enjoy the performance.
     /* unlock scenes here */
-    <<if _unit.isHasTrait('training_sissy_master')>>
-      Without the signs, nobody would ever suspect that <<= _unit.getName()>> was once a man,
-      <<their _unit>> useless dick never becoming erect no matter what.
-    <<elseif _unit.isHasTrait('training_sissy_advanced')>>
-      Many enjoy the sight of <<= _unit.getName()>> doing debauched acts while <<their _unit>>
-      useless dick never becoming erect.
+    <<if _unit.isHasTrait('training_roleplay_master')>>
+      <<Rep _unit>> is an expert at acting, and many customers fap eagerly to <<their _unit>>
+      almost realistic make-believes.
+    <<elseif _unit.isHasTrait('training_roleplay_advanced')>>
+      <<Rep _unit>> is an established <<if _unit.isMale()>>actor<<else>>actress<</if>>,
+      <<their _unit>> extensive training in role-playing clearly showing in
+      <<their _unit>> many plays.
     <<else>>
-      <<= _unit.getName()>> has learned that their dick is now useless, but it still occasionally
-      twitches during particularly raunchy shows.
+      If one watches the performance closely, however, one could detect the occasional hints of
+      displeasure in <<reps _unit>> gestures.
     <</if>>
   <<elseif _unit>>
     While <<yourrep _unit>> is assigned here, <<they _unit>> is currently

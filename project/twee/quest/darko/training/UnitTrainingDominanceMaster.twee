@@ -31,7 +31,7 @@
       'QuestUnitTrainingDominanceMasterSuccess',
       [
         setup.qc.Trait('trainee', setup.trait.training_dominance_master),
-        
+        setup.qc.TraitRemove('trainee', setup.trait.per_submissive),
       ],
     ],
     [
@@ -58,6 +58,14 @@ their mentality will be no different than slavers.
 The most important thing, however, is that this training has instilled
 deep within them that despite looking and acting like a slaver, they are
 still a slave, and must obey without question the orders of their master.
+</p>
+
+<p>
+  Succeeding this training will remove <<rep setup.trait.per_submissive>> from the slave, if any.
+</p>
+
+<p>
+  Completing a master training will lock out all the other master training.
 </p>
 
 <p>

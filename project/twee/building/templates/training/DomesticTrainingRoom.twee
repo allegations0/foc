@@ -25,7 +25,7 @@
   restrictions: [
     [
       setup.qres.Through(setup.qres.HasItem(setup.item.technology_domesticmaster)),
-      setup.qres.Building('fetishtrainingroom'),
+      setup.qres.Building('milkerroom'),
       setup.qres.HasSlaverWithTraits([setup.trait.magic_wind_master]),
     ],
   ],

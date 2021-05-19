@@ -33,7 +33,7 @@
       'QuestUnitTrainingObedienceMasterCrit',
       [
         setup.qc.Trait('trainee', setup.trait.training_obedience_master),
-        
+        setup.qc.TraitRemove('trainee', setup.trait.per_dominant),
       ],
     ],
     [
@@ -64,6 +64,10 @@ training, peppered with generous shocks of electricity whenever they show
 any form of resistance.
 This requires a slaver proficient in <<rep setup.trait.magic_wind_master>>, and
 furthermore the slaver themself must be sufficiently skilled.
+</p>
+
+<p>
+  Succeeding this training will remove <<rep setup.trait.per_dominant>> from the slave, if any.
 </p>
 
 <p>
