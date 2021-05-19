@@ -1,7 +1,7 @@
-:: InitBuildingEdgingTrainingRoom [nobr]
+:: InitBuildingRoleplayTrainingRoom [nobr]
 
 <<run new setup.RoomTemplate({
-  key: 'edgingtrainingroom',
+  key: 'roleplaytrainingroom',
   tags: [],
   width: 3,
   height: 3,
@@ -15,24 +15,22 @@
 })>>
 
 <<run new setup.BuildingTemplate({
-  key: 'edgingtrainingroom',
-  name: 'Edging Training Room',
+  key: 'roleplaytrainingroom',
+  name: 'Roleplay Training Room',
   tags: ['training'],
-  description_passage: 'BuildingEdgingTrainingRoom',
+  description_passage: 'BuildingRoleplayTrainingRoom',
   costs: [
     [setup.qc.MoneyMult(-setup.BUILDING_MEDIUMLOW_MULT)],
   ],
   restrictions: [
-    [setup.qres.Building('milkerroom')],
+    [setup.qres.Building('fetishtrainingroom')],
   ],
-  main_room_template_key: 'edgingtrainingroom',
+  main_room_template_key: 'roleplaytrainingroom',
 })>>
 
 
-:: BuildingEdgingTrainingRoom [nobr]
+:: BuildingRoleplayTrainingRoom [nobr]
 
 <p>
-Unlocks Edging Training: Master for slaves.
-
+Unlocks Roleplay Training: Master for slaves.
 </p>
-

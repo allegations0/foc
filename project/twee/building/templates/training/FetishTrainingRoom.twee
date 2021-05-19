@@ -13,8 +13,8 @@
       room_keys: [
         'toilettrainingroom',
         'sissytrainingroom',
-        'domestictrainingroom',
-        'cleaning',
+        'roleplaytrainingroom',
+        'sissybooth',
         'theatre',
         'bath',
       ],
@@ -47,7 +47,5 @@
 <p>
 Room containing several specialized tools to train slaves for particularly...
 uncommon tastes.
-Unlocks basic and advanced training for: toilet training, sissy training, and domestic training.
-
+Unlocks basic and advanced training for: toilet training, sissy training, and roleplay training.
 </p>
-

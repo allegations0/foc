@@ -97,9 +97,9 @@ setup.SexBodypartClass.Penis = class Penis extends setup.SexBodypart {
 
   giveArousalMultiplier(me, sex) {
     let base = setup.SexUtil.calculateTraitMultiplier(me, {
-      training_edging_basic: setup.Sex.TRAIT_MULTI_LOW,
-      training_edging_advanced: setup.Sex.TRAIT_MULTI_MEDIUM,
-      training_edging_master: setup.Sex.TRAIT_MULTI_HIGH,
+      training_horny_basic: setup.Sex.TRAIT_MULTI_LOW,
+      training_horny_advanced: setup.Sex.TRAIT_MULTI_MEDIUM,
+      training_horny_master: setup.Sex.TRAIT_MULTI_HIGH,
 
       per_submissive: -setup.Sex.TRAIT_MULTI_LOW,
       per_dominant: setup.Sex.TRAIT_MULTI_LOW,

@@ -128,15 +128,15 @@ setup.dutytemplate.analfuckholeslave = () => new setup.DutyTemplatePrestigeSlave
  * @type {setup.DutyTemplatePrestigeSlave}
  */
 // @ts-ignore
-setup.dutytemplate.serverslave = () => new setup.DutyTemplatePrestigeSlave({
-  key: 'serverslave',
-  name: 'Server Slave',
-  description_passage: 'DutyServerSlave',
+setup.dutytemplate.sissyslave = () => new setup.DutyTemplatePrestigeSlave({
+  key: 'sissyslave',
+  name: 'Sissy Slave',
+  description_passage: 'DutyTheatreSlave',
   type: 'prestige',
   relevant_traits: {
-    training_edging_basic: setup.DUTY_TRAIT_PRESTIGE1,
-    training_edging_advanced: setup.DUTY_TRAIT_PRESTIGE3,
-    training_edging_master: setup.DUTY_TRAIT_PRESTIGE5,
+    training_roleplay_basic: setup.DUTY_TRAIT_PRESTIGE1,
+    training_roleplay_advanced: setup.DUTY_TRAIT_PRESTIGE3,
+    training_roleplay_master: setup.DUTY_TRAIT_PRESTIGE5,
     value_high1: setup.DUTY_TRAIT_PRESTIGE1,
     value_high2: setup.DUTY_TRAIT_PRESTIGE2,
     value_high3: setup.DUTY_TRAIT_PRESTIGE3,
@@ -149,7 +149,7 @@ setup.dutytemplate.serverslave = () => new setup.DutyTemplatePrestigeSlave({
   },
   unit_restrictions: [
     setup.qres.Job(setup.job.slave),
-    setup.qres.Trait(setup.trait.training_edging_basic),
+    setup.qres.Trait(setup.trait.training_roleplay_basic),
   ],
 })
 

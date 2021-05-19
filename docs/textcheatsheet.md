@@ -298,6 +298,17 @@ To strip ouf ot pants, if any, use:
 
 </details>
 
+<details>
+<summary markdown="span">Add image to quest / event / opportunity / etc</summary>
+
+```
+<<questimage "image_name.jpg">>
+```
+
+For more information, see
+[here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/images.md#adding-images-to-quests-or-events).
+
+</details>
 
 <details>
 <summary markdown="span">Based on if unit has at least X points in some skill</summary>
