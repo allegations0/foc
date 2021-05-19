@@ -327,13 +327,14 @@ setup.UnitImage = class UnitImage extends setup.TwineClass {
     }
 
     /**
-     * @param directory {string}
-     * @param obj {ImagePackNode}
-     * @param packmeta {ImagePackMetadata}
-     * @param depth {number}
-     * @param {boolean} [is_packmeta_only]
+     * @param {string} directory
+     * @param {ImagePackNode} obj
+     * @param {ImagePackMetadata} packmeta
+     * @param {number} depth
+     * @param {boolean} is_packmeta_only
+     * @param {string} imagepack
      */
-    function Construct(directory, obj, packmeta, depth, is_packmeta_only) {
+    function Construct(directory, obj, packmeta, depth, is_packmeta_only, imagepack) {
       return importScripts(directory + 'imagemeta.js').then(function () {
         if (!window.UNITIMAGE_CREDITS) throw new Error(`UNITIMAGE_CREDITS not found in ${directory}`)
         if (!window.UNITIMAGE_LOAD_FURTHER) throw new Error(`UNITIMAGE_LOAD_FURTHER not found in ${directory}`)
@@ -342,7 +343,8 @@ setup.UnitImage = class UnitImage extends setup.TwineClass {
         const image_list = []
         for (const image_key in window.UNITIMAGE_CREDITS) {
           const image_path = `${directory}${image_key}.jpg`
-          const image_info = window.UNITIMAGE_CREDITS[image_key]
+          const image_info = window.UNITIMAGE_CREDITS[image_key] || {}
+          image_info.imagepack = imagepack
 
           // verify info
           // no longer required, since we have a javascript file that checks for this now.
@@ -408,7 +410,9 @@ setup.UnitImage = class UnitImage extends setup.TwineClass {
 
           // warning: this is asynchronous:
           promises.push(
-            Construct(next_dir, obj.further[traitkey], packmeta, depth + 1, is_packmeta_only)
+            Construct(
+              next_dir, obj.further[traitkey], packmeta, depth + 1, is_packmeta_only, imagepack,
+            )
           )
         }
 
@@ -422,11 +426,15 @@ setup.UnitImage = class UnitImage extends setup.TwineClass {
      * @param obj {ImagePackNode}
      * @param data {ImagePackNode}
      * @param packmeta {ImagePackMetadata}
-     * @param {boolean} [is_packmeta_only]
+     * @param {boolean} is_packmeta_only
+     * @param {string} imagepack
      */
-    function processImagePack(obj, data, packmeta, is_packmeta_only) {
+    function processImagePack(obj, data, packmeta, is_packmeta_only, imagepack) {
       for (const image of (data.images || [])) {
         image.path = packmeta.url + "/" + image.path
+        if (image.info) {
+          image.info.imagepack = imagepack
+        }
         setup.UnitImage.UNIT_IMAGES[image.path] = image
       }
 
@@ -437,7 +445,7 @@ setup.UnitImage = class UnitImage extends setup.TwineClass {
       for (const k of Object.keys(data.further || {})) {
         if (!obj.further[k])
           obj.further[k] = {}
-        processImagePack(obj.further[k], data.further[k], packmeta, is_packmeta_only)
+        processImagePack(obj.further[k], data.further[k], packmeta, is_packmeta_only, imagepack)
       }
     }
 
@@ -456,7 +464,7 @@ setup.UnitImage = class UnitImage extends setup.TwineClass {
             packmeta.description = data.description
 
             if (data) {
-              processImagePack(is_skip_images ? {} : this.UNIT_IMAGE_TABLE, data, packmeta, is_skip_images)
+              processImagePack(is_skip_images ? {} : this.UNIT_IMAGE_TABLE, data, packmeta, is_skip_images, imagepack)
               resolve()
             } else {
               alert('Detected image pack at "' + imagepack + '", but its "imagepack.js" is invalid')
@@ -464,7 +472,12 @@ setup.UnitImage = class UnitImage extends setup.TwineClass {
             }
           }, () => { // script not found, try to load the recursive "imagemeta.js" layout
             console.log('If the error: "Failed to load resource: net::ERR_FILE_NOT_FOUND" is shown immediately above this for imagepack.js, it is normal and can be ignored.')
-            Construct(imagepack + '/', is_skip_images ? {} : this.UNIT_IMAGE_TABLE, packmeta, /* depth = */ 1, is_skip_images).then(resolve, reject)
+            Construct(
+              imagepack + '/',
+              is_skip_images ? {} : this.UNIT_IMAGE_TABLE, packmeta,
+              /* depth = */ 1,
+              is_skip_images,
+              imagepack).then(resolve, reject)
           })
       }).then(() => packmeta)
     }

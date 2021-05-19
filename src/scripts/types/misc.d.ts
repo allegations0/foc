@@ -1,7 +1,7 @@
 // augment "window" global object type
 interface Window {
   // Used by "/classes/unit/unitimage.js"
-  UNITIMAGE_CREDITS?: Record<string, { title?: string, artist?: string, url?: string, license?: string, directional?: boolean, norotate?: boolean, nowalls?: boolean }> | undefined
+  UNITIMAGE_CREDITS?: Record<string, { title?: string, artist?: string, url?: string, imagepack?: string, license?: string, directional?: boolean, norotate?: boolean, nowalls?: boolean }> | undefined
   UNITIMAGE_NOBACK?: boolean | undefined
   UNITIMAGE_LOAD_FURTHER?: string[] | undefined
   IMAGEPACK?: ImagePackNode & Pick<ImagePackMetadata, "title" | "description" | "author"> | undefined

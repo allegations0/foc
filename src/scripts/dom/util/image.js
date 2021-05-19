@@ -66,10 +66,11 @@ setup.DOM.Util.Image.credits = function (image_object) {
   if (credits) {
     return html`
       <span class='artistinfo'>
-        "${credits.title}" by ${credits.artist}
+        "${credits.title || "Unknown Title"}" by ${credits.artist || "Unknown Artist"}
         ${credits.url ? setup.DOM.Nav.linkExternal(`(source)`, credits.url) : ``}
-        (${credits.license})
+        (${credits.license || "Unknown License"})
         ${credits.extra ? `[${credits.extra}]` : ``}
+        ${credits.imagepack ? ` : ${credits.imagepack}` : ''}
       </span>
     `
   } else {
@@ -126,32 +127,3 @@ setup.DOM.Util.Image.flipHorizontal = function (image) {
   </span>
   `
 }
-
-/**
- * 
- * @param {Object | setup.Unit} image_object
- */
-setup.DOM.Util.Image.credits = function (image_object) {
-  let credits
-  if (image_object.artist) {
-    credits = image_object
-  } else if (image_object && typeof image_object === 'object' && 'getImageInfo' in image_object) {
-    credits = image_object.getImageInfo()
-  } else {
-    return null
-  }
-
-  if (credits) {
-    return html`
-      <span class='artistinfo'>
-        "${credits.title}" by ${credits.artist}
-        ${credits.url ? setup.DOM.Nav.linkExternal(`(source)`, credits.url) : ``}
-        (${credits.license})
-        ${credits.extra ? `[${credits.extra}]` : ``}
-      </span>
-    `
-  } else {
-    return null
-  }
-}
-
