@@ -23,14 +23,14 @@
       'QuestUnitTrainingRoleplayMasterCrit',
       [
         setup.qc.Trait('trainee', setup.trait.training_roleplay_master),
-        
+        setup.qc.TraitRemove('trainee', setup.trait.per_slow),
       ]
     ],
     [
       'QuestUnitTrainingRoleplayMasterCrit',
       [
         setup.qc.Trait('trainee', setup.trait.training_roleplay_master),
-        
+        setup.qc.TraitRemove('trainee', setup.trait.per_slow),
       ],
     ],
     [
@@ -59,6 +59,10 @@ They want an addled sex toy? They get an addled sex toy. They want a
 former crime fighter who fell on hard times? They'll get that and some more.
 Whatever dark desires their owner might crave, the slave will be able to provide
 an acting convincing enough to satisfy their owner's desires.
+</p>
+
+<p>
+  Succeeding this training will remove <<rep setup.trait.per_slow>> from the slave, if any.
 </p>
 
 <p>
