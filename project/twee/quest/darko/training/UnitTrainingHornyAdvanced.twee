@@ -61,9 +61,12 @@ of training, punishment, and reward.
 :: QuestUnitTrainingHornyAdvancedCrit [nobr]
 
 <<if $g.trainee.isMale()>>
-  <<if !$settings.bannedtags.furry>>
+  <<if $g.trainee.isHasTrait('subrace_tigerkin')>>
     <<questimage 'unit_training_horny_advanced_male_tigerkin.jpg'>>
+  <<else>>
+    <<questimage 'unit_training_horny_advanced_male_demon.jpg'>>
   <</if>>
+<<else>>
 <</if>>
 
 <<if $gOutcome == 'crit'>>

@@ -23,7 +23,7 @@
     [setup.qc.MoneyMult(-setup.BUILDING_MEDIUMLOW_MULT)],
   ],
   restrictions: [
-    [setup.qres.Building('recreationwingsex')],
+    [setup.qres.Building('recreationwing')],
   ],
   on_build: [
     [
@@ -37,6 +37,6 @@
 
 <p>
 Unlocks the Toilet slave duty, which increases the income
-made by your Sex Pimp
+made by your Entertainment Pimp
 based on the toilet skill of the slave.
 </p>

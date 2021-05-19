@@ -67,7 +67,7 @@ null, /* key */
 [
   setup.qres.Job(setup.job.slave),
   setup.qres.TraitExact(setup.trait.training_obedience_advanced),
-  setup.qres.NoTraits([setup.trait.training_obedience_master, setup.trait.training_endurance_master, setup.trait.training_domestic_master, setup.trait.training_oral_master, setup.trait.training_vagina_master, setup.trait.training_anal_master, setup.trait.training_dominance_master, setup.trait.training_masochist_master, setup.trait.training_sissy_master, setup.trait.training_pet_master, setup.trait.training_pony_master, setup.trait.training_toilet_master, setup.trait.training_edging_master, setup.trait.training_horny_master, setup.trait.training_mindbreak], true),
+  setup.qres.NoTraits([setup.trait.training_obedience_master, setup.trait.training_endurance_master, setup.trait.training_domestic_master, setup.trait.training_oral_master, setup.trait.training_vagina_master, setup.trait.training_anal_master, setup.trait.training_dominance_master, setup.trait.training_masochist_master, setup.trait.training_sissy_master, setup.trait.training_pet_master, setup.trait.training_pony_master, setup.trait.training_toilet_master, setup.trait.training_roleplay_master, setup.trait.training_horny_master, setup.trait.training_mindbreak], true),
 ],
 {
 }

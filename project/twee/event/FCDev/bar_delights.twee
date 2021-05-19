@@ -22,8 +22,8 @@
   ],
   'slave': [
     setup.qres.Job(setup.job.slave),
-    setup.qres.OnDuty('serverslave'),
-    setup.qres.Trait(setup.trait.training_edging_advanced),
+    setup.qres.OnDuty('entertainmentslave'),
+    setup.qres.Trait(setup.trait.training_obedience_advanced),
   ],
 },
 [ /* outcomes */
@@ -38,8 +38,13 @@ setup.rarity.rare, /* Rarity */
 <<set _u = setup.getAnySlaver()>>
 
 <p>
-The <<rep setup.buildingtemplate.bar>> of your fort serves many different refreshments, and ever since its opening you and your slavers often patron the place.
-<<Yourrep $g.slave>> slave|is currently serving there, and today, after finishing serving <<yourrep _u>>, <<they $g.slave>> slave|is carrying a selection of refreshments and the necessary implements for you:
+The <<rep setup.buildingtemplate.tavern>> of your fort doesn't only serve cum --
+it also serves many different more mundane refreshments.
+Ever since its opening you and your slavers often patron the place.
+As it happens,
+<<yourrep $g.slave>> slave|is currently stationed there, a break from <<their $g.slave>>
+usual duties as a generic entertainment slave.
+Today, after finishing serving <<yourrep _u>>, <<they $g.slave>> slave|is carrying a selection of refreshments and the necessary implements for you:
 a bottle of wine, an empty glass, and a spare cigar, balanced on a tray.
 </p>
 
@@ -78,7 +83,7 @@ doing <<their $g.slave>> best despite <<their $g.slave>> mediocre oral skills.
 
 <</if>>
 
-You take your time, taking meditative sips and running a thoughtful <<uhand $unit.player>> across <<rep $g.slave>>'s head while you look at the view out the <<rep setup.buildingtemplate.bar>> and into the general <<rep setup.buildingtemplate.recreationwing>> area.
+You take your time, taking meditative sips and running a thoughtful <<uhand $unit.player>> across <<rep $g.slave>>'s head while you look at the view out the <<rep setup.buildingtemplate.tavern>> and into the general <<rep setup.buildingtemplate.recreationwing>> area.
 This isn't the first time you've done this, nor will it be the last, and <<rep $g.slave>> is used to being used as a servin <<girl $g.slave>>.
 </p>
 
@@ -101,7 +106,7 @@ You press the bottle into <<their $g.slave>> slowly. There was not much left in 
 </p>
 
 <p>
-You go back drinking, letting the slave loll around on the bar, enjoying the effects. When <<they $g.slave>>'s had time to reflect on the strange incident, <<they $g.slave>>
+You go back drinking, letting the slave loll around on the tavern, enjoying the effects. When <<they $g.slave>>'s had time to reflect on the strange incident, <<they $g.slave>>
 resolves to trust you more in the future, since it can be fun.
 </p>
 

@@ -153,7 +153,7 @@
 <<include 'InitBuildingDominanceTrainingRoom'>>
 <<include 'InitBuildingMasochistTrainingRoom'>>
 
-<<include 'InitBuildingEdgingTrainingRoom'>>
+<<include 'InitBuildingRoleplayTrainingRoom'>>
 <<include 'InitBuildingHornyTrainingRoom'>>
 
 <<include 'InitBuildingResearchRoom'>>
@@ -223,7 +223,6 @@
 <<include 'InitBuildingTavern'>>
 
 /* dining pimp buildings */
-<<include 'InitBuildingBar'>>
 <<include 'InitBuildingBath'>>
 <<include 'InitBuildingCleaning'>>
 
@@ -242,6 +241,7 @@
 <<include 'InitBuildingCourtyard'>>
 <<include 'InitBuildingGym'>>
 <<include 'InitBuildingMuseum'>>
+<<include 'InitBuildingSissyBooth'>>
 
 /* decoration */
 <<include 'InitBuildingPortal'>>

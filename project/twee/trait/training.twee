@@ -385,7 +385,7 @@
   new setup.Trait(
     'training_horny_advanced',
     'horny: advanced',
-    'Has no problem keeping themselves aroused at all times',
+    'Has no problem keeping themselves aroused at all times as well as knowing how to edge others without letting them go over',
     setup.SLAVETRAINVALUE_ADVANCED,
     {},
     ['tradvanced',],
@@ -405,33 +405,33 @@
 
 <<run new setup.TraitGroup([
   new setup.Trait(
-    'training_edging_basic',
-    'edging: basic',
-    'Has basic knowledge on how to edge others',
+    'training_roleplay_basic',
+    'roleplay: basic',
+    'Has basic knowledge on how to use words to arouse others',
     setup.SLAVETRAINVALUE_BASIC,
     {},
     ['trbasic', ],
     { tier: 1 },
   ),
   new setup.Trait(
-    'training_edging_advanced',
-    'edging: advanced',
-    'Knows the boundaries of ecstacy and can keep others at the threshold without crossing',
+    'training_roleplay_advanced',
+    'roleplay: advanced',
+    'These slaves would make proficient actors, and they use their abilities to roleplay anything their owner desires',
     setup.SLAVETRAINVALUE_ADVANCED,
     {},
     ['tradvanced',],
-    { tier: 2, icon: 'training_edging_basic' }
+    { tier: 2, icon: 'training_roleplay_basic' }
   ),
   new setup.Trait(
-    'training_edging_master',
-    'edging: master',
-    'Expert at edging techniques, can keep others and also themselves at the edge of cumming for prolonged amount of time',
+    'training_roleplay_master',
+    'roleplay: master',
+    'An expert at roleplaying, their act would even put the real deal to shame',
     setup.SLAVETRAINVALUE_MASTER,
     {},
     ['trmaster',],
-    { tier: 3, icon: 'training_edging_basic' }
+    { tier: 3, icon: 'training_roleplay_basic' }
   ),
-], ['training', 'tredging', 'trmale', 'trfemale', 'trnonbasic', ])>>
+], ['training', 'trroleplay', 'trmale', 'trfemale', 'trnonbasic', ])>>
 
 
 <<run new setup.Trait(

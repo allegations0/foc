@@ -58,7 +58,7 @@
   quest_template: setup.questtemplate.training_domestic_basic,
   prerequisites: [],
   unit_requirements: [
-    setup.qres.Building(setup.buildingtemplate.fetishtrainingroom),
+    setup.qres.Building(setup.buildingtemplate.milkerroom),
     setup.qres.Job(setup.job.slave),
     setup.qres.Trait(setup.trait.training_obedience_basic),
     setup.qres.NoTrait(setup.trait.training_domestic_basic),
@@ -76,7 +76,7 @@
   quest_template: setup.questtemplate.training_domestic_advanced,
   prerequisites: [],
   unit_requirements: [
-    setup.qres.Building(setup.buildingtemplate.fetishtrainingroom),
+    setup.qres.Building(setup.buildingtemplate.milkerroom),
     setup.qres.Job(setup.job.slave),
     setup.qres.Trait(setup.trait.training_obedience_advanced),
     setup.qres.TraitExact(setup.trait.training_domestic_basic),
@@ -555,57 +555,57 @@
 
 
 <<run new setup.UnitAction({
-  key: 'edging_basic',
+  key: 'roleplay_basic',
   tags: ['training', ],
-  quest_template: setup.questtemplate.training_edging_basic,
+  quest_template: setup.questtemplate.training_roleplay_basic,
   prerequisites: [],
   unit_requirements: [
-    setup.qres.Building(setup.buildingtemplate.milkerroom),
+    setup.qres.Building(setup.buildingtemplate.fetishtrainingroom),
     setup.qres.Job(setup.job.slave),
     setup.qres.Trait(setup.trait.training_obedience_basic),
-    setup.qres.NoTrait(setup.trait.training_edging_basic),
+    setup.qres.NoTrait(setup.trait.training_roleplay_basic),
     setup.qres.NoTrait(setup.trait.training_mindbreak),
     
   ],
   is_multitrain: true,
-  result_traits: [setup.trait.training_edging_basic],
+  result_traits: [setup.trait.training_roleplay_basic],
   prerequisite_traits: [setup.trait.training_obedience_basic],
 })>>
 
 <<run new setup.UnitAction({
-  key: 'edging_advanced',
+  key: 'roleplay_advanced',
   tags: ['training', ],
-  quest_template: setup.questtemplate.training_edging_advanced,
+  quest_template: setup.questtemplate.training_roleplay_advanced,
   prerequisites: [],
   unit_requirements: [
-    setup.qres.Building(setup.buildingtemplate.milkerroom),
+    setup.qres.Building(setup.buildingtemplate.fetishtrainingroom),
     setup.qres.Job(setup.job.slave),
     setup.qres.Trait(setup.trait.training_obedience_advanced),
-    setup.qres.TraitExact(setup.trait.training_edging_basic),
+    setup.qres.TraitExact(setup.trait.training_roleplay_basic),
     setup.qres.NoTrait(setup.trait.training_mindbreak),
     
   ],
   is_multitrain: true,
-  result_traits: [setup.trait.training_edging_advanced],
-  prerequisite_traits: [setup.trait.training_edging_basic, setup.trait.training_obedience_advanced, ],
+  result_traits: [setup.trait.training_roleplay_advanced],
+  prerequisite_traits: [setup.trait.training_roleplay_basic, setup.trait.training_obedience_advanced, ],
 })>>
 
 <<run new setup.UnitAction({
-  key: 'edging_master',
+  key: 'roleplay_master',
   tags: ['training', ],
-  quest_template: setup.questtemplate.training_edging_master,
+  quest_template: setup.questtemplate.training_roleplay_master,
   prerequisites: [],
   unit_requirements: [
-    setup.qres.Building(setup.buildingtemplate.edgingtrainingroom),
+    setup.qres.Building(setup.buildingtemplate.roleplaytrainingroom),
     setup.qres.Job(setup.job.slave),
-    setup.qres.TraitExact(setup.trait.training_edging_advanced),
+    setup.qres.TraitExact(setup.trait.training_roleplay_advanced),
     setup.qres.NoTraits(setup.TraitHelper.TRAINING_MASTER),
     setup.qres.NoTrait(setup.trait.training_mindbreak),
     
   ],
   is_multitrain: true,
-  result_traits: [setup.trait.training_edging_master],
-  prerequisite_traits: [setup.trait.training_edging_advanced, setup.trait.training_obedience_advanced, ],
+  result_traits: [setup.trait.training_roleplay_master],
+  prerequisite_traits: [setup.trait.training_roleplay_advanced, setup.trait.training_obedience_advanced, ],
 })>>
 
 

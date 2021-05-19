@@ -36,7 +36,18 @@ setup.BackwardsCompat.upgradeSave = function (sv) {
     setup.notify(`Updating your save from ${saveVersion.toString()} to ${setup.VERSION.join('.')}...`)
 
     /* Trait-related */
-    const trait_renames = {
+    const removed_traits = [
+      'training_edging_basic',
+      'training_edging_advanced',
+      'training_edging_master',
+    ]
+    for (const unit of Object.values(sv.unit || {})) {
+      for (const removed of removed_traits) {
+        if (removed in unit.trait_key_map) {
+          console.log(`Removing ${removed} from ${unit.key}`)
+          delete unit.trait_key_map[removed]
+        }
+      }
     }
 
     /* v1.6.4 */
@@ -73,6 +84,7 @@ setup.BackwardsCompat.upgradeSave = function (sv) {
       'scenerypimp',
       'petpimp',
       'fuckholepimp',
+      'serverslave',
     ]
     for (const obsolete_duty of obsolete_duties) {
       const to_remove = Object.values(sv.duty).filter(duty => duty.template_key == obsolete_duty)
@@ -91,7 +103,14 @@ setup.BackwardsCompat.upgradeSave = function (sv) {
     }
 
     /* removed buildings. V1.6.5.0 */
-    const removed_buildings = ['recreationwingpet', 'recreationwingscenery', 'recreationwingfuckholes', 'recreationwingdining']
+    const removed_buildings = [
+      'recreationwingpet',
+      'recreationwingscenery',
+      'recreationwingfuckholes',
+      'recreationwingdining',
+      'bar',
+      'roleplaytrainingroom',
+    ]
     if ('fort' in sv) {
       for (const rm of removed_buildings) {
         delete sv.fort.player.template_key_to_building_key[rm]
@@ -111,6 +130,8 @@ setup.BackwardsCompat.upgradeSave = function (sv) {
       'recreationwingfuckholes',
       'recreationwingpet',
       'recreationwingscenery',
+      'bar',
+      'roleplaytrainingroom',
     ]
     if (sv.roominstance) {
       for (const key of Object.keys(sv.roominstance)) {
