@@ -4,6 +4,20 @@
 
 ### v1.6.4.x
 
+v1.6.4.25:
+
+  - New activity: Hospital recovering
+  - Add roleplay slave training.
+  - Removed edging slave training.
+  - Role has any, all, no traits conditions in CC
+  - More cheatsheet stuffs.
+  - Remove UNITIMAGE_NOBACK from image metadatas
+  - Added imagepack info to image credits
+  - Updated Prince of Cups slave order to be more lucrative and fix text issues. (thanks to Matthew Lang)
+  - Fix activity on passable room and text cheat sheet.
+  - Fix caravan raid kingdom found in forest instead of city
+  - Dom/endurance/horny/obedience/roleplay now remove incompatible trait on success
+
 v1.6.4.24:
 
   - New quest: A Merchant's Revenge: Caravan Raid (Kingdom of Tor).
