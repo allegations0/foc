@@ -4,6 +4,16 @@
 
 ### v1.6.4.x
 
+v1.6.4.23:
+
+  - Moved git repository to https://gitgud.io/darkofocdarko/fort-of-chains
+  - Moved references from old repo to new repo.
+  - Credits for old commits
+  - Stop babel being noisy on new version
+  - Clarify `edit` quest doesn't edit it but creates a duplicate instead
+  - Fix missing customunit folder
+  - Fix custom image not zoom-able and missing in dialogues
+
 v1.6.4.22:
 
   - Moved default image pack to imagepacks/default
