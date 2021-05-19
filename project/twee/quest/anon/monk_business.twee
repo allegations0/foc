@@ -191,7 +191,7 @@ Upon arrival at the monastery, <<name $g.monk1>> knocked and introduced
 
 <<set _sly = setup.selectUnit([$g.monk1, $g.monk2], {trait: 'per_sly'})>>
 <<if _sly>>
-  <<Name _sly>> <<if _sly.isYou()>>are<<else>>is<</if>> an accomplished liar,
+  <<name _sly>> <<if _sly.isYou()>>are<<else>>is<</if>> an accomplished liar,
   and <<they _sly>> had the monks eating out of their hands in short order.
 <</if>>
 
@@ -203,7 +203,7 @@ Between <<name $g.monk1>>, <<name $g.monk2>> and some of the other monks, they h
 </p>
 <<if $gOutcome == 'crit'>>
 <p>
-By the time night fell, <<name $g.monk1>>, <<name $g.monk2>>, and <<name $g.brewer>> were seated around a cozy campfire, miles away from the monastery they had hoodwinked. <<Name $g.monk2>> tapped into one of the casks and poured everyone a cup. Or two, or maybe three...
+By the time night fell, <<name $g.monk1>>, <<name $g.monk2>>, and <<name $g.brewer>> were seated around a cozy campfire, miles away from the monastery they had hoodwinked. <<name $g.monk2>> tapped into one of the casks and poured everyone a cup. Or two, or maybe three...
 </p>
 <p>
 By morning, <<name $g.monk2>> monk2|was nursing a splitting headache. Worth it?
