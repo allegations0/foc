@@ -40,7 +40,7 @@ setup.Dialogs.openUnitImage = function (unit) {
   if (image_object) {
     return setup.Dialogs.openImage(
       setup.UnitImage.getImageObject(unit.getImage()),
-      image_object.info.title,
+      image_object.info.title || 'Unknown Title',
     )
   }
 }

@@ -559,13 +559,19 @@ setup.UnitImage = class UnitImage extends setup.TwineClass {
   static getImageObject(image_path) {
     const image_object = this.UNIT_IMAGES[image_path]
     if (!image_object) {
-      // default image
-      return setup.UnitImage.DEFAULT_IMAGE
+      if (!image_path) {
+        // default image
+        return setup.UnitImage.DEFAULT_IMAGE
+      } else {
+        return {
+          path: image_path,
+          info: {}
+        }
+      }
     } else {
       return image_object
     }
   }
-
 }
 
 setup.UnitImage.initializeImageTable(true)

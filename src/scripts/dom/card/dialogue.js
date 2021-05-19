@@ -38,7 +38,11 @@ setup.DOM.Card.dialogue = function ({
       'click',
       setup.DOM.Util.Image.load({ image_name: image_object.path }),
       () => {
-        setup.Dialogs.openImage(image_object, image_object.info.title)
+        if (content_image) {
+          setup.Dialogs.openImage(image_object, image_object.info.title)
+        } else {
+          setup.Dialogs.openUnitImage(unit)
+        }
       },
     )
   ))
