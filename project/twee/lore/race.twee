@@ -126,7 +126,7 @@ Living in the cold front attunes them to the domain of <<lore magic_water>>.
 
 <<run new setup.Lore(
   'race_elf',  /* key */
-  'Common elf',  /* name */
+  'Wood elf',  /* name */
   [  /* tags */
     'race',
   ],
