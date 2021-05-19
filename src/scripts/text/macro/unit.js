@@ -402,6 +402,16 @@ Macro.add(`uhobbyverb`, {
   }
 });
 
+Macro.add(`ustripverb`, {
+  handler() {
+    internalOutput(
+      this.output,
+      (unit) => setup.Text.Strip.verb(unit, this.args[1]),
+      this.args[0],
+    );
+  }
+});
+
 Macro.add(`ustripshirtand`, {
   handler() {
     internalOutput(this.output, setup.Text.Strip.takeoffshirtand, this.args[0]);

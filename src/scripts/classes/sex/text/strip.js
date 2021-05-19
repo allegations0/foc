@@ -10,6 +10,7 @@ setup.SexText.stripDescription = function (unit, equipment_slot, sex) {
   if (!eq) return ''
 
   const moan = setup.SexText.moan(unit, sex)
+  const verb = setup.Text.Strip.verb(unit, eq)
 
   if (equipment_slot == setup.equipmentslot.torso) {
     if (eq.getTags().includes('harness')) {
@@ -17,10 +18,10 @@ setup.SexText.stripDescription = function (unit, equipment_slot, sex) {
       a|their ${eq.rep()} and a|they hyperventilates within \
       its embrace as a|they a|strip.`
     } else if (eq.getTags().includes('armor')) {
-      return `a|They a|adv a|unlock the fastenings on a|their protective ${eq.rep()}, ` +
+      return `a|They a|adv ${verb} a|their ${eq.rep()}, ` +
         `until it drops with a loud thud.`
     } else if (eq.getTags().includes('fake_clothes')) {
-      return `a|They a|mime taking of a|their "invisible" ${eq.rep()}.`
+      return `a|They ${verb} a|their "invisible" ${eq.rep()}.`
     } else if (eq.getTags().includes('restraints')) {
       return `a|They a|are freed from a|their restrictive ${eq.rep()}, for the time being.`
     } else {
@@ -34,13 +35,13 @@ setup.SexText.stripDescription = function (unit, equipment_slot, sex) {
       text += `a|They a|scramble to unfasten the bindings on a|their \
       ${eq.rep()} as fast as a|they can`
     } else if (eq.getTags().includes('armor')) {
-      text += `a|They a|adv a|undo the numerous buckles to get a|their a|legs out from a|their protective ${eq.rep()}`
+      text += `a|They a|adv ${verb} a|their a|legs out from a|their protective ${eq.rep()}`
     } else if (eq.getTags().includes('restraints')) {
       text += `a|Their ${eq.rep()} no longer binds a|them for the time being`
     } else if (eq.getTags().includes('fake_clothes')) {
-      text += `a|They a|get out of a|their "invisible" ${eq.rep()}`
+      text += `a|They ${verb} a|their "invisible" ${eq.rep()}`
     } else {
-      text += `a|They a|adv a|pull a|their ${eq.rep()} down`
+      text += `a|They a|adv ${verb} a|their ${eq.rep()} down`
     }
     const underwear = unit.getEquipmentAt(setup.equipmentslot.rear)
     if (underwear && underwear.isCovering()) {
@@ -61,11 +62,11 @@ setup.SexText.stripDescription = function (unit, equipment_slot, sex) {
     } else if (eq.getTags().includes('clothes')) {
       text += `Unceremoniously, a|they a|throw a|their ${eq.rep()} aside`
     } else if (eq.getTags().includes('fake_clothes')) {
-      text += `a|They a|pretend to strip of a|their "invisible" ${eq.rep()}`
+      text += `a|They ${verb} a|their "invisible" ${eq.rep()}`
     } else if (eq.getTags().includes('buttplug')) {
       text += `a|Their ${eq.rep()} pressed against a|their inner walls as a|they struggle to remove it`
     } else {
-      text += `a|They a|take off a|their ${eq.rep()}`
+      text += `a|They ${verb} a|their ${eq.rep()}`
     }
     text += `, revealing a|their a|anus.`
     return text
@@ -74,12 +75,12 @@ setup.SexText.stripDescription = function (unit, equipment_slot, sex) {
     if (unit.isHasVagina()) {
       if (eq.getTags().includes('dildo')) {
         if (eq.getTags().includes('vegetable')) {
-          return `a|They unplug the ${eq.rep()} which was plugged deep within a|their a|vagina, the cold and fresh feeling suddenly gone from inside them.`
+          return `a|They ${verb} the ${eq.rep()} which was plugged deep within a|their a|vagina, the cold and fresh feeling suddenly gone from inside them.`
         } else {
-          return `a|They a|remove a|their ${eq.rep()} which was plugged deep inside a|their a|vagina, eliciting a ${moan}.`
+          return `a|They ${verb} a|their ${eq.rep()} which was plugged deep inside a|their a|vagina, eliciting a ${moan}.`
         }
       } else {
-        return `a|They a|remove a|their ${eq.rep()} from blocking the use of a|their a|vagina.`
+        return `a|They ${verb} a|their ${eq.rep()} from blocking the use of a|their a|vagina.`
       }
     } else {
       if (eq.getTags().includes('chastity')) {
@@ -104,37 +105,37 @@ setup.SexText.stripDescription = function (unit, equipment_slot, sex) {
 
   } else if (equipment_slot == setup.equipmentslot.mouth) {
     if (eq.getTags().includes('mouthcover')) {
-      return `a|They a|pull down a|their ${eq.rep()} and a|throw it aside.`
+      return `a|They ${verb} a|their ${eq.rep()} and a|throw it aside.`
     } else if (eq.getTags().includes('plaguemask')) {
-      return `a|They a|unmask and place a|their ${eq.rep()} aside.`
+      return `a|They ${verb} a|their ${eq.rep()} and place it aside.`
     } else if (eq.getTags().includes('dildogag')) {
       return `a|They a|remove the dildo from a|their throat, leaving the ring gag in place.`
     } else if (eq.getTags().includes('gag')) {
       return `The ${eq.rep()} is unfastened from a|their a|mouth.`
     } else {
-      return `a|They a|remove the ${eq.rep()} covering a|their a|mouth.`
+      return `a|They ${verb} the ${eq.rep()} covering a|their a|mouth.`
     }
 
   } else if (equipment_slot == setup.equipmentslot.arms) {
     if (eq.getTags().includes('mitts') || eq.getTags().includes('hooves')) {
       return `a|Their fists uncurl after a long bondage inside a|their now removed ${eq.rep()}.`
     } else if (eq.getTags().includes('harness')) {
-      return `a|They unbind the fastenings on a|their ${eq.rep()}.`
+      return `a|They ${verb} a|their ${eq.rep()}.`
     } else if (eq.getTags().includes('armor')) {
-      return `a|They a|unfasten the buckles holding a|their protective ${eq.rep()} before throwing it aside.`
+      return `a|They ${verb} a|their protective ${eq.rep()} before throwing it aside.`
     } else if (eq.getTags().includes('fake_clothes')) {
-      return `a|They a|remove a|their "invisible" ${eq.rep()} that nobody else could see.`
+      return `a|They ${verb} a|their "invisible" ${eq.rep()} that nobody else could see.`
     } else if (eq.getTags().includes('restraints')) {
       return `a|Their ${eq.rep()} is unlocked and placed aside.`
     } else {
-      return `a|They a|remove a|their ${eq.rep()} for the time being.`
+      return `a|They ${verb} a|their ${eq.rep()} for the time being.`
     }
 
   } else if (equipment_slot == setup.equipmentslot.feet) {
     if (eq.getTags().includes('hooves')) {
       return `The ${eq.rep()} encasing a|their feet is removed for the first time in days.`
     } else {
-      return `a|They a|get out of a|their ${eq.rep()} and place them aside.`
+      return `a|They ${verb} a|their ${eq.rep()} and place them aside.`
     }
 
   } else {

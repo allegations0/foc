@@ -1,5 +1,227 @@
 setup.Text.Strip = {}
 
+const RESTRAINT_VERB = [
+  `a|free a|themself of`,
+  `a|unlock and a|free themself of`,
+]
+
+const PLUG_VERB = [
+  `a|remove`,
+  `a|take off`,
+  `a|take out`,
+  `a|unplug`,
+]
+
+const GENERIC = [
+  `a|remove`,
+  `a|displace`,
+]
+
+const HARNESS = [
+  `a|undo the bindings and a|get out of`,
+  `a|unlatch the straps and a|strip out of`,
+]
+
+const ARMOR = [
+  `a|unbuckle the fastenings and a|get out of`,
+  `a|get out of the protective embrace of`,
+  `a|unfasten the straps and a|strip out of`,
+  `a|undo the buckles to get out of`,
+]
+
+/**
+ * Return a verb for stripping out of the equipment.
+ * E.g., "take off", "strip", ...
+ * 
+ * @param {setup.Unit} unit 
+ * @param {setup.Equipment} equipment 
+ * @returns {string}
+ */
+setup.Text.Strip.verb = function (unit, equipment) {
+  const slot = equipment.getSlot()
+  const eq = equipment
+
+  let t
+  if (slot == setup.equipmentslot.torso) {
+    if (eq.getTags().includes('fake_clothes')) {
+      t = [
+        `a|pretend to take off`,
+        `a|mime taking off`,
+        `"a|take off`,
+      ]
+    } else if (eq.getTags().includes('harness')) {
+      t = HARNESS
+    } else if (eq.getTags().includes('armor')) {
+      t = ARMOR
+    } else if (eq.getTags().includes('restraints')) {
+      t = RESTRAINT_VERB
+    } else {
+      t = [
+        `a|strip out of`,
+        `a|remove`,
+        `a|pull off`,
+        `a|slip out of`,
+        `a|strip out of`,
+      ]
+    }
+  } else if (slot == setup.equipmentslot.legs) {
+    if (eq.getTags().includes('harness')) {
+      t = HARNESS
+    } else if (eq.getTags().includes('armor')) {
+      t = ARMOR
+    } else if (eq.getTags().includes('restraints')) {
+      t = RESTRAINT_VERB
+    } else if (eq.getTags().includes('fake_clothes')) {
+      t = [
+        `a|pretend to strip down`,
+        `"a|pull down"`,
+      ]
+    } else {
+      t = [
+        `a|pull down`,
+        `a|get out of`,
+      ]
+    }
+  } else if (slot == setup.equipmentslot.rear) {
+    if (eq.getTags().includes('armor')) {
+      t = [
+        `a|give up the little protection offered and a|take off`,
+        `a|take off`,
+      ]
+    } else if (eq.getTags().includes('restraints')) {
+      t = RESTRAINT_VERB
+    } else if (eq.getTags().includes('clothes')) {
+      t = [
+        `a|slip off`,
+        `a|take down`,
+      ]
+    } else if (eq.getTags().includes('fake_clothes')) {
+      t = [
+        `a|pretend to strip out of`,
+        `"a|slip off"`,
+      ]
+    } else if (eq.getTags().includes('buttplug')) {
+      t = PLUG_VERB
+    } else {
+      t = [
+        `a|slip off`,
+        `a|strip out of`,
+      ]
+    }
+  } else if (slot == setup.equipmentslot.genital) {
+    if (unit.isHasVagina()) {
+      if (eq.getTags().includes('dildo')) {
+        t = PLUG_VERB
+      } else {
+        t = GENERIC
+      }
+    } else {
+      if (eq.getTags().includes('chastity')) {
+        t = RESTRAINT_VERB
+      } else if (eq.getTags().includes('dickplug')) {
+        t = PLUG_VERB
+      } else {
+        t = GENERIC
+      }
+    }
+
+  } else if (slot == setup.equipmentslot.nipple) {
+    if (eq.getTags().includes('nippleclamps')) {
+      t = [
+        `unclamp`,
+        `remove`,
+      ]
+    } else if (eq.getTags().includes('nipplechains')) {
+      t = [
+        `unclamp`,
+        `remove`,
+      ]
+    } else {
+      t = GENERIC
+    }
+
+  } else if (slot == setup.equipmentslot.mouth) {
+    if (eq.getTags().includes('mouthcover')) {
+      t = [
+        `a|take off`,
+        `a|pull down`,
+        `a|throw aside`,
+      ]
+    } else if (eq.getTags().includes('plaguemask')) {
+      t = [
+        `a|unmask from`,
+        `a|discard`,
+      ]
+    } else if (eq.getTags().includes('dildogag')) {
+      t = [
+        `a|remove`,
+        `a|take out the dildo from a|their throat and a|remove`,
+      ]
+    } else if (eq.getTags().includes('gag')) {
+      t = GENERIC
+    } else {
+      t = GENERIC
+    }
+
+  } else if (slot == setup.equipmentslot.arms) {
+    if (eq.getTags().includes('mitts') || eq.getTags().includes('hooves')) {
+      t = [
+        `a|unlock`,
+        `somehow a|remove`,
+      ]
+    } else if (eq.getTags().includes('harness')) {
+      t = HARNESS
+    } else if (eq.getTags().includes('armor')) {
+      t = ARMOR
+    } else if (eq.getTags().includes('fake_clothes')) {
+      t = [
+        `"a|remove"`,
+        `a|pretend to remove`,
+        `a|mimic removing`,
+      ]
+    } else if (eq.getTags().includes('restraints')) {
+      t = RESTRAINT_VERB
+    } else {
+      t = GENERIC
+    }
+
+  } else if (slot == setup.equipmentslot.feet) {
+    if (eq.getTags().includes('hooves')) {
+      t = [
+        `a|get a|their a|feet out of`,
+        `a|take a|their a|feet out of`,
+      ]
+    } else {
+      t = [
+        `a|get out`,
+        `a|take off`,
+      ]
+    }
+
+  } else {
+    t = GENERIC
+  }
+
+  return setup.Text.replaceUnitMacros(t, { a: unit })
+}
+
+/**
+ * @param {setup.Unit} unit 
+ * @param {setup.Equipment} cover 
+ */
+function take_off_helper(unit, cover) {
+  if (!cover) return ''
+  if (!cover.isMakeBodypartUseless()) return ''
+  const verb = setup.Text.Strip.verb(unit, cover)
+  const base = `${verb} a|their ${cover} and`
+  return setup.Text.replaceUnitMacros(
+    base,
+    {
+      a: unit,
+    }
+  )
+}
+
 // "take off his pants and"
 // "" (if no pants)
 /**
@@ -7,15 +229,7 @@ setup.Text.Strip = {}
  * @returns {string}
  */
 setup.Text.Strip.takeoffpantsand = function (unit) {
-  const cover = unit.getGenitalCovering()
-  if (!cover) return ''
-
-  const rep = cover.rep()
-  return setup.Text.replaceUnitMacros([
-    `a|take off a|their ${rep} and`,
-    `a|strip out of a|their ${rep} and`,
-    `a|get out of a|their ${rep} and`,
-  ], { a: unit })
+  return take_off_helper(unit, unit.getGenitalCovering())
 }
 
 // "take off his shirt and"
@@ -25,15 +239,7 @@ setup.Text.Strip.takeoffpantsand = function (unit) {
  * @returns {string}
  */
 setup.Text.Strip.takeoffshirtand = function (unit) {
-  const cover = unit.getChestCovering()
-  if (!cover) return ''
-
-  const rep = cover.rep()
-  return setup.Text.replaceUnitMacros([
-    `a|take off a|their ${rep} and`,
-    `a|strip out of a|their ${rep} and`,
-    `a|get out of a|their ${rep} and`,
-  ], { a: unit })
+  return take_off_helper(unit, unit.getChestCovering())
 }
 
 
@@ -65,41 +271,7 @@ setup.Text.Strip.takeoffequipmentand = function (unit) {
  * @returns {string}
  */
 setup.Text.Strip.takeoffmouthand = function (unit) {
-  const mouth = unit.getEquipmentAt(setup.equipmentslot.mouth)
-  if (!mouth) return ''
-
-  const rep = mouth.rep()
-  const tags = mouth.getTags()
-
-  let t = []
-  if (tags.includes('mouthcover')) {
-    t = [
-      `a|pull down a|their ${rep} and`,
-      `a|take off a|their ${rep} and`,
-    ]
-  } else if (tags.includes('plaguemask')) {
-    t = [
-      `a|unmask and`,
-      `a|take off a|their ${rep} and`,
-    ]
-  } else if (tags.includes('dildogag')) {
-    t = [
-      `a|remove the ${rep} from a|their throat and`,
-      `a|unplug the ${rep} from a|their throat and`,
-    ]
-  } else if (tags.includes('gag')) {
-    t = [
-      `a|unfasten the ${rep} and`,
-      `a|remove the ${rep} from a|their a|mouth and`,
-    ]
-  } else {
-    t = [
-      `a|remove the ${rep} and`,
-      `a|take off the ${rep} and`,
-    ]
-  }
-
-  return setup.Text.replaceUnitMacros(t, { a: unit })
+  return take_off_helper(unit, unit.getEquipmentAt(setup.equipmentslot.mouth))
 }
 
 
@@ -110,16 +282,7 @@ setup.Text.Strip.takeoffmouthand = function (unit) {
  * @returns {string}
  */
 setup.Text.Strip.takeoffeyesand = function (unit) {
-  const eq = unit.getEquipmentAt(setup.equipmentslot.eyes)
-  if (!eq || !eq.isMakeBodypartUseless()) return ''
-
-  const rep = eq.rep()
-  const tags = eq.getTags()
-
-  return setup.Text.replaceUnitMacros([
-    `a|take off a|their ${rep} and`,
-    `a|remove a|their ${rep} and`,
-  ], { a: unit })
+  return take_off_helper(unit, unit.getEquipmentAt(setup.equipmentslot.eyes))
 }
 
 
@@ -130,27 +293,7 @@ setup.Text.Strip.takeoffeyesand = function (unit) {
  * @returns {string}
  */
 setup.Text.Strip.takeoffanusand = function (unit) {
-  const eq = unit.getEquipmentAt(setup.equipmentslot.rear)
-  if (!eq) return ''
-
-  const rep = eq.rep()
-  const tags = eq.getTags()
-
-  let t
-  if (tags.includes('buttplug')) {
-    t = [
-      `a|remove the ${rep} lodged deep within a|their a|anus and`,
-      `a|take out the ${rep} from within a|their a|anus and`,
-      `a|pull out the ${rep} from a|their a|anus and`,
-    ]
-  } else {
-    t = [
-      `a|take off a|their ${rep} and`,
-      `a|remove a|their ${rep} and`,
-    ]
-  }
-
-  return setup.Text.replaceUnitMacros(t, { a: unit })
+  return take_off_helper(unit, unit.getEquipmentAt(setup.equipmentslot.rear))
 }
 
 
@@ -162,39 +305,5 @@ setup.Text.Strip.takeoffanusand = function (unit) {
  * @returns {string}
  */
 setup.Text.Strip.takeoffgenitaland = function (unit) {
-  const eq = unit.getEquipmentAt(setup.equipmentslot.genital)
-  if (!eq) return ''
-
-  const rep = eq.rep()
-  const tags = eq.getTags()
-
-  let t
-  if (tags.includes('chastity')) {
-    t = [
-      `a|remove a|their ${rep} and`,
-      `a|unlock a|their ${rep} and`,
-    ]
-  } else if (tags.includes('dickplug')) {
-    t = [
-      `a|remove the ${rep} painfully inserted into a|their urethra and`,
-      `slowly a|pull out the ${rep} from a|their urethra and`,
-    ]
-  } else if (tags.includes('vegetable')) {
-    t = [
-      `a|remove the fresh and juicy ${rep} lodged inside a|them and`,
-      `a|pull out the cold and wet ${rep} from a|their a|vagina and`,
-    ]
-  } else if (tags.includes('dildo')) {
-    t = [
-      `a|remove the ${rep} lodged deep inside a|them and`,
-      `a|pull out the ${rep} from a|their a|vagina and`,
-    ]
-  } else {
-    t = [
-      `a|take off a|their ${rep} and`,
-      `a|remove a|their ${rep} and`,
-    ]
-  }
-
-  return setup.Text.replaceUnitMacros(t, { a: unit })
+  return take_off_helper(unit, unit.getEquipmentAt(setup.equipmentslot.genital))
 }
