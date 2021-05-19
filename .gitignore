@@ -68,7 +68,8 @@ docs/.*
 dist/index.html
 
 # Ignore custom images
-dist/img/customunit
+dist/img/customunit/*
+!dist/img/customunit/putyourimageshere
 
 # Ignore save files
 *.save
