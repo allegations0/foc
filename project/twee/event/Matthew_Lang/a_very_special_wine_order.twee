@@ -38,7 +38,7 @@
 12, /* expires in */
 2000, /* base price */
 200, /* trait multi */
-0.2, /* value multi */
+0.8, /* value multi */
 [ /* crit traits */
 setup.trait.training_obedience_advanced,
 setup.trait.training_obedience_master,
@@ -94,7 +94,15 @@ setup.rarity.uncommon, /* Rarity */
 I'm looking for an...employee with special qualities. I understand you can help me obtain them?
 <</dialogue>>
 
-<p>The late morning finds you in your office, bored and with little to do except paperwork that you're putting off until at least this afternoon. The day is overcast and cloudy, and with nothing else to do you <<ustrippantsand $unit.player>>, revealing your <<ugenital $unit.player>>.
+<p>The late morning finds you in your office, bored and with little to do except paperwork that you're putting off until at least this afternoon. The day is overcast and cloudy, and with nothing else to do you 
+<<set _eq = $g.a.getGenitalCovering()>>
+<<if _eq>>
+  <<ustripverb $unit.player _eq>> revealing 
+<<else>>
+  reach down to play with 
+<</if>>
+
+your <<ugenital $unit.player>>.
 
 <<set _slave = $g.slave>>
 
@@ -128,8 +136,8 @@ You start to stiffen before you're fully done, but you're empty enough that it d
 The <<woman $g.wineagent>> smiles and walks into the room. "I'm strictly a voyeur. Can I sit on the desk? I'll get a better view there."<br>
 You shrug. "Be my guest. Who are you anyway?"
 <<else>>
-You fight the urge to push back to your desk and hide. Whoever this <<therace $g.wineagent>> is, <<they $g.wineagent>> clearly knows who you are and what business to run—and <<they $g.wineagent>>'s still here.<br>
-"I'll just finish up then," you say. Closing your eyes you finish relaxing, and feel your piss start to flow into the eager suckling mouth of your slave, <<name _slave>>. They gulp you down dutifully, and when your flow finally slows to a trickle, they start to nurse you to hardness.
+You fight the urge to push back to your desk and hide. Whoever this <<woman $g.wineagent>> is, <<they $g.wineagent>> clearly knows who you are and what business to run—and <<they $g.wineagent>>'s still here.<br>
+"I'll just finish up then," you say. Closing your eyes you finish relaxing, and feel your piss start to flow into the eager suckling mouth of your slave, <<name _slave>>. <<They $g.slave>> gulp you down dutifully, and when your flow finally slows to a trickle, <<they $g.slave>> starts to nurse you to backhardness.
 <<if $unit.player.isHasTrait('per_cruel')>>
 You slap <<them _slave>> away from your crotch and push <<them _slave>> under your desk.<br>
 "I'm working," you say bluntly. "Keep me hard but don't distract me."<br>
