@@ -129,6 +129,8 @@ mlangmerchantprinceflirt 1 = flirting with Merchant Prince
 <b>Well of course it's happening again. I didn't really expect it to stop.</b>
 <</dialogue>>
 
+<<questimage "prince_of_cups.jpg">>
+
 /*Set Player Drink*/
 <<if $unit.player.isHasAnyTraitExact(['bg_farmer','bg_mercenary','bg_pirate','bg_seaman', 'bg_soldier', 'bg_thug', 'bg_unemployed', 'bg_wildman', 'bg_woodsman'])>>
 <<set _pdrink = 'tankard of mead'>>
