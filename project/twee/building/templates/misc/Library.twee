@@ -33,7 +33,7 @@
   tags: ['critical', 'misc',],
   description_passage: 'BuildingLibrary',
   costs: [
-    [setup.qc.MoneyMult(-5000)],
+    [setup.qc.Money(-5000)],
   ],
   restrictions: [
     [
