@@ -4,6 +4,13 @@
 
 ### v1.6.4.x
 
+v1.6.4.24:
+
+  - New quest: A Merchant's Revenge: Caravan Raid (Kingdom of Tor).
+  - New macro: ustripverb
+  - Fix library costing 2.5m instead of 5000g
+  - Fix extra "TODO BEFORE COMMIT"
+
 v1.6.4.23:
 
   - Moved git repository to https://gitgud.io/darkofocdarko/fort-of-chains

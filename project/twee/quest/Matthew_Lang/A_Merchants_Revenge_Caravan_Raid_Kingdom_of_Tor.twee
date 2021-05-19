@@ -514,7 +514,7 @@ mlang_merchantrevenge_caravancount = How many caravans successfully raided
 
         <<if $gOutcome == 'crit'>>
             <p>
-                The traders came down from the foothills, although based on their garb they were bringing goods down from a mountain village rather than coming in from the desert. Still, none of them appeared fully comfortable in the heat and they headed straight for the spring to quench their thirst. Of course, that was was when you struck, raining arrows down from above before closing in and taking on the rest in combat. The few guards were no match for your seasoned veterans, and you soon found yourself in possession of a wagonload of _goods.
+                The traders came down from the foothills, although based on their garb they were bringing goods down from a mountain village rather than coming in from the desert. Still, none of them appeared fully comfortable in the heat and they headed straight for the spring to quench their thirst. Of course, that was when you struck, raining arrows down from above before closing in and taking on the rest in combat. The few guards were no match for your seasoned veterans, and you soon found yourself in possession of a wagonload of _goods.
             </p>
             <p>
                 You also had a trussed up new slave to take home with you. Or potential slave. Good times.
@@ -522,7 +522,7 @@ mlang_merchantrevenge_caravancount = How many caravans successfully raided
 
         <<elseif $gOutcome == 'success'>>
             <p>
-                The traders came down from the foothills, although based on their garb they were bringing goods down from a mountain village rather than coming in from the desert. Still, none of them appeared fully comfortable in the heat and they headed straight for the spring to quench their thirst. Of course, that was was when you struck, raining arrows down from above before closing in and taking on the rest in combat. The few guards were no match for your seasoned veterans, and you soon found yourself in possession of a wagonload of _goods.
+                The traders came down from the foothills, although based on their garb they were bringing goods down from a mountain village rather than coming in from the desert. Still, none of them appeared fully comfortable in the heat and they headed straight for the spring to quench their thirst. Of course, that was when you struck, raining arrows down from above before closing in and taking on the rest in combat. The few guards were no match for your seasoned veterans, and you soon found yourself in possession of a wagonload of _goods.
             </p>
 
         <<elseif $gOutcome == 'failure'>>
@@ -535,7 +535,7 @@ mlang_merchantrevenge_caravancount = How many caravans successfully raided
             </p>
         <<elseif $gOutcome == 'disaster'>>
             <p>
-                The traders came down from the foothills, although based on their garb they were bringing goods down from a mountain village rather than coming in from the desert. Still, none of them appeared fully comfortable in the heat and they headed straight for the spring to quench their thirst. That was was when you struck, but <<name _o2>> stumbled as they leapt off the outcrop, and sprained their ankle upon landing. Being one <<woman _o2>> down in the fight didn't help when you were already outnumbered, and you were forced to flee, all of you nursing injuries as you headed back toward the fort.
+                The traders came down from the foothills, although based on their garb they were bringing goods down from a mountain village rather than coming in from the desert. Still, none of them appeared fully comfortable in the heat and they headed straight for the spring to quench their thirst. That was when you struck, but <<name _o2>> stumbled as they leapt off the outcrop, and sprained their ankle upon landing. Being one <<woman _o2>> down in the fight didn't help when you were already outnumbered, and you were forced to flee, all of you nursing injuries as you headed back toward the fort.
             </p>
         <</if>>
 
@@ -866,7 +866,7 @@ mlang_merchantrevenge_caravancount = How many caravans successfully raided
 
         <<if $gOutcome == 'crit'>>
             <p>
-                The traders came down from the foothills, although based on their garb they were bringing goods down from a mountain village rather than coming in from the desert. Still, none of them appeared fully comfortable in the heat and they headed straight for the spring to quench their thirst. Of course that was was when <<name $g.scout>> launched the ambush, raining arrows down from above while <<name $g.fighter>> and <<name $g.raider>> charged in to engage the caravanners in melee. The few guards were no match for your seasoned veterans, and they soon found themselves in possession of a wagonload of _goods to bring home.
+                The traders came down from the foothills, although based on their garb they were bringing goods down from a mountain village rather than coming in from the desert. Still, none of them appeared fully comfortable in the heat and they headed straight for the spring to quench their thirst. Of course that was when <<name $g.scout>> launched the ambush, raining arrows down from above while <<name $g.fighter>> and <<name $g.raider>> charged in to engage the caravanners in melee. The few guards were no match for your seasoned veterans, and they soon found themselves in possession of a wagonload of _goods to bring home.
             </p>
             <p>
                 They also brought back a potential slave, who is now awaiting your pleasure in the fort's slave pens.
@@ -874,7 +874,7 @@ mlang_merchantrevenge_caravancount = How many caravans successfully raided
 
         <<elseif $gOutcome == 'success'>>
             <p>
-                The traders came down from the foothills, although based on their garb they were bringing goods down from a mountain village rather than coming in from the desert. Still, none of them appeared fully comfortable in the heat and they headed straight for the spring to quench their thirst. Of course that was was when <<name $g.scout>> launched the ambush, raining arrows down from above while <<name $g.fighter>> and <<name $g.raider>> charged in to engage the caravanners in melee. The few guards were no match for your seasoned veterans, and they soon found themselves in possession of a wagonload of _goods to bring home.
+                The traders came down from the foothills, although based on their garb they were bringing goods down from a mountain village rather than coming in from the desert. Still, none of them appeared fully comfortable in the heat and they headed straight for the spring to quench their thirst. Of course that was when <<name $g.scout>> launched the ambush, raining arrows down from above while <<name $g.fighter>> and <<name $g.raider>> charged in to engage the caravanners in melee. The few guards were no match for your seasoned veterans, and they soon found themselves in possession of a wagonload of _goods to bring home.
             </p>
 
         <<elseif $gOutcome == 'failure'>>
@@ -883,7 +883,7 @@ mlang_merchantrevenge_caravancount = How many caravans successfully raided
             </p>
         <<elseif $gOutcome == 'disaster'>>
             <p>
-                The traders came down from the foothills, although based on their garb they were bringing goods down from a mountain village rather than coming in from the desert. Still, none of them appeared fully comfortable in the heat and they headed straight for the spring to quench their thirst. Of course that was was when <<name $g.scout>> launched the ambush, , but <<name $g.fighter>> stumbled as they leapt off the outcrop, and sprained their ankle upon landing. Being one <<woman $g.fighter>> down in the fight didn't help when your slavers were already outnumbered, and they were forced to flee, all of them nursing injuries as they headed back toward the fort.
+                The traders came down from the foothills, although based on their garb they were bringing goods down from a mountain village rather than coming in from the desert. Still, none of them appeared fully comfortable in the heat and they headed straight for the spring to quench their thirst. Of course that was when <<name $g.scout>> launched the ambush, , but <<name $g.fighter>> stumbled as they leapt off the outcrop, and sprained their ankle upon landing. Being one <<woman $g.fighter>> down in the fight didn't help when your slavers were already outnumbered, and they were forced to flee, all of them nursing injuries as they headed back toward the fort.
             </p>
         <</if>>
 
