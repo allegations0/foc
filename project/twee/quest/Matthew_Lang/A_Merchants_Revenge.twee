@@ -140,6 +140,9 @@ setup.qc.TraumatizeRandom('lookout', 5)
 <<dialogue $g.mlangmerchantprince>>
     <b>Find the outlaws responsible for raiding my caravans. And kill them. Or take them for your sexcapades. I don't care, just make them suffer.</b>
 <</dialogue>>
+
+<<questimage "prince_of_cups.jpg">>
+
 <p>
     The increasing bandit activity in the <<lore region_vale>> is a common talking point in the taverns and teahouses of Lucgate. That and whose caravans were raided, if anyone's been losing money, and whispered rumours about which of the Merchant Prince's has paid the bandits to attack his competition's caravans.
 </p>

@@ -94,7 +94,7 @@ setup.qdiff.normal42, /* difficulty */
     [
       setup.qc.VarAdd('mlang_merchantrevenge_caravancount', 1, -1),
       setup.qc.Slave('slaves', "a|was a member of a Toran caravan, captured by your slavers in a raid", undefined),
-      setup.qc.MoneyCustom(1500),
+      setup.qc.MoneyCustom(2000),
     ],
   ],
   [
@@ -538,7 +538,7 @@ After studying at the map, <<name $g.scout>> cut through the forest, leading you
                 With time on their side, you were able to determine the lay of the land, quite literally working out where the stable ground was and finding the best vantage points for your slavers. You also found the 'path' of solid land you assumed the caravan would take to pass through the meadow. That done, you all settled in to wait.
             </p>
             <p>
-                Unfortunately, you hadn't counted on the water buffulo that often like to feed in the well, water meadows. The herd you encountered had a number of calves, and were immediately aggressive—and perched half hidden in islands of land, you didn't have any easy escape routes. Battered, trampled and nearly drowned you dragged yourselves back to the fort. It looked like this caravan would get away this time. Assuming you even had the right meadow.
+                Unfortunately, you hadn't counted on the water buffalo that often like to feed in the well, water meadows. The herd you encountered had a number of calves, and were immediately aggressive—and perched half hidden in islands of land, you didn't have any easy escape routes. Battered, trampled and nearly drowned you dragged yourselves back to the fort. It looked like this caravan would get away this time. Assuming you even had the right meadow.
             </p>
         <</if>>
     <</if>>
@@ -841,7 +841,7 @@ After studying at the map, <<name $g.scout>> cut through the forest, leading you
                 With time on their side, your slavers were able to determine the lay of the land, quite literally working out where the stable ground was and finding the best vantage points. <<name $g.fighter>> also found the 'path' of solid land <<they $g.fighter>> assumed the caravan would take to pass through the meadow. That done, they settled in to wait.
             </p>
             <p>
-                Unfortunately, they hadn't counted on the water buffulo that often like to feed in the well, water meadows. The herd they encountered had a number of calves, and were immediately aggressive—and perched half hidden in islands of land, your slavers didn't have any easy escape routes. Battered, trampled and nearly drowned, they dragged themselves back to the fort.
+                Unfortunately, they hadn't counted on the water buffalo that often like to feed in the well, water meadows. The herd they encountered had a number of calves, and were immediately aggressive—and perched half hidden in islands of land, your slavers didn't have any easy escape routes. Battered, trampled and nearly drowned, they dragged themselves back to the fort.
             </p>
         <</if>>
     <</if>>

@@ -320,6 +320,12 @@ IMAGE_CREDITS = {
     license: "CC-BY-NC 3.0",
     extra: "cropped and edited out two of the dialogues",
   },
+  "prince_of_cups.jpg": {
+    title: "Dizzy Hearts Tavern",
+    artist: "ExitMothership",
+    url: "https://www.deviantart.com/exitmothership/art/Dizzy-Hearts-Tavern-734479865",
+    license: "CC-BY-NC-ND 3.0",
+  },  
 }
 
 }());
