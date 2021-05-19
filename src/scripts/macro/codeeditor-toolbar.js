@@ -694,6 +694,27 @@ function makeActorLabel(actor_key) {
   return actor_key === 'Player' ? actor_key : '<i>' + actor_key + '</i>'
 }
 
+/**
+ * @returns {string}
+ */
+function getRoleTexts() {
+  /**
+   * @type {setup.QuestTemplate}
+   */
+  // @ts-ignore
+  const qbase = State.variables.dtquest
+  const roles = qbase.getUnitCriterias()
+  return Object.keys(roles).map(key => `$g.${key}`).join(', ')
+}
+
+/**
+ * @param {setup.Trait[]} trait_array 
+ * @returns {string}
+ */
+function getTraitArrayText(trait_array) {
+  return '[' + trait_array.map(trait => `'${trait.key}'`).join(', ') + ']'
+}
+
 export function generateCodeEditorToolbarItems(retainEditorFocus) {
 
   function makeActorMenu(macros) {
@@ -731,66 +752,128 @@ export function generateCodeEditorToolbarItems(retainEditorFocus) {
     if (State.variables.devtooltype == 'quest') {
       if_any_role = [
         menuItem({
-          text: 'If any role has trait...',
-          tooltip: `Conditional based on whether any one of the actors going on this quest has a certain trait, and return the actor. This can be used to setup so that the actor with the certain trait will speak up or participate in the text.`,
-          callback: () => {
-            retainEditorFocus(setup.DevToolHelper.pickTraits()).then(traits => {
-              if (traits && traits.length) {
+          text: 'If any role...',
+          tooltip: `Conditions that any one of the units going on the quest satisfy something`,
+          children: () => [
+            menuItem({
+              text: 'If any role has ONE trait...',
+              tooltip: `Conditional based on whether any one of the actors going on this quest has a certain trait, and return the actor. This can be used to setup so that the actor with the certain trait will speak up or participate in the text.`,
+              callback: () => {
+                retainEditorFocus(setup.DevToolHelper.pickTraits()).then(traits => {
+                  if (traits && traits.length) {
+                    const role_text = getRoleTexts()
+                    for (const trait of traits) {
+                      insertTextIntoEditor(`<<set _unit = setup.selectUnit([${role_text}], {trait: '${trait.key}'})>>\n`)
+                      insertTextIntoEditor(`<<if _unit>>\n<<Rep _unit>> had trait ${trait.key}\n\n<</if>>\n\n`)
+                    }
+                  }
+                })
+              },
+            }),
+            menuItem({
+              text: 'If any role has ANY trait...',
+              tooltip: `Conditional based on whether any one of the actors going on this quest has a ANY of a set of traits, and return the actor.`,
+              callback: () => {
+                retainEditorFocus(setup.DevToolHelper.pickTraits()).then(traits => {
+                  if (traits && traits.length) {
+                    insertTextIntoEditor(
+                      `<<set _unit = setup.selectUnit([${getRoleTexts()}], {anytrait: ${getTraitArrayText(traits)}})>>`
+                    )
+                    insertTextIntoEditor(
+                      `
+<<if _unit>>
+<<Rep _unit>> had one of these traits: ${getTraitArrayText(traits)}
+<<else>>
+No unit has any one of the traits above.
+<</if>>`
+                    )
+                  }
+                })
+              },
+            }),
+            menuItem({
+              text: 'If any role has NO trait...',
+              tooltip: `Conditional based on whether any one of the actors going on this quest has NONE of a set of traits, and return the actor.`,
+              callback: () => {
+                retainEditorFocus(setup.DevToolHelper.pickTraits()).then(traits => {
+                  if (traits && traits.length) {
+                    insertTextIntoEditor(
+                      `<<set _unit = setup.selectUnit([${getRoleTexts()}], {notrait: ${getTraitArrayText(traits)}})>>`
+                    )
+                    insertTextIntoEditor(
+                      `
+<<if _unit>>
+<<Rep _unit>> had NONE of these traits: ${getTraitArrayText(traits)}
+<<else>>
+No unit has any NONE of the traits above.
+<</if>>`
+                    )
+                  }
+                })
+              },
+            }),
+            menuItem({
+              text: 'If any role has ALL trait...',
+              tooltip: `Conditional based on whether any one of the actors going on this quest has ALL of a set of traits, and return the actor.`,
+              callback: () => {
+                retainEditorFocus(setup.DevToolHelper.pickTraits()).then(traits => {
+                  if (traits && traits.length) {
+                    insertTextIntoEditor(
+                      `<<set _unit = setup.selectUnit([${getRoleTexts()}], {alltrait: ${getTraitArrayText(traits)}})>>`
+                    )
+                    insertTextIntoEditor(
+                      `
+<<if _unit>>
+<<Rep _unit>> had ALL of these traits: ${getTraitArrayText(traits)}
+<<else>>
+No unit has ALL of the traits above.
+<</if>>`
+                    )
+                  }
+                })
+              },
+            }),
+            menuItem({
+              text: 'If you are on the quest...',
+              tooltip: `Conditional based on whether the player character is going on the quest`,
+              callback: () => {
                 /**
                  * @type {setup.QuestTemplate}
                  */
                 // @ts-ignore
                 const qbase = State.variables.dtquest
                 const roles = qbase.getUnitCriterias()
-                const role_text = Object.keys(roles).map(key => `$g.${key}`).join(', ')
-
-                for (const trait of traits) {
-                  insertTextIntoEditor(`<<set _unit = setup.selectUnit([${role_text}], {trait: '${trait.key}'})>>\n`)
-                  insertTextIntoEditor(`<<if _unit>>\n<<Rep _unit>> had trait ${trait.key}\n\n<</if>>\n\n`)
+                const notyou = []
+                for (const role_key of Object.keys(roles)) {
+                  notyou.push(
+                    `<<if !$g.${role_key}.isYou()>><<run _notyou.push($g.${role_key})>><</if>>`
+                  )
                 }
+                const remain = []
+                const setyou = []
+                for (let i = 0; i < Object.keys(roles).length - 1; ++i) {
+                  setyou.push(`<<set _o${i + 1} = _notyou[${i}]>>`)
+                  remain.push(`<<rep _o${i + 1}>>`)
+                }
+                const role_text = Object.keys(roles).map(key =>
+                  `$g.${key}.isYou()`).join(' or ')
+                insertTextIntoEditor(`<<if ${role_text}>>
+
+    <<set _notyou = []>>
+    ${notyou.join('\n')}
+    ${setyou.join('\n')}
+
+    You are going on the quest.
+    The other units on the quest are:
+    ${remain.join(', ')}.
+
+    <<else>>
+    You are not going on the quest.
+
+    <</if>>`)
               }
-            })
-          }
-        }),
-        menuItem({
-          text: 'If you are on the quest...',
-          tooltip: `Conditional based on whether the player character is going on the quest`,
-          callback: () => {
-            /**
-             * @type {setup.QuestTemplate}
-             */
-            // @ts-ignore
-            const qbase = State.variables.dtquest
-            const roles = qbase.getUnitCriterias()
-            const notyou = []
-            for (const role_key of Object.keys(roles)) {
-              notyou.push(
-                `<<if !$g.${role_key}.isYou()>><<run _notyou.push($g.${role_key})>><</if>>`
-              )
-            }
-            const remain = []
-            const setyou = []
-            for (let i = 0; i < Object.keys(roles).length - 1; ++i) {
-              setyou.push(`<<set _o${i + 1} = _notyou[${i}]>>`)
-              remain.push(`<<rep _o${i + 1}>>`)
-            }
-            const role_text = Object.keys(roles).map(key =>
-              `$g.${key}.isYou()`).join(' or ')
-            insertTextIntoEditor(`<<if ${role_text}>>
-
-<<set _notyou = []>>
-${notyou.join('\n')}
-${setyou.join('\n')}
-
-You are going on the quest.
-The other units on the quest are:
-${remain.join(', ')}.
-
-<<else>>
-You are not going on the quest.
-
-<</if>>`)
-          }
+            }),
+          ],
         }),
       ]
     }
@@ -866,6 +949,7 @@ You are not going on the quest.
       text: 'If actor',
       tooltip: `Conditionals based on a property of an actor. For example, this can be used to generate unique text if the actor satisfies a certain condition like having a dick or being submissive`,
       children: () => [
+        ...genIfAnyRole(),
         menuItem({
           text: 'Has...',
           tooltip: `Conditional based whether the unit has something`,
@@ -969,7 +1053,6 @@ You are not going on the quest.
               return `${unit_key}.getHomeland() == setup.Text.Race.REGIONS.${key}`
             }), true)
         }]),
-        ...genIfAnyRole(),
       ]
     }),
     menuItem({
