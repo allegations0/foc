@@ -31,7 +31,7 @@ v1.6.4.21:
   - Continent lore now use geo tag.
   - Fix slave refusing sex.
 
-v1.6.4.20: [TODO BEFORE COMMIT]
+v1.6.4.20:
 
   - Can get ugly/beautiful and tall/short from prologue too
   - Fairy offer and tower of roses now show the unit before recritment choice.
