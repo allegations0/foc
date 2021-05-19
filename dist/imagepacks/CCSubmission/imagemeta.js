@@ -12,9 +12,7 @@
    /* Image credit information. */
    UNITIMAGE_CREDITS = {
    }
-   
-   /* Whether unit can use images from the parent directory */
-   UNITIMAGE_NOBACK = true
+
 
 
 }());

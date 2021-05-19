@@ -73,17 +73,6 @@ UNITIMAGE_CREDITS = {
 
 This is empty, since there are no portraits in this folder. We will come back to this later.
 
-Finally, there is
-
-```
-/* Whether unit can use images from the parent directory */
-UNITIMAGE_NOBACK = true
-```
-
-This indicates whether units in this directory can use its parent images.
-In general, always set this to `false` except in two places: `subrace` folder and the root folder.
-We will again come back to this later.
-
 ### Populating the image pack.
 
 Now suppose we want to add a new male orc portrait. Continuing, open the
@@ -152,21 +141,6 @@ Finally, we need to declare that this folder does not have any subfolder:
 ```
 /* The following is list of direct subdirectories. */
 UNITIMAGE_LOAD_FURTHER = []
-```
-
-We keep this, so that orcs does not use images in its parent directory:
-
-```
-/* Whether unit can use images from the parent directory */
-UNITIMAGE_NOBACK = true
-```
-
-If instead we want orcs to be able to use images in its parent directory, then
-we should set it to:
-
-```
-/* Whether unit can use images from the parent directory */
-UNITIMAGE_NOBACK = false
 ```
 
 You are done!

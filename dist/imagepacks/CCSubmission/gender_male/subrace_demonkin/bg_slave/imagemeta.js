@@ -3,9 +3,6 @@
   /* The following is list of direct subdirectories. */
   UNITIMAGE_LOAD_FURTHER = []
 
-	/* Whether unit can use images from the parent directory */
-	UNITIMAGE_NOBACK = false
-	
   /* Image credit information. */
   UNITIMAGE_CREDITS = {
     1: {
@@ -19,7 +16,7 @@
       artist: "NauthyNoodle",
       url: "https://www.newgrounds.com/art/view/naughtynoodle/maraad",
       license: "CC-BY-NC-ND 3.0",
-    },	
+    },
     8: {
       title: "Moon Ring",
       artist: "Undeadkitty13",

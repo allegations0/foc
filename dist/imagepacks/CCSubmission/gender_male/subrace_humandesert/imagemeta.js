@@ -3,8 +3,6 @@
   /* The following is list of direct subdirectories. */
   UNITIMAGE_LOAD_FURTHER = ["bg_adventurer", "bg_soldier", "bg_mystic",]
 
-  /* Whether unit can use images from the parent directory */
-  UNITIMAGE_NOBACK = true
 
   /* Image credit information. */
   UNITIMAGE_CREDITS = {

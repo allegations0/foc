@@ -369,9 +369,11 @@ setup.UnitImage = class UnitImage extends setup.TwineClass {
 
         packmeta.numimages += image_list.length
 
-        var is_back_allowed = true
+        const is_back_allowed = true
+        /* no longer used
         if (window.UNITIMAGE_NOBACK)
           is_back_allowed = false
+        */
 
         const further = window.UNITIMAGE_LOAD_FURTHER
 
