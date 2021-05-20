@@ -1,31 +1,3 @@
-:: ArmoryAssignEquipment [nobr]
-
-<<set $gMenuVisible = false>>
-
-<<set _slot = setup.equipmentslot[$gEquipmentSlot_key]>>
-<<set _equipmentset = $equipmentset[$gEquipmentSet_key]>>
-
-<p>
-Equip <<rep _slot>> on <<rep _equipmentset>>:
-</p>
-
-<<focmove 'Cancel' 'Armory'>>
-<br/>
-
-<<for _ieq, _eqobj range $armory.getEquipments({equipment_slot: _slot})>>
-  <<set _eq = _eqobj[0]>>
-  <<capture _eq>>
-    <<rep _eq>>
-    <<set _linktext = `Equip ${_eq.getName()}`>>
-    <<link _linktext>>
-      <<run $armory.replaceEquipment(_eq, _equipmentset)>>
-      <<focgoto 'Armory'>>
-    <</link>>
-    <br/>
-  <</capture>>
-<</for>>
-
-
 :: ArmoryEquipment [nobr]
 
 <<set $gMenuVisible = true>>
