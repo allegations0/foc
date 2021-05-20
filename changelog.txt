@@ -4,6 +4,15 @@
 
 ### v1.6.4.x
 
+v1.6.4.27:
+
+  - New activity: Mail room read mail
+  - Documentation for doing first issue for coders
+  - DOM-ification of OpportunityAutoAnswer
+  - Remove selectunit and domification of itemunitusableon. For #319
+  - OpportunityOptionSelected and TrainingDo to DOM. For #319
+  - Fix wine order wrong actor mention.
+
 v1.6.4.26: [TODO BEFORE COMMIT]
 
   - Added new lore: Cassian Mountains (thanks to Matthew Lang)
