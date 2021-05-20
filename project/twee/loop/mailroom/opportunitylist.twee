@@ -89,26 +89,5 @@
 
 <<set $gMenuVisible = true>>
 
-<<set _viceleader = $dutylist.getUnitIfAvailable('viceleader')>>
-
-You went over to <<rep _viceleader>>'s desk. The following is the list of all
-mails that <<rep _viceleader>> will automatically responds to.
-You can make changes to it, if you wish.
-
-<br/>
-<<focmove 'Return' 'OpportunityList'>>
-
-<<for _iopportunity, _opportunity range $opportunitylist.getOpportunityAutoAnswers()>>
-  <br/>
-  <<nameof _opportunity[0]>>: Respond with
-  <<include _opportunity[0].getOptions()[_opportunity[1]].description_passage>>
-  <<capture _iopportunity, _opportunity>>
-    <<link '(remove auto-answer)'>>
-      <<run $opportunitylist.removeAutoAnswer(_opportunity[0])>>
-      <<focgoto>>
-    <</link>>
-  <</capture>>
-<</for>>
-
-
-
+<<set _dom = setup.DOM.Menu.opportunityautoanswer()>>
+<<attach _dom>>
