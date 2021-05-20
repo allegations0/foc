@@ -1,6 +1,0 @@
-:: SelectUnitWidget [nobr widget]
-
-<<focwidget 'selectunit'>>
-  <<set _dom = setup.DOM.Roster.selectunit({units: $args[0], return_passage: $args[1]})>>
-  <<attach _dom>>
-<</focwidget>>

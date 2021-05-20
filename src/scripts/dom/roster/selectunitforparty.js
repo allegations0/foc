@@ -7,7 +7,7 @@ import { menuItemAction, menuItemText } from "../../ui/menu"
 setup.DOM.Roster.selectunitforparty = function (party) {
   return setup.DOM.Roster.show({
     menu: 'unit',
-    units: State.variables.company.player.getUnits().filter(unit => unit.getParty() != party),
+    units: State.variables.company.player.getUnits({}).filter(unit => unit.getParty() != party),
     actions_callback: /** @param {setup.Unit} unit */ (unit) => {
       const menus = []
 
