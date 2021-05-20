@@ -230,3 +230,52 @@ setup.DOM.Card.opportunity = function (opportunity, hide_actions) {
     fragments,
   )
 }
+
+
+/**
+ * @param {setup.OpportunityInstance} opportunity
+ * @returns {setup.DOM.Node}
+ */
+setup.DOM.Card.opportunity_option_selected = function (opportunity) {
+  const passage = opportunity.getSelectedOptionPassage()
+  const fragments = []
+  if (passage) {
+    fragments.push(renderDescription(opportunity, passage))
+  }
+  opportunity.finalize()
+  // @ts-ignore
+  delete State.variables.gOpportunity_key
+
+  function continue_callback() {
+    if (State.variables.opportunitylist.getOpportunities().length) {
+      setup.DOM.Nav.goto('OpportunityList')
+    } else {
+      setup.DOM.Nav.goto('QuestHub')
+    }
+  }
+
+  if (passage) {
+    State.variables.gPassage = 'QuestHub'
+    if (State.variables.gMenuVisible) {
+      State.variables.gMenuVisible = false
+      setup.DOM.Nav.topLeftNavigation(
+        setup.DOM.Nav.link(
+          `Continue`,
+          continue_callback,
+        )
+      )
+      fragments.push(html`
+        <div>
+          ${setup.DOM.Nav.link(
+        'Continue...',
+        continue_callback,
+      )}
+        </div>
+      `)
+    }
+    return setup.DOM.create('div', {}, fragments)
+  } else {
+    continue_callback()
+    return null
+  }
+}
