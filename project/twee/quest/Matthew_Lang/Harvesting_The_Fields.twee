@@ -98,16 +98,16 @@ setup.qc.Injury('labourer', 1)
 
 
 :: Quest_harvesting_the_fieldsCrit [nobr]
-<p>Your slavers grumbled at the job assignment—until they realised there was a party afterward. <<name $g.labourer>> and <<Theslaver $g.labourer2>> worked tirelessly cutting and stooking golden sheaves of wheat,
+<p>Your slavers grumbled at the job assignment—until they realised there was a party afterward. <<name $g.labourer>> and <<name $g.labourer2>> worked tirelessly cutting and stooking golden sheaves of wheat,
 <<if $g.slaver.isHasTrait('bg_farmer')>>
 easily keeping up with <<name $g.slaver>>, whose familiarity with the work saw <<them $g.slaver>> leading from the front of the pack.
 <<elseif $g.slaver.isHasTrait('muscle_strong')>>
 a task that <<name $g.slaver>> proved surprisingly adept at as well.
 <<else>>
-more than making up for <<reps $g.slaver>> lack of experience with farmwork.
+more than making up for <<name $g.slaver>>'s lack of experience with farmwork.
 <</if>>
 </p>
-<p>The harvest party was a loud and raucous affair, drenched in mead and cider, and your slavers were stuffed with roast pork, a range of pies, freshly baked bread and apples fresh off the tree. <<Rep $g.labourer2>> won the apple bobbing competition, and <<rep $g.labourer>> proved to be very popular with the locals,
+<p>The harvest party was a loud and raucous affair, drenched in mead and cider, and your slavers were stuffed with roast pork, a range of pies, freshly baked bread and apples fresh off the tree. <<name $g.labourer2>> won the apple bobbing competition, and <<name $g.labourer>> proved to be very popular with the locals,
 <<if $g.labourer.isHasTrait('per_chaste')>>
 but politely declined the subtle—and not so subtle—invitations for sexual intimacy that game <<their $g.labourer>> way.
 <<elseif $g.labourer.isHasTrait('per_sexaddict')>>
@@ -117,7 +117,7 @@ and eventually <<they $g.labourer>> disappeared into the hayloft with a well end
 <</if>>
 </p>
 <<if $gOutcome == 'crit'>>
-<p>All the while, <<Reps $g.slaver>> waited, biding <<their $g.slaver>> time, and as the people started to drift home long after the sun had fallen, <<they $g.slaver>> captured one of the farmhands and brought <<them $g.farmhand>> back to your fort.</p>
+<p>All the while, <<name $g.slaver>> waited, biding <<their $g.slaver>> time, and as the people started to drift home long after the sun had fallen, <<they $g.slaver>> captured one of the farmhands and brought <<them $g.farmhand>> back to your fort.</p>
 <</if>>
 <p>Overall, the harvest was a great success, and your slavers were paid handsomely for their work, both in coin and food, which they bring back with them to the fort.</p>
 
@@ -127,7 +127,6 @@ and eventually <<they $g.labourer>> disappeared into the hayloft with a well end
 <p>Your slavers grumbled at the job assignment—until they realised there was a party afterward, and they set out with high hopes.
 <<set _unit = setup.selectUnit([$g.labourer, $g.labourer2, $g.slaver], {trait: 'bg_farmer'})>>
 <<if _unit>>
-<<Rep _unit>> had trait bg_farmer
 However, it's been a long time since any of them had done serious farm work, and they didn't last beyond lunch time.
 <<else>>
 However, none of them were up to the physical demands of the harvest, and they didn't last beyond lunch time.
@@ -138,27 +137,27 @@ With the scornful laughs of the farmers ringing in their ears, your slavers slun
 
 
 :: Quest_harvesting_the_fieldsDisaster [nobr]
-<p>Your slavers grumbled at the job assignment—until they realised there was a party afterward. <<name $g.labourer>> and <<Theslaver $g.labourer2>> worked tirelessly cutting and stooking golden sheaves of wheat,
+<p>Your slavers grumbled at the job assignment—until they realised there was a party afterward. <<name $g.labourer>> and <<name $g.labourer2>> worked tirelessly cutting and stooking golden sheaves of wheat,
 <<if $g.slaver.isHasTrait('bg_farmer')>>
 easily keeping up with <<name $g.slaver>>, whose familiarity with the work saw <<them $g.slaver>> leading from the front of the pack.
 <<elseif $g.slaver.isHasTrait('muscle_strong')>>
 a task that <<name $g.slaver>> proved surprisingly adept at as well.
 <<else>>
-more than making up for <<reps $g.slaver>> lack of experience with farmwork.
+more than making up for <<name $g.slaver>>'s lack of experience with farmwork.
 <</if>>
 </p>
-<p>The harvest party was a loud and raucous affair, drenched in mead and cider, and your slavers were stuffed with roast pork, a range of pies, freshly baked bread and apples fresh off the tree. <<Rep $g.labourer2>> won the apple bobbing competition, and night started on a good note.</p>
+<p>The harvest party was a loud and raucous affair, drenched in mead and cider, and your slavers were stuffed with roast pork, a range of pies, freshly baked bread and apples fresh off the tree. <<name $g.labourer2>> won the apple bobbing competition, and night started on a good note.</p>
 <p>
 <<if $g.slaver.isHasTrait('per_cautious')>>
-Unfortunately, <<Rep $g.slaver>> was too cautious to make a grab for any of the farmhands, and <<Rep $g.labourer>> got increasingly impatient with the whole affair. When <<they $g.labourer>> went off to find an outhouse
+Unfortunately, <<name $g.slaver>> was too cautious to make a grab for any of the farmhands, and <<name $g.labourer>> got increasingly impatient with the whole affair. When <<they $g.labourer>> went off to find an outhouse
 <<if $g.labourer.isHasDick()>>
 —or a convenient bush—
 <<else>>
 
 <</if>>
-they stumbled across a very drunk farmhand, <<name $g.farmhand>>, and decided to nab them right then and there. However, <<name $g.farmhand>> turned out to be a much better fighter than <<Rep $g.labourer>> anticipated, and was able to bellow for help, leaving your slavers hopelessly outmatched.
+they stumbled across a very drunk farmhand, <<name $g.farmhand>>, and decided to nab them right then and there. However, <<name $g.farmhand>> turned out to be a much better fighter than <<name $g.labourer>> anticipated, and was able to bellow for help, leaving your slavers hopelessly outmatched.
 <<else>>
-Unfortunately, <<Rep $g.slaver>> got impatient and moved too quickly, and <<their $g.slaver>> attempts to single out one of the farmhands and lure <<them $g.farmhand>> away from the celebration went south when they proved to be a much better fighter than anticipated. When they called for help, the still mostly sober farmers rallied against your slavers, leaving them helplessly outmatched.
+Unfortunately, <<name $g.slaver>> got impatient and moved too quickly, and <<their $g.slaver>> attempts to single out one of the farmhands and lure <<them $g.farmhand>> away from the celebration went south when they proved to be a much better fighter than anticipated. When they called for help, the still mostly sober farmers rallied against your slavers, leaving them helplessly outmatched.
 <</if>>
 </p>
-<p>With no other options, your slavers legged it back to your fort, however, in the ensuing chase, <<Rep $g.slaver>> stepped into a rabbit hole and twisted <<their $g.slaver>> ankle. Your other slavers also received some superficial injuries as they made their escape, and you can only hope those don't prove to be too serious.</p>
+<p>With no other options, your slavers legged it back to your fort, however, in the ensuing chase, <<name $g.slaver>> stepped into a rabbit hole and twisted <<their $g.slaver>> ankle. Your other slavers also received some superficial injuries as they made their escape, and you can only hope those don't prove to be too serious.</p>
