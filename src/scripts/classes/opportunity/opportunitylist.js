@@ -24,10 +24,16 @@ setup.OpportunityList = class OpportunityList extends setup.TwineClass {
     delete this.opportunity_autoanswer[template.key]
   }
 
+  /**
+   * @returns {Array<[setup.OpportunityTemplate, number]>}
+   */
   getOpportunityAutoAnswers() {
     // return list: [[opp, index], [opp, index]]
-    var result = []
-    for (var opp_key in this.opportunity_autoanswer) {
+    /**
+     * @type {Array<[setup.OpportunityTemplate, number]>}
+     */
+    const result = []
+    for (const opp_key in this.opportunity_autoanswer) {
       result.push([setup.opportunitytemplate[opp_key], this.opportunity_autoanswer[opp_key]])
     }
     return result
