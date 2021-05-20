@@ -4,6 +4,13 @@
 
 ### v1.6.4.x
 
+v1.6.4.28:
+
+  - `<<rep>>` now colored, Can be changed in settings
+  - Unit icons in texts now hidden by default. Can be turned on in settings
+  - Male/female units cards now have purple/blue at the bottom right.
+  - Recolored retired to gray.
+
 v1.6.4.27:
 
   - New activity: Mail room read mail
