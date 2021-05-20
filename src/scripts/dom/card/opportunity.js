@@ -216,7 +216,7 @@ setup.DOM.Card.opportunity = function (opportunity, hide_actions) {
       () => {
         const actors = opportunity.getActorsList()
         // @ts-ignore
-        return actors.map(actor => `<div>${actor[0]}: ${actor[1].rep()}</div>`)
+        return actors.map(actor => `<div>${actor[0]}: ${actor[1].repLong()}</div>`)
       }
     )}
       </div>

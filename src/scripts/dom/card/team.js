@@ -110,7 +110,7 @@ setup.DOM.Card.team = function (team, hide_actions) {
     fragments.push(html`
       <div>
         ${setup.DOM.Util.level(unit.getLevel())}
-        ${unit.rep()}
+        ${unit.repLong()}
         ${!hide_actions && !team.getQuest() && setup.DOM.Nav.link(
       `(remove)`,
       removeUnitCallback(team, unit)

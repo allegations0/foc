@@ -44,6 +44,26 @@
   text-decoration: underline 1px dotted #68d;
 }
 
+.rep-slaver-male {
+  color: rgb(181, 192, 255) !important;
+}
+
+.rep-slaver-female {
+  color: rgb(255, 190, 190) !important;
+}
+
+.rep-slave {
+  color: rgb(255, 251, 188) !important;
+}
+
+.rep-unemployed {
+  color: rgb(201, 255, 199) !important;
+}
+
+.rep-retired {
+  color: rgb(180, 180, 180) !important;
+}
+
 .worldmap {
   margin: 1em auto;
   text-align: center;

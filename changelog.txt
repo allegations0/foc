@@ -13,7 +13,7 @@ v1.6.4.27:
   - OpportunityOptionSelected and TrainingDo to DOM. For #319
   - Fix wine order wrong actor mention.
 
-v1.6.4.26: [TODO BEFORE COMMIT]
+v1.6.4.26:
 
   - Added new lore: Cassian Mountains (thanks to Matthew Lang)
   - Common elf -> wood elf

@@ -73,12 +73,13 @@ declare namespace setup {
     getSlaverMarketValue(): number
 
     // "unit_rep.js"
-    rep(text_override?: string): string
+    rep(): string
+    repShort(): string
+    repLong(): string
 
     // Bob of party 3
     repFull(): string
 
-    repShort(text_override?: string): string
     repBusyState(show_duty_icon?: boolean): string
     repGender(): string
     busyInfo(show_duty_icon?: boolean, tooltip?: string)

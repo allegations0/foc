@@ -82,6 +82,21 @@ setup.DOM.Menu.settingsbase = function () {
       `
     }),
     checkbox({
+      title: `Show unit icons in text`,
+      field: `inline_icon`,
+      help: html`
+        If checked, icons will be shown next to units and equipments in texts, like this: ${State.variables.unit.player.repFull()}.
+        Otherwise, it wills how like this: ${State.variables.unit.player.repShort()}.
+      `
+    }),
+    checkbox({
+      title: `Show unit icons in text`,
+      field: `inline_color`,
+      help: html`
+        If checked, unit names will be color-coded in texts.
+      `
+    }),
+    checkbox({
       title: `Hide quest / event images`,
       field: `hidecontentimages`,
       help: html`
