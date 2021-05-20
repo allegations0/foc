@@ -156,7 +156,11 @@ setup.DOM.Menu.Settings.Debug.quest_debug_outcome = function (template, outcome,
     </div>
     `)
 
-  quest.finalize()
+  try {
+    quest.finalize()
+  } catch (ex) {
+    fragments.push(setup.DOM.Util.exception(ex))
+  }
   fragments.push(setup.DOM.Card.notifications())
 
   fragments.push(

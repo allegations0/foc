@@ -50,7 +50,11 @@ setup.DOM.Menu.Settings.Debug.event_debug_one = function (template, is_debug_all
     </div>
   `)
 
-  State.variables.eventpool._finalizeEvent(event)
+  try {
+    State.variables.eventpool._finalizeEvent(event)
+  } catch (ex) {
+    fragments.push(setup.DOM.Util.exception(ex))
+  }
 
   fragments.push(
     debug_do_one_finalize(event, is_debug_all)

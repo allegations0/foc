@@ -50,7 +50,11 @@ setup.DOM.Menu.Settings.Debug.interaction_debug_one = function (template, is_deb
     </div>
   `)
 
-  interaction.applyRewards()
+  try {
+    interaction.applyRewards()
+  } catch (ex) {
+    fragments.push(setup.DOM.Util.exception(ex))
+  }
 
   fragments.push(
     debug_do_one_finalize(interaction, is_debug_all)

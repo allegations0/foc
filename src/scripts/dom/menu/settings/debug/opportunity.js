@@ -110,7 +110,11 @@ setup.DOM.Menu.Settings.Debug.opportunity_debug_option = function (template, opt
     `)
   }
 
-  opp.finalize()
+  try {
+    opp.finalize()
+  } catch (ex) {
+    fragments.push(setup.DOM.Util.exception(ex))
+  }
 
   fragments.push(
     debug_do_one_finalize(opp, is_debug_all)

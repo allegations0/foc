@@ -1,18 +1,19 @@
 
 // swaps the bodies of two units. What could possibly go wrong?
 setup.qcImpl.Bodyswap = class Bodyswap extends setup.Cost {
-  constructor(actor_name, target_actor_name) {
+  constructor(actor_name, target_actor_name, skip_title) {
     super()
 
     this.actor_name = actor_name
     this.target_actor_name = target_actor_name
+    this.skip_title = skip_title
   }
 
   static NAME = 'Swaps the bodies of two units'
   static PASSAGE = 'CostBodyswap'
 
   text() {
-    return `setup.qc.Bodyswap('${this.actor_name}', '${this.target_actor_name}')`
+    return `setup.qc.Bodyswap('${this.actor_name}', '${this.target_actor_name}', ${!!this.skip_title})`
   }
 
   /**
@@ -129,10 +130,12 @@ setup.qcImpl.Bodyswap = class Bodyswap extends setup.Cost {
       [unit, target],
       [target, unit],
     ]
-    for (var i = 0; i < 2; ++i) {
-      var u = swaps[i][0]
-      State.variables.titlelist.addTitle(u, setup.title.bodyswapped)
-      u.addHistory(`swapped bodies with ${swaps[i][1].getName()}`)
+    if (!this.skip_title) {
+      for (var i = 0; i < 2; ++i) {
+        var u = swaps[i][0]
+        State.variables.titlelist.addTitle(u, setup.title.bodyswapped)
+        u.addHistory(`swapped bodies with ${swaps[i][1].getName()}`)
+      }
     }
   }
 
