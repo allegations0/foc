@@ -4,6 +4,17 @@
 
 ### v1.6.4.x
 
+v1.6.4.26: [TODO BEFORE COMMIT]
+
+  - Added new lore: Cassian Mountains (thanks to Matthew Lang)
+  - Common elf -> wood elf
+  - New Event: Demonic Roleplay (by FCdev)
+  - New portraits and images for: Mist apprenticeship (male), pirates ahoy, unit training endurance, oral, roleplay (female)
+  - Verbose error message for isHasTrait
+  - Harvesting the fields Quest text fix (thanks to Matthew Lang)
+  - New Quest: A Merchant's Revenge: Caravan Raid (Eastern Desert) by Matthew Lang
+  - New quest: "Lost Puppy" by Hydrys. Quest errors now dont error the entire page
+
 v1.6.4.25:
 
   - New activity: Hospital recovering

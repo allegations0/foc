@@ -180,7 +180,7 @@ the werewolf clan otherwise.
     </p>
 <<elseif $gOutcome == 'success'>>
     <p>
-        But despite the fact that the the missing captive was not native to the forest, <<rep $g.tracker>> had to spend quite a bit of time tracking down <<them $g.puppy>>.
+        But despite the fact that the missing captive was not native to the forest, <<rep $g.tracker>> had to spend quite a bit of time tracking down <<them $g.puppy>>.
         Once <<they $g.puppy>> was located it became obvious that there had been a fight
         between <<them $g.puppy>> and <<their $g.puppy>> former capturers.
         There were quite a bit of blood spattered over around some of the trees, small tatters of fabric here and there, and when they looked closely on the <<uarms $g.puppy>> and <<uback $g.puppy>>, they bore multiple long wounds.
@@ -199,7 +199,7 @@ the werewolf clan otherwise.
 "race_catkin",
 ])>>
         <p>
-            About two hours past nightfall on the the way out of the forest <<rep $g.restrainer>> doubled over with a scream. In front of the alarmed team,
+            About two hours past nightfall on the way out of the forest <<rep $g.restrainer>> doubled over with a scream. In front of the alarmed team,
             <<rep $g.restrainer>> began shaking, <<their $g.restrainer>> body visibly transforming before their eyes.
             It seems even newly infected werewolf could infect others, and <<rep $g.restrainer>> restrainer|was
             not spared from the infection.
