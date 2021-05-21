@@ -55,43 +55,6 @@
   You proceed to sit on a desk to view your teams.
 <br/>
 
-<!--
-  <<message '(Help)'>>
-    <div class='helpcard'>
-      <div>
-        <b>Teams</b> is an optional feature that can be used to arrange your units.
-        <br/>
-        <br/>
-        You can arrange your units into teams here. If you do, then in the quest menu, you can
-        have a preview on the success chances of each team when assigned to the quests.
-        This way, you can make certain group of units to always go together in a quest,
-        which can make them gain friendship with another faster than otherwise.
-        <br/>
-        <br/>
-        The downside is that teams reduces the flexibility you can have when assigning units to quests.
-        Ultimately whether or not you use teams is up to your preferred playing style.
-      </div>
-    </div>
-  <</message>>
-<<if $company.player.isCanAddTeam()>>
-  <<message '(Add new team)'>>
-    Give the team a name:
-    <<message '(?)'>>
-      <div class='helpcard'>
-        You can freely change the team name later.
-      </div>
-    <</message>>
-    <<textbox "_newteamname" "Team Name">>
-    <<focbutton 'Add'>>
-      <<set _team = new setup.Team(_newteamname, false)>>
-      <<run $company.player.addTeam(_team)>>
-      <<focgoto>>
-    <</focbutton>>
-  <</message>>
-  <br/>
-<</if>>
--->
-
 <<set _teamlist = State.variables.company.player.getTeams()>>
 
 <<filterall 'team' _teamlist>>

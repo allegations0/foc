@@ -281,7 +281,7 @@ After studying at the map, <<name $g.scout>> cut through the forest, leading you
             <</if>>
 
             <p>
-                As you made your way back out of the camp, still unnoticed, you decided to take the paralysed guard with you. <<They $.slaves>> might have seen your faces after all.
+                As you made your way back out of the camp, still unnoticed, you decided to take the paralysed guard with you. <<They $g.slaves>> might have seen your faces after all.
             </p>
 
         <<elseif $gOutcome == 'success'>>
@@ -369,7 +369,7 @@ After studying at the map, <<name $g.scout>> cut through the forest, leading you
             <</if>>
 
             <p>
-                As you made your way back out of the camp, still unnoticed, you decided to take the paralysed guard with you. <<They $.slaves>> might have seen your faces after all.
+                As you made your way back out of the camp, still unnoticed, you decided to take the paralysed guard with you. <<They $g.slaves>> might have seen your faces after all.
             </p>
 
         <<elseif $gOutcome == 'success'>>
@@ -583,7 +583,7 @@ After studying at the map, <<name $g.scout>> cut through the forest, leading you
                 <</if>>
 
                 <p>
-                    As your slavers made your way back out of the camp, still unnoticed, <<name $g.raider>> decided to take the paralysed guard with <<them $g.raider>>. <<They $.slaves>> might have seen your slavers' faces after all.
+                    As your slavers made your way back out of the camp, still unnoticed, <<name $g.raider>> decided to take the paralysed guard with <<them $g.raider>>. <<They $g.slaves>> might have seen your slavers' faces after all.
                 </p>
 
 
@@ -672,7 +672,7 @@ After studying at the map, <<name $g.scout>> cut through the forest, leading you
                 <</if>>
             </p>
             <p>
-                As they made their way back out of the camp, still unnoticed, <<name $g.raider>> decided to take the paralysed guard with <<them $g.raider>>. <<They $.slaves>> might have seen your slavers' faces after all.
+                As they made their way back out of the camp, still unnoticed, <<name $g.raider>> decided to take the paralysed guard with <<them $g.raider>>. <<They $g.slaves>> might have seen your slavers' faces after all.
             </p>
 
         <<elseif $gOutcome == 'success'>>

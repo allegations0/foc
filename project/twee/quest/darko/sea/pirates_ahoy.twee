@@ -66,6 +66,11 @@ if done right.
 
 :: Quest_pirates_ahoyCrit [nobr]
 
+<<if $g.victim.isMale()>>
+<<else>>
+<<questimage 'bounty_hunt_kraken.jpg'>>
+<</if>>
+
 <p>
 Your slavers encountered a trading ship, who offered no resistance as your
 slavers, led by <<rep $g.pirate1>>, <<uadv $g.pirate1>>

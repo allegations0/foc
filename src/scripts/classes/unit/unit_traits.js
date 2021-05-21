@@ -363,6 +363,9 @@ setup.Unit.prototype.isHasTrait = function (trait_raw, trait_group, ignore_cover
    * @type {setup.Trait}
    */
   const trait = setup.selfOrObject(trait_raw, setup.trait)
+  if (!(trait instanceof setup.Trait)) {
+    throw new Error(`isHasTrait expects either a string or a trait, e.g., isHasTrait("per_kind") or isHasTrait(setup.trait.per.kind), but found a ${typeof trait_raw} instead.`)
+  }
 
   let traitgroup = trait_group
 

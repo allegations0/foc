@@ -40,9 +40,8 @@ function unitActionNameActionMenu(unit_action, unit, hide_actions) {
       menus.push(menuItemAction({
         text: `Select`,
         callback: () => {
-          // @ts-ignore
-          State.variables.gTrainingSelected_key = unit_action.key
-          setup.DOM.Nav.goto('TrainingDo')
+          unit_action.generateQuest(unit)
+          setup.DOM.Nav.goto('QuestHub')
         },
       }))
     } else {

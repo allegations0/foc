@@ -1,45 +1,103 @@
+# Code Tutorial
+
+Welcome to Fort of Chains code documentation. The goal of this document is to smooth out your
+entry into the game's code as much as possible, and hopefully get you to contribute asap!
+
+# First issue
+
+A good way to get started is to pick some of the first issues in
+[the issue list](https://gitgud.io/darkofocdarko/fort-of-chains/-/issues).
+They have been curated to be easily doable, but remains useful to the code.
+
+The rest of this document will explain the important concepts of the codebase of this game.
+
 # Twine and SugarCube Basics
 
-## Entry point
+This game is written in Twine, SugarCube 2, and ES6 Javascript (with JSDocs).
+The vast majority of the logic and code are done in Javascript, while
+Twine and SugarCube 2 are mainly responsible for UI and written content,
+such as author's writings.
+As a coder, you would expect to spend most of your time writing in Javascript.
+The Twine and SugarCube language will only be used to call on your javascript code.
 
-Twine is a language very similar to HTML.
-The key difference is the concept of `passage`. A passage is basically a URL.
-You can move from passage to passage by clicking a link that leads to a different `passage`
-(i.e., akin to clicking a link in URL), or by being redirected there.
+## Example
 
-The first passage the game opens is [this one](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/project/twee/story.twee): the passage named `Start`.
-That passage `includes` another passage named `Init`, which is directly below it.
-Scrolling to the bottom, you will see:
+As an example, 
+[this is the Twine code for the quest manual assignment menu](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/project/twee/loop/questhub/questassign.twee#L17):
 
 ```
-<<focmove "New Game" "ProloguePlayerGen">>
+:: QuestAdhocAssign [nobr]
+
+<<set $gMenuVisible = false>>
+
+<<set _quest = $questinstance[$gAdhocQuest_key]>>
+<<set _dom = setup.DOM.Menu.questassign(_quest)>>
+<<attach _dom>>
 ```
 
-This creates a link titled `New Game` that will take the player to the `ProloguePlayerGen` passage.
+An explanation is as follows.
+First, the `:: QuestAdhocAssign [nobr]` declares a Twine **passage**.
+A passage is like an HTML page, essentially.
+Here, the passage is titled *QuestAdhocAssign*.
 
-More information about SugarCube 2 syntax is in its [official docs](https://www.motoslave.net/sugarcube/2/).
-For a list of important passages, see [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/structure.md#gui).
+Next is `<<set $gMenuVisible = false>>`.
+The `<<...>>` syntax is a SugarCube 2 syntax. Here,
+the `<<set>>` command sets the global variable
+**$gMenuVisible** to *false*.
+This is a special game variable that will let the game know that the left sidebar menu should not be shown.
 
-## Navigation caveats
+The next three lines are responsible for calling the javascript code and render it to the player.
+First, the `<<set _quest = $questinstance[$gAdhocQuest_key]>>` is just a convenience
+to set the value of the global variable `_quest` to `$questinstance[$gAchocQuest_key]`.
+You may notice there are two syntax for global variables in twine: `_varname` and `$varname`.
+They are different.
+`$varname` global variables are recorded when player save the game (i.e., they are persistent),
+while `_varname` are temporary variables that will be gone on save.
 
-In normal SugarCube 2 games, passages is the main way to move between menus.
-Whenever you click on a link, the game will usually move to a different passage.
-For a game of this complexity, this becomes a performance bottleneck, and this game implements
-some caveats to address this.
+Finally, `<<set _dom = setup.DOM.Menu.questassign(_quest)>>` sets the variable
+`_dom` to the output of a particular javascript function called `setup.DOM.Menu.questassign`.
+The `setup` object stores all the global methods defined in the javascript files.
+This particular function takes the `_quest` as a parameter, and returns a `DOM` fragment.
 
-First, Fort of Chains does not actually move passages when you click on links.
+Finally, `<<attach _dom>>` will render the `_dom` DOM fragment and display it to the user.
+
+In the Javascript side, the `setup.DOM.Menu.questassign` is defined [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/src/scripts/dom/menu/questassign.js):
+
+```
+/**
+ * 
+ * @param {setup.QuestInstance} quest
+ * @returns {setup.DOM.Node}
+ */
+setup.DOM.Menu.questassign = function (quest) {
+  fragments = []
+  ...
+  return setup.DOM.create('div', {}, fragments)
+}
+```
+
+This is where the bulk of the logic resides, and it's written in Javascript.
+
+# Details
+
+You should have enough information to start working on your first issue now.
+The rest of this document details more information, should you wish to read more.
+You can find [SugarCube 2 documentation here](https://www.motoslave.net/sugarcube/2/docs/).
+
+## SugarCube 2 caveats
+
+There are several caveats with using SugarCube 2 in this game.
+The main caveat is the navigation macros, which generate links that can switch between passages.
+This game aschews the SugarCube 2's standard macros, and use a home-brewed one for performance reasons.
+
+Different than SugarCube 2,
+Fort of Chains does not actually move passages when you click on links.
 Instead, fort of chains will replace the content of an existing DOM element with an entirely new one.
 For example, clicking the "Slavers" menu from the "Quest" menu will instead replace the `div`
 containing the quests with the list of slavers.
 
 To do this, the game do away with the standard navigation macros in SugarCube2 (e.g., `<<goto>>`, `<<link>>`, etc.)
 Instead, the game uses [custom navigation macros](#navigation).
-
-# Repository Structure
-
-The game tries to follow a rough separation of logic and data.
-Data and display are generally located in SugarCube files (.twee), while logic
-is in javascript files (.js).
 
 ## Coding Style
 
@@ -53,25 +111,10 @@ is in javascript files (.js).
 
 - lowercasenospace for data `setup.buildingtemplate.veteranhall`
 
-### Editor Recommendation
+## Editor Recommendation
 
 You are of course free to use whatever editor you like. If you are unsure what editor to use,
 Visual Studio Code works fairly well for this project.
-
-## DOM-Ification
-
-A lot of the UI are now written in the javascript file.
-You will often encounter the following snippet
-within the twine files:
-
-```
-<<set _dom = setup.DOM.Card.unit(_unit)>>
-<<attach _dom>>
-```
-
-The javascript function `setup.DOM.Card.unit()` will return a DOM object, which is then
-attached to the passage via the `attach` macro. This way, the UI code is actually moved into the
-`setup.DOM.Card.unit` function, which is in javascript.
 
 ## Code / Logic / Javascript Files
 
@@ -97,7 +140,7 @@ The special file `src/scripts/constants.js` contain all the in-game constants th
 be modified to adjust game balance.
 Finally, UI is in `src/scripts/dom` folder.
 
-### Navigation
+## Navigation
 
 For optimization purpose, the game does not use twine's native navigation system
 (e.g., `[[Hi|Passage]]`). Instead, the game uses these five commands to replace them:
@@ -110,13 +153,20 @@ For optimization purpose, the game does not use twine's native navigation system
 - `<<foclink 'a' 'b'>><<run console.log('Hi')>><</foclink>>`: Replaces `<<link 'a' 'b'>>`
 ```
 
+In javascript, these navigation macros can be found as:
+
+```
+setup.DOM.Nav.move
+setup.DOM.Nav.return
+setup.DOM.Nav.goto
+setup.DOM.Nav.link
+```
+
 Exception is in Content Creator, where you should use twine default navigation system because
 the performance leeway is higher. In the javascript, their counterpart can be found in
 `setup.DOM.Nav`. For example, `setup.DOM.Nav.link` would replace `<<foclink>>`.
 
-**Don't use twine navigation in the game**
-
-### Class Modularity
+## Class Modularity
 
 The game tries to follow feature modularity. This means that a new feature should be self-contained
 in its own class. For example, if you want to add a tattoo system, then you should not modify
@@ -153,25 +203,9 @@ Generally, only use these for temporary variables, e.g., a loop iterator.
 In the Twine files (`.twee`), these variables can be referred with a shorthand:
 `_unit` will refer to `State.temporary.unit`.
 
-## Data and GUI Files
+## setup.DOM
 
-Most data are located in the [twine files](https://gitgud.io/darkofocdarko/fort-of-chains/-/tree/master/project/twee).
-There are several exceptions of data that are located in the javascript files.
-The first exception are duties, because they tend to have a unique effect.
-The second exception are some banter texts, because they have too many
-variables to take into account.
-
-## UI javascript functions
-
-Many of the UI are written in javascript, which is attached into the twine via this snippet:
-
-```
-<<set _dom = setup.DOM.Card.unit(_unit)>>
-<<attach _dom>>
-```
-
-What this means is that we set the variable `_dom` to be the document fragment returned
-by the `setup.DOM.Card.quest` function.
+This game writes its UI logic in javascript using a home-brewed library.
 The functions that generate document fragment are all located under the `setup.DOM` namespace,
 and can be found [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/tree/master/src/scripts/dom).
 For example, `setup.DOM.Card.quest` is found [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/src/scripts/dom/card/quest.js).
@@ -235,8 +269,3 @@ in twine: that is, `goto`, `link`, `button`, and the `[[a|b]]` syntax.
 
 These can be accessed via the `setup.DOM` singleton. For example, those in `dom/card` are accessed in `setup.DOM.Card`, while
 those in `dom/util` are accessed in `setup.DOM.Util`.
-
-# Looking for something to do?
-
-Check out the [list of issues](https://gitgud.io/darkofocdarko/fort-of-chains/-/issues)! If it is unassigned, it is
-up for grabs!

@@ -186,6 +186,7 @@ setup.DebugInit.initBuildings = function (is_fast) {
 
   sv.company.player.addMoney(100000000)
   sv.settings.autosave_interval = 0
+  sv.settings.inline_font = true
 }
 
 function initRooms() {

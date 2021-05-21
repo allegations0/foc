@@ -66,6 +66,8 @@ be able to fake enjoyment convincingly.
 <<else>>
   <<if $g.trainee.isHasTrait('subrace_humansea')>>
     <<questimage 'unit_training_oral_advanced_female_humansea.jpg'>>
+  <<elseif $g.trainee.isHasTrait('subrace_humandesert')>>
+    <<questimage 'unit_training_oral_advanced_female_humandesert.jpg'>>
   <<else>>
     <<questimage 'unit_training_oral_advanced_female.jpg'>>
   <</if>>

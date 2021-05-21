@@ -19,6 +19,12 @@
       url: "https://www.deviantart.com/thefearmaster/art/the-Virtuoso-of-the-Bloodmoon-808156092",
       license: "CC-BY-NC-ND 3.0",
     },
+    3: {
+      title: "Angre Dragon",
+      artist: "fujimachine",
+      url: "https://www.newgrounds.com/art/view/fujimachine/angre-dragon",
+      license: "CC-BY-NC 3.0",
+    },
     4: {
       title: "Happy Lunar New Year",
       artist: "silverjow",

@@ -51,6 +51,15 @@ setup.Settings = class Settings extends setup.TwineClass {
     this.lovers_mm = true
     this.lovers_ff = true
 
+    // whether to show icon next to unit / equipments inline
+    this.inline_icon = false
+
+    // whether to color unit names in texts.
+    this.inline_color = true
+
+    // whether to use different fonts for unit names in texts.
+    this.inline_font = false
+
     // stores SexActionClass names of disabled sex actions.
     /** @type {Object<string, boolean>} */
     this.disabled_sex_actions = {}

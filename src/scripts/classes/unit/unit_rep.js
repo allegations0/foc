@@ -53,16 +53,19 @@ setup.Unit.prototype.repBusyState = function (show_duty_icon) {
 }
 
 // Same as rep, but doesn't include icons (just name + tooltip)
-setup.Unit.prototype.repShort = function (text_override) {
-  return (
-    `<span data-tooltip="<<tooltipunit '${this.key}'>>" data-tooltip-wide>` +
-    `<a class="replink">${text_override || this.getName()}</a>` +
-    `</span>`
-  )
-}
+setup.Unit.prototype.repShort = function () {
+  let color_class = ''
+  if (State.variables.settings.inline_color) {
+    if (this.isSlaver()) {
+      color_class = ` rep-${this.getJob().key}-${this.isMale() ? 'male' : 'female'}`
+    } else {
+      color_class = ` rep-${this.getJob().key}`
+    }
+  }
 
-setup.Unit.prototype.rep = function (text_override) {
-  const job = this.getJob()
+  if (State.variables.settings.inline_font) {
+    color_class += ` text-${this.getSubrace().key}`
+  }
 
   // only show if either: (0. your unit, 1. in market, 2. contact, 3. retiree)
   if (
@@ -71,8 +74,19 @@ setup.Unit.prototype.rep = function (text_override) {
     !this.getContact() &&
     !this.isRetired()
   ) {
-    return `<span class='rep'>${this.repBusyState()}${this.getName()}</span>`
+    return `<span class="${color_class}">${this.getName()}</span>`
+  } else {
+    return (
+      `<span data-tooltip="<<tooltipunit '${this.key}'>>" data-tooltip-wide>` +
+      `<a class="replink${color_class}">${this.getName()}</a>` +
+      `</span>`
+    )
   }
+}
+
+// Same as rep and always include icons
+setup.Unit.prototype.repLong = function () {
+  const job = this.getJob()
 
   let text = '<span class="rep">'
 
@@ -89,13 +103,21 @@ setup.Unit.prototype.rep = function (text_override) {
     text += job.rep()
   }
 
-  text += this.repShort(text_override)
+  text += this.repShort()
 
   if (State.variables.hospital.isInjured(this)) {
     text += setup.DOM.toString(setup.DOM.Card.injury(this))
   }
 
   return text + '</span>'
+}
+
+setup.Unit.prototype.rep = function () {
+  if (!State.variables.settings.inline_icon) {
+    return this.repShort()
+  } else {
+    return this.repLong()
+  }
 }
 
 
@@ -113,7 +135,7 @@ setup.Unit.prototype.repGender = function () {
  * @returns {string}
  */
 setup.Unit.prototype.repFull = function () {
-  let base = `${this.rep()}`
+  let base = `${this.repLong()}`
   const party = this.getParty()
   if (party) {
     return `${base} of ${party.rep()}`

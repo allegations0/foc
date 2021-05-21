@@ -8,7 +8,7 @@ import { menuItem, menuItemTitle } from "../../ui/menu"
 export function parseRosterMenuToolbar(unit, menus) {
   return setup.DOM.Util.menuItemToolbar([
     menuItemTitle({
-      text: `${setup.DOM.toString(setup.DOM.Util.level(unit.getLevel()))} ${unit.rep()}`,
+      text: `${setup.DOM.toString(setup.DOM.Util.level(unit.getLevel()))} ${unit.repLong()}`,
     })
   ].concat(menus))
 }

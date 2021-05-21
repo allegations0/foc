@@ -2,7 +2,51 @@
 
 [Changelog summary](docs/changelog_summary.md)
 
+### v1.6.5.x
+
+v1.6.5.0:
+
+  - New activity: Marketer Marketing
+  - Increase activity trigger chance from 0.6 to 0.9.
+  - Lighten female card color.
+  - Help text for adjacency bonus in rooms.
+  - Can enable unit name using different font per race in settings.
+  - Settings grouping. Closes #327
+  - Fix "$.slaves".
+  - Fix some incorrect activity rarities.
+
 ### v1.6.4.x
+
+v1.6.4.29:
+
+  - Fix failure outcome undefined in CC failure quest.
+
+v1.6.4.28:
+
+  - `<<rep>>` now colored, Can be changed in settings
+  - Unit icons in texts now hidden by default. Can be turned on in settings
+  - Male/female units cards now have purple/blue at the bottom right.
+  - Recolored retired to gray.
+
+v1.6.4.27:
+
+  - New activity: Mail room read mail
+  - Documentation for doing first issue for coders
+  - DOM-ification of OpportunityAutoAnswer
+  - Remove selectunit and domification of itemunitusableon. For #319
+  - OpportunityOptionSelected and TrainingDo to DOM. For #319
+  - Fix wine order wrong actor mention.
+
+v1.6.4.26:
+
+  - Added new lore: Cassian Mountains (thanks to Matthew Lang)
+  - Common elf -> wood elf
+  - New Event: Demonic Roleplay (by FCdev)
+  - New portraits and images for: Mist apprenticeship (male), pirates ahoy, unit training endurance, oral, roleplay (female)
+  - Verbose error message for isHasTrait
+  - Harvesting the fields Quest text fix (thanks to Matthew Lang)
+  - New Quest: A Merchant's Revenge: Caravan Raid (Eastern Desert) by Matthew Lang
+  - New quest: "Lost Puppy" by Hydrys. Quest errors now dont error the entire page
 
 v1.6.4.25:
 

@@ -110,7 +110,7 @@ function dutyNameActionMenus(duty, hide_actions) {
 
   const unit = duty.getAssignedUnit()
   if (unit) {
-    const unit_base = html`${unit.rep()} ${dutyStatusFragment(duty)}`
+    const unit_base = html`${unit.repLong()} ${dutyStatusFragment(duty)}`
     if (duty.getTemplate().isHasTriggerChance() || duty.getTemplate().isHasPrestigeAmount()) {
       let trigger_chance_or_prestige = triggerChanceOrPrestige(duty)
       toolbar_items.push(menuItemText({

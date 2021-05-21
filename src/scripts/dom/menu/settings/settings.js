@@ -13,7 +13,7 @@ setup.DOM.Menu.Settings.Debug = {}
 function checkbox({ title, field, help }) {
   return html`
     <div>
-      ${twee`<<checkbox '$settings.${field}' false true autocheck>>`} <b>${title}</b>
+      ${twee`<<checkbox '$settings.${field}' false true autocheck>>`} ${title}
       ${help ? setup.DOM.Util.help(help) : ''}
     </div>
   `
@@ -40,6 +40,19 @@ setup.DOM.Menu.settingsbase = function () {
   `)
 
   fragments.push(
+    html`
+      <hr/>
+      <div>
+        <b>Story display</b>
+      </div>
+    `,
+    checkbox({
+      title: `Hide quest / event images`,
+      field: `hidecontentimages`,
+      help: html`
+        If checked, then images in quest and event outcomes are hidden.
+      `
+    }),
     checkbox({
       title: `Summarize quest/event outcomes`,
       field: `hidequestoutcome`,
@@ -61,6 +74,34 @@ setup.DOM.Menu.settingsbase = function () {
         If checked, then event texts are summarized and must be toggled to view.
       `
     }),
+    html`
+      <hr/>
+      <div>
+        <b>Unit information</b>
+      </div>
+    `,
+    checkbox({
+      title: `Show unit icons in text`,
+      field: `inline_icon`,
+      help: html`
+        If checked, icons will be shown next to units and equipments in texts, like this: ${State.variables.unit.player.repFull()}.
+        Otherwise, it wills how like this: ${State.variables.unit.player.repShort()}.
+      `
+    }),
+    checkbox({
+      title: `Use different color for unit names depending on gender`,
+      field: `inline_color`,
+      help: html`
+        If checked, unit names will be color-coded in texts.
+      `
+    }),
+    checkbox({
+      title: `Use different font for unit names depending on race`,
+      field: `inline_font`,
+      help: html`
+        If checked, unit names will use different fonts, depending on their race
+      `
+    }),
     checkbox({
       title: `Summarize unit skills`,
       field: `summarizeunitskills`,
@@ -71,28 +112,6 @@ setup.DOM.Menu.settingsbase = function () {
         it will display as
         <span data-tooltip="11 + 4">${setup.DOM.Text.successlite('15')}</span> ${setup.skill.combat.rep()}
         (You can hover over it to see the "11 + 4").
-      `
-    }),
-    checkbox({
-      title: `Animated tooltips`,
-      field: `animatedtooltips`,
-      help: html`
-        If checked, tooltips will fade in, and appear after some small delay.
-        If unchecked, tooltips will instantly show up, with no delay.
-      `
-    }),
-    checkbox({
-      title: `Hide quest / event images`,
-      field: `hidecontentimages`,
-      help: html`
-        If checked, then images in quest and event outcomes are hidden.
-      `
-    }),
-    checkbox({
-      title: `Auto-assign units for unit actions`,
-      field: `unitactionautoassign`,
-      help: html`
-        If checked, quests generated from unit action will be auto-assigned a team when you select it.
       `
     }),
     checkbox({
@@ -109,6 +128,27 @@ setup.DOM.Menu.settingsbase = function () {
         If checked, skin traits such as
         ${setup.trait.body_werewolf.rep()} or ${setup.trait.ears_elf.rep()}
         are hidden in unit cards.
+      `
+    }),
+    html`
+      <hr/>
+      <div>
+        <b>Miscellaneous</b>
+      </div>
+    `,
+    checkbox({
+      title: `Animated tooltips`,
+      field: `animatedtooltips`,
+      help: html`
+        If checked, tooltips will fade in, and appear after some small delay.
+        If unchecked, tooltips will instantly show up, with no delay.
+      `
+    }),
+    checkbox({
+      title: `Auto-assign units for unit actions`,
+      field: `unitactionautoassign`,
+      help: html`
+        If checked, quests generated from unit action will be auto-assigned a team when you select it.
       `
     }),
   )

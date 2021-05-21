@@ -95,7 +95,7 @@ I'm looking for an...employee with special qualities. I understand you can help 
 <</dialogue>>
 
 <p>The late morning finds you in your office, bored and with little to do except paperwork that you're putting off until at least this afternoon. The day is overcast and cloudy, and with nothing else to do you 
-<<set _eq = $g.a.getGenitalCovering()>>
+<<set _eq = $unit.player.getGenitalCovering()>>
 <<if _eq>>
   <<ustripverb $unit.player _eq>> revealing 
 <<else>>

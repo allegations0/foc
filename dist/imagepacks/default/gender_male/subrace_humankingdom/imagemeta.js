@@ -136,6 +136,12 @@
       url: "https://www.deviantart.com/akubakaarts/art/COMM-Ao-653103892",
       license: "CC-BY-NC-ND 3.0",
     },
+    21: {
+      title: "fujimachine",
+      artist: "Kanzo",
+      url: "https://www.newgrounds.com/art/view/fujimachine/oc-kanzo",
+      license: "CC-BY-NC 3.0",
+    },
     22: {
       title: "Red Bandage",
       artist: "Noxypia",

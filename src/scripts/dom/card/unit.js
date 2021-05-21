@@ -314,6 +314,6 @@ setup.DOM.Card.unit = function (unit, hide_actions) {
     return setup.DOM.create('span', {}, fragments)
   }, /* transition = */ true))
 
-  let divclass = `${unit.getJob().key}card`
+  let divclass = `${unit.getJob().key}card ${unit.isMale() ? 'male-card' : 'female-card'}`
   return setup.DOM.create('div', { class: divclass }, now_fragments)
 }

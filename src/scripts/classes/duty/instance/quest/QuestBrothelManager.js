@@ -446,7 +446,7 @@ function brothelDescription() {
           ${setup.Text.replaceUnitMacros(
           [
             `a|They also a|have a|their own luxurious abode within the brothel, and the a|race sometimes invite customers into the room for some personal time.`,
-            `Like the rest of the ${whore}s, a|they a|have a|their own personal room, but befitting a head courtesan, it is considerably more luxurious the the others.`,
+            `Like the rest of the ${whore}s, a|they a|have a|their own personal room, but befitting a head courtesan, it is considerably more luxurious the others.`,
           ],
           { a: head_courtesan }
         )}

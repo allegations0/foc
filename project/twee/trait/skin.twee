@@ -9,7 +9,7 @@
     'Posses cat-like eyes that can see in the dark',
     0,
     {},
-    ['medium'],
+    ['medium', 'skin_neko', 'skin_tigerkin',],
   ),
   new setup.Trait(
     'eyes_dragonkin',
@@ -17,7 +17,7 @@
     'Posses intimidating pair of draconic eyes.',
     0,
     {},
-    ['rare'],
+    ['rare', 'skin_dragonkin', 'skin_lizardkin',],
   ),
   new setup.Trait(
     'eyes_demon',
@@ -27,7 +27,7 @@
     {
       knowledge: -0.35,
     },
-    ['common', 'corruption',],
+    ['common', 'corruption', 'skin_demon',],
   ),
 ], ['eyes', 'skin', 'genderless',], true)>>
 
@@ -40,7 +40,7 @@
     0,
     {
     },
-    ['medium'],
+    ['medium', 'skin_werewolf', ],
   ),
   new setup.Trait(
     'ears_neko',
@@ -48,7 +48,7 @@
     'Posses cat-like ears sticking out of their head',
     0,
     {},
-    ['medium'],
+    ['medium', 'skin_neko', 'skin_tigerkin', ],
   ),
   new setup.Trait(
     'ears_elf',
@@ -56,7 +56,7 @@
     'Posses sharp pointy ears',
     0,
     {},
-    ['medium'],
+    ['medium', 'skin_elf', 'skin_orc', 'skin_fairy', ],
   ),
   new setup.Trait(
     'ears_dragonkin',
@@ -64,7 +64,7 @@
     'Possess fin-like ears',
     0,
     {},
-    ['medium'],
+    ['medium', 'skin_dragonkin', 'skin_lizardkin', ],
   ),
   new setup.Trait(
     'ears_demon',
@@ -74,9 +74,9 @@
     {
       survival: -0.35,
     },
-    ['common', 'corruption', 'horns', ],
+    ['common', 'corruption', 'horns', 'skin_demon', 'skin_demonkin', ],
   ),
-], ['ears', 'skin', 'genderless',], true)>>
+], ['ears', 'skin', 'genderless', 'skin_demon', ], true)>>
 
 
 
@@ -87,7 +87,7 @@
     'Posses a muzzle in place of mouth',
     0,
     {},
-    ['medium', 'fangs', ],
+    ['medium', 'fangs', 'skin_werewolf', ],
   ),
   new setup.Trait(
     'mouth_neko',
@@ -95,7 +95,7 @@
     'Several sensitive whiskers grow from their cheeks',
     setup.MONEY_TRAIT_RARE,
     {},
-    ['rare', 'fangs', ],
+    ['rare', 'fangs', 'skin_tigerkin', ],
   ),
   new setup.Trait(
     'mouth_orc',
@@ -103,7 +103,7 @@
     'Sharp tusks jut out of their mouth',
     0,
     {},
-    ['medium'],
+    ['medium', 'skin_orce', 'skin_orc', ],
   ),
   new setup.Trait(
     'mouth_dragonkin',
@@ -111,7 +111,7 @@
     'Posses scaley muzzle filled with sharp teeth',
     0,
     {},
-    ['rare', 'fangs', ],
+    ['rare', 'fangs', 'skin_dragonkin', 'skin_lizardkin', ],
   ),
   new setup.Trait(
     'mouth_demon',
@@ -123,7 +123,7 @@
     },
     ['common', 'corruption'],
   ),
-], ['mouth', 'skin', 'genderless',], true)>>
+], ['mouth', 'skin', 'genderless', 'skin_demon', ], true)>>
 
 
 <<run new setup.TraitGroup([
@@ -133,7 +133,7 @@
     'Posses a furry body of a werewolf',
     0,
     {},
-    ['medium', 'furry', ],
+    ['medium', 'furry', 'skin_werewolf', ],
   ),
   new setup.Trait(
     'body_neko',
@@ -141,7 +141,7 @@
     'Tiger-like black stripes cover their entire body',
     setup.MONEY_TRAIT_RARE,
     {},
-    ['rare', 'furry', ],
+    ['rare', 'furry', 'skin_tigerkin', ],
   ),
   new setup.Trait(
     'body_orc',
@@ -149,7 +149,7 @@
     'Posses green-colored skin of orcish origin',
     0,
     {},
-    ['medium'],
+    ['medium', 'skin_orc', ],
   ),
   new setup.Trait(
     'body_dragonkin',
@@ -157,7 +157,7 @@
     'Posses a body covered with protective scales',
     0,
     {},
-    ['rare'],
+    ['rare', 'skin_dragonkin', 'skin_lizardkin', ],
   ),
   new setup.Trait(
     'body_demon',
@@ -167,7 +167,7 @@
     {
       brawn: -0.35,
     },
-    ['common', 'corruption'],
+    ['common', 'corruption', 'skin_demon', 'skin_demonkin', ],
   ),
 ], ['body', 'skin', 'genderless',], true)>>
 
@@ -179,7 +179,7 @@
     'Possess a beautiful pair of transluscent butterfly-like wings',
     setup.MONEY_TRAIT_UNICORN,
     {},
-    ['rare'],
+    ['rare', 'skin_fairy', ],
   ),
   new setup.Trait(
     'wings_dragonkin',
@@ -187,7 +187,7 @@
     'Posses a pair of scaley wings',
     setup.MONEY_TRAIT_UNICORN,
     {},
-    ['rare'],
+    ['rare', 'skin_dragonkin', ],
   ),
   new setup.Trait(
     'wings_demon',
@@ -198,7 +198,7 @@
       aid: -0.35,
       slaving: -0.35,
     },
-    ['common', 'corruption'],
+    ['common', 'corruption', 'skin_demon', ],
   ),
   new setup.Trait(
     'wings_angel',
@@ -208,7 +208,7 @@
     {},
     ['rare'],
   ),
-], ['wings', 'skin', 'genderless',], true)>>
+], ['wings', 'skin', 'genderless', 'skin_angel', ], true)>>
 
 
 <<run new setup.TraitGroup([
@@ -218,7 +218,7 @@
     'Posses a furry pair of arms with claws',
     0,
     {},
-    ['medium'],
+    ['medium', 'skin_werewolf', ],
   ),
   new setup.Trait(
     'arms_neko',
@@ -226,7 +226,7 @@
     'Tiger-like black stripes cover their clawed arms',
     setup.MONEY_TRAIT_RARE,
     {},
-    ['rare'],
+    ['rare', 'skin_tigerkin', ],
   ),
   new setup.Trait(
     'arms_dragonkin',
@@ -234,7 +234,7 @@
     'Posses a scaley pair of arms ending in sharp claws',
     0,
     {},
-    ['rare'],
+    ['rare', 'skin_lizardkin', 'skin_dragonkin', ],
   ),
   new setup.Trait(
     'arms_demon',
@@ -244,7 +244,7 @@
     {
       combat: -0.35,
     },
-    ['common', 'corruption'],
+    ['common', 'corruption', 'skin_demon', ],
   ),
 ], ['arms', 'skin', 'genderless',], true)>>
 
@@ -256,7 +256,7 @@
     'Posses a furry pair of legs with digitigrade legs',
     0,
     {},
-    ['medium'],
+    ['medium', 'skin_werewolf', ],
   ),
   new setup.Trait(
     'legs_neko',
@@ -264,7 +264,7 @@
     'Legs covered in black stripes akin to tigers',
     setup.MONEY_TRAIT_RARE,
     {},
-    ['rare'],
+    ['rare', 'skin_tigerkin', ],
   ),
   new setup.Trait(
     'legs_dragonkin',
@@ -272,7 +272,7 @@
     'Posses a scaley pair of legs',
     0,
     {},
-    ['rare'],
+    ['rare', 'skin_lizardkin', 'skin_dragonkin', ],
   ),
   new setup.Trait(
     'legs_demon',
@@ -282,7 +282,7 @@
     {
       intrigue: -0.35,
     },
-    ['common', 'corruption'],
+    ['common', 'corruption', 'skin_demon', ],
   ),
 ], ['legs', 'skin', 'genderless',], true)>>
 
@@ -294,7 +294,7 @@
     'Posses a fluffy dog-like tail',
     0,
     {},
-    ['medium'],
+    ['medium', 'skin_werewolf', ],
   ),
   new setup.Trait(
     'tail_neko',
@@ -302,7 +302,7 @@
     'Posses a long thin cat-like tail',
     0,
     {},
-    ['medium'],
+    ['medium', 'skin_neko', 'skin_tigerkin', ],
   ),
   new setup.Trait(
     'tail_dragonkin',
@@ -310,7 +310,7 @@
     'Posses a sturdy and strong draconic tail',
     0,
     {},
-    ['rare'],
+    ['rare', 'skin_lizardkin', 'skin_dragonkin', ],
   ),
   new setup.Trait(
     'tail_demon',
@@ -320,7 +320,7 @@
     {
       sex: -0.35,
     },
-    ['common', 'corruption'],
+    ['common', 'corruption', 'skin_demon', 'skin_demonkin', ],
   ),
 ], ['tail', 'skin', 'genderless',], true)>>
 
@@ -332,7 +332,7 @@
     'Posses a dick complete with a knot',
     0,
     {},
-    ['medium'],
+    ['medium', 'skin_werewolf', ],
   ),
   new setup.Trait(
     'dick_dragonkin',
@@ -340,7 +340,7 @@
     'Posses an odd looking lizard-ish dick',
     0,
     {},
-    ['rare'],
+    ['rare', 'skin_dragonkin', 'skin_lizardkin', ],
   ),
   new setup.Trait(
     'dick_demon',
@@ -349,7 +349,7 @@
     0,
     {
     },
-    ['common', 'corruption'],
+    ['common', 'corruption', 'skin_demon', 'skin_demonkin', ],
   ),
 ], ['dickshape', 'skin', 'needdick'], true)>>
 

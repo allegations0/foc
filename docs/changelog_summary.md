@@ -2,6 +2,197 @@
 
 Full changelog [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/changelog.txt).
 
+v1.6.5.0 (21 May 2021):
+
+  The repository is **moved permanently** to:
+  https://gitgud.io/darkofocdarko/fort-of-chains
+
+  **If you were playing on v1.6.4.23 or lower, you need to fix the default image pack:**
+  Go to `Settings`, then `Edit Image Packs`. In this page, `(remove)` the missing image pack,
+  and `(re-add)` the `Default Imagepack` underneath.
+  Once that's done, go to `Settings` again and then `Reset unit portraits`.
+
+  - Gitpocalypse
+    - Moved git repository to https://gitgud.io/darkofocdarko/fort-of-chains due to critical git failure
+    - Moved references from old repo to new repo.
+    - Added full credits and history for all the old commits
+    - Stop babel being noisy on new version
+  - Content (75k words):
+    - A Merchant's Revenge: The Search Continues (by Matthew Lang)
+    - A Merchant's Revenge: Payback is Sweet (by Matthew Lang)
+    - A Merchant's Revenge: Caravan Raid (Vale) (by Matthew Lang)
+    - A Merchant's Revenge: Caravan Raid (Western Forests) (by Matthew Lang)
+    - A Merchant's Revenge: Caravan Raid (Kingdom of Tor) (by Matthew Lang)
+    - A Merchant's Revenge: Caravan Raid (Eastern Desert) (by Matthew Lang)
+    - Test of Arcane
+    - Raiding the Weres (by Fae)
+    - Attitude Adjustments (by Choker Guy)
+    - Lost Puppy (by Hydrys)
+    - Demonic Roleplay (by FCdev)
+    - A Very Special Wine Event by Matthew Lang
+    - Daylight Robbery
+    - A Gift from the Royals
+    - Knight of Honor
+    - Court Gossip
+    - New activities:
+      - Marketer Marketing
+      - Mail Room Read Mail
+      - Hospital recovering
+      - Market Browse wares.
+      - Retiree visit
+      - Pet Walking
+      - Forge Blackmisth
+      - Temple Praying
+      - Sparring
+      - Anal tailfuck a slave
+      - Buttfuck a slave
+      - Consensual anal
+      - Consensual anal tailfuck
+      - Consensual cunnilingus
+      - Consensual oral
+      - Consensual tailfuck
+      - Consensual vaginal
+      - Facefuck a slave
+      - Fuck a slave
+      - Have a slave eat you out
+      - Have a slave fuck you
+      - Have a slave tailfuck you
+      - Tailfuck a slave
+  - Lore
+    - Kingdomfolks are officially named Torans.
+    - Added History lore
+    - Added Geo lore
+    - Named the middle river as River Cerna
+    - Cassian Mountains Lore (thanks to Matthew Lang)
+    - A bunch of new Geo lores.
+    - Continent lore now use geo tag.
+    - Added sylvan-neko war lore netry
+  - New Feature: Content Creator Syntax Checking
+    - Content Creator now automatically syntax check and format the texts before showing end result, including proper indentation in texts
+    - Can also trigger this manually with the toolbar
+  - New company: Royal Court
+  - Activity
+    - Support for NPCs for activites
+    - Can use the same text for all personalities in activities
+    - Activity in CC now can no longer remove the primary unit
+    - Can debug specific activities
+    - Chaste slavers no longer initiate sex activities.
+  - Interactive Sex
+    - New Sex Action: Dirty talk (Innoxia - Lilith's Throne)
+    - Units can now refuse sex with you, depending on their traits
+    - Added debug info on interactive sex.
+  - Existing content polishing
+    - Harvesting the fields Quest text fix (thanks to Matthew Lang)
+    - Raid Elven Forest (thanks to Matthew Lang)
+    - Bounty Hunt Bear (thanks to Matthew Lang)
+    - Monk Business (thanks to Matthew Lang)
+  - The `Edging` slave training is replaced by the `Roleplay` slave training
+  - Perk
+    - A bunch of new perks
+    - Increase perk choice from 5 to 6.
+  - Content Creator
+    - Added "if any unit on quest is you" to toolbar.
+    - Role has any, all, no traits conditions added to toolbar for quests
+    - Added ALL and ANY traits conditionatls to CC
+    - TagNotBanned restriction
+    - New macro: ustripverb
+    - UnitGroupNotBusy restriction
+  - QoL
+    - Settings checkboxes are grouped by type
+    - Added tooltips for all in-game menus.
+    - Add unitcard to some opportunities and CC.
+  - Misc
+    - Increase activity trigger chance from 0.6 to 0.9.
+    - Common elf -> wood elf rename
+  - Images
+    - Moved default image pack location to imagepacks/default from img/unit
+    - Remove UNITIMAGE_NOBACK from image metadatas
+    - Added imagepack info to image credits
+    - New portrait images for the CCSubmission pack (thanks to Matthew Lang)
+    - New portrait images for the default image pack
+    - A lot of new images for various quests and lore
+  - UI
+    - Lighten female card color.
+    - Can enable unit name using different font per race in settings.
+    - `<<rep>>` now colored, Can be changed in settings
+    - Unit icons in texts now hidden by default. Can be turned on in settings
+    - Male/female units cards now have purple/blue at the bottom right.
+    - Recolored retired to gray.
+    - Changed rare quest border color to blue to make it consistent with the rest.
+    - Rep now hides non actor units.
+  - Documentation
+    - Help text for adjacency bonus in rooms.
+    - First issue guide for coders
+    - More cheatsheet stuffs.
+    - Clarify `edit` quest doesn't edit it but creates a duplicate instead
+    - Documentation for adding NPC units with traits/titles
+  - Balancing
+    - Major fort expansion cost balance adjustments again.
+    - Library is now a prerequisite for grand hall, and decrease its price to 5000g
+    - Updated Prince of Cups slave order to be more lucrative and fix text issues. (thanks to Matthew Lang)
+    - Rec wing pimp rework: number of pimps down from 5 to 3, profit per pimp increased slightly, capped at three slaves each
+  - New Game Plus
+    - You can choose to gain/lose a trait every time you restart with new game plus now
+  - Engine
+    - Full rewrite of debug content/quest/event/interaction/activity to DOM
+    - DOM conversions:
+      - Settings
+      - Skill focus
+      - Change active title
+      - Unit debug
+      - OpportunityAutoAnswer
+      - ItemUnitUsableOn
+      - OpportunityOptionSelected
+      - TrainingDo
+    - Remove selectunit macro
+    - Dom-ification of itemunitusableon
+    - Verbose error message for isHasTrait
+    - Quest errors now dont crash the entire page
+    - Hobby text refactor.
+  - Misc
+    - Added interaction to in game wiki
+    - Dom/endurance/horny/obedience/roleplay now remove incompatible trait on success
+    - Fairy offer and tower of roses now show the unit before recritment choice.
+    - Rename none to "old end table" for statue.
+  - Dialogue
+    - Lots of new... puns
+    - "howdy, folks",
+  - Bugfixes
+    - Fix dirty talk causing sex interaction to break.
+    - Fix some incorrect activity rarities.
+    - Fix failure outcome undefined in CC failure quest.
+    - Fix activity on passable room and text cheat sheet.
+    - Fix caravan raid kingdom found in forest instead of city
+    - Fix library costing 2.5m instead of 5000g
+    - Fix missing customunit folder
+    - Fix custom image not zoom-able and missing in dialogues
+    - Fix slave can refuse sex with you.
+    - Fix Test of Arcane description fatally bugged.
+    - Fix itch.io build command and some image issues.
+    - Fixed save -> load before init base causing error.
+    - Fix articles becoming undefined in some places
+    - Fix author info duplicated in outcomes
+    - Fix "imagepacks/imagepackss" shown in imagepack card.
+    - Fix content description not written inside <<capture>>
+  - Typo fixes
+    - Fix "$.slaves".
+    - Fix wine order wrong actor mention.
+    - Fix extra "TODO BEFORE COMMIT" in changelog
+    - Fixed comment tag to prevent code comments showing up in game (thanks to Matthew Lang)
+    - Fix isHasAnyTraitExact and merchant revenge.
+    - Bugfix - Quest: A Merchant's Revenge the Search Continues - fixed flirt variable implementation. (thanks to Matthew Lang)
+    - Bugfix - A Merchant's Revenge - Trait Checks now firing correctly (thanks to Matthew Lang)
+    - Make the dom actor in attitude adjustment use the slaver gender pref.
+    - Fixed typo - in a Very Special Wine Order (thanks to Matthew Lang)
+    - Fix quest debug descriptions
+    - Fixed "earened".
+    - Fixed "easyly"
+    - Fix numerous syntax bugs found by the syntax checker
+    - Updated to set text back to intended edits - adds variant text in case PC goes on quest. (thanks to Matthew Lang)
+    - Updated Event 'A Very Special Wine Order' to include the intended slave order and fix some pronouns (thanks to Matthew Lang)
+    - Fix erroneous p tags in merchant revenge quest.
+
+
 v1.6.4.0 (14 May 2021):
   - Content
     - Hospital visit + Visiting the injured (by Matthew Lang) (2 events 1 opportunity)

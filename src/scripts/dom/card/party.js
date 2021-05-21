@@ -119,7 +119,7 @@ setup.DOM.Card.party = function (party, hide_actions) {
     fragments.push(html`
       <div>
         ${setup.DOM.Util.level(unit.getLevel())}
-        ${unit.rep()}
+        ${unit.repLong()}
         ${!hide_actions && setup.DOM.Nav.link(
       `(remove)`,
       removeUnitCallback(party, unit)

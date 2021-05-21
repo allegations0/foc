@@ -34,16 +34,6 @@
   color: rgb(180, 180, 180);
 }
 
-.rep {
-  display: inline-block;
-  /* prevent line break between e.g. icons and name */
-}
-
-.replink:not(:hover) {
-  color: inherit;
-  text-decoration: underline 1px dotted #68d;
-}
-
 .worldmap {
   margin: 1em auto;
   text-align: center;

@@ -3,12 +3,13 @@ import { menuItemAction } from "../../ui/menu"
 /**
  * @typedef {Object} RosterSelectUnitArgs
  * @property {setup.Unit[]} units
- * @property {string} return_passage
+ * @property {string} [return_passage]
+ * @property {Function} [unit_callback]
  * 
  * @param {RosterSelectUnitArgs} args 
  * @returns {setup.DOM.Node}
  */
-setup.DOM.Roster.selectunit = function ({ units, return_passage }) {
+setup.DOM.Roster.selectunit = function ({ units, return_passage, unit_callback }) {
   const fragments = []
   fragments.push(html`<div>${setup.DOM.Nav.return('(Cancel)')}</div>`)
   if (!units.length) {
@@ -25,9 +26,13 @@ setup.DOM.Roster.selectunit = function ({ units, return_passage }) {
         menuItemAction({
           text: `Select`,
           callback: () => {
-            // @ts-ignore
-            State.variables.gUnitSelected_key = unit.key
-            return setup.DOM.Util.include(return_passage)
+            if (unit_callback) {
+              return unit_callback(unit)
+            } else {
+              // @ts-ignore
+              State.variables.gUnitSelected_key = unit.key
+              return setup.DOM.Util.include(return_passage)
+            }
           },
         })
       ],

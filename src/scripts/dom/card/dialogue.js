@@ -50,7 +50,7 @@ setup.DOM.Card.dialogue = function ({
   fragments.push(setup.DOM.create(
     'div',
     {},
-    html`${unit.rep()}:`
+    html`${unit.repLong()}:`
   ))
   fragments.push(setup.DOM.create(
     'div',

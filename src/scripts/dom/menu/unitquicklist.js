@@ -9,7 +9,7 @@ http://twinery.org/forum/discussion/comment/17617/
  * @returns {setup.DOM.Node}
  */
 setup.DOM.Menu.unitquicklist = function () {
-  const units = State.variables.company.player.getUnits()
+  const units = State.variables.company.player.getUnits({})
   // put slaver on top
   units.sort((a, b) => {
     if (a.isSlaver() && !b.isSlaver()) return -1
@@ -22,7 +22,7 @@ setup.DOM.Menu.unitquicklist = function () {
     filter_objects: units,
     display_callback: unit => html`
         <div>
-          ${unit.isSlaver() ? unit.repBusyState(/* duty = */ true) : ''}${unit.rep()}<span class='toprightspan'>${unit.getSubrace().rep()}</span>
+          ${unit.isSlaver() ? unit.repBusyState(/* duty = */ true) : ''}${unit.repLong()}<span class='toprightspan'>${unit.getSubrace().rep()}</span>
         </div>
       `,
   })

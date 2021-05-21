@@ -241,7 +241,7 @@ function getQuestExtraActorsFragment(quest) {
   return setup.DOM.create(
     'div',
     {},
-    [html`Involved: `].concat(actors.map(unit => unit.rep())),
+    [html`Involved: `].concat(actors.map(unit => unit.repLong())),
   )
 }
 
@@ -353,7 +353,7 @@ function getQuestCardAsyncFragment(quest, hide_actions) {
         }
       )
         }:
-  ${unit.rep()} ${criteria.repActor(unit, template.getDifficulty())}
+  ${unit.repLong()} ${criteria.repActor(unit, template.getDifficulty())}
         </div>
     `)
     }
@@ -430,7 +430,7 @@ setup.DOM.Card.quest = function (quest, hide_actions) {
       () => {
         const actors = quest.getActorsList()
         // @ts-ignore
-        return actors.map(actor => `<div>${actor[0]}: ${actor[1].rep()}</div>`)
+        return actors.map(actor => `<div>${actor[0]}: ${actor[1].repLong()}</div>`)
       }
     )
       }
