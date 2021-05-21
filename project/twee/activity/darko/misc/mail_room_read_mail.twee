@@ -24,7 +24,7 @@ disaster_traits: [
 ],
 restrictions: [ /* restrictions */
 ],
-rarity: setup.rarity.common,
+rarity: setup.rarity.rare,
 dialogues: [
 { /* Dialogue #1: */
   actor: "a",

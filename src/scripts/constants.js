@@ -1013,7 +1013,7 @@ setup.NEW_GAME_PLUS_NEW_LEADER_SUCCESS_CHANCE = {
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 // probability a unit will engage in some sort of activity at home
-setup.ACTIVITY_CHANCE = 0.5
+setup.ACTIVITY_CHANCE = 0.6
 
 // number of tries to find a good activity per rarity level
 setup.ACTIVITY_MAX_ATTEMPT_PER_RARITY = 10
