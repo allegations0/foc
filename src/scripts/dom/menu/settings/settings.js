@@ -196,37 +196,38 @@ setup.DOM.Menu.settingsbase = function () {
     }
   }
 
+  if (!State.variables.devtooltype) {
+    fragments.push(html`
+      <div>
+        ${setup.DOM.Util.message(
+      `(EXPERIMENTAL)`,
+      html`
+            <div class='helpcard'>
+              <div>
+                ${setup.DOM.Text.danger('WARNING')}:
+                Settings under EXPERIMENTAL are either
+                ${setup.DOM.Text.dangerlite('NO BALANCED')}
+                or cause
+                ${setup.DOM.Text.dangerlite('TEXT ISSUES')},
+                and it is recommended to turn all these settings off,
+                at least on your first playthrough.
+                However, feel free to turn on these settings if you feel particularly adventurous
+                or masochistic.
+              </div>
 
-  fragments.push(html`
-    <div>
-      ${setup.DOM.Util.message(
-    `(EXPERIMENTAL)`,
-    html`
-          <div class='helpcard'>
-            <div>
-              ${setup.DOM.Text.danger('WARNING')}:
-              Settings under EXPERIMENTAL are either
-              ${setup.DOM.Text.dangerlite('NO BALANCED')}
-              or cause
-              ${setup.DOM.Text.dangerlite('TEXT ISSUES')},
-              and it is recommended to turn all these settings off,
-              at least on your first playthrough.
-              However, feel free to turn on these settings if you feel particularly adventurous
-              or masochistic.
+              <hr/>
+
+              <div>
+                <b>Difficulty</b>: ${settings.getDifficultyHumanReadable()}
+                ${set_difficulty(false)}
+                ${setup.DOM.create('span', {}, Object.keys(setup.Settings.DIFFICULTIES).map(diff => set_difficulty(diff)))}
+              </div>
             </div>
-
-            <hr/>
-
-            <div>
-              <b>Difficulty</b>: ${settings.getDifficultyHumanReadable()}
-              ${set_difficulty(false)}
-              ${setup.DOM.create('span', {}, Object.keys(setup.Settings.DIFFICULTIES).map(diff => set_difficulty(diff)))}
-            </div>
-          </div>
-        `
-  )}
-    </div>
-  `)
+          `
+    )}
+      </div>
+    `)
+  }
 
   return setup.DOM.create('div', {}, fragments)
 }

@@ -9,6 +9,9 @@
 <<if $gMenuVisible>>
   <<set _dom = setup.DOM.Menu.mainmenu()>>
   <<attach _dom>>
+<<elseif $devtooltype>>
+  <<set _dom = setup.DOM.Menu.devmainmenu()>>
+  <<attach _dom>>
 <</if>>
 
 <</focwidget>>
