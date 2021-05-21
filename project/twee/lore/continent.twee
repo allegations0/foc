@@ -17,6 +17,8 @@ many different biomes, from cold tundras on the north, scorching deserts to the 
 and dense forests to the west.
 </p>
 
+:: LORESETUP_continent_cathay [lore]
+
 <<run new setup.Lore(
   'continent_cathay',  /* key */
   'Cathay',  /* name */
