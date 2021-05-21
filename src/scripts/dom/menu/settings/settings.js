@@ -84,8 +84,7 @@ setup.DOM.Menu.settingsbase = function () {
       title: `Show unit icons in text`,
       field: `inline_icon`,
       help: html`
-        If checked, icons will be shown next to units and equipments in texts, like this: ${State.variables.unit.player.repFull()}.
-        Otherwise, it wills how like this: ${State.variables.unit.player.repShort()}.
+        If checked, icons will be shown next to units and equipments in texts.
       `
     }),
     checkbox({
