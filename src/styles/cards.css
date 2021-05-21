@@ -271,7 +271,7 @@ img {
 }
 
 .female-card {
-    --border-color: rgb(228, 0, 209);
+    --border-color: rgb(255, 95, 242);
     border-bottom-color: var(--border-color);
     border-right-color: var(--border-color);
 }
