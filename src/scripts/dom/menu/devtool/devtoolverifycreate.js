@@ -106,7 +106,7 @@ function continue_callback() {
     sv.qpassageoutcomes = [
       `Quest_${sv.qkey}Crit`,
       `Quest_${sv.qkey}Success`,
-      `Quest_${sv.key}Failure`,
+      `Quest_${sv.qkey}Failure`,
       `Quest_${sv.qkey}Disaster`,
     ]
     setup.runSugarCubeCommand(`<<goto 'QGCreate'>>`)
