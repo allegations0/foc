@@ -4,6 +4,10 @@
 
 ### v1.6.4.x
 
+v1.6.4.29:
+
+  - Fix failure outcome undefined in CC failure quest.
+
 v1.6.4.28:
 
   - `<<rep>>` now colored, Can be changed in settings
