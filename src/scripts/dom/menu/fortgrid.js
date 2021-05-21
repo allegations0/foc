@@ -377,10 +377,16 @@ setup.FortGridController = class FortGridController extends setup.TwineClass {
       text: State.variables.company.player.rep()
     }))
     const explanation = setup.SkillHelper.explainSkills(State.variables.roomlist.getTotalSkillBonuses())
+
+    const tooltip = `You can get bonuses to the skills of all units
+in your company by carefully placing your rooms. The bonus is capped at ${setup.ROOM_MAX_SKILL_BOOST} per skill. This bonus is small enough
+that you can play the game without even bothering with this bonus if you prefer.`
+
     if (explanation) {
       menus.push(
         menuItemText({
-          text: explanation,
+          text: html`${explanation}`,
+          tooltip: tooltip,
         })
       )
     }
