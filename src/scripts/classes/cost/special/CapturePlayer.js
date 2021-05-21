@@ -23,7 +23,7 @@ setup.qcImpl.CapturePlayer = class CapturePlayer extends setup.Cost {
     const candidates = Object.values(setup.event).filter(
       event => {
         if (!event.getTags().includes('playercapture')) return false
-        if (!event.isCanTrigger()) return false
+        if (!event.isCanGenerate()) return false
         return true
       }
     )

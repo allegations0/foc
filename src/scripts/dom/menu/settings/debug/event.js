@@ -1,6 +1,7 @@
 import { renderDescription } from "../../../card/quest"
 import { IMPORTABLE } from "../settings"
 import { debug_do_one_finalize, debug_do_one_title, debug_frontpage_title } from "./common"
+import { is_scoutable_link } from "./quest"
 
 /**
  * @returns {setup.DOM.Node}
@@ -17,6 +18,7 @@ setup.DOM.Menu.Settings.Debug.event = function () {
     display_callback: (template) => html`
       <div>
         ${setup.DOM.Util.namebold(template)}
+        ${is_scoutable_link(template)}
         ${setup.DOM.Nav.link(
       `(test this)`,
       () => {

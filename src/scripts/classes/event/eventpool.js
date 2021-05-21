@@ -212,7 +212,7 @@ setup.EventPool = class EventPool extends setup.TwineClass {
     const zero = candidates.filter(event_obj => {
       return (
         event_obj.rarity.isForced() &&
-        event_obj.object.isCanTrigger()
+        event_obj.object.isCanGenerate()
       )
     })
 
@@ -245,7 +245,7 @@ setup.EventPool = class EventPool extends setup.TwineClass {
       }
       const drawn = deck.drawCard()
       const event = setup.event[drawn]
-      if (event.isCanTrigger()) {
+      if (event.isCanGenerate()) {
         const assignment = setup.EventPool.getEventUnitAssignmentRandom(event)
         if (assignment) {
           return { event: event, assignment: assignment }
