@@ -90,10 +90,17 @@ setup.DOM.Menu.settingsbase = function () {
       `
     }),
     checkbox({
-      title: `Show unit icons in text`,
+      title: `Use different color for unit names depending on gender`,
       field: `inline_color`,
       help: html`
         If checked, unit names will be color-coded in texts.
+      `
+    }),
+    checkbox({
+      title: `Use different font for unit names depending on race`,
+      field: `inline_font`,
+      help: html`
+        If checked, unit names will use different fonts, depending on their race
       `
     }),
     checkbox({

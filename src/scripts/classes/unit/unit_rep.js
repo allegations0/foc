@@ -63,6 +63,10 @@ setup.Unit.prototype.repShort = function () {
     }
   }
 
+  if (State.variables.settings.inline_font) {
+    color_class += ` text-${this.getSubrace().key}`
+  }
+
   // only show if either: (0. your unit, 1. in market, 2. contact, 3. retiree)
   if (
     !this.isYourCompany() &&
