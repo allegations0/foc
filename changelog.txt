@@ -4,6 +4,12 @@
 
 ### v1.6.5.x
 
+v1.6.5.3:
+
+  - New quest: Test of Aid
+  - New quest: Test of Slaving
+  - New event: Heavenly Recruit
+
 v1.6.5.2:
 
   - Add Settings to Content Creator
