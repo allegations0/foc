@@ -2,6 +2,19 @@
 
 [Changelog summary](docs/changelog_summary.md)
 
+### v1.6.5.x
+
+v1.6.5.0:
+
+  - New activity: Marketer Marketing
+  - Increase activity trigger chance from 0.6 to 0.9.
+  - Lighten female card color.
+  - Help text for adjacency bonus in rooms.
+  - Can enable unit name using different font per race in settings.
+  - Settings grouping. Closes #327
+  - Fix "$.slaves".
+  - Fix some incorrect activity rarities.
+
 ### v1.6.4.x
 
 v1.6.4.29:
