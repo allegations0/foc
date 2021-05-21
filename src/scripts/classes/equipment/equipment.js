@@ -46,6 +46,11 @@ setup.Equipment = class Equipment extends setup.TwineClass {
     if (!traits || typeof traits !== 'object') {
       throw new Error(`Trait key mods must be objects for ${this.key}`)
     }
+    for (const trait_key in traits) {
+      if (!setup.trait[trait_key]) {
+        throw new Error(`Could not find trait with key ${trait_key} for equipment ${this.key}`)
+      }
+    }
 
     if (!Array.isArray(unit_restrictions)) {
       throw new Error(`Unit restrictions must be an array for ${this.key}`)
