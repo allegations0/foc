@@ -106,7 +106,7 @@ setup.qres.HasTitle('quest_master_of_survival_0')
     setup.qres.NoTitle('quest_angel_touched_1')
   ], 1),
 ],
-setup.EVENT_DEFAULT_COOLDOWN, /* Cooldown */
+100, /* Cooldown */
 setup.rarity.legendary, /* Rarity */
 )>>
 
