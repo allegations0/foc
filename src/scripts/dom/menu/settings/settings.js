@@ -13,7 +13,7 @@ setup.DOM.Menu.Settings.Debug = {}
 function checkbox({ title, field, help }) {
   return html`
     <div>
-      ${twee`<<checkbox '$settings.${field}' false true autocheck>>`} <b>${title}</b>
+      ${twee`<<checkbox '$settings.${field}' false true autocheck>>`} ${title}
       ${help ? setup.DOM.Util.help(help) : ''}
     </div>
   `
@@ -40,6 +40,19 @@ setup.DOM.Menu.settingsbase = function () {
   `)
 
   fragments.push(
+    html`
+      <hr/>
+      <div>
+        <b>Story display</b>
+      </div>
+    `,
+    checkbox({
+      title: `Hide quest / event images`,
+      field: `hidecontentimages`,
+      help: html`
+        If checked, then images in quest and event outcomes are hidden.
+      `
+    }),
     checkbox({
       title: `Summarize quest/event outcomes`,
       field: `hidequestoutcome`,
@@ -61,26 +74,12 @@ setup.DOM.Menu.settingsbase = function () {
         If checked, then event texts are summarized and must be toggled to view.
       `
     }),
-    checkbox({
-      title: `Summarize unit skills`,
-      field: `summarizeunitskills`,
-      help: html`
-        If checked, then unit skills are displayed as their total sum,
-        instead of xx + xx.
-        E.g., instead of 11 ${setup.DOM.Text.successlite(' + 4')} ${setup.skill.combat.rep()},
-        it will display as
-        <span data-tooltip="11 + 4">${setup.DOM.Text.successlite('15')}</span> ${setup.skill.combat.rep()}
-        (You can hover over it to see the "11 + 4").
-      `
-    }),
-    checkbox({
-      title: `Animated tooltips`,
-      field: `animatedtooltips`,
-      help: html`
-        If checked, tooltips will fade in, and appear after some small delay.
-        If unchecked, tooltips will instantly show up, with no delay.
-      `
-    }),
+    html`
+      <hr/>
+      <div>
+        <b>Unit information</b>
+      </div>
+    `,
     checkbox({
       title: `Show unit icons in text`,
       field: `inline_icon`,
@@ -104,17 +103,15 @@ setup.DOM.Menu.settingsbase = function () {
       `
     }),
     checkbox({
-      title: `Hide quest / event images`,
-      field: `hidecontentimages`,
+      title: `Summarize unit skills`,
+      field: `summarizeunitskills`,
       help: html`
-        If checked, then images in quest and event outcomes are hidden.
-      `
-    }),
-    checkbox({
-      title: `Auto-assign units for unit actions`,
-      field: `unitactionautoassign`,
-      help: html`
-        If checked, quests generated from unit action will be auto-assigned a team when you select it.
+        If checked, then unit skills are displayed as their total sum,
+        instead of xx + xx.
+        E.g., instead of 11 ${setup.DOM.Text.successlite(' + 4')} ${setup.skill.combat.rep()},
+        it will display as
+        <span data-tooltip="11 + 4">${setup.DOM.Text.successlite('15')}</span> ${setup.skill.combat.rep()}
+        (You can hover over it to see the "11 + 4").
       `
     }),
     checkbox({
@@ -131,6 +128,27 @@ setup.DOM.Menu.settingsbase = function () {
         If checked, skin traits such as
         ${setup.trait.body_werewolf.rep()} or ${setup.trait.ears_elf.rep()}
         are hidden in unit cards.
+      `
+    }),
+    html`
+      <hr/>
+      <div>
+        <b>Miscellaneous</b>
+      </div>
+    `,
+    checkbox({
+      title: `Animated tooltips`,
+      field: `animatedtooltips`,
+      help: html`
+        If checked, tooltips will fade in, and appear after some small delay.
+        If unchecked, tooltips will instantly show up, with no delay.
+      `
+    }),
+    checkbox({
+      title: `Auto-assign units for unit actions`,
+      field: `unitactionautoassign`,
+      help: html`
+        If checked, quests generated from unit action will be auto-assigned a team when you select it.
       `
     }),
   )
