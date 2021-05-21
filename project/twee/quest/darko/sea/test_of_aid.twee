@@ -7,7 +7,7 @@
 "a|have proven a|themself to be a master of aid by completing a challenge in the seas", /* unit text */
 7599, /* slave value */
 { /* skill additives */
-aid: 3,},
+aid: 4,},
 )
 >>
 
@@ -48,7 +48,7 @@ setup.qres.NoTitle('quest_master_of_aid_0')
   url: "",
 },
 [ /* tags */
-  'vale',
+  'sea',
   'legendary',
   'veteran',
   'prep',

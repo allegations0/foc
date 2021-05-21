@@ -250,3 +250,29 @@
   },
   )>>
 
+
+<<run new setup.Equipment(
+  'slaving_arms_master',
+  "Gloves of Tender Ministration",
+  setup.equipmentslot.head,
+  ['legendary', 'clothes', ],
+  setup.EQUIPMENT_PRICE_MASTER, /* value */
+  0, /* sluttines */
+  {
+    slaving: setup.EQUIPMENT_STAT_BOOST_MASTER,
+    combat: -setup.EQUIPMENT_STAT_BOOST_MASTER,
+  },
+  { /* traits */
+    per_cruel: 1,
+  },
+  [  /* unit restrictions */
+    setup.qres.Job(setup.job.slaver),
+    setup.qres.SkillAtLeast(setup.skill.slaving, setup.EQUIPMENT_WEAPON_MASTER_MIN_SKILL),
+  ],
+  {},
+  {
+    description: 'A glove fitted with an enchantment of cruelty. Its name was chosen to mock whichever slave unlucky enough to be on the receiving side of the gloves.',
+    flavor: "The glove is enchanted with enchantments of cruelty, and whoever wears them will get inclined to find the nearest slave and abuse them at will",
+  },
+)>>
+
