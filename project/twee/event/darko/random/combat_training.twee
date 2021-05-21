@@ -112,7 +112,7 @@ Still, it was all in good fun, and the two of you become closer through the exer
 <<opt "Watch <<them $g.slaver>> train">>
 
 <p>
-It's quite mesmerizing how <<rep $g.slaver>> slaver|is able to maintain a rhythm swining <<their $g.slaver>> <<uweapon $g.slaver>> while counting out loud. Your focus starts to switch too — while initially you were just looking at <<their $g.slaver>> sweaty <<ubody $g.slaver>>, you start to catch some of the techniques <<they $g.slaver>> slaver|was using to keep the weapon steady. In the end, you feel you've learned a thing or two from just watching the slaver exercised.
+It's quite mesmerizing how <<rep $g.slaver>> slaver|is able to maintain a rhythm swinging <<their $g.slaver>> <<uweapon $g.slaver>> while counting out loud. Your focus starts to switch too — while initially you were just looking at <<their $g.slaver>> sweaty <<ubody $g.slaver>>, you start to catch some of the techniques <<they $g.slaver>> slaver|was using to keep the weapon steady. In the end, you feel you've learned a thing or two from just watching the slaver exercised.
 </p>
 
 <<run setup.qc.ExpUnit('you', 2).apply($gQuest)>>
