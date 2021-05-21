@@ -25,19 +25,23 @@ function checkbox({ title, field, help }) {
 setup.DOM.Menu.settingsbase = function () {
   const fragments = []
 
-  fragments.push(html`
-    <div>
-      Auto-save every
-      ${twee`<<numberbox '$settings.autosave_interval' $settings.autosave_interval>>`}
-      weeks
-      ${setup.DOM.Util.help(html`
-        The game will auto-save every this many weeks.
-        Put 0 to never auto-save, and 1 to auto-save every week.
-        Larger number will make the end-of-week processing faster.
-      `
-  )}
-    </div>
-  `)
+  const is_devtool = State.variables.devtooltype
+
+  if (!is_devtool) {
+    fragments.push(html`
+      <div>
+        Auto-save every
+        ${twee`<<numberbox '$settings.autosave_interval' $settings.autosave_interval>>`}
+        weeks
+        ${setup.DOM.Util.help(html`
+          The game will auto-save every this many weeks.
+          Put 0 to never auto-save, and 1 to auto-save every week.
+          Larger number will make the end-of-week processing faster.
+        `
+    )}
+      </div>
+    `)
+  }
 
   fragments.push(
     html`
@@ -196,7 +200,7 @@ setup.DOM.Menu.settingsbase = function () {
     }
   }
 
-  if (!State.variables.devtooltype) {
+  if (!is_devtool) {
     fragments.push(html`
       <div>
         ${setup.DOM.Util.message(
