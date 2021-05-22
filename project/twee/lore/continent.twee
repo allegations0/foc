@@ -17,3 +17,20 @@ many different biomes, from cold tundras on the north, scorching deserts to the 
 and dense forests to the west.
 </p>
 
+:: LORESETUP_continent_cathay [lore]
+
+<<run new setup.Lore(
+  'continent_cathay',  /* key */
+  'Cathay',  /* name */
+  [  /* tags */
+    'geo',
+  ],
+  [  /* visibility requirements */
+  ],
+)>>
+
+:: LORE_continent_cathay [nobr]
+<p>
+Cathay is both the name of the largest continent in the <<lore region_sea>>, and the name of the biggest empire that calls it home. The continent of Cathay is generally warmer than <<lore continent_main>> and boasts tropical jungles, swamps, fertile grasslands and tall, forest covered mountains.
+</p>
+
