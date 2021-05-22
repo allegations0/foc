@@ -4,6 +4,10 @@
 
 ### v1.6.5.x
 
+v1.6.5.4:
+
+  - Fix isHasTrait broken when the trait is null.
+
 v1.6.5.3:
 
   - New quest: Test of Aid
