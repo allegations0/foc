@@ -125,6 +125,11 @@ and it would be remiss to miss out on such an easy opportunity.
 
 :: Quest_seasonal__cleaning_Crit [nobr]
 
+<<if $g.rich.isMale()>>
+<<else>>
+  <<questimage 'seasonal__cleaning_female.jpg'>>
+<</if>>
+
 <p>
 Just like before, the noble asked <<rep $g.head>> for <<their $g.head>>
 personal attention in the bedchamber.

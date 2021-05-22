@@ -27,7 +27,7 @@
       ]
     ],
     [
-      'QuestUnitTrainingDomesticBasicSuccess',
+      'QuestUnitTrainingDomesticBasicCrit',
       [
         setup.qc.Trait('trainee', setup.trait.training_domestic_basic),
         
@@ -49,6 +49,7 @@
 )>>
 
 :: QuestUnitTrainingDomesticBasic [nobr]
+
 <p>
 Not all slaves are expected to become sex slaves.
 There are demand for slaves for more mundane tasks, such as
@@ -58,17 +59,28 @@ skills for such work.
 </p>
 
 :: QuestUnitTrainingDomesticBasicCrit [nobr]
+
+<<if $g.trainee.isMale()>>
+<<else>>
+  <<questimage 'unit_training_domestic_basic_female.jpg'>>
+<</if>>
+
+<<if $gOutcome == 'crit'>>
+
 <p>
 The training was a complete success. <<Rep $g.trainee>>,
 and your slavers gain a lot of experience from the training.
 </p>
 
-:: QuestUnitTrainingDomesticBasicSuccess [nobr]
+<<else>>
+
 <p>
 At the end of the week, <<rep $g.trainee>> trainee|have gained
 both textbook and first-hand knowledge about the
 basics of domestic work.
 </p>
+
+<</if>>
 
 :: QuestUnitTrainingDomesticBasicFailure [nobr]
 <p>

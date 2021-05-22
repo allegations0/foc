@@ -38,7 +38,7 @@ function marketObjectNameActionMenu(market, market_object, market_refresh_callba
       }))
     } else {
       menus.push(menuItemText({
-        text: `Cannot get`,
+        text: html`Cannot get (${price ? setup.DOM.Util.money(price) : setup.DOM.Text.successlite('Free')})`,
       }))
     }
   }

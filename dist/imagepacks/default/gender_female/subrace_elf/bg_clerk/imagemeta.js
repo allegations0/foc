@@ -10,6 +10,12 @@ UNITIMAGE_CREDITS = {
     url: "https://www.deviantart.com/badcompzero/art/Commission-Rebecca-Vanilla-809132255",
     license: "CC-BY-NC-ND 3.0",
   },
+  2: {
+    title: "After office affair",
+    artist: "VenusNoire",
+    url: "https://www.newgrounds.com/art/view/venusnoire/after-office-affair",
+    license: "CC-BY-NC-ND 3.0",
+  },
 }
 
 }());

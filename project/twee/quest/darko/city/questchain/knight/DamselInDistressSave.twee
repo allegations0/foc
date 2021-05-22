@@ -34,6 +34,7 @@
     'squire2': setup.qu.squire,
   },
   { /* actors */
+    'ravaged': 'quest_humankingdom_nobledaughter_ravaged',
   },
   [ /* costs */
   ],
@@ -53,6 +54,7 @@
     [
       'QuestDamselInDistressKidnapCrit',
       [
+        setup.qc.SlaveMarker('ravaged'),
         setup.qc.MoneyNormal(),
         setup.qc.Favor('humankingdom', 50),
         setup.qc.Favor('royal', 50),

@@ -113,6 +113,12 @@ setup.qdiff.normal45, /* difficulty */
 
 
 :: Quest_attitude_adjustmentCrit [nobr]
+
+<<if $g.slave.isMale()>>
+<<else>>
+<<questimage 'attitude_adjustment_female.jpg'>>
+<</if>>
+
 <p>
     The domme was beside <<themselves $g.dom>>. <<They $g.dom>> had a trio of slaves come out to give your band a royal reception. The wait passed in a blur of inhumanly flexible slave tongues. When it was over, all non-slave gazes turned towards the domme, with <<rep $g.slave>> in tow. <<They $g.slave>> was moving on all fours, despite not being on a leash or having received an observable command to do so.
 </p>
@@ -141,6 +147,12 @@ setup.qdiff.normal45, /* difficulty */
 
 
 :: Quest_attitude_adjustmentSuccess [nobr]
+
+<<if $g.slave.isMale()>>
+<<else>>
+<<questimage 'attitude_adjustment_female.jpg'>>
+<</if>>
+
 <p>
     At first, there was little fanfare. Your slavers started getting impatient, even, sitting in the room, waiting for seemingly no reason. Finally, the domme showed up, and <<they $g.dom>> had <<rep $g.slave>> in tow.
 </p>

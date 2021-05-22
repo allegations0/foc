@@ -142,6 +142,11 @@ received the recognition that <<they $g.knight>> deserve.
 
 <<else>>
 
+<<if $g.ravaged.isMale()>>
+<<else>>
+  <<questimage 'damsel_in_distress_female.jpg'>>
+<</if>>
+
 <p>
 <<Rep $g.knight>> and <<their $g.knight>> squire <<uadv $g.knight>> decided
 that the fastest approach was to strike headlong into the enemy fort.

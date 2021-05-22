@@ -81,6 +81,12 @@ course there is a limit for such a thing.
 
 :: QuestWhoreSquareCrit [nobr]
 
+<<if $g.slave.isMale()>>
+  <<questimage 'whore_square_male.jpg'>>
+<<else>>
+  <<questimage 'whore_square_female.jpg'>>
+<</if>>
+
 <p>
 Your slaver's booth was located in the corner of the place.
 The booth itself was simple, just four set of manacles to chain

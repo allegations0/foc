@@ -4,7 +4,7 @@
 'cleaning_punishment', /* key */
 "Cleaning Punishment", /* Title */
 { /* Author */
-  name: "darko",
+  name: "FCdev",
   url: "",
 },
 [ /* tags */

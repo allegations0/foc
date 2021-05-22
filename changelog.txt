@@ -4,6 +4,16 @@
 
 ### v1.6.5.x
 
+v1.6.5.5:
+
+  - New quest: A Merchant's Revenge: Caravan Raid (Southern Seas)
+  - New activity: Library study + A bunch of new images
+  - New lore: Cathay (continent in the south) (thanks to Matthew Lang)
+  - Fix errors on deploy.sh when itch io file is missing
+  - Fix item price not shown when you can't buy items in market
+  - Update textcheatsheet.md
+  - Fix debug edit level / skills not working on PC
+
 v1.6.5.4:
 
   - Fix isHasTrait broken when the trait is null.

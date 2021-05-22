@@ -16,6 +16,12 @@ UNITIMAGE_CREDITS = {
     url: "https://www.deviantart.com/edwardch93/art/Tarzan-453004012",
     license: "CC-BY-NC-ND 3.0",
   },
+  3: {
+    title: "Trevor Belmont",
+    artist: "Vanillycheesecake",
+    url: "https://www.newgrounds.com/art/view/vanillycheesecake/trevor-belmont",
+    license: "CC-BY-NC-ND 3.0",
+  },
 }
 
 }());

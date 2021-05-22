@@ -26,7 +26,7 @@
       ]
     ],
     [
-      'QuestUnitTrainingMasochistAdvancedSuccess',
+      'QuestUnitTrainingMasochistAdvancedCrit',
       [
         setup.qc.Trait('trainee', setup.trait.training_masochist_advanced),
         
@@ -61,19 +61,29 @@ is a good or a bad thing.
 
 :: QuestUnitTrainingMasochistAdvancedCrit [nobr]
 
+<<if $g.trainee.isMale()>>
+  <<questimage 'unit_training_masochist_advanced_male_demonkin.jpg'>>
+<<else>>
+<</if>>
+
+<<if $gOutcome == 'crit'>>
+
 <p>
 <<Rep $g.trainee>> turned out to be a natural masochist.
 In addition to completing the training with flying colors,
 their true mascohistic nature is also revealed.
 </p>
 
-:: QuestUnitTrainingMasochistAdvancedSuccess [nobr]
+<<else>>
+
 <p>
 It was not easy, but through both <<reps $g.trainee>> willingness,
 as well as your slaver's dedications, <<rep $g.trainee>>
 managed to acquire all the necessary skils to graduate from this
 training.
 </p>
+
+<</if>>
 
 :: QuestUnitTrainingMasochistAdvancedFailure [nobr]
 <p>

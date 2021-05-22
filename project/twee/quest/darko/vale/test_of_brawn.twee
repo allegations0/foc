@@ -126,7 +126,7 @@ setup.qres.SkillAtLeast(setup.skill.brawn, 100)
 :: Quest_test_of_brawn [nobr]
 <p>
 Many tales both fable and myth are abound in the <<lore region_vale>>. Among these many tales, a particularly interesting one involves the legend about an axe so heavy and unwieldy that was wielded by giants in the past, and put to rest on a stony tomb deep within the mountsin of the vale.
-It is said that the axe rests still to this very day, as nobody a|have the strength and capabilities to lift and retrieve the artifact.
+It is said that the axe rests still to this very day, as nobody has the strength and capabilities to lift and retrieve the artifact.
 </p>
 
 <p>
