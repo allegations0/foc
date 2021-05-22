@@ -208,6 +208,12 @@ Who knows what rewards you could possibly get from a slave order as rare as this
 
 :: Quest_high_demon_societyCrit [nobr]
 
+<<if $g.slave.isMale()>>
+  <<questimage 'high_demon_society_male.jpg'>>
+<<else>>
+  <<questimage 'high_demon_society_female.jpg'>>
+<</if>>
+
 <p>
 With a harrumph, <<yourrep $g.wizard>> <<uadv $g.wizard>> opened the gate for
 <<rep $g.navigator>> and <<utheirrel $g.navigator $g.member>> <<rep

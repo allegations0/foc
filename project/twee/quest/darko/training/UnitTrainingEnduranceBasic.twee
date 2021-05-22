@@ -63,6 +63,7 @@ increased, and what better way than a couple of runs on the track?
 :: QuestUnitTrainingEnduranceBasicCrit [nobr]
 
 <<if $g.trainee.isMale()>>
+  <<questimage 'unit_training_endurance_basic_male.jpg'>>
 <<else>>
   <<questimage 'unit_training_endurance_basic_female.jpg'>>
 <</if>>

@@ -72,7 +72,7 @@ setup.qc.Injury('warrior', 2),
 setup.qc.Corrupt('purifier1'),
 setup.qc.Corrupt('purifier2'), ],
 ], [
-'Quest_mist_merge_disrupt2Disaster',
+'Quest_mist_merge_disrupt2Success',
 [
 setup.qc.Corrupt('purifier1'),
 setup.qc.Corrupt('purifier2'),
@@ -133,6 +133,14 @@ $g.corrupted>> as a trophy home of their succesful purification attempt.
 
 
 :: Quest_mist_merge_disrupt2Success [nobr]
+
+<<if $gOutcome != 'success'>>
+<<if $g.corrupted.isMale()>>
+  <<questimage 'mist_merge_disrupt_male_failure.jpg'>>
+<<else>>
+<</if>>
+<</if>>
+
 <p>
 By the time your slavers arrived, the ritual had already been completed.
 Your slavers watched as the wizard finished conversing with what appeared to be a demon.
@@ -142,6 +150,7 @@ knowledge, teleported away. Your slavers were disappointed in the failure, but
 at least they were free to <<uadv $g.purifier1>>
 loot the place. They could only pray that the demon would not cause too much havoc in the vicinity.
 <<else>>
+
 Noticing your slavers, the demon went on the offensive charged at them.
 <<Yourrep $g.warrior>> did <<their $g.warrior>> best protecting your other
 slavers as <<rep $g.purifier1>> and <<rep $g.purifier2>> attempted to cast
@@ -158,15 +167,5 @@ but if there was any consolation, at least their personalities remain
 intact.
 <</if>>
 <</if>>
-</p>
-
-
-:: Quest_mist_merge_disrupt2Disaster [nobr]
-<p>
-By the time your slavers arrived, the ritual has already been completed, as
-you see the wizard conversing with what appears to be a demon. Upon noticing
-your slavers, the demon charged in. <<Rep $g.warrior>> did <<their
-$g.warrior>> best protecting your other slavers as <<rep $g.purifier1>> and
-<<rep $g.purifier2>> attempted to cast whatever purification magic they can.
 </p>
 

@@ -125,6 +125,11 @@ noble into what <<they $g.rich>> rich|is right now.
 
 :: Quest_seasonal_trainingCrit [nobr]
 
+<<if $g.rich.isMale()>>
+<<else>>
+  <<questimage 'seasonal_training_female.jpg'>>
+<</if>>
+
 <p>
 When your slavers arrived, the noble immediately prostrated
 <<themself $g.rich>> in front of <<their $g.rich>> <<master $g.head>>.

@@ -168,6 +168,12 @@ predisposition towards lunacy.
 
 
 :: Quest_mist_merge_complete23Failure [nobr]
+
+<<if $g.fullpossess.isMale()>>
+  <<questimage 'mist_merge_disrupt_male_failure.jpg'>>
+<<else>>
+<</if>>
+
 <p>
 Even with the combined knowledge of both your slavers and the powerful dark wizard,
 the ritual failed, makred with

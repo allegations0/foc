@@ -62,6 +62,11 @@ brain to associate pain with pleasure.
 
 :: QuestUnitTrainingMasochistBasicCrit [nobr]
 
+<<if $g.trainee.isMale()>>
+  <<questimage 'unit_training_masochist_basic_male.jpg'>>
+<<else>>
+<</if>>
+
 <p>
 Training a slave to be a pain slut is not an easy, gentle task, and it takes multiple training
 to relink pain into pleasure.

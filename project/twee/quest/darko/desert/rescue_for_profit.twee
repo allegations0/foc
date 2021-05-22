@@ -84,6 +84,11 @@ You can send a group of slavers to rescue the <<daughter $g.slave>>, should you 
 
 :: Quest_rescuefor_profitCrit [nobr]
 
+<<if $g.slave.isMale()>>
+<<else>>
+  <<questimage 'rescue_for_profit_female.jpg'>>
+<</if>>
+
 <p>
 Led by <<rep $g.infiltrator1>>, your slavers <<uadv $g.infiltrator1>>
 sneaked into the orc's encampment. The place was covered in a
