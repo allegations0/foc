@@ -91,7 +91,10 @@ setup.DOM.Menu.unitdebug = function (unit) {
 
   fragments.push(setup.DOM.Menu.debugfriendship(unit))
 
-  const unit_identifier = `$unit[${unit.key}]`
+  let unit_identifier = `$unit[${unit.key}]`
+  if (unit.isYou()) {
+    unit_identifier = `$unit.player`
+  }
 
   {
     fragments.push(html`
