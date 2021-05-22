@@ -212,7 +212,7 @@ mlang_merchantrevenge_caravancount = How many caravans successfully raided
         <<elseif $gQuest.getSeed() % 10 == 9>>
             <<set _ship = "the Serpant's Wing">>
         <</if>>
-        _ship. If the winds remain good, you should be be able to intercept them. Given the difficulty of this venture, a larger than normal bonus will apply should you be successful in preventing the shipment from arriving in Lucgate.
+        _ship. If the winds remain good, you should be able to intercept them. Given the difficulty of this venture, a larger than normal bonus will apply should you be successful in preventing the shipment from arriving in Lucgate.
     </p>
 </div>
 
@@ -463,7 +463,7 @@ It takes just over a week for your hired ship to make it to
 
         <<if $gOutcome == 'crit'>>
             <p>
-                Your ship's captain proved to be worth every every coin, as he skillfully steered through the choppy seas, bearing down upon _ship. You heard shouts of alarm as your slavers and your ship's crew unleashed a volley of arrows at the merchant's vessel, and it turned to flee. You weren't sure what caused the coil of rope to unspool, but you distinctly saw a trailing rope drop into the sea just before the sail yanked uselessly into the wrong position, turning the prow into the wind. A great wave caught _ship and pushed it into a group of jagged rocks. The sound of wood cracking and the cries of sailors being thrown into the sea blew back on the wind as pieces of _ship fall to the bottom of the sea.
+                Your ship's captain proved to be worth every coin, as he skillfully steered through the choppy seas, bearing down upon _ship. You heard shouts of alarm as your slavers and your ship's crew unleashed a volley of arrows at the merchant's vessel, and it turned to flee. You weren't sure what caused the coil of rope to unspool, but you distinctly saw a trailing rope drop into the sea just before the sail yanked uselessly into the wrong position, turning the prow into the wind. A great wave caught _ship and pushed it into a group of jagged rocks. The sound of wood cracking and the cries of sailors being thrown into the sea blew back on the wind as pieces of _ship fall to the bottom of the sea.
             </p>
             <p>
                 While you lost the cargo, you did scoop a single survivor out of the sea, and <<they $g.slaves>> is now awaiting your attention in the slave pens.
@@ -471,7 +471,7 @@ It takes just over a week for your hired ship to make it to
 
         <<elseif $gOutcome == 'success'>>
             <p>
-                Your ship's captain proved to be worth every every coin, as he skillfully steered through the choppy seas, bearing down upon _ship. You heard shouts of alarm as your slavers and your ship's crew unleashed a volley of arrows at the merchant's vessel, and it turned to flee. You weren't sure what caused the coil of rope to unspool, but you distinctly saw a trailing rope drop into the sea just before the sail yanked uselessly into the wrong position, turning the prow into the wind. A great wave caught _ship and pushed it into a group of jagged rocks. The sound of wood cracking and the cries of sailors being thrown into the sea blew back on the wind as pieces of _ship fall to the bottom of the sea.
+                Your ship's captain proved to be worth every coin, as he skillfully steered through the choppy seas, bearing down upon _ship. You heard shouts of alarm as your slavers and your ship's crew unleashed a volley of arrows at the merchant's vessel, and it turned to flee. You weren't sure what caused the coil of rope to unspool, but you distinctly saw a trailing rope drop into the sea just before the sail yanked uselessly into the wrong position, turning the prow into the wind. A great wave caught _ship and pushed it into a group of jagged rocks. The sound of wood cracking and the cries of sailors being thrown into the sea blew back on the wind as pieces of _ship fall to the bottom of the sea.
             </p>
 
         <<elseif $gOutcome == 'failure'>>
@@ -480,7 +480,7 @@ It takes just over a week for your hired ship to make it to
             </p>
         <<elseif $gOutcome == 'disaster'>>
             <p>
-                Your ship's captain proved to be worth every every coin, as he skillfully steered through the choppy seas, bearing down upon _ship. You heard shouts of alarm as your slavers and your ship's crew unleashed a volley of arrows at the merchant's vessel. <<rep $g.fighter>> led the assault on the ship itself, which proved to be a terrible idea. The crew of _ship turned out to be seasoned fighters, and the boarding party was swiftly repelled.
+                Your ship's captain proved to be worth every coin, as he skillfully steered through the choppy seas, bearing down upon _ship. You heard shouts of alarm as your slavers and your ship's crew unleashed a volley of arrows at the merchant's vessel. <<rep $g.fighter>> led the assault on the ship itself, which proved to be a terrible idea. The crew of _ship turned out to be seasoned fighters, and the boarding party was swiftly repelled.
 
                 <<if $gQuest.getSeed() % 2 == 0>>
                     <<name _o1>> fell into the rough seas as <<they _o1>> attempted to leap back onto your ship, and were left behind as your captain broke away lest you find yourselves boarded and taken as chattel. You can only hope that <<they _o1>> survived and you might find them again later.
@@ -794,7 +794,7 @@ It takes just over a week for your hired ship to make it to
 
         <<if $gOutcome == 'crit'>>
             <p>
-                The hired ship's captain proved to be worth every every coin, as he skillfully steered through the choppy seas, bearing down upon _ship. Your slavers heard shouts of alarm as they unleashed a volley of arrows at the merchant's vessel, which turned to flee. <<name $g.scout>> wasn't sure what caused the coil of rope to unspool, but <<they $g.scout>> distinctly saw a trailing rope drop into the sea just before the sail yanked uselessly into the wrong position, turning the prow into the wind. A great wave caught _ship and pushed it into a group of jagged rocks. The sound of wood cracking and the cries of sailors being thrown into the sea blew back on the wind as pieces of _ship fall to the bottom of the sea.
+                The hired ship's captain proved to be worth every coin, as he skillfully steered through the choppy seas, bearing down upon _ship. Your slavers heard shouts of alarm as they unleashed a volley of arrows at the merchant's vessel, which turned to flee. <<name $g.scout>> wasn't sure what caused the coil of rope to unspool, but <<they $g.scout>> distinctly saw a trailing rope drop into the sea just before the sail yanked uselessly into the wrong position, turning the prow into the wind. A great wave caught _ship and pushed it into a group of jagged rocks. The sound of wood cracking and the cries of sailors being thrown into the sea blew back on the wind as pieces of _ship fall to the bottom of the sea.
             </p>
             <p>
                 While they lost the cargo, your slavers did scoop a single survivor out of the sea, and <<they $g.slaves>> is now awaiting your attention in the slave pens.
@@ -802,7 +802,7 @@ It takes just over a week for your hired ship to make it to
 
         <<elseif $gOutcome == 'success'>>
             <p>
-                The hired ship's captain proved to be worth every every coin, as he skillfully steered through the choppy seas, bearing down upon _ship. Your slavers heard shouts of alarm as they unleashed a volley of arrows at the merchant's vessel, which turned to flee. <<name $g.scout>> wasn't sure what caused the coil of rope to unspool, but <<they $g.scout>> distinctly saw a trailing rope drop into the sea just before the sail yanked uselessly into the wrong position, turning the prow into the wind. A great wave caught _ship and pushed it into a group of jagged rocks. The sound of wood cracking and the cries of sailors being thrown into the sea blew back on the wind as pieces of _ship fall to the bottom of the sea.
+                The hired ship's captain proved to be worth every coin, as he skillfully steered through the choppy seas, bearing down upon _ship. Your slavers heard shouts of alarm as they unleashed a volley of arrows at the merchant's vessel, which turned to flee. <<name $g.scout>> wasn't sure what caused the coil of rope to unspool, but <<they $g.scout>> distinctly saw a trailing rope drop into the sea just before the sail yanked uselessly into the wrong position, turning the prow into the wind. A great wave caught _ship and pushed it into a group of jagged rocks. The sound of wood cracking and the cries of sailors being thrown into the sea blew back on the wind as pieces of _ship fall to the bottom of the sea.
             </p>
 
         <<elseif $gOutcome == 'failure'>>
@@ -811,7 +811,7 @@ It takes just over a week for your hired ship to make it to
             </p>
         <<elseif $gOutcome == 'disaster'>>
             <p>
-                The hired ship's captain proved to be worth every every coin, as he skillfully steered through the choppy seas, bearing down upon _ship. Your slavers heard shouts of alarm as they unleashed a volley of arrows at the merchant's vessel. <<rep $g.fighter>> led the assault on the ship itself, which proved to be a terrible idea. The crew of _ship turned out to be seasoned fighters, and your boarding party was swiftly repelled.
+                The hired ship's captain proved to be worth every coin, as he skillfully steered through the choppy seas, bearing down upon _ship. Your slavers heard shouts of alarm as they unleashed a volley of arrows at the merchant's vessel. <<rep $g.fighter>> led the assault on the ship itself, which proved to be a terrible idea. The crew of _ship turned out to be seasoned fighters, and your boarding party was swiftly repelled.
             </p>
             <<if $gQuest.getSeed() % 3 == 0>>
                 <p>
