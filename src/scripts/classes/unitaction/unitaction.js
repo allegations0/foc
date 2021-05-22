@@ -154,8 +154,8 @@ setup.UnitAction = class UnitAction extends setup.TwineClass {
         return false
       }
       if (restriction instanceof setup.qresImpl.NoTrait &&
-          restriction.trait_key == setup.trait.training_mindbreak.key &&
-          !restriction.isOk(unit)) {
+        restriction.trait_key == setup.trait.training_mindbreak.key &&
+        !restriction.isOk(unit)) {
         return false
       }
     }
