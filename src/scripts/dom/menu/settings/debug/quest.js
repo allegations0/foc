@@ -3,12 +3,12 @@ import { IMPORTABLE } from "../settings"
 import { debug_do_one_finalize, debug_do_one_title, debug_frontpage_title } from "./common"
 
 /**
- * @param {setup.QuestTemplate | setup.OpportunityTemplate} template 
+ * @param {setup.QuestTemplate | setup.OpportunityTemplate | setup.Event} template 
  * @returns {setup.DOM.Node}
  */
 export function is_scoutable_link(template) {
   return setup.DOM.Util.message(
-    `(is scout-able)`,
+    (template instanceof setup.Event) ? "(is trigger-able)" : "(is scout-able)",
     () => {
       const reason = []
       if (State.variables.settings.isBanned(template.getTags())) {
@@ -16,7 +16,13 @@ export function is_scoutable_link(template) {
         Contains some ${setup.DOM.Text.danger('banned')} fetish tags.
       </div>`)
       }
-      for (const req of template.getPrerequisites()) {
+      let prereq
+      if (template instanceof setup.Event) {
+        prereq = template.getRequirements()
+      } else {
+        prereq = template.getPrerequisites()
+      }
+      for (const req of prereq) {
         if (!req.isOk(template)) {
           reason.push(html`<div>
           Restriction ${setup.DOM.Text.danger('missing')}: ${req.explain(template)}

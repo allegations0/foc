@@ -60,7 +60,9 @@ Check all the tags that you want to <<dangertext 'ban'>>:
 
 <p>
 You can <<message 'change other game settings too.'>>
+<div class='helpcard'>
   <<include 'SettingsBase'>>
+  </div>
 <</message>>
 </p>
 

@@ -175,7 +175,7 @@ setup.Event = class Event extends ContentTemplate {
    * Whether this event can be triggered right now.
    * @returns {boolean}
    */
-  isCanTrigger() {
+  isCanGenerate() {
     if (State.variables.settings.isBanned(this.getTags())) return false
 
     if (!setup.RestrictionLib.isPrerequisitesSatisfied(this, this.getRequirements())) return false

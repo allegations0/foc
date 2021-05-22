@@ -267,6 +267,43 @@ Other common example includes:
 
 </details>
 
+<details>
+<summary markdown="span">Inline Effect for losing unit inside text</summary>
+
+This differs depending on how you want the unit to disappear.
+
+# Unit disappears, but can be rescued with a Rescuer:
+
+```
+<<run setup.qc.MissingUnit('abc').apply($gQuest)>>
+```
+
+# Unit disappears FOREVER, use with caution!
+
+```
+<<run setup.qc.MissingUnitForever('abc').apply($gQuest)>>
+```
+
+# Unit disappears, but can be IMMEDIATELY rescued:
+
+For a SLAVER `$g.abc`, you do one of these depending on easy/medium/hard:
+
+```
+<<run setup.qc.MissingUnitRecapture('abc', 'capturedeasy').apply($gQuest)>>
+<<run setup.qc.MissingUnitRecapture('abc', 'capturedmedium').apply($gQuest)>>
+<<run setup.qc.MissingUnitRecapture('abc', 'capturedhard').apply($gQuest)>>
+```
+
+For a SLAVE `$g.abc` it's slightly different:
+
+```
+<<run setup.qc.MissingUnitRecapture('abc', 'escapeeasy').apply($gQuest)>>
+<<run setup.qc.MissingUnitRecapture('abc', 'escapemedium').apply($gQuest)>>
+<<run setup.qc.MissingUnitRecapture('abc', 'escapehard').apply($gQuest)>>
+```
+
+</details>
+
 ## Not in Toolbar
 
 <details>

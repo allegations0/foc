@@ -30,7 +30,7 @@ fi
 if [ "$debug" = "deployitch" ]; then
   cp dev/itch_io.twee project/twee
 else
-  rm project/twee/itch_io.twee
+  rm -f project/twee/itch_io.twee || true
 fi
 
 if ! [ "$debug" = "sanity" ]; then
@@ -172,7 +172,7 @@ if ! [ "$debug" = "sanity" ]; then
 
     echo "[DEPLOY] Cleanup..." > $output
     rm -r deploy/
-    rm project/twee/itch_io.twee
+    rm -f project/twee/itch_io.twee || true
   fi
 
 fi

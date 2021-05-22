@@ -4,6 +4,25 @@
 
 ### v1.6.5.x
 
+v1.6.5.4:
+
+  - Fix isHasTrait broken when the trait is null.
+
+v1.6.5.3:
+
+  - New quest: Test of Aid
+  - New quest: Test of Slaving
+  - New event: Heavenly Recruit
+
+v1.6.5.2:
+
+  - Add Settings to Content Creator
+
+v1.6.5.1:
+
+  - Fix error opening settings in a new game.
+  - Removed stray yesevanone folder
+
 v1.6.5.0:
 
   - New activity: Marketer Marketing

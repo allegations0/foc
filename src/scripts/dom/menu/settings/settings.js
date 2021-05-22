@@ -25,19 +25,23 @@ function checkbox({ title, field, help }) {
 setup.DOM.Menu.settingsbase = function () {
   const fragments = []
 
-  fragments.push(html`
-    <div>
-      Auto-save every
-      ${twee`<<numberbox '$settings.autosave_interval' $settings.autosave_interval>>`}
-      weeks
-      ${setup.DOM.Util.help(html`
-        The game will auto-save every this many weeks.
-        Put 0 to never auto-save, and 1 to auto-save every week.
-        Larger number will make the end-of-week processing faster.
-      `
-  )}
-    </div>
-  `)
+  const is_devtool = State.variables.devtooltype
+
+  if (!is_devtool) {
+    fragments.push(html`
+      <div>
+        Auto-save every
+        ${twee`<<numberbox '$settings.autosave_interval' $settings.autosave_interval>>`}
+        weeks
+        ${setup.DOM.Util.help(html`
+          The game will auto-save every this many weeks.
+          Put 0 to never auto-save, and 1 to auto-save every week.
+          Larger number will make the end-of-week processing faster.
+        `
+    )}
+      </div>
+    `)
+  }
 
   fragments.push(
     html`
@@ -84,8 +88,7 @@ setup.DOM.Menu.settingsbase = function () {
       title: `Show unit icons in text`,
       field: `inline_icon`,
       help: html`
-        If checked, icons will be shown next to units and equipments in texts, like this: ${State.variables.unit.player.repFull()}.
-        Otherwise, it wills how like this: ${State.variables.unit.player.repShort()}.
+        If checked, icons will be shown next to units and equipments in texts.
       `
     }),
     checkbox({
@@ -197,37 +200,38 @@ setup.DOM.Menu.settingsbase = function () {
     }
   }
 
+  if (!is_devtool) {
+    fragments.push(html`
+      <div>
+        ${setup.DOM.Util.message(
+      `(EXPERIMENTAL)`,
+      html`
+            <div class='helpcard'>
+              <div>
+                ${setup.DOM.Text.danger('WARNING')}:
+                Settings under EXPERIMENTAL are either
+                ${setup.DOM.Text.dangerlite('NO BALANCED')}
+                or cause
+                ${setup.DOM.Text.dangerlite('TEXT ISSUES')},
+                and it is recommended to turn all these settings off,
+                at least on your first playthrough.
+                However, feel free to turn on these settings if you feel particularly adventurous
+                or masochistic.
+              </div>
 
-  fragments.push(html`
-    <div>
-      ${setup.DOM.Util.message(
-    `(EXPERIMENTAL)`,
-    html`
-          <div class='helpcard'>
-            <div>
-              ${setup.DOM.Text.danger('WARNING')}:
-              Settings under EXPERIMENTAL are either
-              ${setup.DOM.Text.dangerlite('NO BALANCED')}
-              or cause
-              ${setup.DOM.Text.dangerlite('TEXT ISSUES')},
-              and it is recommended to turn all these settings off,
-              at least on your first playthrough.
-              However, feel free to turn on these settings if you feel particularly adventurous
-              or masochistic.
+              <hr/>
+
+              <div>
+                <b>Difficulty</b>: ${settings.getDifficultyHumanReadable()}
+                ${set_difficulty(false)}
+                ${setup.DOM.create('span', {}, Object.keys(setup.Settings.DIFFICULTIES).map(diff => set_difficulty(diff)))}
+              </div>
             </div>
-
-            <hr/>
-
-            <div>
-              <b>Difficulty</b>: ${settings.getDifficultyHumanReadable()}
-              ${set_difficulty(false)}
-              ${setup.DOM.create('span', {}, Object.keys(setup.Settings.DIFFICULTIES).map(diff => set_difficulty(diff)))}
-            </div>
-          </div>
-        `
-  )}
-    </div>
-  `)
+          `
+    )}
+      </div>
+    `)
+  }
 
   return setup.DOM.create('div', {}, fragments)
 }

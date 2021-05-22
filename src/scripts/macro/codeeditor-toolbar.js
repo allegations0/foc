@@ -647,6 +647,12 @@ const ACTOR_MACROS_IFS = [
 const ACTOR_MACROS_INLINE_EFFECT = [
   {
     replace: true,
+    text: 'Injure',
+    tooltip: `Injures actor. Change the injury duration by changing the number inside "setup.qc.Injury()"`,
+    output: (key) => `<<run setup.qc.Injury('${key}', 1).apply($gQuest)>>`,
+  },
+  {
+    replace: true,
     text: 'Traumatize',
     tooltip: `Traumatize actor. Change the duration by changing the number inside "setup.qc.TraumatizeRandom()"`,
     output: (key) => `<<run setup.qc.TraumatizeRandom('${key}', 5).apply($gQuest)>>`,

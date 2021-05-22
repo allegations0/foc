@@ -246,3 +246,32 @@
   },
   )>>
 
+<<run new setup.Equipment(
+  'aid_weapon_master',
+  "Staff of Pain",
+  setup.equipmentslot.weapon,
+  ['legendary', ],
+  setup.EQUIPMENT_PRICE_MASTER, /* value */
+  0, /* sluttines */
+  {
+    aid: setup.EQUIPMENT_STAT_BOOST_MASTER,
+    survival: -setup.EQUIPMENT_STAT_BOOST_MASTER,
+  },
+  { /* traits */
+    per_masochistic: 1,
+  },
+  [  /* unit restrictions */
+    setup.qres.Job(setup.job.slaver),
+    setup.qres.SkillAtLeast(setup.skill.aid, setup.EQUIPMENT_WEAPON_MASTER_MIN_SKILL),
+  ],
+  { image: 'weapon_staff_master' },
+  {
+    description: 'A staff designed for maximum pain instead of healing. ' +
+    'It is enchanted with the masochism enchantment, transforming its wielder into the perfect embodiment of a heal slut.',
+    flavor: "The Staff of Pain transforms the wielder into a masochist, " +
+    "regardless of their usual sexual preference, " +
+    "molding them into the perfect husk of a devoted heal slut",
+  },
+)>>
+
+
