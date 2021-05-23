@@ -2,7 +2,16 @@
 
 
 
-
+<<run new setup.UnitGroup(
+"quest_merchant_s_bandit_1",
+"Residents of the City of Lucgate: All gender",
+'city_all', /* pools */
+0, /* reuse chance */
+[ /* unit post process */
+  setup.qc.BgTraitReset('unit', setup.trait.bg_raider),
+  setup.qc.AddTitle('bandit', 'quest_merchant_s_bandit_0'),
+],
+)>>
 
 <<set _criteriainfiltrator = new setup.UnitCriteria(
 null, /* key */
@@ -59,7 +68,7 @@ setup.QUEST_DEFAULT_EXPIRATION, /* expiration weeks */
   'lookout': [ setup.qu.explorer, 0.75],
 },
 { /* actors */
-  'bandit': 'vale_all',
+  'bandit': 'quest_merchant_s_bandit_1',
   'mlangmerchantprince': 'a_merchant_s_revenge1',
 },
 [ /* costs */
@@ -81,7 +90,7 @@ setup.qdiff.harder36, /* difficulty */
     'Quest_a_merchant_s_revenge_the_search_continuesCrit',
     [
       setup.qc.MoneyCustom(1000),
-      setup.qc.Favor('humankingdom', 75),
+      setup.qc.Favor('humankingdom', 20),
     ],
   ],
   [

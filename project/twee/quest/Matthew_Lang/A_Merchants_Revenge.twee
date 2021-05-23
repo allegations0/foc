@@ -1,5 +1,27 @@
 :: QuestSetup_a_merchant_s_revenge2 [nobr quest]
 
+<<run new setup.Title(
+"quest_merchant_s_bandit_0", /* key */
+"Merchant\'s Bandit", /* name */
+"Former bandit leader of special interest to a certain Toran merchant", /* description */
+"a|was a bandit leader hired to attack a certain Toran merchant\'s caravans", /* unit text */
+500, /* slave value */
+{ /* skill additives */
+},
+)
+>>
+
+<<run new setup.UnitGroup(
+"merchantbandit",
+"Residents of the City of Lucgate: All gender",
+'city_all', /* pools */
+0, /* reuse chance */
+[ /* unit post process */
+  setup.qc.BgTraitReset('unit', setup.trait.bg_raider),
+  setup.qc.AddTitle('bandit', 'quest_merchant_s_bandit_0'),
+],
+)>>
+
 <<run new setup.UnitGroup(
 "a_merchant_s_revenge1",
 "Merchant Prince",
@@ -71,7 +93,7 @@ setup.QUEST_DEFAULT_EXPIRATION, /* expiration weeks */
   'lookout': [ setup.qu.explorer, 0.75],
 },
 { /* actors */
-  'bandit': 'vale_all',
+  'bandit': 'merchantbandit',
   'mlangmerchantprince': 'a_merchant_s_revenge1',
 },
 [ /* costs */
@@ -85,7 +107,7 @@ setup.qdiff.harder35, /* difficulty */
       setup.qc.Slave('bandit', "a|was a bandit, formally raiding merchant caravans from the Kingdom of Tor", undefined),
       setup.qc.Outcomes("success"),
       setup.qc.SlaverMarker('mlangmerchantprince'),
-      setup.qc.MoneyCustom(2500),
+      setup.qc.MoneyCustom(2000),
       setup.qc.VarSet('mlangmerchantprincequest', '2', -1),
     ],
   ],
@@ -93,7 +115,7 @@ setup.qdiff.harder35, /* difficulty */
     'Quest_a_merchant_s_revenge2Crit',
     [
       setup.qc.MoneyCustom(1000),
-      setup.qc.Favor('humankingdom', 100),
+      setup.qc.Favor('humankingdom', 20),
       setup.qc.VarSet('mlangmerchantprincequest', '1', -1),
     ],
   ],
