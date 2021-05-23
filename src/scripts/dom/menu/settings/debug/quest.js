@@ -83,6 +83,7 @@ setup.DOM.Menu.Settings.Debug.quest = function () {
           if (!result) {
             alert('No valid instantiation found')
           } else {
+            State.variables.gPassage = 'QuestHub'
             setup.runSugarCubeCommand(`<<goto "QuestHub">>`)
           }
         })}
@@ -91,6 +92,7 @@ setup.DOM.Menu.Settings.Debug.quest = function () {
           () => {
             const quest = template.debugMakeInstance()
             State.variables.company.player.addQuest(quest)
+            State.variables.gPassage = 'QuestHub'
             setup.runSugarCubeCommand(`<<goto "QuestHub">>`)
           })}
         ${setup.DOM.Nav.link(

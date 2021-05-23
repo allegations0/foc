@@ -37,6 +37,7 @@ setup.DOM.Menu.Settings.Debug.activity = function () {
           if (template.isCanGenerateFor(unit)) {
             const instance = template.makeInstance(unit)
             if (instance) {
+              State.variables.gPassage = 'FortGrid'
               return setup.DOM.Nav.goto('FortGrid')
             }
           }

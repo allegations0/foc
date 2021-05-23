@@ -4,6 +4,8 @@
   <<set $gPassage = 'QuestHub'>>
 <</if>>
 
+<<set $gOldPassage = null>>
+
 <div id='allcontainer'>
   <<include $gPassage>>
 </div>

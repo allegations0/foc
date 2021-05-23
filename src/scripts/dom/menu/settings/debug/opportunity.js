@@ -24,6 +24,7 @@ setup.DOM.Menu.Settings.Debug.opportunity = function () {
       () => {
         const opp = setup.QuestPool.instantiateOpportunity(template)
         if (opp) {
+          State.variables.gPassage = 'OpportunityList'
           setup.runSugarCubeCommand(`<<goto "OpportunityList">>`)
         } else {
           alert('No valid instantiation found')

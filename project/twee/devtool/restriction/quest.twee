@@ -59,10 +59,15 @@ Do NOT currently have the following opportunity: <br/>
 <<gotowipehistory 'QGRestrictionDone'>>
 
 
+:: RestrictionQuestDoneSelf [nobr]
+
+<<set $qrestriction = setup.qres.QuestDone(null)>>
+<<include 'QGRestrictionDone'>>
+
 
 :: RestrictionQuestDone [nobr]
 
-Must have successfully completed this quest: <br/>
+Must have successfully or critical successfully completed this quest: <br/>
 
 <<devchoosequest 'RestrictionQuestDoneDo'>>
 
