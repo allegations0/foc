@@ -120,11 +120,7 @@
     <<loadmenu>>
   <</replace>>
 
-  <<timed 0s>>
-    <<replace "#menurightdata">>
-      <<include 'RenderRightSidebar'>>
-    <</replace>>
-  <</timed>>
+  <<run setup.DOM.Menu.refreshRightSidebar()>>
 <</focwidget>>
 
 <span id='menutopdata'>
@@ -137,23 +133,8 @@
 
 <div id='menurightdata'>
   <<timed 0s>>
-    <<include 'RenderRightSidebar'>>
+    <<set _dom = setup.DOM.Menu.rightsidebar()>>
+    <<attach _dom>>
   <</timed>>
 </div>
 
-
-:: RenderRightSidebar [nobr]
-
-<div class='tagtoolbarsticky'>
-  <<set _dom = setup.DOM.Menu.quicklistmenu()>>
-  <<attach _dom>>
-</div>
-
-<<if $settings.rightsidebar == 'quest'>>
-  <<set _dom = setup.DOM.Menu.questquicklist()>>
-<<elseif $settings.rightsidebar == 'slaveorder'>>
-  <<set _dom = setup.DOM.Menu.slaveorderquicklist()>>
-<<else>>
-  <<set _dom = setup.DOM.Menu.unitquicklist()>>
-<</if>>
-<<attach _dom>>
