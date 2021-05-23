@@ -4,6 +4,13 @@
 
 ### v1.6.5.x
 
+v1.6.5.7:
+
+  - Added backwards compatibility support for quests whose property changed
+  - Fix anytrait: '' instead of anytrait: []
+  - Fix missing location tags for some new quests.
+  - Fix top left link disappearing when clicking tab in right sidebar. Right sidebar to DOM
+
 v1.6.5.6:
 
   - New quest: Noises in the Cellar (by Matthew Lang)
