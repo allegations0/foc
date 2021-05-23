@@ -483,3 +483,9 @@ Macro.add(`ubusyshort`, {
     internalOutputUnitTarget(this.output, setup.Text.Greeting.busyshort, this.args[0], this.args[1]);
   }
 });
+
+Macro.add(`uyesmaster`, {
+  handler() {
+    internalOutputUnitTarget(this.output, setup.Text.Slave.yesmaster, this.args[0], this.args[1]);
+  }
+});

@@ -550,7 +550,7 @@ Hey boss
   {
     text: 'Hey boss, how are you?',
     output: (key) => `<<ugreetingfull ${key}>>`,
-    tooltip: 'Returns a full sentence describing an actor greeting you.',
+    tooltip: 'Returns a full sentence describing an actor greeting you. Can alternatively receive two parameters, where the second parameter is the master.',
   },
   {
     text: 'Hey boss, sorry a bit busy right now',
@@ -570,6 +570,11 @@ Hey boss
 ]
 
 const ACTOR_MACROS_DIALOGUE_SLAVE = [
+  {
+    text: 'Yes, master.',
+    output: (key) => `<<uyesmaster ${key}>>`,
+    tooltip: 'Returns a full sentence describing an slave obeying their master.',
+  },
   {
     text: 'Yelp...! (pet whine)',
     output: (key) => `<<upetwhine ${key}>>`,
