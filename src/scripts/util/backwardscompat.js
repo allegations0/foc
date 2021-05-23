@@ -109,7 +109,7 @@ setup.BackwardsCompat.upgradeSave = function (sv) {
       'recreationwingfuckholes',
       'recreationwingdining',
       'bar',
-      'roleplaytrainingroom',
+      'edgingtrainingroom',
     ]
     if ('fort' in sv) {
       for (const rm of removed_buildings) {
@@ -131,7 +131,7 @@ setup.BackwardsCompat.upgradeSave = function (sv) {
       'recreationwingpet',
       'recreationwingscenery',
       'bar',
-      'roleplaytrainingroom',
+      'edgingtrainingroom',
     ]
     if (sv.roominstance) {
       for (const key of Object.keys(sv.roominstance)) {
@@ -142,6 +142,25 @@ setup.BackwardsCompat.upgradeSave = function (sv) {
         if (removed_rooms.includes(inst.template_key)) {
           console.log(`Removing room ${inst.template_key}...`)
           delete sv.roominstance[key]
+        }
+      }
+    }
+
+    /* quests that gain additional actor */
+    const quest_change = [
+      ['damsel_in_distress_save', [1, 6, 5, 6]],
+    ]
+    if (sv.questinstance) {
+      for (const [template_key, version] of quest_change) {
+        if (isOlderThan(saveVersion.map(a => +a), version)) {
+          const keys = Object.keys(sv.questinstance).filter(key => sv.questinstance[key].quest_template_key == template_key)
+          if (keys.length) {
+            console.log(`Removing quest ${template_key}`)
+            for (const ikey of keys) {
+              delete sv.questinstance[ikey]
+            }
+            sv.company.player.quest_keys = sv.company.player.quest_keys.filter(k => !keys.includes(k.toString()))
+          }
         }
       }
     }
