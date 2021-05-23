@@ -19,6 +19,7 @@
 [ /* unit post process */
   setup.qc.BgTraitReset('unit', setup.trait.bg_raider),
   setup.qc.AddTitle('unit', 'quest_merchant_s_bandit_0'),
+
 ],
 )>>
 
@@ -109,7 +110,6 @@ setup.qdiff.harder35, /* difficulty */
       setup.qc.SlaverMarker('mlangmerchantprince'),
       setup.qc.MoneyCustom(2000),
       setup.qc.VarSet('mlangmerchantprincequest', '2', -1),
-      setup.qc.AddTitle('bandit', 'quest_merchant_s_bandit_0'),	  
     ],
   ],
   [
