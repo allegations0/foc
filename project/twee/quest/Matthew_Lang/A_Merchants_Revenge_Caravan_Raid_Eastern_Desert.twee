@@ -802,7 +802,7 @@ After studying the map carefully,
 
             <<else>>
 
-                <<set _unit = setup.selectUnit([$g.scout, $g.fighter, $g.raider], {anytrait: 'magic_fire', 'magic_fire_master'})>>
+                <<set _unit = setup.selectUnit([$g.scout, $g.fighter, $g.raider], {anytrait: ['magic_fire', 'magic_fire_master']})>>
                 <<if _unit>>
                     <p>
                         <<name _unit>> let them get almost to the top before <<they _unit>> drew flames from the coals of the firepit and directed them down onto the caravan, even as everyone else started dropping pots of pitch and tar, causing gouts of flame when <<name _unit>>'s magic met the flammable substances. Many chose to jump rather than stay within range of the magic and if you close your eyes you can still hear them, and smell the stomach churning stench of scorched flesh.
@@ -972,7 +972,7 @@ After studying the map carefully,
                         <<if _flyer>>
                             , but <<name _flyer>> was able to swoop down and catch <<them $g.scout>>, although they landed far down the mountainside in a tumble of arms and legs. Meanwhile, the caravan moved on, unimpeded by the ambush, and leaving all three of your slavers badly injured.
                         <<else>>
-                            <<set _mage = setup.selectUnit([$g.fighter, $g.raider], {anytrait: 'magic_wind', 'magic_wind_master'})>>
+                            <<set _mage = setup.selectUnit([$g.fighter, $g.raider], {anytrait: ['magic_wind', 'magic_wind_master']})>>
                             <<if _mage>>
                                 . <<name _mage>> summoned air currents to bring <<them $g.scout>> back to safe ground, but the magic went awry when <<name _mage>> was knocked unconscious. It took reinforcements from the fort the better part of a day to find them all, and recovery is going to take some time. Possibly a lot of it.
                                 <<run setup.qc.Injury('scout', 24).apply ($gQuest)>>
