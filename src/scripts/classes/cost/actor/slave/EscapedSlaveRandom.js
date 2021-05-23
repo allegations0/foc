@@ -1,4 +1,3 @@
-
 // one of your non-busy slave escaped.
 setup.qcImpl.EscapedSlaveRandom = class EscapedSlaveRandom extends setup.Cost {
   constructor() {
@@ -6,20 +5,12 @@ setup.qcImpl.EscapedSlaveRandom = class EscapedSlaveRandom extends setup.Cost {
 
   }
 
-  static NAME = 'A random slave escaped'
-  static PASSAGE = 'CostEscapedSlaveRandom'
-
   text() {
     return `setup.qc.EscapedSlaveRandom()`
   }
 
-
-  isOk(quest) {
-    throw new Error(`Reward only`)
-  }
-
   apply(quest) {
-    var slaves = State.variables.company.player.getUnits({job: setup.job.slave, available: true})
+    var slaves = State.variables.company.player.getUnits({ job: setup.job.slave, available: true })
     if (!slaves.length) return  // nobody can escape.
     var escaped = setup.rng.choice(slaves)
 
@@ -27,11 +18,7 @@ setup.qcImpl.EscapedSlaveRandom = class EscapedSlaveRandom extends setup.Cost {
 
     escaped.addHistory('escaped from your company.', quest)
     State.variables.company.player.removeUnit(escaped)
-    setup.unitgroup.escapedslaves.addUnit(escaped)
-  }
-
-  undoApply(quest) {
-    throw new Error(`Cannot be undone`)
+    setup.unitgroup.missingslaves.addUnit(escaped)
   }
 
   explain(quest) {
