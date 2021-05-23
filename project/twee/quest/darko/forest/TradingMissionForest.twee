@@ -22,7 +22,7 @@
 
 <<run new setup.QuestTemplate(
   'trading_mission_forest', /* key */
-  'Trading Mission: Forest', /* Title */
+  'Trading Mission: Elven Forests', /* Title */
   'darko',   /* author */
   ['forest', 'money'],  /* tags */
   1,  /* weeks */
@@ -77,19 +77,9 @@
 :: QuestTradingMissionForest [nobr]
 
 <p>
-Some settlements in the <<lore region_forest>>
-do not always have good relationship with the <<rep $company.humankingdom>>.
-This makes their trading situation somewhat awkward, as the forests they reside in are lacking in
-some critical materials such as bronze and iron.
-These settlements often request trade caravans from faraway land, and would compensate them greatly
-should the caravan managed to survive the dangers of the land and arrived unscathed.
-</p>
-
-<p>
-There is money to be made here, if you are willing to act as a mediator. Buy some iron from the city
-and sell them to the forest settlements.
-This would definitely net your company a tidy profit, if you are willing to risk
-exposing your slavers to whatever monsters residing in the forests...
+Relations between the elves of the <<lore region_forest>> and the <<rep $company.humankingdom>> aren't always amiable.
+The exact border between their lands is often not respected, and border raids are common from both sides.
+What trade there is is sporadic, and often goes through Neko Port City, the catkin are known to charge very large markups when selling to their one time enemies. Given all of that, there is an opportunity to bring in key supplies, like bronze, iron and other forged metals yourself. As long as you undercut the prices charged by the catkin, you'll likely come out ahead. Assuming you manage to avoid the dangers of the forest.
 </p>
 
 
@@ -98,22 +88,18 @@ exposing your slavers to whatever monsters residing in the forests...
 <p>
 <<Yourrep $g.trader1>> and <<utheirrel $g.trader1 $g.trader2>> <<rep $g.trader2>> managed to
 <<uadv $g.trader1>>
-find a very cheap supplier of iron in the <<lore region_city>>.
+find a supplier of iron in the <<lore region_city>>.
 <<set _con = setup.selectUnit([$g.trader1, $g.trader2], {trait: 'skill_connected'})>>
 <<set _fru = setup.selectUnit([$g.trader1, $g.trader2], {trait: 'per_frugal'})>>
 <<set _lav = setup.selectUnit([$g.trader1, $g.trader2], {trait: 'per_lavish'})>>
 <<if _con>>
-  Using <<their _con>> connections, <<rep _con>> even managed to bring the price further down.
+  By namedropping a few of <<their _con>> connections, <<rep _con>> negotiated a further discount.
 <<elseif _fru>>
-  <<Reps _fru>> strong affinity to saving money certainly helped find the best deal around.
+  Ever the hard bargainer, <<reps _fru>> spent a lot of time haggling, eventually securing a lower price.
 <<elseif _lav>>
   <<Rep _lav>> might not have found the best deal around, but it was still a very good one.
 <</if>>
-Thanks to the shrewd deal, your slavers
-made a huge amount of profit, more than quadrupling
-the amount of investment they put.
-With such a silly amount of profit, you did not begrudge your slavers at all
-even if they pocketed some of the money for themselves.
+<<name trader1>> shrewdly sold the iron to a number of villages at the edge of the forest, charging slightly less than the Neko traders and getting back around four times as much as they spent to buy the iron in the first place. Even allowing for travel costs, you've ended up with so much profit you don't really care about the amounts your slavers probably skimmed off the top.
 </p>
 
 
@@ -121,39 +107,26 @@ even if they pocketed some of the money for themselves.
 
 <p>
 The trading mission went about as well as expected, with your slavers
-making tidy amount of profit from their shrewd deal-making.
-The only thing of note was their encounter with a particularly nasty shapeshifting monster
-in the forests, who was rumored to often masquerade as an innocent elf.
-But fortunately, <<rep $g.guard>> managed to see through the disguise,
-saving your slavers from a surely horrible fate.
+making tidy amount of profit from their visits to a number of elven villages at the edge of the forest.
+The only thing of note was their encounter with a particularly nasty shapeshifting forest spirit.
+called a Dolukabi by the local elves, it was known to play tricks on forest travellers, sometimes deadly, luring them into danger by taking the form of a lost traveller, or injured animal. Fortunately, <<rep $g.guard>> noticed the distressed elf they encountered had index fingers longer than her middle fingers, a clear giveaway of a Dolubaki in humanoid form, and your slavers ignored their pleas, continuing on their journey and leaving the frustrated spirit behind.
 </p>
 
 
 :: QuestTradingMissionForestFailure [nobr]
 
 <p>
-The roads and trails in the vast <<lore region_forest>> are very much unclearly marked.
-This caused your slavers to get completely lost within, never actually arriving in the
-settlements with the cargo of iron they procured from the city.
-They eventually gave up and returned back to the fort, pawning the iron for whatever
-price they could find.
+The roads and trails in the vast <<lore region_forest>> are not always marked, have a tendancy to get grown over by vegetation, and new game trails can create very confusing intersections. Somewhere along the line, your slavers took a wrong turn, and never found their way back to a known road. When they eventually broke out of the canopy and into the dappled meadows surrounding the forest, they gave up and returned back to the fort, selling the iron to the Toran communities on the way back for whatever price they could get.
 </p>
 
 
 :: QuestTradingMissionForestDisaster [nobr]
 
 <p>
-Your slavers had a close encounter with a creature masquerading as an elf
-who pretended to offering help to guide your slavers to his village.
-But none of the three slavers were able to see through the disguise, and so they
-accepted.
-The creature lured the team into a swamp. To the horror of your slavers,
-the creature reverted into its original form, while grabbing <<reps $g.guard>> unfortunate
-body with its appendages.
-<<Reps $g.guard>> holes were completely ravaged by the creature's
-numerous liquid-absorbing tentacles spawning from the swamp.
-Your other slavers watched in horror as <<reps $g.guard>> holes were ravaged
-over and over again until the creature's appetite was satisfied, who mercifully threw
-<<reps $g.guard>> body aside.
-<<Rep $g.guard>> will need some time to recover from such experience.
+The roads and trails in the vast <<lore region_forest>> are not always marked, have a tendancy to get grown over by vegetation, and new game trails can create very confusing intersections. Somewhere along the line, your slavers took a wrong turn. Just as they were about to despair, they came across a helpful elven hunter who offered to lead them to his village. Grateful for a guide, your slavers accepted, and were soon led deep into the forest, in an area where there were more dried leaves fallen to the ground than there were green leaves on the tree branches. And there was no sign of a village.<br>
+"Where are--" was all that <<name $g.trader1>> was able to get out before tentacles sprouted from what your slavers had taken to be a dead tree stump.<br>
+As the hunter's smile widened unnaturally and him form melted into the clawed, red bearded and green skinned shape of a Dolubaki, your slavers realised the mischevous, shapeshifting forest spirit had brought them itno the lair of a forest abomination, which grabbed <<reps $g.guard>> before anyone could react.
+</p>
+<p>
+<<Reps $g.guard>> holes were completely ravaged by the aberration's tentacles. The others started hacking at the stump, attempting to free <<them $g.guard>> from the monster's grasp as the Dolubaki cackled from the branches overhead. With only one abberation to deal with, they managed to free <<name $g.guard>> eventually, by which time there was no trace of the trickster spirit other than a lingering laugh and the scent of lemon rind. You slavers eventually found their way out of the forest and back to the fort, but <<Rep $g.guard>> will need some time to recover from such experience.
 </p>
