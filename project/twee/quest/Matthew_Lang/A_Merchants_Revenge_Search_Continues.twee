@@ -3,7 +3,7 @@
 
 
 <<run new setup.UnitGroup(
-"merchantbandit",
+"quest_merchant_s_bandit_1",
 "Residents of the City of Lucgate: All gender",
 'city_all', /* pools */
 0, /* reuse chance */
