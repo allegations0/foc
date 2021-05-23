@@ -180,7 +180,7 @@ would no doubt be able to use these facilities to satisfy their client's darkest
 
 <<if $gOutcome == 'crit' or $gOutcome == 'success'>>
 <p>
-To celebrate, your brothel opened its door for free for a day, earning your company much favor from the visiting nekos and elves alike.
+To celebrate, your brothel opened its door for free for a day, earning your company much favor from the visiting neko and elves alike.
 </p>
 <</if>>
 

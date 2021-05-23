@@ -30,6 +30,9 @@ setup.UnitGroup = class UnitGroup extends setup.TwineClass {
     }
 
     this.name = name
+    /**
+     * @type {Array<[string, number]>}
+     */
     this.unitpool_keys = []
     if (setup.isString(unitpools)) {
       // @ts-ignore
@@ -63,6 +66,8 @@ setup.UnitGroup = class UnitGroup extends setup.TwineClass {
     } else {
       setup.unitgroup[this.key] = this
     }
+
+    this.temporary_unit_key = null
   }
 
   /**
@@ -103,7 +108,7 @@ setup.UnitGroup = class UnitGroup extends setup.TwineClass {
     } else {
       base += `[ """ /* pools */ """\n`
       for (const [pool, weight] of this.getUnitPools()) {
-        base += `&nbsp; [setup.unitpool.${pool.key}, ${weight}],\n`
+        base += `&nbsp; [setup.unitpool.${setup.keyOrSelf(pool)}, ${weight}],\n`
       }
       base += '],\n'
     }

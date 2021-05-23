@@ -159,7 +159,7 @@ trap for you.
 <p>
 Surprisingly, the trip ended without any problems, and your small group found a
 small and rudimentary village in the depths of the forest. All the inhabitants
-of the place were nekos that looked at you with great interest while you walk
+of the place were neko that looked at you with great interest while you walk
 between the huts, asking for the chieftain that had invited you. After
 several whispers and looks of mistrust, a couple of them went and call for the chief.
 When you finally saw eye-to-eye with the mysterious mailer, several things made sense. The chief
@@ -189,7 +189,7 @@ you felt a powerful aura exhuding from its threads: looked like it was magical t
 was worth it after all.
 <</if>>
 And since you now know the
-location of this small village filled with defenseless nekos, there is always the
+location of this small village filled with defenseless neko, there is always the
 possibility of taking a couple of “honored guests” to your fort, just in case he decided not keep his
 words.
 </p>
@@ -221,7 +221,7 @@ former-slave to the confines of the <<lore region_forest>>.
 
 <p>
 A couple of days later, the old man showed up, accompanied by a couple of
-young nekos, who were all very curious about your employees and their jobs,
+young neko, who were all very curious about your employees and their jobs,
 both the slavers and the slaves. After inviting him to
 your office and talking for a bit, you managed to close the deal and <<yourrep $g.slave>> was
 free to go with them. You tried to tempt your guests to use some of your
@@ -235,7 +235,7 @@ out of the trade:
 
 <p>
 ...Support from the old man's village to help you improve your reputation
-with the groups of nekos living in the forest.
+with the groups of neko living in the forest.
 This will surely help your company in your future endeavors.
 </p>
 
@@ -243,7 +243,7 @@ This will surely help your company in your future endeavors.
 
 <p>
 ...Improvement of the reputation of <<rep $company.player>> with the
-different tribes and small towns of nekos that live in the forest, and even
+different tribes and small towns of neko that live in the forest, and even
 better, a magical ancient robe that only the old man and his village have
 access to, for some weird and disturbing reason.
 </p>

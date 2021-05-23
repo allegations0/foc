@@ -104,6 +104,18 @@ You can follow-up on this idea by sending a team of slavers there.
 <<set _male = ($gQuest.getTemplate().key == 'milk_factory_kidnap_male')>>
 <<set _raid = ($gQuest.getTemplate().key == 'milk_factory_raid')>>
 
+<<if $gOutcome == 'crit'>>
+<<set _u = $g.bigcow>>
+<<else>>
+<<set _u = $g.cow>>
+<</if>>
+
+<<if _u.isMale()>>
+  <<questimage 'milk_factory_male.jpg'>>
+<<else>>
+  <<questimage 'milk_factory_female.jpg'>>
+<</if>>
+
 <p>
 Using <<their $g.seducer>> <<upraisenoun $g.seducer>>,
 <<yourrep $g.seducer>> <<uadv $g.seducer>> distracted the guard.

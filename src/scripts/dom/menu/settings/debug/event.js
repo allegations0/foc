@@ -1,7 +1,7 @@
 import { renderDescription } from "../../../card/quest"
 import { IMPORTABLE } from "../settings"
 import { debug_do_one_finalize, debug_do_one_title, debug_frontpage_title } from "./common"
-import { is_scoutable_link } from "./quest"
+import { is_scoutable_link, scoutable_content } from "./quest"
 
 /**
  * @returns {setup.DOM.Node}
@@ -45,6 +45,7 @@ setup.DOM.Menu.Settings.Debug.event_debug_one = function (template, is_debug_all
   fragments.push(
     debug_do_one_title(event, is_debug_all)
   )
+  fragments.push(scoutable_content(template))
 
   fragments.push(html`
     <div class='textcard eventcard card'>

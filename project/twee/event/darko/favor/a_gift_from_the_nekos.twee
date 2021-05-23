@@ -4,7 +4,7 @@
 
 <<run new setup.Event(
 'a_gift_from_the_nekos', /* key */
-"A Gift from the Nekos", /* Title */
+"A Gift from the Neko", /* Title */
 "darko", /* Author */
 [ /* tags */
 ],
@@ -29,7 +29,7 @@ setup.rarity.always,  /* Rarity */
 :: Event_a_gift_from_the_nekos [nobr]
 <p>
 A lone neko has arrives at your fort today, bearing a gift for you from the
-<<lore location_npc>>. Apparently, the nekos have somehow trusted your
+<<lore location_npc>>. Apparently, the neko have somehow trusted your
 company, and would like to express their trust in the way they know best. As
 the lone neko neko|enter your office, <<they $g.neko>> neko|lock the door and neko|close the
 curtain before opening <<their $g.neko>> present to you. A rare and valuable manual: the
@@ -52,7 +52,7 @@ Without warning, the sensual neko neko|push you to your chair and neko|kneel dow
 <</if>>
 suck on the <<= _d>>.
 <<Their $g.neko>> ears neko|twitch all the time, much more frequent than
-other nekos you've had the pleasure to face-fuck before,
+other neko you've had the pleasure to face-fuck before,
 and you have the bright idea to use them as handles for
 an even harder face-fuck.
 The two of you made love until you reach climax,

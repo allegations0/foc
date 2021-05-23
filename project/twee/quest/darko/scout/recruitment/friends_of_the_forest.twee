@@ -67,7 +67,7 @@ setup.qc.Slaver('recruit1', "", true), ],
 <p>
 The western forests are inhabited by both <<rep setup.trait.subrace_elf>> and
 <<rep setup.trait.subrace_neko>>. People of these races have
-the potential to make an excellent slavers: Nekos often make great
+the potential to make an excellent slavers: Neko often make great
 entertainers, making them suitable for negotiation missions, while elves
 are often gifted in the art of healing, making them excellent as support.
 </p>

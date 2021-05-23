@@ -273,7 +273,7 @@ The tales all agree that the cry of a banshee heralds the death of those who hea
 
 <<set _Hunter = setup.getAnySlaver()>>
 
-<p>With <<name $g.tracker>> guiding them, your slavers were easily able to make it to the overgrown forest track with the wailing trees. Or wailing something. The woods were indeed empty. <<name $g.tracker>> found no recent tracks of elves, nekos or any creatures larger than the average rodent.</p>
+<p>With <<name $g.tracker>> guiding them, your slavers were easily able to make it to the overgrown forest track with the wailing trees. Or wailing something. The woods were indeed empty. <<name $g.tracker>> found no recent tracks of elves, neko or any creatures larger than the average rodent.</p>
 
 <<if $g.tracker.isYou() or $g.sage.isYou() or $g.guardian.isYou()>>
 <p>It was night before the crying started.</p>
@@ -357,7 +357,7 @@ You wait while <<name $g.sage>> finishes <<their $g.sage>> drink and slams the t
 :: Quest_the_wailing_woodsFailure [nobr]
 <<set _Hunter = setup.getAnySlaver()>>
 
-<p>With <<name $g.tracker>> guiding them, your slavers were easily able to make it to the overgrown forest track with the wailing trees. Or wailing something. The woods were indeed empty. <<name $g.tracker>> found no recent tracks of elves, nekos or any creatures larger than the average rodent.</p>
+<p>With <<name $g.tracker>> guiding them, your slavers were easily able to make it to the overgrown forest track with the wailing trees. Or wailing something. The woods were indeed empty. <<name $g.tracker>> found no recent tracks of elves, neko or any creatures larger than the average rodent.</p>
 <<if $g.tracker.isYou() or $g.sage.isYou() or $g.guardian.isYou()>>
 <p>It was night before the crying started.</p>
 <p>Screaming never lasts because your throat gives out before you do. But she didn't have a throat. She didn't really have a body either. Just some light and shadows that <i>flickered</i>, leaving still afterimages burning in your eyes of a slender woman, eyes mad with grief, skin taught over the skull and emaciated to where she shouldn't be able to move.</p>

@@ -4,7 +4,7 @@
 
 <<run new setup.Event(
 'the_nekos_disapprove', /* key */
-"The Nekos Disapprove", /* Title */
+"The Neko Disapprove", /* Title */
 "darko", /* Author */
 [ ], /* tags */
 'Event_the_nekos_disapprove',
@@ -29,6 +29,6 @@ setup.rarity.always,  /* Rarity */
 Your company has been a good friend to the <<rep $company.neko>>, the
 sexually driven cats. But you have angered some high-class citizens of the
 <<lore location_npc>> recently, and using their power, they have boycotted your
-company from the city. As a result, your relationship with the nekos suffer
+company from the city. As a result, your relationship with the neko suffer
 greatly. Perhaps you should not have irked the cats too much.
 </p>

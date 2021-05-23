@@ -1,7 +1,7 @@
 import { renderDescription } from "../../../card/quest"
 import { IMPORTABLE } from "../settings"
 import { debug_do_one_finalize, debug_do_one_title, debug_frontpage_title } from "./common"
-import { is_scoutable_link } from "./quest"
+import { is_scoutable_link, scoutable_content } from "./quest"
 
 /**
  * @returns {setup.DOM.Node}
@@ -24,6 +24,7 @@ setup.DOM.Menu.Settings.Debug.opportunity = function () {
       () => {
         const opp = setup.QuestPool.instantiateOpportunity(template)
         if (opp) {
+          State.variables.gPassage = 'OpportunityList'
           setup.runSugarCubeCommand(`<<goto "OpportunityList">>`)
         } else {
           alert('No valid instantiation found')
@@ -161,6 +162,7 @@ setup.DOM.Menu.Settings.Debug.opportunity_debug_one = function (template, is_deb
   fragments.push(setup.DOM.Menu.Settings.Debug.opportunity_debug_description(
     template, is_debug_all
   ))
+  fragments.push(scoutable_content(template))
   const options = template.getOptions()
   for (let i = 0; i < options.length; ++i) {
     if (forced_option === undefined || forced_option == i) {

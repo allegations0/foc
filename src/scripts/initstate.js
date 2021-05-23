@@ -72,7 +72,7 @@ setup.initState = function () {
 
   // Init Unit Groups
   {
-    /** @type {Record<string, number[]>} */
+    /** @type {Record<string, Array<number|string>>} */
     this.unitgroup_unit_keys = {}
 
     // Initialize 'unitgroup_unit_keys' to empty arrays

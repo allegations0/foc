@@ -27,7 +27,7 @@
       ]
     ],
     [
-      'QuestUnitTrainingSissyAdvancedSuccess',
+      'QuestUnitTrainingSissyAdvancedCrit',
       [
         setup.qc.Trait('trainee', setup.trait.training_sissy_advanced),
         
@@ -60,6 +60,14 @@ their dicks.
 </p>
 
 :: QuestUnitTrainingSissyAdvancedCrit [nobr]
+
+<<if $g.trainee.isMale()>>
+  <<questimage 'unit_training_sissy_advanced_male.jpg'>>
+<<else>>
+<</if>>
+
+<<if $gOutcome == 'crit'>>
+
 <p>
 <<Rep $g.trainee>> turned out to be a natural sissy.
 The training went so smoothly that
@@ -67,13 +75,16 @@ The training went so smoothly that
 and gain a lot of experience from their spare time during the training.
 </p>
 
-:: QuestUnitTrainingSissyAdvancedSuccess [nobr]
+<<else>>
+
 <p>
 It was not easy, but through both <<reps $g.trainee>> willingness,
 as well as your slaver's dedications, <<rep $g.trainee>>
 managed to acquire all the necessary skils to graduate from this
 training.
 </p>
+
+<</if>>
 
 :: QuestUnitTrainingSissyAdvancedFailure [nobr]
 <p>

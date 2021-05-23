@@ -79,7 +79,7 @@ setup.qc.Leave('scout2', "went missing in the Western Forests during a|their sea
 
 :: Quest_finding_fairy2 [nobr]
 <p>
-According to rumors, nekos and elves are not the only inhabitants of the
+According to rumors, neko and elves are not the only inhabitants of the
 <<lore region_forest>>.
 A rare winged off-shoot of elves, that is, the mysterious <<lore race_fairy>> race, is also said
 to exist somewhere in the forest.

@@ -14665,7 +14665,7 @@ commit 670fa66a16096c04bce00935c3bf7cc620bc11a4
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Wed Dec 23 21:09:21 2020 +0700
 
-    Some more images of male elves/nekos.
+    Some more images of male elves/neko.
 
 commit 3be3c2ab18588b68fd17997d54a030fcff90627f
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>

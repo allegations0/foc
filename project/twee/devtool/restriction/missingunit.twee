@@ -10,12 +10,6 @@
 <<include 'QGRestrictionDone'>>
 
 
-:: RestrictionHasEscapedSlave [nobr]
-
-<<set $qrestriction = setup.qres.UnitGroupHasUnit(setup.unitgroup.escapedslaves)>>
-<<include 'QGRestrictionDone'>>
-
-
 :: RestrictionUnitGroupHasUnit [nobr]
 
 <<for _iug, _ug range setup.unitgroup>>

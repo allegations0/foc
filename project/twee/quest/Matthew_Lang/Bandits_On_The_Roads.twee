@@ -264,7 +264,6 @@ that you gleefully add to your stockpiles.
 
 <<elseif $unit.player.isHasTrait('per_kind')>>
 that you give to <<name $g.trader>> to sell on.
-<<run setup.qc.Friendship('slaver', 'enemy', 57).apply($gQuest)>>
 <<run setup.qc.Favor('humankingdom', 50).apply($gQuest)>>
 
 <<elseif $unit.player.isHasTrait('per_evil')>>

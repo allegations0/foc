@@ -8,6 +8,8 @@
   url: "https://www.matthew-lang.com",
 },
 [ /* tags */
+  'city',
+  'unknown',
 ],
 1, /* expiration weeks */
 'Opportunity_a_merchant_s_revenge_payback_is_sweet',

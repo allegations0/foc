@@ -103,9 +103,9 @@ customer relations officer. <<They $g.head>> dutifully makes sure that the custo
 <p>
 While <<they $g.head>> head|have been doing a very good job so far, <<yourrep $g.owner>> owner|suggest that it may be time to let <<them $g.head>> switch job.
 <<if _promotion == 'money'>>
-Instead of a business manager, <<they $g.head>> could be reassigned as the customer relations officer. As a customer relations officer, <<they $g.head>> would then be responsible to ensure that all your customers leave your venue satisfied. In turn, this can increase your company's popularity among the nekos, but in exchange for lowered profit.
+Instead of a business manager, <<they $g.head>> could be reassigned as the customer relations officer. As a customer relations officer, <<they $g.head>> would then be responsible to ensure that all your customers leave your venue satisfied. In turn, this can increase your company's popularity among the neko, but in exchange for lowered profit.
 <<else>>
-Instead of a customer relations officer, <<they $g.head>> could be reassigned as the business manager. <<They $g.head>> would be responsible to ensure that the brothel remains profitable, which directly increases the operating profit. Without a customer relations officer, however, your favor with the nekos will no longer increase week by week.
+Instead of a customer relations officer, <<they $g.head>> could be reassigned as the business manager. <<They $g.head>> would be responsible to ensure that the brothel remains profitable, which directly increases the operating profit. Without a customer relations officer, however, your favor with the neko will no longer increase week by week.
 <</if>>
 </p>
 
@@ -146,8 +146,8 @@ Change to <<if setup.dutytemplate.questbrothelmanager.promotion() == 'favor'>>bu
 After a simple ceremony, <<yourrep $g.head>> head|is now the brothel's new
 <<if _promotion == 'money'>>
 customer relations officer.
-<<They $g.head>> will work hard ensuring that your courtesans have satisfied the visiting customers, either with words or with a complimentary blowjob. While your brothel's profit will decline, expect your relations with the nekos to improve in the future.
+<<They $g.head>> will work hard ensuring that your courtesans have satisfied the visiting customers, either with words or with a complimentary blowjob. While your brothel's profit will decline, expect your relations with the neko to improve in the future.
 <<else>>
-business manager. <<They $g.head>> will work hard ensuring that your brothel's expenses remain manageable from now on. Expect your brothel's profit to increase in the future, but your relations with the nekos will no longer improve week by week.
+business manager. <<They $g.head>> will work hard ensuring that your brothel's expenses remain manageable from now on. Expect your brothel's profit to increase in the future, but your relations with the neko will no longer improve week by week.
 <</if>>
 </p>

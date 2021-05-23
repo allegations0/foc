@@ -84,6 +84,11 @@ Choose restriction type:
         <</message>>
       </div>
     <</if>>
+    <<if $devtooltype == 'quest'>>
+      <div>
+        [[Must have completed this quest on success or crit before|RestrictionQuestDoneSelf]]
+      </div>
+    <</if>>
     <div>
       [[Quest cannot exist|RestrictionNoQuest]]
       <<message '(?)'>>
@@ -94,7 +99,7 @@ Choose restriction type:
       <</message>>
     </div>
     <div>
-      [[Must have ever completed quest|RestrictionQuestDone]]
+      [[Must have completed some quest on success or crit before|RestrictionQuestDone]]
     </div>
     <div>
       [[Opportunity cannot exist|RestrictionNoOpportunity]]

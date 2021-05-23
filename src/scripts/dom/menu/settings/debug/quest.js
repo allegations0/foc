@@ -3,58 +3,63 @@ import { IMPORTABLE } from "../settings"
 import { debug_do_one_finalize, debug_do_one_title, debug_frontpage_title } from "./common"
 
 /**
+ * @param {setup.QuestTemplate | setup.Event | setup.OpportunityTemplate} template 
+ * @returns {setup.DOM.Node}
+ */
+export function scoutable_content(template) {
+  const reason = []
+  if (State.variables.settings.isBanned(template.getTags())) {
+    reason.push(html`<div>
+        Contains some ${setup.DOM.Text.danger('banned')} fetish tags.
+      </div>`)
+  }
+  let prereq
+  if (template instanceof setup.Event) {
+    prereq = template.getRequirements()
+  } else {
+    prereq = template.getPrerequisites()
+  }
+  for (const req of prereq) {
+    if (!req.isOk(template)) {
+      reason.push(html`<div>
+          Restriction ${setup.DOM.Text.danger('missing')}: ${req.explain(template)}
+        </div>`)
+    } else {
+      reason.push(html`<div>
+          Restriction satisfied: ${req.explain(template)}
+        </div>`)
+    }
+  }
+  if (State.variables.calendar.isOnCooldown(template)) {
+    reason.push(html`
+        <div>
+          ${setup.DOM.Text.danger('On cooldown')} for ${State.variables.calendar.getCooldown(template)} more weeks.
+        </div>
+      `)
+  }
+  if (template.isCanGenerate()) {
+    reason.push(html`
+        <div>
+          ${setup.DOM.Text.success('YES')}
+        </div>
+      `)
+  } else {
+    reason.push(html`
+        <div>
+          ${setup.DOM.Text.danger('NO')}
+        </div>
+      `)
+  }
+  return setup.DOM.create('div', {}, reason)
+}
+
+/**
  * @param {setup.QuestTemplate | setup.OpportunityTemplate | setup.Event} template 
  * @returns {setup.DOM.Node}
  */
 export function is_scoutable_link(template) {
   return setup.DOM.Util.message(
-    (template instanceof setup.Event) ? "(is trigger-able)" : "(is scout-able)",
-    () => {
-      const reason = []
-      if (State.variables.settings.isBanned(template.getTags())) {
-        reason.push(html`<div>
-        Contains some ${setup.DOM.Text.danger('banned')} fetish tags.
-      </div>`)
-      }
-      let prereq
-      if (template instanceof setup.Event) {
-        prereq = template.getRequirements()
-      } else {
-        prereq = template.getPrerequisites()
-      }
-      for (const req of prereq) {
-        if (!req.isOk(template)) {
-          reason.push(html`<div>
-          Restriction ${setup.DOM.Text.danger('missing')}: ${req.explain(template)}
-        </div>`)
-        } else {
-          reason.push(html`<div>
-          Restriction satisfied: ${req.explain(template)}
-        </div>`)
-        }
-      }
-      if (State.variables.calendar.isOnCooldown(template)) {
-        reason.push(html`
-        <div>
-          ${setup.DOM.Text.danger('On cooldown')} for ${State.variables.calendar.getCooldown(template)} more weeks.
-        </div>
-      `)
-      }
-      if (template.isCanGenerate()) {
-        reason.push(html`
-        <div>
-          ${setup.DOM.Text.success('YES')}
-        </div>
-      `)
-      } else {
-        reason.push(html`
-        <div>
-          ${setup.DOM.Text.danger('NO')}
-        </div>
-      `)
-      }
-      return setup.DOM.create('div', {}, reason)
-    },
+    (template instanceof setup.Event) ? "(is trigger-able)" : "(is scout-able)", () => scoutable_content(template),
   )
 }
 
@@ -83,6 +88,7 @@ setup.DOM.Menu.Settings.Debug.quest = function () {
           if (!result) {
             alert('No valid instantiation found')
           } else {
+            State.variables.gPassage = 'QuestHub'
             setup.runSugarCubeCommand(`<<goto "QuestHub">>`)
           }
         })}
@@ -91,6 +97,7 @@ setup.DOM.Menu.Settings.Debug.quest = function () {
           () => {
             const quest = template.debugMakeInstance()
             State.variables.company.player.addQuest(quest)
+            State.variables.gPassage = 'QuestHub'
             setup.runSugarCubeCommand(`<<goto "QuestHub">>`)
           })}
         ${setup.DOM.Nav.link(
@@ -217,6 +224,7 @@ setup.DOM.Menu.Settings.Debug.quest_debug_one = function (template, is_debug_all
   const fragments = [
     setup.DOM.Menu.Settings.Debug.quest_debug_description(template, is_debug_all)
   ]
+  fragments.push(scoutable_content(template))
   for (const outcome of setup.QUEST_OUTCOMES) {
     if (forced_outcome && outcome != forced_outcome) continue
     fragments.push(setup.DOM.Menu.Settings.Debug.quest_debug_outcome(template, outcome, is_debug_all))

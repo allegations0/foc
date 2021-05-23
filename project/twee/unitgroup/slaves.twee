@@ -22,6 +22,8 @@
 )>>
 
 
+/* NO LONGER USED */
+/* DEPRECATED: Please remove with next backwards incompatible change */
 <<run new setup.UnitGroup(
   'escapedslaves',
   'Special: Escaped Slaves',

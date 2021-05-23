@@ -584,12 +584,12 @@ a lot of effort from all parties involved, both writers and code maintainers.
 As an example, tigerkins have:
 
 - 26 images
-- Its own lore thats intertwined with the world (i.e., as ancestors of the nekos, and therefore is mainly found
+- Its own lore thats intertwined with the world (i.e., as ancestors of the neko, and therefore is mainly found
 as petrified statues in the western forests, from the ancient war between elves and tigerkins. Multiple quests
 reference this)
 - Many bodypart texts
 - 4 quests (3 of them form a long quest chain), 3 events, and 2 opportunities (this is on the lower side, but tigerkins have been part of the game since the start so their bar is lower)
-- And they are still basically nekos, sharing many attributes with them. Treating tigerkins as neko will not cause writing or coherency problems.
+- And they are still basically neko, sharing many attributes with them. Treating tigerkins as neko will not cause writing or coherency problems.
 
 Example races that probably would **not** be addable as a playable race:
 
