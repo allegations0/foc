@@ -4,6 +4,17 @@
 
 ### v1.6.5.x
 
+v1.6.5.6:
+
+  - New quest: Noises in the Cellar (by Matthew Lang)
+  - New event: Sore Ass (FCdev)
+  - New event: Used whore (FCdev)
+  - New event: Devoted Entertainment Slave (FCdev)
+  - New Event: Slave Dick on Slave (FCdev)
+  - Added QuestDone(null) to CC
+  - Fix questing knight disaster, bandings on the road bugs
+  - Fix make instance from debug menu missing gPassage
+
 v1.6.5.5:
 
   - New quest: A Merchant's Revenge: Caravan Raid (Southern Seas)
