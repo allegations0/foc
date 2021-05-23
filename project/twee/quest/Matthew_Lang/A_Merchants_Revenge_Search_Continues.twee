@@ -67,7 +67,7 @@ setup.QUEST_DEFAULT_EXPIRATION, /* expiration weeks */
   'lookout': [ setup.qu.explorer, 0.75],
 },
 { /* actors */
-  'bandit': 'merchantbandit',
+  'bandit': 'quest_merchant_s_bandit_1',
   'mlangmerchantprince': 'a_merchant_s_revenge1',
 },
 [ /* costs */
