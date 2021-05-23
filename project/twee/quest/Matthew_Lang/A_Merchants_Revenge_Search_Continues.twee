@@ -3,12 +3,15 @@
 
 
 <<run new setup.UnitGroup(
-"merchantbandit",
+
+"quest_merchant_s_bandit_1",
+
 "Residents of the City of Lucgate: All gender",
 'city_all', /* pools */
 0, /* reuse chance */
 [ /* unit post process */
   setup.qc.BgTraitReset('unit', setup.trait.bg_raider),
+  setup.qc.AddTitle('bandit', 'quest_merchant_s_bandit_0'),
 ],
 )>>
 
@@ -67,7 +70,7 @@ setup.QUEST_DEFAULT_EXPIRATION, /* expiration weeks */
   'lookout': [ setup.qu.explorer, 0.75],
 },
 { /* actors */
-  'bandit': 'merchantbandit',
+  'bandit': 'quest_merchant_s_bandit_1',
   'mlangmerchantprince': 'a_merchant_s_revenge1',
 },
 [ /* costs */
