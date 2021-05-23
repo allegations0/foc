@@ -36,7 +36,7 @@ setup.rarity.never, /* Rarity */
 
 :: Event_under_new_management_quality_time [nobr]
 <p>
-At the end of this week, your slavers finally returned from their "vacation" with the cuddly nekos,
+At the end of this week, your slavers finally returned from their "vacation" with the cuddly neko,
 looking happier
 than ever. <<Yourrep $g.guard1>> recounted all the events of the vacation to you,
 regardless of whether you want to hear it or not.
@@ -62,7 +62,7 @@ honestly, who could resist patting a cute cat of any sort?
 <</if>>
 <<if _play>>
   The playful slaver <<rep _play>> may have went a little overboard with the petting, but
-  the nekos seem to like it...
+  the neko seem to like it...
 <</if>>
 
 <<if $g.guard1.isHasTrait('per_serious')>>

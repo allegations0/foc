@@ -13,7 +13,7 @@
 
 <<run new setup.CompanyTemplate(
   'neko',
-  "Nekos",
+  "Neko",
   'CompanyTemplateNeko',
   [ /* favor effects */
     [

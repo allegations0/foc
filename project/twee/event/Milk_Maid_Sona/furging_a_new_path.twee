@@ -53,7 +53,7 @@ setup.rarity.always, /* Rarity */
 <<Yourrep $g.slave>>'s mind has been restored, thanks to the recent treatment you have arranged for <<therace $g.slave>>.
 You have done exactly as asked by the mysterious person behind a letter you received some time ago.
 And new reports from your contacts in the <<lore region_forest>> reveal that this same person has apparently fulfilled their
-part of the deal. As promised, multiple groups of nekos see <<rep $company.player>>
+part of the deal. As promised, multiple groups of neko see <<rep $company.player>>
 as an ally. An ally for what, you aren't sure, but you don't look at a gift…
 neko, in the fang, you guess? While you try to untangle the mind puzzle you
 brought upon yourself, you notice another envelope just like the one before

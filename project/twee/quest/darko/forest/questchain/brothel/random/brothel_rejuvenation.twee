@@ -145,7 +145,7 @@ and the various enchanted sex toys within the Magic Bondage Room now vibrate wit
 <</if>>
 Words of your brothel's grand renovation spreads too, and your brothel is bursting with customers once again.
 <<if $gOutcome == 'crit'>>
-<<Yourrep $g.owner>> had the bright idea of letting customers enjoy the facilities for free for a day, which makes a lot nekos as well as visiting elves like your company more.
+<<Yourrep $g.owner>> had the bright idea of letting customers enjoy the facilities for free for a day, which makes a lot neko as well as visiting elves like your company more.
 <</if>>
 </p>
 

@@ -114,7 +114,7 @@ Still, given how decrepit the place had become thanks to the bandits' regime, wh
 
 <<if setup.qres.FavorAtLeast('neko', 500).isOk($gQuest)>>
 <p>
-Since your company is in very good terms with the nekos,
+Since your company is in very good terms with the neko,
 as another option, you could try to convince your slavers, the whores, and
 the workers to spend the week together, all costs covered from your coffers.
 After all, it's not evey day that one gets the chance to spend all their free time with

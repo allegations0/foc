@@ -141,9 +141,9 @@ function brothelDescription() {
     ])}
       ${!favor ? '' : html`
         ${setup.rng.choice([
-      html`as well as ${setup.DOM.Util.favor(favor)} favor with the nekos,`,
-      html`in addition to ${setup.DOM.Util.favor(favor)} favor with the nekos,`,
-      html`together with ${setup.DOM.Util.favor(favor)} favor with the nekos,`,
+      html`as well as ${setup.DOM.Util.favor(favor)} favor with the neko,`,
+      html`in addition to ${setup.DOM.Util.favor(favor)} favor with the neko,`,
+      html`together with ${setup.DOM.Util.favor(favor)} favor with the neko,`,
     ])}
       `}
       ${setup.rng.choice([
@@ -538,7 +538,7 @@ setup.DutyTemplateQuestBrothelManager = class DutyTemplateQuestBrothelManager ex
   }
 
   /**
-   * Favor with nekos per week
+   * Favor with neko per week
    * @returns {number}
    */
   favor() {

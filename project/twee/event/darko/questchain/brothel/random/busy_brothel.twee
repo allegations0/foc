@@ -48,7 +48,7 @@ setup.rarity.rare, /* Rarity */
 <<set _dom = setup.dutytemplate.questbrothelmanager.sub()>>
 
 <p>
-Given the sexual nature of the nekos living in the <<lore location_npc>>, brothels there occupy an important part of the culture. Citizens visit the brothel often to select from the available merchandise, relieve their sexual needs, and leave. Some brothels even simulate affection, companionship, or emotional guidance.
+Given the sexual nature of the neko living in the <<lore location_npc>>, brothels there occupy an important part of the culture. Citizens visit the brothel often to select from the available merchandise, relieve their sexual needs, and leave. Some brothels even simulate affection, companionship, or emotional guidance.
 </p>
 
 <p>

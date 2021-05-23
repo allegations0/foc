@@ -470,7 +470,7 @@ festivities.
 The criminals says that they are commemorating a wealthy
 trimester, and that they want to end it with a full round of debauchery with
 your slaves. They are asking for pretty and submissive humans, elves and
-nekos, to represents each place that they have raided this trimester.
+neko, to represents each place that they have raided this trimester.
 </p>
 
 <<set _u = setup.getUnit({title: 'quest_criminal_connection_0'})>>

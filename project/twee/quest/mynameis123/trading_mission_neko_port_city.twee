@@ -11,7 +11,7 @@
   'money',
   'forest',
 ],
-4, /* weeks */
+1, /* weeks */
 4, /* expiration weeks */
 { /* roles */
   'trader1': [ setup.qu.trader, 1],
@@ -21,44 +21,42 @@
 { /* actors */
 },
 [ /* costs */
-  setup.qc.MoneyCustom(-4000),
+  setup.qc.MoneyCustom(-1000),
 ],
 'Quest_trading_mission_neko_port_city',
-setup.qdiff.normal48, /* difficulty */
+setup.qdiff.normal24, /* difficulty */
 [ /* outcomes */
   [
     'Quest_trading_mission_neko_port_cityCrit',
     [
-      setup.qc.Favor('neko', 300),
-      setup.qc.MoneyCustom(10000),
+      setup.qc.Favor('neko', 50),
+      setup.qc.MoneyCustom(3000),
     ],
   ],
   [
     'Quest_trading_mission_neko_port_cityCrit',
     [
-      setup.qc.MoneyCustom(10000),
+      setup.qc.MoneyCustom(2500),
     ],
   ],
   [
     'Quest_trading_mission_neko_port_cityFailure',
     [
-      setup.qc.MoneyCustom(5000),
+      setup.qc.MoneyCustom(1000),
     ],
   ],
   [
     'Quest_trading_mission_neko_port_cityDisaster',
     [
       setup.qc.MoneyCustom(-2000),
-      setup.qc.Ire('neko', 5),
+      setup.qc.Ire('neko', 2),
     ],
   ],
 ],
 [ /* quest pool and rarity */
-[setup.questpool.forest, setup.rarity.uncommon],
+[setup.questpool.forest, setup.rarity.common],
 ],
 [ /* restrictions */
-  setup.qres.QuestUnique(),
-  setup.qres.VarEqual('quest_furging_a_new_path_completed', '1'),
 ],
 [ /* expiration outcomes */
 ],
@@ -66,19 +64,14 @@ setup.qdiff.normal48, /* difficulty */
 
 :: Quest_trading_mission_neko_port_city [nobr]
 <p>
-With <<lore location_npc>> being THE bustling trade-hub in the <<lore
-geo_pawninsula>>, normally it would be difficult for some small-time
-trader to get any profitable deals without an insider willing to smooth
-things out.
-</p>
-
-<p>
-But with your new-found reputation among the <<rep $company.neko>> (no small
-part thanks to a certain elderly neko),
-you can actually expect to make a tidy amount of profit, as long as your
-traders are able to navigate through the labyrinth of
-<<rep $company.neko>>... and not
-waste most of their earnings on the many famous brothels lining out the streets.
+The <<lore location_npc>> is the bustling trade-hub in the <<lore
+geo_pawninsula>>,
+and many traders big and small make their living trading goods into and outside from
+the city.
+You can also try to make a tidy amount of profit trading there by sending a group of traders.
+Well, as long as your traders are able to navigate through the labyrinth of
+<<rep $company.neko>>... as well as capable of resisting
+wasting their hard-earned profit on the many famous brothels lining out the streets.
 </p>
 
 
@@ -91,7 +84,7 @@ and you can't help but grin at the sum.
 <<if $gOutcome == 'crit'>>
 
 While they may have also nipped some of them for a "tour-de-relations" with the local
-nekos, it surprisingly was not wasted, and your neko contacts spoke highly about
+neko, it surprisingly was not wasted, and your neko contacts spoke highly about
 your slavers' "performances", increasing your reputation with them.
 Still, you
 

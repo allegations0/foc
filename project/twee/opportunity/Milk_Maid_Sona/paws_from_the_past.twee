@@ -88,8 +88,8 @@ Apparently, this small
 and recondite village somehow found out about one of your latest missions,
 where you freed an ancient <<urace $g.neko>>
 by breaking the spell that kept them as a living statue.
-This group of nekos has great interest in their ancestors, the
-tigerkins, and also on the war between the elves and the nekos from centuries ago.
+This group of neko has great interest in their ancestors, the
+tigerkins, and also on the war between the elves and the neko from centuries ago.
 Thanks to their obsession, they believe
 that someone who had lived in those ancient times can be an incredible source of
 information and wisdom. Unfortunately (and concerningly for you), they also know
@@ -97,7 +97,7 @@ about <<their $g.neko>> current mental state after being trapped for so long wit
 </p>
 
 <p>
-However, the nekos are quite resourceful, and they are fully aware that
+However, the neko are quite resourceful, and they are fully aware that
 the elves have potions and rituals that could possibly recover a mind no matter how terribly lost
 it was.
 That's why they are asking, if possible, that you use your resources
@@ -119,7 +119,7 @@ village, they can't pay you for it. Of course...
 <p>
 Well, you can do what they asked of you and restore <<yourrep $g.neko>>'s mind,
 if you have or willing to gather the facilities and materials to do so.
-Maybe this will net you some favor with the nekos.
+Maybe this will net you some favor with the neko.
 Or, you could simply ignore the letter and use
 your new slave as the brainless sexdoll it currently is.
 After all, not healing <<them $g.neko>> now doesn't mean you can't heal <<them $g.neko>> 
@@ -139,7 +139,7 @@ Either way, it might be your best interest to start
 The terms are just as last time: you
 restore the mind of your new furry “employee” and he will spread much good word about
 your company with his people and the neighboring villages, improving your reputation
-with the nekos of the area and opening new possibilities of juicy deals in
+with the neko of the area and opening new possibilities of juicy deals in
 the future. And considering the costs of the treatment, he better speaks
 wonders about you with them.
 </p>

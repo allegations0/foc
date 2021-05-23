@@ -20,7 +20,7 @@ setup.QUESTTAGS = {
     type: 'fetish',
     hide: true,
     title: 'Furry',
-    description: 'Heavy emphasis on furries or anthromorphic species. Nekos (cat ears but otherwise human) are not considered furries',
+    description: 'Heavy emphasis on furries or anthromorphic species. Neko (cat ears but otherwise human) are not considered furries',
   },
   transformation: {
     type: 'fetish',

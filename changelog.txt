@@ -2914,7 +2914,7 @@ v1.2.5.2:
  - Updated interactive map regions SVG for the new map (thanks to Naraden)
  - Soft-cap adjusted for lodgings.
  - Some lore for magic, city, locations.
- - Some more images of male elves/nekos.
+ - Some more images of male elves/neko.
  - Fix quests not taking its costs as prerequisite to deploy.
  - Adjustments to quest UI, and fix compact mode bug on team success display.
 

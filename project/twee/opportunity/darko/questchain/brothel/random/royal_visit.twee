@@ -86,7 +86,7 @@ With that, the royal surprisingly asks if your company would allow <<them $g.tar
 </p>
 
 <p>
-There is a sinister alternative, however. With the royal all alone and vulnerable here within your fort, you could in theory try to capture the <<man $g.target>> and make <<them $g.target>> your slave. This could be an extremely rare opportunity to get your <<uhands $unit.player>> on a royalty of <<lore location_npc>>. However, there is no doubt that the brothel will be held responsible for the disappearance, and the brothel will almost guaranteed to close afterwards. Not to mention the anger you will no doubt receive from the nekos...
+There is a sinister alternative, however. With the royal all alone and vulnerable here within your fort, you could in theory try to capture the <<man $g.target>> and make <<them $g.target>> your slave. This could be an extremely rare opportunity to get your <<uhands $unit.player>> on a royalty of <<lore location_npc>>. However, there is no doubt that the brothel will be held responsible for the disappearance, and the brothel will almost guaranteed to close afterwards. Not to mention the anger you will no doubt receive from the neko...
 </p>
 
 <<unitcard $g.target 1>>

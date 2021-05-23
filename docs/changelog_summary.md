@@ -1019,7 +1019,7 @@ v1.5.0.0 (26 February 2021): Huge amount of content, subraces, Text polish, QoL,
       - Slave training master now require either magic wind master or magic earth master.
       - Basic and advanced slave trainings no longer give out traits on critical.
       - Monetary reward is flattened a bit over difficulties.
-      - Neko statue quest can now generate female nekos
+      - Neko statue quest can now generate female neko
       - King of Dragons quest is now repeatable, gives you favor with dragonkins on repeat.
       - Serial bodyswapper now has 250 weeks cooldown.
       - Swap tall/short in houndmastery to playful/serious.

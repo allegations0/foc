@@ -99,7 +99,7 @@
 <<run new setup.ItemSexManual({
   key: 'sexmanual_earsblowjob',
   name: 'Sex Manual: Fun with Ears',
-  description: "A gift from the nekos as a token of their affection with your company's antics. Unlocks the 'Grab ears' sex action.",
+  description: "A gift from the neko as a token of their affection with your company's antics. Unlocks the 'Grab ears' sex action.",
   tags: [],
  } )>>
 
