@@ -108,6 +108,12 @@ As luck would have it, <<yourrep _u>> informs you that a rather reputable wholes
 
 
 :: Quest_the_slave_merchantCrit [nobr]
+
+<<if $g.merchant.isMale()>>
+<<else>>
+  <<questimage 'the_slave_merchant_female.jpg'>>
+<</if>>
+
 <p>
 Bring your carefully written invitation, the merchant finally arrived at your fort's gate. Per your instructions, <<yourrep $g.trainer>>, <<rep $g.trader>> and <<rep $g.negotiator>> kept the merchant company throughout <<their $g.merchant>> stay within your fort, with the singular goal of impressing the merchant enough to offer you a series of good deals.
 <<set _unit = setup.selectUnit([$g.trainer, $g.trader, $g.negotiator], {trait: 'per_gregarious'})>>

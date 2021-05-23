@@ -99,6 +99,12 @@ Truly a win-win situation.
 
 
 :: Quest_goblin_resque2Crit [nobr]
+
+<<if $g.toy1.isMale()>>
+<<else>>
+<<questimage 'goblin_rescue_female.jpg'>>
+<</if>>
+
 <p>
 The cave den your slavers cleared out seemed abandoned at first,
 but still-armed traps inside told a different story.

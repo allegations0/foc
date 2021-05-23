@@ -59,6 +59,12 @@ them serve their betters in peace.
 
 :: QuestUnitTrainingObedienceBasicCrit [nobr]
 
+<<if $g.trainee.isMale()>>
+  <<questimage 'unit_training_obedience_basic_male.jpg'>>
+<<else>>
+  <<questimage 'unit_training_obedience_basic_female.jpg'>>
+<</if>>
+
 <p>
 <<Rep $g.trainee>> started out a disobedient little <<urace $g.trainee>>, and <<rep $g.head>>
 <<if $g.head.isHasTrait('per_cruel')>>

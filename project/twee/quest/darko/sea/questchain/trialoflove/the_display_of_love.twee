@@ -200,6 +200,17 @@ beginning.
 
 
 :: Quest_the_display_of_loveCrit [nobr]
+
+<<if $gOutcome == 'crit'>>
+  <<if $g.master.isMale() && $g.slave.isMale()>>
+    <<questimage 'the_display_of_love_gay.jpg'>>
+  <<elseif $g.master.isFemale() && $g.slave.isFemale()>>
+    <<questimage 'the_display_of_love_lesbian.jpg'>>
+  <<else>>
+    <<questimage 'the_display_of_love_hetero.jpg'>>
+  <</if>>
+<</if>>
+
 <p>
 The final island
 <<yourrep $g.master>> and <<utheirrel $g.master $g.slave>> <<rep $g.slave>>

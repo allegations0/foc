@@ -68,7 +68,7 @@ if done right.
 
 <<if $g.victim.isMale()>>
 <<else>>
-<<questimage 'bounty_hunt_kraken.jpg'>>
+<<questimage 'pirates_ahoy_female.jpg'>>
 <</if>>
 
 <p>
