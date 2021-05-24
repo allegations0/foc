@@ -1,8 +1,23 @@
 
 setup.Title = class Title extends setup.TwineClass {
-  constructor(key, name, description, unit_text, slave_value, skill_adds) {
+  /**
+   * @param {string} key 
+   * @param {string} name 
+   * @param {string} description 
+   * @param {string} unit_text 
+   * @param {number} slave_value 
+   * @param {Object<string, number>} skill_adds 
+   * @param {{
+   *   is_negative?: boolean,
+   * }} [args]
+   */
+  constructor(key, name, description, unit_text, slave_value, skill_adds, args) {
     super()
-    
+
+    if (!args) {
+      args = {}
+    }
+
     if (!key) throw new Error(`null key for title`)
     this.key = key
 
@@ -17,6 +32,8 @@ setup.Title = class Title extends setup.TwineClass {
 
     this.slave_value = slave_value
     this.skill_adds = setup.Skill.translate(skill_adds)
+
+    this.is_negative = !!args.is_negative
 
     if (key in setup.title) throw new Error(`Title ${key} duplicated`)
     setup.title[key] = this
@@ -39,13 +56,20 @@ setup.Title = class Title extends setup.TwineClass {
     for (var i = 0; i < skill_adds.length; ++i) {
       var val = skill_adds[i]
       if (val) {
-        base += `${setup.skill[i].keyword}: ${val},`
+        base += `&nbsp;${setup.skill[i].keyword}: ${val},`
       }
     }
 
     base += `},\n`
+    base += `{,\n`
+    base += `&nbsp;is_negative: ${this.isNegative()},\n`
+    base += `},\n`
     base += `)\n`
     return base
+  }
+
+  isNegative() {
+    return this.is_negative
   }
 
   /**
@@ -64,7 +88,7 @@ setup.Title = class Title extends setup.TwineClass {
    */
   getUnitText(unit) {
     if (unit) {
-      return setup.Text.replaceUnitMacros(this.unit_text, {a: unit})
+      return setup.Text.replaceUnitMacros(this.unit_text, { a: unit })
     } else {
       return this.unit_text
     }
@@ -79,6 +103,6 @@ setup.Title = class Title extends setup.TwineClass {
    */
   rep() {
     var base = setup.repMessage(this, 'titlecardkey')
-    return `<span class="titlecardmini">${base}</span>`
+    return `<span class="titlecardmini${this.isNegative() ? '-negative' : ''}">${base}</span>`
   }
 }

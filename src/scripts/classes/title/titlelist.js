@@ -16,25 +16,43 @@ setup.TitleList = class TitleList extends setup.TwineClass {
     // unit: [title1assigned, title2assigned]
     this.assigned = {}
 
-    // last obtained title, if any.
+    // last obtained positive title, if any.
     this.last_obtained = {}
+
+    // last obtained negative title, if any
+    this.last_obtained_negative = {}
   }
 
+  /**
+   * @param {setup.Unit} unit 
+   */
   deleteUnit(unit) {
-    var unitkey = unit.key
-    if (unitkey in this.titles) delete this.titles[unitkey]
-    if (unitkey in this.assigned) delete this.assigned[unitkey]
-    if (unitkey in this.last_obtained) delete this.last_obtained[unitkey]
+    const unitkey = unit.key
+    delete this.titles[unitkey]
+    delete this.assigned[unitkey]
+    delete this.last_obtained[unitkey]
   }
 
+  /**
+   * @param {setup.Unit} unit 
+   * @param {setup.Title} title 
+   */
   addTitle(unit, title) {
     if (!title.key) throw new Error(`Missing title for addTitle ${title}`)
-    var unitkey = unit.key
+
+    const unitkey = unit.key
     if (!(unitkey in this.titles)) this.titles[unitkey] = {}
+
     this.titles[unitkey][title.key] = true
 
-    if (!(unitkey in this.last_obtained)) this.last_obtained[unitkey] = {}
-    this.last_obtained[unitkey] = title.key
+    let container
+    if (title.isNegative()) {
+      container = this.last_obtained_negative
+    } else {
+      container = this.last_obtained
+    }
+    if (!(unitkey in container)) container[unitkey] = {}
+    container[unitkey] = title.key
 
     /* if has space, add it */
     if (this.isCanAssignTitle(unit, title)) {
@@ -44,21 +62,43 @@ setup.TitleList = class TitleList extends setup.TwineClass {
     unit.resetCache()
   }
 
-  getLastTitle(unit) {
+  /**
+   * @param {setup.Unit} unit 
+   * @returns {setup.Title | null}
+   */
+  getLastTitlePositive(unit) {
     if (!(unit.key in this.last_obtained)) return null
-    var titlekey = this.last_obtained[unit.key]
+    const titlekey = this.last_obtained[unit.key]
     if (!titlekey) return null
     return setup.title[titlekey]
   }
 
+  /**
+   * @param {setup.Unit} unit 
+   * @returns {setup.Title | null}
+   */
+  getLastTitleNegative(unit) {
+    if (!(unit.key in this.last_obtained_negative)) return null
+    const titlekey = this.last_obtained_negative[unit.key]
+    if (!titlekey) return null
+    return setup.title[titlekey]
+  }
+
+  /**
+   * @param {setup.Unit} unit 
+   * @param {setup.Title} title 
+   */
   removeTitle(unit, title) {
-    var unitkey = unit.key
+    const unitkey = unit.key
     if (!(unitkey in this.titles)) return
     if (!(title.key in this.titles[unitkey])) return
     delete this.titles[unitkey][title.key]
 
-    if (title == this.getLastTitle(unit)) {
+    if (title == this.getLastTitlePositive(unit)) {
       delete this.last_obtained[unit.key]
+    }
+    if (title == this.getLastTitleNegative(unit)) {
+      delete this.last_obtained_negative[unit.key]
     }
 
     this.unassignTitle(unit, title, /* should_replace = */ true)
@@ -66,14 +106,24 @@ setup.TitleList = class TitleList extends setup.TwineClass {
     unit.resetCache()
   }
 
+  /**
+   * @param {setup.Unit} unit 
+   */
   _setAssigned(unit) {
     if (!(unit.key in this.assigned)) {
       this.assigned[unit.key] = []
     }
   }
 
+  /**
+   * @param {setup.Unit} unit 
+   * @param {setup.Title} title 
+   * @returns 
+   */
   isCanAssignTitle(unit, title) {
-    var assigned = this.getAssignedTitles(unit, /* is base only = */ true)
+    if (title.isNegative()) return false
+
+    const assigned = this.getAssignedTitles(unit, /* is base only = */ true)
 
     if (assigned.length >= setup.TITLE_MAX_ASSIGNED) return false
     if (assigned.includes(title)) return false
@@ -81,6 +131,10 @@ setup.TitleList = class TitleList extends setup.TwineClass {
     return true
   }
 
+  /**
+   * @param {setup.Unit} unit 
+   * @param {setup.Title} title 
+   */
   assignTitle(unit, title) {
     if (!this.isHasTitle(unit, title)) throw new Error(`unit ${unit.key} missing title ${title.key}`)
     this._setAssigned(unit)
@@ -92,6 +146,19 @@ setup.TitleList = class TitleList extends setup.TwineClass {
     unit.resetCache()
   }
 
+  /**
+   * @param {setup.Unit} unit 
+   * @returns {setup.Title[]}
+   */
+  getAssignableTitles(unit) {
+    return this.getAllTitles(unit).filter(title => !title.isNegative() && !this.assigned[unit.key].includes(title.key))
+  }
+
+  /**
+   * @param {setup.Unit} unit 
+   * @param {setup.Title} title 
+   * @param {boolean} [should_replace]
+   */
   unassignTitle(unit, title, should_replace) {
     this._setAssigned(unit)
     if (this.assigned[unit.key].includes(title.key)) {
@@ -99,9 +166,9 @@ setup.TitleList = class TitleList extends setup.TwineClass {
 
       if (should_replace) {
         // find replacement
-        var candidates = this.getAllTitles(unit).filter(title => !this.assigned[unit.key].includes(title.key))
+        const candidates = this.getAssignableTitles(unit)
         if (candidates.length) {
-          var replacement = setup.rng.choice(candidates)
+          const replacement = setup.rng.choice(candidates)
           this.assignTitle(unit, replacement)
         }
       }
@@ -110,6 +177,10 @@ setup.TitleList = class TitleList extends setup.TwineClass {
     unit.resetCache()
   }
 
+  /**
+   * @param {setup.Unit} unit 
+   * @returns {setup.Title[]}
+   */
   getAllTitles(unit) {
     if (!(unit.key in this.titles)) return []
     return Object.keys(this.titles[unit.key]).map(titlekey => setup.title[titlekey])
@@ -120,30 +191,85 @@ setup.TitleList = class TitleList extends setup.TwineClass {
    * @param {setup.Title | string} title 
    */
   isHasTitle(unit, title) {
-    let actual_title
-    if (setup.isString(title)) {
-      // @ts-ignore
-      if (!(title in setup.title)) throw new Error(`Unknown title ${title}`)
-      // @ts-ignore
-      actual_title = setup.title[title]
-    } else {
-      actual_title = title
-    }
     if (!(unit.key in this.titles)) return false
+    const actual_title = setup.selfOrObject(title, setup.title)
     return actual_title.key in this.titles[unit.key]
   }
 
+  /**
+   * @param {setup.Unit} unit 
+   * @param {boolean} [is_base_only]
+   * @returns {setup.Title[]}
+   */
   getAssignedTitles(unit, is_base_only) {
-    var assigned = []
+    let assigned = []
     if (unit.key in this.assigned) {
       assigned = this.assigned[unit.key].map(titlekey => setup.title[titlekey])
     }
 
     if (!is_base_only) {
-      // last obtained title is always included
-      var last = this.getLastTitle(unit)
-      if (last && !assigned.includes(last)) assigned.push(last)
+      // last obtained titles are always included
+      const lasts = [
+        this.getLastTitlePositive(unit),
+        this.getLastTitleNegative(unit),
+      ]
+      for (const last_title of lasts) {
+        if (last_title && !assigned.includes(last_title)) {
+          assigned.push(last_title)
+        }
+      }
     }
     return assigned
+  }
+
+  /**
+   * @param {setup.Unit} unit 
+   * @returns {number[]}
+   */
+  computeSkillAddsNegative(unit) {
+    // compute max of negative titles
+    const min_negatives = Array(setup.skill.length).fill(0)
+
+    for (const title of this.getAllTitles(unit).filter(title => title.isNegative())) {
+      const skills = title.getSkillAdds()
+      for (let i = 0; i < skills.length; ++i) {
+        min_negatives[i] = Math.min(min_negatives[i], skills[i])
+      }
+    }
+
+    return min_negatives
+  }
+
+  /**
+   * @param {setup.Unit} unit 
+   * @returns {number[]}
+   */
+  computeSkillAddsPositive(unit) {
+    const boosts = Array(setup.skill.length).fill(0)
+
+    // first, compute sum of assigned titles
+    const assigned = this.getAssignedTitles(unit).filter(title => !title.isNegative())
+    for (const title of assigned) {
+      const skills = title.getSkillAdds()
+      for (let i = 0; i < boosts.length; ++i) {
+        boosts[i] += skills[i]
+      }
+    }
+
+    return boosts
+  }
+
+  /**
+   * @param {setup.Unit} unit 
+   * @returns {number[]}
+   */
+  computeSkillAdds(unit) {
+    const boosts = Array(setup.skill.length)
+    const positive = this.computeSkillAddsPositive(unit)
+    const negative = this.computeSkillAddsNegative(unit)
+    for (let i = 0; i < positive.length; ++i) {
+      boosts[i] = positive[i] + negative[i]
+    }
+    return boosts
   }
 }

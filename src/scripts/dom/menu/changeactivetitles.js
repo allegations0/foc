@@ -8,26 +8,37 @@ setup.DOM.Menu.changeactivetitles = function (unit) {
     <div>
       Change ${unit.rep()}'s active titles.
       ${setup.DOM.Util.help(html`
-        While a unit can have multiple titles, they can only have at most three active at any time:
-        two titles that you can freely choose, plus their last obtained title.
-        These active titles will be the only titles that confer their benefits (e.g.,
-        skills).
-        The unit is still considered to have all the other titles -- they just won't affect gameplay.
+        <p>
+          While a unit can have multiple titles, they can only have at most four active at any time:
+          two titles that you can freely choose, plus their last obtained positive and negative title.
+          Amongst the positive titles, only these active titles will confer their benefits
+          (i.e., skill boosts).
+          All negative titles will confer their penalties, however, regardless of whether they are
+          active or not, but their penalties don't stack (i.e., only the highest value of each
+          skill counts).
+        </p>
+        <p>
+          Note that for the purpose of the story,
+          the unit is still considered to have all the other titles, including inactive ones.
+          They just won't confer their skill bonuses.
+        </p>
       `)}
     </div>
   `)
   fragments.push(setup.DOM.Card.unit(unit, /* hide actions = */ true))
 
-  const last = State.variables.titlelist.getLastTitle(unit)
-  if (last) {
+  const last = State.variables.titlelist.getLastTitlePositive(unit)
+  const last_negative = State.variables.titlelist.getLastTitleNegative(unit)
+  if (last || last_negative) {
     fragments.push(html`
       <div>
-        Last obtained title:
+        Last obtained title${(last && last_negative) ? 's' : ''}:
         ${setup.DOM.Util.help(html`
-          Last obtained title is always included as one of the unit's active titles, regardless of whether
-          it is chosen below or not.
+          The last obtained positive and negative titles are always included as one of the unit's active titles, regardless of whether
+          they are chosen below or not.
         `)}
-        ${last.rep()}
+        ${last ? last.rep() : ''}
+        ${last_negative ? last_negative.rep() : ''}
       </div>
     `)
   }
@@ -41,9 +52,7 @@ setup.DOM.Menu.changeactivetitles = function (unit) {
       `(Change active title)`,
       () => {
         setup.DevToolHelper.pickTitle(
-          State.variables.titlelist.getAllTitles(unit).filter(
-            ftitle => !assigned.includes(ftitle)
-          )
+          State.variables.titlelist.getAssignableTitles(unit),
         ).then(picked => {
           if (picked) {
             State.variables.titlelist.unassignTitle(unit, title)

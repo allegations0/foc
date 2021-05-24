@@ -151,7 +151,7 @@ setup.DOM.Card.unit = function (unit, hide_actions) {
     /* Titles */
     {
       const titles = SugarCube.State.variables.titlelist.getAssignedTitles(unit)
-      const title_fragments = titles.map(title => title.rep())
+      const title_fragments = titles.map(title => html`${title.rep()}`)
 
       const all_titles = SugarCube.State.variables.titlelist.getAllTitles(unit)
       if (all_titles.length > titles.length) {
