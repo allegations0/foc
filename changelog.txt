@@ -4,6 +4,19 @@
 
 ### v1.6.5.x
 
+v1.6.5.9:
+
+  - New feature: Negative titles. And fixes for visiting the  captured
+  - New event/opportunity: A merchant's Revenge: Visiting the Captured by Matthew Lang
+  - Trading Mission: Neko Port City now easily scoutable
+  - A Merchant's Revenge - update and rebalance (thanks to Matthew Lang)
+  - Updated Forest Trade quest (thanks to Matthew Lang)
+  - Plural for neko is neko now
+  - 10 new images: milk factory, display of love, sissy, obedience, slave merchant, goblin recue
+  - New activity: Clean shoes.
+  - Added <<uyesmaster>> to CC
+  - New Portrait images + Location image for new quests (thanks to Matthew Lang)
+
 v1.6.5.8:
 
   - Fix sissy slave using theatre slave texts and requirements.
