@@ -319,9 +319,6 @@ Choose restriction type:
               [[Exist rescue-able missing slave|RestrictionHasMissingSlave]]
             </div>
             <div>
-              [[Exist escaped slave|RestrictionHasEscapedSlave]]
-            </div>
-            <div>
               [[Exist unit in unit group|RestrictionUnitGroupHasUnit]]
             </div>
             <div>
