@@ -70,8 +70,9 @@ setup.Rarity = class Rarity extends setup.TwineClass {
       rarity => !rarity.isForced() && rarity.getFrequency()
     )
     rarities.sort((a, b) => b.getFrequency() - a.getFrequency())
+    const max_frequency = setup.rarity.rare.getFrequency()
     const rarity_sampled = setup.rng.sampleArray(
-      rarities.map(rarity => [rarity, rarity.getFrequency()]), /* normalize = */ true)
+      rarities.map(rarity => [rarity, Math.min(max_frequency, rarity.getFrequency())]), /* normalize = */ true)
 
     rarities.splice(rarities.indexOf(rarity_sampled))
     return Object.values(setup.rarity).filter(rarity => rarity.isForced()).concat(

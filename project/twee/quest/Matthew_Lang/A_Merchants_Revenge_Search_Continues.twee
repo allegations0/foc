@@ -87,6 +87,7 @@ setup.qdiff.harder36, /* difficulty */
       setup.qc.SlaveMarker('mlangmerchantprince'),
       setup.qc.MoneyCustom(1500),
       setup.qc.VarSet('mlangmerchantprincequest', '2', -1),
+      setup.qc.SetCooldownEvent('a_merchant_s_revenge_visiting_the_captured', 20),
     ],
   ],
   [

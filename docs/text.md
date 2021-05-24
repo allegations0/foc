@@ -188,6 +188,7 @@ All the stripping commands will return an empty string if the unit cannot be str
 - `<<unicknamebad $g.bob>>`: "gaping bitch"  (Bob's bad nickname for you)
 - `<<ubusyshort $g.bob>>`: "Hey boss, sorry but I'm a bit busy right now"
 - `<<upetwhine $g.bob>>`: "Yelp...!"
+- `<<uyesmaster $g.bob>>`: "Yes, master..."
 
 ### Others
 - `<<titlelow $g.bob>>`: generalist (or defiant slave)

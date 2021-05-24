@@ -1,6 +1,19 @@
 setup.Text.Greeting = {}
 
 /**
+ * @param {setup.Unit} unit 
+ * @param {setup.Unit} target 
+ * @returns {string}
+ */
+export function getMasterNickname(unit, target) {
+  if (target.isMale()) {
+    return `master`
+  } else {
+    return `mistress`
+  }
+}
+
+/**
  * Gives a nickname a unit uses for target. E.g., "boss" for player.
  * 
  * @param {{
@@ -13,6 +26,11 @@ setup.Text.Greeting.nickname = function ({
   unit, target
 }) {
   if (!target) target = State.variables.unit.player
+
+  if (unit.isSlave() && !target.isSlave()) {
+    return getMasterNickname(unit, target)
+  }
+
   const speech = unit.getSpeech()
   let names = [
     `b|name`,

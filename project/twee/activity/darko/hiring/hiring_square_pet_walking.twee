@@ -52,6 +52,7 @@ dialogues: [
       "<<ubusyshort $g.a>> walking the pet. Someone has to.",
     ],
     witty: [
+      "Who's a good pet? Yes! Yes you are!",
       "No whining! Wag your tail more! Bad pet!",
       "<<ugreetingshort $g.a>> come to join me on the totally normal chore of walking our <<urace $g.pet>> pet?",
     ],

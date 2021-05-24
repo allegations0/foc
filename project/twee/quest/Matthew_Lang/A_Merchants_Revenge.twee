@@ -106,6 +106,7 @@ setup.qdiff.harder35, /* difficulty */
     'Quest_a_merchant_s_revenge2Crit',
     [
       setup.qc.Slave('bandit', "a|was a bandit, formally raiding merchant caravans from the Kingdom of Tor", undefined),
+      setup.qc.SetCooldownEvent('a_merchant_s_revenge_visiting_the_captured', 20),
       setup.qc.Outcomes("success"),
       setup.qc.SlaverMarker('mlangmerchantprince'),
       setup.qc.MoneyCustom(2000),
