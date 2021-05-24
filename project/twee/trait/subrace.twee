@@ -39,7 +39,7 @@
   ),
   new setup.Trait(
     'subrace_elf',
-    'wommon elf',
+    'word elf',
     'The most common <<rep setup.trait.race_elf>>, these graceful people lives in the western forest together with the <<rep setup.trait.subrace_neko>>. Attuned to the earth element, which grants them minor power to manipulate plants.',
     0,
     {},
