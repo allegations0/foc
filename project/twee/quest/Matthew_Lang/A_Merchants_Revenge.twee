@@ -150,7 +150,7 @@ setup.qc.TraumatizeRandom('lookout', 5)
 [setup.questpool.city, setup.rarity.uncommon],
 ],
 [ /* restrictions */
-  setup.qres.VarLte('mlangmerchantprincequest', '2'),
+  setup.qres.VarNull('mlangmerchantprincequest'),
   setup.qres.UnitGroupNotBusy('a_merchant_s_revenge1'),
 ],
 [ /* expiration outcomes */
