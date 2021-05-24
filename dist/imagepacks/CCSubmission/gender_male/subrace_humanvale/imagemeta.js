@@ -1,7 +1,7 @@
 (function () {
 
   /* The following is list of direct subdirectories. */
-  UNITIMAGE_LOAD_FURTHER = ["bg_hunter", "bg_mystic",]
+  UNITIMAGE_LOAD_FURTHER = ["bg_hunter", "bg_mystic", "bg_adventurer",]
 
   /* Image credit information. */
   UNITIMAGE_CREDITS = {
@@ -16,7 +16,7 @@
       artist: "Blazbaros",
       url: "https://www.deviantart.com/blazbaros/art/Androgoran-the-Giant-832087856",
       license: "CC-BY-NC-ND 3.0",
-    },    
+    },
     3: {
       title: "Varric Tethras",
       artist: "The Fabulous Croissant",
@@ -34,7 +34,7 @@
       artist: "Blazbaros",
       url: "https://www.deviantart.com/blazbaros/art/Conan-538402067",
       license: "CC-BY-NC-ND 3.0",
-    },    
+    },
     6: {
       title: "Morvain",
       artist: "Tk-A",
@@ -64,13 +64,13 @@
       artist: "DoctorAnfelo",
       url: "https://www.newgrounds.com/art/view/doctoranfelo/bolin-nuktuk-outfit-the-legend-of-korra",
       license: "CC-BY-NC-ND 3.0",
-    },   
+    },
     11: {
       title: "The Master of Grey Wolf",
       artist: "TheShock",
       url: "https://www.deviantart.com/theshock/art/The-master-of-grey-wolf-122275073",
       license: "CC-BY-NC-ND 3.0",
-    }, 	
+    },
 
   }
 

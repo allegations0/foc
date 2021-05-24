@@ -4,6 +4,13 @@
 
 ### v1.6.5.x
 
+v1.6.5.10:
+
+  - Flesh-shaping muscle now inflict the "Artificial body" title.
+  - Automatic validation of quest roles implemented, and 30+ fixes on existing quests
+  - Validation of unit group in content creator
+  - Fix offsetmod not being used properly in content creator
+
 v1.6.5.9:
 
   - New feature: Negative titles. And fixes for visiting the  captured
