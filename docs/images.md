@@ -184,6 +184,8 @@ Here are several guidelines on what to consider for adding new images into this 
   - Image should be in `.jpg` format
   - Image size should be at most 250kb. This is HARD limit. Preferably under 200kb or less.
     - To achieve this, you can encode the image using `.jpg` with optimizatio threshold `80`
+  - No real porn
+    - Would break immersion in a fantasy game
 
 #### Watermarks and Texts
   - Image should not contain text about the image's name
