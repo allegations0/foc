@@ -154,6 +154,7 @@ null, /* key */
   'wizard1': [ _criteriawizard1, 1],
   'wizard2': [ _criteriawizard2, 1],
   'slave': setup.qu.slave,
+  'slave2': setup.qu.slave,
 },
 { /* actors */
 },
@@ -167,15 +168,16 @@ setup.qdiff.harder53, /* difficulty */
     [
       setup.qc.Outcomes('success'),
       setup.qc.OneRandomSeed([
-setup.qc.TraitReplace('student', setup.trait.per_honorable),
-setup.qc.TraitReplace('student', setup.trait.per_evil)
-]),
+        setup.qc.TraitReplace('student', setup.trait.per_honorable),
+        setup.qc.TraitReplace('student', setup.trait.per_evil)
+      ]),
     ],
   ],
   [
     'Quest_the_fire_takethCrit',
     [
       setup.qc.Mindbreak('slave'),
+      setup.qc.Mindbreak('slave2'),
       setup.qc.RemoveTitle('student', 'quest_consumed_by_fire_0'),
     ],
   ],
@@ -190,6 +192,7 @@ setup.qc.TraitReplace('student', setup.trait.per_evil)
     [
       setup.qc.Injury('student', 16),
       setup.qc.Injury('slave', 24),
+      setup.qc.Injury('slave2', 24),
       setup.qc.Injury('wizard1', 12),
       setup.qc.Injury('wizard2', 12),
       setup.qc.QuestDirect('the_fire_taketh'),
@@ -229,9 +232,9 @@ setup.qc.TraitReplace('student', setup.trait.per_evil)
 </p>
 
 <p>
-  To restore <<rep _u>>'s personalities back, the spell requires another unit
+  To restore <<rep _u>>'s personalities back, the spell requires two other units
   to take the personality from.
-  A slave, whose personality matches as much as possible with <<rep _u>>
+  Two slaves, whose personalities combined matches as much as possible with <<rep _u>>
   prior to being emptied.
   If you recall correctly, <<rep _u>> used to have the following traits:
   <<for _traitkey range $varstore.get('be_cleansed_in_fire_traits')>>
@@ -239,8 +242,8 @@ setup.qc.TraitReplace('student', setup.trait.per_evil)
       <<rep setup.trait[_traitkey]>>
     <</if>>
   <</for>>.
-  The ritual will restore all of these traits that are also present in the slave.
-  But of course, there is no question what will happen to the slave once their spirit has been
+  The ritual will restore all of these traits that are also present in one of the slaves.
+  But of course, there is no question what will happen to the slaves once their spirits have been
   entirely emptied out...
 </p>
 
@@ -267,7 +270,7 @@ the ritual site that your slavers were looking for.
 </p>
 
 <p>
-After setting and securing <<yourrep $g.slave>> on the altar,
+After setting and securing both <<yourrep $g.slave>> and <<rep $g.slave2>> on the altar,
 <<rep $g.wizard1>> began chanting as <<rep $g.student>> stood in front of the
 altar, remaining as blank and unnervingly neutral as ever.
 The spell was incredibly difficult, requiring a chant to be chanted together
@@ -278,10 +281,11 @@ the rite.
 
 <p>
 Your slavers could see a reddish aura starting to form around the statue.
-The aura then slowly transferred over into the struggling slave, bound over
-the altar, before encasing the slave entirely within its embrace.
-Then slowly, bits of histories and personality transferred over from the slave onto
-<<rep $g.student>>, and your slavers can see the living being absorbed out of <<rep $g.slave>>,
+The aura then slowly transferred over into the struggling slaves, bound over
+the altar, before encasing the slaves entirely within its embrace.
+Then slowly, bits of histories and personality transferred over from the slaves onto
+<<rep $g.student>>, and your slavers can see the living being absorbed out of
+both <<rep $g.slave>> and <<rep $g.slave2>>,
 and put into <<yourrep $g.student>>.
 </p>
 
@@ -290,7 +294,7 @@ and put into <<yourrep $g.student>>.
 <<set _recovered = 0>>
 <<for _trait range _restore>>
   <<if _trait in setup.trait>>
-    <<if $g.slave.isHasTrait(_trait)>>
+    <<if $g.slave.isHasTraitExact(_trait) || $g.slave2.isHasTraitExact(_trait)>>
       <<run setup.qc.TraitReplace('student', _trait).apply($gQuest)>>
       <<run _recovered += 1>>
     <</if>>
@@ -302,8 +306,8 @@ and put into <<yourrep $g.student>>.
 The ritual took hours to complete, but by the end the result was apparent.
 Light had returned to <<reps $g.student>> eyes, and once again the color of
 live had returned to <<their $g.student>> world.
-All it took in exchange was a slave who became completely mindbroken, and only
-suitable to be used as a fucktoy for a lucky owner.
+All it took in exchange was two slaves who became completely mindbroken, and only
+suitable to be used as fucktoys for a lucky owner.
 <<if !_recovered>>
   While <<their $g.student>> personality is now lost permanently, at least
   <<they $g.student>> student|is slightly
@@ -342,7 +346,7 @@ the ritual site that your slavers were looking for.
 </p>
 
 <p>
-After setting and securing <<yourrep $g.slave>> on the altar,
+After setting and securing <<yourrep $g.slave>> and <<rep $g.slave2>> on the altar,
 <<rep $g.wizard1>> began chanting as <<rep $g.student>> stood in front of the
 altar, remaining as blank and unnervingly neutral as ever.
 The spell was incredibly difficult, requiring a chant to be chanted together
@@ -355,7 +359,7 @@ the rite.
 Unfortunately, the ritual backfired and the magic went out of control,
 swirling from the statue into all your slavers. Your slavers were scorched by
 the pure fire, who detected all the evil deeds of your slavers and attempted
-to purify all of them. The slave suffered the worst blunt of the explosion,
+to purify all of them. The slaves suffered the worst blunt of the explosion,
 incurring injuries that would take months to heal.
 </p>
 
