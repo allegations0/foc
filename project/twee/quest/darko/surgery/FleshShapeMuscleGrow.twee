@@ -23,14 +23,14 @@
       'SurgeryMuscleGrowCrit',
       [
         setup.qc.Trait('trainee', setup.trait.muscle_strong),
-        
+        setup.qc.AddTitle('trainee', 'fleshshape_muscle'),
       ]
     ],
     [
       'SurgeryMuscleGrowSuccess',
       [
         setup.qc.Trait('trainee', setup.trait.muscle_strong),
-        
+        setup.qc.AddTitle('trainee', 'fleshshape_muscle'),
       ],
     ],
     [
@@ -51,6 +51,11 @@
 :: SurgeryMuscleGrow [nobr]
 <p>
 Grows the size of the slaver's muscles.
+</p>
+
+<p>
+<<dangertext 'WARNING'>>: changing bodyshape is intrusive,
+and will no doubt have a permanent negative impact on the slaver's body.
 </p>
 
 :: SurgeryMuscleGrowCrit [nobr]

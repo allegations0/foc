@@ -2,14 +2,8 @@
 setup.qcImpl.AddTitle = class AddTitle extends setup.Cost {
   constructor(actor_name, title) {
     super()
-
     this.actor_name = actor_name
-
-    if (setup.isString(title)) {
-      this.title_key = title
-    } else {
-      this.title_key = title.key
-    }
+    this.title_key = setup.keyOrSelf(title)
   }
 
   text() {
@@ -17,8 +11,8 @@ setup.qcImpl.AddTitle = class AddTitle extends setup.Cost {
   }
 
   apply(quest) {
-    var unit = quest.getActorUnit(this.actor_name)
-    var title = setup.title[this.title_key]
+    const unit = quest.getActorUnit(this.actor_name)
+    const title = setup.title[this.title_key]
     if (State.variables.titlelist.isHasTitle(unit, title)) {
     } else {
       State.variables.titlelist.addTitle(unit, setup.title[this.title_key])

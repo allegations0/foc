@@ -1,5 +1,19 @@
 :: QuestSetupFleshShapeMuscleGrow [nobr quest]
 
+<<run new setup.Title(
+  'fleshshape_muscle',   /* key */
+  'Artificial Body',   /* name */
+  'Has a body modified by intensive flesh-shaping, making them look somewhat unnatural',   /* name */
+  'had a|their body molded via unnatural means',  /* unit description */
+  -1000,   /* slave value */
+  {
+    brawn: -3,
+  },
+  {
+    is_negative: true,
+  },
+)>>
+
 <<run new setup.QuestTemplate(
   'fleshshape_muscle_grow',  /* id */
   'Flesh Shaping: Muscle Growth',  /* Title */
@@ -23,14 +37,14 @@
       'FleshShapeMuscleGrowCrit',
       [
         setup.qc.Trait('trainee', setup.trait.muscle_strong),
-        
+        setup.qc.AddTitle('trainee', 'fleshshape_muscle'),
       ]
     ],
     [
       'FleshShapeMuscleGrowSuccess',
       [
         setup.qc.Trait('trainee', setup.trait.muscle_strong),
-        
+        setup.qc.AddTitle('trainee', 'fleshshape_muscle'),
       ],
     ],
     [
@@ -54,6 +68,11 @@
 :: FleshShapeMuscleGrow [nobr]
 <p>
 Grows the size of the slave's muscles.
+</p>
+
+<p>
+<<dangertext 'WARNING'>>: changing bodyshape is intrusive,
+and will no doubt have a permanent negative impact on the slave's body.
 </p>
 
 :: FleshShapeMuscleGrowCrit [nobr]

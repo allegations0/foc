@@ -23,14 +23,14 @@
       'SurgeryMuscleShrinkCrit',
       [
         setup.qc.Trait('trainee', setup.trait.muscle_thin),
-        
+        setup.qc.AddTitle('trainee', 'fleshshape_muscle'),
       ]
     ],
     [
       'SurgeryMuscleShrinkSuccess',
       [
         setup.qc.Trait('trainee', setup.trait.muscle_thin),
-        
+        setup.qc.AddTitle('trainee', 'fleshshape_muscle'),
       ],
     ],
     [
@@ -51,6 +51,11 @@
 :: SurgeryMuscleShrink [nobr]
 <p>
 Shrinks the slaver's muscles.
+</p>
+
+<p>
+<<dangertext 'WARNING'>>: changing bodyshape is intrusive,
+and will no doubt have a permanent negative impact on the slaver's body.
 </p>
 
 :: SurgeryMuscleShrinkCrit [nobr]
