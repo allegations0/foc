@@ -176,7 +176,10 @@ magic_fire>> enter them...
 <p>
 <<run _cancleanse = $g.student.getRemovableTraits().filter(
 trait => trait.getTags().includes("per") ||
-trait.getTags().includes("bg"))>>
+trait.getTags().includes('skill') ||
+trait.getTags().includes("bg")).filter(
+  trait => !trait.getTags().includes('magic')
+)>>
 <<run _cancleanse = _cancleanse.filter(trait => trait != setup.trait.magic_fire)>>
 
 <<if _cancleanse.length>>

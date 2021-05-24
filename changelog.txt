@@ -4,6 +4,16 @@
 
 ### v1.6.5.x
 
+v1.6.5.12:
+
+  - A merchant revenge: revenge event (by Matthew Lang)
+  - Bugfix - A Merchant's Revenge repeating start quest (thanks to Matthew Lang)
+  - The fire taketh now take two slaves instead of one
+  - Be cleansed in fire now remove non-magic skill traits too
+  - Height clarifications in their texts
+  - Fix VarSet bug
+  - Fixed "wommon elf"
+
 v1.6.5.11:
 
   - "Mistyfing Obelisk" quest chain by "Fae" (2 quests, 1 opportunity). Horny training technology
