@@ -875,7 +875,7 @@ After studying the map carefully,
                     </p>
                 <<else>>
 
-                    <<set _unit = setup.selectUnit([$g.scout, $g.fighter, $g.raider], {trait: 'magic_wind', 'magic_wind_master'})>>
+                    <<set _unit = setup.selectUnit([$g.scout, $g.fighter, $g.raider], {anytrait: ['magic_wind', 'magic_wind_master']})>>
                     <<if _unit>>
                         <p>
                             <<name _unit>> let them get almost to the top before <<they _unit>> summoned a spirit of air and sent it, whirlwind like, down the cliff, flinging men and women to the ground far below and causing the camels to stampede back down the trail. It was carnage. But it was swift.

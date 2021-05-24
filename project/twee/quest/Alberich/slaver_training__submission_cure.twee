@@ -36,7 +36,7 @@ setup.qres.Job(setup.job.slaver),
 setup.qres.NotYou(),
 ],
 {
-slaving: 4.5,
+slaving: 3.0,
 }
 )>>
 
@@ -81,7 +81,7 @@ setup.qres.Job(setup.job.slaver),
 setup.qres.NotYou(),
 ],
 {
-slaving: 4.5,
+slaving: 3.0,
 }
 )>>
 
@@ -98,8 +98,9 @@ slaving: 4.5,
 1, /* weeks */
 setup.QUEST_DEFAULT_EXPIRATION,  /* expiration weeks */
 { /* roles */
-'discipliner': _criteriadiscipliner,
-'trainee': _criteriatrainee, },
+  'discipliner': [_criteriadiscipliner, 1.5],
+  'trainee': [_criteriatrainee, 1.5],
+},
 { /* actors */
 },
 [ /* costs */

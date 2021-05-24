@@ -16,6 +16,7 @@ setup.trait.per_active,
 setup.trait.per_stubborn,
 ],
 [
+setup.qres.Job(setup.job.slaver),
 setup.qres.You(),
 setup.qres.Or([
   setup.qres.TraitExact(setup.trait.magic_fire),
@@ -27,7 +28,7 @@ setup.qres.Or([
 ]),
 ],
 {
-arcane: 9,
+arcane: 3,
 }
 )>>
 <<run new setup.QuestTemplate(
@@ -43,7 +44,7 @@ arcane: 9,
 8, /* weeks */
 16,  /* expiration weeks */
 { /* roles */
-'you': _criteriayou, },
+'you': [_criteriayou, 3.0], },
 { /* actors */
 'sage': 'all', },
 [ /* costs */

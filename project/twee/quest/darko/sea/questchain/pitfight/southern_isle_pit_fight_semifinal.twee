@@ -53,6 +53,8 @@ null, /* key */
   setup.qres.Job(setup.job.slaver),
 ],
 {
+  combat: 1.5,
+  slaving: 1.5,
 }
 )>>
 

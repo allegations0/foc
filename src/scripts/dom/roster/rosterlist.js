@@ -183,8 +183,8 @@ export function getRosterListMenuItems({ unit, hide_details, as_extras_only }) {
     }))
     if (State.variables.titlelist.getAllTitles(unit).length > setup.TITLE_MAX_ASSIGNED) {
       misc.push(menuItemAction({
-        text: `Change active titles`,
-        tooltip: `Swap the active titles on the unit. While a unit can have an unlimited number of titles, it can only have a few active at a time.`,
+        text: `View / change active titles`,
+        tooltip: `Swap the active titles on the unit. While a unit can have an unlimited number of positive titles, it can only have a few active at a time.`,
         callback: () => {
           // @ts-ignore
           State.variables.gUnit_key = unit.key

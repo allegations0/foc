@@ -13,6 +13,7 @@ null, /* key */
   setup.qres.You(),
 ],
 {
+  arcane: 3,
 }
 )>>
 
@@ -170,7 +171,7 @@ null, /* key */
 4, /* weeks */
 setup.INFINITY, /* expiration weeks */
 { /* roles */
-  'you': _criteriayou,
+  'you': [_criteriayou, 3],
   'ambidextrous': _criteriaambidextrous,
   'intimidating': _criteriaintimidating,
   'connected': _criteriaconnected,

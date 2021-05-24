@@ -16,6 +16,7 @@
   0,
   0,
 ]>>
+<<set $trisnegative = false>>
 
 :: TRGen [nobr]
 
@@ -70,12 +71,14 @@ Can be negative.
 <div class='equipmentsetcard card'>
   Skill additives:
   <<message '(?)'>>
-    How much increment does each of these skills get?
-    This is a flat bonus, not percentage.
-    Should not exceed 5 on any one skill.
-    (Only put 5 for very rare titles! Most ordinary ones should be at most 3.)
-    Total sum should not exceed 10 for the rarest trait --- less rare trait should sum less.
-    Can put negative values to penalty those stats instead.
+    <div class='helpcard'>
+      How much increment does each of these skills get?
+      This is a flat bonus, not percentage.
+      Should not exceed 5 on any one skill.
+      (Only put 5 for very rare titles! Most ordinary ones should be at most 3.)
+      Total sum should not exceed 10 for the rarest trait --- less rare trait should sum less.
+      Can put negative values to penalty those stats instead.
+    </div>
   <</message>>
   <<for _iskill, _skill range setup.skill>>
     <br/>
@@ -84,6 +87,18 @@ Can be negative.
       <<rep _skill>>: <<numberbox _varname $trskilladds[_iskill]>>
     <</capture>>
   <</for>>
+</div>
+
+<div class='titlecard-negative'>
+  <<checkbox '$trisnegative' false true autocheck>>
+  Negative title
+  <<message '(?)'>>
+    <div class='helpcard'>
+      Mark a title as a Negative Title. Should generally only be used on titles that confer
+      penalties instead of bonuses to skills.
+      Negative Titles are always active.
+    </div>
+  <</message>>
 </div>
 
 <<link 'CREATE TITLE' >>
@@ -102,6 +117,9 @@ Can be negative.
         $trunittext,
         $trslavevalue,
         $trskilladds,
+        {
+          is_negative: $trisnegative,
+        },
       )
     )>>
     <<goto $gTRReturnPassage>>

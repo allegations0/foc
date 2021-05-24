@@ -54,6 +54,8 @@ null, /* key */
   setup.qres.AllTraits([setup.trait.magic_water], true),
 ],
 {
+  arcane: 2.0,
+  brawn: 1.0,
 }
 )>>
 <<run new setup.QuestTemplate(

@@ -56,6 +56,22 @@ setup.UnitCriteria = class UnitCriteria extends setup.TwineClass {
   }
 
   /**
+   * @returns {string | null}
+   */
+  validate() {
+    const skills = this.getSkillMultis().reduce((a, b) => a + b, 0)
+    if (this.getJob() != setup.job.slaver) {
+      if (skills) {
+        return "Non-slaver criteria cannot have any skill! Please add a slaver restriction to this role."
+      }
+    }
+    if (skills && Math.abs(skills - 3.0) > 0.00001) {
+      return `Sum of skills must be exactly 3.0, but found ${skills} instead!`
+    }
+    return null
+  }
+
+  /**
    * @returns {string}
    */
   getName() { return this.name }
@@ -262,7 +278,7 @@ setup.UnitCriteria = class UnitCriteria extends setup.TwineClass {
    * @returns {setup.Unit[]}
    */
   getEligibleUnits(quest) {
-    return State.variables.company.player.getUnits().filter(
+    return State.variables.company.player.getUnits({}).filter(
       unit => unit.isAvailable() && this.isCanAssign(unit)
     )
   }
@@ -282,6 +298,9 @@ setup.UnitCriteria = class UnitCriteria extends setup.TwineClass {
     for (const restriction of restrictions) {
       if (restriction instanceof setup.qresImpl.Job) {
         return setup.job[restriction.job_key]
+      }
+      if (restriction instanceof setup.qresImpl.You) {
+        return setup.job.slaver
       }
     }
     return null

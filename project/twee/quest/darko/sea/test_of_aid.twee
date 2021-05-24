@@ -58,7 +58,7 @@ setup.qres.NoTitle('quest_master_of_aid_0')
 10, /* weeks */
 24, /* expiration weeks */
 { /* roles */
-  'a': [ _criteriaa, 1],
+  'a': [ _criteriaa, 3],
 },
 { /* actors */
   'x': 'sea_all',

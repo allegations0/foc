@@ -94,8 +94,8 @@ function continue_callback() {
     const slavers = Object.keys(dtquest.getUnitCriterias()).filter(
       actor => dtquest.getActorResultJob(actor) == setup.job.slaver).length || 1
 
-    for (const criteria of Object.values(dtquest.getUnitCriterias())) {
-      criteria.offsetmod = 3.0 / slavers
+    for (const actor_name of Object.keys(dtquest.getUnitCriterias())) {
+      dtquest.unit_criteria_map[actor_name].offsetmod = 3.0 / slavers
     }
 
     /* create passage names etc */

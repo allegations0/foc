@@ -61,7 +61,7 @@ null, /* key */
 10, /* expiration weeks */
 { /* roles */
   'you': _criteriayou,
-  'battery': [ _criteriabattery, 3],
+  'battery': [ _criteriabattery, 2],
 },
 { /* actors */
   'child': 'all',

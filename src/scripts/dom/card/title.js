@@ -13,6 +13,14 @@ setup.DOM.Card.title = function (title) {
       ${domCardNameBold(title)}
     `)
 
+    if (title.isNegative()) {
+      inner_fragments.push(html`
+        <span data-tooltip="A negative title confers penalty instead of a benefit. Negative titles don't fully stack -- only the highest penalty to each skill applies.">
+          ${setup.DOM.Text.dangerlite('[Negative Title]')}
+        </span>
+      `)
+    }
+
     const value = title.getSlaveValue()
     if (value) {
       inner_fragments.push(html`
@@ -35,5 +43,5 @@ setup.DOM.Card.title = function (title) {
     </div>
   `)
 
-  return setup.DOM.create('div', { class: 'titlecard' }, fragments)
+  return setup.DOM.create('div', { class: `titlecard${title.isNegative() ? '-negative' : ''}` }, fragments)
 }

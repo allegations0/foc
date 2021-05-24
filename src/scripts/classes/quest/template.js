@@ -54,6 +54,7 @@ setup.QuestTemplate = class QuestTemplate extends ContentTemplate {
 
     var all_keys = []
     this.unit_criteria_map = {}
+    let total_offset = 0
     for (let criteria_key in unit_criterias) {
       if (all_keys.includes(criteria_key)) throw new Error(`Duplicate actor/unit key ${criteria_key}`)
       all_keys.push(criteria_key)
@@ -64,7 +65,27 @@ setup.QuestTemplate = class QuestTemplate extends ContentTemplate {
         offsetmod = unit_criteria[1]
         unit_criteria = unit_criteria[0]
       }
+
+      /**
+       * @type {setup.UnitCriteria}
+       */
+      const criteria = unit_criteria
+      const skills = criteria.getSkillMultis().reduce((a, b) => a + b, 0)
+
+      // check job
+      if (criteria.getJob() == setup.job.slaver && skills) {
+        total_offset += offsetmod
+        // check for role fitting-ness
+        if (Math.abs(skills - 3.0) > 0.00001 && !State.variables.devtooltype) {
+          throw new Error(`Quest ${key}: The skills of unit criteria ${criteria_key} must sum to exactly 3.0, but ${skills} was found instead`)
+        }
+      }
+
       this.unit_criteria_map[criteria_key] = { criteria: unit_criteria, offsetmod: offsetmod }
+    }
+
+    if (Math.abs(total_offset - 3.0) > 0.00001 && !State.variables.devtooltype) {
+      throw new Error(`Quest ${key}: total offset of all criteria must sum exactly to 3.0, but ${total_offset} was found instead`)
     }
 
     this.costs = costs

@@ -142,12 +142,9 @@ setup.Unit.prototype.getSkillAdditives = function (is_base_only) {
     }
 
     // get title bonuses
-    var titles = State.variables.titlelist.getAssignedTitles(this)
-    for (var i = 0; i < titles.length; ++i) {
-      var skillmod = titles[i].getSkillAdds()
-      for (var j = 0; j < skillmod.length; ++j) {
-        result[j] += skillmod[j]
-      }
+    const title_bonus = State.variables.titlelist.computeSkillAdds(this)
+    for (let j = 0; j < title_bonus.length; ++j) {
+      result[j] += title_bonus[j]
     }
 
     // get room bonuses

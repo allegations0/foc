@@ -69,9 +69,9 @@ null, /* key */
 4, /* weeks */
 20, /* expiration weeks */
 { /* roles */
-  'you': _criteriayou,
-  'parent': [ _criteriaparent, 1.5],
-  'tracker': [ setup.qu.informer, 1.5],
+  'you': [_criteriayou, 1],
+  'parent': [ _criteriaparent, 1],
+  'tracker': [ setup.qu.informer, 1],
 },
 { /* actors */
   'lover': [

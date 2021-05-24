@@ -9,8 +9,8 @@
   [setup.trait.face_scary, setup.trait.face_hideous, setup.trait.per_direct, setup.trait.per_kind, setup.trait.per_chaste, setup.trait.per_honorable], /* disaster traits */
   [setup.qres.Job(setup.job.slaver)], /* requirement */
   { /* skill effects, sums to 3.0 */
-    social: 0.2,
-    sex: 0.1,
+    social: 2,
+    sex: 1,
   }
 )>>
 

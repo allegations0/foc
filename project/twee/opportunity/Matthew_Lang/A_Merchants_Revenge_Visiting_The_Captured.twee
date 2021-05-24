@@ -165,7 +165,6 @@ setup.qc.DoAll([
 [ /* quest pool and rarity */
 ],
 [ /* restrictions */
-  setup.qres.UnitGroupNotBusy('a_merchant_s_revenge1'),
 ],
 { /* actors */
   'pc': [
@@ -198,7 +197,7 @@ You find the following letter on your desk.
             If you are home, perchance you will join me.
         <<elseif $unit.player.isHasAnyTraitExact(['face_attractive', 'face_beautiful'])>>
             <<if setup.qres.VarNull("mlangmerchantprinceflirt").isOk($gQuest)>>
-                If you are of a mind to show me his talents, I would not object to the company.
+                If you are of a mind to show me <<their $g.slave>> talents, I would not object to the company.
             <</if>>
         <</if>>
     </p>
@@ -233,11 +232,11 @@ Invite the merchant to your fort
 :: Opportunity_a_merchant_s_revenge_visiting_the_captured_1_flavor [nobr]
 <<set _u = setup.getAnySlaver()>>
 <p>
-    A few days after having <<name _u>> drop a message off at <<lore location_princeofcups>>, <<name $g.merchant>> arrives at your fort, accompanied by a number of guards. After some small talk, you lead him to the cell where the former bandit leader, <<name $g.slave>> is shackled.
-    <<if $g.slave.isHasTrait('eq_blind')>>
-        His head turns unseeingly toward the door, straining to for clues as to who is entering the cell.
+    A few days after having <<name _u>> drop a message off at <<lore location_princeofcups>>, <<name $g.merchant>> arrives at your fort, accompanied by a number of guards. After some small talk, you lead <<them $g.merchant>> to the cell where the former bandit leader, <<name $g.slave>> is shackled.
+    <<if !$g.slave.isCanSee()>>
+        <<Their $g.slave>> head turns unseeingly toward the door, straining to for clues as to who is entering the cell.
     <<else>>
-        He turns toward the door, eyes widening as he sees the man entering his cell.
+        <<They $g.slave>> turns toward the door, eyes widening as <<they $g.slave>> sees the <<man $g.merchant>> entering <<their $g.slave>> cell.
     <</if>>
     <br>
     "So," <<name $g.merchant>> says. "You're the dipshit who decided to raid my caravans. Now I know it was just for money, but you've made me very upset. And now you're going to pay for it."
@@ -257,12 +256,12 @@ Invite the merchant to your fort
         <<else>>
         <<their $g.slave>> pussy wet and slick
         <</if>>
-        despite the puffiness of his asshole.
+        despite the puffiness of <<their $g.slave>> asshole.
     <<else>>
-        and his asshole puffy and red.
+        and <<their $g.slave>> asshole puffy and red.
     <</if>>
     <<if $g.merchant.isHasDick()>>
-    White globs of cum ooze from his ring and the skin of his bottom is red from spanking.
+    White globs of cum ooze from <<their $g.slave>> ring and the skin of <<their $g.slave>> bottom is red from spanking.
     <<else>>
     The skin of <<their $g.slave>> bottom is also visibly red, probably from spanking.
     <</if>>
@@ -273,7 +272,7 @@ Invite the merchant to your fort
 
 
 :: Opportunity_a_merchant_s_revenge_visiting_the_captured_2 [nobr]
-Invite the merchant to your fort and join him in using your slave
+Invite the merchant to your fort and join them in using your slave
 
 
 :: Opportunity_a_merchant_s_revenge_visiting_the_captured_2_flavor [nobr]
@@ -367,7 +366,7 @@ positioning <<their $g.merchant>> ass just above the former bandit leader's mout
         <</if>>
         <br>
         "Amazing," <<they $g.merchant>> pants. "You got a load for <<them $g.slave>> too?"<br>
-        You nod and smile<<if $g.merchant.isHasDick()>> as <<name $g.merchant>> thrusts into <<name $g.slave>>'s lips, enjoying the hot wetness of his mouth and throat.<<else>>.<</if>>
+        You nod and smile<<if $g.merchant.isHasDick()>> as <<name $g.merchant>> thrusts into <<name $g.slave>>'s lips, enjoying the hot wetness of <<their $g.slave>> mouth and throat.<<else>>.<</if>>
     </p>
 <<else>>
     chokes and splutters as the acrid taste of urine fills <<their $g.slave>> mouth, causing it to cascade down over <<their $g.slave>> chin, chest and torso, also soaking into <<name $g.merchant>>'s groin and splattering onto <<their $g.merchant>> thighs.<br>
@@ -394,7 +393,7 @@ positioning <<their $g.merchant>> ass just above the former bandit leader's mout
     You position your own ass above <<reps $g.slave>>'s mouth.
     "Don't spill a single drop,"
     <</if>>
-    you remind him sternly as you relax and let your piss start to flow.
+    you remind <<them $g.slave>> sternly as you relax and let your piss start to flow.
     <br>
     <<name $g.slave>> stiffens as <<name $g.merchant>> kneels between <<their $g.slave>> thighs, shoving the slave's knees further apart on the bed as <<they $g.merchant>> spreads <<name $g.slave>>'s asscheeks and thwacks <<their $g.merchant>> spit covered
     _mcock
@@ -425,7 +424,7 @@ positioning <<their $g.merchant>> ass just above the former bandit leader's mout
     and begging you to give <<them $g.slave>> more to drink.
     <<Their $g.slave>> eyes close in bliss when you finally let
     <<if $unit.player.isHasDick()>>
-    go, and he continues sucking long after you finish, not seeming to care as your <<udick $g.pc>> stiffens in his mouth.
+    go, and he continues sucking long after you finish, not seeming to care as your <<udick $g.pc>> stiffens in <<their $g.slave>> mouth.
     <<else>>
     go.
     <</if>>

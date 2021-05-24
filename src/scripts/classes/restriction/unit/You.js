@@ -2,12 +2,7 @@
 setup.qresImpl.You = class You extends setup.Restriction {
   constructor() {
     super()
-
   }
-
-  static NAME = 'Unit must be the player character (i.e., can only be used on you)'
-  static PASSAGE = 'RestrictionYou'
-  static UNIT = true
 
   text() {
     return `setup.qres.You()`

@@ -47,6 +47,7 @@ setup.trait.per_evil,
 setup.trait.per_aggressive,
 ],
 [
+setup.qres.Job(setup.job.slaver),
 setup.qres.Trait(setup.trait.gender_female),
 setup.qres.HasTitle('quest_enlightenment_1_graduate_0'),
 setup.qres.Trait(setup.trait.magic_light),

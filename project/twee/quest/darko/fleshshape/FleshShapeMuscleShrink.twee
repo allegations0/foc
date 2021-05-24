@@ -23,14 +23,14 @@
       'FleshShapeMuscleShrinkCrit',
       [
         setup.qc.Trait('trainee', setup.trait.muscle_thin),
-        
+        setup.qc.AddTitle('trainee', 'fleshshape_muscle'),
       ]
     ],
     [
       'FleshShapeMuscleShrinkSuccess',
       [
         setup.qc.Trait('trainee', setup.trait.muscle_thin),
-        
+        setup.qc.AddTitle('trainee', 'fleshshape_muscle'),
       ],
     ],
     [
@@ -54,6 +54,11 @@
 :: FleshShapeMuscleShrink [nobr]
 <p>
 Shrinks the slave's muscles.
+</p>
+
+<p>
+<<dangertext 'WARNING'>>: changing bodyshape is intrusive,
+and will no doubt have a permanent negative impact on the slave's body.
 </p>
 
 :: FleshShapeMuscleShrinkCrit [nobr]

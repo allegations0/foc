@@ -165,6 +165,11 @@ setup.BackwardsCompat.upgradeSave = function (sv) {
       }
     }
 
+    /* last obtained negative title. v1.6.5.9 */
+    if (sv.titlelist && !sv.titlelist.last_obtained_negative) {
+      sv.titlelist.last_obtained_negative = {}
+    }
+
     if (isOlderThan(saveVersion.map(a => +a), [1, 6, 3, 12])) {
       // @ts-ignore
       if (!setup.globalsettings.disabledefaultimagepack) {

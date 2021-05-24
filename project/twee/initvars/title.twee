@@ -40,7 +40,12 @@
   'Used to be a slave',   /* name */
   'a|was a slave at some point in a|their life',  /* unit description */
   -2000,   /* slave value */
-  {},
+  {
+    slaving: -3,
+  },
+  {
+    is_negative: true,
+  },
 )>>
 
 <<run new setup.Title(
