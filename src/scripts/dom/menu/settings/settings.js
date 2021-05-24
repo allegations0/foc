@@ -391,6 +391,23 @@ setup.DOM.Menu.settingsdebug = function () {
       </div>
       <hr/>
       <div>
+        ${setup.DOM.Nav.link(
+      '(Show variables)',
+      () => {
+        const in_fragments = []
+        for (const varname in State.variables.varstore.vars) {
+          in_fragments.push(html`
+                <div>${varname}: ${State.variables.varstore.get(varname)}</div>
+              `)
+        }
+        setup.Dialogs.open({
+          title: "All game variables",
+          content: setup.DOM.create('div', {}, in_fragments)
+        })
+      }
+    )}
+      </div>
+      <div>
         ${setup.DOM.Util.message(
       `(Test trigger error)`,
       () => {

@@ -4,6 +4,12 @@
 
 ### v1.6.5.x
 
+v1.6.5.11:
+
+  - "Mistyfing Obelisk" quest chain by "Fae" (2 quests, 1 opportunity). Horny training technology
+  - Fix VarSet without variables.
+  - Variables in debug settings
+
 v1.6.5.10:
 
   - Flesh-shaping muscle now inflict the "Artificial body" title.

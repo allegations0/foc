@@ -157,7 +157,7 @@ Demonic Knowledge
 
 :: Opportunity_an_offering_accepted2_1_flavor [nobr]
 <p>
-    You choose to accept the trade trade of knowledge from the demonkin, hoping to improve your company from this whole ordeal. <<rep $g.demonkinnegotiator>> thanks you and leaves your fort promising that your new tome would arrive "soon".
+    You choose to accept the trade of knowledge from the demonkin, hoping to improve your company from this whole ordeal. <<rep $g.demonkinnegotiator>> thanks you and leaves your fort promising that your new tome would arrive "soon".
 </p>
 
 <p>
