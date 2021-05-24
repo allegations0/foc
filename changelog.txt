@@ -4,6 +4,12 @@
 
 ### v1.6.5.x
 
+v1.6.5.13:
+
+  - Bounty hunt: slime (male) image
+  - Docs on images.
+  - Fix undefined experation on varset
+
 v1.6.5.12:
 
   - A merchant revenge: revenge event (by Matthew Lang)
