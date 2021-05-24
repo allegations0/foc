@@ -19,6 +19,7 @@
 [ /* unit post process */
   setup.qc.BgTraitReset('unit', setup.trait.bg_raider),
   setup.qc.AddTitle('unit', 'quest_merchant_s_bandit_0'),
+
 ],
 )>>
 
