@@ -301,6 +301,12 @@
       url: "https://www.newgrounds.com/art/view/crescentia-fortuna/maneating-plant",
       license: "CC-BY-NC-ND 3.0",
     },
+    "bounty_hunt_slime_male.jpg": {
+      title: "[COMM] Slime's Boy",
+      artist: "NicoTheJoe",
+      url: "https://www.newgrounds.com/art/view/nicothejoe/comm-slime-s-boy",
+      license: "CC-BY-NC-ND 3.0",
+    },
     "bounty_hunt_slime_female.jpg": {
       title: "Slime cave Lewding 2",
       artist: "Crescentia-Fortuna",
@@ -512,6 +518,6 @@
       artist: "JaikArt",
       url: "https://www.deviantart.com/jaikart/art/Mountain-City-Gate-408618594",
       license: "CC-BY-NC-ND 3.0",
-    },	
+    },
   }
 }());

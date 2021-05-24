@@ -110,6 +110,7 @@ these creatures.
 
 
 <<if $g.slave.isMale()>>
+  <<questimage 'bounty_hunt_slime_male.jpg'>>
 <<else>>
   <<questimage 'bounty_hunt_slime_female.jpg'>>
 <</if>>
