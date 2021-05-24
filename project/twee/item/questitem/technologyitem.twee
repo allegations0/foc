@@ -26,6 +26,13 @@
 })>>
 
 <<run new setup.ItemTechnology({
+  key: 'technology_hornymaster',
+  name: 'Technology: Horny Master Training',
+  description: "Anyone can be a sex addict, with the right mindset. The demons of the Mist are said to be master of the art, and the Mist are abound in the deserts...",
+  tags: [],
+})>>
+
+<<run new setup.ItemTechnology({
   key: 'technology_research',
   name: 'Technology: Willbreaking',
   description: "Unlocks the <<rep setup.buildingtemplate.researchroom>>, in which your slavers can research a way to remove <<rep setup.trait.will_defiant>> from a slave.",
