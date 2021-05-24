@@ -507,5 +507,11 @@
       url: "https://www.newgrounds.com/art/view/neroxliv/tied-up-part-1",
       license: "CC-BY-NC-ND 3.0",
     },
+    "flesh_shaper_temple.jpg": {
+      title: "Mountain City Gate",
+      artist: "JaikArt",
+      url: "https://www.deviantart.com/jaikart/art/Mountain-City-Gate-408618594",
+      license: "CC-BY-NC-ND 3.0",
+    },	
   }
 }());
