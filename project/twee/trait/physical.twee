@@ -241,7 +241,7 @@
   new setup.Trait(
     'height_dwarf',
     'height: dwarf',
-    'Short as a dwarf',
+    'Short as a dwarf, about half the height of a regular human',
     0,
     {intrigue: 0.2, combat: -0.2},
     ['rare'],
@@ -250,7 +250,7 @@
   new setup.Trait(
     'height_short',
     'height: short',
-    'Shorter than most',
+    'Shorter than most regular humans',
     0,
     {intrigue: 0.1, combat: -0.1},
     ['medium'],
@@ -260,7 +260,7 @@
   new setup.Trait(
     'height_tall',
     'height: tall',
-    'Taller than most',
+    'Taller than most regular humans',
     0,
     {combat: 0.1, intrigue: -0.1},
     ['medium'],
@@ -269,7 +269,7 @@
   new setup.Trait(
     'height_giant',
     'height: giant',
-    'Hulkingly tall',
+    'Hulkingly tall, about double the height of a regular human',
     0,
     {combat: 0.2, intrigue: -0.2},
     ['rare'],
