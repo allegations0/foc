@@ -233,7 +233,7 @@ setup.qdiff.harder53, /* difficulty */
 
 <p>
   To restore <<rep _u>>'s personalities back, the spell requires two other units
-  to take the personality from.
+  to take the personalities from.
   Two slaves, whose personalities combined matches as much as possible with <<rep _u>>
   prior to being emptied.
   If you recall correctly, <<rep _u>> used to have the following traits:
