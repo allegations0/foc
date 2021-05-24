@@ -10,7 +10,6 @@ setup.qcImpl.VarSet = class VarSet extends setup.Cost {
     } else {
       this.expires = expires
     }
-    if (expires === undefined) throw new Error(`Undefined expiration for VarSet`)
   }
 
   text() {
