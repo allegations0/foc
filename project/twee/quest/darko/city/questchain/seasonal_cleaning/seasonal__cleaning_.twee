@@ -55,9 +55,9 @@ aid: 1,
 2, /* weeks */
 setup.QUEST_DEFAULT_EXPIRATION,  /* expiration weeks */
 { /* roles */
-'head': [_criteriahead, 2],
-'maid1': [setup.qu.maid, 0.5],
-'maid2': [setup.qu.maid, 2], },
+'head': [_criteriahead, 1],
+'maid1': [setup.qu.maid, 1],
+'maid2': [setup.qu.maid, 1], },
 { /* actors */
 'rich': 'quest_seasonal_cleaning1', },
 [ /* costs */

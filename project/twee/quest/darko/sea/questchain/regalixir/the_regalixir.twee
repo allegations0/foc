@@ -57,9 +57,9 @@ null, /* key */
 4, /* weeks */
 setup.QUEST_DEFAULT_EXPIRATION,  /* expiration weeks */
 { /* roles */
-  'you': _criteriayou,
-  'alchemist': [ setup.qu.alchemist_veteran, 1.5],
-  'navigator': [ setup.qu.navigator, 1.5],
+  'you': [_criteriayou, 1],
+  'alchemist': [ setup.qu.alchemist_veteran, 1],
+  'navigator': [ setup.qu.navigator, 1],
 },
 { /* actors */
   'slave': 'the_regalixir0',

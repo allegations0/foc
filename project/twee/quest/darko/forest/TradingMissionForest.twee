@@ -99,7 +99,7 @@ find a supplier of iron in the <<lore region_city>>.
 <<elseif _lav>>
   <<Rep _lav>> might not have found the best deal around, but it was still a very good one.
 <</if>>
-<<name trader1>> shrewdly sold the iron to a number of villages at the edge of the forest, charging slightly less than the Neko traders and getting back around four times as much as they spent to buy the iron in the first place. Even allowing for travel costs, you've ended up with so much profit you don't really care about the amounts your slavers probably skimmed off the top.
+<<name $g.trader1>> shrewdly sold the iron to a number of villages at the edge of the forest, charging slightly less than the Neko traders and getting back around four times as much as they spent to buy the iron in the first place. Even allowing for travel costs, you've ended up with so much profit you don't really care about the amounts your slavers probably skimmed off the top.
 </p>
 
 

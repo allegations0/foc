@@ -2,6 +2,21 @@
 
 /* PROOFREAD COMPLETE */
 
+<<set _criteriayou = new setup.UnitCriteria(
+null, /* key */
+'you', /* name */
+[
+],
+[
+],
+[
+  setup.qres.You(),
+],
+{
+  arcane: 3.0,
+}
+)>>
+
 <<set _criteriacow1 = new setup.UnitCriteria(
 null, /* key */
 'Cum Cow', /* name */
@@ -36,6 +51,7 @@ null, /* key */
   'cow1': _criteriacow1,
   'cow2': _criteriacow1,
   'cow3': _criteriacow1,
+  'you': [_criteriayou, 3],
 },
 { /* actors */
   'slaver': [

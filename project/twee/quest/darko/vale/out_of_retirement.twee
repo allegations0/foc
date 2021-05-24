@@ -49,8 +49,8 @@ null, /* key */
 12, /* expiration weeks */
 { /* roles */
   'you': _criteriayou,
-  'healer': [ setup.qu.healer, 1.5],
-  'tank': [ setup.qu.tank, 1.5],
+  'healer': [ setup.qu.healer, 1],
+  'tank': [ setup.qu.tank, 1],
 },
 { /* actors */
   'ex': [

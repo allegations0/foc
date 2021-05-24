@@ -64,6 +64,7 @@ setup.trait.muscle_verystrong,
 setup.trait.muscle_extremelystrong,
 ],
 [
+setup.qres.Job(setup.job.slaver),
 setup.qres.Trait(setup.trait.gender_male),
 setup.qres.HasTitle('quest_enlightenment_1_graduate_0'),
 setup.qres.Trait(setup.trait.magic_light),

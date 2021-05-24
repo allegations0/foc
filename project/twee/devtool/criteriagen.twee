@@ -162,17 +162,21 @@ Reload crcrit and crdisaster since their trait objects might be already obsolete
   <<if !$crname>>
     <<warning 'Name cannot be empty'>>
   <<else>>
-    <<run $qcustomcriteria.push(
-      new setup.UnitCriteria(
+    <<set _criteria = new setup.UnitCriteria(
         null,  /* key */
         $crname,
         $crcrit,
         $crdisaster,
         $crrestrictions,
         $crskillmultis,
-      )
-    )>>
-    <<dtloadpassage>>
-    <<goto 'QGAddRole'>>
+      )>>
+    <<set _val = _criteria.validate()>>
+    <<if _val>>
+      <<run alert(_val)>>
+    <<else>>
+      <<run $qcustomcriteria.push(_criteria)>>
+      <<dtloadpassage>>
+      <<goto 'QGAddRole'>>
+    <</if>>
   <</if>>
 <</link>>

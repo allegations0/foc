@@ -69,8 +69,8 @@ null, /* key */
 20, /* expiration weeks */
 { /* roles */
   'you': _criteriayou,
-  'victim': [ _criteriavictim, 1.5],
-  'crier': [ setup.qu.attentionseeker, 1.5],
+  'victim': [ _criteriavictim, 1],
+  'crier': [ setup.qu.attentionseeker, 1],
 },
 { /* actors */
   'child': [
