@@ -168,7 +168,7 @@ setup.qc.Injury('raider', 6)
 :: Quest_a_merchant_s_revenge_caravan_raid_southern_seas_ [nobr]
 /** mlangmerchantprincequest 5 = Caravan Raiding
 mlang_merchantrevenge_caravancount = How many caravans successfully raided
-/
+**/
 
 <div class='lettercard'>
     <p>
