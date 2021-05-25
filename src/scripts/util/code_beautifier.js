@@ -8,6 +8,7 @@ const tags_to_brackets = {
   'optif': 2,
   'choose': 2,
   'dialogue': 2,
+  'font': 2,
   'p': 1,
   'div': 1,
   'span': 1,

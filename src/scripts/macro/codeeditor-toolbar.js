@@ -759,6 +759,7 @@ export function generateCodeEditorToolbarItems(retainEditorFocus) {
   }
 
   function genIfAnyRole() {
+
     let if_any_role = []
     if (State.variables.devtooltype == 'quest') {
       if_any_role = [
@@ -1153,6 +1154,20 @@ No unit has ALL of the traits above.
       text: 'Formatting',
       tooltip: 'Related to text formatting',
       children: () => [
+        menuItem({
+          text: 'Font',
+          tooltip: 'Create a segment of text using race font. You can also use a font name instead.',
+          children: () => setup.TraitHelper.getAllTraitsOfTags(['subrace']).map(trait =>
+            menuItem({
+              text: trait.rep(),
+              callback: () => {
+                insertTextIntoEditor(`<<font '${trait.key}'>>
+  Type your sentence here!
+<</font>>`)
+              }
+            })
+          ),
+        }),
         menuItem({
           text: 'Letter card',
           tooltip: 'Creates a text segment styled to look like a written letter.',
