@@ -4,6 +4,14 @@
 
 ### v1.6.5.x
 
+v1.6.5.15:
+
+  - New activity: Grand hall gossip.
+  - Added `<<font>>` macro to CC and toolbar.
+  - New Male Portraits (thanks to Matthew Lang)
+  - Bugfixes and Innoxia credits for sex activities.
+  - Fixed comments in Merchant's Revenge Caravan Raid quests to prevent notes from showing in game. (thanks to Matthew Lang)
+
 v1.6.5.14:
 
   - Added the scaley tag
