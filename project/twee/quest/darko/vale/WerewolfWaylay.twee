@@ -18,7 +18,7 @@
   'werewolf_waylay', /* key */
   'Werewolf Waylay', /* Title */
   'darko',   /* author */
-  ['anthro', 'vale', 'unit', 'ire', 'rare', ],  /* tags */
+  ['furry', 'vale', 'unit', 'ire', 'rare', ],  /* tags */
   2,  /* weeks */
   setup.QUEST_DEFAULT_EXPIRATION,  /* expiration weeks */
   { /* roles */

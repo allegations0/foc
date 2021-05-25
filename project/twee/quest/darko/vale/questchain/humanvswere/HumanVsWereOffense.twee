@@ -7,7 +7,7 @@
   'human_vs_were_offense', /* key */
   'Human vs Werewolf: Offense', /* Title */
   'darko',   /* author */
-  ['anthro', 'vale', 'unit'],  /* tags */
+  ['furry', 'vale', 'unit'],  /* tags */
   1,  /* weeks */
   2,  /* quest expiration weeks */
   { /* roles */

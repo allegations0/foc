@@ -6,7 +6,7 @@
   'human_vs_were_defense', /* key */
   'Human vs Werewolf: Defensive', /* Title */
   'darko',   /* author */
-  ['anthro', 'vale', 'money', 'favor', 'ire',],  /* tags */
+  ['furry', 'vale', 'money', 'favor', 'ire',],  /* tags */
   1,  /* weeks */
   2,  /* quest expiration weeks */
   { /* roles */

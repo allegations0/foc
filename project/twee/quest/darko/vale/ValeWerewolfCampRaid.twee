@@ -6,7 +6,7 @@
   'vale_werewolf_camp_raid', /* key */
   'Raid: Werewolf Camp', /* Title */
   'darko',   /* author */
-  ['anthro', 'vale', 'unit', 'ire',],  /* tags */
+  ['furry', 'vale', 'unit', 'ire',],  /* tags */
   1,  /* weeks */
   setup.QUEST_DEFAULT_EXPIRATION,  /* expiration weeks */
   { /* roles */

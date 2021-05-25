@@ -68,7 +68,7 @@
   'neko_statue', /* key */
   'Moai Field', /* Title */
   'darko',   /* author */
-  ['forest', 'anthro', 'unit'],  /* tags */
+  ['forest', 'furry', 'unit'],  /* tags */
   2,  /* weeks */
   setup.QUEST_DEFAULT_EXPIRATION,  /* expiration weeks */
   { /* roles */

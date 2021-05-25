@@ -6,7 +6,7 @@
   'human_vs_were',  /* key */
   'Human vs Werewolf',  /* name */
   'darko',  /* author */
-  ['anthro', 'vale', 'unit', 'favor', ],  /* tags */
+  ['vale', 'furry', 'unit', 'favor', ],  /* tags */
   1,  /* deadline weeks, */
   'OpportunityHumanVsWere',
   setup.qdiff.normal14, /* difficulty */

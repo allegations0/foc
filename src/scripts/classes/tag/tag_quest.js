@@ -16,11 +16,17 @@ setup.QUESTTAGS = {
     title: 'Female unit only',
     description: 'Content that only gives female slaves / female slavers',
   },
-  anthro: {
+  furry: {
     type: 'fetish',
     hide: true,
     title: 'Furry',
-    description: 'Heavy emphasis on furries or anthromorphic species. Neko (cat ears but otherwise human) are not considered furries',
+    description: 'Heavy emphasis on furry species such as werewolves and tigerkin. This does not completely ban all furry content -- just those that feature furries in a sexual way. Neko (cat ears but otherwise human) are not considered furries',
+  },
+  scaley: {
+    type: 'fetish',
+    hide: true,
+    title: 'Scaley',
+    description: 'Heavy emphasis on scaley species such as lizardkin and dragonkin. This does not completely ban all scaley content -- just those that feature scalies in a sexual way',
   },
   transformation: {
     type: 'fetish',

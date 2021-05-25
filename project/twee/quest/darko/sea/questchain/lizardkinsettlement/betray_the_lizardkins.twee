@@ -36,6 +36,7 @@
 "darko", /* Author */
 [ /* tags */
   'sea',
+  'scaley',
   'danger',
   'unit',
   'veteran',

@@ -34,7 +34,7 @@ setup.qc.BgTraitReset('unit', setup.trait.bg_unemployed),
 "darko", /* Author */
 [ 'sea',
 'veteran',
-'anthro',
+'scaley',
 'unit',
 'ire',
 'legendary',
