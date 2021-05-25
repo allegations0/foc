@@ -4,6 +4,15 @@
 
 ### v1.6.5.x
 
+v1.6.5.14:
+
+  - Added the scaley tag
+  - Renamed the tag 'anthro' to 'furry' internally
+  - New Male Portraits (thanks to Matthew Lang)
+  - Bugfix for merchant revenge caravan vale
+  - Fix blackmail referring to wrong unit in text
+  - Starting slaver choice: 10 -> 12
+
 v1.6.5.13:
 
   - Bounty hunt: slime (male) image
