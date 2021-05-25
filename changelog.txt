@@ -4,6 +4,10 @@
 
 ### v1.6.5.x
 
+v1.6.5.16:
+
+  - Font fixes to make them slightly more uniform.
+
 v1.6.5.15:
 
   - New activity: Grand hall gossip.

@@ -2021,6 +2021,10 @@ figure>image {
   text-decoration: underline 1px dotted #68d;
 }
 
+.text-subrace_humankingdom {
+  font-weight: bold;
+}
+
 .text-subrace_humanvale {
   font-family: 'Averia Serif Libre', cursive;
 }
@@ -2043,14 +2047,18 @@ figure>image {
 
 .text-subrace_elf {
   font-family: 'Cherry Swash', cursive;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .text-subrace_fairy {
   font-family: 'Griffy', cursive;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .text-subrace_neko {
-  font-family: 'Emilys Candy', cursive;
+  font-family: 'Bubblegum Sans', cursive;
   letter-spacing: 1px;
 }
 
@@ -2060,6 +2068,7 @@ figure>image {
 
 .text-subrace_orc {
   font-family: 'Chelsea Market', cursive;
+  letter-spacing: 1px;
 }
 
 .text-subrace_lizardkin {
@@ -2069,10 +2078,17 @@ figure>image {
 
 .text-subrace_dragonkin {
   font-family: 'Girassol', cursive;
+  font-weight: bold;
+  transform: scaleX(1.1);
+  transform-origin: 0 0;
+  display: inline-block;
+  letter-spacing: 1px;
 }
 
 .text-subrace_demonkin {
   font-family: 'Emilys Candy', cursive;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .text-subrace_demon {
