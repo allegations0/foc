@@ -4,6 +4,10 @@
 
 ### v1.6.5.x
 
+v1.6.5.17: [TODO BEFORE COMMIT]
+
+  - Add <<fontsize>> macro.
+
 v1.6.5.16:
 
   - Font fixes to make them slightly more uniform.
