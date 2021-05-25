@@ -1,7 +1,7 @@
 (function () {
 
   /* The following is list of direct subdirectories. */
-  UNITIMAGE_LOAD_FURTHER = ["bg_adventurer", "bg_mystic", "bg_slave",]
+  UNITIMAGE_LOAD_FURTHER = ["bg_adventurer", "bg_mystic", "bg_slave", "bg_noble",]
 
   /* Image credit information. */
   UNITIMAGE_CREDITS = {
@@ -28,7 +28,7 @@
       artist: "Lavahanje",
       url: "https://www.newgrounds.com/art/view/lavahanje/lounging",
       license: "CC-BY-NC-ND 3.0",
-    },	
+    },
     5: {
       title: "Cullen Approaching",
       artist: "Oblivion Scribe",

@@ -175,16 +175,16 @@ mlang_merchantrevenge_caravancount = How many caravans successfully raided
     <<if Math.round($gQuest.getSeed() / 5) % 5 == 0>>
         <<set _location = "river">>
         a bend in the River Varde.
-    <<elseif Math.round($gQuest.getSeed() / 5) % 5 == 0>>
+    <<elseif Math.round($gQuest.getSeed() / 5) % 5 == 1>>
         <<set _location = "ravine">>
         a ravine through the mountains.
-    <<elseif Math.round($gQuest.getSeed() / 5) % 5 == 0>>
+    <<elseif Math.round($gQuest.getSeed() / 5) % 5 == 2>>
         <<set _location = "forest">>
         a path running through the pine forests.
-    <<elseif Math.round($gQuest.getSeed() / 5) % 5 == 0>>
+    <<elseif Math.round($gQuest.getSeed() / 5) % 5 == 3>>
         <<set _location = "werewolves">>
         an unmarked track along the edge of werewolf territory.
-    <<elseif Math.round($gQuest.getSeed() / 5) % 5 == 0>>
+    <<elseif Math.round($gQuest.getSeed() / 5) % 5 == 4>>
         <<set _location = "swampland">>
         A bushy area of swampland.
     <</if>>
@@ -211,13 +211,13 @@ mlang_merchantrevenge_caravancount = How many caravans successfully raided
 /* Set ambush location */
 <<if Math.round($gQuest.getSeed() / 5) % 5 == 0>>
     <<set _location = "river">>
-<<elseif Math.round($gQuest.getSeed() / 5) % 5 == 0>>
+<<elseif Math.round($gQuest.getSeed() / 5) % 5 == 1>>
     <<set _location = "ravine">>
-<<elseif Math.round($gQuest.getSeed() / 5) % 5 == 0>>
+<<elseif Math.round($gQuest.getSeed() / 5) % 5 == 2>>
     <<set _location = "forest">>
-<<elseif Math.round($gQuest.getSeed() / 5) % 5 == 0>>
+<<elseif Math.round($gQuest.getSeed() / 5) % 5 == 3>>
     <<set _location = "werewolves">>
-<<elseif Math.round($gQuest.getSeed() / 5) % 5 == 0>>
+<<elseif Math.round($gQuest.getSeed() / 5) % 5 == 4>>
     <<set _location = "swampland">>
 <</if>>
 
