@@ -158,7 +158,7 @@ Refuse and enslave <<if $g.boss>><<them $g.boss>><</if>>
 <p>
 You coldly decline. "That was a mistake," <<they $g.boss>> boss|reply, before
 taking a magical scroll and chanting it out loud. As a loud magical sound can be
-heard from across the fort, the former leader continues.
+heard from all across the fort, the former leader continues.
 "All the remaining valuables in this fort has been teleported away. You'll
 get nothing from me." It's true. Even after <<rep $g.dps>> and <<utheirrel
 $g.dps $g.healer>> <<rep $g.healer>> scour through the entire fort,

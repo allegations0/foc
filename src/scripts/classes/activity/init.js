@@ -4,8 +4,8 @@ setup.ActivityTemplateInitFuck = function () {
   const veryrare = setup.rarity.epic
 
   const authordata = {
-    name: 'darko',
-    url: '',
+    name: 'Innoxia',
+    url: 'https://lilithsthrone.blogspot.com/',
   }
 
   const horny_c = ['per_lustful', 'per_sexaddict']
