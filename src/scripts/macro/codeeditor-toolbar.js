@@ -1169,6 +1169,23 @@ No unit has ALL of the traits above.
           ),
         }),
         menuItem({
+          text: 'Font size',
+          tooltip: 'Create a segment of text using a different font size.',
+          children: () => {
+            const sizes = [12, 16, 20, 24, 28, 32, 48, 64, 128]
+            return sizes.map(size =>
+              menuItem({
+                text: `${size}px`,
+                callback: () => {
+                  insertTextIntoEditor(`<<fontsize ${size}>>
+    Type your sentence here!
+  <</fontsize>>`)
+                }
+              })
+            )
+          }
+        }),
+        menuItem({
           text: 'Letter card',
           tooltip: 'Creates a text segment styled to look like a written letter.',
           callback: () => {

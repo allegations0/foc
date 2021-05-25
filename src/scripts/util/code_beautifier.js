@@ -9,6 +9,7 @@ const tags_to_brackets = {
   'choose': 2,
   'dialogue': 2,
   'font': 2,
+  'fontsize': 2,
   'p': 1,
   'div': 1,
   'span': 1,
