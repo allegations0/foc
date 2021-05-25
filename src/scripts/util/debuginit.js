@@ -380,11 +380,16 @@ setup.DebugInit.contentCreatorInit = function () {
     ['subrace_humanvale_male', 'slaver',],
     ['subrace_humansea_female', 'slaver',],
     ['subrace_humandesert_male', 'slaver',],
+    ['subrace_angel_female', 'slaver',],
     ['subrace_elf_female', 'slaver',],
+    ['subrace_fairy_female', 'slaver',],
     ['subrace_werewolf_male', 'slaver',],
     ['subrace_neko_female', 'slaver',],
+    ['subrace_tigerkin_male', 'slaver',],
     ['subrace_lizardkin_male', 'slaver',],
+    ['subrace_dragonkin_male', 'slaver',],
     ['subrace_demon_female', 'slaver',],
+    ['subrace_demonkin_female', 'slaver',],
     ['subrace_orc_male', 'slaver',],
   ]
   setup.DebugInit.createUnits(units)
