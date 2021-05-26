@@ -49,7 +49,12 @@ setup.qcImpl.SlaveOrderHighDemonCommunity = class SlaveOrderHighDemonCommunity e
      * @type {setup.Cost[]}
      */
     const outcomes = [
-      setup.qc.SetCooldownQuest('high_demon_society', 0),
+      setup.qc.HideAll(
+        [
+          setup.qc.SetCooldownQuest('high_demon_society', 0),
+        ],
+        '',
+      ),
     ]
     if (this.type == 'punishment') {
       outcomes.push(setup.qc.Ire('demon', 20))
@@ -135,6 +140,9 @@ setup.qcImpl.SlaveOrderHighDemonCommunity = class SlaveOrderHighDemonCommunity e
     const disaster = [
     ]
 
+    /**
+     * @type {setup.Restriction[]}
+     */
     const req = [
       setup.qres.Job(setup.job.slave),
       setup.qres.NoTrait(setup.trait.race_demon),
