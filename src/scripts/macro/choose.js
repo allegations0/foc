@@ -67,7 +67,7 @@ Macro.add('choose', {
       }
 
       if (this.payload[i].name == 'optif') {
-        if (!Scripting.evalJavaScript(this.payload[i].args.full)) {
+        if (!Scripting.evalJavaScript(this.payload[i].args.raw)) {
           skip = true
         }
       } else {
