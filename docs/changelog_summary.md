@@ -2,7 +2,7 @@
 
 Full changelog [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/changelog.txt).
 
-v1.7.0.0 (28 May 2021): Base-Building, Content, Images
+v1.7.0.0 (28 May 2021): Base-Building, Content, Content images, Imagepacks, Content Creator QoL, Lore
 
   The repository is **moved permanently** to:
   https://gitgud.io/darkofocdarko/fort-of-chains
@@ -15,43 +15,43 @@ v1.7.0.0 (28 May 2021): Base-Building, Content, Images
   Once that's done, go to `Settings` again and then `Reset unit portraits`.
 
   - Content
-    - Test of Aid
-    - Test of Slaving
-    - Test of Sex (2 quest, 1 event, 1 mail)
-    - Test of Social.
-    - Test of Survival
-    - Fort Restoration Awards
-    - Test of Intrigue.
+    - Attitude Adjustments (by Choker Guy)
+    - Mistyfing Obelisk (by Fae) (2 quests, 1 opportunity)
+    - Raiding the Weres (by Fae)
+    - Harvesting the Fields (by Matthew Lang)
+    - Noises in the Cellar (by Matthew Lang)
+    - A Merchant's Revenge (by Matthew Lang)
+    - A Merchant's Revenge: Visiting the Captured (by Matthew Lang) (1 event, 1 opportunity)
+    - A Merchant's Revenge: Caravan Raid (by Matthew Lang) (5 quests)
+    - A Merchant's Revenge: The Search Continues (by Matthew Lang)
+    - A Merchant's Revenge: Payback is Sweet (by Matthew Lang) (1 opportunity, 1 event)
+    - A Very Special Wine (by Matthew Lang)
+    - Visiting the injured (by Matthew Lang) (2 events 1 opportunity)
+    - The Wailing Woods (by Matthew Lang)
+    - Bandits on the Road (by Matthew Lang) (1 quest 2 events)
+    - Raid Elven Village (by Matthew Lang)
     - Rioter for sale (FCdev)
     - Ex-Reserved (FCdev)
-    - The Slave Merchant
-    - Heavenly Recruit
-    - Mistyfing Obelisk by Fae (2 quests, 1 opportunity)
-    - A merchant's Revenge: Visiting the Captured (by Matthew Lang) (1 event, 1 opportunity)
-    - Noises in the Cellar (by Matthew Lang)
     - Sore Ass (FCdev)
     - Used whore (FCdev)
     - Devoted Entertainment Slave (FCdev)
     - Slave Dick on Slave (FCdev)
-    - A Merchant's Revenge: Caravan Raid (5 quests)
-    - A Merchant's Revenge: The Search Continues (by Matthew Lang)
-    - A Merchant's Revenge: Payback is Sweet (by Matthew Lang) (1 opportunity, 1 event)
-    - Test of Arcane
-    - Raiding the Weres (by Fae)
-    - Attitude Adjustments (by Choker Guy)
-    - Lost Puppy (by Hydrys)
     - Demonic Roleplay (by FCdev)
-    - A Very Special Wine Event by Matthew Lang
+    - Lost Puppy (by Hydrys)
+    - Fort Restoration Awards
+    - Test of Aid
+    - Test of Arcane
+    - Test of Intrigue.
+    - Test of Sex (2 quest, 1 event, 1 mail)
+    - Test of Slaving
+    - Test of Social.
+    - Test of Survival
+    - The Slave Merchant
+    - Heavenly Recruit
     - Daylight Robbery
     - A Gift from the Royals
     - Knight of Honor
     - Court Gossip
-    - Hospital visit + Visiting the injured (by Matthew Lang) (2 events 1 opportunity)
-    - Harvesting the Fields (by Matthew Lang)
-    - The Wailing Woods (by Matthew Lang)
-    - Bandits on the Road (by Matthew Lang) (1 quest 2 events)
-    - Raid Elven Village (by Matthew Lang)
-    - A Merchant's Revenge (by Matthew Lang)
     - New activities:
       - Grand hall gossip.
       - Clean shoes.
@@ -88,19 +88,23 @@ v1.7.0.0 (28 May 2021): Base-Building, Content, Images
     - Moved git repository to https://gitgud.io/darkofocdarko/fort-of-chains due to critical git failure
     - Moved references from old repo to new repo.
     - Added full credits and history for all the old commits
-    - Stop babe
+    - Stop babel from being noisy on game compile
   - New feature: 2D Base-building
-    - You can place your buildings on the map, eg your office, your room
-    - Rooms have adjacency / near bonus once you build the landscaping office
-      - Pathing matters for this, e.g., if you block the path between the entrances it will cause them to not be nearby
-    - Room images are moddable using the same structure as unit images
-    - You can do all sort of things to the rooms: rotate, move around, zoom, ...
     - Fort improvement is completely removed and replaced with map expansion
+    - Rooms
+      - You can place your buildings on the map now, eg your office, your room
+      - Can be auto-placed
+      - Each room has several unique images
+      - Feature comes shipped with over 650 different images for the rooms
+      - Room images are moddable using the same structure as unit images
+      - You can do all sort of things to the rooms: rotate, move around, zoom, ...
+    - Adjacencies
+      - Rooms have adjacency / near bonus once you build the landscaping office
+        - Pathing matters for this, e.g., if you block the path between the entrances it will cause them to not be nearby
+    - Pathing
+      - There are auto-generated paths in the fort
     - Comes with a brand new tutorial
     - Includes a slew of new buildings like garden, yard, and even portals
-    - Can Auto-place rooms too
-    - Fort pathing: There are auto-generated paths in the fort
-    - Room images: Comes shipped with over 650 different images for the rooms
   - New feature: Activity
     - This is a pure flavor feature
     - Available slavers that are idling at home can engage in activities
@@ -119,24 +123,27 @@ v1.7.0.0 (28 May 2021): Base-Building, Content, Images
   - New Feature: Content Creator Syntax Checking
     - Content Creator now automatically syntax check and format the texts before showing end result, including proper indentation in texts
     - Can also trigger this manually with the toolbar
+    - Content creator in general got a major QoL overhaul, thanks to feedbacks from Matthew Lang
   - New feature: Content images
     - Quest outcome / description, events, and opportunities can now have images
+    - Many are gender-aware (i.e, different image for male/female)
     - Content image credits page
     - Added content image count to statistics
     - Contributing guide updated for adding content images
+    - Comes shipped with 85 images
+    - Special thanks to Matthew Lang for finding a lot of them
+    - Can be turned off in settings
   - Existing content rewrites and polish:
-    - Trading Missiong: Forest quest (thanks to Matthew Lang)
+    - Trading Mission: Forest quest (thanks to Matthew Lang)
     - Harvesting the fields Quest text fix (thanks to Matthew Lang)
-    - Raid Elven Forest (thanks to Matthew Lang)
     - Bounty Hunt Bear (thanks to Matthew Lang)
     - Monk Business (thanks to Matthew Lang)
-    - Replace QuestingSquire.twee - Quest edit for grammar and spelling - Matthew Lang (thanks to Matthew Lang)
-    - Update investment_banking.twee quest - edit for grammar, flow, tense and gender of the elven attendant being descriptively stuck as female. - Matthew Lang. Note deliberately used 'their' in some cases as am referring to the slavers collectively. (thanks to Matthew Lang)
+    - Questing Squire (thanks to Matthew Lang)
+    - Investment Banking (thanks to Matthew Lang)
     - Update trait texts - grammar and spelling check. (thanks to Matthew Lang)
-    - Rewrote raid elven forest description
-    - Lots of new... puns
+    - Some new... puns here and there
   - Lore:
-    - Common elf -> wood elf rename
+    - Renamed common elf to wood elf
     - Plural for neko is neko now
     - Cathay (continent in the south) (thanks to Matthew Lang)
     - Kingdomfolks are officially named Torans.
@@ -176,10 +183,12 @@ v1.7.0.0 (28 May 2021): Base-Building, Content, Images
     - Content creator now auto-saves when clicking CREATE.
     - Removed brackets autocomplete in codejar.
   - New company: Royal Court
+    - Gives the "Upside Down" sex position when befriended
+    - Gives you high quality slaver recruits with high favor
   - Trait and Perks
     - Removed the `edging` slave training and replace it with `roleplay` slave training
-    - Eight plus new perks
-    - Increase perk choice from 5 to 6.
+    - 7+ new perks
+    - Increase special perk default choice list from 5 to 6.
     - Make it easier to get harbinger of chaos perk instead of harbinger of crows
     - Buffed most perks slightly
     - New hobbies texts for traits (thanks to Matthew Lang)
@@ -188,7 +197,7 @@ v1.7.0.0 (28 May 2021): Base-Building, Content, Images
     - New Sex Action: Dirty talk (Innoxia - Lilith's Throne)
     - Units can now refuse sex with you, depending on their traits
     - Added debug info on interactive sex.
-    - PenisHoleDomSlapAss more text.
+    - PenisHoleDomSlapAss more text variations.
   - Images
     - New Image Pack shipped with game: CCSubmission Image Pack by Matthew Lang
     - Refactored default imagepack into a regular imagpeack.
@@ -199,17 +208,15 @@ v1.7.0.0 (28 May 2021): Base-Building, Content, Images
     - Remove UNITIMAGE_NOBACK from image metadatas
     - Added imagepack info to image credits
     - A bunch of new portrait images for the default image pack
-    - Bounty hunt: slime (male) image
-    - 10 new images: milk factory, display of love, sissy, obedience, slave merchant, goblin recue
   - Balancing
     - Content related:
       - The fire taketh now consumes two slaves instead of one
       - Be cleansed in fire now remove non-magic skill traits too
       - Flesh-shaping muscle now inflict the "Artificial body" title.
+      - Trading Mission: Neko Port City now easily scoutable
     - Seniority threshold reduced to 4 years from 5 years.
     - Choosing new pc in new game plus now allows choosing 3 slavers to retire with now, instead of 2
     - Starting slaver choice: 10 -> 12
-    - Trading Mission: Neko Port City now easily scoutable
     - Major fort expansion cost balance adjustments again.
     - Library is now a prerequisite for grand hall, and decrease its price to 5000g
     - Updated Prince of Cups slave order to be more lucrative and fix text issues. (thanks to Matthew Lang)
@@ -229,15 +236,15 @@ v1.7.0.0 (28 May 2021): Base-Building, Content, Images
       - ItemUnitUsableOn
       - OpportunityOptionSelected
       - TrainingDo
+      - ItemUnitUsableOn
+      - Imagepacks
     - Remove selectunit macro
-    - Dom-ification of itemunitusableon
     - Verbose error message for isHasTrait
     - Quest errors now dont crash the entire page
     - Hobby text refactor.
     - Automatic validation of quest roles implemented, and 30+ fixes on existing quests
     - Removed cached tiles / gFortGridControl cached infos from save files to make its size smaller
     - Added whether it was [itch.io] version or not to error log
-    - Imagepacks moved to DOM
     - Added Passage info in sugarcube
     - Implements backwards compatibility when some of the room changes size
   - UI
