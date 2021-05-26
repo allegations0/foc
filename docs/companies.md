@@ -15,3 +15,4 @@
 - `'demon'`: The Great Mist
 - `'outlaws'`: Outlaws
 - `'bank'`: Tiger Bank
+- `'royal'`: Royal Court

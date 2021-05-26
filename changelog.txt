@@ -4,7 +4,7 @@
 
 ### v1.6.5.x
 
-v1.6.5.17: [TODO BEFORE COMMIT]
+v1.6.5.17:
 
   - Add <<fontsize>> macro.
 

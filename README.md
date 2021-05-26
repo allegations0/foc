@@ -45,8 +45,11 @@ But improvements and community-made contributions are still being added continuo
 **Contributing.**
 The game is always looking for all and any kind of contributions.
 More details [here](https://gitgud.io/darkofocdarko/fort-of-chains#how-to-contribute-content).
-As of v1.6, around 35 kind contributors have helped by directly adding content into the game,
+As of v1.6, more than 40 kind contributors have helped by directly adding content into the game,
 while much more have helped playtest the game and give feedbacks.
+Drop by the [(Discord)](https://discord.com/invite/PTD9D7mZyg) if you are interested!
+(If you use Discord, you can tell us your discord name too so we can give you a Discord role,
+which among other things allows you to bypass the seven days wait required there.)
 
 There are several ways to contribute to this game:
 
@@ -68,8 +71,6 @@ in the [subreddit](https://www.reddit.com/r/FortOfChains/)
 or directly in the [repository](https://gitgud.io/darkofocdarko/fort-of-chains).
 If the story fits the game, it will be added pronto, with a lot of thanks!
 [(More information)](https://gitgud.io/darkofocdarko/fort-of-chains#submitting-your-content).
-(If you use Discord, you can tell us your discord name too so we can give you a Discord role,
-which among other things allows you to bypass the seven days wait required there.)
 
 **Contributing art.**
 The game welcomes artistic contributions!
@@ -78,6 +79,7 @@ Please check [this document](https://gitgud.io/darkofocdarko/fort-of-chains/-/bl
 **Contributing code and others.**
 This game is [open-source](https://gitgud.io/darkofocdarko/fort-of-chains).
 Coding help, play-testing, and all other kinds of contributions are also welcomed.
+We are also looking for people willing to help writers put their content into a merge request.
 See [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/todolist.md#other) for other contribution
 ideas.
 
