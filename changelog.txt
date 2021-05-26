@@ -4,6 +4,11 @@
 
 ### v1.6.5.x
 
+v1.6.5.18:
+
+  - Readme update for v1.7
+  - Fix high demon society order text missing HideAll.
+
 v1.6.5.17:
 
   - Add <<fontsize>> macro.
