@@ -416,6 +416,8 @@ v1.7.0.0 (28 May 2021): Base-Building, Content, Content images, Imagepacks, Cont
 
 v1.6.0.0 (16 April 2021): Content, Retirement, New Game Plus, Blessings, Engine work
 
+<details>
+
   **SAVES FROM VERSION 1.5.3.3 OR LOWER NOT COMPATIBLE WITH 1.5.3.4 OR HIGHER**
 
   - Content
@@ -859,6 +861,7 @@ v1.6.0.0 (16 April 2021): Content, Retirement, New Game Plus, Blessings, Engine 
     - Text fixes for IreAtLeast and training text.
     - Fix their -> them typo in huge_tits.
 
+</details>
 
 v1.5.0.0 (26 February 2021): Huge amount of content, subraces, Text polish, QoL, Balancing
 
