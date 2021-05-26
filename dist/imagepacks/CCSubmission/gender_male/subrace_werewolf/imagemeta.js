@@ -38,7 +38,7 @@
     },
     6: {
       title: "Chaser",
-      artist: "Grypwolf",
+      artist: "Jetera",
       url: "https://www.deviantart.com/jetera/art/Chaser-425391763",
       license: "CC-BY-NC-ND 3.0",
     },

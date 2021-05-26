@@ -157,6 +157,7 @@ mlangmerchantprincequest 5 = Caravan Raid tips incoming */
 <<dialogue $g.merchant>>
     I'll be sending you advanced warning of their caravans and their travel routes. And paying you a bounty for each one that doesn't reach the city
 <</dialogue>>
+<<questimage "prince_of_cups.jpg">>
 <p>
     By now, <<lore location_princeofcups>> is starting to feel familiar, from its polished wooden floors to the pressed white tablecloths, to the _pdrink waiting for you at the table, a <<uadjphys $g.merchant>> <<urace $g.merchant>> lounging on the opposite side, toying with a glass of deep red wine.<br>
     <<if setup.qres.VarEqual("mlangmerchantprinceflirt", "1").isOk($gQuest)>>
