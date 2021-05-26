@@ -4,6 +4,13 @@
 
 ### v1.6.5.x
 
+v1.6.5.19:
+
+  - New portraits Inserted image into Merchant's Revenge: Payback is Sweet opportunity (thanks to Matthew Lang)
+  - Changelog summary for v1.7
+  - Changelog and readme for v1.7
+  - Fix `<<optif>>` not working with complex arguments.
+
 v1.6.5.18:
 
   - Readme update for v1.7
