@@ -45,7 +45,7 @@ But improvements and community-made contributions are still being added continuo
 **Contributing.**
 The game is always looking for all and any kind of contributions.
 More details [here](https://gitgud.io/darkofocdarko/fort-of-chains#how-to-contribute-content).
-As of v1.6, more than 40 kind contributors have helped by directly adding content into the game,
+As of v1.7, more than 40 kind contributors have helped by directly adding content into the game,
 while much more have helped playtest the game and give feedbacks.
 Drop by the [(Discord)](https://discord.com/invite/PTD9D7mZyg) if you are interested!
 (If you use Discord, you can tell us your discord name too so we can give you a Discord role,

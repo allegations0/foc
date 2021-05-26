@@ -2,28 +2,40 @@
 
 Full changelog [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/changelog.txt).
 
-v1.6.5.0 (21 May 2021):
+v1.7.0.0 (28 May 2021): Base-Building, Content, Images
 
   The repository is **moved permanently** to:
   https://gitgud.io/darkofocdarko/fort-of-chains
+
+  **SAVES FROM VERSION 1.6.0.7 OR LOWER NOT COMPATIBLE WITH 1.6.1.0 OR HIGHER**
 
   **If you were playing on v1.6.4.23 or lower, you need to fix the default image pack:**
   Go to `Settings`, then `Edit Image Packs`. In this page, `(remove)` the missing image pack,
   and `(re-add)` the `Default Imagepack` underneath.
   Once that's done, go to `Settings` again and then `Reset unit portraits`.
 
-  - Gitpocalypse
-    - Moved git repository to https://gitgud.io/darkofocdarko/fort-of-chains due to critical git failure
-    - Moved references from old repo to new repo.
-    - Added full credits and history for all the old commits
-    - Stop babel being noisy on new version
-  - Content (75k words):
+  - Content
+    - Test of Aid
+    - Test of Slaving
+    - Test of Sex (2 quest, 1 event, 1 mail)
+    - Test of Social.
+    - Test of Survival
+    - Fort Restoration Awards
+    - Test of Intrigue.
+    - Rioter for sale (FCdev)
+    - Ex-Reserved (FCdev)
+    - The Slave Merchant
+    - Heavenly Recruit
+    - Mistyfing Obelisk by Fae (2 quests, 1 opportunity)
+    - A merchant's Revenge: Visiting the Captured (by Matthew Lang) (1 event, 1 opportunity)
+    - Noises in the Cellar (by Matthew Lang)
+    - Sore Ass (FCdev)
+    - Used whore (FCdev)
+    - Devoted Entertainment Slave (FCdev)
+    - Slave Dick on Slave (FCdev)
+    - A Merchant's Revenge: Caravan Raid (5 quests)
     - A Merchant's Revenge: The Search Continues (by Matthew Lang)
-    - A Merchant's Revenge: Payback is Sweet (by Matthew Lang)
-    - A Merchant's Revenge: Caravan Raid (Vale) (by Matthew Lang)
-    - A Merchant's Revenge: Caravan Raid (Western Forests) (by Matthew Lang)
-    - A Merchant's Revenge: Caravan Raid (Kingdom of Tor) (by Matthew Lang)
-    - A Merchant's Revenge: Caravan Raid (Eastern Desert) (by Matthew Lang)
+    - A Merchant's Revenge: Payback is Sweet (by Matthew Lang) (1 opportunity, 1 event)
     - Test of Arcane
     - Raiding the Weres (by Fae)
     - Attitude Adjustments (by Choker Guy)
@@ -34,7 +46,16 @@ v1.6.5.0 (21 May 2021):
     - A Gift from the Royals
     - Knight of Honor
     - Court Gossip
+    - Hospital visit + Visiting the injured (by Matthew Lang) (2 events 1 opportunity)
+    - Harvesting the Fields (by Matthew Lang)
+    - The Wailing Woods (by Matthew Lang)
+    - Bandits on the Road (by Matthew Lang) (1 quest 2 events)
+    - Raid Elven Village (by Matthew Lang)
+    - A Merchant's Revenge (by Matthew Lang)
     - New activities:
+      - Grand hall gossip.
+      - Clean shoes.
+      - Library study
       - Marketer Marketing
       - Mail Room Read Mail
       - Hospital recovering
@@ -44,21 +65,80 @@ v1.6.5.0 (21 May 2021):
       - Forge Blackmisth
       - Temple Praying
       - Sparring
-      - Anal tailfuck a slave
-      - Buttfuck a slave
-      - Consensual anal
-      - Consensual anal tailfuck
-      - Consensual cunnilingus
-      - Consensual oral
-      - Consensual tailfuck
-      - Consensual vaginal
-      - Facefuck a slave
-      - Fuck a slave
-      - Have a slave eat you out
-      - Have a slave fuck you
-      - Have a slave tailfuck you
-      - Tailfuck a slave
-  - Lore
+      - Lazy Napping
+      - Tidying up Bedroom
+      - Doctor Deskjob
+      - Texts adapted from Innoxia's Lilith's Throne:
+        - Anal tailfuck a slave
+        - Buttfuck a slave
+        - Consensual anal
+        - Consensual anal tailfuck
+        - Consensual cunnilingus
+        - Consensual oral
+        - Consensual tailfuck
+        - Consensual vaginal
+        - Facefuck a slave
+        - Fuck a slave
+        - Have a slave eat you out
+        - Have a slave fuck you
+        - Have a slave tailfuck you
+        - Tailfuck a slave
+  - xxx new items, etc.
+  - Gitpocalypse
+    - Moved git repository to https://gitgud.io/darkofocdarko/fort-of-chains due to critical git failure
+    - Moved references from old repo to new repo.
+    - Added full credits and history for all the old commits
+    - Stop babe
+  - New feature: 2D Base-building
+    - You can place your buildings on the map, eg your office, your room
+    - Rooms have adjacency / near bonus once you build the landscaping office
+      - Pathing matters for this, e.g., if you block the path between the entrances it will cause them to not be nearby
+    - Room images are moddable using the same structure as unit images
+    - You can do all sort of things to the rooms: rotate, move around, zoom, ...
+    - Fort improvement is completely removed and replaced with map expansion
+    - Comes with a brand new tutorial
+    - Includes a slew of new buildings like garden, yard, and even portals
+    - Can Auto-place rooms too
+    - Fort pathing: There are auto-generated paths in the fort
+    - Room images: Comes shipped with over 650 different images for the rooms
+  - New feature: Activity
+    - This is a pure flavor feature
+    - Available slavers that are idling at home can engage in activities
+    - They can be found in your fort, and hovering over them give you a one liner or two
+    - Fully integrated with content creator: you can make new activities with it
+    - Fully integrated with testing too
+    - Support for NPCs for activites
+    - Can use the same text for all personalities in activities
+    - Can debug specific activities
+  - New feature: Speech bubbles
+    - Some texts can have fancy inline speech bubbles now
+    - Speech bubbles for "Like me" event.
+  - New feature: Negative titles
+    - These titles debuff skills instead of buffing them
+    - Usually received in exchange for getting some other benefit
+  - New Feature: Content Creator Syntax Checking
+    - Content Creator now automatically syntax check and format the texts before showing end result, including proper indentation in texts
+    - Can also trigger this manually with the toolbar
+  - New feature: Content images
+    - Quest outcome / description, events, and opportunities can now have images
+    - Content image credits page
+    - Added content image count to statistics
+    - Contributing guide updated for adding content images
+  - Existing content rewrites and polish:
+    - Trading Missiong: Forest quest (thanks to Matthew Lang)
+    - Harvesting the fields Quest text fix (thanks to Matthew Lang)
+    - Raid Elven Forest (thanks to Matthew Lang)
+    - Bounty Hunt Bear (thanks to Matthew Lang)
+    - Monk Business (thanks to Matthew Lang)
+    - Replace QuestingSquire.twee - Quest edit for grammar and spelling - Matthew Lang (thanks to Matthew Lang)
+    - Update investment_banking.twee quest - edit for grammar, flow, tense and gender of the elven attendant being descriptively stuck as female. - Matthew Lang. Note deliberately used 'their' in some cases as am referring to the slavers collectively. (thanks to Matthew Lang)
+    - Update trait texts - grammar and spelling check. (thanks to Matthew Lang)
+    - Rewrote raid elven forest description
+    - Lots of new... puns
+  - Lore:
+    - Common elf -> wood elf rename
+    - Plural for neko is neko now
+    - Cathay (continent in the south) (thanks to Matthew Lang)
     - Kingdomfolks are officially named Torans.
     - Added History lore
     - Added Geo lore
@@ -67,73 +147,78 @@ v1.6.5.0 (21 May 2021):
     - A bunch of new Geo lores.
     - Continent lore now use geo tag.
     - Added sylvan-neko war lore netry
-  - New Feature: Content Creator Syntax Checking
-    - Content Creator now automatically syntax check and format the texts before showing end result, including proper indentation in texts
-    - Can also trigger this manually with the toolbar
+    - Prince of Cups (by Matthew Lang)
+  - Content Creator
+    - Content Creator toolbar has tooltips now
+    - New macros and toolbar menus:
+      - `<<font>>` font type
+      - `<<fontsize>>` font size
+      - `<<uyesmaster>>` "Yes, master."
+      - "if any unit on quest is you"
+      - "Role has any, all, no traits" conditions
+      - `<<ustripverb>>`
+      - Inline effects
+      - Letter card formatting
+      - Formatting
+      - Building and item conditionals
+      - Nicknames
+      - Greetings
+      - Adverbs for care and abuse scenarios
+    - New restrictions:
+      - QuestDone(null)
+      - TagNotBanned
+      - UnitGroupNotBusy
+      - ZeroTitle
+    - Articles in contents are now automatically parsed to be "a" or "an".
+    - Validation of unit group in content creator
+    - Add Settings to Content Creator
+    - Added setup.getUnit with parameters
+    - Content creator now auto-saves when clicking CREATE.
+    - Removed brackets autocomplete in codejar.
   - New company: Royal Court
-  - Activity
-    - Support for NPCs for activites
-    - Can use the same text for all personalities in activities
-    - Activity in CC now can no longer remove the primary unit
-    - Can debug specific activities
-    - Chaste slavers no longer initiate sex activities.
+  - Trait and Perks
+    - Removed the `edging` slave training and replace it with `roleplay` slave training
+    - Eight plus new perks
+    - Increase perk choice from 5 to 6.
+    - Make it easier to get harbinger of chaos perk instead of harbinger of crows
+    - Buffed most perks slightly
+    - New hobbies texts for traits (thanks to Matthew Lang)
+    - Unstable bodyshifter and doppelganger now only shapeshift at home.
   - Interactive Sex
     - New Sex Action: Dirty talk (Innoxia - Lilith's Throne)
     - Units can now refuse sex with you, depending on their traits
     - Added debug info on interactive sex.
-  - Existing content polishing
-    - Harvesting the fields Quest text fix (thanks to Matthew Lang)
-    - Raid Elven Forest (thanks to Matthew Lang)
-    - Bounty Hunt Bear (thanks to Matthew Lang)
-    - Monk Business (thanks to Matthew Lang)
-  - The `Edging` slave training is replaced by the `Roleplay` slave training
-  - Perk
-    - A bunch of new perks
-    - Increase perk choice from 5 to 6.
-  - Content Creator
-    - Added "if any unit on quest is you" to toolbar.
-    - Role has any, all, no traits conditions added to toolbar for quests
-    - Added ALL and ANY traits conditionatls to CC
-    - TagNotBanned restriction
-    - New macro: ustripverb
-    - UnitGroupNotBusy restriction
-  - QoL
-    - Settings checkboxes are grouped by type
-    - Added tooltips for all in-game menus.
-    - Add unitcard to some opportunities and CC.
-  - Misc
-    - Increase activity trigger chance from 0.6 to 0.9.
-    - Common elf -> wood elf rename
+    - PenisHoleDomSlapAss more text.
   - Images
+    - New Image Pack shipped with game: CCSubmission Image Pack by Matthew Lang
+    - Refactored default imagepack into a regular imagpeack.
+    - Support for default image packs that comes shipped with the game
+    - Removed several immersion-breaking male images now that we have the CCSubmission pack by Matthew Lang (thanks to Matthew Lang)
+    - Some new portraits
     - Moved default image pack location to imagepacks/default from img/unit
     - Remove UNITIMAGE_NOBACK from image metadatas
     - Added imagepack info to image credits
-    - New portrait images for the CCSubmission pack (thanks to Matthew Lang)
-    - New portrait images for the default image pack
-    - A lot of new images for various quests and lore
-  - UI
-    - Lighten female card color.
-    - Can enable unit name using different font per race in settings.
-    - `<<rep>>` now colored, Can be changed in settings
-    - Unit icons in texts now hidden by default. Can be turned on in settings
-    - Male/female units cards now have purple/blue at the bottom right.
-    - Recolored retired to gray.
-    - Changed rare quest border color to blue to make it consistent with the rest.
-    - Rep now hides non actor units.
-  - Documentation
-    - Help text for adjacency bonus in rooms.
-    - First issue guide for coders
-    - More cheatsheet stuffs.
-    - Clarify `edit` quest doesn't edit it but creates a duplicate instead
-    - Documentation for adding NPC units with traits/titles
+    - A bunch of new portrait images for the default image pack
+    - Bounty hunt: slime (male) image
+    - 10 new images: milk factory, display of love, sissy, obedience, slave merchant, goblin recue
   - Balancing
+    - Content related:
+      - The fire taketh now consumes two slaves instead of one
+      - Be cleansed in fire now remove non-magic skill traits too
+      - Flesh-shaping muscle now inflict the "Artificial body" title.
+    - Seniority threshold reduced to 4 years from 5 years.
+    - Choosing new pc in new game plus now allows choosing 3 slavers to retire with now, instead of 2
+    - Starting slaver choice: 10 -> 12
+    - Trading Mission: Neko Port City now easily scoutable
     - Major fort expansion cost balance adjustments again.
     - Library is now a prerequisite for grand hall, and decrease its price to 5000g
     - Updated Prince of Cups slave order to be more lucrative and fix text issues. (thanks to Matthew Lang)
     - Rec wing pimp rework: number of pimps down from 5 to 3, profit per pimp increased slightly, capped at three slaves each
-  - New Game Plus
-    - You can choose to gain/lose a trait every time you restart with new game plus now
+    - Rivalry and friendship bonus now always active whenever both are slavers, but toned down by 20%.
+    - Fortgrid tile multiplier upped from 1.2 to 1.25.
+    - New Game Plus: You can choose to gain/lose a trait every time you restart with new game plus now
   - Engine
+    - Converted improvement constructor to objects.
     - Full rewrite of debug content/quest/event/interaction/activity to DOM
     - DOM conversions:
       - Settings
@@ -149,15 +234,91 @@ v1.6.5.0 (21 May 2021):
     - Verbose error message for isHasTrait
     - Quest errors now dont crash the entire page
     - Hobby text refactor.
+    - Automatic validation of quest roles implemented, and 30+ fixes on existing quests
+    - Removed cached tiles / gFortGridControl cached infos from save files to make its size smaller
+    - Added whether it was [itch.io] version or not to error log
+    - Imagepacks moved to DOM
+    - Added Passage info in sugarcube
+    - Implements backwards compatibility when some of the room changes size
+  - UI
+    - Lighten female card color.
+    - Can enable unit name using different font per race in settings.
+    - `<<rep>>` now colored, Can be changed in settings
+    - Unit icons in texts now hidden by default. Can be turned on in settings
+    - Male/female units cards now have purple/blue at the bottom right.
+    - Recolored retired to gray.
+    - Changed rare quest border color to blue to make it consistent with the rest.
+    - Rep now hides non actor units.
+    - Added gradient border for rare, legendary, or special quest.
+    - Borders are now square without radius
+    - Remove background from interactive sex cards. Closes #294
+  - QoL
+    - Pressing space when you have mail to end week will now go to mail room
+    - item/equipment texts now colorized based on rarity
+    - Show unbuild room count in menus
+    - Add message when getting opportunity without having a mail room.
+    - Settings checkboxes are grouped by type
+    - Added tooltips for all in-game menus.
+    - Add unitcard to some opportunities and CC.
+    - Can hide buildings.
+  - Documentation
+    - Room images FAQ.
+    - Room artwork contribution texts.
+    - Changed full changelog "here" url to absolute url.
+    - Readme updated for v1.7
+    - Documentation for content images
+    - Height clarifications in their trait texts
+    - Help text for adjacency bonus in rooms.
+    - First issue guide for coders
+    - More cheatsheet stuffs.
+    - Clarify `edit` quest doesn't edit it but creates a duplicate instead
+    - Documentation for adding NPC units with traits/titles
+    - Added Content Creator Cheatsheet
+    - Updated documentation for articles formatting
+    - Links to content creator cheatsheet.
+    - Updated help text for friendship/rivalry.
+    - Added used tilesets into the repo.
   - Misc
+    - Incompatible game versions will now try to load backwards compatibility.
+    - Added ire quest tag and manually marked quests that obviously give ire with the tag
+    - Flag games that have been tampered with debug mode for aiding debugging efforts
+    - Some new angel names
+    - Added whip item image
+    - Added Rare and Legendary quest tags
+    - Added the `scaley` fetish tag to ban lizardkin content
+    - Renamed the tag `anthro` to `furry` internally
+    - Show variables in debug settings
     - Added interaction to in game wiki
     - Dom/endurance/horny/obedience/roleplay now remove incompatible trait on success
     - Fairy offer and tower of roses now show the unit before recritment choice.
     - Rename none to "old end table" for statue.
-  - Dialogue
-    - Lots of new... puns
-    - "howdy, folks",
+    - Having a missing content image now throws an error in debug mode.
+    - Added some jsdocs for available.js
+    - Added warning on itch.io compiled version
+    - Some new fantasy naems
+    - Change of Heart potion renamed to Potion of Submissive Cure
+    - Jobs are now consistent in content creator and debug try content
   - Bugfixes
+    - Fix offsetmod not being used properly in content creator
+    - Fix high demon society order text missing HideAll.
+    - Font fixes to make them slightly more uniform.
+    - Bugfix for merchant revenge caravan vale
+    - Fix undefined experation on varset
+    - Fix VarSet bug
+    - Fix VarSet without variables.
+    - Fix sissy slave using theatre slave texts and requirements.
+    - Added backwards compatibility support for quests whose property changed
+    - Fix anytrait: '' instead of anytrait: []
+    - Fix missing location tags for some new quests.
+    - Fix top left link disappearing when clicking tab in right sidebar. Right sidebar to DOM
+    - Fix questing knight disaster, bandings on the road bugs
+    - Fix make instance from debug menu missing gPassage
+    - Fix errors on deploy.sh when itch io file is missing
+    - Fix item price not shown when you can't buy items in market
+    - Fix debug edit level / skills not working on PC
+    - Fix isHasTrait broken when the trait is null.
+    - Fix error opening settings in a new game.
+    - Removed stray yesevanone folder
     - Fix dirty talk causing sex interaction to break.
     - Fix some incorrect activity rarities.
     - Fix failure outcome undefined in CC failure quest.
@@ -174,121 +335,6 @@ v1.6.5.0 (21 May 2021):
     - Fix author info duplicated in outcomes
     - Fix "imagepacks/imagepackss" shown in imagepack card.
     - Fix content description not written inside <<capture>>
-  - Typo fixes
-    - Fix "$.slaves".
-    - Fix wine order wrong actor mention.
-    - Fix extra "TODO BEFORE COMMIT" in changelog
-    - Fixed comment tag to prevent code comments showing up in game (thanks to Matthew Lang)
-    - Fix isHasAnyTraitExact and merchant revenge.
-    - Bugfix - Quest: A Merchant's Revenge the Search Continues - fixed flirt variable implementation. (thanks to Matthew Lang)
-    - Bugfix - A Merchant's Revenge - Trait Checks now firing correctly (thanks to Matthew Lang)
-    - Make the dom actor in attitude adjustment use the slaver gender pref.
-    - Fixed typo - in a Very Special Wine Order (thanks to Matthew Lang)
-    - Fix quest debug descriptions
-    - Fixed "earened".
-    - Fixed "easyly"
-    - Fix numerous syntax bugs found by the syntax checker
-    - Updated to set text back to intended edits - adds variant text in case PC goes on quest. (thanks to Matthew Lang)
-    - Updated Event 'A Very Special Wine Order' to include the intended slave order and fix some pronouns (thanks to Matthew Lang)
-    - Fix erroneous p tags in merchant revenge quest.
-
-
-v1.6.4.0 (14 May 2021):
-  - Content
-    - Hospital visit + Visiting the injured (by Matthew Lang) (2 events 1 opportunity)
-    - Harvesting the Fields (by Matthew Lang)
-    - New hobbies texts for traits (thanks to Matthew Lang)
-    - The Wailing Woods (by Matthew Lang)
-    - Bandits on the Road (by Matthew Lang) (1 quest 2 events)
-    - Raid Elven Village (by Matthew Lang)
-    - Prince of Cups (by Matthew Lang)
-    - A Merchant's Revenge (by Matthew Lang)
-    - Test of Sex (2 quest, 1 event, 1 mail)
-    - Lazy Napping
-    - Tidying up Bedroom
-    - Doctor Deskjob
-  - New feature: Activity template
-    - This is a pure flavor feature
-    - Available slavers that are idling at home can engage in activities
-    - They can be found in your fort, and hovering over them give you a one liner or two
-    - Fully integrated with content creator: you can make new activities with it
-    - Fully integrated with testing too
-    - At the moment, only very few activities are available
-  - New feature: Speech bubbles
-    - Some texts can have fancy inline speech bubbles now
-    - Speech bubbles for "Like me" event.
-  - New feature: Fort pathing
-    - There are auto-generated paths in the fort now
-    - The middle path at the outdoors area is removed.
-    - Added path for indoor areas
-    - Existing saves might need to do a New Game Plus to reap the new changes
-  - Content Creator
-    - Toolbar has tooltips now
-    - New toolbar options:
-      - Inline effects
-      - Letter card formatting
-      - Formatting
-      - Building and item conditionals
-      - Nicknames
-      - Greetings
-      - Adverbs for care and abuse scenarios
-    - New restrictions:
-      - ZeroTitle
-    - Articles in contents are now automatically parsed to be "a" or "an".
-    - Added setup.getUnit with parameters
-    - Content creator now auto-saves when clicking CREATE.
-    - Removed autocomplete in codejar.
-  - Writing Improvements
-    - Replace QuestingSquire.twee - Quest edit for grammar and spelling - Matthew Lang (thanks to Matthew Lang)
-    - Update investment_banking.twee quest - edit for grammar, flow, tense and gender of the elven attendant being descriptively stuck as female. - Matthew Lang. Note deliberately used 'their' in some cases as am referring to the slavers collectively. (thanks to Matthew Lang)
-    - Update trait texts - grammar and spelling check. (thanks to Matthew Lang)
-  - Quest
-    - Added Rare and Legendary quest tags
-  - Content Images
-    - A lot of new content images, particularly for slave training quests (thanks to Matthew Lang)
-  - Perk
-    - New standard perk: Switch
-    - New special perk: Chaotic Personality
-    - Make it easier to get harbinger of chaos perk instead of harbinger of crows
-    - Buffed most perks slightly
-  - Portraits
-    - New Image Pack: CCSubmission Image Pack by Matthew Lang
-    - Refactored default imagepack into a regular imagpeack.
-    - Support for default image packs that comes shipped with the game
-    - Removed several immersion-breaking male images now that we have the CCSubmission pack by Matthew Lang (thanks to Matthew Lang)
-    - Some new portraits
-  - Rooms and fort map
-    - Auto-place will now try to place close to center of the map
-    - Fort loading is made much faster via asynchronous loading
-    - Fort grid saves scroll position more liberally now.
-    - Yard and farm no longer passable.
-    - Path images now consists of 2x2 16px tiles.
-  - Engine
-    - Removed cached tiles / gFortGridControl cached infos from save files to make its size smaller
-    - Added whether it was [itch.io] version or not to error log
-    - Imagepacks moved to DOM
-  - Visuals
-    - Added gradient border for rare, legendary, or special quest.
-    - Borders are now square without radius
-  - Documentation
-    - Added Content Creator Cheatsheet
-    - Updated documentation for articles formatting
-    - Links to content creator cheatsheet.
-    - Updated help text for friendship/rivalry.
-  - QoL
-    - Can hide buildings.
-  - Balancing
-    - Rivalry and friendship bonus now always active whenever both are slavers, but toned down by 20%.
-    - Fortgrid tile multiplier upped from 1.2 to 1.25.
-  - Misc
-    - Unstable bodyshifter and doppelganger now only shapeshift at home.
-    - Having a missing content image now throws an error in debug mode.
-    - Added some jsdocs for available.js
-    - Added warning on itch.io compiled version
-    - Some new fantasy naems
-    - Change of Heart potion renamed to Potion of Submissive Cure
-    - Jobs are now consistent in content creator and debug try content
-  - Bugfixes
     - Fix Content Creator slowdown from rooms
     - Fix the _Elf in wailing woods sometimes not having a unit there.
     - Fix errors when saving on the fort grid menu
@@ -309,55 +355,6 @@ v1.6.4.0 (14 May 2021):
     - Fix lodgings missing "2 extra spaces".
     - Fix checkImageMetas to not be strict by default.
     - Fix infinite portal of potion shaping in alchemist shop
-  - Text fixes
-    - Fix chests -> chest
-    - Some "of of" fixes
-    - Available help text fixed.
-    - Fixed `</else>`
-    - Fix dialogue having extra space and newlines.
-    - Fixed missing words and some coding errors on Hospital Visit quest - Matthew Lang (thanks to Matthew Lang)
-    - Fix wrong pronoun in bear hunt.
-    - Fix renovation office text.
-
-
-v1.6.3.0 (7 May 2021):
-  - Content
-    - Test of Social.
-    - The Slave Merchant
-  - New feature: Room images:
-    - Almost all rooms have proper images now in your fort
-    - Comes shipped with over 650 different images
-  - New feature: Content images
-    - Quest outcome / description, events, and opportunities can now have images
-    - Content images for:
-      - Chart the vale (descripption)
-      - Raid elven forest (description)
-      - Carnal experience (female)
-      - Unit training pet basic (male)
-      - Unit training pet basic (female)
-      - Unit training pet advanced (male)
-      - Unit training pet advanced (female)
-      - Unit training dominance advanced (male)
-      - Gift exchange (male, critical)
-      - Gift exchange (female, critical)
-    - Content image credits page
-    - Added content image count to statistics
-    - Contributing guide updated for adding content images
-  - Rewriting
-    - Rewrote raid elven forest description
-  - Portrait:
-    - Some new portraits
-  - Balancing
-    - Massive rebalancing of fort expansion prices
-    - Building relocate cost: 120g / tile now becomes 20g / tile
-  - QoL
-    - Can Auto-place rooms now in fort
-    - Add message when getting opportunity without having a mail room.
-  - Documentation
-    - Added used tilesets into the repo.
-  - Misc
-    - Added whip item image
-  - Bugfixes
     - Fixed some changelog links leading to nowhere
     - Fix wall-less room not showing walls for top room.
     - Fix inn missing adjacency in market.
@@ -367,71 +364,9 @@ v1.6.3.0 (7 May 2021):
     - Fix wall interaction with passables.
     - Fix passable buildings + wall again.
     - Fix backwards compat with disconnected empty spaces
-  - Text fixes
-    - Fix "a a"
-
-v1.6.2.0 (30 April 2021):
-
-  - Content
-    - Test of Survival
-    - Ex-Reserved (FCdev)
-  - Balancing
-    - Standardize training room sizes to 3x3.
-  - QoL
-    - Remove background from interactive sex cards. Closes #294
-    - Clicking the room after building on confirm build now undoes it
-  - Engine
-    - Added Passage info in sugarcube
-    - Implements backwards compatibility when some of the room changes size
-  - Documentation
-    - Changed full changelog "here" url to absolute url.
-  - Bugfixes
     - Fixed farm giving wrong skill bonus/penalty
     - Fixed broken links in content.md
     - Fix road not calculated in expansion costs
-
-v1.6.1.4 (24 April 2021):
-
-  **SAVES FROM VERSION 1.6.0.7 OR LOWER NOT COMPATIBLE WITH 1.6.1.0 OR HIGHER**, but
-  you can try loading them, and the game will do its best to convert it into a New Game Plus.
-
-  **LOOKING FOR ARTISTIC CONTRIBUTIONS**: see
-  [this issue](https://gitgud.io/darkofocdarko/fort-of-chains/-/issues/290) for more information
-
-  - Content
-    - Fort Restoration Awards
-    - Test of Intrigue.
-    - Rioter for sale (FCdev)
-  - New feature: Fort map
-    - Your fort has a 2D map now!
-    - You can place your buildings on the map, eg your office, your room
-    - Rooms have adjacency / near bonus once you build the landscaping office
-      - Pathing matters for this, e.g., if you block the path between the entrances it will cause them to not be nearby
-    - Room images are moddable using the same structure as unit images
-    - You can do all sort of things to the rooms: rotate, move around, zoom, ...
-    - Fort improvement is completely removed and replaced with map expansion
-    - Comes with a brand new tutorial
-    - Includes a slew of new buildings like garden, yard, and even portals
-  - Interactive Sex
-    - PenisHoleDomSlapAss more text.
-  - Balancing
-    - Seniority threshold reduced to 4 years from 5 years.
-    - Choosing new pc in new game plus now allows choosing 3 slavers to retire with now, instead of 2
-  - Engine
-    - Converted improvement constructor to objects.
-  - QoL
-    - Pressing space when you have mail to end week will now go to mail room
-    - item/equipment texts now colorized based on rarity
-    - Show unbuild room count in menus
-  - Misc
-    - Incompatible game versions will now try to load backwards compatibility.
-    - Added ire quest tag and manually marked quests that obviously give ire with the tag
-    - Flag games that have been tampered with debug mode for aiding debugging efforts
-    - Some new angel names
-  - Documentation
-    - Room images FAQ.
-    - Room artwork contribution texts.
-  - Bugfixes
     - Fix half werewolf broken when you lack mail room.
     - Fix black tiles when all slots are occupied from top to bottom in a column
     - Fix tooltip misaligned on various places
@@ -441,6 +376,33 @@ v1.6.1.4 (24 April 2021):
     - Fix filtering in new game plus cause the entire process to restart.
     - Fix bug with change banned tags reverting to previous day
   - Text fixes
+    - Fix blackmail referring to wrong unit in text
+    - Fixed "wommon elf"
+    - Fix "$.slaves".
+    - Fix wine order wrong actor mention.
+    - Fix extra "TODO BEFORE COMMIT" in changelog
+    - Fixed comment tag to prevent code comments showing up in game (thanks to Matthew Lang)
+    - Fix isHasAnyTraitExact and merchant revenge.
+    - Bugfix - Quest: A Merchant's Revenge the Search Continues - fixed flirt variable implementation. (thanks to Matthew Lang)
+    - Bugfix - A Merchant's Revenge - Trait Checks now firing correctly (thanks to Matthew Lang)
+    - Make the dom actor in attitude adjustment use the slaver gender pref.
+    - Fixed typo - in a Very Special Wine Order (thanks to Matthew Lang)
+    - Fix quest debug descriptions
+    - Fixed "earened".
+    - Fixed "easyly"
+    - Fix numerous syntax bugs found by the syntax checker
+    - Updated to set text back to intended edits - adds variant text in case PC goes on quest. (thanks to Matthew Lang)
+    - Updated Event 'A Very Special Wine Order' to include the intended slave order and fix some pronouns (thanks to Matthew Lang)
+    - Fix erroneous p tags in merchant revenge quest.
+    - Fix chests -> chest
+    - Some "of of" fixes
+    - Available help text fixed.
+    - Fixed `</else>`
+    - Fix dialogue having extra space and newlines.
+    - Fixed missing words and some coding errors on Hospital Visit quest - Matthew Lang (thanks to Matthew Lang)
+    - Fix wrong pronoun in bear hunt.
+    - Fix renovation office text.
+    - Fix "a a"
     - Fix portal duplicate "distant"
     - Goblin rescue and eternal youth text fixes.
     - Werewolf hunt story writing fixes (thanks to J1009).
