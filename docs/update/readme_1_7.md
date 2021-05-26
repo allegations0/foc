@@ -20,9 +20,9 @@ for playing as a submissive character.
 [(More information)](https://www.reddit.com/r/FortOfChains/comments/jlhivr/fort_of_chains_and_download_link/)
 [(Feature / Fetish list)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/faq.md#does-this-game-contain-insert-fetish-here)
 
-FoC v1.7 is a very large update that adds new content, new features, and many more.
+FoC v1.7 brings a very large update that adds new content, new features, and many more.
 Many of the new content are done by contributors, including Matthew Lang (who did a big chunk of work this update),
-Fae, Choker Guy, Hydrys, and much more (there is a list below),
+Fae, Choker Guy, Hydrys, and much more (see list below later),
 so if you like their work, please show your appreciation! It will make their day for sure.
 
 Among the many features added in v1.7, the biggest one has to be the complete revamp of the game's
@@ -33,14 +33,14 @@ for the building, as well as proper path-finding algorithm to find the shortest 
 They have been quite polished and tested by the many volunteers in the
 [Discord server](https://discord.gg/PTD9D7mZyg).
 
-While base-building was the biggest addition in v1.7, it also comes shipped with a very large amount
-of other improvements.
-A summary (still very long) of all the changes from v1.6 to v1.7 are listed at the end,
+While base-building is probably the biggest addition in v1.7, the update also comes shipped with a
+large amount of other notable improvements.
+A summary (still very long though) of all the changes from v1.6 to v1.7 are listed at the end,
 but the biggest new additions in v1.7 are:
 
-- **Content galore**: xxx, with a good chunk written by contributor Matthew Lang. A good chunk of existing content are also polished and rewritten for readability
+- **Content aplenty**: xxx, with a good chunk written by contributor Matthew Lang. A good chunk of existing content are also polished and rewritten for readability
 - **Base-building**: A fully featured base-building mechanic to make sure that your progress over the game is literally visible.
-- **Content Creator QoL Overhaul**: Thanks to the feedbacks over at the Discord Server, the Content Creator is more user friendly than ever. Tooltips over the toolbar, syntax checking, auto-indentation, and more!
+- **Content Creator QoL overhaul**: Thanks to the feedbacks over at the Discord Server, the Content Creator is more user friendly than ever. Tooltips over the toolbar, syntax checking, auto-indentation, and more!
 - **Content images**: The game now fully supports adding images to accompany quests / events / etc.
 The images are gender-aware, meaning that many has variations depending on the gender of the participating units.
 v1.7 ships with 85 of these images.
