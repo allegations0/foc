@@ -4,6 +4,11 @@
 
 ### v1.6.5.x
 
+v1.6.5.20:
+
+  - Copy to clipboard button
+  - fix <<optif>> missing the skipArgs argument
+
 v1.6.5.19:
 
   - New portraits Inserted image into Merchant's Revenge: Payback is Sweet opportunity (thanks to Matthew Lang)
