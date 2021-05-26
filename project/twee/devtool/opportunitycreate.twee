@@ -1,7 +1,8 @@
 :: OGCreate [autosave]
 <<nobr>>
 
-<<devtoolcontentdonebegin 'opportunity'>>
+<<set _dom = setup.DOM.Menu.dev_content_generated_begin()>>
+<<attach _dom>>
 
 <<link '(Test your opportunity)'>>
   <<set setup.opportunitytemplate[$dtquest.key] = $dtquest>>
@@ -27,10 +28,11 @@
 <br/>
 <br/>
 
-<<devtoolcontentdonemid 'opportunity'>>
+<<set _dom = setup.DOM.Menu.dev_content_generated_middle()>>
+<<attach _dom>>
 
 <</nobr>>
-<div class='companycard'> <code>
+<div id='devtoolcoderesult' class='companycard'> <code>
 """::""" <<= $opassagesetup >> [nobr opportunity]
 
 <<dtprintmeta>>

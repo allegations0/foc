@@ -124,7 +124,7 @@ export interface MacroDefinition {
     isWidget?: boolean;
     handler: (this: MacroContext) => void;
     tags?: string[];
-    skipArgs?: boolean;
+    skipArgs?: boolean | string[];
 }
 
 export interface MacroAPI {
@@ -197,4 +197,4 @@ export interface MacroAPI {
     tags: MacroTags;
 }
 
-export {};
+export { };

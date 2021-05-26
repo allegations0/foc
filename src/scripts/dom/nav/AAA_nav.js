@@ -201,3 +201,23 @@ setup.DOM.Nav.topLeftNavigation = function (children) {
   }, 1)
 }
 
+
+/**
+ * Behaves like: [[text|url]] but for external url
+ * 
+ * @param {setup.DOM.Attachable} children 
+ * @param {string} url
+ */
+setup.DOM.Nav.url = function (children, url) {
+  return setup.DOM.create(
+    'a',
+    {
+      target: '_blank',
+      class: 'link-external',
+      href: url,
+      tabindex: '0',
+    },
+    children,
+  )
+}
+

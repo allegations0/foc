@@ -557,8 +557,6 @@ setup.MACROS_METADATA = {
   devcodeeditorpreview: null,
   twinehelptext: null,
   devtoolreturnbutton: null,
-  devtoolcontentdonebegin: null,
-  devtoolcontentdonemid: null,
   devtoolchoosetitle: null,
   devquestroles: null,
   devactorall: null,

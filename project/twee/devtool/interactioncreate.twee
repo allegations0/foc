@@ -1,7 +1,8 @@
 :: IGCreate [autosave]
 <<nobr>>
 
-<<devtoolcontentdonebegin 'interaction'>>
+<<set _dom = setup.DOM.Menu.dev_content_generated_begin()>>
+<<attach _dom>>
 
 <<link '(Test your interaction)' 'InteractionDebugDo'>>
   <<set setup.interaction[$dtquest.key] = $dtquest>>
@@ -13,10 +14,11 @@
 <br/>
 <br/>
 
-<<devtoolcontentdonemid 'interaction'>>
+<<set _dom = setup.DOM.Menu.dev_content_generated_middle()>>
+<<attach _dom>>
 
 <</nobr>>
-<div class='companycard'> <code>
+<div id='devtoolcoderesult'  class='companycard'> <code>
 """::""" <<= $ipassagesetup >> [nobr interaction]
 
 <<dtprintmeta>>

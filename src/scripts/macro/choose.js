@@ -23,6 +23,7 @@ function replaceContainerContentCallback($container, content, sugarcube_this, g_
  * <</choose>>
  */
 Macro.add('choose', {
+  skipArgs: ['optif'],
   tags: ['opt', 'optif',],
 
   handler() {
@@ -67,7 +68,7 @@ Macro.add('choose', {
       }
 
       if (this.payload[i].name == 'optif') {
-        if (!Scripting.evalJavaScript(this.payload[i].args.raw)) {
+        if (!Scripting.evalJavaScript(this.payload[i].args.full)) {
           skip = true
         }
       } else {

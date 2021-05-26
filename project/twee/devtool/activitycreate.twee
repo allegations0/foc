@@ -1,7 +1,8 @@
 :: AGCreate [autosave]
 <<nobr>>
 
-<<devtoolcontentdonebegin 'activity'>>
+<<set _dom = setup.DOM.Menu.dev_content_generated_begin()>>
+<<attach _dom>>
 
 <<link '(Test your activity)' 'ActivityDebugDo'>>
   <<run $dtquest.makeProperFromDevTool()>>
@@ -13,10 +14,11 @@
 <br/>
 <br/>
 
-<<devtoolcontentdonemid 'activity'>>
+<<set _dom = setup.DOM.Menu.dev_content_generated_middle()>>
+<<attach _dom>>
 
 <</nobr>>
-<div class='companycard'> <code>
+<div id='devtoolcoderesult' class='companycard'> <code>
 """::""" <<= $apassagesetup >> [nobr activity]
 <<dtprintmeta>>
 """<<run new setup.ActivityTemplate({"""

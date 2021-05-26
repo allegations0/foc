@@ -1,7 +1,8 @@
 :: QGCreate [autosave]
 <<nobr>>
 
-<<devtoolcontentdonebegin 'quest'>>
+<<set _dom = setup.DOM.Menu.dev_content_generated_begin()>>
+<<attach _dom>>
 
 <<link '(Test your quest)' 'QuestDebugDo'>>
   <<set setup.questtemplate[$dtquest.key] = $dtquest>>
@@ -18,9 +19,11 @@
 <br/>
 <br/>
 
-<<devtoolcontentdonemid 'quest'>>
+<<set _dom = setup.DOM.Menu.dev_content_generated_middle()>>
+<<attach _dom>>
+
 <</nobr>>
-<div class='companycard'> <code>
+<div id='devtoolcoderesult' class='companycard'> <code>
 """::""" <<= $qpassagesetup >> [nobr quest]
 
 <<dtprintmeta>>

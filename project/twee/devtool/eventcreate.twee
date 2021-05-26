@@ -1,7 +1,8 @@
 :: EGCreate [autosave]
 <<nobr>>
 
-<<devtoolcontentdonebegin 'event'>>
+<<set _dom = setup.DOM.Menu.dev_content_generated_begin()>>
+<<attach _dom>>
 
 <<link '(Test your event)' 'EventDebugDo'>>
   <<set setup.event[$dtquest.key] = $dtquest>>
@@ -13,10 +14,11 @@
 <br/>
 <br/>
 
-<<devtoolcontentdonemid 'event'>>
+<<set _dom = setup.DOM.Menu.dev_content_generated_middle()>>
+<<attach _dom>>
 
 <</nobr>>
-<div class='companycard'> <code>
+<div id='devtoolcoderesult'  class='companycard'> <code>
 """::""" <<= $epassagesetup >> [nobr event]
 
 <<dtprintmeta>>
