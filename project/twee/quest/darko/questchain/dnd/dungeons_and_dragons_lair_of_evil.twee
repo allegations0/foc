@@ -164,14 +164,14 @@ dragon,
 demon,
 <</if>>
 who kidnapped the innocent <<princess $g.prince>> from <<their $g.prince>> tower.
-The kingdom is now looking for brave heroes, who would venture and save the <<princess $g.prince>>...
+The kingdom is now looking for brave heroes, who would venture forth and save the <<princess $g.prince>>...
 </p>
 
 <p>
 You then give the quest a little more detail to make it more believe-able, but
 you are intentionally vague with the details.
 This time, however, you pay careful attention to the details of the <<prince $g.prince>>; judging from
-the past experiences, your slaver has a knack of finding the quest even though it does not exist,
+the past experiences, your slaver has a knack of finding the reward even though it does not exist,
 and surely it couldn't hurt if the <<prince $g.prince>> in your quest just happens to be the perfect
 slave material, including possessing otherwordly beauty,
 <<if $g.prince.isMale()>>tasteful muscles<<else>>sexy waist<</if>>, a stunning voice, and a secretly submissive tendencies too (just in case you need to break <<them $g.prince>> later).
@@ -185,7 +185,7 @@ A journey south to the <<lore region_sea>> is not a joke, however much farce you
 There's also the alternative of just simply refusing this absurd request.
 The slaver might be downed for a while, but nothing time can't heal.
 Surely there's just no way the world would aligns itself so that your slaver is able to find
-this very specifically detailed quest?
+this very specifically detailed <<prince $g.prince>>?
 </p>
 
 <</if>>
