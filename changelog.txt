@@ -4,6 +4,17 @@
 
 ### v1.7.0.x
 
+v1.7.0.1:
+
+  - Readme v1.7 fixes.
+  - Slave Merchant no longer generate order with rare/unicorn bg traits
+  - New content images:
+    - A High Class Brothel (classy, male)
+    - A High Class Brothel (classy, female)
+    - Mobile brothel (female)
+    - Obedience Training: Basic (male, 2nd variation)
+    - Pony Training: Basic (femdom)
+
 v1.7.0.0:
 
   - v1.7 released
