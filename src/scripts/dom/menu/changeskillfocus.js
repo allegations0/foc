@@ -1,3 +1,5 @@
+import { menuItemAction, menuItemText } from "../../ui/menu"
+
 /**
  * @param {setup.Unit} unit
  * @returns {setup.DOM.Node}
@@ -72,33 +74,49 @@ setup.DOM.Menu.changeskillfocus = function (unit) {
       modifier_add: skill_modadd[focus.key],
       skill: focus,
     })}
-      to: (click the icon below to change)
+      to:
       </div>
     `)
+    /**
+     * @type {JQLite[]}
+     */
     const veryin = []
     setup.skill.forEach(skill => {
-      veryin.push(setup.DOM.Util.onEvent(
-        'click',
-        html`[${setup.SkillHelper.explainSkillWithAdditive({
-          val: skill_base[skill.key],
-          add: skill_add[skill.key],
-          modifier: skill_mod[skill.key],
-          modifier_add: skill_add[skill.key],
-          skill: skill,
-        })}]
-        `,
-        () => {
-          unit.setSkillFocus(i, skill)
-          setup.DOM.Nav.goto()
+      const text = html`${setup.SkillHelper.explainSkillWithAdditive({
+        val: skill_base[skill.key],
+        add: skill_add[skill.key],
+        modifier: skill_mod[skill.key],
+        modifier_add: skill_add[skill.key],
+        skill: skill,
+      })}`
+
+      if (skill == focus) {
+        veryin.push(menuItemText({
+          text: text,
         }))
+      } else {
+        veryin.push(menuItemAction({
+          text: text,
+          callback: () => {
+            unit.setSkillFocus(i, skill)
+            setup.DOM.Nav.goto()
+          }
+        }))
+      }
     })
-    inner.push(setup.DOM.create('div', {}, veryin))
+    inner.push(setup.DOM.Util.menuItemToolbar(veryin))
+    inner.push(html`<hr/>`)
     fragments.push(setup.DOM.create('div', {}, inner))
   })
 
   fragments.push(html`
     <div>
-      ${setup.DOM.Nav.return('(Confirm)')}
+      ${setup.DOM.Nav.button(
+    'Confirm',
+    () => {
+      setup.DOM.Nav.gotoreturn()
+    }
+  )}
     </div>
   `)
 

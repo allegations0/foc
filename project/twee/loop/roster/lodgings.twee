@@ -37,5 +37,16 @@ which determines which skill they gain on level up.
   <</if>>
 <</if>>
 
+<<if $calendar.getWeek() == 2>>
+  <div class='helpcard'>
+    <p>
+      Welcome to the roster screen. You can interact and customize with your slavers here.
+      The most important menu that you need to learn is perhaps the <<successtext "Skill focus">>
+      menu. Using this menu, you can change how the units will progress their skills as they level up.
+      Click on any of the Skill Focus menu to try it out!
+    </p>
+  </div>
+<</if>>
+
 <<set _dom = setup.DOM.Roster.rosterlist(_unitlist, 'unitslaver')>>
 <<attach _dom>>

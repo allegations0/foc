@@ -136,9 +136,9 @@
 <<elseif $calendar.getWeek() == 2>>
   <div class='helpcard'>
     <p>
-      With the <<rep setup.buildingtemplate.scouthut>> built, you should now return to the
-      <<successtextlite "Quest">> menu. This will be the last message of this tutorial.
-      Have fun!
+      Now that you have built your <<rep setup.buildingtemplate.scouthut>>, you can either
+      return to the <<successtextlite "Quest">> menu to continue the game,
+      or, you can go to the <<successtextlite "Slaver">> menu to customize your slaver's progression.
     </p>
   </div>
 <</if>>

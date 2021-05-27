@@ -26,6 +26,7 @@
   'furry',
   'vale',
   'money',
+  'rare',
 ],
 3, /* weeks */
 6, /* expiration weeks */

@@ -1,6 +1,22 @@
 import { menuItemAction, menuItemDanger, menuItemExtras, menuItemText } from "../../ui/menu"
 
 /**
+ * @param {setup.Unit} unit
+ * @returns {JQLite}
+ */
+function getSkillFocusMenu(unit) {
+  return menuItemAction({
+    text: `Skill focus`,
+    tooltip: `Modify the unit's skill focus, which primarily determines how they will increase their skills`,
+    callback: () => {
+      // @ts-ignore
+      State.variables.gUnit_skill_focus_change_key = unit.key
+      setup.DOM.Nav.goto('UnitChangeSkillFocus')
+    },
+  })
+}
+
+/**
  * @param {{
  * unit: setup.Unit,
  * hide_details?: boolean,
@@ -70,6 +86,11 @@ function getNonRetiredUnitMenuItems({ unit, hide_details }) {
       },
     }))
   }
+
+  if (unit.isSlaver()) {
+    menus.push(getSkillFocusMenu(unit))
+  }
+
   return menus
 }
 
@@ -172,15 +193,7 @@ export function getRosterListMenuItems({ unit, hide_details, as_extras_only }) {
   }
 
   if (unit.isSlaver()) {
-    misc.push(menuItemAction({
-      text: `Change skill focus`,
-      tooltip: `Modify the unit's skill focus, which primarily determines how they will increase their skills`,
-      callback: () => {
-        // @ts-ignore
-        State.variables.gUnit_skill_focus_change_key = unit.key
-        setup.DOM.Nav.goto('UnitChangeSkillFocus')
-      },
-    }))
+    misc.push(getSkillFocusMenu(unit))
     if (State.variables.titlelist.getAllTitles(unit).length > setup.TITLE_MAX_ASSIGNED) {
       misc.push(menuItemAction({
         text: `View / change active titles`,
