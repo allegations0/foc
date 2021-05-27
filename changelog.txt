@@ -4,6 +4,10 @@
 
 ### v1.7.0.x
 
+v1.7.0.3:
+
+  - Remove scout tunnel from vet hall requirements for now
+
 v1.7.0.2:
 
   - New region: Deeprealm.
