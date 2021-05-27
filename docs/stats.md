@@ -24,6 +24,28 @@
     <th>Duties</th>
   </tr>
   <tr>
+    <td>v1.7.0.0</td>
+    <td>4984</td>
+    <td>1634598</td>
+    <td>472</td>
+    <td>139</td>
+    <td>41</td>
+    <td>302</td>
+    <td>29</td>
+    <td>434</td>
+    <td>146</td>
+    <td>165</td>
+    <td>137</td>
+    <td>175</td>
+    <td>92</td>
+    <td>42</td>
+    <td>156</td>
+    <td>1409</td>
+    <td>85</td>
+    <td>49</td>
+    <td>37</td>
+  </tr>
+  <tr>
     <td>v1.6.5.0</td>
     <td>4895</td>
     <td>1589164</td>

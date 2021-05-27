@@ -14,6 +14,22 @@ v1.7.0.0 (28 May 2021): Base-Building, Content, Content images, Imagepacks, Cont
   and `(re-add)` the `Default Imagepack` underneath.
   Once that's done, go to `Settings` again and then `Reset unit portraits`.
 
+  - Statistics:
+    - 200,000+ new words (not counting code)
+    - 30+ new quests
+    - 12+ new opportunities
+    - 26+ new events
+    - 29 new activites
+    - 12+ new improvements
+    - 165 new rooms
+    - 4+ new items
+    - 7+ new equipments
+    - 14+ new titles
+    - 6 new lore entries
+    - 1 new sex action
+    - 160 new portraits
+    - 85 new content images
+    - 2 new duties
   - Content
     - Attitude Adjustments (by Choker Guy)
     - Mistyfing Obelisk (by Fae) (2 quests, 1 opportunity)
@@ -25,6 +41,11 @@ v1.7.0.0 (28 May 2021): Base-Building, Content, Content images, Imagepacks, Cont
     - A Merchant's Revenge: Caravan Raid (by Matthew Lang) (5 quests)
     - A Merchant's Revenge: The Search Continues (by Matthew Lang)
     - A Merchant's Revenge: Payback is Sweet (by Matthew Lang) (1 opportunity, 1 event)
+    - A Merchant's Revenge: Caravan Raid (City of Lucgate) (by Matthew Lang)
+    - A Merchant's Revenge: A Careless Raid (by Matthew Lang)
+    - A Merchant's Revenge: Complications (by Matthew Lang)
+    - A Merchant's Revenge: An Unfortunate Report (by Matthew Lang)
+    - A Merchant's Rage (by Matthew Lang)
     - A Very Special Wine (by Matthew Lang)
     - Visiting the injured (by Matthew Lang) (2 events 1 opportunity)
     - The Wailing Woods (by Matthew Lang)
@@ -83,7 +104,6 @@ v1.7.0.0 (28 May 2021): Base-Building, Content, Content images, Imagepacks, Cont
         - Have a slave fuck you
         - Have a slave tailfuck you
         - Tailfuck a slave
-  - xxx new items, etc.
   - Gitpocalypse
     - Moved git repository to https://gitgud.io/darkofocdarko/fort-of-chains due to critical git failure
     - Moved references from old repo to new repo.
@@ -176,6 +196,7 @@ v1.7.0.0 (28 May 2021): Base-Building, Content, Content images, Imagepacks, Cont
       - TagNotBanned
       - UnitGroupNotBusy
       - ZeroTitle
+    - Copy to clipboard button
     - Articles in contents are now automatically parsed to be "a" or "an".
     - Validation of unit group in content creator
     - Add Settings to Content Creator
@@ -260,6 +281,9 @@ v1.7.0.0 (28 May 2021): Base-Building, Content, Content images, Imagepacks, Cont
     - Borders are now square without radius
     - Remove background from interactive sex cards. Closes #294
   - QoL
+    - Skill focus menu UI is fully modernized
+    - Added tutorial for skill focus
+    - Skill focus button moved to main unit menu set
     - Pressing space when you have mail to end week will now go to mail room
     - item/equipment texts now colorized based on rarity
     - Show unbuild room count in menus
@@ -285,6 +309,7 @@ v1.7.0.0 (28 May 2021): Base-Building, Content, Content images, Imagepacks, Cont
     - Links to content creator cheatsheet.
     - Updated help text for friendship/rivalry.
     - Added used tilesets into the repo.
+    - Changelog and readme for v1.7
   - Misc
     - Incompatible game versions will now try to load backwards compatibility.
     - Added ire quest tag and manually marked quests that obviously give ire with the tag
@@ -306,6 +331,7 @@ v1.7.0.0 (28 May 2021): Base-Building, Content, Content images, Imagepacks, Cont
     - Change of Heart potion renamed to Potion of Submissive Cure
     - Jobs are now consistent in content creator and debug try content
   - Bugfixes
+    - Fix `<<optif>>` not working with complex arguments.
     - Fix offsetmod not being used properly in content creator
     - Fix high demon society order text missing HideAll.
     - Font fixes to make them slightly more uniform.
@@ -382,6 +408,8 @@ v1.7.0.0 (28 May 2021): Base-Building, Content, Content images, Imagepacks, Cont
     - Fix relations office in favor tooltip not formatted correctly
     - Fix filtering in new game plus cause the entire process to restart.
     - Fix bug with change banned tags reverting to previous day
+    - fix `<<optif>>` missing the skipArgs argument
+    - Fix duplicated skill focus menu
   - Text fixes
     - Fix blackmail referring to wrong unit in text
     - Fixed "wommon elf"
@@ -413,6 +441,7 @@ v1.7.0.0 (28 May 2021): Base-Building, Content, Content images, Imagepacks, Cont
     - Fix portal duplicate "distant"
     - Goblin rescue and eternal youth text fixes.
     - Werewolf hunt story writing fixes (thanks to J1009).
+    - D&D quest chain text fixes.
 
 v1.6.0.0 (16 April 2021): Content, Retirement, New Game Plus, Blessings, Engine work
 

@@ -2,6 +2,12 @@
 
 [Changelog summary](docs/changelog_summary.md)
 
+### v1.7.0.x
+
+v1.7.0.0:
+
+  - v1.7 released
+
 ### v1.6.5.x
 
 v1.6.5.23:
