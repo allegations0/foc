@@ -74,7 +74,7 @@ slaver as their plaything.
 <p>
 At this point, you might want to consider giving up and let <<theslaver $g.target>> be a
 lost cause. But if you are insistent in rescuing the poor slaver, you could
-try to breach <<lore concept_mist>> from somewhere within the eastern deserts where the
+try to breach <<lore concept_mist>> from somewhere within the <<lore region_desert>> where the
 mist is thick.
 You will need a slaver preferably proficient in <<rep
 setup.trait.magic_dark>> to open the portal. Once the portal is open, send

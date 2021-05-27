@@ -61,6 +61,7 @@ setup.qc.QuestDelay(setup.questpool.city, 3)
 ],
 [ /* restrictions */
   setup.qres.Building(setup.buildingtemplate.scoutharbor),
+  setup.qres.Building(setup.buildingtemplate.scouttunnel),
   setup.qres.Building(setup.buildingtemplate.scoutcarriage),
   setup.qres.Building(setup.buildingtemplate.scoutoffice),
   setup.qres.Building(setup.buildingtemplate.scouttower),

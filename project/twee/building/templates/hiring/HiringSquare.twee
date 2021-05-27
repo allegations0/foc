@@ -10,6 +10,7 @@
       type: "adjacent",
       skill_key: "intrigue",
       room_keys: [
+        'hiringsquaredeep',
         'hiringsquaredesert',
         'hiringsquareforest',
         'hiringsquaresea',

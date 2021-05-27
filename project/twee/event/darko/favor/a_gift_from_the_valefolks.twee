@@ -33,7 +33,7 @@ setup.rarity.always, /* Rarity */
 <p>
 Recently, your bond with the <<rep $company.humanvale>> has grown quite
 considerably, and you can be considered their allies now.
-In fact, you've been hosting several of the northern vale leaders recently.
+In fact, you've been hosting several of the <<lore region_vale>> leaders recently.
 In the last feast, one of the valefolks haned over to you a gift — a gift representing
 an important part of their culture in the form of a book:
 the <<rep setup.item.sexmanual_slap_ass>>.

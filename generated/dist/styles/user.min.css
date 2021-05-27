@@ -544,6 +544,16 @@ img {
 }
 
 
+.questcarddeep {
+    --bordercolor: rgb(119, 0, 0);
+    border: 5px outset var(--bordercolor);
+    overflow: visible;
+    background-repeat: repeat-x;
+    background-image: url("img/panorama/deep_panorama.png");
+    background-position: bottom left;
+}
+
+
 .questcarddesert {
     --bordercolor: rgb(119, 87, 0);
     border: 5px outset var(--bordercolor);

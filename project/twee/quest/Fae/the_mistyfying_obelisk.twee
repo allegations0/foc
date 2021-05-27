@@ -199,7 +199,7 @@ setup.qc.TraumatizeRandom('researchertwo', 10)
 <<set _u = setup.getAnySlaver()>>
 
 <p>
-    Every now and then, you would discuss the recent news with <<yourrep _u>>. Normally, nothing productive comes out of it, but in one recent discussion, <<they _u>> offhandedly mentioned something that caught your attention. Rumors are spreading that somewhere in the Eastern Deserts, an eye-catchingly large obelisk has somehow made an appearance, seemingly out of nowhere. It is rife with strange inscriptions, and nobody has any clue what those inscriptions could be. One thing seems clear however — this obelisk did not come from the mortal plane, and everyone seems to agree this might have come from the Mist.
+    Every now and then, you would discuss the recent news with <<yourrep _u>>. Normally, nothing productive comes out of it, but in one recent discussion, <<they _u>> offhandedly mentioned something that caught your attention. Rumors are spreading that somewhere in the <<lore region_desert>>, an eye-catchingly large obelisk has somehow made an appearance, seemingly out of nowhere. It is rife with strange inscriptions, and nobody has any clue what those inscriptions could be. One thing seems clear however — this obelisk did not come from the mortal plane, and everyone seems to agree this might have come from the Mist.
 </p>
 
 <p>

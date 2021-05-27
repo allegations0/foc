@@ -48,6 +48,7 @@ Choose unit group:
     ['Vale...', {ug: _ugall.filter(a => a.key.startsWith('vale'))}],
     ['Forest...', {ug: _ugall.filter(a => a.key.startsWith('forest'))}],
     ['City...', {ug: _ugall.filter(a => a.key.startsWith('city'))}],
+    ['Deep...', {ug: _ugall.filter(a => a.key.startsWith('deep'))}],
     ['Desert...', {ug: _ugall.filter(a => a.key.startsWith('desert'))}],
     ['Sea...', {ug: _ugall.filter(a => a.key.startsWith('sea'))}],
   ]],

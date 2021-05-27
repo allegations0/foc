@@ -9,10 +9,11 @@ your company can take.
 <<set _vale = $dutylist.getDuty('scoutvale')>>
 <<set _forest = $dutylist.getDuty('scoutforest')>>
 <<set _city = $dutylist.getDuty('scoutcity')>>
+<<set _deep = $dutylist.getDuty('scoutdeep')>>
 <<set _desert = $dutylist.getDuty('scoutdesert')>>
 <<set _sea = $dutylist.getDuty('scoutsea')>>
-<<if _vale || _forest || _city || _desert || _sea>>
-  <<capture _vale, _forest, _city, _desert, _sea>>
+<<if _vale || _forest || _city || _deep || _desert || _sea>>
+  <<capture _vale, _forest, _city, _deep, _desert, _sea>>
     <<message 'You can check on your scouts.'>>
       <<if _vale>>
         <<set _unit = _vale.getAssignedUnit()>>
@@ -29,7 +30,7 @@ your company can take.
       <<if _forest>>
         <<set _unit = _forest.getAssignedUnit()>>
         <<if _unit && _unit.isAvailable()>>
-          As your <<rep _forest>>, <<rep _unit>> is somewhere over by the western forests looking for quests,
+          As your <<rep _forest>>, <<rep _unit>> is somewhere over by the <<lore region_forest>> looking for quests,
           <<= setup.Text.Duty.competence(_forest)>>.
         <<elseif _unit>>
           <<Yourrep _unit>> usually works here, but <<they _unit>>
@@ -51,11 +52,25 @@ your company can take.
           Your outpost for <<rep _city>> is empty right now.
         <</if>>
       <</if>>
+      <<if _deep>>
+        <<set _unit = _deep.getAssignedUnit()>>
+        <<if _unit && _unit.isAvailable()>>
+          Your <<rep _deep>> <<rep _unit>>
+          would venture for days into the underground highway right beneath your fort,
+          looking for leads within the vast Deep,
+          <<= setup.Text.Duty.competence(_desert)>>.
+        <<elseif _unit>>
+          <<Yourrep _unit>> usually works here, but <<they _unit>>
+          is currently unavailable to attend to <<their _unit>> duties.
+        <<else>>
+          Your outpost for <<rep _deep>> is empty right now.
+        <</if>>
+      <</if>>
       <<if _desert>>
         <<set _unit = _desert.getAssignedUnit()>>
         <<if _unit && _unit.isAvailable()>>
           Your <<rep _desert>> <<rep _unit>>
-          often travel for weeks end to the eastern deserts looking for leads,
+          often travel for weeks end to the <<lore region_desert>> looking for leads,
           <<= setup.Text.Duty.competence(_desert)>>.
         <<elseif _unit>>
           <<Yourrep _unit>> usually works here, but <<they _unit>>
@@ -68,7 +83,7 @@ your company can take.
         <<set _unit = _sea.getAssignedUnit()>>
         <<if _unit && _unit.isAvailable()>>
           You sometimes heard back from
-          your <<rep _sea>> <<rep _unit>> sailing on the southern seas,
+          your <<rep _sea>> <<rep _unit>> sailing on the <<lore region_sea>>,
           <<= setup.Text.Duty.competence(_sea)>>.
         <<elseif _unit>>
           <<Yourrep _unit>> usually works here, but <<they _unit>>

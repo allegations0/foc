@@ -57,12 +57,12 @@
 
 :: QuestScoutSea [nobr]
 <p>
-It is said that beyond the southern seas, there are land much unlike our own.
+It is said that beyond the <<lore region_sea>>, there are land much unlike our own.
 You have several leads in those lands from your contact, but
 they must be followed immediately or they will be gone.
 Via your harbor, you can send your slavers there on a ship,
 but the journey will take a long time.
-Furthermore, the southern seas is dangerous and unpredictable, and
+Furthermore, the <<lore region_sea>> is dangerous and unpredictable, and
 the scout guard will be placed at the riskiest position in such a journey.
 </p>
 

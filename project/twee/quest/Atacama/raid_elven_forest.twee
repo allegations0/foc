@@ -61,7 +61,7 @@ setup.qc.Injury('raider2', 2), ],
 <<questimage 'raid_elven_forest.jpg'>>
 
 <p>
-The western forests are inhabited by both neko and elves.
+The <<lore region_forest>> are inhabited by both neko and elves.
 Most of the neko live in the <<lore location_npc>>.
 The elves, however, are scattered throughout the forest in smaller settlements. Or lone homesteads.
 It would be a simple task to send a group of slavers to one of those isolated dwellings

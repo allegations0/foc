@@ -73,7 +73,7 @@ setup.qres.QuestUnique(), ], /* restrictions to generate */
 
 :: Quest_eternal_youth2 [nobr]
 <p>
-Deep within the western forests, there are rumors of an elf community full of
+Deep within the <<lore region_forest>>, there are rumors of an elf community full of
 gorgeous men and women. While enslaving these beauties are certainly a
 profitable endeavor, it is rumored that the source of their beauty is their
 everlasting youth, granted by a certain fruit hidden deep in the forests.

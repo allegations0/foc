@@ -138,7 +138,7 @@ In fact, nobody has actually verified their existence in the world.
 <<set _t = $company.player.getUnits().filter(unit => unit.isHasTitle('quest_bewitched_1'))>>
 
 <p>
-When your slavers returned from their scouting mission in the Western Forests, only
+When your slavers returned from their scouting mission in the <<lore region_forest>>, only
 <<if $gQuest.getSeed() % 2 == 0>>
 <<rep $g.scout2>>
 <<set _v = $g.scout1>>

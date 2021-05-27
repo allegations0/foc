@@ -69,13 +69,13 @@ setup.qres.NoOpportunity('for_science__the_harvest'), ],
 
 <p>
 The second item in the <<rep setup.item.quest_for_science_list>>
-is a the "Sine Prelog" fruit, somewhere in the western forests. From what you
+is a the "Sine Prelog" fruit, somewhere in the <<lore region_forest>>. From what you
 have gathered, finding the fruit itself is not the challenge of a task — it is the harvesting
 that's problematic. The details are vague, but apparently if you want the
 mission to succeed, you should send a group of slavers — a wizard proficient
 in <<lore magic_earth>>, a biologist to identify the fruit, and most
 importantly a whore. It is unclear why you need to bring a whore, but you can
-try to send a group of slavers to the western forests if you want to find out
+try to send a group of slavers to the <<lore region_forest>> if you want to find out
 why.
 </p>
 

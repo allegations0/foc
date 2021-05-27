@@ -126,7 +126,7 @@ You have foolishly chosen to attempt to try to save the slave.
 :: Quest_the_seven_deadly_transformation__beginningsCrit [nobr]
 
 <p>
-Your slavers scoured the southern seas for ways to remove the curse, until in
+Your slavers scoured the <<lore region_sea>> for ways to remove the curse, until in
 an exotic village far south of your fort, a sage told them of a ritual that can be used to
 undo the claim on <<reps $g.fated>> soul. A <<maiden $g.good>>
 with the purest heart must tug on <<reps $g.fated>> very soul, extracting

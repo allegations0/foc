@@ -102,7 +102,7 @@ setup.qc.Injury('support', 3), ],
 
 :: Quest_orcish_bait [nobr]
 <p>
-The orcs living on the eastern desert are known to be strong but also a bit dumb. This
+The orcs living on the <<lore region_desert>> are known to be strong but also a bit dumb. This
 property makes them the ideal slave for some nobles, and the demands for orc
 slaves are always steady in the market.
 If one wants to obtain such a slave, they can always try to raid an orc

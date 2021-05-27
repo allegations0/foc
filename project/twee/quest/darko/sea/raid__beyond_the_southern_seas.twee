@@ -59,7 +59,7 @@ setup.qc.MissingUnitRecapture('support', 'capturedmedium'),
 :: Quest_raid__beyond_the_southern_seas [nobr]
 
 <p>
-There are several remote settlements on the southern seas —- these
+There are several remote settlements on the <<lore region_sea>> —- these
 settlements are rarely well-defended and hence make prime target for raiders
 such as yourself. You could try to send a group of slavers to raid one such
 settlement, but beware — like everything else in the <<lore region_sea>>, this

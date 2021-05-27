@@ -140,7 +140,7 @@ The Regalixir is incredibly rare, however, and it is likely that <<dangertext
 "you will never be able to obtain more than one in your entire career">>.
 Furthermore, you also need to gather the instructions, as well as the rare
 ingredients for the potion. Fortunately, <<rep $g.connected>> connected|have
-gathered information that a famous alchemist in the southern seas happens to
+gathered information that a famous alchemist in the <<lore region_sea>> happens to
 be in possession of both, and it might be fruitful were you to send yourself
 and a group of slavers to patron the alchemist.
 </p>

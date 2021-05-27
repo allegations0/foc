@@ -54,7 +54,7 @@ setup.qres.NoQuest('desert_purifiers_patron2'), ],
 
 :: Opportunity_desert_purifiers [nobr]
 <p>
-The denizens of the eastern desert are often gifted with the aspect of fire.
+The denizens of the <<lore region_desert>> are often gifted with the aspect of fire.
 While basic fire mastery lends itself to destruction,
 individuals blessed with advanced fire magic sometimes are able summon purifying
 fire instead, which can cleanse corruptions and demons alike.

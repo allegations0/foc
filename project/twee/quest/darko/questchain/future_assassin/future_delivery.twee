@@ -189,7 +189,7 @@ As a slaving company, you are used to receive strange and mysterious orders. Whe
 </p>
 
 <p>
-A certain magician in the southern seas is asking to borrow two of your slavers as magical batteries. The wizard is scarce on details in <<their $g.wizard>> letter, except that these batteries must be capable of using magic. <<They $g.wizard>> promises great amount of wealth for borrowing your slavers — an amount you could not really say no to.
+A certain magician in the <<lore region_sea>> is asking to borrow two of your slavers as magical batteries. The wizard is scarce on details in <<their $g.wizard>> letter, except that these batteries must be capable of using magic. <<They $g.wizard>> promises great amount of wealth for borrowing your slavers — an amount you could not really say no to.
 </p>
 
 <p>

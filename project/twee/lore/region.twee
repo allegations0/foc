@@ -57,6 +57,49 @@ and is governed by royalties from the <<rep $company.humankingdom>>.
 </p>
 
 
+:: LORESETUP_region_deep [lore]
+
+<<run new setup.Lore(
+  'region_deep',  /* key */
+  'Deeprealm',  /* name */
+  [  /* tags */
+    'region',
+  ],
+  [  /* visibility requirements */
+    setup.qres.HasItem('lorebook_deep'),
+  ],
+)>>
+
+:: LORE_region_deep [nobr]
+
+<<questimage "deeprealm.jpg">>
+
+<p>
+The vast underground complex underneath the continent, full of caverns, lava, underground cities,
+and unspeakable horrors.
+</p>
+
+<p>
+Despite the seemingly hostile region, many people call the Deeprealm as their home.
+Several settlements have formed underground, built inside large caverns, growing fungi and
+animals for sustenance.
+</p>
+
+<p>
+An ancient network of underground highways connects the settlements that form underground.
+Nobody knows how who built these highways, and while some of the well-traveled ones
+have seen recent repairs and maintenance, many such ancient highways
+has been left alone to the cruel toll of time and now lies in ruins.
+It is said that ancient ruins and treasure await those foolish enough to travel
+their ways on those ruined pathways.
+</p>
+
+<p>
+For reasons unknown, some areas of the Deeprealm are thick with the Mist. It is said that
+demons took great delight in taking lost or unsuspecting travelers of the Deeprealm into the
+demon plane, to be remade as one of their countless playthings...
+</p>
+
 :: LORESETUP_region_desert [lore]
 
 <<run new setup.Lore(

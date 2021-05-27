@@ -140,6 +140,31 @@ setup.dutytemplate.scoutcity = () => new setup.DutyTemplateQuestPoolDuty({
  * @type {setup.DutyTemplateQuestPoolDuty}
  */
 // @ts-ignore
+setup.dutytemplate.scoutdeep = () => new setup.DutyTemplateQuestPoolDuty({
+  key: 'scoutdeep',
+  type: 'scout',
+  name: 'Deep Scout',
+  description_passage: 'DutyScoutDeep',
+  unit_restrictions: [setup.qres.Job(setup.job.slaver)],
+  relevant_skills: {
+    combat: setup.DUTY_SKILL_MULTIPLIER_TOTAL / 2,
+    social: setup.DUTY_SKILL_MULTIPLIER_TOTAL / 2,
+  },
+  relevant_traits: {
+    magic_dark: setup.DUTY_TRAIT_NORMAL_CHANCE,
+    magic_dark_master: setup.DUTY_TRAIT_CRIT_CHANCE,
+    per_brave: setup.DUTY_TRAIT_NORMAL_CHANCE,
+    per_cautious: -setup.DUTY_TRAIT_NORMAL_CHANCE,
+  },
+  is_can_replace_with_specialist: true,
+  quest_pool: setup.questpool.deep,
+  quest_amount: 2,
+})
+
+/**
+ * @type {setup.DutyTemplateQuestPoolDuty}
+ */
+// @ts-ignore
 setup.dutytemplate.scoutdesert = () => new setup.DutyTemplateQuestPoolDuty({
   key: 'scoutdesert',
   type: 'scout',

@@ -80,6 +80,12 @@ setup.QUESTTAGS = {
     title: 'City of Lucgate',
     description: 'Located in the <<lore region_city>>',
   },
+  deep: {
+    type: 'region',
+    hide: true,
+    title: 'Deeprealm',
+    description: 'Located in the <<lore region_deep>>',
+  },
   desert: {
     type: 'region',
     hide: true,
@@ -214,6 +220,7 @@ setup.QUESTTAGS_PANORAMA = {
   vale: 'questcardvale',
   forest: 'questcardforest',
   city: 'questcardcity',
+  deep: 'questcarddeep',
   desert: 'questcarddesert',
   sea: 'questcardsea',
   fort: 'questcardfort',
