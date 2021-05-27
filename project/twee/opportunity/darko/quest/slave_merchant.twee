@@ -16,7 +16,7 @@
 setup.qres.Job(setup.job.slave),
 ],
 [ /* addons */
-setup.SlaveOrderAddon.TraitsRandom(setup.TraitHelper.getAllTraitsOfTags(['bg']), 3, 2, 0),
+setup.SlaveOrderAddon.TraitsRandom(setup.TraitHelper.getAllTraitsOfTags(['bg']).filter(trait => !trait.getTags().includes('unicorn') && !trait.getTags().includes('rare')), 3, 2, 0),
 ],
 [ /* fulfilled outcomes */
 ],
@@ -40,7 +40,7 @@ setup.SlaveOrderAddon.TraitsRandom(setup.TraitHelper.getAllTraitsOfTags(['bg']),
 setup.qres.Job(setup.job.slave),
 ],
 [ /* addons */
-setup.SlaveOrderAddon.TraitsRandom(setup.TraitHelper.getAllTraitsOfTags(['bg']), 3, 2, 0),
+setup.SlaveOrderAddon.TraitsRandom(setup.TraitHelper.getAllTraitsOfTags(['bg']).filter(trait => !trait.getTags().includes('unicorn') && !trait.getTags().includes('rare')), 3, 2, 0),
 ],
 [ /* fulfilled outcomes */
 ],
@@ -64,7 +64,7 @@ setup.SlaveOrderAddon.TraitsRandom(setup.TraitHelper.getAllTraitsOfTags(['bg']),
 setup.qres.Job(setup.job.slave),
 ],
 [ /* addons */
-setup.SlaveOrderAddon.TraitsRandom(setup.TraitHelper.getAllTraitsOfTags(['bg']), 3, 2, 0),
+setup.SlaveOrderAddon.TraitsRandom(setup.TraitHelper.getAllTraitsOfTags(['bg']).filter(trait => !trait.getTags().includes('unicorn') && !trait.getTags().includes('rare')), 3, 2, 0),
 ],
 [ /* fulfilled outcomes */
 ],
