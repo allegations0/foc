@@ -22,13 +22,14 @@ for playing as a submissive character.
 
 FoC v1.7 brings a very large update that adds new content, new features, and many more.
 Many of the new content are done by contributors, including Matthew Lang (who did a big chunk of work this update),
-Fae, Choker Guy, Hydrys, and much more (see list below later),
-so if you like their work, please show your appreciation! It will make their day for sure.
+Fae, Choker Guy, Hydrys, and much more (see list below later).
+If you like their work, please show your appreciation to them!
+It will make their day for sure.
 
 Among the many features added in v1.7, the biggest one has to be the complete revamp of the game's
 main progression mechanic.
 In place of the previous fort-upgrading mechanic,
-we now have a proper base-building mechanic over 2d-grid. This comes shipped with 650 different images
+we now have a proper base-building mechanic over a two dimensional grid. This comes shipped with 650 different images
 for the building, as well as proper path-finding algorithm to find the shortest path between rooms.
 They have been quite polished and tested by the many volunteers in the
 [Discord server](https://discord.gg/PTD9D7mZyg).
@@ -41,18 +42,18 @@ but the biggest new additions in v1.7 are:
 - **Content aplenty**: 200,000+ new words (not counting code), 30+ new quests, 12+ new opportunities,
 26+ new events, 29 new activities, 12+ new improvements, 165 new rooms,
 160 new portraits, 85 new content images, 2 new duties, 1 new sex action, and more!
-Many new content are written by contributor Matthew Lang. A good chunk of existing content are also polished and rewritten for readability
+A good chunk of existing content are also polished and rewritten for readability
 - **Base-building**: A fully featured base-building mechanic to make the game progression much more immersive.
 - **Content Creator QoL overhaul**: Thanks to the feedbacks over at the Discord Server, the Content Creator is more user friendly than ever. Tooltips over the toolbar, syntax checking, auto-indentation, and more! If you tried to contribute in the past and was overwhelmed by the Content Creator UI, please consider giving it another try.
 - **Content images**: The game now fully supports adding images to accompany quests / events / etc.
-The images are gender-aware, meaning that many has variations depending on the gender of the participating units.  v1.7 ships with 85 of these images.
+Many of these images are gender-aware, meaning that they have variations depending on the gender of the participating units.  v1.7 ships with 85 of these images.
 - **Other new features**: Activities, speech bubbles, negative titles, built-in image packs
 
 If you enjoy the game, make sure to thank the many contributors and people who have helped with this project! The project could not reach this version without them.
 [You are invited too!](https://gitgud.io/darkofocdarko/fort-of-chains#how-to-contribute-content)
-The current contributors include:
+The list of all contributors include:
 
-- Writers:
+- **Writers**:
 Alberich,
 Anon,
 Atacama,
@@ -76,13 +77,13 @@ Thavil,
 Zerutti,
 anonymouse21212,
 mynameis123,
-- Coders:
+- **Coders**:
 Arkerthan,
 Naraden,
 alarmedcat,
 sssk
-- Artists: This game borrows many artworks whose artists have kindly released them under sufficiently permissive licenses, allowing them to be used in this game. Please see the in-game `(Artist Credits)` for their full list as well as the licenses, for there are simply too many of them to list here!
-- Others:
+- **Artists**: This game borrows many artworks whose artists have kindly released them under sufficiently permissive licenses, allowing them to be used in this game. Please see the in-game `(Artist Credits)` for their full list as well as the licenses, for there are simply too many of them to list here!
+- **Others**:
 AbleCharlie,
 Anu,
 ChristianS,
@@ -118,7 +119,7 @@ contributor for the project.
 
 Full changelog [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/changelog.txt).
 
-v1.7.0.0 (28 May 2021): Base-Building, Content, Content images, Imagepacks, Content Creator QoL, Lore
+**v1.7.0.0 (28 May 2021): Base-Building, Content, Content images, Imagepacks, Content Creator QoL, Lore**
 
   The repository is **moved permanently** to:
   https://gitgud.io/darkofocdarko/fort-of-chains
