@@ -38,8 +38,8 @@
 
 <p>
 A booth in the <<rep setup.buildingtemplate.hiringsquare>> where you can attempt
-to recruit the neko and elves living on the western forests into your company.
-Unlocks a contact which gives you a quest for hiring new slavers from the western forests.
+to recruit the neko and elves living on the <<lore region_forest>> into your company.
+Unlocks a contact which gives you a quest for hiring new slavers from the <<lore region_forest>>.
 
 </p>
 

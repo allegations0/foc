@@ -47,6 +47,7 @@
 /* scout */
 <<include 'InitBuildingScoutTower'>>
 <<include 'InitBuildingScoutOffice'>>
+<<include 'InitBuildingScoutTunnel'>>
 <<include 'InitBuildingScoutCarriage'>>
 <<include 'InitBuildingScoutHarbor'>>
 
@@ -107,6 +108,7 @@
 
 <<include 'InitBuildingHiringSquareVale'>>
 <<include 'InitBuildingHiringSquareForest'>>
+<<include 'InitBuildingHiringSquareDeep'>>
 <<include 'InitBuildingHiringSquareDesert'>>
 <<include 'InitBuildingHiringSquareSea'>>
 
@@ -200,6 +202,7 @@
 /* Scout Outposts */
 <<include 'InitBuildingScoutOutpostVale'>>
 <<include 'InitBuildingScoutOutpostForest'>>
+<<include 'InitBuildingScoutOutpostDeep'>>
 <<include 'InitBuildingScoutOutpostCity'>>
 <<include 'InitBuildingScoutOutpostDesert'>>
 <<include 'InitBuildingScoutOutpostSea'>>

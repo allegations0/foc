@@ -111,7 +111,7 @@ Alternatively, you can always sell it for a tidy sum
 :: Quest_alchemist_of_the_seven_seasFailure [nobr]
 
 <p>
-While landing on one of the many islands in the southern seas, your slavers
+While landing on one of the many islands in the <<lore region_sea>>, your slavers
 were ambushed by local feral animals and had to retreat back to the ship after sustaining
 debilitating injuries.
 </p>

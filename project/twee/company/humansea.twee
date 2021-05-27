@@ -26,6 +26,6 @@
 
 :: CompanyTemplateHumanSea [nobr]
 
-Mysterious people hailing from beyond the southern seas.
+Mysterious people hailing from beyond the <<lore region_sea>>.
 Many are gifted in <<rep setup.trait.magic_light>>, and when befriended
 can share their secrets to heal your injured slavers faster.

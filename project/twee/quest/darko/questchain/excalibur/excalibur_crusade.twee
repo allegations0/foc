@@ -94,7 +94,7 @@ much as possible and weaken it during the fight.
 
 <p>
 <<Yourrep $g.informer>> managed to locate <<rep $g.knight>> within a secluded
-island in the southern seas, apparently honing <<their $g.knight>> skills in
+island in the <<lore region_sea>>, apparently honing <<their $g.knight>> skills in
 preparation for the one-sided battle in assaulting your fort. Together with
 <<utheirrel $g.warrior $g.corruptor>> <<rep $g.corruptor>>, <<yourrep
 $g.warrior>> set sail towards the island.

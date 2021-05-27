@@ -38,8 +38,8 @@
 
 <p>
 A booth in the <<rep setup.buildingtemplate.hiringsquare>> where you can attempt
-to recruit the people and orcs living on the eastern deserts into your company.
-Unlocks a contact which gives you a quest for hiring new slavers from the eastern deserts.
+to recruit the people and orcs living on the <<lore region_desert>> into your company.
+Unlocks a contact which gives you a quest for hiring new slavers from the <<lore region_desert>>.
 
 </p>
 

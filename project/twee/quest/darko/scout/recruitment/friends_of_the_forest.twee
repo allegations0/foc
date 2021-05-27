@@ -65,7 +65,7 @@ setup.qc.Slaver('recruit1', "", true), ],
 :: Quest_friendsofthe_forest [nobr]
 
 <p>
-The western forests are inhabited by both <<rep setup.trait.subrace_elf>> and
+The <<lore region_forest>> are inhabited by both <<rep setup.trait.subrace_elf>> and
 <<rep setup.trait.subrace_neko>>. People of these races have
 the potential to make an excellent slavers: Neko often make great
 entertainers, making them suitable for negotiation missions, while elves

@@ -153,7 +153,7 @@ mlang_merchantrevenge_caravancount = How many caravans successfully raided
         Dear <<name $unit.player>>,
     </p>
     <p>
-        A caravan will be passing through the northern vales carrying a cargo full of
+        A caravan will be passing through the <<lore region_vale>> carrying a cargo full of
         <<if $gQuest.getSeed() % 5 == 0>>
             <<set _goods = "furs">>
         <<elseif $gQuest.getSeed() % 5 == 1>>

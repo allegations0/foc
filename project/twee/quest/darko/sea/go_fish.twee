@@ -267,17 +267,17 @@ Something must have been swallowed by the fish, and your slavers soon found a ra
 <<if $gQuest.getSeed() % 11 == 3>>
 <<rep setup.item.potion_boon>>. A travelling ship must have dropped the rare potion during their trip.
 <<else>>
-blessing potion, a speciality of one of the many monasteries in the southern seas.
+blessing potion, a speciality of one of the many monasteries in the <<lore region_sea>>.
 Who knows how such a rare potion could end up in the belly of a fish, but you for sure are not complaining.
 <</if>>
 
 <<elseif $gQuest.getSeed() % 11 == 1>>
 
-An object was clearly stuck inside one of the bigger fish' belly. Your slavers bravely took it out, and lo and behold, it was a rare saint clothing from the southern seas. How could such a valuable piece of clothes find its way inside a fish' insides?
+An object was clearly stuck inside one of the bigger fish' belly. Your slavers bravely took it out, and lo and behold, it was a rare saint clothing from the <<lore region_sea>>. How could such a valuable piece of clothes find its way inside a fish' insides?
 
 <<elseif $gQuest.getSeed() % 11 == 2>>
 
-Your slavers somehow managed to captured the elusive golden fish. While the fish itself tastes remarkably normal, nobles of the southern seas uses them as a delecacy, and your slavers were able to sell the rare specimen for a high sum.
+Your slavers somehow managed to captured the elusive golden fish. While the fish itself tastes remarkably normal, nobles of the <<lore region_sea>> uses them as a delecacy, and your slavers were able to sell the rare specimen for a high sum.
 
 <<elseif $gQuest.getSeed() % 11 == 4>>
 
@@ -289,11 +289,11 @@ At the end of the reel is the rare Fish of Corruption. Unfortunately, this was n
 
 <<elseif $gQuest.getSeed() % 11 == 6>>
 
-At the end of the reel is not a fish, but rather a strange silver shoe. Underneath is written an address in the southern seas. Your slavers ended up returning the shoe to its owner, who was so grateful that your company's reputation soared among their people.
+At the end of the reel is not a fish, but rather a strange silver shoe. Underneath is written an address in the <<lore region_sea>>. Your slavers ended up returning the shoe to its owner, who was so grateful that your company's reputation soared among their people.
 
 <<elseif $gQuest.getSeed() % 11 == 7>>
 
-At the end of the reel is not a fish, but rather a strange silver shoe. Underneath is written an address in the southern seas. However, your slavers were able to deduce that the shoe was incredibly valuable, and sold it instead for an outrageous sum. The real owner found out about your slavers' treachery, however, and your reputation with their people suffered.
+At the end of the reel is not a fish, but rather a strange silver shoe. Underneath is written an address in the <<lore region_sea>>. However, your slavers were able to deduce that the shoe was incredibly valuable, and sold it instead for an outrageous sum. The real owner found out about your slavers' treachery, however, and your reputation with their people suffered.
 
 <<elseif $gQuest.getSeed() % 11 == 8>>
 
@@ -339,7 +339,7 @@ At the end of the reel is the rare Fish of Horror. The fish visage immediately i
 <<elseif $gQuest.getSeed() % 4 == 3>>
 At the end of the reel is the rare Fish of Vice, a forbidden fish.
 All your slavers were cursed with various curses by the time they realized what kind of
-fish they had just caught and released it immediately back to terrorize the southern seas.
+fish they had just caught and released it immediately back to terrorize the <<lore region_sea>>.
 <</if>>
 
 <</if>>

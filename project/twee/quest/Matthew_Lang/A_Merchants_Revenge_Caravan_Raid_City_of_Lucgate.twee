@@ -491,7 +491,7 @@ mlang_merchantrevenge_questrival = If Unset, the Player is unaware the Merchant 
         </p>
 
     <<else>>
-        a shores of a placid blue lake out in the western marches. It seemed strange to <<name $g.scout>> that such an idyllic place had not been settled, but it was very far from the city—and it was close enough to the Western Forest that anyone settling here risked being raided - or enslaved - by the elves. Or even the catkin.
+        a shores of a placid blue lake out in the western marches. It seemed strange to <<name $g.scout>> that such an idyllic place had not been settled, but it was very far from the city—and it was close enough to the <<lore region_forest>> that anyone settling here risked being raided - or enslaved - by the elves. Or even the catkin.
 
         <<if $gOutcome == 'crit'>>
             <p>

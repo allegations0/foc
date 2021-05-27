@@ -618,7 +618,7 @@ mlang_merchantrevenge_caravancount = How many caravans successfully raided
 
 
     <<else>>
-        a shores of a placid blue lake out in the western marches. It seemed strange to you that such an idyllic place had not been settled, but it was very far from the city—and it was close enough to the Western Forest that anyone settling here risked being raided - or enslaved - by the elves. Or possibly you.
+        a shores of a placid blue lake out in the western marches. It seemed strange to you that such an idyllic place had not been settled, but it was very far from the city—and it was close enough to the <<lore region_forest>> that anyone settling here risked being raided - or enslaved - by the elves. Or possibly you.
 
         <<if $gOutcome == 'crit'>>
             <p>
@@ -966,7 +966,7 @@ mlang_merchantrevenge_caravancount = How many caravans successfully raided
 
 
     <<else>>
-        a shores of a placid blue lake out in the western marches. It seemed strange to <<name $g.scout>> that such an idyllic place had not been settled, but it was very far from the city—and it was close enough to the Western Forest that anyone settling here risked being raided - or enslaved - by the elves. Or even the catkin.
+        a shores of a placid blue lake out in the western marches. It seemed strange to <<name $g.scout>> that such an idyllic place had not been settled, but it was very far from the city—and it was close enough to the <<lore region_forest>> that anyone settling here risked being raided - or enslaved - by the elves. Or even the catkin.
 
         <<if $gOutcome == 'crit'>>
             <p>

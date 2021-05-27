@@ -12,5 +12,5 @@
 :: ContactRecruiterForest [nobr]
 
 With the <<rep setup.buildingtemplate.hiringsquareforest>> built, this contact will
-grant you quest to recruit the residents of the western forests to your company.
+grant you quest to recruit the residents of the <<lore region_forest>> to your company.
 

@@ -2,6 +2,8 @@
 
 /* PROOFREAD COMPLETE */
 
+<<set _desert_multi = 1.5>>
+
 <<run new setup.QuestTemplate(
   'recruitmentdesert', /* key */
   'Recruitment: Desert', /* Title */
@@ -31,30 +33,30 @@
     [
       'QuestRecruitmentDesertCrit',
       [
-        setup.qc.Slaver('recruit1', "", /* is mercenary = */ true),
-        setup.qc.Slaver('recruit2', "", /* is mercenary = */ true),
-        setup.qc.Slaver('recruit3', "", /* is mercenary = */ true),
-        setup.qc.Slaver('recruit4', "", /* is mercenary = */ true),
-        setup.qc.Slaver('recruit5', "", /* is mercenary = */ true),
-        setup.qc.Slaver('recruit6', "", /* is mercenary = */ true),
-        setup.qc.Slaver('recruit7', "", /* is mercenary = */ true),
+        setup.qc.Slaver('recruit1', "", /* is mercenary = */ true, _desert_multi),
+        setup.qc.Slaver('recruit2', "", /* is mercenary = */ true, _desert_multi),
+        setup.qc.Slaver('recruit3', "", /* is mercenary = */ true, _desert_multi),
+        setup.qc.Slaver('recruit4', "", /* is mercenary = */ true, _desert_multi),
+        setup.qc.Slaver('recruit5', "", /* is mercenary = */ true, _desert_multi),
+        setup.qc.Slaver('recruit6', "", /* is mercenary = */ true, _desert_multi),
+        setup.qc.Slaver('recruit7', "", /* is mercenary = */ true, _desert_multi),
         
       ],
     ],
     [
       'QuestRecruitmentDesertSuccess',
       [
-        setup.qc.Slaver('recruit1', "", /* is mercenary = */ true),
-        setup.qc.Slaver('recruit2', "", /* is mercenary = */ true),
-        setup.qc.Slaver('recruit3', "", /* is mercenary = */ true),
-        setup.qc.Slaver('recruit4', "", /* is mercenary = */ true),
+        setup.qc.Slaver('recruit1', "", /* is mercenary = */ true, _desert_multi),
+        setup.qc.Slaver('recruit2', "", /* is mercenary = */ true, _desert_multi),
+        setup.qc.Slaver('recruit3', "", /* is mercenary = */ true, _desert_multi),
+        setup.qc.Slaver('recruit4', "", /* is mercenary = */ true, _desert_multi),
         
       ],
     ],
     [
       'QuestRecruitmentDesertFailure',
       [
-        setup.qc.Slaver('recruit1', "", /* is mercenary = */ true),
+        setup.qc.Slaver('recruit1', "", /* is mercenary = */ true, _desert_multi),
       ],
     ],
     [
@@ -115,7 +117,7 @@ They are now awaiting your decision in the prospects hall.
 :: QuestRecruitmentDesertFailure [nobr]
 
 <p>
-Throughout most of your slaver's stay in the eastern deserts,
+Throughout most of your slaver's stay in the <<lore region_desert>>,
 there was a raging sandstorm in the area which prevented your slavers
 to get about their business as planned.
 Still, 

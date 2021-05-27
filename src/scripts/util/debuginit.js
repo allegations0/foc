@@ -746,7 +746,7 @@ setup.DebugInit.debugModeInit = function () {
   /* Check if any quest is missing location tag */
   {
     const to_checks = [setup.questtemplate, setup.opportunitytemplate]
-    const locations = ['vale', 'forest', 'city', 'desert', 'sea', 'fort']
+    const locations = ['vale', 'forest', 'city', 'deep', 'desert', 'sea', 'fort']
     for (const to_check of to_checks) {
       for (const obj of Object.values(to_check)) {
         if (!obj.getTags().filter(tag => locations.includes(tag)).length) {

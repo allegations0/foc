@@ -57,6 +57,7 @@ export const TOPIC_NOUN = [
   'southern seas',
   'western forests',
   'eastern deserts',
+  'deep',
   'bimbos',
   'mindbroken slaves',
   'fleshshaping',

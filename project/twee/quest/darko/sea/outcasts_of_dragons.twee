@@ -109,7 +109,7 @@ must prepare for the worst if you were to take on this mission.
 :: Quest_outcasts_of_dragonsCrit [nobr]
 <p>
 <<Rep $g.informer>> managed to track the dragonkin to a remote island in the
-southern seas. Once there, <<rep $g.tamer1>> and <<rep $g.tamer2>> fought
+<<lore region_sea>>. Once there, <<rep $g.tamer1>> and <<rep $g.tamer2>> fought
 <<uadv $g.tamer1>>
 against the exiled dragonkin.
 

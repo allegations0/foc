@@ -117,7 +117,7 @@ setup.qdiff.harder53, /* difficulty */
 <<else>>
 
 <p>
-<<Yourrep _unit>> has come with yet another attempt at purging <<their _unit>> unluckiness away. This time, <<they _unit>> had somehow consulted an elderly <<urace $g.x>> of the <<lore region_vale>>, who had suggested the so-called "seven-petal-baths" as a way to purge the unluckiness away. Under the full moon night, whichever maiden/lad that wishes to gain the blessing of the moon must bathe under the moonlight in the cold glade of the northern vale, whose waters have been infused with petals of seven particularly rare flowers of the north. There will only be two people in the glade that night: the prospective bather, and the elder <<themself $g.x>> to supposedly guide the ritual.
+<<Yourrep _unit>> has come with yet another attempt at purging <<their _unit>> unluckiness away. This time, <<they _unit>> had somehow consulted an elderly <<urace $g.x>> of the <<lore region_vale>>, who had suggested the so-called "seven-petal-baths" as a way to purge the unluckiness away. Under the full moon night, whichever maiden/lad that wishes to gain the blessing of the moon must bathe under the moonlight in the cold glade of the <<lore region_vale>>, whose waters have been infused with petals of seven particularly rare flowers of the north. There will only be two people in the glade that night: the prospective bather, and the elder <<themself $g.x>> to supposedly guide the ritual.
 </p>
 
 <p>

@@ -550,5 +550,23 @@
       url: "https://www.newgrounds.com/art/view/xinaelle/stripper-katarina",
       license: "CC-BY-NC-ND 3.0",
     },
+    "bounty_hunt_spiders_female.jpg": {
+      title: "Maiko and Tsubasa webbed",
+      artist: "Karosu-Maker",
+      url: "https://www.deviantart.com/karosu-maker/art/Maiko-and-Tsubasa-webbed-870011202",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    "bounty_hunt_spiders.jpg": {
+      title: "Spiders cave 2 #speedpaint #throwback",
+      artist: "PeterKmiecik",
+      url: "https://www.deviantart.com/peterkmiecik/art/Spiders-cave-2-speedpaint-throwback-778488045",
+      license: "CC-BY 3.0",
+    },
+    "deeprealm.jpg": {
+      title: "Dark ruins",
+      artist: "panjoool",
+      url: "https://www.deviantart.com/panjoool/art/Dark-ruins-870940339",
+      license: "CC-BY-NC-ND 3.0",
+    },
   }
 }());

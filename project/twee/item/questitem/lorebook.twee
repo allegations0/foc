@@ -10,3 +10,10 @@
   description: "Unlocks the doppelganger lore once you build the <<rep setup.buildingtemplate.library>>",
   tags: [],
 })>>
+
+<<run new setup.ItemLorebook({
+  key: 'lorebook_deep',
+  name: 'Lorebook: Deeprealm',
+  description: "Unlocks The Deeprealm lore once you build the <<rep setup.buildingtemplate.library>>",
+  tags: [],
+})>>

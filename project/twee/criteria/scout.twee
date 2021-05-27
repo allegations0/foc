@@ -90,6 +90,32 @@
 
 
 <<run new setup.UnitCriteria(
+  'scout_deep',
+  'Scout (Deep)',
+  [
+    setup.trait.bg_laborer,
+    setup.trait.per_brave,
+    setup.trait.per_loner,
+    setup.trait.magic_dark,
+    setup.trait.magic_dark_master,
+  ],
+  [
+    setup.trait.subrace_humansea,
+    setup.trait.subrace_dragonkin,
+    setup.trait.per_cautious,
+    setup.trait.per_gregarious,
+    setup.trait.magic_light,
+    setup.trait.magic_light_master,
+  ],
+  [setup.qres.Job(setup.job.slaver)],
+  {
+    survival: 2.0,
+    combat: 1.0,
+  }
+)>>
+
+
+<<run new setup.UnitCriteria(
   'scout_desert',
   'Scout (Desert)',
   [

@@ -123,7 +123,7 @@ setup.qdiff.hard38, /* difficulty */
 <<set _u = setup.getAnySlaver()>>
 <p>
 As you enter your office today, <<yourrep _u>> stood there waiting with a
-letter in <<uhand _u>>. Apparently, a famous blacksmith in the eastern deserts is
+letter in <<uhand _u>>. Apparently, a famous blacksmith in the <<lore region_desert>> is
 hiring seasonal apprentices to help with the increased demands for <<their
 $g.smith>> services.
 An opening is posted for two blacksmith apprentices and one "sword taster",

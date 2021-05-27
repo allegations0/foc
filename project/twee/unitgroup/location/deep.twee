@@ -1,0 +1,34 @@
+:: InitUnitGroupDeep [nobr]
+
+<<set _males = [
+  [setup.unitpool.subrace_demonkin_male, 1],
+]>>
+
+<<set _females = [
+  [setup.unitpool.subrace_demonkin_female, 1],
+]>>
+
+<<run new setup.UnitGroup(
+  'deep_all',
+  'Residents of the Deeprealm: All gender',
+  setup.ALLUNITGROUPS.concat(_males).concat(_females),
+  0,
+  []
+)>>
+
+<<run new setup.UnitGroup(
+  'deep_allmale',
+  'Residents of the Deeprealm: Male',
+  setup.ALLUNITGROUPSMALE.concat(_males),
+  0,
+  []
+)>>
+
+<<run new setup.UnitGroup(
+  'deep_allfemale',
+  'Residents of the Deeprealm: Female',
+  setup.ALLUNITGROUPSFEMALE.concat(_females),
+  0,
+  []
+)>>
+

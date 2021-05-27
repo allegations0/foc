@@ -57,19 +57,27 @@ setup.Lore = class Lore extends setup.TwineClass {
   }
 
   /**
+   * @param {boolean} [is_uppercase]
    * @returns {string}
    */
-  rep() { return setup.repMessage(this, 'lorecardkey') }
+  rep(is_uppercase) {
+    if (!is_uppercase) {
+      return setup.repMessage(this, 'lorecardkey')
+    } else {
+      return setup.repMessage(this, 'lorecardkey', undefined, this.getName().toUpperFirst())
+    }
+  }
 
   /**
    * Returns lore.rep() if the lore exists, or an error message if it does not.
    * @param {string} lore_key 
+   * @param {boolean} [is_uppercase]
    * @returns {string}
    */
-  static repLore(lore_key) {
+  static repLore(lore_key, is_uppercase) {
     const lore = setup.lore[lore_key]
     if (!lore) throw new Error(`Lore ${lore_key} not found!`)
-    return lore.rep()
+    return lore.rep(is_uppercase)
   }
 
   static WORLDMAP_REGIONS_SVG = worldmap_regions_svg.replace('EDITOR_STYLES', 'EDITOR_STYLES_DISABLED')

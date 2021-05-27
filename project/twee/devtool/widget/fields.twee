@@ -169,7 +169,7 @@
               <td>1 week</td>
             </tr>
             <tr>
-              <td>Western Forests</td>
+              <td><<lore region_forest>></td>
               <td>Normal</td>
               <td>1 week</td>
             </tr>
@@ -179,7 +179,12 @@
               <td>1-2 week</td>
             </tr>
             <tr>
-              <td>Eastern Deserts</td>
+              <td><<Lore region_deep>></td>
+              <td>Normal</td>
+              <td>1-3 weeks</td>
+            </tr>
+            <tr>
+              <td><<lore region_desert>></td>
               <td>Normal</td>
               <td>2-3 weeks</td>
             </tr>
@@ -191,7 +196,7 @@
           </tbody>
         </table>
         <br/>
-        Note that all quests in the southern seas are Veteran quests.
+        Note that all quests in the <<lore region_sea>> are Veteran quests.
       </div>
     <</message>>
     <<numberbox $args[0] $args[1]>> weeks
@@ -315,7 +320,7 @@
             <td>Lv. 1 - Lv. 20</td>
           </tr>
           <tr>
-            <td>Western Forests</td>
+            <td><<lore region_forest>></td>
             <td>Normal Quests</td>
             <td>Lv. 15 - Lv. 30</td>
           </tr>
@@ -325,7 +330,12 @@
             <td>Lv. 25 - Lv. 40</td>
           </tr>
           <tr>
-            <td>Eastern Deserts</td>
+            <td><<lore region_deep>></td>
+            <td>Normal Quests</td>
+            <td>Lv. 30 - Lv. 45</td>
+          </tr>
+          <tr>
+            <td><<lore region_desert>></td>
             <td>Normal Quests</td>
             <td>Lv. 35 - Lv. 50</td>
           </tr>
@@ -337,7 +347,7 @@
         </tbody>
       </table>
       <br/>
-      Note that all quests in the Southern Seas are Veteran quests.
+      Note that all quests in the <<lore region_sea>> are Veteran quests.
       <br/>
       <br/>
       Choosing modifier should be done according to their risks, i.e., what
@@ -773,6 +783,8 @@
             <br/>
             - City: <<money 300>>
             <br/>
+            - Deep : <<money 400>>
+            <br/>
             - Desert: <<money 500>>
             <br/>
             - Sea: <<money 750>>
@@ -1080,7 +1092,7 @@
 
 <<focwidget 'dtquestpoolchoose'>>
   <<set _questpooldefault = [
-    'vale', 'forest', 'city', 'desert', 'sea',
+    'vale', 'forest', 'city', 'deep', 'desert', 'sea',
   ]>>
 
   <<for _iquestpool, _questpool range setup.questpool>>

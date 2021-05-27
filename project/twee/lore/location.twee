@@ -62,7 +62,7 @@ students chaste and free of temptations, rumors speak of a very, very different 
 
 :: LORE_location_npc [nobr]
 <p>
-The Neko Port City, often abbreviated as NPC, is the largest settlement in the western forests.
+The Neko Port City, often abbreviated as NPC, is the largest settlement in the <<lore region_forest>>.
 As its name suggest, it is a large fort city in the <<lore geo_pawninsula>>,
 and many traders call this port a home.
 </p>
@@ -132,7 +132,7 @@ clients...
 
 :: LORE_location_qarma [nobr]
 <p>
-The largest city in the eastern deserts, many call this dusty place a home.
+The largest city in the <<lore region_desert>>, many call this dusty place a home.
 Every since the <<rep $company.humankingdom>> banned slavery, the city economy
 has boomed with the influx of slaves coming from all around the place.
 </p>

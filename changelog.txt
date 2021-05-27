@@ -4,6 +4,14 @@
 
 ### v1.7.0.x
 
+v1.7.0.2:
+
+  - New region: Deeprealm.
+  - New quest: Bounty hunt: Spiders
+  - New quest: Recruiment: Deep
+  - New quest: Scout: Deep
+  - New quest: Contact: Deep
+
 v1.7.0.1:
 
   - Readme v1.7 fixes.

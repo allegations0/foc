@@ -18,3 +18,6 @@
   <<= setup.Lore.repLore($args[0])>>
 <</focwidget>>
 
+<<focwidget 'Lore'>>
+  <<= setup.Lore.repLore($args[0], true)>>
+<</focwidget>>
