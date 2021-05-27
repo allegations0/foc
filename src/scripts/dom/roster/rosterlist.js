@@ -193,7 +193,6 @@ export function getRosterListMenuItems({ unit, hide_details, as_extras_only }) {
   }
 
   if (unit.isSlaver()) {
-    misc.push(getSkillFocusMenu(unit))
     if (State.variables.titlelist.getAllTitles(unit).length > setup.TITLE_MAX_ASSIGNED) {
       misc.push(menuItemAction({
         text: `View / change active titles`,
