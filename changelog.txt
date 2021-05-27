@@ -4,6 +4,13 @@
 
 ### v1.6.5.x
 
+v1.6.5.23:
+
+  - Skill focus menu UI is fully modernized
+  - Tutorial for skill focus
+  - Skill focus button moved to main unit menu set
+  - Fix duplicated skill focus menu
+
 v1.6.5.22:
 
   - Can remove rooms from the room list menu in renovation mode
