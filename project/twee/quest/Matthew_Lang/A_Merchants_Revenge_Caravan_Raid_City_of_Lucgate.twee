@@ -150,7 +150,7 @@ setup.qc.Injury('raider', 2)
   ],
 ],
 [ /* quest pool and rarity */
-[setup.questpool.city, setup.rarity.rare],
+  /* [setup.questpool.city, setup.rarity.rare], */
 ],
 [ /* restrictions */
   setup.qres.VarEqual('mlangmerchantprincequest', '5'),
