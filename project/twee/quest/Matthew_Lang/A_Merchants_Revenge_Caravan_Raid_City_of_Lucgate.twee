@@ -364,7 +364,7 @@ mlang_merchantrevenge_questrival = If Unset, the Player is unaware the Merchant 
             <p>
                 When the caravan arrived, they halted, and a fair number of their guards went to investigate the fallen wagon, and ventured off to follow the blood trail. That was when you struck from behind.
 
-                <<if _goods == "garum" OR _goods == "pickled cabbage">>
+                <<if _goods == "garum" or _goods == "pickled cabbage">>
                     Swooping, in, you and <<name _o1>> rushed the guards surrounding the water barrels, drawing the majority of the remaining guards to you, giving <<name _o2>> the chance to smash up the amphorae of _goods. While wasting such delicious food was, well, a waste, it was the job, and it was one easily finished, allowing you all to beat a quick retreat
 
                     <<if $gOutcome == 'crit'>>
@@ -470,7 +470,7 @@ mlang_merchantrevenge_questrival = If Unset, the Player is unaware the Merchant 
         <p>
             When the caravan arrived, they halted, and a fair number of their guards went to investigate the fallen wagon, and ventured off to follow the blood trail. That was when <<name $g.raider>> led the strike from behind.
 
-            <<if _goods == "garum" OR _goods == "pickled cabbage">>
+            <<if _goods == "garum" or _goods == "pickled cabbage">>
                 Swooping, in, <<name $g.raider>> and <<name $g.fighter>> rushed the guards surrounding the water barrels, drawing the majority of the remaining guards to them, giving <<name $g.scout>> the chance to smash up the amphorae of _goods. While wasting such delicious food was, well, a waste, it was the job, and it was one easily finished, allowing them to beat a quick retreat
 
                 <<if $gOutcome == 'crit'>>

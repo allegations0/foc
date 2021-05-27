@@ -4,6 +4,16 @@
 
 ### v1.6.5.x
 
+v1.6.5.21:
+
+  - A Merchant's Revenge: Caravan Raid (City of Lucgate) (by Matthew Lang)
+  - A Merchant's Revenge: A Careless Raid (by Matthew Lang)
+  - A Merchant's Revenge: Complications (by Matthew Lang)
+  - A Merchant's Revenge: An Unfortunate Report (by Matthew Lang)
+  - A Merchant's Rage (by Matthew Lang)
+  - V1.7 readme
+  - D&D quest text fixes.
+
 v1.6.5.20:
 
   - Copy to clipboard button

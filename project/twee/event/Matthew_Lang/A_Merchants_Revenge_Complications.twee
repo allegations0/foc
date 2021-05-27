@@ -61,7 +61,7 @@ setup.rarity.never, /* Rarity */
         "I wasn't sure, but it didn't feel safe to go in without checking."
     <</if>>
     <br>
-    <<name $g.merchant>> sights and slumps back into the the padded leather of the booth. "It looks like one of my rivals is attempting to use you against me. I should have expected this."
+    <<name $g.merchant>> sights and slumps back into the padded leather of the booth. "It looks like one of my rivals is attempting to use you against me. I should have expected this."
 </p>
 
 <<choose>>

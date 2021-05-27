@@ -712,6 +712,7 @@ setup.Text.Unit.Trait.skin = function (unit, is_with_equipment, is_with_adjectiv
 }
 
 setup.Text.Unit.Trait.tail = function (unit, is_with_equipment) {
+  if (!unit.getTail()) return ''
   const base = setup.sexbodypart.tail.repSimple(unit)
   if (Math.random() < 0.7) return base
   var tail = unit.getTraitWithTag('tail')
