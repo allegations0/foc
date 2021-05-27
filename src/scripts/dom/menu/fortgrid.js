@@ -554,18 +554,22 @@ that you can play the game without even bothering with this bonus if you prefer.
     if (this.is_show_renovation) {
       if (['edit', 'delete'].includes(this.mode)) {
         const unplaced = State.variables.roomlist.getUnplacedRooms()
+        let text
         if (unplaced.length) {
-          menus.push(
-            menuItemAction({
-              text: html`Place rooms (${setup.DOM.Text.successlite(unplaced.length)})`,
-              tooltip: `Place some of your optional rooms on your fort to gain their skill benefits`,
-              callback: () => {
-                setup.DevToolHelper.saveScrollPos()
-                setup.DOM.Nav.goto('RoomListPlace')
-              }
-            }),
-          )
+          text = html`Room list (${setup.DOM.Text.successlite(unplaced.length)})`
+        } else {
+          text = html`Room list`
         }
+        menus.push(
+          menuItemAction({
+            text: text,
+            tooltip: `See your room list, and optionally place/remove some of them from your fort`,
+            callback: () => {
+              setup.DevToolHelper.saveScrollPos()
+              setup.DOM.Nav.goto('RoomListPlace')
+            }
+          }),
+        )
       }
 
       if (['edit'].includes(this.mode)) {
@@ -833,7 +837,7 @@ function on_mouse_enter_callback(tile) {
  * @param {string} reason 
  * @param {string} action
  */
-function show_reason(room, reason, action) {
+export function show_reason(room, reason, action) {
   // show reason
   setup.Dialogs.open({
     title: `Invalid position`,

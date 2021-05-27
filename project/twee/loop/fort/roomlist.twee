@@ -15,7 +15,7 @@
 
 <<run setup.DOM.Nav.topLeftNavigation(
   setup.DOM.Nav.link(
-    'Cancel',
+    'Back',
     () => {
       State.variables.gFortGridControl.mode = 'edit';
     },
@@ -25,11 +25,11 @@
 
 <div>
   Select room to build:
-  <<foclink '(cancel)' 'FortGridRenovate'>>
+  <<foclink '(back)' 'FortGridRenovate'>>
     <<set State.variables.gFortGridControl.mode = 'edit'>>
   <</foclink>>
 </div>
 
-<<set _dom = setup.DOM.Menu.roomlist(true)>>
+<<set _dom = setup.DOM.Menu.roomlist()>>
 <<attach _dom>>
 

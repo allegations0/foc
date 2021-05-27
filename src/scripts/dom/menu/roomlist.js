@@ -6,10 +6,9 @@ http://twinery.org/forum/discussion/comment/17617/
 /**
  * Display list of rooms, and optionally place the unplaced ones in the fort.
  * 
- * @param {boolean} [show_buildable_only]
  * @returns {setup.DOM.Node}
  */
-setup.DOM.Menu.roomlist = function (show_buildable_only) {
+setup.DOM.Menu.roomlist = function () {
   const all_rooms = State.variables.roomlist.getRoomInstances()
 
   const repr = []
@@ -18,9 +17,6 @@ setup.DOM.Menu.roomlist = function (show_buildable_only) {
   for (const room of all_rooms) {
     const key = room.getTemplate().key
     if (!found[key]) {
-      if (show_buildable_only) {
-        if (room.isPlaced()) continue
-      }
       found[key] = true
       repr.push(room)
     }

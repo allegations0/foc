@@ -1,4 +1,5 @@
 import { menuItemAction, menuItemText, menuItemTitle } from "../../ui/menu"
+import { show_reason } from "../menu/fortgrid"
 import { domCardRep } from "../util/cardnamerep"
 import { buildingTemplateDescriptionFragment, buildingTemplateNameFragment } from "./building_common"
 
@@ -69,6 +70,17 @@ export function getUnplacedRoom(template) {
 }
 
 /**
+ * @param {setup.RoomTemplate} template 
+ * @returns {setup.RoomInstance | null}
+ */
+export function getPlacedRoom(template) {
+  const placed = State.variables.roomlist.getRoomInstances({ template: template }).filter(
+    test_room => test_room.isPlaced())
+  if (!placed.length) return null
+  return placed[0]
+}
+
+/**
  * @param {setup.RoomInstance} room 
  * @param {boolean} hide_actions 
  * @returns {JQLite[]}
@@ -110,6 +122,37 @@ function roomInstanceNameActionMenu(room, hide_actions) {
         } else {
           setup.DOM.Nav.goto()
         }
+      },
+    }))
+  }
+
+  if (
+    !hide_actions &&
+    !room.getTemplate().isFixed() &&
+    State.variables.roomlist.getRoomCount(room.getTemplate()).placed &&
+    State.variables.gFortGridControl &&
+    State.variables.gFortGridControl.mode != 'view'
+  ) {
+    menus.push(menuItemAction({
+      text: `Remove`,
+      tooltip: `Remove this room from your fort. You may need to place it back later`,
+      callback: () => {
+        // find a placed room
+        const placed = getPlacedRoom(room.getTemplate())
+
+        const reason = State.variables.fortgrid.checkRoomCanRelocateTo(
+          placed, /* new location = */ null, /* skip pathing = */ false)
+
+        if (!reason) {
+          // delete the room and continue
+          const tiles = State.variables.fortgrid.relocateRoom(placed, null, /* return obsolete = */ true)
+          State.variables.gFortGridControl.refreshTiles(tiles)
+          placed.resetRotation()
+          setup.DOM.Nav.goto()
+        } else {
+          show_reason(placed, reason, 'remove')
+        }
+
       },
     }))
   }
