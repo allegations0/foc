@@ -4,6 +4,10 @@
 
 ### v1.6.5.x
 
+v1.6.5.22:
+
+  - Can remove rooms from the room list menu in renovation mode
+
 v1.6.5.21:
 
   - A Merchant's Revenge: Caravan Raid (City of Lucgate) (by Matthew Lang)
