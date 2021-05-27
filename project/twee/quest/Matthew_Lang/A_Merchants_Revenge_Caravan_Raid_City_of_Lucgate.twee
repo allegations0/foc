@@ -122,6 +122,9 @@ setup.qdiff.hard43, /* difficulty */
       setup.qc.Ire('humankingdom', 2),
       setup.qc.VarAdd('mlang_merchantrevenge_wrongcaravancount', 1, -1),
       setup.qc.Favor('humankingdom', -200),
+      setup.qc.Opportunity('a_merchant_s_revenge_a_careless_raid', {
+          merchant: 'merchant',
+      }),
     ],
   ],
   [
@@ -150,7 +153,7 @@ setup.qc.Injury('raider', 2)
   ],
 ],
 [ /* quest pool and rarity */
-  /* [setup.questpool.city, setup.rarity.rare], */
+  [setup.questpool.city, setup.rarity.uncommon],
 ],
 [ /* restrictions */
   setup.qres.VarEqual('mlangmerchantprincequest', '5'),
@@ -513,25 +516,7 @@ mlang_merchantrevenge_questrival = If Unset, the Player is unaware the Merchant 
 <</if>>
 
 It was only later that you found the paperwork. Your contact, <<name $g.merchant>>
-, never said which trading company—or trading companies—<<they $g.merchant>> ran, but you'd seen the name on the documents you'd already handed over. Clearly, someone had set you up. This left you with a choice:
-
-
-<p>
-    Do you contact <<them $g.merchant>> to report the incident, or keep things quiet and hope <<they $g.merchant>> doesn't find out?
-</p>
-
-<<choose>>
-<<opt "Report the Incident">>
-    You leave a message for <<name $g.merchant>> with the staff at <<lore location_princeofcups>>. Hopefully <<they $g.merchant>> get back to you soon.
-    <<run setup.qc.Leave('merchant', '', undefined).apply($gQuest)>>
-    <<run setup.qc.Event('a_merchant_s_rage', 3, null).apply($gQuest)>>
-
-
-<<opt "Keep things Quiet">>
-    Caravans go missing all the time. You just have to hope the raid on this particular one isn't linked back to you and <<rep $company.player>>.
-<</choose>>
-
-
+, never said which trading company—or trading companies—<<they $g.merchant>> ran, but you'd seen the name on the documents you'd already handed over. Clearly, someone had set you up. This left you with a choice...
 
 
 :: Quest_a_merchant_s_revenge_caravan_raid_city_of_lucgate_Failure [nobr]
