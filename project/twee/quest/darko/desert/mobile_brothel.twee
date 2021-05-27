@@ -80,6 +80,16 @@ they can see how proficient your company is in raising slaves.
 
 
 :: Quest_mobile_brothelCrit [nobr]
+
+<<if $gOutcome == 'success' || $gOutcome == 'crit'>>
+
+  <<if $g.show.isMale()>>
+  <<else>>
+    <<questimage 'mobile_brothel_female.jpg'>>
+  <</if>>
+
+<</if>>
+
 <p>
 Your slavers spotted the caravan travelling across the desert. The first
 thing they saw of course was the

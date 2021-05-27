@@ -59,9 +59,13 @@ hardest trainings to do.
 
 :: QuestUnitTrainingPonyBasicCrit [nobr]
 
-<<if $g.trainee.isFemale()>>
-  <<questimage 'unit_training_pony_basic_female.jpg'>>
+<<if $g.trainee.isMale()>>
+  <<if $g.head.isFemale()>>
+    <<questimage 'unit_training_pony_basic_femdom.jpg'>>
+  <<else>>
+  <</if>>
 <<else>>
+  <<questimage 'unit_training_pony_basic_female.jpg'>>
 <</if>>
 
 <<if $gOutcome == 'crit'>>

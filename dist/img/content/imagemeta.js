@@ -319,6 +319,12 @@
       url: "https://www.newgrounds.com/art/view/crescentia-fortuna/tiny-kinkshame-rabbit",
       license: "CC-BY-NC 3.0",
     },
+    "unit_training_pony_basic_femdom.jpg": {
+      title: "Hoyride",
+      artist: "slaveryart",
+      url: "https://www.newgrounds.com/art/view/slaveryart/hoyride",
+      license: "CC-BY-NC 3.0",
+    },
     "unit_training_pony_advanced_female_elf.jpg": {
       title: "Elf ponygirl",
       artist: "Xianetta",
@@ -507,6 +513,13 @@
       url: "https://www.newgrounds.com/art/view/boundaru/vega-s-defeat",
       license: "CC-BY-NC-ND 3.0",
     },
+    "unit_training_obedience_basic_male2.jpg": {
+      title: "NSFW: Konstantin Trevelyan",
+      artist: "AnonBunny",
+      url: "https://www.newgrounds.com/art/view/anonbunny/nsfw-konstantin-trevelyan",
+      license: "CC-BY-NC-SA 3.0",
+      extra: "colorized using A.I.",
+    },
     "unit_training_obedience_basic_female.jpg": {
       title: "Tied Up! (Part 1)",
       artist: "NeroXLIV",
@@ -517,6 +530,24 @@
       title: "Mountain City Gate",
       artist: "JaikArt",
       url: "https://www.deviantart.com/jaikart/art/Mountain-City-Gate-408618594",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    "mobile_brothel_female.jpg": {
+      title: "Transported and sold",
+      artist: "slaveryart",
+      url: "https://www.newgrounds.com/art/view/slaveryart/transported-and-sold",
+      license: "CC-BY-NC 3.0",
+    },
+    "a_high_class_brothel_male_classy.jpg": {
+      title: "The Witcher: Zine Submission",
+      artist: "AnonBunny",
+      url: "https://www.newgrounds.com/art/view/anonbunny/the-witcher-zine-submission",
+      license: "CC-BY-NC-SA 3.0",
+    },
+    "a_high_class_brothel_female_classy.jpg": {
+      title: "Stripper Katarina",
+      artist: "Xinaelle",
+      url: "https://www.newgrounds.com/art/view/xinaelle/stripper-katarina",
       license: "CC-BY-NC-ND 3.0",
     },
   }

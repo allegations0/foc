@@ -50,6 +50,18 @@ setup.rarity.always, /* Rarity */
 <<set _promotion = setup.dutytemplate.questbrothelmanager.promotion()>>
 <<set _dom = setup.dutytemplate.questbrothelmanager.sub()>>
 
+<<if _class >= 20>>
+  <<if $g.head.isHasDick()>>
+    <<questimage 'a_high_class_brothel_male_classy.jpg'>>
+  <<else>>
+    <<questimage 'a_high_class_brothel_female_classy.jpg'>>
+  <</if>>
+<<else>>
+  <<if $g.head.isHasDick()>>
+  <<else>>
+  <</if>>
+<</if>>
+
 <p>
 By now, <<attach _describe>> has become one of the main attractions in the <<lore location_npc>>.
 <<if _class >= 20>>

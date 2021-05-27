@@ -60,7 +60,11 @@ them serve their betters in peace.
 :: QuestUnitTrainingObedienceBasicCrit [nobr]
 
 <<if $g.trainee.isMale()>>
-  <<questimage 'unit_training_obedience_basic_male.jpg'>>
+  <<if $gQuest.getSeed() % 2 == 0>>
+    <<questimage 'unit_training_obedience_basic_male.jpg'>>
+  <<elseif $gQuest.getSeed() % 2 == 1>>
+    <<questimage 'unit_training_obedience_basic_male2.jpg'>>
+  <</if>>
 <<else>>
   <<questimage 'unit_training_obedience_basic_female.jpg'>>
 <</if>>
