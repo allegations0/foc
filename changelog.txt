@@ -4,6 +4,19 @@
 
 ### v1.7.0.x
 
+v1.7.0.8:
+
+  - Drow names implemented (Dunmer names from elder scrolls)
+  - Fix kobold sometimes not getting the dwarf trait
+  - Font for kobold
+  - Fonr for drow.
+  - Race faq updated with drow and kobold.
+  - Defiant slave event text fixes (thanks to Elannil)
+  - A bunch of new elf images
+  - 40+ initial drow images
+  - New Location Image: Alchemy Lab (thanks to Matthew Lang)
+  - Drow unit group background rarities
+
 v1.7.0.7:
 
   - Drow race skeleton.
