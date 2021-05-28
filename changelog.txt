@@ -4,6 +4,18 @@
 
 ### v1.7.0.x
 
+v1.7.0.5:
+
+  - Fix recruitment: deep quest having the wrong actor
+  - Skeleton for New race: Kobold
+  - New company: Kobold (temporary name)
+
+v1.7.0.4:
+
+  - Fix missing orc in mansion of hypnotism
+  - Fix mystifying obelisk slave order crashing
+  - Various fixes
+
 v1.7.0.3:
 
   - Remove scout tunnel from vet hall requirements for now

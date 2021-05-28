@@ -2081,6 +2081,11 @@ figure>image {
   letter-spacing: 1px;
 }
 
+.text-subrace_kobold {
+  font-family: 'Metal Mania', cursive;
+  letter-spacing: 1px;
+}
+
 .text-subrace_lizardkin {
   font-family: 'Metal Mania', cursive;
   letter-spacing: 1px;

@@ -71,6 +71,11 @@
     region: setup.Text.Race.REGIONS.desert,
     company_key: 'orc',
   },
+  subrace_kobold: {
+    noun: 'kobold',
+    region: setup.Text.Race.REGIONS.deep,
+    company_key: 'kobold',
+  },
   subrace_lizardkin: {
     noun: 'lizardkin',
     region: setup.Text.Race.REGIONS.sea,

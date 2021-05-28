@@ -254,7 +254,7 @@
 <<run new setup.Equipment(
   'slaving_arms_master',
   "Gloves of Tender Ministration",
-  setup.equipmentslot.head,
+  setup.equipmentslot.arms,
   ['legendary', 'clothes', ],
   setup.EQUIPMENT_PRICE_MASTER, /* value */
   0, /* sluttines */
