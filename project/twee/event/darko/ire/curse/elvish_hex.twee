@@ -18,6 +18,7 @@
 },
 [ /* outcomes */
   setup.qc.Ire('elf', -20),
+  /* elven hex is slightly weaker, only 4 curses instead of 5 */
   setup.qc.CurseRandomSlaverHome(),
   setup.qc.CurseRandomSlaverHome(),
   setup.qc.CurseRandomSlaverHome(),

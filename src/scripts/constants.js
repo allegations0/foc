@@ -658,16 +658,17 @@ setup.FAVOR_MASTER_EQUIPMENT_PROBABILITY_MEDIUM = 0.01
 setup.FAVOR_MASTER_EQUIPMENT_PROBABILITY_HIGH = 1.0
 
 // gain one company to manage every this much efficiency
-setup.FAVOR_RELATIONSHIP_MANAGER_COMPANY_EVERY = 0.4
+setup.FAVOR_RELATIONSHIP_MANAGER_COMPANY_EVERY = 0.33
 
 // How much upkeep does the relationship manager cost when managing x+1 companies?
 setup.FAVOR_RELATIONSHIP_MANAGER_UPKEEPS = [
   200,
   800,
-  1600,
-  2500,
-  4000,
-  6000,
+  1400,
+  2000,
+  2800,
+  3900,
+  5700,
 ]
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
