@@ -26,7 +26,7 @@ setup.QUEST_DEFAULT_EXPIRATION,  /* expiration weeks */
 [ /* costs */
 ],
 'Quest_owner_magnifique',
-setup.qdiff.harder56, /* difficulty */
+setup.qdiff.harder57, /* difficulty */
 [ /* outcomes */
   [
     'Quest_owner_magnifiqueCrit',

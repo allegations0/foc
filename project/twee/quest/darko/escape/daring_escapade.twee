@@ -23,7 +23,7 @@ setup.qres.HasTag('escaped_slave'),
 [ /* costs */
 ],
 'Quest_daring_escapade',
-setup.qdiff.harder57, /* difficulty */
+setup.qdiff.harder58, /* difficulty */
 [ /* outcomes */
 [
 'Quest_daring_escapadeCrit',
