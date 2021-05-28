@@ -95,10 +95,22 @@ their ways on those ruined pathways.
 </p>
 
 <p>
+The Deeprealm is only accessible via some of the ancient entrances, which are quite rare.
+This makes trading with the Deeprealm cities awkward --
+merchants would cite the lack of nearby entrance to be
+the primary reason why there are almost no trade between the <<rep $company.humankingdom>>
+and the Deeprealm.
+Fortunately, the situation seems to be different in other regions, and rumors say that
+the Deeprealm cities maintain lucrative trading with some of the desert settlements, as well as
+some settlements far beyond the <<lore region_sea>>.
+</p>
+
+<p>
 For reasons unknown, some areas of the Deeprealm are thick with the Mist. It is said that
 demons took great delight in taking lost or unsuspecting travelers of the Deeprealm into the
 demon plane, to be remade as one of their countless playthings...
 </p>
+
 
 :: LORESETUP_region_desert [lore]
 
