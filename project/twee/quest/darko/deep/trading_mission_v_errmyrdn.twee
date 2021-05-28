@@ -80,7 +80,8 @@ setup.qdiff.normal30, /* difficulty */
 </p>
 
 <p>
-    After a few days of travel, they arrived at <<rep $company.drow>>, where they began to trade. The drow are cunning and smart, and their merchants especially so, and your slavers' shrewdness were tested.
+    After a few days of travel, they arrived at <<rep $company.drow>>, where they began to trade.
+    The drow are cunning and smart, and their merchants especially so, and your slavers' shrewdness were tested.
     <<set _unit = setup.selectUnit([$g.trader1, $g.trader2, $g.guard], {trait: 'per_gregarious'})>>
     <<if _unit>>
         <<Rep _unit>> led the trade negotiations, using <<their _unit>> gift with words to sway the outcome your way.
@@ -107,10 +108,14 @@ setup.qdiff.normal30, /* difficulty */
     After a tense round of negotiation,
     your slavers
     <<if $gOutcome == 'crit'>>
-        managed to outsmart them somehow. They returned home with much more money than you would have expected from selling, well, corn really.
-        If you had known that farming and selling them underground would net you such a profit, perhaps you would have reconsidered being a slaver...
+        managed to outsmart them somehow.
+        Once the drow's many slaves finished unloading the goods,
+        your slavers returned home with an empty card and much more money than you would have expected from selling, well, corn really.
+        If you had known that farming and selling them underground would net you such a profit. It sounds a bit corny, but perhaps you would have reconsidered being a slaver...
     <<elseif $gOutcome == 'success'>>
-        managed to negotiate a good deal. They returned home with the expected money. Overall, it was a job well done, and your slavers deserve some good rest.
+        managed to negotiate a good deal.
+        Once the drow's many slaves finished unloading the goods,
+        your slavers returned home with the expected money. Overall, it was a job well done, and your slavers deserve some good rest.
     <<elseif $gOutcome == 'failure'>>
         were outsmarted by the merchants. The drows know that should they refuse to buy the produce, it will all go to waste by the time your slavers returned to the surface, and used this as a leverage.
         In the end, your slavers were forced to sell them at a ridiculously low price, even less than what you would have gotten in the surface. You lose quite some money from this endeavor.
