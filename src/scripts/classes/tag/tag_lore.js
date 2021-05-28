@@ -29,4 +29,9 @@ setup.TAG_LORE = {
     title: 'history',
     description: 'A thing of the past',
   },
+  culture: {
+    type: 'type',
+    title: 'Culture',
+    description: 'A way of life',
+  },
 }

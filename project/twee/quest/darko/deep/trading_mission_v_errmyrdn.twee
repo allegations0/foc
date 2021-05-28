@@ -24,7 +24,7 @@
   setup.qc.MoneyCustom(-1500),
 ],
 'Quest_trading_mission_v_errmyrdn',
-setup.qdiff.normal30, /* difficulty */
+setup.qdiff.normal33, /* difficulty */
 [ /* outcomes */
   [
     'Quest_trading_mission_v_errmyrdnCrit',
