@@ -78,6 +78,12 @@
       url: "https://www.deviantart.com/captdiablo/art/Winter-Eladrin-Pirate-Queen-851997829",
       license: "CC-BY-NC-ND 3.0",
     },
+    13: {
+      title: "Drow Priestess",
+      artist: "000Fesbra000",
+      url: "https://www.deviantart.com/000fesbra000/art/Drow-Priestess-770701438",
+      license: "CC-BY-NC-ND 3.0",
+    },
     14: {
       title: "Ka'ori [C]",
       artist: "Jeleynai",
