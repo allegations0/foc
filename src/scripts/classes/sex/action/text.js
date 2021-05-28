@@ -52,6 +52,7 @@ setup.SexUtil.mindbrokenReactionNoun = function (unit, sex, sentences) {
     `a|Rep a|shudder as an automatic bodily response from`,
     `Like a doll, a|they dumbly a|remain still, and without any real interest, continue watching`,
     `With a|their mind completely lost and unresponsive, b|rep blankly b|stare at `,
+    `Since a|their mind was already long gone, a|rep a|do not respond to`,
     `There was no response from the mindbroken slave at `,
     `a|Rep continue to gaze at ${gaze_at}, giving no reaction towards`,
     `a|Reps eyes continue to wonder to ${gaze_at}, giving very little interest to`,
