@@ -71,6 +71,12 @@
       license: "CC-BY-NC-SA 3.0",
       extra: "cropped",
     },
+    13: {
+      title: "CM: Terrorwolf666",
+      artist: "Arcan-Anzas",
+      url: "https://www.deviantart.com/arcan-anzas/art/CM-Terrorwolf666-658906177",
+      license: "CC-BY-NC-ND 3.0",
+    },
     14: {
       title: "Nimrod",
       artist: "Dopaprime",

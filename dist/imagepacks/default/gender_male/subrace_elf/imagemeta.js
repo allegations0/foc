@@ -5,7 +5,7 @@
     "bg_apprentice", "bg_farmer", "bg_hunter", "bg_priest", "bg_soldier", "bg_woodsman",
     "bg_mystic", "bg_assassin", "bg_scholar", "bg_adventurer", "bg_maid",
     "bg_thief", "bg_artist", "bg_informer", "bg_noble", "bg_courtesan",
-    "bg_mercenary", "bg_mist", "bg_entertainer", "bg_foodworker",
+    "bg_mercenary", "bg_mist", "bg_entertainer", "bg_foodworker", "bg_thug",
   ]
 
 
@@ -132,6 +132,12 @@
       url: "https://www.newgrounds.com/art/view/darkraart/alarthan-sunbreaker",
       license: "CC-BY-NC-ND 3.0",
     },
+    21: {
+      title: "Drow Commission for Shelbyisanerd on Twitter!",
+      artist: "AlainaDorsett",
+      url: "https://www.deviantart.com/alainadorsett/art/Drow-Commission-for-Shelbyisanerd-on-Twitter-859412487",
+      license: "CC-BY-NC-ND 3.0",
+    },
     22: {
       title: "Haurchefant de Fortemps",
       artist: "Athena-Erocith",
@@ -148,6 +154,12 @@
       title: "[FFXIV] Teatime with Aymeric",
       artist: "Athena-Erocith",
       url: "https://www.deviantart.com/athena-erocith/art/FFXIV-Teatime-with-Aymeric-809901870",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    25: {
+      title: "I want you to read my elder scroll.",
+      artist: "EllirhShaan",
+      url: "https://www.deviantart.com/ellirhshaan/art/I-want-you-to-read-my-elder-scroll-879102571",
       license: "CC-BY-NC-ND 3.0",
     },
     27: {

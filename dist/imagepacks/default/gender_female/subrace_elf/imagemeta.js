@@ -153,6 +153,30 @@
       url: "https://www.newgrounds.com/art/view/darkraart/kaeleris",
       license: "CC-BY-NC-ND 3.0",
     },
+    25: {
+      title: "CM: Nadrays (the Moon Guard server)",
+      artist: "Arcan-Anzas",
+      url: "https://www.deviantart.com/arcan-anzas/art/CM-Nadrays-the-Moon-Guard-server-639704222",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    26: {
+      title: "Warcraft - Hidden springs",
+      artist: "Arcan-Anzas",
+      url: "https://www.deviantart.com/arcan-anzas/art/Warcraft-Hidden-springs-647916502",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    27: {
+      title: "CM: Alynorae Belvarith",
+      artist: "Arcan-Anzas",
+      url: "https://www.deviantart.com/arcan-anzas/art/CM-Alynorae-Belvarith-721323744",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    28: {
+      title: "Faerin Darkheart",
+      artist: "Arcan-Anzas",
+      url: "https://www.deviantart.com/arcan-anzas/art/Faerin-Darkheart-744400129",
+      license: "CC-BY-NC-ND 3.0",
+    },
   }
 
 }());

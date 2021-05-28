@@ -10,6 +10,12 @@ UNITIMAGE_CREDITS = {
     url: "https://www.deviantart.com/lynx-catgirl/art/SAI-SP-Amris-803414990",
     license: "CC-BY-NC-ND 3.0",
   },
+  2: {
+    title: "[DnD commission] Vampire",
+    artist: "robusta-art",
+    url: "https://www.deviantart.com/robusta-art/art/DnD-commission-Vampire-865873720",
+    license: "CC-BY-ND 3.0",
+  },
   3: {
     title: "Vampire Portrait",
     artist: "AlexKuhn",

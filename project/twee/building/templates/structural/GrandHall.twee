@@ -1,5 +1,7 @@
 :: InitBuildingGrandHall [nobr]
 
+/* TODO: rename to Great Hall */
+
 <<run new setup.RoomTemplate({
   key: 'grandhall',
   tags: [],
