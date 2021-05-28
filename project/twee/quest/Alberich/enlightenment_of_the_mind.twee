@@ -32,6 +32,7 @@
 [setup.unitpool.subrace_humanvale_male, 0.1],
 [setup.unitpool.subrace_humandesert_male, 0.1],
 [setup.unitpool.subrace_humansea_male, 0.1],
+[setup.unitpool.subrace_drow_male, 0.1],
 [setup.unitpool.subrace_elf_male, 0.1],
 [setup.unitpool.subrace_neko_male, 0.1],
 [setup.unitpool.subrace_werewolf_male, 0.1],

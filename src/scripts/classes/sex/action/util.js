@@ -49,7 +49,7 @@ function offsetPaceReceive(unit, sex) {
  * @param {setup.SexBodypart} bodypart 
  * @param {setup.SexInstance} sex 
  */
-setup.SexUtil.giveMultiplier = function(unit, bodypart, sex) {
+setup.SexUtil.giveMultiplier = function (unit, bodypart, sex) {
   return offsetPaceGive(unit, sex) * bodypart.giveArousalMultiplier(unit, sex)
 }
 
@@ -59,7 +59,7 @@ setup.SexUtil.giveMultiplier = function(unit, bodypart, sex) {
  * @param {setup.SexBodypart} bodypart 
  * @param {setup.SexInstance} sex 
  */
-setup.SexUtil.receiveMultiplier = function(unit, bodypart, sex) {
+setup.SexUtil.receiveMultiplier = function (unit, bodypart, sex) {
   return offsetPaceReceive(unit, sex) * bodypart.receiveArousalMultiplier(unit, sex)
 }
 
@@ -69,11 +69,12 @@ setup.SexUtil.receiveMultiplier = function(unit, bodypart, sex) {
  * @param {setup.Unit} unit 
  * @param {setup.SexInstance} sex 
  */
-setup.SexUtil.skinDiscomfortMultiplier = function(unit, sex) {
+setup.SexUtil.skinDiscomfortMultiplier = function (unit, sex) {
   let base = setup.SexUtil.calculateTraitMultiplier(unit, {
     body_werewolf: -0.9,  // thick fur
     body_neko: -0.9,  // thick fur
     body_orc: 0.0,
+    body_drow: 0.0,
     body_dragonkin: -0.9,  // thick scales
     body_demon: 0.0,
   })

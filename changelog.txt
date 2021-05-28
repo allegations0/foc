@@ -4,6 +4,11 @@
 
 ### v1.7.0.x
 
+v1.7.0.7:
+
+  - Drow race skeleton.
+  - Potion of Lust
+
 v1.7.0.6:
 
   - New quest: Trade Ship Escort: Lucgate to Neko Port City (by Matthew Lang)

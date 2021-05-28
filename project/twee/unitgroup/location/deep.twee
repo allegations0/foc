@@ -1,13 +1,15 @@
 :: InitUnitGroupDeep [nobr]
 
 <<set _males = [
-  [setup.unitpool.subrace_kobold_male, 20],
+  [setup.unitpool.subrace_kobold_male, 22],
+  [setup.unitpool.subrace_drow_male, 7],
   [setup.unitpool.subrace_demonkin_male, 1],
   [setup.unitpool.subrace_demon_male, 0.1],
 ]>>
 
 <<set _females = [
-  [setup.unitpool.subrace_kobold_female, 20],
+  [setup.unitpool.subrace_kobold_female, 22],
+  [setup.unitpool.subrace_drow_female, 7],
   [setup.unitpool.subrace_demonkin_female, 1],
   [setup.unitpool.subrace_demon_female, 0.1],
 ]>>
