@@ -879,7 +879,7 @@
         <tr>
           <td><<rep setup.trait.subrace_drow>></td>
           <td>
-            <<money 5000>>
+            <<money 6000>>
           </td>
         </tr>
         <tr>

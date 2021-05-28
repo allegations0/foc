@@ -64,6 +64,14 @@ of the game.
     <td>smart, attractive, nimble, logical, studious, weak</td>
   </tr>
   <tr>
+    <td>Drow</td>
+    <td>6000g</td>
+    <td>Deeprealm</td>
+    <td>Dark</td>
+    <td>Alchemy</td>
+    <td>smart, nimble, logical, evil, sly, evil, independent</td>
+  </tr>
+  <tr>
     <td>Neko</td>
     <td>2000g</td>
     <td>Forest</td>
@@ -102,6 +110,14 @@ of the game.
     <td>Dark</td>
     <td>Flight, multiple magic</td>
     <td>slutty, cruel, evil, lunatic, independent, gigantic assets</td>
+  </tr>
+  <tr>
+    <td>Kobold</td>
+    <td>2000g</td>
+    <td>Deeprealm</td>
+    <td>Earth</td>
+    <td>Creative</td>
+    <td>dwarf (almost always), submissive, cautious</td>
   </tr>
   <tr>
     <td>Lizardkin (subrace)</td>
