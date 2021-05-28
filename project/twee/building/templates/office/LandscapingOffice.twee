@@ -48,3 +48,8 @@ boosts to all skills.
 Also unlocks various decoration improvements for your fort, which
 increases some skills in exchange for some others.
 </p>
+
+<p>
+Note that skill bonus from adjacencies are <<successtext 'very small'>>, and you can ignore
+this mechanic altogether without any noticable effect.
+</p>
