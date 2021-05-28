@@ -11,6 +11,12 @@ UNITIMAGE_CREDITS = {
     url: "https://www.deviantart.com/athena-erocith/art/Many-Faces-707377050",
     license: "CC-BY-NC-ND 3.0",
   },
+  2: {
+    title: "wood elf ranger bribed mature",
+    artist: "dretalake",
+    url: "https://www.newgrounds.com/art/view/dretalake/wood-elf-ranger-bribed-mature",
+    license: "CC-BY-NC 3.0",
+  },
 }
 
 }());

@@ -128,6 +128,12 @@
       url: "https://www.deviantart.com/kachima/art/Bbd-06-Code-Dieanna-735317476",
       license: "CC-BY-NC-ND 3.0",
     },
+    21: {
+      title: "Xaatrisa",
+      artist: "DarkraArt",
+      url: "https://www.newgrounds.com/art/view/darkraart/xaatrisa",
+      license: "CC-BY-NC-ND 3.0",
+    },
     22: {
       title: "PT : D va succubus Ritual",
       artist: "kachima",

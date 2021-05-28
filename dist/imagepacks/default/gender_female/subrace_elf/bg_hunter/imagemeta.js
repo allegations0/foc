@@ -23,6 +23,12 @@ UNITIMAGE_CREDITS = {
     url: "https://www.deviantart.com/toy1989820/art/word-of-warcraft-Sylvanas-Windrunner-356146169",
     license: "CC-BY-NC-ND 3.0",
   },
+  4: {
+    title: "Tyrande",
+    artist: "Taiss14",
+    url: "https://www.newgrounds.com/art/view/taiss14/tyrande",
+    license: "CC-BY-NC 3.0",
+  },
   8: {
     title: "Commission - Frost archer",
     artist: "captdiablo",

@@ -4,7 +4,7 @@
   UNITIMAGE_LOAD_FURTHER = ["bg_mystic", "bg_apprentice", "bg_hunter", "bg_woodsman",
     "bg_mercenary", "bg_royal", "bg_farmer", "bg_priest", "bg_soldier", "bg_noble", "bg_assassin",
     "bg_adventurer", "bg_scholar", "bg_artist", "bg_maid", "bg_courtesan", "bg_informer", "bg_foodworker",
-    "bg_monk", "bg_whore", "bg_clerk", "bg_wildman",
+    "bg_monk", "bg_whore", "bg_clerk", "bg_wildman", "bg_metalworker", "bg_slave",
   ]
 
 
@@ -52,9 +52,9 @@
       license: "CC-BY-NC-ND 3.0",
     },
     8: {
-      title: "Fydriel Silentbloon [C]",
-      artist: "Jeleynai",
-      url: "https://www.deviantart.com/jeleynai/art/Fydriel-Silentbloon-C-791379624",
+      title: "Lenore 02",
+      artist: "DarkraArt",
+      url: "https://www.newgrounds.com/art/view/darkraart/lenore-02",
       license: "CC-BY-NC-ND 3.0",
     },
     9: {
@@ -76,9 +76,9 @@
       license: "CC-BY-NC-ND 3.0",
     },
     12: {
-      title: "Winter Eladrin Pirate Queen",
-      artist: "captdiablo",
-      url: "https://www.deviantart.com/captdiablo/art/Winter-Eladrin-Pirate-Queen-851997829",
+      title: "Lulusa NSFW",
+      artist: "DarkraArt",
+      url: "https://www.newgrounds.com/art/view/darkraart/lulusa-nsfw-2",
       license: "CC-BY-NC-ND 3.0",
     },
     13: {
@@ -88,9 +88,9 @@
       license: "CC-BY-ND 3.0",
     },
     14: {
-      title: "Ka'ori [C]",
-      artist: "Jeleynai",
-      url: "https://www.deviantart.com/jeleynai/art/Ka-ori-C-792305096",
+      title: "Kelatir",
+      artist: "DarkraArt",
+      url: "https://www.newgrounds.com/art/view/darkraart/kelatir",
       license: "CC-BY-NC-ND 3.0",
     },
     15: {
@@ -129,10 +129,28 @@
       url: "https://www.deviantart.com/ariverkao/art/Float-560634808",
       license: "CC-BY-NC-ND 3.0",
     },
+    21: {
+      title: "Yulessa",
+      artist: "DarkraArt",
+      url: "https://www.newgrounds.com/art/view/darkraart/yulessa",
+      license: "CC-BY-NC-ND 3.0",
+    },
     22: {
       title: "Elf archer",
       artist: "AyyaSAP",
       url: "https://www.deviantart.com/ayyasap/art/Elf-archer-398058408",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    23: {
+      title: "Crystalsong",
+      artist: "DarkraArt",
+      url: "https://www.newgrounds.com/art/view/darkraart/crystalsong",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    24: {
+      title: "Kaeleris",
+      artist: "DarkraArt",
+      url: "https://www.newgrounds.com/art/view/darkraart/kaeleris",
       license: "CC-BY-NC-ND 3.0",
     },
   }

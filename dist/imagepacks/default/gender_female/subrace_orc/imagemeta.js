@@ -61,6 +61,12 @@
       url: "https://www.deviantart.com/jlazaruseb/art/Umah-829272024",
       license: "CC-BY-NC-ND 3.0",
     },
+    10: {
+      title: "Giuletta <3",
+      artist: "DarkraArt",
+      url: "https://www.newgrounds.com/art/view/darkraart/giuletta-3",
+      license: "CC-BY-NC-ND 3.0",
+    },
     12: {
       title: "Bunny girl she hulk",
       artist: "kachima",

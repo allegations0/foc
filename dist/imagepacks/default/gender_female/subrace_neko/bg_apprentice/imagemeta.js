@@ -10,6 +10,12 @@ UNITIMAGE_CREDITS = {
     url: "https://www.deviantart.com/ariverkao/art/The-Night-Forest-Library-651516335",
     license: "CC-BY-NC-ND 3.0",
   },
+  2: {
+    title: "Y'shtola Rhul 02",
+    artist: "DarkraArt",
+    url: "https://www.newgrounds.com/art/view/darkraart/y-shtola-rhul-02",
+    license: "CC-BY-NC-ND 3.0",
+  },
 }
 
 }());

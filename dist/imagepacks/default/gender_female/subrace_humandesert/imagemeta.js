@@ -53,6 +53,12 @@
       url: "https://www.newgrounds.com/art/view/judash137/jasmine-aladdin-story",
       license: "CC-BY-NC-ND 3.0",
     },
+    8: {
+      title: "Chel!",
+      artist: "DarkraArt",
+      url: "https://www.newgrounds.com/art/view/darkraart/chel",
+      license: "CC-BY-NC-ND 3.0",
+    },
     9: {
       title: "Kassandra",
       artist: "AyyaSAP",

@@ -10,6 +10,12 @@ UNITIMAGE_CREDITS = {
     url: "https://www.deviantart.com/gwendlg/art/Lynthia-516899848",
     license: "CC-BY-NC-ND 3.0",
   },
+  2: {
+    title: "Highelf",
+    artist: "DarkraArt",
+    url: "https://www.newgrounds.com/art/view/darkraart/highelf",
+    license: "CC-BY-NC-ND 3.0",
+  },
   15: {
     title: "Princess Zelda Botw",
     artist: "kachima",

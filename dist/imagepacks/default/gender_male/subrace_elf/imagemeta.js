@@ -108,16 +108,28 @@
       url: "https://www.deviantart.com/ioana-muresan/art/Commission-in-the-woods-835020656",
       license: "CC-BY-NC-ND 3.0",
     },
+    17: {
+      title: "What if...",
+      artist: "DarkraArt",
+      url: "https://www.newgrounds.com/art/view/darkraart/what-if",
+      license: "CC-BY-NC-ND 3.0",
+    },
     18: {
-      title: "Drow 3 - Forgotten Realms",
-      artist: "000Fesbra000",
-      url: "https://www.deviantart.com/000fesbra000/art/Drow-3-Forgotten-Realms-624340575",
+      title: "Fastril Bloodwing",
+      artist: "DarkraArt",
+      url: "https://www.newgrounds.com/art/view/darkraart/fastril-bloodwing",
       license: "CC-BY-NC-ND 3.0",
     },
     19: {
       title: "Rogue wood elf",
       artist: "rubidotrinh",
       url: "https://www.deviantart.com/rubidotrinh/art/Rogue-wood-elf-751069729",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    20: {
+      title: "Alarthan Sunbreaker",
+      artist: "DarkraArt",
+      url: "https://www.newgrounds.com/art/view/darkraart/alarthan-sunbreaker",
       license: "CC-BY-NC-ND 3.0",
     },
     22: {

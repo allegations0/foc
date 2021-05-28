@@ -10,12 +10,6 @@ UNITIMAGE_CREDITS = {
     url: "https://www.deviantart.com/lynx-catgirl/art/SAI-SP-Amris-803414990",
     license: "CC-BY-NC-ND 3.0",
   },
-  2: {
-    title: "Sneak Assault",
-    artist: "liiga",
-    url: "https://www.deviantart.com/liiga/art/Sneak-Assault-119582133",
-    license: "CC-BY-NC-ND 3.0",
-  },
   3: {
     title: "Vampire Portrait",
     artist: "AlexKuhn",
