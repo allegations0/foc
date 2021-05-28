@@ -202,13 +202,13 @@ setup.qc.MissingUnit('healer')
 
 :: Quest_trade_ship_escort_lucgate_to_neko_port_city [nobr]
 <<if $gQuest.getSeed() % 4 == 0>>
-    <<set _goods == "iron">>
+    <<set _goods = "iron">>
 <<elseif $gQuest.getSeed() % 4 == 1>>
-    <<set _goods == "bronze">>
+    <<set _goods = "bronze">>
 <<elseif $gQuest.getSeed() % 4 == 2>>
-    <<set _goods == "copper">>
+    <<set _goods = "copper">>
 <<elseif $gQuest.getSeed() % 4 == 3>>
-    <<set _goods == "garum">>
+    <<set _goods = "garum">>
 <</if>>
 
 
@@ -229,15 +229,15 @@ setup.qc.MissingUnit('healer')
 
 :: Quest_trade_ship_escort_lucgate_to_neko_port_cityCrit [nobr]
 <<if $gQuest.getSeed() % 5 == 0>>
-    <<set _ship == "the Dikrotus" >>
+    <<set _ship = "the Dikrotus" >>
 <<elseif $gQuest.getSeed() % 5 == 1>>
-    <<set _ship == "the Concordia" >>
+    <<set _ship = "the Concordia" >>
 <<elseif $gQuest.getSeed() % 5 == 2>>
-    <<set _ship == "the Alexander" >>
+    <<set _ship = "the Alexander" >>
 <<elseif $gQuest.getSeed() % 5 == 3>>
-    <<set _ship == "the Velancar" >>
+    <<set _ship = "the Velancar" >>
 <<elseif $gQuest.getSeed() % 5 == 4>>
-    <<set _ship == "the Vitae" >>
+    <<set _ship = "the Vitae" >>
 <</if>>
 
 <p>

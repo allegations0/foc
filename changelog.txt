@@ -4,6 +4,10 @@
 
 ### v1.7.0.x
 
+v1.7.0.6:
+
+  - New quest: Trade Ship Escort: Lucgate to Neko Port City (by Matthew Lang)
+
 v1.7.0.5:
 
   - Fix recruitment: deep quest having the wrong actor
