@@ -61,7 +61,7 @@ setup.Title = class Title extends setup.TwineClass {
     }
 
     base += `},\n`
-    base += `{,\n`
+    base += `{\n`
     base += `&nbsp;is_negative: ${this.isNegative()},\n`
     base += `},\n`
     base += `)\n`

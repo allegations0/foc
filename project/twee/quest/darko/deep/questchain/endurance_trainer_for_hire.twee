@@ -8,7 +8,7 @@
 5000, /* slave value */
 { /* skill additives */
  brawn: 2, slaving: 4,},
-{,
+{
  is_negative: false,
 },
 )
