@@ -110,6 +110,7 @@ setup.qdiff.harder40, /* difficulty */
     'Quest_drow_rite_of_adulthoodCrit',
     [
       setup.qc.Slave('drow1', "a|was a drow who just happened to did their Rite of Adulthood at the wrong time and the wrong place", undefined),
+      setup.qc.ItemIfNew(setup.item.lorebook_drowriteofadulthood),
     ],
   ],
   [
@@ -118,6 +119,7 @@ setup.qdiff.harder40, /* difficulty */
       setup.qc.Slave('drow2', "a|was a drow who would have not passed their Rite of Adulthood anyways, and make for a better slave", undefined),
       setup.qc.Injury('cat1', 2),
       setup.qc.Injury('cat2', 2),
+      setup.qc.ItemIfNew(setup.item.lorebook_drowriteofadulthood),
     ],
   ],
   [
@@ -125,11 +127,13 @@ setup.qdiff.harder40, /* difficulty */
     [
       setup.qc.Injury('cat1', 3),
       setup.qc.Injury('cat2', 3),
+      setup.qc.ItemIfNew(setup.item.lorebook_drowriteofadulthood),
     ],
   ],
   [
     'Quest_drow_rite_of_adulthoodDisaster',
     [
+      setup.qc.ItemIfNew(setup.item.lorebook_drowriteofadulthood),
       setup.qc.OneRandomSeed([
 setup.qc.MissingUnit('cat1'),
 setup.qc.MissingUnit('cat2')
