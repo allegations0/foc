@@ -145,8 +145,30 @@
 )>>
 
 <<run new setup.Equipment(
-  'weapon_rapier',
+  'weapon_rapier_normal',
   "Rapier",
+  setup.equipmentslot.weapon,
+  [],
+  setup.EQUIPMENT_PRICE_NORMALGOOD, /* value */
+  0, /* sluttines */
+  {
+    combat: setup.EQUIPMENT_STAT_BOOST_LOW,
+    social: setup.EQUIPMENT_STAT_BOOST_LOW,
+  },
+  {},  /* traits */
+  [
+    setup.qres.Job(setup.job.slaver),
+  ],  /* unit restrictions */
+  { image: 'weapon_rapier' },
+  {
+    description: 'The preferred weapon for honorable duels between nobility. How the weapon comes into your hand, nobody knows',
+    flavor: 'Despite being the preferred weapon of the high nobility, perhaps this weapon is still useful for a slaving career',
+  },
+)>>
+
+<<run new setup.Equipment(
+  'weapon_rapier',
+  "Red Rapier",
   setup.equipmentslot.weapon,
   [],
   setup.EQUIPMENT_PRICE_GOOD, /* value */
