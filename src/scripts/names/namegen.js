@@ -111,6 +111,9 @@ export function generateUnitName(traits) {
     nameset = dragonkin_nameset
   } else if (traits.includes(setup.trait.subrace_lizardkin)) {
     nameset = lizardkin_nameset
+  } else if (traits.includes(setup.trait.subrace_kobold)) {
+    /* XXX TODO XXX */
+    nameset = lizardkin_nameset
   } else if (traits.includes(setup.trait.subrace_demon)) {
     nameset = demon_nameset
   } else if (traits.includes(setup.trait.subrace_demonkin)) {

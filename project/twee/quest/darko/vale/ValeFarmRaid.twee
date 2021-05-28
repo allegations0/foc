@@ -74,7 +74,7 @@ for an enterprising company such as yourself.
 :: QuestValeFarmRaidCrit [nobr]
 
 <p>
-Your slavers launched a very textboox raid on the farm.
+Your slavers launched a very textbook raid on the farm.
 
 <<set _intim = setup.selectUnit([$g.raider1, $g.raider2, $g.support], {trait: 'skill_intimidating'})>>
 <<set _scary = setup.selectUnit([$g.raider1, $g.raider2, $g.support], {trait: 'face_scary'})>>

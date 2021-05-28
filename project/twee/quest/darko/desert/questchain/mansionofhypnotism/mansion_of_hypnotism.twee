@@ -149,7 +149,7 @@ Arriving at the mansion, your slavers were greeted by a
 <<if $g.slave.isFemale()>>
 freakishly voluptouous orc dressed in a skimpy maid outfit.
 <<else>>
-freakishly muscular dressed in overly tight butler outfit.
+freakishly muscular orc dressed in overly tight butler outfit.
 <</if>>
 With none of the usual orcish slang, <<they $g.slave>> escorted your slavers
 to meet the <<master $g.master>> — the <<man $g.master>> radiated mystery

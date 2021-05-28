@@ -251,7 +251,7 @@ mlangmerchantprincequest 5 = Caravan Raid tips incoming */
         "Never arrive, or never arrive with sellable goods?"<br>
         "Either one is fine by me," <<name $g.merchant>> says, taking a gulp of <<their $g.merchant>>, a drop of crimson spilling over <<their $g.merchant>> chin. <<They $g.merchant>> wipe of the excess with a napkin. "
     <</if>>
-    Just be aware that if you leave any survivors it's more likely that the attack will the traced back to you and your company—and you may find the city becomes an increasingly hostile place. By all means use your judgement as to whether it's prudent to attack. I have other mercenaries I can hire. I'm just giving you first shot at the prize."
+    Just be aware that if you leave any survivors it's more likely that the attack will be traced back to you and your company—and you may find the city becomes an increasingly hostile place. By all means use your judgement as to whether it's prudent to attack. I have other mercenaries I can hire. I'm just giving you first shot at the prize."
     <<if $unit.player.isHasTrait('per_slow')>>
         <br>
         <<name $g.merchant>> hold up a hand as your brow begins to furrow. "I mean I'm telling you before I tell any of them."
@@ -259,7 +259,7 @@ mlangmerchantprincequest 5 = Caravan Raid tips incoming */
     <</if>>
     <br>
     "Thanks," you say, "How much of a head start?"<br>
-    "Depends on the caravan," <<uequipment $g.merchant>> says. "A few weeks. A month if possible."<br>
+    "Depends on the caravan," <<rep $g.merchant>> says. "A few weeks. A month if possible."<br>
     "Well then," you say, raising your drink in a toast. "I'd say you have yourself a deal."
 </p>
 

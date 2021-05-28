@@ -901,6 +901,12 @@
           </td>
         </tr>
         <tr>
+          <td><<rep setup.trait.subrace_kobold>></td>
+          <td>
+            <<money 2000>>
+          </td>
+        </tr>
+        <tr>
           <td><<rep setup.trait.subrace_lizardkin>></td>
           <td>
             <<money 7500>>

@@ -61,6 +61,7 @@ Choose unit group:
     ['Neko...', {ug: _ugall.filter(a => a.key.startsWith('subrace_neko'))}],
     ['Elf...', {ug: _ugall.filter(a => a.key.startsWith('subrace_elf'))}],
     ['Orc...', {ug: _ugall.filter(a => a.key.startsWith('subrace_orc'))}],
+    ['Kobold...', {ug: _ugall.filter(a => a.key.startsWith('subrace_kobold'))}],
     ['Lizardkin...', {ug: _ugall.filter(a => a.key.startsWith('subrace_lizardkin'))}],
     ['Demonkin...', {ug: _ugall.filter(a => a.key.startsWith('subrace_demonkin'))}],
   ]],
