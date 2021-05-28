@@ -4,6 +4,10 @@
 
 ### v1.7.0.x
 
+v1.7.0.9:
+
+  - New sex action: Spit in face (Innoxia)
+
 v1.7.0.8:
 
   - Drow names implemented (Dunmer names from elder scrolls)
