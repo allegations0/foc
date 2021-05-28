@@ -96,8 +96,8 @@
     muscle_verythin: 0.03,
     muscle_extremelythin: 0.005,
 
-    height_dwarf: 0.95,
-    height_short: 0.05,
+    height_dwarf: 1000.0,
+    height_short: 10.0,
 
     /* =========== */
     /* SKIN */

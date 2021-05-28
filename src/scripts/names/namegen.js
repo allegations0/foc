@@ -44,6 +44,12 @@ const elf_nameset = {
   surname: () => setup.NAME_elf_surname(),
 }
 
+const drow_nameset = {
+  male_first: () => setup.rng.choice(setup.NAME_drow_male_first_name),
+  female_first: () => setup.rng.choice(setup.NAME_drow_female_first_name),
+  surname: () => setup.rng.choice(setup.NAME_drow_surname),
+}
+
 const orc_nameset = {
   male_first: () => setup.rng.choice(setup.NAME_orc_male_first_name),
   female_first: () => setup.rng.choice(setup.NAME_orc_female_first_name),
@@ -100,8 +106,7 @@ export function generateUnitName(traits) {
   } else if (traits.includes(setup.trait.subrace_elf)) {
     nameset = elf_nameset
   } else if (traits.includes(setup.trait.subrace_drow)) {
-    /* XXX TODO XXX */
-    nameset = elf_nameset
+    nameset = drow_nameset
   } else if (traits.includes(setup.trait.subrace_fairy)) {
     nameset = elf_nameset
   } else if (traits.includes(setup.trait.subrace_neko)) {

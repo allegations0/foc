@@ -93,6 +93,7 @@ null, /* key */
   'upgrade',
   'unknown',
   'rare',
+  'desert',
 ],
 4, /* weeks */
 24, /* expiration weeks */
