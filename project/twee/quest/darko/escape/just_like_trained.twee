@@ -44,7 +44,6 @@ setup.qc.Injury('slave', 4), ],
 [ /* quest pool and rarity */
 [setup.questpool.escapeeasy, setup.rarity.common],
 [setup.questpool.escapemedium, setup.rarity.common],
-[setup.questpool.escapehard, setup.rarity.common],
 ],
 [ /* restrictions to generate */
 setup.qres.ExistUnit([
