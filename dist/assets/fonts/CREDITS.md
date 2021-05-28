@@ -185,3 +185,24 @@ Copyright 2012 The Yeseva One Project Authors (lemonad@jovanny.ru), with Reserve
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:
 http://scripts.sil.org/OFL
+
+---
+
+Simonetta-Regular.ttf
+
+Copyright (c) 2011, BrownFox (www.brownfox.org), 
+with Reserved Font Name "Simonetta"
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL
+
+---
+
+AlegreyaSansSC-Bold.ttf
+
+Copyright 2013 The Alegreya Sans Project Authors (https://github.com/huertatipografica/Alegreya-Sans)
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL

@@ -41,9 +41,7 @@
 }
 
 .text-subrace_drow {
-  font-family: 'Cherry Swash', cursive;
-  font-weight: bold;
-  letter-spacing: 1px;
+  font-family: 'Simonetta', cursive;
 }
 
 .text-subrace_fairy {
@@ -67,8 +65,7 @@
 }
 
 .text-subrace_kobold {
-  font-family: 'Metal Mania', cursive;
-  letter-spacing: 1px;
+  font-family: 'Alegreya Sans SC', cursive;
 }
 
 .text-subrace_lizardkin {
