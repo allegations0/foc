@@ -568,5 +568,11 @@
       url: "https://www.deviantart.com/panjoool/art/Dark-ruins-870940339",
       license: "CC-BY-NC-ND 3.0",
     },
+    "alchemylab.jpg": {
+      title: "The Table of the Alchemist",
+      artist: "MaxDaten",
+      url: "https://www.deviantart.com/maxdaten/art/The-Table-Of-The-Alchemist-116122301",
+      license: "CC-BY-SA 3.0",
+    },	
   }
 }());
