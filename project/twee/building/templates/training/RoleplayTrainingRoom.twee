@@ -23,7 +23,10 @@
     [setup.qc.MoneyMult(-setup.BUILDING_MEDIUMLOW_MULT)],
   ],
   restrictions: [
-    [setup.qres.Building('fetishtrainingroom')],
+    [
+      setup.qres.Building('fetishtrainingroom'),
+      setup.qres.HasSlaverWithTraits([setup.trait.magic_wind_master]),
+    ],
   ],
   main_room_template_key: 'roleplaytrainingroom',
 })>>

@@ -33,6 +33,13 @@
 })>>
 
 <<run new setup.ItemTechnology({
+  key: 'technology_endurancemaster',
+  name: 'Technology: Endurance Master Training',
+  description: "How to ensure your slaves can withstand prolonged abuse. The drows are said to hold the secret to enhance the durability of their slaves...",
+  tags: [],
+})>>
+
+<<run new setup.ItemTechnology({
   key: 'technology_research',
   name: 'Technology: Willbreaking',
   description: "Unlocks the <<rep setup.buildingtemplate.researchroom>>, in which your slavers can research a way to remove <<rep setup.trait.will_defiant>> from a slave.",

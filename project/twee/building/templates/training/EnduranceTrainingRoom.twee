@@ -26,6 +26,7 @@
   ],
   restrictions: [
     [
+      setup.qres.Through(setup.qres.HasItem(setup.item.technology_endurancemaster)),
       setup.qres.Building('trainingfield'),
       setup.qres.HasSlaverWithTraits([setup.trait.magic_wind_master]),
     ],
