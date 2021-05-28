@@ -118,6 +118,7 @@ setup.qdiff.hard45, /* difficulty */
     'Quest_opening_the_obelisk_gateSuccess',
     [
       setup.qc.Leave('abyssalnegotiator', "a|is being held hostage by a demon in the mist", undefined),
+      setup.qc.AddTag('abyssalnegotiator', 'fae_opening_the_obelisk_gate'),
       setup.qc.MissingUnitForever('portalofferingslave'),
       setup.qc.SlaveOrderFlex(
 'A Worthy Offering ', /* name */
@@ -155,15 +156,23 @@ setup.qdiff.hard45, /* difficulty */
 [ /* addons */
 ],
 [ /* fulfilled outcomes */
-setup.qc.Return('abyssalnegotiator'),
+setup.qc.AllUnitSatisfyDo([
+  setup.qres.HasTag('fae_opening_the_obelisk_gate'),
+],[
+  setup.qc.Return('unit'),
+],),
 setup.qc.Opportunity('an_offering_accepted2', null),
 ],
 [ /* unfulfilled outcomes */
 setup.qc.HideAll([
-setup.qc.Return('abyssalnegotiator'),
-setup.qc.MissingUnit('abyssalnegotiator'),
-setup.qc.TraumatizeRandom('abyssalnegotiator', 50),
-setup.qc.Corrupt('abyssalnegotiator', null, 4),
+setup.qc.AllUnitSatisfyDo([
+  setup.qres.HasTag('fae_opening_the_obelisk_gate'),
+],[
+  setup.qc.Return('unit'),
+  setup.qc.MissingUnit('unit'),
+  setup.qc.TraumatizeRandom('unit', 50),
+  setup.qc.Corrupt('unit', null, 4),
+],),
 ],
 "Who knows what might happen to your slaver, who is being held hostage?",
 ),
