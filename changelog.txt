@@ -4,6 +4,23 @@
 
 ### v1.7.0.x
 
+v1.7.0.10:
+
+  - New quest: Trading mission: V'errmyrdn.
+  - New quest: Secret Seller
+  - New quest: Owner Magnifique
+  - New event: Revenge of the Drow
+  - New event: Drow Hex
+  - New event: Slave Appropriation
+  - New Event: A Gift from the Drow
+  - New lore tag: culture lores
+  - New lore: Drow Rite of Adulthood
+  - Owner magnifique and daring escapade level adjustments.
+  - Adjacency bonus clarification.
+  - Added missing drow race lore entry
+  - Increase limit of relationship manager from 5 -> 7
+  - Some text fixes for trading mission.
+
 v1.7.0.9:
 
   - New sex action: Spit in face (Innoxia)
