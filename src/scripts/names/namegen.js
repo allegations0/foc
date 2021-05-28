@@ -99,6 +99,9 @@ export function generateUnitName(traits) {
     nameset = werewolf_nameset
   } else if (traits.includes(setup.trait.subrace_elf)) {
     nameset = elf_nameset
+  } else if (traits.includes(setup.trait.subrace_drow)) {
+    /* XXX TODO XXX */
+    nameset = elf_nameset
   } else if (traits.includes(setup.trait.subrace_fairy)) {
     nameset = elf_nameset
   } else if (traits.includes(setup.trait.subrace_neko)) {

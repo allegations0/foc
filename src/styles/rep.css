@@ -40,6 +40,12 @@
   letter-spacing: 1px;
 }
 
+.text-subrace_drow {
+  font-family: 'Cherry Swash', cursive;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
 .text-subrace_fairy {
   font-family: 'Griffy', cursive;
   font-weight: bold;

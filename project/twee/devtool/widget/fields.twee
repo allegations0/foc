@@ -877,6 +877,12 @@
           </td>
         </tr>
         <tr>
+          <td><<rep setup.trait.subrace_drow>></td>
+          <td>
+            <<money 5000>>
+          </td>
+        </tr>
+        <tr>
           <td><<rep setup.trait.subrace_fairy>></td>
           <td>
             <<money 25000>>

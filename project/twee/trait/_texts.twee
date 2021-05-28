@@ -46,6 +46,11 @@
     region: setup.Text.Race.REGIONS.forest,
     company_key: 'elf',
   },
+  subrace_drow: {
+    noun: 'drow',
+    region: setup.Text.Race.REGIONS.deep,
+    company_key: 'drow',
+  },
   subrace_fairy: {
     noun: 'fairy',
     region: setup.Text.Race.REGIONS.forest,
@@ -722,6 +727,13 @@
     noun: "demonic mouth complete with dextrous lengthy tongue",
     description: "a|possess a demonic mouth complete with dextrous lengthy tongue",
     flavor: "It is not visible from the outside, but inside a|their mouth is an incredibly long and dextrous tongue.",
+  },
+  body_drow: {
+    size_adjective: ['dark-purplish', 'drow', ],
+
+    noun: "dark-purplish-tinted body",
+    description: "a|possess a body tinted dark-purplish, accompanied with pale, almost-white hair",
+    flavor: "a|Their entire body is tinted dark-purplish, blending easily with the darkness.",
   },
   body_werewolf: {
     size_adjective: ['furry', 'furred', ],

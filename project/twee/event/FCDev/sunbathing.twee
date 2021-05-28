@@ -51,6 +51,8 @@ $g.slave.isHasTrait('body_dragonkin')>>
 Their <<uskin $g.slave>> doesn't tan like humans do, but it still feels nice to let them bask in the warmth of the sun.
 <<elseif $g.slave.isHasTrait('body_orc')>>
 Their green skin is quite resistant to the sun, having adapted to a life in the deserts, but it still feels nice to let them bask in the warmth of the sun.
+<<elseif $g.slave.isHasTrait('body_drow')>>
+Their drow body completely unused to the bright sunlight.
 <<elseif $g.slave.isHasTrait('subrace_humandesert')>>
 Their naturally dark skin doesn't tan much, so <<they $g.slave>>'s just out here to bask in its warmth.
 <<else>>

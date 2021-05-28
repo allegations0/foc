@@ -8,10 +8,10 @@ setup.qcImpl.SlaveOrderDrow = class SlaveOrderDrow extends setup.qcImpl.SlaveOrd
     this.base_price = base_price
     this.trait_multi = 500
     this.value_multi = 0
+    this.expires_in = 6
 
-    this.name = 'Order for a slave from the drow'
+    this.name = "Order for a slave from V'errmyrdn"
     this.company_key = 'drow'
-    this.destination_unit_group_key = 'soldslaves'
   }
 
   getCriteria(quest) {
@@ -27,7 +27,7 @@ setup.qcImpl.SlaveOrderDrow = class SlaveOrderDrow extends setup.qcImpl.SlaveOrd
 
     const criteria = new setup.UnitCriteria(
       null, /* key */
-      'Slave Order from the Drow', /* title */
+      "Slave Order from V'errmyrdn", /* title */
       critical,
       disaster,
       req,
