@@ -39,14 +39,14 @@ setup.rarity.always, /* Rarity */
 After a few days, it becomes clear that your newly acquired slave, <<rep
 $g.slave>>, slave|is rather special. Unlike most of your other slaves, <<they
 $g.slave>> slave|is not reduced to begging and crying after the first few
-training sessions, and still remain as defiant as ever. It seems the usual
-training regime you have for your normal slaves would not work for this
+training sessions, and still remains as defiant as ever. It seems the usual
+training regime you have for your normal slaves will not work for this
 particularly strong-willed <<urace $g.slave>>.
 </p>
 
 <p>
 Thankfully, <<yourrep $g.slaver>> slaver|have came up with a plan, which
-<<they $g.slaver>> slaver|hand over to you in the form of <<rep
+<<they $g.slaver>> slaver|hands over to you in the form of <<rep
 setup.item.technology_research>>. Reading the plan, you would first have to
 build the <<rep setup.buildingtemplate.researchroom>>. Having that built, you
 can then assign a few of your slavers to research <<yourrep $g.slave>>,
