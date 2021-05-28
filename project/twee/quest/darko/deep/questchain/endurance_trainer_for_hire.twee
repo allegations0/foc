@@ -115,7 +115,9 @@ setup.qdiff.hard42, /* difficulty */
 [setup.questpool.deep, setup.rarity.rare],
 ],
 [ /* restrictions */
+  setup.qres.QuestUnique(),
   setup.qres.NoOpportunity('the_secret_to_endurance'),
+  setup.qres.NoQuest('the_secret_to_endurance'),
 ],
 [ /* expiration outcomes */
 

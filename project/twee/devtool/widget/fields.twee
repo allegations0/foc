@@ -451,6 +451,20 @@
         <<dttagsinternal $args[0] 'type'>>
       </div>
 
+      <<if $devtooltype == 'quest' || $devtooltype == 'opportunity'>>
+        <div>
+          New rarity tag:
+          <<message '(?)'>>
+            <div class='helpcard'>
+              Rarity class of this $devtooltype, if any.
+              In general, pick the "rare" tag if the actual rarity is Epic or higher, 
+              and use the "Legendary" tag if the actual rarity is legendary.
+            </div>
+          <</message>>
+          <<dttagsinternal $args[0] 'rarity'>>
+        </div>
+      <</if>>
+
       <div>
         New reward tag:
         <<message'(?)'>>

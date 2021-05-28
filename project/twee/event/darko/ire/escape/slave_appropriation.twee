@@ -1,4 +1,4 @@
-:: EventSetup_disappearing_act [nobr event]
+:: EventSetup_slave_appropriation [nobr event]
 
 /* PROOFREAD COMPLETE */
 
@@ -7,7 +7,7 @@
 "Slave Appropriation", /* Title */
 "darko", /* Author */
 [ ], /* tags */
-'Event_disappearing_act',
+'Event_slave_appropriation',
 { /* roles */
 'victim': [
 setup.qres.Job(setup.job.slave),
@@ -26,7 +26,7 @@ setup.qres.IreAtLeast('drow', 20), ],
 setup.rarity.always,  /* Rarity */
 )>>
 
-:: Event_disappearing_act [nobr]
+:: Event_slave_appropriation [nobr]
 
 <p>
 Today, you woke up with the news that one of your slaves,
