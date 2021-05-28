@@ -238,6 +238,25 @@ light.
 <<questauthorcardtext 'adapted from "The Hobbit", by J.R.R. Tolkien'>>
 
 
+:: LORESETUP_race_kobold [lore]
+
+<<run new setup.Lore(
+  'race_kobold',  /* key */
+  'Kobold',  /* name */
+  [  /* tags */
+    'race',
+  ],
+  [  /* visibility requirements */
+  ],
+)>>
+
+:: LORE_race_kobold [nobr]
+
+<p>
+XXX TODO XXX
+</p>
+
+
 :: LORESETUP_race_dragonkin [lore]
 
 <<run new setup.Lore(

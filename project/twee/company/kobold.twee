@@ -1,0 +1,21 @@
+:: InitCompanyKobold [nobr company]
+
+<<run new setup.CompanyTemplate(
+  'kobold',
+  'Kobold (temporary name)',
+  'CompanyTemplateKobold',
+  [ /* favor effects */
+    [
+    ],
+    [
+    ],
+    [
+    ],
+  ],
+)>>
+
+:: CompanyTemplateKobold [nobr]
+
+XXX TODO XXX
+
+When befriended, XXX

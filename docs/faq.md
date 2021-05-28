@@ -565,6 +565,8 @@ Here are the full requirements to add a new subrace to the game:
 
 - Icon. [Example](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/dist/img/trait/subrace_werewolf.svg)
 
+- Font. Can use Google Fonts for this.
+
 - Company, unless the race is already extinct or extremely rare. This includes writing:
   - Company Ire events (minimum 3)
   - High-favor company event (rewards sex manual that unlocks some sex interactions)

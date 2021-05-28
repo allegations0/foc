@@ -130,7 +130,7 @@
     /* SKIN */
     /* =========== */
 
-    eyes_dragonkin: 0.5,
+    eyes_dragonkin: 1.0,
     ears_dragonkin: 1.0,
     mouth_dragonkin: 1.0,
     body_dragonkin: 1.0,
