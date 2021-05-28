@@ -203,14 +203,16 @@ Here are several guidelines on what to consider for adding new images into this 
     - Human (sea): Anime, exotic
     - Angel: Angels
     - Werewolf: Werewolves, anthro wolves
-    - Elf: Elves, fairy, drows. For females, separate subdirectory for winged ones.
+    - Elf: Elves, fairy.
+    - Drow: Drow, dark elf
     - Fairy: Fairies, Fae,
-    - Neko: Cat ears, cat tail, human body. Not for other type of ears / tails. There is a special folder `body_neko` for fully anthro tigers.
+    - Neko: Cat ears, cat tail, human body. Not for other type of ears / tails.
     - Tigerkin: Tiger anthro, Tabixi
     - Orc: Orcs, greenskins, occasionally trolls and ogres
+    - Kobold: kobold
     - Lizardkin: Lizardmen, lizardfolk, scalies.
     - Dragonkin: Dragonborns, and the lizardkin with wings
-    - Demon: Demon, devil, succubus. Separate subdirectory for winged ones.
+    - Demon: Demon, devil, succubus.
     - Demonkin: Tiefling
 
 

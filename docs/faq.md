@@ -600,7 +600,6 @@ Example races that probably would **not** be addable as a playable race:
 Example races that may be possible to be added as a playable race, if you contribute all the above properly:
 
 - Kitsune / foxkin: wolfkin subrace. Nameset will be somewhat problematic though
-- Drow / dark elf: elf subrace. Will most likely require a lot of content and images, since drows are generally not a rare race. Nameset is easy, however
 - Goblins: greenskin subrace. Main issue is in finding portraits, especially female goblins. Will also require a lot of content and portrait, since they are common.
 - Minotaur: demonkin subrace. Main issue is female portraits, as well as naming.
 
