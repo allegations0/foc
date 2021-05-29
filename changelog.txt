@@ -4,6 +4,11 @@
 
 ### v1.7.0.x
 
+v1.7.0.17: [TODO BEFORE COMMIT]
+
+  - Updated Potion of lust Quests for repeatability (thanks to Matthew Lang)
+  - Fix wrong key used when overriding existing quest
+
 v1.7.0.16:
 
   - New quest: Investigate the Earth (1 quest, 1 event)
