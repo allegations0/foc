@@ -21,6 +21,11 @@ setup.DOM.Roster = {}
 setup.DOM.Util = {}
 
 /**
+ * Stores quest-specific code
+ */
+setup.DOM.Quest = {}
+
+/**
  * Converts a value to a DOM node (mostly for internal use)
  * Depending on the type of arg, returns:
  *  - if falsy (null, false, undefined, ""): an empty fragment

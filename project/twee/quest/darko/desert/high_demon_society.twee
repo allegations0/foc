@@ -85,6 +85,7 @@ null, /* key */
   setup.trait.bg_royal,
   setup.trait.value_high5,
   setup.trait.value_high6,
+  setup.trait.value_high7,
   setup.trait.training_mindbreak,
 ],
 [

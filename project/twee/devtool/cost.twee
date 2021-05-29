@@ -358,7 +358,7 @@ Select from these options:
   </div>
 <</if>>
 
-<<if $qCostActualNoUnit && $qCostActualNonCost>>
+<<if $qCostActualNonCost>>
   <div>
     <<message 'Lose unit...'>>
       <div class='marketobjectcard'>
@@ -574,6 +574,13 @@ Select from these options:
             </div>
           <</message>>
         </div>
+
+        <hr/>
+        <div><b>Advanced</b></div>
+
+        <div>
+          [['Remove all mental traits'|CostClearMentalTraits]]
+        </div>
       </div>
     <</message>>
   </div>
@@ -753,6 +760,16 @@ Select from these options:
         </div>
         <div>
           [["Lose title"|CostRemoveTitle]]
+        </div>
+        <div>
+          [["Gain value titles"|CostAddValueTitles]]
+          <<message '(?)'>>
+            <div class='helpcard'>
+              Give this unit value titles to increase their value by some amount.
+              Only use this when first time generating a unit.
+              Minimum <<money 5000>>
+            </div>
+          <</message>>
         </div>
       </div>
     <</message>>

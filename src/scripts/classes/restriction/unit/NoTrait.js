@@ -1,14 +1,13 @@
 
 setup.qresImpl.NoTrait = class NoTrait extends setup.Restriction {
+  /**
+   * @param {setup.Trait | string} trait 
+   */
   constructor(trait) {
     super()
 
     this.trait_key = setup.keyOrSelf(trait)
   }
-
-  static NAME = 'Do NOT have a trait'
-  static PASSAGE = 'RestrictionNoTrait'
-  static UNIT = true
 
   text() {
     return `setup.qres.NoTrait(setup.trait.${this.trait_key})`

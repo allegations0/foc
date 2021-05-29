@@ -85,6 +85,7 @@ setup.qcImpl.SlaveOrderMoreWhoreForYourBrothel = class SlaveOrderMoreWhoreForYou
     critical.push(setup.trait.value_high4)
     critical.push(setup.trait.value_high5)
     critical.push(setup.trait.value_high6)
+    critical.push(setup.trait.value_high7)
 
     const sub = setup.dutytemplate.questbrothelmanager.sub()
 

@@ -333,6 +333,7 @@ setup.TRAIT_VALUE_HIGH_THRESHOLDS = [
   40000,
   50000,
   70000,
+  150000,
 ]
 
 

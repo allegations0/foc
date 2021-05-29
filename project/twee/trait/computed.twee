@@ -4,7 +4,7 @@
   new setup.Trait(
     'value_low',
     'low value slave',
-    'A low-valued slave unsuitable for higher-end uses',
+    'A low-valued slave unsuitable for higher-end uses. Obtained when value is lower than ' + setup.TRAIT_VALUE_LOW_THRESHOLD + 'g',
     0,
     {},
   ),
@@ -12,7 +12,7 @@
   new setup.Trait(
     'value_high1',
     'valuable slave',
-    'Quite a valuable slave that will fetch a nice sum in the market',
+    'Quite a valuable slave that will fetch a nice sum in the market. Obtained when value is at least ' + setup.TRAIT_VALUE_HIGH_THRESHOLDS[0] + 'g',
     0,
     {},
     [],
@@ -21,7 +21,7 @@
   new setup.Trait(
     'value_high2',
     'high-value slave',
-    'Very valuable slave that will earn you a great deal of coin in the market',
+    'Very valuable slave that will earn you a great deal of coin in the market. Obtained when value is at least ' + setup.TRAIT_VALUE_HIGH_THRESHOLDS[1] + 'g',
     0,
     {},
     [],
@@ -30,7 +30,7 @@
   new setup.Trait(
     'value_high3',
     'very valuable slave',
-    'Greatly valuable slave which will make anyone a tidy sum should they get their hands on the slave',
+    'Greatly valuable slave which will make anyone a tidy sum should they get their hands on the slave. Obtained when value is at least ' + setup.TRAIT_VALUE_HIGH_THRESHOLDS[2] + 'g',
     0,
     {},
     [],
@@ -39,7 +39,7 @@
   new setup.Trait(
     'value_high4',
     'extremely valuable slave',
-    'A rare specimen of a slave that will fetch an exorbitant sum in auctions',
+    'A rare specimen of a slave that will fetch an exorbitant sum in auctions. Obtained when value is at least ' + setup.TRAIT_VALUE_HIGH_THRESHOLDS[3] + 'g',
     0,
     {},
     [],
@@ -48,7 +48,7 @@
   new setup.Trait(
     'value_high5',
     'mythical slave',
-    'Slave whose value rises far beyond those of normal slaves --- they say only very few of these slaves exists in the world',
+    'Slave whose value rises far beyond those of normal slaves --- they say only very few of these slaves exists in the world. Obtained when value is at least ' + setup.TRAIT_VALUE_HIGH_THRESHOLDS[4] + 'g',
     0,
     {},
     [],
@@ -57,11 +57,20 @@
   new setup.Trait(
     'value_high6',
     'god-valued slave',
-    'Where slaving becomes a work of art',
+    'Where slaving becomes a work of art. Obtained when value is at least ' + setup.TRAIT_VALUE_HIGH_THRESHOLDS[5] + 'g',
     0,
     {},
     [],
     { tier: 6 }
+  ),
+  new setup.Trait(
+    'value_high7',
+    'ultimate perfected slave',
+    'An impossible feat. Obtained when value is at least ' + setup.TRAIT_VALUE_HIGH_THRESHOLDS[6] + 'g',
+    0,
+    {},
+    [],
+    { tier: 7 }
   ),
 ], ['value', 'computed',])>>
 

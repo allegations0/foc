@@ -89,6 +89,55 @@
 )>>
 
 /* ============================
+   VALUE TITLES 
+   ========================= */
+
+<<run new setup.Title(
+  'value_add_5000',   /* key */
+  'Valuable (5000)',   /* name */
+  'One way or another, this unit is valued somewhat higher than most',   /* description */
+  'a|is valued somewhat higher than most',  /* unit description */
+  5000,   /* slave value */
+  {},
+)>>
+
+<<run new setup.Title(
+  'value_add_10000',   /* key */
+  'Valuable (10000)',   /* name */
+  'One way or another, this unit is valued higher than most',   /* description */
+  'a|is valued higher than most',  /* unit description */
+  10000,   /* slave value */
+  {},
+)>>
+
+<<run new setup.Title(
+  'value_add_20000',   /* key */
+  'Valuable (20000)',   /* name */
+  'One way or another, this unit is valued quite a bit higher than most',   /* description */
+  'a|is valued quite a bit higher than most',  /* unit description */
+  20000,   /* slave value */
+  {},
+)>>
+
+<<run new setup.Title(
+  'value_add_40000',   /* key */
+  'Valuable (40000)',   /* name */
+  'One way or another, this unit is valued much higher than most',   /* description */
+  'a|is valued much higher than most',  /* unit description */
+  40000,   /* slave value */
+  {},
+)>>
+
+<<run new setup.Title(
+  'value_add_80000',   /* key */
+  'Valuable (80000)',   /* name */
+  'One way or another, this unit is valued extremely highly',   /* description */
+  'a|is valued extremely highly',  /* unit description */
+  80000,   /* slave value */
+  {},
+)>>
+
+/* ============================
    RANDOM QUEST RELATED TITLES 
    ========================= */
 

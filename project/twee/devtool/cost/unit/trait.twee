@@ -441,3 +441,17 @@ Unit <<devactordefault>> will lose a random personality.
 
 <<set $qcost = setup.qc.RemovePerkChoice($qgDefaultActorName, $rTrait)>>
 <<gotowipehistory 'QGCostDone'>>
+
+
+:: CostClearMentalTraits [nobr]
+
+<p>
+Remove all personality, background, skill, training, and perk traits from
+<<devactordefault>>
+</p>
+
+<<link 'Done' 'QGCostDone'>>
+  <<set $qcost = setup.qc.ClearMentalTraits($qgDefaultActorName)>>
+<</link>>
+
+

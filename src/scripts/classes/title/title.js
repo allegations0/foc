@@ -105,4 +105,5 @@ setup.Title = class Title extends setup.TwineClass {
     var base = setup.repMessage(this, 'titlecardkey')
     return `<span class="titlecardmini${this.isNegative() ? '-negative' : ''}">${base}</span>`
   }
+
 }

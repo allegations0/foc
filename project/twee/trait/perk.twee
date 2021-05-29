@@ -182,6 +182,33 @@
     },
 )>>
 
+<<run new setup.Perk(
+    'perk_wild_magic',
+    'perk: wild magic',
+    "Swaps a magic skill with a random one every 13 weeks.",
+    0,
+    {},
+    ['perk', 'perkspecial', ],
+    {
+    },
+    {
+        perk_choice_restrictions: [
+            setup.qres.AnyTrait(
+                setup.TraitHelper.getAllTraitsOfTags(['magic']), true,
+            ),
+        ],
+        perk_end_of_week_effect: [
+            setup.qc.IfThenElse(
+                setup.qres.Function(() => {
+                    return State.variables.calendar.getWeek() % 13 == 0;
+                }),
+                setup.qc.WildMagic('unit'),
+                setup.qc.DoAll([]),
+            ),
+        ],
+    },
+)>>
+
 /* ####################### */
 /* RANDOM PERKS */
 /* ####################### */

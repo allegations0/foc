@@ -580,5 +580,12 @@
       url: "https://www.newgrounds.com/art/view/semicabbage/rachel",
       license: "CC-BY-NC-SA 3.0",
     },
+    "gateway_gamble.jpg": {
+      title: "DARK PORTAL",
+      artist: "inoxdesign",
+      url: "https://www.deviantart.com/inoxdesign/art/DARK-PORTAL-605434731",
+      license: "CC-BY-NC 3.0",
+      extra: "cropped",
+    },
   }
 }());

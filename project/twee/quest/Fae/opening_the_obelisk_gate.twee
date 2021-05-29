@@ -58,6 +58,7 @@ null, /* key */
   setup.trait.value_high4,
   setup.trait.value_high5,
   setup.trait.value_high6,
+  setup.trait.value_high7,
 ],
 [
   setup.trait.bg_knight,
@@ -152,7 +153,7 @@ setup.qdiff.hard45, /* difficulty */
     setup.trait.training_toilet_master,
   ], true),
   setup.qres.XTraits([setup.trait.bg_priest, setup.trait.bg_healer, setup.trait.face_attractive, setup.trait.face_beautiful, setup.trait.per_lustful, setup.trait.per_sexaddict], 2),
-  setup.qres.AnyTrait([setup.trait.value_high3, setup.trait.value_high4, setup.trait.value_high5, setup.trait.value_high6], true),
+  setup.qres.AnyTrait([setup.trait.value_high3, setup.trait.value_high4, setup.trait.value_high5, setup.trait.value_high6, setup.trait.value_high7], true),
 ],
 [ /* addons */
 ],

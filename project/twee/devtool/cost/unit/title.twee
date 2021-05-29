@@ -76,3 +76,13 @@ From <<dangertextlite 'ALL'>> units, remove the title:
 
 <<set $qcost = setup.qc.RemoveTitleGlobal(_chosentitle)>>
 <<gotowipehistory 'QGCostDone'>>
+
+
+:: CostAddValueTitles [nobr]
+
+Give <<devactordefault>> value title so that their value is increased by
+<<numberbox "_value_increase" 15000>>
+
+<<link 'Add cost' 'QGCostDone'>>
+  <<set $qcost = setup.qc.AddValueTitles($qgDefaultActorName, _value_increase)>>
+<</link>>

@@ -43,14 +43,14 @@ setup.qcImpl.SlaveOrderHeadCourtesan = class SlaveOrderHeadCourtesan extends set
 
     if (sub == 'sub') {
       req.push(setup.qres.Trait('per_submissive'))
-      req.push(setup.qres.AnyTrait([setup.trait.value_high3, setup.trait.value_high4, setup.trait.value_high5, setup.trait.value_high6], true))
+      req.push(setup.qres.AnyTrait([setup.trait.value_high3, setup.trait.value_high4, setup.trait.value_high5, setup.trait.value_high6, setup.trait.value_high7], true))
     } else if (sub == 'dom') {
       req.push(setup.qres.Trait('per_dominant'))
-      req.push(setup.qres.AnyTrait([setup.trait.value_high3, setup.trait.value_high4, setup.trait.value_high5, setup.trait.value_high6], true))
+      req.push(setup.qres.AnyTrait([setup.trait.value_high3, setup.trait.value_high4, setup.trait.value_high5, setup.trait.value_high6, setup.trait.value_high7], true))
     } else {
       req.push(setup.qres.NoTrait('per_dominant'))
       req.push(setup.qres.NoTrait('per_submissive'))
-      req.push(setup.qres.AnyTrait([setup.trait.value_high4, setup.trait.value_high5, setup.trait.value_high6], true))
+      req.push(setup.qres.AnyTrait([setup.trait.value_high4, setup.trait.value_high5, setup.trait.value_high6, setup.trait.value_high7], true))
     }
 
     if (setup.dutytemplate.questbrothelmanager.gender() == 'male') {

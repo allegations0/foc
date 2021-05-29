@@ -56,6 +56,7 @@
     setup.trait.value_high4,
     setup.trait.value_high5,
     setup.trait.value_high6,
+    setup.trait.value_high7,
   ],
   [ /* disaster traits */
   ],
