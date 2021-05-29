@@ -69,7 +69,7 @@
   key: 'potion_lust',
   name: 'Potion of Lust',
   description: 'Give a unit <<rep setup.trait.per_lustful>>, but having their sexuality altered this way will surely dazzle them for a very long time. Ineffective on particularly chaste individuals',
-  value: 20000,   /* value */
+  value: 16000,   /* value */
   unit_restrictions: [ /* restrictions */
     setup.qres.NoTrait(setup.trait.per_lustful),
     setup.qres.NoTrait(setup.trait.training_mindbreak),

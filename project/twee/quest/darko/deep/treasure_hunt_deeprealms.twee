@@ -240,10 +240,10 @@ setup.qdiff.normal35, /* difficulty */
                 <<run setup.qc.Corrupt('healer', 2).apply($gQuest)>>
                 greatly
             <<else>>
-                corrupting your slavers...
                 <<run setup.qc.Corrupt('fighter').apply($gQuest)>>
                 <<run setup.qc.Corrupt('healer').apply($gQuest)>>
             <</if>>
+            corrupting your slavers...
         <</if>>
     </p>
 
