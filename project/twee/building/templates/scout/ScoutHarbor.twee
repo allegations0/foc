@@ -42,7 +42,7 @@
 :: BuildingScoutHarbor [nobr]
 
 <p>
-A fully functional harbor in the vicinity of the scout hut, for sea travel.
+A fully functional harbor in the vicinity of your fort, for sea travel.
 Requires you to build a shipyard in your fort, for making and maintaining your ships.
 Unlocks a quest which grants a contact across the sea that supply you with scouting mission each week.
 </p>
@@ -53,4 +53,3 @@ Unlocks a quest which grants a contact across the sea that supply you with scout
 <p>
 Where you maintain your vessels before they depart from your harbor.
 </p>
-

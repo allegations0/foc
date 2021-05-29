@@ -19,7 +19,7 @@
 <<run new setup.ItemNotUsable({
   key: 'blank_potion',
   name: 'Potion of Blankness',
-  description: "Said to render whoever drinks it into a blank malleable state of mind. Can be used in treatments to reset a slave's trainings.",
+  description: "Said to render whoever drinks it into a blank malleable state of mind. Can be used in treatments to reset a slave's trainings. Requires <<rep setup.buildingtemplate.treatmentroomblank>>",
   value: Math.round(12 * setup.MONEY_PER_SLAVER_WEEK),   /* value */
   tags: [],
 })>>
@@ -35,7 +35,7 @@
 <<run new setup.ItemNotUsable({
   key: 'hate_potion',
   name: 'Potion of Rivalry',
-  description: "They say hatred tasted like spoiled milk, but you didn't expect it to be so literal. Can be used in treatments to (forcefully) increase rivalry between two units.",
+  description: "They say hatred tasted like spoiled milk, but you didn't expect it to be so literal. Can be used in treatments to (forcefully) increase rivalry between two units. Requires <<rep setup.buildingtemplate.treatmentroomhate>>",
   value: Math.round(12 * setup.MONEY_PER_SLAVER_WEEK),   /* value */
   tags: [],
 })>>
@@ -43,7 +43,7 @@
 <<run new setup.ItemNotUsable({
   key: 'love_potion',
   name: 'Potion of Friendship',
-  description: "The color swirls and shifts randomly, just like how friendship works. Can be used in treatments to (forcefully) increase friendship between two units. Requires <<rep setup.buildingtemplate.treatmentroomhate>>",
+  description: "The color swirls and shifts randomly, just like how friendship works. Can be used in treatments to (forcefully) increase friendship between two units. Requires <<rep setup.buildingtemplate.treatmentroomlove>>",
   value: Math.round(12 * setup.MONEY_PER_SLAVER_WEEK),   /* value */
   tags: [],
 })>>

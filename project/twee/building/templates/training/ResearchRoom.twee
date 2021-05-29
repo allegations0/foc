@@ -42,9 +42,8 @@
 :: BuildingResearchRoom [nobr]
 
 <p>
-You can assign your slavers to work here, figuring out what is the best way to break
+You can assign your slavers to work here, figuring out the best way to break
 a <<rep setup.trait.will_defiant>> slave.
 Unlocks a training that can give you a way to remove <<rep setup.trait.will_defiant>> from a slave.
 It will be incredibly difficult, however, and you best be prepared...
 </p>
-
