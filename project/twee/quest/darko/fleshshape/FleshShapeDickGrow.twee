@@ -57,6 +57,12 @@ Grows both the length and girth of the slave's dick.
 </p>
 
 :: FleshShapeDickGrowCrit [nobr]
+
+<<if $g.trainee.isMale()>>
+  <<questimage "fleshshape_dick_grow_male.jpg">>
+<<else>>
+<</if>>
+
 <p>
 The flesh shaping went off without a hitch.
 </p>

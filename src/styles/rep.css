@@ -76,8 +76,6 @@
 .text-subrace_dragonkin {
   font-family: 'Girassol', cursive;
   font-weight: bold;
-  transform: scaleX(1.1);
-  transform-origin: 0 0;
   display: inline-block;
   letter-spacing: 1px;
 }

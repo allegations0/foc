@@ -1,0 +1,58 @@
+:: InitEquipmentDwarf [nobr]
+
+<<run new setup.Equipment(
+  'dwarf_armor_torso',
+  'Ancient Dwarven Mail',
+  setup.equipmentslot.torso,
+  ['armor', 'covering', ],
+  setup.EQUIPMENT_PRICE_GOOD, /* value */
+  0, /* sluttines */
+  {
+    combat: setup.EQUIPMENT_STAT_BOOST_GOOD,
+    brawn: setup.EQUIPMENT_STAT_BOOST_LOW,
+  },
+  {  /* traits */
+  },
+  [  /* restrictions */
+    setup.qres.Trait(setup.trait.height_dwarf),
+  ],
+  { image: 'torso_chestplate_heavy' },
+  {
+    description: 'An ancient dwarven armor that survived the test of the ages. It is designed to be worn only by the shorter races.',
+    flavor: 'The dwarven armor smells ancient, but its craftmanship is masterful and definitely offers great protection',
+  },
+  )>>
+
+
+<<run new setup.Equipment(
+  'dwarf_armor_legs',
+  'Ancient Dwarven Greaves',
+  setup.equipmentslot.legs,
+  ['armor', 'covering', ],
+  setup.EQUIPMENT_PRICE_GOOD, /* value */
+  0, /* sluttines */
+  {
+    combat: setup.EQUIPMENT_STAT_BOOST_GOOD,
+    brawn: setup.EQUIPMENT_STAT_BOOST_LOW,
+  },
+  {  /* traits */
+  },
+  [  /* restrictions */
+    setup.qres.Trait(setup.trait.height_dwarf),
+  ],
+  { image: 'legs_faulds_heavy' },
+  {
+    description: 'An ancient dwarven armor that survived the test of the ages. Its stubby length means it could only be worn by the shorter races.',
+    flavor: 'Despite the apparent age, the masterful craftsmanship of this piece of armor stood the test of time, still offering great protection to its wearer',
+  },
+  )>>
+
+
+<<run new setup.EquipmentPool(
+  'dwarf_armor',
+  {
+    dwarf_armor_torso: 1,
+    dwarf_armor_legs: 1,
+  }
+)>>
+

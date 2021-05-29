@@ -573,6 +573,12 @@
       artist: "MaxDaten",
       url: "https://www.deviantart.com/maxdaten/art/The-Table-Of-The-Alchemist-116122301",
       license: "CC-BY-SA 3.0",
-    },	
+    },
+    "fleshshape_dick_grow_male.jpg": {
+      title: "Rachel",
+      artist: "semicabbage",
+      url: "https://www.newgrounds.com/art/view/semicabbage/rachel",
+      license: "CC-BY-NC-SA 3.0",
+    },
   }
 }());
