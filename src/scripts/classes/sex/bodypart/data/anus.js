@@ -102,9 +102,14 @@ setup.SexBodypartClass.Anus = class Anus extends setup.SexBodypart {
     if (unit.isYou()) return 1.0
 
     const score = {
+      perk_needy_bottom: +100,
+
       training_anal_basic: +1,
       training_anal_advanced: +2,
       training_anal_master: +10,
+
+      anus_tight: -1,
+      anus_gape: +1,
 
       per_chaste: -2,
       per_lustful: +1,
@@ -113,29 +118,25 @@ setup.SexBodypartClass.Anus = class Anus extends setup.SexBodypart {
       tough_tough: +1,
       tough_nimble: -0.5,
 
-      muscle_thin: -0.5,
-      muscle_verythin: -1.0,
-      muscle_extremelythin: -2,
-      muscle_strong: +0.5,
-      muscle_verystrong: +1,
-      muscle_extremelystrong: +2,
-
-      per_brave: +1,
-      per_cautious: -1,
-
-      per_proud: +1,
-      per_humble: -1,
-
-      per_submissive: +2,
-      per_dominant: -2,
-
-      per_curious: +1,
-      per_stubborn: -1,
-
+      bg_whore: +1,
+      bg_courtesan: +1,
+      per_calm: +1,
       per_active: +1,
-      per_studious: -1,
+      per_attentive: +1,
+      per_stubborn: -1,
+      per_serious: -1,
+      per_masochistic: 1,
+      per_lunatic: 1,
     }
-    const raw = 0.5 * setup.SexUtil.sumTraitMultipliers(unit, score)
+    let raw = 0.5 * setup.SexUtil.sumTraitMultipliers(unit, score)
+
+    const sex_skill = unit.getSkill(setup.skill.sex)
+    if (sex_skill >= 80) {
+      raw += 1.0
+    } else if (sex_skill >= 50) {
+      raw += 0.5
+    }
+
     return Math.max(-2.0, Math.min(2.0, raw))
   }
 

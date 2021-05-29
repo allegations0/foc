@@ -11,6 +11,7 @@ setup.Unit.prototype.getSkillModifiers = function (is_base_only) {
   const is_perk_reduce_trauma = this.isHasTrait(setup.trait.perk_reduce_trauma)
   const is_perk_reduce_corruption = this.isHasTrait(setup.trait.perk_reduce_corruption)
   const is_perk_increase_boon = this.isHasTrait(setup.trait.perk_increase_boon)
+  const is_perk_needy_bottom = this.isHasTrait(setup.trait.perk_needy_bottom)
 
   for (var i = 0; i < traits.length; ++i) {
     // demons ignore demonic bodypart penalty
@@ -21,6 +22,11 @@ setup.Unit.prototype.getSkillModifiers = function (is_base_only) {
     const traitmod = traits[i].getSkillBonuses()
 
     let modifier = 1.0
+
+    // check for needy bottom
+    if (is_perk_needy_bottom && [setup.trait.anus_gape, setup.trait.vagina_gape].includes(traits[i])) {
+      modifier *= -1
+    }
 
     // check for reduce trauma, corruption or increase boon effects
     if (is_perk_reduce_trauma && traits[i].getTags().includes('trauma')) {

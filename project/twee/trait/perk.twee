@@ -561,6 +561,22 @@
     },
 )>>
 
+<<run new setup.Perk(
+    'perk_needy_bottom',
+    'perk: needy bottom',
+    "<<rep setup.trait.vagina_gape>><<rep setup.trait.anus_gape>> increase <<rep setup.skill.sex>> instead of reducing it. Also guarantees that the unit will love anal sex.",
+    0,
+    {
+    },
+    ['perk', 'perkstandard', ],
+    {
+    },
+    {
+        perk_choice_restrictions: [],
+        perk_end_of_week_effect: [],
+    },
+)>>
+
 /* ####################### */
 /* NULL PERKS */
 /* ####################### */
