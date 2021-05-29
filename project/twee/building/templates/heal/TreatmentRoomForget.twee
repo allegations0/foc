@@ -36,8 +36,7 @@
 :: BuildingTreatmentRoomForget [nobr]
 
 <p>
-Unlocks treatment option that can forcefully make two slavers forget each other and reset their friendship to 0.
+Unlocks a treatment option that can forcefully make two slavers forget each other and reset their friendship to 0.
 Each treatment will consume a <<rep setup.item.forget_potion>>.
 
 </p>
-

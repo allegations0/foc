@@ -37,7 +37,6 @@
 :: BuildingTreatmentRoomTransformation [nobr]
 
 <p>
-Unlocks treatment that can grow a random non-demonic body-part to a unit.
+Unlocks a treatment that can grow a random non-demonic body-part to a unit.
 Each treatment will consume a <<rep setup.item.potion_transformation>>.
 </p>
-

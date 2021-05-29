@@ -37,8 +37,7 @@
 :: BuildingTreatmentRoomBlank [nobr]
 
 <p>
-Unlocks treatment option that can reset a slave's trainings.
+Unlocks a treatment option that can reset a slave's trainings.
 Each treatment will consume a <<rep setup.item.blank_potion>>.
 
 </p>
-

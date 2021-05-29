@@ -36,8 +36,7 @@
 :: BuildingTreatmentRoomHate [nobr]
 
 <p>
-Unlocks treatment option that can forcefully make two units hate each other.
+Unlocks a treatment option that can forcefully make two units hate each other.
 Each treatment will consume a <<rep setup.item.hate_potion>>.
 
 </p>
-

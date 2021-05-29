@@ -36,8 +36,7 @@
 :: BuildingTreatmentRoomMindMend [nobr]
 
 <p>
-Unlocks treatment option that can restore a mindbroken slave.
+Unlocks a treatment option that can restore a mindbroken slave.
 Each treatment will consume a <<rep setup.item.mindmend_potion>>.
 
 </p>
-

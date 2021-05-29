@@ -36,8 +36,7 @@
 :: BuildingTreatmentRoomLove [nobr]
 
 <p>
-Unlocks treatment option that can forcefully make two units like each other.
+Unlocks a treatment option that can forcefully make two units like each other.
 Each treatment will consume a <<rep setup.item.love_potion>>.
 
 </p>
-

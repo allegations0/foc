@@ -37,9 +37,8 @@
 :: BuildingTreatmentRoomIsolation [nobr]
 
 <p>
-Unlocks treatment that can remove a background or skill from a unit.
+Unlocks a treatment that can remove a background or skill from a unit.
 This can be useful if they want to learn new skill or background, since both
 of them are capped.
 Each treatment will consume a <<rep setup.item.potion_isolation>>.
 </p>
-

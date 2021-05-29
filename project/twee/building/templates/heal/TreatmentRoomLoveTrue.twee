@@ -37,7 +37,6 @@
 :: BuildingTreatmentRoomLoveTrue [nobr]
 
 <p>
-Unlocks treatment option that can forcefully make two units love each other.
+Unlocks a treatment option that can forcefully make two units love each other.
 Each treatment will consume a <<rep setup.item.love_potion_true>>.
 </p>
-

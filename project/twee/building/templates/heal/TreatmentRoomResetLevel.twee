@@ -36,9 +36,8 @@
 :: BuildingTreatmentRoomResetLevel [nobr]
 
 <p>
-Unlocks treatment option that can reset the level of a unit to level 1.
+Unlocks a treatment option that can reset the level of a unit to level 1.
 Note that their skills will also be reset to those of a level 1 unit.
 Each treatment will consume a <<rep setup.item.reset_potion>>.
 
 </p>
-

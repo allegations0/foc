@@ -38,8 +38,7 @@
 :: BuildingTreatmentRoomAlternative [nobr]
 
 <p>
-Unlocks treatment that can reset a unit's skills into a new set of skill focuses,
+Unlocks a treatment that can reset a unit's skills into a new set of skill focuses,
 without resetting the unit's level.
 Each treatment will consume a <<rep setup.item.potion_alternative>>.
 </p>
-

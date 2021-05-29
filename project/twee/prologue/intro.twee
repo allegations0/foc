@@ -11,15 +11,16 @@ It seems there are quite a bit of abandoned forts in the area, and you are not v
 
 <p>
 Like before, the fort would need a lot of repairs to be worthy to be called as the stronghold
-of your glorious company, but as you have demonstrated in the past, it can be done.
-There is much to be done, however, and you are eager to begin straight away...
+of your glorious company, rebuilding and clearing debris will take time
+but as you have demonstrated in the past, it can be done.
+There is a lot of work to do, but you are eager to begin straight away...
 </p>
 
 <<if !setup.unitgroup.new_game_plus_slaves.isEmpty()>>
 <p>
-Until you build the <<rep setup.buildingtemplate.veteranhall>>, 
+Until you build the <<rep setup.buildingtemplate.veteranhall>>,
 the slaves you've brought along from your old fort will be stowed away safely
-in one of the dungeons you have already paid in advance.
+in one of the dungeons you had already paid for in advance.
 </p>
 <</if>>
 
@@ -31,7 +32,8 @@ for your company: <<rep $company.player>>.
 </p>
 
 <p>
-The fort is in a sorry state however, and there is much to be done before you can even
+The fort is in a sorry state however, most of the buildings are in ruins and debris limits the available space.
+There is much to be done before you can even
 begin operation as a proper slaver band.
 The first improvement you should construct is the
 <<rep setup.buildingtemplate.scouthut>>, which allows your group of slavers
@@ -63,7 +65,7 @@ somehow be received once you build the <<rep setup.buildingtemplate.veteranhall>
     There are contextual help texts such as
     <<message '(?)'>>
       <div class='helpcard'>
-        You have successfully clicked the help link and make this help text appears!
+        You have successfully clicked the help link and made this help text appear!
         To close, click the "(?)" link again.
       </div>
     <</message>>
