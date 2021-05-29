@@ -4,6 +4,12 @@
 
 ### v1.7.0.x
 
+v1.7.0.13:
+
+  - Potion of Lust questchain by Matthew Lang (2 quests)
+  - A huge bunch of new perk potions
+  - Show potion restrictions in text
+
 v1.7.0.12:
 
   - New quest: Treasure Hunt: Deeprealms.
