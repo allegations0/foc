@@ -587,5 +587,11 @@
       license: "CC-BY-NC 3.0",
       extra: "cropped",
     },
+    "investigate_the_earth.jpg": {
+      title: "Smuggler's Cave",
+      artist: "TomPrante",
+      url: "https://www.deviantart.com/tomprante/art/Smuggler-s-Cave-489434510",
+      license: "CC-BY-SA 3.0",
+    },
   }
 }());

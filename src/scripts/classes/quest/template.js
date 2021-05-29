@@ -364,7 +364,7 @@ setup.QuestTemplate = class QuestTemplate extends ContentTemplate {
     return null
   }
 
-  getSkillSummary() {
+  getMainSkills() {
     const sumskills = Array(setup.skill.length).fill(0)
     for (const criteriaobj of Object.values(this.getUnitCriterias())) {
       /**
@@ -386,6 +386,11 @@ setup.QuestTemplate = class QuestTemplate extends ContentTemplate {
       sumskills[max_index] -= (sumval / setup.QUEST_SKILL_SUMMARY)
     }
     skills.sort((a, b) => a.key - b.key)
+    return skills
+  }
+
+  getSkillSummary() {
+    const skills = this.getMainSkills()
     return skills.map(a => a.rep()).join('')
   }
 

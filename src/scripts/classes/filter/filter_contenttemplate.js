@@ -34,6 +34,22 @@ function getSubraceFilters() {
   return base
 }
 
+
+function getSkillFilter(skill) {
+  return /** @param {setup.QuestTemplate} template */ template => template.getMainSkills().includes(skill)
+}
+
+function getSkillFilters() {
+  const base = {}
+  for (const skill of setup.skill) {
+    base[skill.keyword] = {
+      title: skill.rep(),
+      filter: getSkillFilter(skill),
+    }
+  }
+  return base
+}
+
 function getAuthorFilter(author) {
   return template => template.getAuthor().name == author
 }
@@ -104,6 +120,12 @@ setup.MenuFilter._MENUS.questtemplate = {
     icon_menu: true,
     options: getSubraceFilters,
   },
+  skill: {
+    title: 'Skill',
+    default: 'All',
+    icon_menu: true,
+    options: getSkillFilters,
+  },
   author: {
     title: 'Author',
     default: 'All',
@@ -126,9 +148,10 @@ setup.MenuFilter._MENUS.questtemplate = {
   },
 }
 
-setup.MenuFilter._MENUS.opportunitytemplate = setup.MenuFilter._MENUS.questtemplate
-setup.MenuFilter._MENUS.event = setup.MenuFilter._MENUS.questtemplate
+setup.MenuFilter._MENUS.opportunitytemplate = Object.assign({}, setup.MenuFilter._MENUS.questtemplate)
+delete setup.MenuFilter._MENUS.opportunitytemplate.skill
+setup.MenuFilter._MENUS.event = setup.MenuFilter._MENUS.opportunitytemplate
 
-setup.MenuFilter._MENUS.activitytemplate = Object.assign({}, setup.MenuFilter._MENUS.questtemplate)
+setup.MenuFilter._MENUS.activitytemplate = Object.assign({}, setup.MenuFilter._MENUS.opportunitytemplate)
 delete setup.MenuFilter._MENUS.activitytemplate['level']
 setup.MenuFilter._MENUS.interaction = setup.MenuFilter._MENUS.activitytemplate

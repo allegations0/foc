@@ -45,7 +45,7 @@
       setup.qres.Building('moraleoffice'),
       setup.qres.Building('recreationwing'),
       setup.qres.Building('relationsoffice'),
-      /* setup.qres.Building('scouttunnel'), */
+      setup.qres.Building('scouttunnel'),
       setup.qres.Building('scoutcarriage'),
       setup.qres.Building('scoutoffice'),
       setup.qres.Building('trainingchamber'),
