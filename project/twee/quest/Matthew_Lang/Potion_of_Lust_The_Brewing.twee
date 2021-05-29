@@ -1,4 +1,9 @@
+
 :: QuestSetup_potion_of_lust_the_brewing [nobr quest]
+
+
+
+
 
 <<set _criteriaalchemist = new setup.UnitCriteria(
 null, /* key */
@@ -52,6 +57,7 @@ null, /* key */
     setup.qres.Available(),
     setup.qres.SlaveUsableByYou(),
     setup.qres.NoTraits([setup.trait.per_chaste], true),
+    setup.qres.Home(),
   ],
 },
 [ /* costs */
@@ -66,18 +72,21 @@ setup.qdiff.harder40, /* difficulty */
       setup.qc.BoonizeRandom('alchemist', 5),
       setup.qc.Item(setup.item.potion_lust, 1),
       setup.qc.SetCooldownQuest('potion_of_lust_the_foraging', 75),
+      setup.qc.VarRemove('mlang_lustpotionquestfail'),
     ],
   ],
   [
     'Quest_potion_of_lust_the_brewingSuccess',
     [
       setup.qc.MoneyCustom(4000),
+      setup.qc.VarSet('mlang_lustpotionquestfail', '1', -1),
     ],
   ],
   [
     'Quest_potion_of_lust_the_brewingFailure',
     [
       setup.qc.Trauma('alchemist', setup.trait.trauma_sex, 5),
+      setup.qc.VarSet('mlang_lustpotionquestfail', '1', -1),
     ],
   ],
   [
@@ -87,6 +96,7 @@ setup.qdiff.harder40, /* difficulty */
       setup.qc.TraitIncreaseExisting('alchemist', setup.trait.vagina_gape),
       setup.qc.TraitIncreaseExisting('alchemist', setup.trait.anus_gape),
       setup.qc.Outcomes("failure"),
+      setup.qc.VarSet('mlang_lustpotionquestfail', '1', -1),
     ],
   ],
 ],
@@ -101,7 +111,6 @@ setup.qdiff.harder40, /* difficulty */
 )>>
 
 :: Quest_potion_of_lust_the_brewing [nobr]
-
 <<set _u = setup.getUnit({
 job: 'slaver',
 anytraits: ['skill_alchemy'],
@@ -109,27 +118,33 @@ anytraits: ['skill_alchemy'],
 
 <<if _u>>
 
-<<set $g.alchemist to _u>>
+    <<set $g.alchemist to _u>>
 
-<<dialogue $g.alchemist>>
-    I've got them, <<unickname $g.alchemist>>, I mean, we got them. I just have to...you know... distill it. And preserve it. And...stabilise it.
-<</dialogue>>
-<p>
-    With several, ripe and fragrant fruits of lust sitting in the <<rep setup.buildingtemplate.alchemistshop>>, along with several decomposing aberration tentacles.<br>
+
     <<if $g.alchemist.isYou()>>
 
         <<set _notyou = []>>
         <<if !$g.alchemist.isYou()>>
             <<run _notyou.push($g.alchemist)>>
         <</if>>
-
-        The reagents aren't going to keep for long, and the potency of the fruit lessens by the day. It'll probably be useless before the tentacles go bad. You do need to spend some money on specialised equipment, but if you're going to do this, you need to act fast.
-
+        <<dialogue $g.alchemist>>
+            I've got them! I just have to...you know... distill it. And preserve it. And...stabilise it.
+        <</dialogue>>
+        <p>
+            With several, ripe and fragrant fruits of lust sitting in the <<rep setup.buildingtemplate.alchemistshop>>, along with several decomposing aberration tentacles.<br>
+            The reagents aren't going to keep for long, and the potency of the fruit lessens by the day. It'll probably be useless before the tentacles go bad. You do need to spend some money on specialised equipment, but if you're going to do this, you need to act fast.
+        </p>
     <<else>>
-        "We don't have much time, <<unickname $g.alchemist>>. The fruit is going to turn any day and honestly, they'll be useless before the tentacles start to turn. I know there's the cost of extra equipment, but... please?"
+        <<dialogue $g.alchemist>>
+            I've got them, <<unickname $g.alchemist>>, I mean, we got them. I just have to...you know... distill it. And preserve it. And...stabilise it.
+        <</dialogue>>
+        <p>
+            With several, ripe and fragrant fruits of lust sitting in the <<rep setup.buildingtemplate.alchemistshop>>, along with several decomposing aberration tentacles.<br>
+
+            "We don't have much time, <<unickname $g.alchemist>>. The fruit is going to turn any day and honestly, they'll be useless before the tentacles start to turn. I know there's the cost of extra equipment, but... please?"
+        </p>
     <</if>>
-</p>
-Whenever you're ready, you can start the project. Just don't expect it to be finished anytime soon.
+    Whenever you're ready, you can start the project. Just don't expect it to be finished anytime soon.
 
 <<else>>
 
@@ -139,6 +154,7 @@ Whenever you're ready, you can start the project. Just don't expect it to be fin
     </p>
 
 <</if>>
+
 
 :: Quest_potion_of_lust_the_brewingCrit [nobr]
 <<questimage "alchemylab.jpg">>
@@ -156,7 +172,14 @@ Whenever you're ready, you can start the project. Just don't expect it to be fin
         It's done.
     </p>
     <p>
-        It's actually done. Stumbling over to the beaker you reach out with trembling hands and then pause. You slip your hands into the heat resistant mittens and then lift the beaker off its trivet, and carefully pour it into the sterilised bottle already packed into straw. The fumes smell like vaguely of pineapple and semen and you feel
+        It's
+        <<if setup.qres.QuestDone().isOk($gQuest) OR setup.qres.VarEqual("mlang_lustpotionquestfail", "1").isOk($gQuest)>>
+            actually
+        <<else>>
+            finally
+        <</if>>
+
+        done. Stumbling over to the beaker you reach out with trembling hands and then pause. You slip your hands into the heat resistant mittens and then lift the beaker off its trivet, and carefully pour it into the sterilised bottle already packed into straw. The fumes smell like vaguely of pineapple and semen and you feel
         <<if $unit.player.isHasDick()>>
             your cock twitch
         <<else>>
@@ -168,7 +191,11 @@ Whenever you're ready, you can start the project. Just don't expect it to be fin
 <<else>>
     It is nearing midnight when <<name $g.alchemist>> comes running into the <<rep setup.buildingtemplate.grandhall>>, clutching a small wooden box, filled with straw and containing a single glass bottle filled with a glowing orange-red liquid. <<Their $g.alchemist>> hair is wild and unkempt, <<their $g.alchemist>> clothes rumpled and there are dark bags under <<their $g.alchemist>> eyes.<br>
     "It's done," <<they $g.alchemist>> says, holding the box out to you.<br>
-    "Does it work?" You ask, looking up from your chair.<br>
+    <<if setup.qres.QuestDone().isOk($gQuest) OR setup.qres.VarEqual("mlang_lustpotionquestfail", "1").isOk($gQuest)>>
+        "Does it work?" You ask, looking up from your chair.<br>
+    <<else>>
+        "Have you tested it?" You ask, looking up from your chair.<br>
+    <</if>>
     <<name $g.alchemist>> looks at you, pauses, and then looks down at the glowing bottle. "The fumes work well enough," <<they $g.alchemist>> says, shifting uncomfortably. "If you're asking about permanent effect, we won't know until you hand it to someone to drink."<br>
     <<if $unit.player.isHasTrait('per_chaste')>>
         Hesitantly, you unstopper the bottle, and the smell of the potion makes you recoil, jamming the cork back in and trying to refrain from retching. Maybe it works better on people who aren't you.
@@ -439,3 +466,6 @@ Whenever you're ready, you can start the project. Just don't expect it to be fin
         <</if>>
     </p>
 <</if>>
+
+
+

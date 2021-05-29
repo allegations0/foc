@@ -45,9 +45,9 @@ null, /* key */
 },
 [ /* tags */
   'forest',
+  'rare',
   'prep',
   'item',
-  'rare',
 ],
 4, /* weeks */
 setup.QUEST_DEFAULT_EXPIRATION, /* expiration weeks */
@@ -73,12 +73,13 @@ setup.qdiff.hard35, /* difficulty */
     'Quest_potion_of_lust_the_foragingCrit',
     [
       setup.qc.QuestDirect('potion_of_lust_the_brewing', {
-      }),
+}),
     ],
   ],
   [
     'Quest_potion_of_lust_the_foragingFailure',
     [
+      setup.qc.VarSet('mlang_lustpotionquestfail', '1', -1),
     ],
   ],
   [
@@ -102,9 +103,9 @@ setup.qc.Injury('guard', 2)
   setup.qres.NoQuest('potion_of_lust_the_brewing'),
   setup.qres.QuestDone('the_fruit_of_sluttiness'),
   setup.qres.ExistUnit([
-    setup.qres.AllTraits([setup.trait.skill_alchemy], true),
-    setup.qres.Job(setup.job.slaver)
-    ], 1),
+setup.qres.AllTraits([setup.trait.skill_alchemy], true),
+setup.qres.Job(setup.job.slaver)
+], 1),
 ],
 [ /* expiration outcomes */
 
@@ -151,6 +152,7 @@ anytraits: ['skill_alchemy'],
 
 <</if>>
 
+
 :: Quest_potion_of_lust_the_foragingCrit [nobr]
 <<if $gQuest.getSeed() % 7 == 0>>
     <<set _fruit = 'a patch of wild strawberries'>>
@@ -185,7 +187,6 @@ anytraits: ['skill_alchemy'],
 <p>
     <<Rep $g.alchemist>> handed out gloves to everyone, and using the smell as a guide, they soon had two baskets full of fruit which is now sitting in the fort's <<rep setup.buildingtemplate.alchemistshop>>, ready for the potioh brewing to commence.
 </p>
-
 
 
 
@@ -244,9 +245,6 @@ anytraits: ['skill_alchemy'],
 
 
 
-
-
-
 :: Quest_potion_of_lust_the_foragingDisaster [nobr]
 <p>
     After <<rep $g.alchemist>> spent some time working on preserving magics to keep freshly harvested reagents from deteriorating, <<rep $g.guide>> led the way into the forest, heading for areas where your slavers had found aberrations in the past. Unfortunately, the party proved too successful, and managed to find a grove was empty of other victims, and were immediately assaulted by several of the plant-like creatures. While
@@ -271,11 +269,6 @@ anytraits: ['skill_alchemy'],
         they eventually managed to fight their way free, but they all sustained injuries to both pride and body that will take some time to heal.
     <</if>>
 </p>
-
-
-
-
-
 
 
 
