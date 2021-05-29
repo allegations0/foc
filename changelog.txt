@@ -4,6 +4,11 @@
 
 ### v1.7.0.x
 
+v1.7.0.15:
+
+  - Can override existing content in CC.
+  - Library cost reduced to 2000 in preparation of deeprealm
+
 v1.7.0.14:
 
   - New quest: Gateway Gamble.
