@@ -49,6 +49,16 @@ setup.capitalize = function (s) {
   return s.substr(0, 1).toUpperCase() + s.substr(1)
 }
 
+/** @param {string} s */
+setup.title_case = function (s) {
+  return s.replace(
+    /\w\S*/g,
+    function (txt) {
+      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    }
+  );
+}
+
 const escape_html_regexp = /[&<>"']/g
 const escape_html_map = {
   '&': "&amp;",

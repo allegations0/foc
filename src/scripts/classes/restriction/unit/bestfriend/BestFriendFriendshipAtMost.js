@@ -10,7 +10,7 @@ setup.qresImpl.BestFriendFriendshipAtMost = class BestFriendFriendshipAtMost ext
   }
 
   explain() {
-    return `Unit must have a best friend/lover with friendship at most ${this.amt}` 
+    return `Unit has a best friend/lover with friendship at most ${this.amt}`
   }
 
   /**

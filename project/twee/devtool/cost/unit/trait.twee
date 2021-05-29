@@ -418,7 +418,8 @@ Unit <<devactordefault>> will lose a random personality.
 <<devactordefault>> gain and can learn the following perk:
 </div>
 
-<<selecttrait 'CostPerkChoiceDo' setup.TraitHelper.getAllTraitsOfTags(['perkspecial'])>>
+<<set _choices = setup.TraitHelper.getAllTraitsOfTags(['perk']).filter(perk => !perk.getTags().includes('perkbasic'))>>
+<<selecttrait 'CostPerkChoiceDo' _choices>>
 
 :: CostPerkChoiceDo [nobr]
 

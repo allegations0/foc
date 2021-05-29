@@ -83,6 +83,7 @@
   tags: [],
 })>>
 
+<<run setup.ItemUnitUsable.make_perk_potions()>>
 
 /* ========================
   LEVEL POTIONS

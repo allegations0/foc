@@ -123,6 +123,12 @@ setup.DOM.Card.item = function (item, hide_actions) {
     fragments.push(setup.DOM.Card.restriction(restrictions))
   }
 
+  if (item instanceof setup.ItemUnitUsable) {
+    // @ts-ignore
+    const restrictions = item.getUnitRestrictions()
+    fragments.push(setup.DOM.Card.restriction(restrictions, null, /* show all = */ true))
+  }
+
   const shorten_desc = !hide_actions && State.variables.menufilter.get('item', 'display') == 'short'
   if (shorten_desc) {
     fragments.push(setup.DOM.create('div', {}, setup.DOM.Util.message('(description)', () => {

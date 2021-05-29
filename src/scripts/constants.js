@@ -340,6 +340,9 @@ setup.TRAIT_VALUE_HIGH_THRESHOLDS = [
 /* Perk related */
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
+// price of a standard perk potion
+setup.PERK_POTION_STANDARD_PRICE = 10000
+
 // number of priority perk that are preferred
 setup.PERK_PRIORITY_COUNT = 2
 

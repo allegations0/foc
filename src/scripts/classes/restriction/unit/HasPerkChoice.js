@@ -15,7 +15,7 @@ setup.qresImpl.HasPerkChoice = class HasPerkChoice extends setup.Restriction {
 
   explain() {
     const perk = this.getPerk()
-    return `Unit can learn ${perk.rep()}`
+    return `Unit has ${perk.rep()} as one of their perk choices`
   }
 
   /**

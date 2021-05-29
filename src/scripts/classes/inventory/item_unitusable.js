@@ -35,12 +35,16 @@ setup.ItemUnitUsable = class ItemUnitUsable extends setup.Item {
     return State.variables.unit[this.temporary_unit_key]
   }
 
+  getUnitRestrictions() {
+    return this.unit_restrictions
+  }
+
   isUsable() {
     return true
   }
 
   isUsableOn(unit) {
-    return setup.RestrictionLib.isUnitSatisfyIncludeDefiancy(unit, this.unit_restrictions)
+    return setup.RestrictionLib.isUnitSatisfyIncludeDefiancy(unit, this.getUnitRestrictions())
   }
 
   use(unit) {
@@ -52,4 +56,43 @@ setup.ItemUnitUsable = class ItemUnitUsable extends setup.Item {
     State.variables.inventory.removeItem(this)
   }
 
+  static make_perk_potions() {
+    const potions = {}
+
+    for (const trait of setup.TraitHelper.getAllTraitsOfTags(['perkstandard']).filter(
+      trait => !trait.getTags().includes('perkbasic'))) {
+
+      /**
+       * @type {setup.Perk}
+       */ // @ts-ignore
+      const perk = trait
+
+      /**
+       * @type {setup.Restriction[]}
+       */
+      const restrictions = [
+        setup.qres.Job(setup.job.slaver),
+        setup.qres.Not(setup.qres.HasPerkChoice(perk)),
+      ]
+      restrictions.push(...perk.getPerkChoiceRestrictions())
+
+      const pot = new setup.ItemUnitUsable({
+        key: `potion_${perk.key}`,
+        name: `Potion of ${setup.title_case(perk.getName())}`,
+        description: `Make a unit able to learn the <<rep setup.trait.${perk.key}>> perk.`,
+        value: setup.PERK_POTION_STANDARD_PRICE,
+        unit_restrictions: restrictions,
+        effects: [
+          setup.qc.PerkChoice('unit', perk, /* no learn = */ true),
+        ],
+        tags: [],
+      })
+      potions[pot.key] = 1
+    }
+
+    new setup.ItemPool(
+      'perk_potions',
+      potions,
+    )
+  }
 }

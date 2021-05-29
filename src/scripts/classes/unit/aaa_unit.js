@@ -224,13 +224,13 @@ setup.Unit = class Unit extends setup.TwineClass {
   }
 
   /**
-   * Force add a perk choice. Relevant for special perks.
+   * Force add a perk choice. Works for non basic perks.
    * @param {setup.Trait} trait 
    * @returns {boolean}  whether succesfully added. Can fail, e.g., when the unit already know it
    */
   addPerkChoice(trait) {
-    if (!trait.getTags().includes('perkspecial')) {
-      throw new Error(`Can only add perkspecial traits to perk choice, not ${trait.key}!`)
+    if (trait.getTags().includes('perkbasic')) {
+      throw new Error(`Can only add non basic perks, not ${trait.key}!`)
     }
     // generate perks
     this.getPerkChoices()
@@ -254,8 +254,8 @@ setup.Unit = class Unit extends setup.TwineClass {
    * @param {setup.Trait} trait 
    */
   removePerkChoice(trait) {
-    if (!trait.getTags().includes('perkspecial')) {
-      throw new Error(`Can only remove perkspecial traits to perk choice, not ${trait.key}!`)
+    if (trait.getTags().includes('perkbasic')) {
+      throw new Error(`Can only remove non-basic traits from perk choice, not ${trait.key}!`)
     }
     // generate perks
     this.getPerkChoices()

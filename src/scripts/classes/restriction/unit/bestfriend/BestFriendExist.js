@@ -8,7 +8,7 @@ setup.qresImpl.BestFriendExist = class BestFriendExist extends setup.Restriction
   }
 
   explain() {
-    return `Unit must have a best friend/lover` 
+    return `Unit has a best friend/lover`
   }
 
   /**

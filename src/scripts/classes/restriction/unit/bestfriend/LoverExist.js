@@ -8,7 +8,7 @@ setup.qresImpl.LoverExist = class LoverExist extends setup.Restriction {
   }
 
   explain() {
-    return `Unit must have a lover` 
+    return `Unit has a lover`
   }
 
   /**

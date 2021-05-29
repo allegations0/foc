@@ -10,7 +10,7 @@ setup.qresImpl.BestFriendFriendshipAtLeast = class BestFriendFriendshipAtLeast e
   }
 
   explain() {
-    return `Unit must have a best friend/lover with friendship at least ${this.amt}` 
+    return `Unit has a best friend/lover with friendship at least ${this.amt}`
   }
 
   /**

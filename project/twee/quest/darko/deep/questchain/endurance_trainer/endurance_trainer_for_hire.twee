@@ -23,6 +23,7 @@
   setup.qc.TraitReplace('unit', setup.trait.skill_intimidating),
   setup.qc.AddTraitsRandom('unit', [setup.trait.magic_dark_master, setup.trait.face_hideous, setup.trait.muscle_extremelystrong, setup.trait.per_aggressive, setup.trait.per_proud, setup.trait.per_stubborn], 2, false, false),
   setup.qc.AddTitle('unit', 'quest_master_endurance_trainer_0'),
+  setup.qc.PerkChoice('unit', setup.trait.perk_switch),
 ],
 )>>
 
