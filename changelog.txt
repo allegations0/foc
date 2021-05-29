@@ -4,6 +4,15 @@
 
 ### v1.7.0.x
 
+v1.7.0.14:
+
+  - New quest: Gateway Gamble.
+  - New special perk: Wild magic.
+  - Value titles added.
+  - CleanMentalTraits.
+  - Value7 Trait
+  - Add values required to the value trait
+
 v1.7.0.13:
 
   - Potion of Lust questchain by Matthew Lang (2 quests)
