@@ -4,6 +4,13 @@
 
 ### v1.7.0.x
 
+v1.7.0.12:
+
+  - New quest: Treasure Hunt: Deeprealms.
+  - Content image for: Flesh shape dick
+  - Various building description fixes (thanks to Elannil)
+  - Fix some inconsistencies in pimp/rec wing descriptions
+
 v1.7.0.11:
 
   - Finished the Drow race addition into the game
