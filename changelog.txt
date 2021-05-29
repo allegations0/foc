@@ -4,6 +4,14 @@
 
 ### v1.7.0.x
 
+v1.7.0.16:
+
+  - New quest: Investigate the Earth (1 quest, 1 event)
+  - Quest skill filter added to in-game wiki
+  - Images for Scout outpost deep
+  - Images for scout tunnel
+  - Icon for scout deep duty
+
 v1.7.0.15:
 
   - Can override existing content in CC.
