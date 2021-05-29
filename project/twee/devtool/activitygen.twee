@@ -75,9 +75,15 @@
 <hr/> 
 
 <p class="center">
-<<button 'CREATE ACTIVITY!'>>
+<<button 'CREATE NEW ACTIVITY!'>>
   <<run setup.DOM.Menu.devtoolverifycreate()>>
 <</button>>
+</p>
+
+<p class='center'>
+<<link 'create activity (override existing, if any)'>>
+  <<run setup.DOM.Menu.devtoolverifycreate(true)>>
+<</link>>
 </p>
 
 

@@ -11,11 +11,13 @@
  * @param {{
  * error_details: ErrorDetails
  * continue_callback?: Function
+ * is_retain_key?: boolean
  * }} param0 
  */
 export function display_errors({
   error_details,
   continue_callback,
+  is_retain_key,
 }) {
 
   const fragments = []
@@ -64,7 +66,7 @@ export function display_errors({
       `Ignore these errors and continue`,
       () => {
         Dialog.close()
-        continue_callback()
+        continue_callback(is_retain_key)
       }
     )}
       </div>
@@ -77,7 +79,10 @@ export function display_errors({
   })
 }
 
-function continue_callback() {
+/**
+ * @param {boolean} is_retain_key 
+ */
+function continue_callback(is_retain_key) {
   /**
    * @type {Object}
    */
@@ -99,7 +104,7 @@ function continue_callback() {
     }
 
     /* create passage names etc */
-    sv.qkey = setup.getKeyFromName(dtquest.name, setup.questtemplate)
+    sv.qkey = setup.getKeyFromName(dtquest.name, setup.questtemplate, is_retain_key)
     sv.qfilename = `${sv.qkey}.twee`
     sv.qpassagesetup = `QuestSetup_${sv.qkey}`
     sv.qpassagedesc = `Quest_${sv.qkey}`
@@ -115,7 +120,7 @@ function continue_callback() {
      * @type {setup.OpportunityTemplate}
      */
     const dtquest = dtquest_raw
-    sv.okey = setup.getKeyFromName(dtquest.name, setup.opportunitytemplate)
+    sv.okey = setup.getKeyFromName(dtquest.name, setup.opportunitytemplate, is_retain_key)
 
     /* create passage names */
     sv.qfilename = `${sv.okey}.twee`
@@ -127,7 +132,7 @@ function continue_callback() {
      * @type {setup.Event}
      */
     const dtquest = dtquest_raw
-    sv.ekey = setup.getKeyFromName(dtquest.name, setup.event)
+    sv.ekey = setup.getKeyFromName(dtquest.name, setup.event, is_retain_key)
 
     /* create passage names etc */
     sv.qfilename = `${sv.ekey}.twee`
@@ -139,7 +144,7 @@ function continue_callback() {
      * @type {setup.Interaction}
      */
     const dtquest = dtquest_raw
-    sv.ikey = setup.getKeyFromName(dtquest.name, setup.interaction)
+    sv.ikey = setup.getKeyFromName(dtquest.name, setup.interaction, is_retain_key)
 
     /* create passage names etc */
     sv.qfilename = `${sv.ikey}.twee`
@@ -151,7 +156,7 @@ function continue_callback() {
      * @type {setup.ActivityTemplate}
      */
     const dtquest = dtquest_raw
-    sv.akey = setup.getKeyFromName(dtquest.name, setup.activitytemplate)
+    sv.akey = setup.getKeyFromName(dtquest.name, setup.activitytemplate, is_retain_key)
 
     /* create passage names etc */
     sv.qfilename = `${sv.akey}.twee`
@@ -187,7 +192,10 @@ export function get_errors_from_texts_to_check(texts_to_check, set_to) {
   return error_details
 }
 
-setup.DOM.Menu.devtoolverifycreate = function () {
+/**
+ * @param {boolean} [is_retain_key]
+ */
+setup.DOM.Menu.devtoolverifycreate = function (is_retain_key) {
   /**
    * @type {Object}
    */
@@ -281,9 +289,10 @@ setup.DOM.Menu.devtoolverifycreate = function () {
     display_errors({
       error_details: error_details,
       continue_callback: continue_callback,
+      is_retain_key: is_retain_key,
     })
   } else {
-    continue_callback()
+    continue_callback(is_retain_key)
   }
 
 }

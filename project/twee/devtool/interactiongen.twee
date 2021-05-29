@@ -125,9 +125,15 @@ Interaction text:
 
 <p class="center">
 <br/>
-<<button 'CREATE INTERACTION!'>>
+<<button 'CREATE NEW INTERACTION!'>>
   <<run setup.DOM.Menu.devtoolverifycreate()>>
 <</button>>
+</p>
+
+<p class='center'>
+<<link 'create interaction (override existing, if any)'>>
+  <<run setup.DOM.Menu.devtoolverifycreate(true)>>
+<</link>>
 </p>
 
 </div>

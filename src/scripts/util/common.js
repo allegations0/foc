@@ -165,9 +165,18 @@ setup.repMessageDict = function ({
   return text
 }
 
-setup.getKeyFromName = function (name, pool) {
+/**
+ * @param {string} name 
+ * @param {Object} pool 
+ * @param {boolean} [is_retain_key]
+ * @returns 
+ */
+setup.getKeyFromName = function (name, pool, is_retain_key) {
   var basekey = name.replace(/\W/g, '_').toLowerCase().replace(/_+/g, '_')
   var testkey = basekey
+  if (is_retain_key) {
+    return testkey
+  }
   var idx = 1
   while (testkey in pool) {
     idx += 1
