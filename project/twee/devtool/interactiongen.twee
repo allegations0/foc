@@ -47,6 +47,7 @@
     _ibase.getCooldown(),   /* cooldown */
     setup.interactionpool.unit,  /* pool */
   )>>
+  <<set $dtquest.old_key = _ibase.key>>
 <</if>>
 
 
@@ -130,10 +131,14 @@ Interaction text:
 <</button>>
 </p>
 
+<<if $dtquest.old_key>>
+
 <p class='center'>
-<<link 'create interaction (override existing, if any)'>>
+<<link 'create interaction (override existing)'>>
   <<run setup.DOM.Menu.devtoolverifycreate(true)>>
 <</link>>
 </p>
+
+<</if>>
 
 </div>

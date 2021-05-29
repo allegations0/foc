@@ -76,6 +76,7 @@
     _qbase.getPrerequisites(), /* restriction */
     _qbase.getExpiredOutcomes(), /* expired outcomes */
   )>>
+  <<set $dtquest.old_key = _qbase.key>>
 
   /* get the descriptions */
   <<for _ioutcome, _outcome range _qbase.getOutcomes()>>
@@ -316,12 +317,15 @@ same text for multiple results.
 <</button>>
 </p>
 
+<<if $dtquest.old_key>>
 
 <p class='center'>
-<<link 'create quest (override existing, if any)'>>
+<<link 'create quest (override existing)'>>
   <<run setup.DOM.Menu.devtoolverifycreate(true)>>
 <</link>>
 </p>
+
+<</if>>
 
 </div>
 

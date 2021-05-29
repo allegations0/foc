@@ -47,6 +47,7 @@
     _ebase.getCooldown(), /* cooldown */
     _ebase.getRarity(), /* rarity */
   )>>
+  <<set $dtquest.old_key = _ebase.key>>
 <</if>>
 
 
@@ -158,11 +159,15 @@
 <</button>>
 </p>
 
+<<if $dtquest.old_key>>
+
 <p class='center'>
-<<link 'create event (override existing, if any)'>>
+<<link 'create event (override existing)'>>
   <<run setup.DOM.Menu.devtoolverifycreate(true)>>
 <</link>>
 </p>
+
+<</if>>
 
 </div>
 

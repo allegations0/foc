@@ -75,6 +75,7 @@
     _obase.getExpiredOutcomes(),  /* expiration outcomes */
     _obase.isMustBeAnswered(),  /* is_must_be_answered */
   )>>
+  <<set $dtquest.old_key = _obase.key>>
 
   /* pool and rarity */
   <<set _poolrarity = _obase.getAnyQuestPoolRarity()>>
@@ -234,11 +235,15 @@
 <</button>>
 </p>
 
+<<if $dtquest.old_key>>
+
 <p class='center'>
-<<link 'create opportunity (override existing, if any)'>>
+<<link 'create opportunity (override existing)'>>
   <<run setup.DOM.Menu.devtoolverifycreate(true)>>
 <</link>>
 </p>
+
+<</if>>
 
 </div>
 

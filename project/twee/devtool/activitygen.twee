@@ -51,6 +51,7 @@
     room_templates: _abase.getRoomTemplates(),
     devtool: true,
   })>>
+  <<set $dtquest.old_key = _abase.key>>
 <</if>>
 
 :: ActivityGen [nobr]
@@ -80,11 +81,15 @@
 <</button>>
 </p>
 
+<<if $dtquest.old_key>>
+
 <p class='center'>
-<<link 'create activity (override existing, if any)'>>
+<<link 'create activity (override existing)'>>
   <<run setup.DOM.Menu.devtoolverifycreate(true)>>
 <</link>>
 </p>
+
+<</if>>
 
 
 :: AGChooseRarity [nobr]

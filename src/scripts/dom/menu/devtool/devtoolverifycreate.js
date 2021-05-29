@@ -104,7 +104,13 @@ function continue_callback(is_retain_key) {
     }
 
     /* create passage names etc */
-    sv.qkey = setup.getKeyFromName(dtquest.name, setup.questtemplate, is_retain_key)
+    // @ts-ignore
+    if (is_retain_key && dtquest.old_key) {
+      // @ts-ignore
+      sv.qkey = dtquest.old_key
+    } else {
+      sv.qkey = setup.getKeyFromName(dtquest.name, setup.questtemplate, is_retain_key)
+    }
     sv.qfilename = `${sv.qkey}.twee`
     sv.qpassagesetup = `QuestSetup_${sv.qkey}`
     sv.qpassagedesc = `Quest_${sv.qkey}`
