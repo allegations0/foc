@@ -4,9 +4,16 @@
 
 ### v1.7.0.x
 
-v1.7.0.20: [TODO BEFORE COMMIT]
+v1.7.0.21:
 
-  - Kobold names.
+  - DOM-ification for ItemPool an EquipmentPool cards
+  - New weapon: Dwarven axe
+  - Implemented kobold company favor effects.
+  - Increase favor limit from 120.0 to 200.0
+
+v1.7.0.20:
+
+  - Kobold nameset.
 
 v1.7.0.19:
 
