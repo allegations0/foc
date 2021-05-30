@@ -63,7 +63,9 @@ setup.SexText.stripDescription = function (unit, equipment_slot, sex) {
       text += `Unceremoniously, a|they a|throw a|their ${eq.rep()} aside`
     } else if (eq.getTags().includes('fake_clothes')) {
       text += `a|They ${verb} a|their "invisible" ${eq.rep()}`
-    } else if (eq.getTags().includes('buttplug')) {
+    } else if (eq.getTags().includes('vegetable')) {
+      text += `a|They ${verb} the ${eq.rep()} which was plugged deep within a|their a|anus, the cold and fresh feeling suddenly gone from inside them.`
+    } else if (eq.getTags().includes('buttplug') || eq.getTags().includes('dildo')) {
       text += `a|Their ${eq.rep()} pressed against a|their inner walls as a|they struggle to remove it`
     } else {
       text += `a|They ${verb} a|their ${eq.rep()}`

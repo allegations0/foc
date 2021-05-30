@@ -80,6 +80,10 @@ Why you have decided to do such a thing, you never know, but you got yourself on
 unfortunate enchanted vegetable ready to be inserted into some unwilling anus...
 </p>
 
-<<run setup.qc.EquipmentDirect('dildo_cucumber').apply($gQuest)>>
+<<if $g.slaver.isMale() || $gQuest.getSeed() % 2 == 0>>
+  <<run setup.qc.EquipmentDirect('dildo_cucumber_anus').apply($gQuest)>>
+<<else>>
+  <<run setup.qc.EquipmentDirect('dildo_cucumber').apply($gQuest)>>
+<</if>>
 
 <</choose>>

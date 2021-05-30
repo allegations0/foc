@@ -256,6 +256,10 @@ function describeEquipment(unit, slot, equipment) {
       return ` which is stuffed with ${eqrep}. A pony-like tail jutted out of ${their} rear from the toy, which shakes and sways with ${their} every move`
     } else if (tags.includes('pet')) {
       return ` which is stuffed with ${eqrep}. A pet-like tail jutted out of ${their} rear from the toy, which shakes and sways with ${their} every move`
+    } else if (slot == setup.equipmentslot.rear && tags.includes('dildo') && tags.includes('vegetable')) {
+      return ` which is stuffed with ${eqrep}, its cold and fresh exterior intensely stimulating ${them}`
+    } else if (slot == setup.equipmentslot.rear && tags.includes('dildo')) {
+      return ` which is stuffed with ${eqrep}, giving ${them} constant stimulation`
     }
     // use the buttplug one
   }
@@ -273,9 +277,9 @@ function describeEquipment(unit, slot, equipment) {
   /* Vagina */
   if (slot == setup.equipmentslot.genital && tags.includes('vagina') && tags.includes('chastity')) {
     return `. A ${eqrep} is installed covering their vagina, preventing ${them} from climaxing`
-  } else if (tags.includes('dildo') && tags.includes('vegetable')) {
+  } else if (slot == setup.equipmentslot.genital && tags.includes('dildo') && tags.includes('vegetable')) {
     return ` which is stuffed with ${eqrep}, its cold and fresh exterior stimulating ${their} vagina`
-  } else if (tags.includes('dildo')) {
+  } else if (slot == setup.equipmentslot.genital && tags.includes('dildo')) {
     return ` which is stuffed with ${eqrep}, giving constant stimulation to ${their} vagina`
   }
 
@@ -633,7 +637,9 @@ setup.Text.Unit.Equipment.stripAnus = function (unit) {
   if (!anus) return ''   // nothing to strip
   var tags = anus.getTags()
 
-  if (tags.includes('buttplug')) {
+  if (tags.includes('vegetable')) {
+    return `You grab the cold and fresh ${anus.rep()} stuck deep inside ${their} vagina and pull the poor vegetable out.`
+  } else if (tags.includes('buttplug') || tags.includes('dildo')) {
     return `${Their} ${anus.rep()} pressed against ${their} inner walls as ${they} struggle to remove it.`
   } else {
     return `${They} removed their ${anus.getTags()} from ${their} ${setup.Text.Unit.Trait.anus(unit)}.`
@@ -652,7 +658,7 @@ setup.Text.Unit.Equipment.youStripAnus = function (unit) {
   if (!anus) return ''   // nothing to strip
   var tags = anus.getTags()
 
-  if (tags.includes('buttplug')) {
+  if (tags.includes('buttplug') || tags.includes('dildo')) {
     return `You slowly removed ${their} ${anus.rep()} making sure the bulge presses against ${their} inner walls, eliciting moans from ${them}.`
   } else {
     return `You removed ${their} ${anus.getTags()} from their ${setup.Text.Unit.Trait.anus(unit)}.`

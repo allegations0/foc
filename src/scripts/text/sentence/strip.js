@@ -102,6 +102,8 @@ setup.Text.Strip.verb = function (unit, equipment) {
       ]
     } else if (eq.getTags().includes('buttplug')) {
       t = PLUG_VERB
+    } else if (eq.getTags().includes('dildo')) {
+      t = PLUG_VERB
     } else {
       t = [
         `a|slip off`,
