@@ -2,6 +2,7 @@ const ZOOM_AMOUNT = {
   zoom0_25: 0.25,
   zoom0_5: 0.5,
   zoom0_75: 0.75,
+  zoom1_25: 1.25,
   zoom1_5: 1.5,
   zoom2: 2.0,
   zoom3: 3.0,

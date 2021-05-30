@@ -16,6 +16,9 @@ setup.MenuFilter._MENUS.fortgrid = {
       zoom0_75: {
         title: '0.75x',
       },
+      zoom1_25: {
+        title: '1.25x',
+      },
       zoom1_5: {
         title: '1.5x',
       },
