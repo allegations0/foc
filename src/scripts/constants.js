@@ -386,10 +386,10 @@ setup.PERK_SPECIALIST_REDUCTION = 0.3
 setup.PERK_BLESSING_WEEKS = 43
 
 // a corruption every this many weeks
-setup.PERK_CORRUPTION_WEEKS = 13
+setup.PERK_CORRUPTION_WEEKS = 9
 
 // a purification every this many weeks
-setup.PERK_PURIFICATION_WEEKS = 37
+setup.PERK_PURIFICATION_WEEKS = 29
 
 // switch changes dom/sub every this weeks
 setup.PERK_SWITCH_WEEKS = 7

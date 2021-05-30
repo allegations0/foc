@@ -379,7 +379,7 @@
 <<run new setup.Perk(
     'perk_corruption',
     'perk: corruption',
-    "Grant a random corruption every " + setup.PERK_CORRUPTION_WEEKS + " weeks.",
+    "When at home, grant a random corruption every " + setup.PERK_CORRUPTION_WEEKS + " weeks.",
     0,
     {},
     ['perk', 'perkstandard', ],
@@ -391,9 +391,12 @@
         ],
         perk_end_of_week_effect: [
             setup.qc.IfThenElse(
-                setup.qres.Function(() => {
-                    return State.variables.calendar.getWeek() % setup.PERK_CORRUPTION_WEEKS == 0;
-                }),
+                setup.qres.And([
+                    setup.qres.Function(() => {
+                        return State.variables.calendar.getWeek() % setup.PERK_CORRUPTION_WEEKS == 0;
+                    }),
+                    setup.qres.Actor('unit', setup.qres.Home()),
+                ]),
                 setup.qc.Corrupt('unit'),
                 setup.qc.DoAll([]),
             ),
@@ -404,7 +407,7 @@
 <<run new setup.Perk(
     'perk_purification',
     'perk: purification',
-    "Grant a random purification every " + setup.PERK_PURIFICATION_WEEKS + " weeks.",
+    "When at home, grant a random purification every " + setup.PERK_PURIFICATION_WEEKS + " weeks.",
     0,
     {},
     ['perk', 'perkstandard', ],
@@ -416,9 +419,12 @@
         ],
         perk_end_of_week_effect: [
             setup.qc.IfThenElse(
-                setup.qres.Function(() => {
-                    return State.variables.calendar.getWeek() % setup.PERK_PURIFICATION_WEEKS == 0;
-                }),
+                setup.qres.And([
+                    setup.qres.Function(() => {
+                        return State.variables.calendar.getWeek() % setup.PERK_PURIFICATION_WEEKS == 0;
+                    }),
+                    setup.qres.Actor('unit', setup.qres.Home()),
+                ]),
                 setup.qc.Purify('unit'),
                 setup.qc.DoAll([]),
             ),
@@ -488,7 +494,7 @@
 <<run new setup.Perk(
     'perk_tail',
     'perk: tail',
-    "Grow a random tail every 23 weeks.",
+    "When at home, Grow a random tail every 17 weeks.",
     0,
     {},
     ['perk', 'perkstandard', ],
@@ -502,9 +508,12 @@
         ],
         perk_end_of_week_effect: [
             setup.qc.IfThenElse(
-                setup.qres.Function(() => {
-                    return State.variables.calendar.getWeek() % 23 == 0;
-                }),
+                setup.qres.And([
+                    setup.qres.Function(() => {
+                        return State.variables.calendar.getWeek() % 17 == 0;
+                    }),
+                    setup.qres.Actor('unit', setup.qres.Home()),
+                ]),
                 setup.qc.AddTraitsRandom(
                     'unit',
                     setup.TraitHelper.getAllTraitsOfTags(['tail']),
