@@ -25,6 +25,12 @@ setup.MenuFilter._MENUS.trait = {
     icon_menu: true,
     options: getTraitTagFilters('type'),
   },
+  rarity: {
+    title: 'Rarity',
+    default: 'All',
+    icon_menu: true,
+    options: MenuFilterHelper.rarityFilters,
+  },
   show: {
     title: 'Show',
     default: 'Default',

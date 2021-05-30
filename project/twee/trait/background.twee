@@ -9,7 +9,7 @@
     'bg_royal',
     'royal',
     "Born to rule",
-    setup.MONEY_TRAIT_UNICORN,
+    setup.MONEY_TRAIT_EPIC,
     {combat: 0.12, aid: 0.12, social: 0.12, intrigue: 0.12, arcane: -0.23},
     ['bg', 'unicorn', 'rich',],
 )>>
@@ -19,7 +19,7 @@
     'bg_boss',
     'boss',
     "A royalty in the criminal underworld",
-    setup.MONEY_TRAIT_UNICORN,
+    setup.MONEY_TRAIT_EPIC,
     {survival: 0.12, intrigue: 0.12, slaving: 0.12, knowledge: 0.12, social: -0.23},
     ['bg', 'unicorn', 'rich',],
 )>>
@@ -29,7 +29,7 @@
     'bg_mythical',
     'mythical',
     "Revered as god by some",
-    setup.MONEY_TRAIT_UNICORN,
+    setup.MONEY_TRAIT_EPIC,
     {arcane: 0.12, knowledge: 0.12, aid: 0.12, social: 0.12, sex: -0.23},
     ['bg', 'unicorn', 'rich',],
 )>>
@@ -39,7 +39,7 @@
     'bg_mist',
     'mistwalker',
     "Travel frequently between this world and the next",
-    setup.MONEY_TRAIT_UNICORN,
+    setup.MONEY_TRAIT_EPIC,
     {arcane: 0.12, slaving: 0.12, sex: 0.12, brawn: 0.12, aid: -0.23},
     ['bg', 'unicorn', 'rich',],
 )>>

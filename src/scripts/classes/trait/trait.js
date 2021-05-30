@@ -137,8 +137,10 @@ setup.Trait = class Trait extends setup.TwineClass {
    */
   getRarity() {
     const value = this.getSlaveValue()
-    if (value >= setup.MONEY_TRAIT_UNICORN)
+    if (value >= setup.MONEY_TRAIT_LEGENDARY)
       return setup.rarity.legendary
+    else if (value >= setup.MONEY_TRAIT_EPIC)
+      return setup.rarity.epic
     else if (value >= setup.MONEY_TRAIT_RARE)
       return setup.rarity.rare
     else if (value >= setup.MONEY_TRAIT_MEDIUM)
