@@ -4,11 +4,11 @@
 
   /* Image credit information. */
   UNITIMAGE_CREDITS = {
-    11: {
-      title: "Captive",
-      artist: "saucysorc",
-      url: "https://www.newgrounds.com/art/view/saucysorc/captive",
-      license: "CC-BY-NC-ND 3.0",
+    1: {
+      title: "Sword Kobold",
+      artist: "Magra",
+      url: "https://www.newgrounds.com/art/view/magra/sword-kobold",
+      license: "CC-BY-NC 3.0",
     },
   }
 }());

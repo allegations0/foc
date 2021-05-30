@@ -57,6 +57,12 @@
       url: "https://www.deviantart.com/lynx3000/art/Lynx-792756001",
       license: "CC-BY-NC-ND 3.0",
     },
+    9: {
+      title: "Uktena",
+      artist: "filhotedeleao",
+      url: "https://www.deviantart.com/filhotedeleao/art/Uktena-629207648",
+      license: "CC-BY-NC-ND 3.0",
+    },
     10: {
       title: "Golden apple",
       artist: "AlsaresLynx",
@@ -67,6 +73,12 @@
       title: "Eclipse",
       artist: "SiplickIshida",
       url: "https://www.furaffinity.net/view/38286061/",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    12: {
+      title: "Wolfbane in the Savage Land",
+      artist: "RamArtwork",
+      url: "https://www.deviantart.com/ramartwork/art/Wolfbane-in-the-Savage-Land-878543986",
       license: "CC-BY-NC-ND 3.0",
     },
     13: {

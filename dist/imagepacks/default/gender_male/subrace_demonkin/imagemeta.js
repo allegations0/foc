@@ -2,7 +2,7 @@
   /* The following is list of direct subdirectories. */
   UNITIMAGE_LOAD_FURTHER = ["bg_entertainer", "bg_noble", "bg_mystic",
     "bg_soldier", "bg_slaver", "bg_knight", "bg_monk", "bg_metalworker", "bg_scholar",
-    "bg_adventurer", "bg_informer",]
+    "bg_adventurer", "bg_informer", "bg_foodworker", ]
 
 
   /* Image credit information. */

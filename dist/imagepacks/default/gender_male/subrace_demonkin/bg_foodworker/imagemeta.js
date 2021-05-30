@@ -5,9 +5,9 @@ UNITIMAGE_LOAD_FURTHER = []
 /* Image credit information. */
 UNITIMAGE_CREDITS = {
   1: {
-    title: "COM | Ahra's Kobold | FEARDAKEZ",
-    artist: "FEARDAKEZ",
-    url: "https://www.newgrounds.com/art/view/feardakez/com-ahra-s-kobold-feardakez",
+    title: "Aroose",
+    artist: "filhotedeleao",
+    url: "https://www.deviantart.com/filhotedeleao/art/Aroose-746150531",
     license: "CC-BY-NC-ND 3.0",
   },
 }

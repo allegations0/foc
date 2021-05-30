@@ -5,6 +5,7 @@
     "bg_entertainer", "bg_foodworker", "bg_pirate", "bg_thief",
     "bg_hunter", "bg_mercenary", "bg_mist",
     "bg_mystic", "bg_priest", "bg_metalworker", "bg_slave",
+    "bg_scholar",
   ]
 
 

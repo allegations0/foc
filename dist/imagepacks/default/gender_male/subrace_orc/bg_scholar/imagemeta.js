@@ -5,9 +5,9 @@ UNITIMAGE_LOAD_FURTHER = []
 /* Image credit information. */
 UNITIMAGE_CREDITS = {
   1: {
-    title: "COM | Ahra's Kobold | FEARDAKEZ",
-    artist: "FEARDAKEZ",
-    url: "https://www.newgrounds.com/art/view/feardakez/com-ahra-s-kobold-feardakez",
+    title: "Caadeus 2",
+    artist: "RamArtwork",
+    url: "https://www.deviantart.com/ramartwork/art/Caadeus-2-859279507",
     license: "CC-BY-NC-ND 3.0",
   },
 }

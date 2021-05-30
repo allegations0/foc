@@ -5,13 +5,13 @@
   /* Image credit information. */
   UNITIMAGE_CREDITS = {
     6: {
-      title: "gunslinger kobold",
+      title: "Gunslinger Kobold",
       artist: "saucysorc",
       url: "https://www.newgrounds.com/art/view/saucysorc/gunslinger-kobold",
       license: "CC-BY-NC-ND 3.0",
     },
     12: {
-      title: "vahruuni attacks",
+      title: "Vahruunir attacks!",
       artist: "saucysorc",
       url: "https://www.newgrounds.com/art/view/saucysorc/vahruunir-attacks",
       license: "CC-BY-NC-ND 3.0",

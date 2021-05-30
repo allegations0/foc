@@ -54,6 +54,12 @@
       url: "https://www.deviantart.com/noreusteves/art/BIG-FAT-DEVIL-MONSTER-616448118",
       license: "CC-BY-NC-ND 3.0",
     },
+    9: {
+      title: "Fallen angel",
+      artist: "RamArtwork",
+      url: "https://www.deviantart.com/ramartwork/art/Fallen-angel-807439735",
+      license: "CC-BY-NC-ND 3.0",
+    },
     10: {
       title: "Demon Hunter- Comission",
       artist: "RobCV",

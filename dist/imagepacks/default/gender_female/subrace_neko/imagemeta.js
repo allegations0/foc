@@ -71,6 +71,12 @@
       url: "https://www.deviantart.com/liang-xing/art/Kda-Ahri-856966013",
       license: "CC-BY-NC-ND 3.0",
     },
+    11: {
+      title: "Catgirl",
+      artist: "RamArtwork",
+      url: "https://www.deviantart.com/ramartwork/art/Catgirl-608756212",
+      license: "CC-BY-NC-ND 3.0",
+    },
     14: {
       title: "Valeriant Blossom",
       artist: "Dopaprime",

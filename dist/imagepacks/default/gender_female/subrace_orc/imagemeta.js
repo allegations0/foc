@@ -3,6 +3,7 @@
   /* The following is list of direct subdirectories. */
   UNITIMAGE_LOAD_FURTHER = ["bg_pirate", "bg_mystic", "bg_hunter",
     "bg_mercenary", "bg_thief", "bg_foodworker", "bg_metalworker", "bg_mist",
+    "bg_adventurer",
   ]
 
 
@@ -65,6 +66,12 @@
       title: "Giuletta <3",
       artist: "DarkraArt",
       url: "https://www.newgrounds.com/art/view/darkraart/giuletta-3",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    11: {
+      title: "Yazgash",
+      artist: "RamArtwork",
+      url: "https://www.deviantart.com/ramartwork/art/Yazgash-800538497",
       license: "CC-BY-NC-ND 3.0",
     },
     12: {

@@ -16,6 +16,12 @@ UNITIMAGE_CREDITS = {
     url: "https://www.deviantart.com/themefinland/art/Impending-carnage-commission-860706330",
     license: "CC-BY-NC-SA 3.0",
   },
+  3: {
+    title: "Commission: Dragonborn Warlock",
+    artist: "b-cesar",
+    url: "https://www.deviantart.com/b-cesar/art/Commission-Dragonborn-Warlock-853112063",
+    license: "CC-BY-NC-ND 3.0",
+  },
   4: {
     title: "Dragonoid avatar",
     artist: "ThemeFinland",

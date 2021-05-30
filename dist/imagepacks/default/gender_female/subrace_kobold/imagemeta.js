@@ -16,6 +16,12 @@
 
   /* Image credit information. */
   UNITIMAGE_CREDITS = {
+    1: {
+      title: "Spikeless kobold moloch",
+      artist: "Ethrk",
+      url: "https://www.newgrounds.com/art/view/ethrk/spikeless-kobold-moloch",
+      license: "CC-BY-NC 3.0",
+    },
     2: {
       title: "Pasha's Loot",
       artist: "Blazbaros",
@@ -32,6 +38,12 @@
       title: "Kobold Girl",
       artist: "Blazbaros",
       url: "https://www.deviantart.com/blazbaros/art/Kobold-Girl-862093282",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    5: {
+      title: "Lizard Butt Hut",
+      artist: "DragonTherapist",
+      url: "https://www.newgrounds.com/art/view/dragontherapist/lizard-butt-hut",
       license: "CC-BY-NC-ND 3.0",
     },
     6: {

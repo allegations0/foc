@@ -4,10 +4,10 @@
 
   /* Image credit information. */
   UNITIMAGE_CREDITS = {
-    11: {
-      title: "Captive",
-      artist: "saucysorc",
-      url: "https://www.newgrounds.com/art/view/saucysorc/captive",
+    1: {
+      title: "Commission: Kobold Barbarian",
+      artist: "b-cesar",
+      url: "https://www.deviantart.com/b-cesar/art/Commission-Kobold-Barbarian-853112277",
       license: "CC-BY-NC-ND 3.0",
     },
   }

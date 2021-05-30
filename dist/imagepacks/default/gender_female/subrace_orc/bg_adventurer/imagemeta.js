@@ -5,9 +5,9 @@ UNITIMAGE_LOAD_FURTHER = []
 /* Image credit information. */
 UNITIMAGE_CREDITS = {
   1: {
-    title: "COM | Ahra's Kobold | FEARDAKEZ",
-    artist: "FEARDAKEZ",
-    url: "https://www.newgrounds.com/art/view/feardakez/com-ahra-s-kobold-feardakez",
+    title: "Bolar",
+    artist: "RamArtwork",
+    url: "https://www.deviantart.com/ramartwork/art/Bolar-825590283",
     license: "CC-BY-NC-ND 3.0",
   },
 }
