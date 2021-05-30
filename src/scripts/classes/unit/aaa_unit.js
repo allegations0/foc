@@ -685,13 +685,13 @@ setup.Unit = class Unit extends setup.TwineClass {
    */
   getRarity() {
     const value = this.getSlaveValue()
-    if (value >= 40000) {
+    if (value >= 30000) {
       return setup.rarity.legendary
-    } else if (value >= 20000) {
+    } else if (value >= 10000) {
       return setup.rarity.epic
-    } else if (value >= 10000 || State.variables.titlelist.getAllTitles(this).length) {
+    } else if (value >= 5000 || State.variables.titlelist.getAllTitles(this).length) {
       return setup.rarity.rare
-    } else if (value >= 5000) {
+    } else if (value >= 3000) {
       return setup.rarity.uncommon
     } else {
       return setup.rarity.common
