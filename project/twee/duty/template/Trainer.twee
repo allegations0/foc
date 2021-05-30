@@ -1,7 +1,7 @@
 :: DutyTrainer [nobr]
 
 <p>
-Gives level and experience to your slavers.
+Gives levels and experience to your slavers.
 The drill sergeant has a chance to
 give each unit on duty (including themselves) some experience each week.
 (If the chance is higher than 100%, then there is a chance that the drill sergeant
@@ -9,8 +9,8 @@ will give even more exp.)
 </p>
 
 <p>
-In addition, 
-the drill sergeant also automatically level your low-level slavers:
+In addition,
+the drill sergeant automatically levels your low-level slavers:
 it can grant up to
 <<= setup.DRILL_SERGEANT_ATTEMPTS>> levels per week to units whose level
 is lower than the level of the Drill Sergeant, up to maximum of level

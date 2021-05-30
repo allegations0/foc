@@ -7,7 +7,7 @@
 
 <h2><<= _room.getTitleRep()>></h2>
 
-<p>The sex shop is located next to the dungeons in your fort.
+<p>The sex shop is located outside the outer wall of your fort.
 You enter its gaudily decorated entrance, looking to expand your collection of
 sex toys.
 <<if _objects.length>>

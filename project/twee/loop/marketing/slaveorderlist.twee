@@ -9,7 +9,7 @@
 <h2><<= _room.getTitleRep()>></h2>
 
 <p>
-You enter your desk in the room you designate as the marketing office.
+You enter the room you designated as the marketing office.
 <<if _marketer>>
   <<set _unit = _marketer.getAssignedUnit()>>
   <<if _unit && _unit.isAvailable()>>
@@ -39,4 +39,3 @@ You enter your desk in the room you designate as the marketing office.
     <<slaveordercard _displayobj>>
   <</if>>
 <</filterall>>
-

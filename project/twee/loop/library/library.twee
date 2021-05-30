@@ -20,7 +20,7 @@ The <<message 'map of the region'>>
   <<if _u.isHasTrait('per_studious')>>
     Not really surprising given <<their _u>> diligent nature.
   <<elseif _u.isHasTrait('per_curious')>>
-    The inquisitive slaver always enjoy a good read or two.
+    The inquisitive slaver always enjoys a good read or two.
   <<elseif _u.isHasTrait('per_smart')>>
     No doubt <<their _u>> frequent trip to the library is contributing to <<their _u>>
     intelligence.
@@ -31,17 +31,17 @@ The <<message 'map of the region'>>
   <<elseif _u.isHasTrait('per_stubborn')>>
     You sighed, knowing that sooner or later the stubborn slaver will give up reading the book and throw it away.
   <<elseif _u.isHasTrait('per_evil')>>
-    <<They _u>>'s probably reading a book about world domination on two.
+    <<They _u>>'s probably reading a book about world domination or two.
   <<elseif _u.isHasTrait('per_dreamy')>>
     From the drool coming from <<their _u>> <<umouth _u>>, the air-headed slaver
-    seems to enjoy a good day-dream.
+    seems to be enjoying a good day-dream.
   <<else>>
     You walked quietly to try and not disturb the slaver's reading.
   <</if>>
 <<else>>
   Nobody is in the library right now.
 <</if>>
-  You picked an empty seat and begin to plan what you would like to read today.
+  You pick an empty seat and begin to plan what you would like to read today.
 </p>
 
 <<set _forfilter = Object.values(setup.lore).filter(a => a.isVisible())>>

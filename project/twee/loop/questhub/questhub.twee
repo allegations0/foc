@@ -3,7 +3,7 @@
 <<set _quests = $company.player.getQuests()>>
 
 <p>
-You enter your office, where you work to assign slaver teams to quests.
+You enter your office, where you assign slaver teams to quests.
 There are currently <<successtext _quests.length >> quests that
 your company can take.
 <<set _vale = $dutylist.getDuty('scoutvale')>>
@@ -154,7 +154,7 @@ You take a look at the details of these quests...
 <<message '(?)'>>
   <div class='helpcard'>
   In order to complete quests, you assign a team of slavers to the quests.
-  The 
+  The
   (<<successtext 'xx'>> / <<successtextlite 'xx'>> / <<dangertextlite 'xx'>> / <<dangertext 'xx'>>)
   are the <<successtext 'critical success'>> / <<successtextlite 'success'>> /
   <<dangertextlite 'failure'>> / <<dangertext 'disaster'>> chances when you assign
@@ -226,5 +226,3 @@ You take a look at the details of these quests...
 <div id='questholder'>
   <<loadquests>>
 </div>
-
-

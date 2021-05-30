@@ -7,8 +7,7 @@
 
 <h2><<= _room.getTitleRep()>></h2>
 
-<p>You exit the main building of your fort, and enter the prospects hall just outside
-of the fort.
+<p>You exit the outer wall of your fort, and enter the prospects hall just outside.
 <<if _prospects.length>>
   There are <<successtext _prospects.length>> potential slavers here at the moment.
   <<if $company.player.isCanAddUnitWithJob(setup.job.slaver)>>

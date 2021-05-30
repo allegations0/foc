@@ -9,7 +9,7 @@
 <h2><<= _room.getTitleRep()>></h2>
 
 <p>
-You enter the lodgings area designated as the guest rooms.
+You leave the outer wall of your fort and visit the inn rooms.
 You can host your guests here, including
 <<if _unitlist.length > 1>>
 your former slavers when they decide to revisit your fort.

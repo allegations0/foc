@@ -17,15 +17,15 @@
   <<elseif _level <= 5>>
     You have done your first couple of upgrades on your fort, making it slightly more livable.
   <<elseif _level <= 10>>
-    You have cleared the rubbles surrounding the center part of the fort.
+    You have cleared the rubble surrounding the center part of the fort.
   <<elseif _level <= 20>>
-    Most of the smaller rubbles have been cleared out, and your fort is starting to look livable.
+    Most of the smaller rubble have been cleared out, and your fort is starting to look livable.
   <<elseif _level <= 30>>
-    Most of the rubbles have been cleared from your fort, and it's starting to look presentable.
+    Most of the rubble have been cleared from your fort, and it's starting to look presentable.
   <<elseif _level <= 40>>
     You have starting to fix some of the broken infrastructures in the fort back to working condition.
   <<elseif _level <= 50>>
-    All of the rubbles have been cleared from your fort, restoring it to its previous state.
+    All of the rubble have been cleared from your fort, restoring it to its previous state.
   <<elseif _level <= 60>>
     Repairs are made on the fort's secondary level, adding available space to your fort.
   <<elseif _level <= 70>>
@@ -35,7 +35,7 @@
   <<elseif _level <= 90>>
     New structures are starting to be erected to make space for more improvements.
   <<elseif _level <= 100>>
-    New structures decorated your fort, increasing space available.
+    New structures decorate your fort, increasing space available.
   <<elseif _level <= 120>>
     You are starting to build your fort into the surrounding lands, incurring great costs.
   <<elseif _level <= 140>>
@@ -45,15 +45,15 @@
   <<elseif _level <= 180>>
     Your fort now spans a large region including a large open field where your slavers can relax together.
   <<elseif _level <= 200>>
-    Small settlements start to spring around your gigantic fort.
+    Small settlements are starting to spring around your gigantic fort.
   <<elseif _level <= 220>>
     Your fort is effectively a small village by this point.
   <<elseif _level <= 240>>
-    A bustling town surrounds your fort
+    A bustling town surrounds your fort.
   <<elseif _level < 250>>
-    Your fort is almost at the maximum possible size, with townfolks busily attending their business all around.
+    Your fort is almost at the maximum possible size, with townfolk busily attending their business all around.
   <<else>>
-    Your fort is fully upgraded. Together with the surrounding settlement, it truly deserve to be called a proper city.
+    Your fort is fully upgraded. Together with the surrounding settlement, it truly deserves to be called a proper city.
   <</if>>
 
   Currently, this fort has <<successtext $fort.player.getBuildings().length>>
@@ -187,7 +187,3 @@
   <</replace>>
   <<refreshmenu>>
 <</focwidget>>
-
-
-
-

@@ -25,7 +25,7 @@
       <<Yourrep _unit>> is usually holed up here, but <<they _unit>>
       is currently unavailable to attend to <<their _unit>> duties.
     <<else>>
-      There is an unoccupied doctor office inside your hospital for your <<rep _doctor>>.
+      There is an unoccupied doctor office separate from your hospital for your <<rep _doctor>>.
     <</if>>
   <</if>>
   <<if _patients.length>>
@@ -36,15 +36,15 @@
   <<if _mystic>>
     <<set _unit = _mystic.getAssignedUnit()>>
     <<if _unit && _unit.isAvailable()>>
-      In a room next to your hospital,
-      <<rep _unit>> busily perform his duties as your <<rep _mystic>>,
+      In a separate office,
+      <<rep _unit>> busily performs <<their _unit>> duties as your <<rep _mystic>>,
       including making charms for luck,
       <<= setup.Text.Duty.competence(_mystic)>>.
     <<elseif _unit>>
       <<Yourrep _unit>> is usually holed up here, but <<they _unit>>
       is currently unavailable to attend to <<their _unit>> duties.
     <<else>>
-      The room next to your hospital has been transformed into a ritual room for
+      A separate office has been transformed into a ritual room for
       your <<rep _mystic>>. It is empty right now.
     <</if>>
   <</if>>
@@ -82,5 +82,3 @@
 <<for _iunit, _unit range _patients>>
   <<unitcard _unit >>
 <</for>>
-
-

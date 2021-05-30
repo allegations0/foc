@@ -7,9 +7,9 @@
 
 <h2><<= _room.getTitleRep()>></h2>
 
-<p>The slave pens is located just right outside your fort.
+<p>The slave pens are located outside your fort's outer wall.
 <<if _slaves.length>>
-  There are <<successtext _slaves.length>> slaves chained to the pens right now.
+  There are <<successtext _slaves.length>> slaves chained in the pens right now.
   <<if $company.player.isCanAddUnitWithJob(setup.job.slave)>>
     You can take some of them as your slaves.
     If you decide not to, some of them might be gone by the next week.

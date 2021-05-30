@@ -3,7 +3,7 @@
 <p>
 <<set _manager = $dutylist.getUnitIfAvailable('relationshipmanager')>>
 <<if _manager>>
-  Your relationship manager is able to maintain favors with maximum
+  Your relationship manager is able to maintain favors with maximum of
   <<= $favor.getMaxManagedCompanies()>> companies right now.
   This number is based on <<rep _manager>>'s affinity for the job.
   <<set _managed = $favor.getManagedCompanies()>>
@@ -49,7 +49,7 @@ You enter the relations office.
   There is a separate desk for your <<rep _manager>>.
   <<set _unit = _manager.getAssignedUnit()>>
   <<if _unit && _unit.isAvailable()>>
-    <<rep _unit>> busily works there currying favor with other companies, 
+    <<rep _unit>> busily works there currying favor with other companies,
     <<= setup.Text.Duty.competence(_manager)>>.
     <<include 'RelationshipManagerDescribe'>>
   <<elseif _unit>>
@@ -64,7 +64,7 @@ You enter the relations office.
   by building the <<rep setup.buildingtemplate.relationshipmanageroffice>>.
 <</if>>
 <<if _officer>>
-  An adjacent room has been renovated into an office for your
+  A separate room has been renovated into an office for your
   <<rep _officer>>.
   <<set _unit = _officer.getAssignedUnit()>>
   <<if _unit && _unit.isAvailable()>>
@@ -203,5 +203,3 @@ is above <<successtextlite "85.0">>.
     <</message>>
   </div>
 <</if>>
-
-
