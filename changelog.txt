@@ -4,6 +4,10 @@
 
 ### v1.7.0.x
 
+v1.7.0.20: [TODO BEFORE COMMIT]
+
+  - Kobold names.
+
 v1.7.0.19:
 
   - More description updates and text fixes (thanks to Elannil)
