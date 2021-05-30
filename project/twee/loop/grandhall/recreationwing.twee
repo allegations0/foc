@@ -26,7 +26,7 @@ _sissy, _toilet, _maid, _furniture, _punchingbag, _dog,
 <h2><<= _room.getTitleRep()>></h2>
 
 <p>
-The right wing of your fort has been transformed into an entertainment complex where you
+A large wing of your fort has been transformed into an entertainment complex where you
 can host guests and visitors alike.
 <<set _level = _room.getLevel()>>
 <<if _level == 1>>
@@ -44,7 +44,7 @@ can host guests and visitors alike.
 <<elseif _level == 7>>
   The recreation wing is fully decorated, with erotic paintings displayed along the walls.
 <<elseif _level == 8>>
-  The recreation wing stood out from your fort as if it's a completely different area.
+  The recreation wing stands out from your fort as if it's a completely different area.
 <<elseif _level == 9>>
   Your entertainment complex is very well-maintained and fully decorated, impressing slavers and visitors alike.
 <<elseif _level == 10>>
@@ -86,7 +86,7 @@ can host guests and visitors alike.
 <<if _entertainment>>
   <<set _unit = _entertainment.getAssignedUnit()>>
   <<if _unit && _unit.isAvailable()>>
-    Your <<rep _entertainment>> <<rep _unit>> 
+    Your <<rep _entertainment>> <<rep _unit>>
     is busy trying to entertain visitors in the reception hall,
     be it offering refreshments or a welcome fuck.
     <<= setup.Text.Duty.slavevalue(_entertainment)>> accept <<their _unit>> hospitality.
@@ -115,8 +115,7 @@ can host guests and visitors alike.
   <<set _unit = _vaginafuckhole.getAssignedUnit()>>
   <<if _unit && _unit.isAvailable()>>
     Your <<rep _vaginafuckhole>> <<rep _unit>> is located
-    in the <<rep setup.buildingtemplate.vaginafuckhole>> just next to the
-    reception area.
+    in the <<rep setup.buildingtemplate.vaginafuckhole>>.
     <<= setup.Text.Duty.slavevalue(_vaginafuckhole)>> uses <<their _unit>> offered <<uvagina _unit>>.
 
     /* unlock scenes here */
@@ -135,7 +134,7 @@ can host guests and visitors alike.
     While <<yourrep _unit>> is assigned here, <<they _unit>> is currently
     unavailable to attend to <<their _unit>> duty.
   <<else>>
-    The <<rep setup.buildingtemplate.vaginafuckhole>> is located right next to your reception area.
+    There is a building designated as the <<rep setup.buildingtemplate.vaginafuckhole>>.
     It can be staffed with a <<rep _vaginafuckhole>> to attract customers.
   <</if>>
 <</if>>
@@ -163,7 +162,7 @@ can host guests and visitors alike.
     While <<yourrep _unit>> is assigned here, <<they _unit>> is currently
     unavailable to attend to <<their _unit>> duty.
   <<else>>
-    Also adjacent to the reception area is the <<rep setup.buildingtemplate.analfuckhole>>,
+    A room has been designated as the <<rep setup.buildingtemplate.analfuckhole>>,
     where you can assign a slave as an <<rep _analfuckhole>>.
   <</if>>
 <</if>>
@@ -181,7 +180,7 @@ can host guests and visitors alike.
 
     /* unlock scenes here */
     <<if _unit.isHasTrait('training_oral_master')>>
-      Nobody is using the masterful slut right now and while <<they _unit>> has gobbled oh so many cums,
+      Nobody is using the masterful slut right now and while <<they _unit>> has gobbled oh so much cum,
       <<they _unit>> is always hungry for more.
     <<elseif _unit.isHasTrait('training_oral_advanced')>>
       You can see a pair of customers currently using <<their _unit>> mouth right now.
@@ -206,7 +205,7 @@ can host guests and visitors alike.
 <<if _sissy>>
   <<set _unit = _sissy.getAssignedUnit()>>
   <<if _unit && _unit.isAvailable()>>
-    Some kinky customers can be seen patroning the Rent-A-Sissy booth.
+    Some kinky customers can be seen at the Rent-A-Sissy booth.
     <<Rep _unit>> is currently stationed there,
     advertising <<themself _unit>> as an available <<rep _sissy>>.
     <<= setup.Text.Duty.slavevalue(_sissy)>> wants to rent the confusingly-gendered slave.
@@ -224,8 +223,8 @@ can host guests and visitors alike.
     While <<yourrep _unit>> is assigned here, <<they _unit>> is currently
     unavailable to attend to <<their _unit>> duty.
   <<else>>
-    Unfortunately, it is empty right now.
-    You can additionally staff it with a <<rep _sissy>> later.
+    Unfortunately, the <<rep setup.buildingtemplate.sissybooth>> is empty right now.
+    You can staff it with a <<rep _sissy>> later.
   <</if>>
 <</if>>
 </p>
@@ -304,10 +303,10 @@ can host guests and visitors alike.
       Two customers are sitting on <<their _unit>> warm <<ubody _unit>> right now,
       and <<they _unit>> remains frighteningly still in the position.
     <<elseif _unit.isHasTrait('training_endurance_advanced')>>
-      A customer is using <<their _unit>> warm <<ubody _unit>> as a footsool right now.
+      A customer is using <<their _unit>> warm <<ubody _unit>> as a footstool right now.
     <<else>>
       <<They _unit>> is acting as a decorative statue right now, although you can see the
-      occassional twitches and discomfort in <<their _unit>> face.
+      occasional twitches and discomfort in <<their _unit>> face.
     <</if>>
   <<elseif _unit>>
     While <<yourrep _unit>> is assigned here, <<they _unit>> is currently
@@ -339,10 +338,10 @@ can host guests and visitors alike.
     While <<yourrep _unit>> is assigned here, <<they _unit>> is currently
     unavailable to attend to <<their _unit>> duty.
   <<else>>
-    A <<rep setup.buildingtemplate.gym>> has been built in the second floor to allow your slavers as well as customers to
+    A <<rep setup.buildingtemplate.gym>> has been built to allow your slavers as well as customers to
     work out.
     There is nothing of interest there right now --- you can assign a warm body as a
-    <<rep _punchingbag>> to further spice the gym.
+    <<rep _punchingbag>> to spice up the gym.
   <</if>>
 <</if>>
 </p>
@@ -357,10 +356,10 @@ can host guests and visitors alike.
     <<= setup.Text.Duty.slavevalue(_dog)>> wants to give the good dog a bone.
 
     <<if _unit.isHasTrait('training_pet_master')>>
-      As you entered, you watched customers nod in approval as your
+      As you enter, you watch customers nod in approval as your
       dog licks their own <<ugenital _unit>> between sessions.
     <<elseif _unit.isHasTrait('training_pet_advanced')>>
-      As you entered you watched several customers give the good dog a belly scratch,
+      As you enter you watch several customers give the good dog a belly scratch,
       which is then followed up by playing "boner".
     <<else>>
       <<They _unit>> still occasionally breaks character, which ruins the immersion.
@@ -370,8 +369,7 @@ can host guests and visitors alike.
     While <<yourrep _unit>> is assigned here, <<they _unit>> is currently
     unavailable to attend to <<their _unit>> duty.
   <<else>>
-    The <<rep setup.buildingtemplate.kennel>> is located in the basement.
-    It is empty right now, lacking a <<rep _dog>> for customers to play with.
+    The <<rep setup.buildingtemplate.kennel>> is empty right now, lacking a <<rep _dog>> for customers to play with.
   <</if>>
 <</if>>
 </p>
@@ -403,7 +401,7 @@ can host guests and visitors alike.
     While <<yourrep _unit>> is assigned here, <<they _unit>> is currently
     unavailable to attend to <<their _unit>> duty.
   <<else>>
-    A public <<rep setup.buildingtemplate.museum>> is open in your recreation wing.
+    You have constructed a <<rep setup.buildingtemplate.museum>>.
     There are various exhibits shown there, but the human exhibit is currently closed.
     You can assign a <<rep _decoration>> to work there.
   <</if>>
@@ -414,8 +412,7 @@ can host guests and visitors alike.
 <<if _pony>>
   <<set _unit = _pony.getAssignedUnit()>>
   <<if _unit && _unit.isAvailable()>>
-    You can see visitors in the <<rep setup.buildingtemplate.stables>> area
-    adjacent to your recreation wing.
+    You can see visitors in the <<rep setup.buildingtemplate.stables>> area.
     Some customers are riding a cart pulled by
     your <<rep _pony>> <<rep _unit>>.
     <<= setup.Text.Duty.slavevalue(_pony)>> enjoys <<their _unit>> <<ubody _unit>> pulling carts.
@@ -433,7 +430,7 @@ can host guests and visitors alike.
     While <<yourrep _unit>> is assigned here, <<they _unit>> is currently
     unavailable to attend to <<their _unit>> duty.
   <<else>>
-    Outside on a field adjacent to your recreation wing is the
+    Outside on a field is the
     <<rep setup.buildingtemplate.stables>>, where you keep your ponies.
     It is empty right now, lacking any <<rep _pony>>.
   <</if>>
@@ -444,7 +441,7 @@ can host guests and visitors alike.
 <<if _dominatrix>>
   <<set _unit = _dominatrix.getAssignedUnit()>>
   <<if _unit && _unit.isAvailable()>>
-    Your <<rep _dominatrix>> <<rep _unit>> 
+    Your <<rep _dominatrix>> <<rep _unit>>
     works in the <<rep setup.buildingtemplate.stage>> dominating customers.
     <<= setup.Text.Duty.slavevalue(_dominatrix)>> loves being dominated by <<= _unit.getName()>>.
 
@@ -461,8 +458,7 @@ can host guests and visitors alike.
     While <<yourrep _unit>> is assigned here, <<they _unit>> is currently
     unavailable to attend to <<their _unit>> duty.
   <<else>>
-    The <<rep setup.buildingtemplate.stage>> is located in one of the basement rooms.
-    Nothing is on show right now, since you don't have
+    Nothing is on show in the <<rep setup.buildingtemplate.stage>> right now, since you don't have
     a <<rep _dominatrix>>.
   <</if>>
 <</if>>
@@ -474,7 +470,7 @@ can host guests and visitors alike.
   <<set _unit = _theatre.getAssignedUnit()>>
   <<if _unit && _unit.isAvailable()>>
     In the <<rep setup.buildingtemplate.theatre>>,
-    your <<rep _theatre>> <<rep _unit>> 
+    your <<rep _theatre>> <<rep _unit>>
     is busy giving believable plays to the customers.
     <<= setup.Text.Duty.slavevalue(_theatre)>> enjoy the performance.
     /* unlock scenes here */
@@ -506,7 +502,7 @@ can host guests and visitors alike.
   <<rep setup.buildingtemplate.tavern>>.
   <<set _unit = _cumcow.getAssignedUnit()>>
   <<if _unit && _unit.isAvailable()>>
-    The <<udick _unit>> of your <<rep _cumcow>> <<rep _unit>> 
+    The <<udick _unit>> of your <<rep _cumcow>> <<rep _unit>>
     is available to use for their protein intakes.
     <<= setup.Text.Duty.slavevalue(_cumcow)>> likes the taste of the cockmilk.
 
@@ -522,7 +518,7 @@ can host guests and visitors alike.
     While <<yourrep _unit>> is assigned here, <<they _unit>> is currently
     unavailable to attend to <<their _unit>> duty.
   <<else>>
-    It is closed now however,
+    The <<rep setup.buildingtemplate.tavern>> is closed
     until you have a <<rep _cumcow>>.
   <</if>>
 <</if>>
@@ -533,7 +529,7 @@ can host guests and visitors alike.
 <<if _milkcow>>
   <<set _unit = _milkcow.getAssignedUnit()>>
   <<if _unit && _unit.isAvailable()>>
-    Your <<rep _milkcow>> <<rep _unit>> 
+    Your <<rep _milkcow>> <<rep _unit>>
     can be seen wondering in the <<rep setup.buildingtemplate.pasture>>.
     <<= setup.Text.Duty.slavevalue(_milkcow)>> enjoys the taste of <<their _unit>> fresh milk.
 
@@ -548,8 +544,7 @@ can host guests and visitors alike.
     While <<yourrep _unit>> is assigned here, <<they _unit>> is currently
     unavailable to attend to <<their _unit>> duty.
   <<else>>
-    Behind the recreation wing is an
-    open <<rep setup.buildingtemplate.pasture>> for your
+    An open <<rep setup.buildingtemplate.pasture>> has been designated for your
     <<rep _milkcow>> to graze on, when you assign a slave to the duty.
   <</if>>
 <</if>>

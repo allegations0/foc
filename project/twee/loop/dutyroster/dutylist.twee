@@ -24,7 +24,7 @@ slavers on duties will gain experience each week.
     This will give all on-duty slavers some experience
     each week.
   <<elseif _unit>>
-    Normally, youur <<rep _trainer>> <<rep _unit>> is busy instilling discipline
+    Normally, your <<rep _trainer>> <<rep _unit>> is busy instilling discipline
     to the rest of your slavers. But <<they _unit>> is unavailable right now.
   <<else>>
     You can see your <<rep setup.buildingtemplate.traininggrounds>> from the windows of this room,
@@ -34,12 +34,12 @@ slavers on duties will gain experience each week.
 <</if>>
 <<set _tmproom = $fort.player.isHasBuilding('specialistoffice')>>
 <<if _tmproom>>
-  The neighboring room has been designated as the <<rep setup.buildingtemplate.specialistoffice>>,where
+  A separate building has been designated as the <<rep setup.buildingtemplate.specialistoffice>>, where
   contractual specialists can work in lieu of your on-duty slavers when they are busy,
   although these specialists command a hefty pay.
   <<set _replaced = $dutylist.getDuties().filter(duty => duty.isSpecialistActive())>>
   <<if _replaced.length>>
-    Currently, there 
+    Currently, there
     <<if _replaced.length > 1>>
       are <<= _replaced.length>> duties that are
     <<else>>

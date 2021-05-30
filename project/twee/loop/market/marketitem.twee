@@ -9,11 +9,11 @@
 
 <p>
 <<if $fort.player.isHasBuilding(setup.buildingtemplate.booths)>>
-  You have transformed the small clearing behind your grand hall into a bustling
+  You have transformed a small clearing into a bustling
   market. Various people sell their goods
   from the many booths setup in the <<rep setup.buildingtemplate.booths>>.
 <<else>>
-  You have transformed the small clearing behind your grand hall into a
+  You have transformed a small clearing into a
   market area. It is a bit barren right now -- perhaps you can consider
   building the <<rep setup.buildingtemplate.booths>> to populate the place.
 <</if>>
@@ -21,13 +21,13 @@ You came here looking for items to buy.
 <<if _objects.length>>
   You found <<successtext _objects.length>> items for sale right now in the market.
 <<else>>
-  Unfortunately, nobody seems to sell any item that is useful for you right now.
+  Unfortunately, nobody seems to be selling any items that are useful for you right now.
   You can wait until next week for more items for sale.
 <</if>>
 <<set _favor = $favor.getFavor($company.elf)>>
 <<if _favor >= setup.FAVOR_EFFECT_THRESHOLDS[2]>>
   The <<rep $company.elf>> views your company as one of its allies.
-  They often send their finest alchemist to your company, to peddle
+  They often send their finest alchemists to your company, to peddle
   the rare and wondrous <<rep setup.item.mindmend_potion>>.
 <<elseif _favor >= setup.FAVOR_EFFECT_THRESHOLDS[1]>>
   The <<rep $company.elf>> views your company as one of its friends.
@@ -35,12 +35,12 @@ You came here looking for items to buy.
   They even occasionally (but very rarely) carry very high-valued potions in their inventory.
 <<elseif _favor >= setup.FAVOR_EFFECT_THRESHOLDS[0]>>
   The <<rep $company.elf>> views your company warmly.
-  They trusted you enough to send some of their alchemists to the markets,
+  They trust you enough to send some of their alchemists to the markets,
   to sell their potions for you and your slavers.
 <</if>>
 <<set _favor = $favor.getFavor($company.werewolf)>>
 <<if _favor >= setup.FAVOR_EFFECT_THRESHOLDS[2]>>
-  Your company has allied with the <<rep $company.werewolf>>. occasionally,
+  Your company has allied with the <<rep $company.werewolf>>. Occasionally,
   master carpenters from the werewolves' camp can be seen peddling their rare
   <<rep setup.item.f_slaverbed_master>> in the markets.
 <<elseif _favor >= setup.FAVOR_EFFECT_THRESHOLDS[1]>>

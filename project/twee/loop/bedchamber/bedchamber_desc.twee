@@ -243,7 +243,7 @@
 
     <<set _f = _bedchamber.getFurniture(setup.furnitureslot.punishment)>>
     <<if _slaves.length>>
-      When the slaves misbehaves,
+      When the slaves misbehave,
     <<else>>
       <<if _isyou>>
       You have
@@ -294,7 +294,7 @@
     <<if _f.isBasic()>>
       Nothing is covering the worn out walls of the room.
     <<else>>
-      The walls of the room is decorated with <<rep _f>>.
+      The walls of the room are decorated with <<rep _f>>.
     <</if>>
     <<= _f.getBedchamberText()>>
   </p>
@@ -325,7 +325,7 @@
             <</if>>
             <<if _slave.isHasTrait(setup.trait.eq_chastity)>>
               You locked <<their _slave>> <<udick _slave>> back in the chastity cage.
-            <</if>> 
+            <</if>>
           <<else>>
             <<if _bedchamber.getOption('orgasm') == 'yes'>>
               You fondle <<their _slave>> wet pussy and play with <<their _slave>> clit.
@@ -356,7 +356,7 @@
         <<elseif _bedchamber.getOption('food') == 'cum'>>
           <<if $unit.player.isHasDick()>>
             . Shoving your <<udick $unit.player>> into <<= _slaves[0].rep()>>'s mouth,
-            you quicky orgasmed ---
+            you quickly orgasmed ---
             you spray your cum over the slaves' food to make it edible for your slaves.
           <<elseif _slaves[0].isHasDick()>>
             . You proceed to milk <<rep _slaves[0]>>'s <<udick _slaves[0]>>
@@ -434,4 +434,3 @@
       <</message>>
     <</capture>>
   <</if>>
-

@@ -60,8 +60,8 @@ and
   <p>
   <b>Money and prestige.</b>
   Currently, you have <<money $company.player.getMoney()>> and <<prestige $company.player.getPrestige()>>.
-  The maximum amount of money your company ever have is <<money $statistics.get('money_max')>>,
-  while the maximum prestige your company ever have is <<prestige $statistics.get('prestige_max')>>.
+  The maximum amount of money your company ever had is <<money $statistics.get('money_max')>>,
+  while the maximum prestige your company ever had is <<prestige $statistics.get('prestige_max')>>.
   The maximum money gained all at once is <<money $statistics.get('money_max_gain')>>,
   while the maximum money lost at once is <<set _loss = $statistics.get('money_max_lose')>>
   <<moneyloss _loss>>.
@@ -97,7 +97,7 @@ and
     <b>Slavers and slaves.</b>
     You have hired total <<= $statistics.get('slavers_hired')>> slavers
     and <<= $statistics.get('slaves_hired')>> slaves.
-    At one point, you have maximum 
+    At one point, you had a maximum of
     <<= $statistics.get('slavers_max')>> slavers and
     <<= $statistics.get('slaves_max')>> slaves.
     Throughout your career,
@@ -105,10 +105,10 @@ and
     <<= $statistics.get('slavers_lost')>> slavers and
     lost/sold
     <<= $statistics.get('slaves_lost')>> slaves.
-    The total number of slavers that ever appear in the <<rep setup.buildingtemplate.prospectshall>>
+    The total number of slavers that ever appeared in the <<rep setup.buildingtemplate.prospectshall>>
     is
     <<= $statistics.get('slavers_offered')>>, while
-    the total number of slaves that ever appear in the <<rep setup.buildingtemplate.slavepens>>
+    the total number of slaves that ever appeared in the <<rep setup.buildingtemplate.slavepens>>
     is
     <<= $statistics.get('slaves_offered')>>.
     You have interacted
@@ -138,16 +138,16 @@ and
     among those
     <<= $statistics.get('items_bought')>> were bought from the
     <<rep setup.buildingtemplate.market>>,
-    who has offered you total
+    which has offered you a total of
     <<= $statistics.get('items_offered')>> items for sale.
     You have lost
     <<= $statistics.get('items_lost')>> items, including selling
     <<= $statistics.get('items_sold')>> of those.
     You have bought
-    <<= $statistics.get('equipment_bought')>> equipments from the
+    <<= $statistics.get('equipment_bought')>> equipment pieces from the
     <<rep setup.buildingtemplate.forge>> and
     <<rep setup.buildingtemplate.sexshop>>, which combined has offered you
-    <<= $statistics.get('equipment_offered')>> equipments for sale.
+    <<= $statistics.get('equipment_offered')>> equipment pieces for sale.
   </p>
 
   <p>
@@ -158,15 +158,15 @@ and
 
   <p>
     <b>Slave order and contact.</b>
-    You have obtained total <<= $statistics.get('slave_order_obtained')>> slave orders and
+    You have obtained a total of <<= $statistics.get('slave_order_obtained')>> slave orders and
     fulfilled <<= $statistics.get('slave_order_fulfilled')>> of them.
     You have grossed
     <<money $statistics.get('slave_order_money_sum')>> from slave orders,
-    and the maximum of money you get from one slave order is
+    and the maximum money you got from one slave order is
     <<money $statistics.get('slave_order_money_max')>>.
-    The most valuable slave you sold in a slave order is worth
+    The most valuable slave you sold in a slave order was worth
     <<money $statistics.get('slave_order_slave_value_max')>>.
-    You have obtained total
+    You have obtained a total of
     <<= $statistics.get('contact_obtained')>> contacts.
   </p>
 
@@ -181,10 +181,10 @@ and
     <<= $statistics.get('injury_slave_count')>>
     times for a total of
     <<= $statistics.get('injury_slave_week_sum')>> weeks.
-    The longest injury sustained by a slaver lasts for
+    The longest injury sustained by a slaver lasted for
     <<= $statistics.get('injury_slaver_week_max')>> weeks, while on slaves it's
     <<= $statistics.get('injury_slave_week_max')>> weeks.
-    The largest number of slavers that are injured at the same time is
+    The largest number of slavers that were injured at the same time is
     <<= $statistics.get('injury_slaver_simultaneous')>>,
     while for slaves it's
     <<= $statistics.get('injury_slave_simultaneous')>>.
@@ -204,7 +204,7 @@ and
     <<= $statistics.get('boon_count')>>
     times for a total of
     <<= $statistics.get('boon_week_sum')>> weeks.
-    The longest time a slaver receives a boon for is
+    The longest boon a slaver received lasted
     <<= $statistics.get('boon_week_max')>> weeks.
   </p>
 

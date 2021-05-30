@@ -12,8 +12,8 @@
 <<set _rescuer = $dutylist.getDuty('rescuer')>>
 <<set _insurer = $dutylist.getDuty('insurer')>>
 
-<h2><<= _room.getTitleRep()>></h2> 
-  You enter the mission control room, where you can view your teams that are currently going on a mission.
+<h2><<= _room.getTitleRep()>></h2>
+  You enter the mission control room, where you can view your teams that are currently going on quests.
   <<if _rescuer>>
     <<set _unit = _rescuer.getAssignedUnit()>>
     <<if _unit && _unit.isAvailable()>>
@@ -52,7 +52,7 @@
   You can have at most
   <<successtext $company.player.getMaxActiveTeams()>> different teams on a mission at the same time.
   If you want to increase this limit, you can upgrade your <<rep _room>>.
-  You proceed to sit on a desk to view your teams.
+  You proceed to sit at a desk to view your teams.
 <br/>
 
 <<set _teamlist = State.variables.company.player.getTeams()>>
