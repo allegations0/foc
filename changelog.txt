@@ -4,6 +4,13 @@
 
 ### v1.7.0.x
 
+v1.7.0.22:
+
+  - Added 1.25x zoom to fort
+  - Skill focus help text readability fixes.
+  - Fix spoilery perk texts in perk potions.
+  - Fix change skill focus texts
+
 v1.7.0.21:
 
   - DOM-ification for ItemPool an EquipmentPool cards
