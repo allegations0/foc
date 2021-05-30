@@ -85,7 +85,7 @@
   new setup.Trait(
     'subrace_kobold',
     'kobold',
-    'XXX TODO XXX',
+    'A dwarf subspecies of <<rep setup.trait.race_lizardkin>>, small communities of kobolds can occasionally be found living in burrows and caves all across <<lore continent_main>>, as well as across the <<lore region_sea>>. Above ground kobolds are regarded by their <<rep setup.trait.race_lizardkin>> peers as lesser, due to their diminutive stature and generally <<rep setup.trait.skill_submissive>> disposition. However this is because they have adapted to life in the <<lore region_deep>>, making use of their disposition towards <<lore magic_earth>> and general digging abilities to maintain their large tunnel network. What they lack in size they make up for in cleverness, often making use of traps to best intruders they could not fight otherwise.',
     -800,
     {},
     ['common', 'race_lizardkin', ],

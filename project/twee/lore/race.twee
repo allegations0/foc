@@ -292,7 +292,25 @@ light.
 :: LORE_race_kobold [nobr]
 
 <p>
-XXX TODO XXX
+These miniature  <<rep setup.trait.race_lizardkin>> often find
+themselves looked down on, metaphorically and literally, by most
+cultures across <<lore continent_main>>. This outlook was seemingly
+inherited from the unfortunate groups' taller kin, as neither
+<<rep setup.trait.subrace_dragonkin>> or <<rep setup.trait.subrace_lizardkin>>
+have ever looked at them as anything other than lesser servants. This outlook 
+leads only the occasional group to willingly establish a home above ground, 
+with the majority of kobolds living in the <<lore region_deep>> which they
+are well adapted to call home. In the underground, the kobold hierarchy
+follows a loose Theocracy where a counsel of high priests and priestesses
+preside from Gaiakthal within the largest kobold city of Drak Xoth.
+From the city the kobolds maintain an elaborate tunnel system, which
+connects most kobold settlements to the hub. Despite most races not
+respecting kobolds, they do respect profit, driving the occasional
+merchant to brave the dangers of <<lore region_deep>> in order to
+trade goods with the kobolds for their abundance of precious metals
+and gems that they aquired do to the 
+the hundreds of miles of tunnels which effectively double 
+as an extremely large mine.
 </p>
 
 
