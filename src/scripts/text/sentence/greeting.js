@@ -74,6 +74,13 @@ setup.Text.Greeting.nickname = function ({
   }
 
   if ([setup.speech.bold, setup.speech.witty, setup.speech.debauched].includes(speech)) {
+    if (target.isYou()) {
+      if (target.isMale()) {
+        names.push(`bossman`)
+      } else {
+        names.push(`bosswoman`)
+      }
+    }
     if (target.isHasTrait('face_attractive')) {
       if (target.isMale()) {
         names.push(
@@ -228,6 +235,7 @@ setup.Text.Greeting.short = function ({
       `Oh ${tnick},`,
       `Hey ${tnick}, `,
       `Hey ${tnick},`,
+      `Heh ${tnick},`,
       `Hello to you ${tnick},`,
       `Heya ${tnick},`,
       `Ahoy ${tnick},`,
