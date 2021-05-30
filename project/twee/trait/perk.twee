@@ -36,7 +36,7 @@
 <<run new setup.Perk(
     'perk_doppelganged',
     'special perk: doppelganged',
-    "Heal " + setup.PERK_QUEST_DOPPELGANGER_INJURY_HEAL + " weeks of injuries every " + setup.PERK_QUEST_DOPPELGANGER_INJURY_WEEKS + " weeks.",
+    "When at home, heal " + setup.PERK_QUEST_DOPPELGANGER_INJURY_HEAL + " weeks of injuries every " + setup.PERK_QUEST_DOPPELGANGER_INJURY_WEEKS + " weeks.",
     0,
     {
         sex: -0.5,
@@ -49,9 +49,12 @@
         perk_choice_restrictions: [],
         perk_end_of_week_effect: [
             setup.qc.IfThenElse(
-                setup.qres.Function(() => {
-                    return State.variables.calendar.getWeek() % setup.PERK_QUEST_DOPPELGANGER_INJURY_WEEKS == 0;
-                }),
+                setup.qres.And([
+                    setup.qres.Function(() => {
+                        return State.variables.calendar.getWeek() % setup.PERK_QUEST_DOPPELGANGER_INJURY_WEEKS == 0;
+                    }),
+                    setup.qres.Actor('unit', setup.qres.Home()),
+                ]),
                 setup.qc.Heal('unit', setup.PERK_QUEST_DOPPELGANGER_INJURY_HEAL),
                 setup.qc.DoAll([]),
             ),
@@ -63,7 +66,7 @@
 <<run new setup.Perk(
     'perk_harbinger_of_chaos',
     'special perk: harbinger of chaos',
-    "Grant both a blessing and a curse every 13 weeks.",
+    "When at home, grant both a blessing and a curse every 13 weeks.",
     0,
     {
     },
@@ -74,9 +77,12 @@
         perk_choice_restrictions: [],
         perk_end_of_week_effect: [
             setup.qc.IfThenElse(
-                setup.qres.Function(() => {
-                    return State.variables.calendar.getWeek() % 13 == 0;
-                }),
+                setup.qres.And([
+                    setup.qres.Function(() => {
+                        return State.variables.calendar.getWeek() % 13 == 0;
+                    }),
+                    setup.qres.Actor('unit', setup.qres.Home()),
+                ]),
                 setup.qc.DoAll([
                     setup.qc.Blessing('unit', 1, null, false),
                     setup.qc.Blessing('unit', 1, null, true),
@@ -92,7 +98,7 @@
 <<run new setup.Perk(
     'perk_harbinger_of_crow',
     'special perk: harbinger of crows',
-    "Increase skills, but grant a curse every 13 weeks.",
+    "Increase skills, but grant a curse every 13 weeks when at home.",
     0,
     {
         combat: _harbinger_of_crow_skill_boost,
@@ -113,9 +119,12 @@
         perk_choice_restrictions: [],
         perk_end_of_week_effect: [
             setup.qc.IfThenElse(
-                setup.qres.Function(() => {
-                    return State.variables.calendar.getWeek() % 13 == 0;
-                }),
+                setup.qres.And([
+                    setup.qres.Function(() => {
+                        return State.variables.calendar.getWeek() % 13 == 0;
+                    }),
+                    setup.qres.Actor('unit', setup.qres.Home()),
+                ]),
                 setup.qc.DoAll([
                     setup.qc.Blessing('unit', 1, null, true),
                 ]),
@@ -170,9 +179,12 @@
         perk_choice_restrictions: [],
         perk_end_of_week_effect: [
             setup.qc.IfThenElse(
-                setup.qres.Function(() => {
-                    return State.variables.calendar.getWeek() % setup.PERK_CHAOTIC_PERSONALITY_WEEKS == 0;
-                }),
+                setup.qres.And([
+                    setup.qres.Function(() => {
+                        return State.variables.calendar.getWeek() % setup.PERK_CHAOTIC_PERSONALITY_WEEKS == 0;
+                    }),
+                    setup.qres.Actor('unit', setup.qres.Home()),
+                ]),
                 setup.qc.DoAll([
                     setup.qc.PerkChaoticPersonality(),
                 ]),
@@ -185,7 +197,7 @@
 <<run new setup.Perk(
     'perk_wild_magic',
     'perk: wild magic',
-    "Swaps a magic skill with a random one every 13 weeks.",
+    "When at home, swaps a magic skill with a random one every 9 weeks.",
     0,
     {},
     ['perk', 'perkspecial', ],
@@ -199,9 +211,12 @@
         ],
         perk_end_of_week_effect: [
             setup.qc.IfThenElse(
-                setup.qres.Function(() => {
-                    return State.variables.calendar.getWeek() % 13 == 0;
-                }),
+                setup.qres.And([
+                    setup.qres.Function(() => {
+                        return State.variables.calendar.getWeek() % 9 == 0;
+                    }),
+                    setup.qres.Actor('unit', setup.qres.Home()),
+                ]),
                 setup.qc.WildMagic('unit'),
                 setup.qc.DoAll([]),
             ),
@@ -494,7 +509,7 @@
 <<run new setup.Perk(
     'perk_tail',
     'perk: tail',
-    "When at home, Grow a random tail every 17 weeks.",
+    "When at home, Grow a random tail every 12 weeks.",
     0,
     {},
     ['perk', 'perkstandard', ],
@@ -510,7 +525,7 @@
             setup.qc.IfThenElse(
                 setup.qres.And([
                     setup.qres.Function(() => {
-                        return State.variables.calendar.getWeek() % 17 == 0;
+                        return State.variables.calendar.getWeek() % 12 == 0;
                     }),
                     setup.qres.Actor('unit', setup.qres.Home()),
                 ]),

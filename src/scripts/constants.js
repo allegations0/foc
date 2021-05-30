@@ -371,7 +371,7 @@ setup.PERK_TRAUMA_PENALTY_REDUCTION = 0.8
 setup.PERK_CORRUPTION_PENALTY_REDUCTION = 0.8
 
 // amount of skill bonus increased from boon
-setup.PERK_BOON_BONUS_INCREASE = 0.5
+setup.PERK_BOON_BONUS_INCREASE = 0.4
 
 // amount of sluttiness limit increased
 setup.PERK_SLUTTINESS_LIMIT_INCREASE = 15
@@ -416,10 +416,10 @@ setup.PERK_QUEST_DOPPELGANGER_WEEKS = 30
 setup.PERK_QUEST_DOPPELGANGER_INJURY_HEAL = 5
 
 // doppelganged healer injuries every xxx weeks
-setup.PERK_QUEST_DOPPELGANGER_INJURY_WEEKS = 20
+setup.PERK_QUEST_DOPPELGANGER_INJURY_WEEKS = 16
 
 // harbinger of crows skill bonus
-setup.PERK_QUEST_HARBINGER_OF_CROW_SKILL_BONUS = 0.10
+setup.PERK_QUEST_HARBINGER_OF_CROW_SKILL_BONUS = 0.09
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 /* Corruption trait related */
