@@ -62,6 +62,12 @@ const demonkin_nameset = {
   surname: () => setup.rng.choice(setup.NAME_demonkin_surname),
 }
 
+const kobold_nameset = {
+  male_first: () => setup.NAME_kobold_male_first_name(),
+  female_first: () => setup.NAME_kobold_female_first_name(),
+  surname: () => setup.NAME_kobold_surname(),
+}
+
 // lizardkin does not have surname
 const lizardkin_nameset = {
   male_first: () => setup.rng.choice(setup.NAME_lizardkin_male_first_name),
@@ -120,8 +126,7 @@ export function generateUnitName(traits) {
   } else if (traits.includes(setup.trait.subrace_lizardkin)) {
     nameset = lizardkin_nameset
   } else if (traits.includes(setup.trait.subrace_kobold)) {
-    /* XXX TODO XXX */
-    nameset = lizardkin_nameset
+    nameset = kobold_nameset
   } else if (traits.includes(setup.trait.subrace_demon)) {
     nameset = demon_nameset
   } else if (traits.includes(setup.trait.subrace_demonkin)) {

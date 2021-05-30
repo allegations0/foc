@@ -1,6 +1,6 @@
 
 /* from
-https://github.com/cmho/belfnames/blob/master/nelves.rb
+https://github.com/LukeMS/lua-namegen/blob/master/data/creatures.cfg
 */
 
 setup.NAME_demon_male_first_name = function () {

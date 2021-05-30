@@ -1,9 +1,9 @@
 
 /* from
-https://github.com/cmho/belfnames/blob/master/nelves.rb
+https://github.com/LukeMS/lua-namegen/blob/master/data/creatures.cfg
 */
 
-setup.NAME_demon_female_first_name = function() {
+setup.NAME_demon_female_first_name = function () {
   const firstpart = [
     "Aag", "Karg", "Ulthu", "Alur", "Khark", "Urz", "Arak", "Krau", "Uti",
     "Az", "Kriv", "Uznid", "Azik", "Kuaz", "Virn", "Bral", "Kudu", "Vlaaj",
@@ -16,7 +16,7 @@ setup.NAME_demon_female_first_name = function() {
   const secondpart = [
     "anil", "bau", "diu", "dusla", "giu", "ija", "izil", "jiul", "lihyl",
     "lin", "lyrr", "nalu", "rhyl", "rula", "skiu", "sula", "ulla", "xhiu",
-    "zihyl", "ziu", "emonia", "eonia", 
+    "zihyl", "ziu", "emonia", "eonia",
   ]
   var firstrand = setup.rng.choice(firstpart)
   var secondrand = setup.rng.choice(secondpart)

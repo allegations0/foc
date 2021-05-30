@@ -1,9 +1,9 @@
 
 /* from
-https://github.com/cmho/belfnames/blob/master/nelves.rb
+https://github.com/LukeMS/lua-namegen/blob/master/data/creatures.cfg
 */
 
-setup.NAME_dragonkin_female_first_name = function() {
+setup.NAME_dragonkin_female_first_name = function () {
 
   const firstpart = [
     "Abra", "Har", "Phrixu", "Adastra", "Helio", "Porphyro", "Adra", "Huro",
