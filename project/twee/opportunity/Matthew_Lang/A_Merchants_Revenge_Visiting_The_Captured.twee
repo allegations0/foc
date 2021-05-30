@@ -93,13 +93,16 @@ setup.qc.VarSet('mlang_merchantrevenge_banditslave', '1', -1),
     costs: [ /* costs */
     ],
     restrictions: [ /* restrictions */
-      setup.qres.Or([
-setup.qres.VarEqual('mlangmerchantprinceflirt', '1'),
-setup.qres.And([
-setup.qres.VarNull('mlangmerchantprinceflirt'),
-setup.qres.Player(setup.qres.AnyTrait([setup.trait.face_attractive, setup.trait.face_beautiful], true))
-])
-]),
+      setup.qres.Through(
+            setup.qres.Or([
+        setup.qres.VarEqual('mlangmerchantprinceflirt', '1'),
+        setup.qres.And([
+        setup.qres.VarNull('mlangmerchantprinceflirt'),
+        setup.qres.Player(setup.qres.AnyTrait([setup.trait.face_attractive, setup.trait.face_beautiful], true))
+        ])
+        ]),
+        'The merchant must want to have sex with you...',
+      ),
     ],
     outcomes: [ /* outcomes */
       setup.qc.MoneyCustom(200),
