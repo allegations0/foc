@@ -31,23 +31,3 @@
     f_wall_good: 1,
   }
 )>>
-
-
-<<run new setup.ItemPool(
-  'furniture_master',
-  {
-    f_slaverbed_master: 1,
-    f_slavebed_master: 1,
-    f_foodtray_master: 1,
-    f_drinktray_master: 1,
-    f_reward_master: 1,
-    f_punishment_master: 1,
-    f_lighting_master: 1,
-    f_tile_master: 1,
-    f_object_master: 1,
-    f_wall_master: 1,
-  }
-)>>
-
-
-

@@ -10,6 +10,24 @@ setup.ItemPool = class ItemPool {
     setup.itempool[key] = this
   }
 
+  /**
+   * @param {boolean} [is_normalize]
+   * @returns {Array<[any, number]>}
+   */
+  getItemChances(is_normalize) {
+    /**
+     * @type {Array<[any, number]>}
+     */
+    const chances = []
+    for (const key in this.item_chances) {
+      chances.push([key, this.item_chances[key]])
+    }
+    if (is_normalize) {
+      setup.rng.normalizeChanceArray(chances)
+    }
+    return chances
+  }
+
   getName() {
     return this.key
   }
@@ -18,8 +36,20 @@ setup.ItemPool = class ItemPool {
     return setup.repMessage(this, 'itempoolcardkey')
   }
 
+  /**
+   * @returns {number}
+   */
+  getAverageValue() {
+    const chances_copy = this.getItemChances(/* normalize = */ true)
+    let value = 0.0
+    for (const [item_key, chance] of chances_copy) {
+      value += chance * (setup.item[item_key].getValue() || 0)
+    }
+    return Math.round(value)
+  }
+
   generateItem() {
-    var item_key = setup.rng.sampleObject(this.item_chances, true)
+    var item_key = setup.rng.sampleObject(this.getItemChances(), true)
     return setup.item[item_key]
   }
 }

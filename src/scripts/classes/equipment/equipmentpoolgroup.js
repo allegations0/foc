@@ -12,10 +12,39 @@ setup.EquipmentPoolGroup = class EquipmentPoolGroup extends setup.EquipmentPool 
     this.group_chances = group_chances
   }
 
+  /**
+   * @param {boolean} [is_normalize]
+   * @returns {Array<[any, number]>}
+   */
+  getEquipmentPoolChances(is_normalize) {
+    /**
+     * @type {Array<[any, number]>}
+     */
+    const chances = []
+    for (const key in this.group_chances) {
+      chances.push([key, this.group_chances[key]])
+    }
+    if (is_normalize) {
+      setup.rng.normalizeChanceArray(chances)
+    }
+    return chances
+  }
+
   generateEquipment() {
     var key = setup.rng.sampleObject(this.group_chances, true)
     var pool = setup.equipmentpool[key]
     return pool.generateEquipment()
+  }
+
+  /**
+   * @returns {number}
+   */
+  getAverageValue() {
+    let average = 0.0
+    for (const [pool_key, chance] of this.getEquipmentPoolChances()) {
+      average += chance * setup.equipmentpool[pool_key].getAverageValue()
+    }
+    return Math.round(average)
   }
 }
 

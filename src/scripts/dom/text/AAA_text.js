@@ -56,3 +56,12 @@ setup.DOM.Text.infolite = function (text) {
   return html`<span class='infotextlite'>${text.toString()}</span>`
 }
 
+/**
+ * @param {number} number
+ * @returns {setup.DOM.Node}
+ */
+setup.DOM.Text.percentage = function (number) {
+  return html`${(number * 100).toFixed(2)}%`
+}
+
+
