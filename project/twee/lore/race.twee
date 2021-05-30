@@ -165,23 +165,26 @@ them minor power to manipulate the surrounding plants.
 <p>
 A species of <<rep setup.trait.race_elf>> who calls the <<lore region_deep>>
 their home.
-They have adapted to the darkness of the deeprealm, gaining night vision
-and being able to blend with the darkness in exchange for some suspectibility to light.
-Thanks to having to live in the harsh <<lore region_deep>>,
-the drow nurtures a somewhat cruel and merciless community,
-where only the cunning and strong would survive.
-As a result, the drow has a reputation for being cruel and evil,
-although one could still find the occassional kind-hearted or honorable drow.
-Living in the <<lore region_deep>> and often close to the thick Mist gives the
-drow a natural affinity to the domain of <<lore magic_dark>>, which only
-further enhances the image of a cruel drow.
+They have adapted to the darkness of the deeprealm, no longer requiring sunlight
+to be healthy as well as being able to blend in with the darkness.
+However, this makes them somewhat susceptible to bright light, a weakness
+one must exploit well when fighting against the drows.
+</p>
+
+</p>
+To survive in the harsh <<lore region_deep>>,
+the drow nurtures a somewhat cruel and merciless community.
+There, only the cunning and strong would survive,
+which is perhaps the reason why most people view the drows as a generally cruel or evil race.
+The drow has a natural affinity to the domain of <<lore magic_dark>>, which only
+enhances this image of a cruel drow further.
+There are certainly honorable or kind drows, but they are not very common.
 </p>
 
 <p>
-The drow culture is also reflected in their politics,
-and one must never take a drow's gift at its face value.
-A surface advise is that whenever one deals with the drows,
-there will always a be a dagger at your back -- you
+The drow culture is also reflected in their politics.
+A wise person would never take a drow's gift at its face value.
+Whenever one deals with the drows, there will always a be a dagger at your back -- you
 just don't know when it will be coming to stab you in the back.
 </p>
 
@@ -292,27 +295,50 @@ light.
 :: LORE_race_kobold [nobr]
 
 <p>
-These miniature  <<rep setup.trait.race_lizardkin>> often find
-themselves looked down on, metaphorically and literally, by most
-cultures across <<lore continent_main>>. This outlook was seemingly
-inherited from the unfortunate groups' taller kin, as neither
-<<rep setup.trait.subrace_dragonkin>> or <<rep setup.trait.subrace_lizardkin>>
-have ever looked at them as anything other than lesser servants. This outlook 
-leads only the occasional group to willingly establish a home above ground, 
-with the majority of kobolds living in the <<lore region_deep>> which they
-are well adapted to call home. In the underground, the kobold hierarchy
-follows a loose Theocracy where a counsel of high priests and priestesses
-preside from Gaiakthal within the largest kobold city of Drak Xoth.
-From the city the kobolds maintain an elaborate tunnel system, which
-connects most kobold settlements to the hub. Despite most races not
-respecting kobolds, they do respect profit, driving the occasional
-merchant to brave the dangers of <<lore region_deep>> in order to
-trade goods with the kobolds for their abundance of precious metals
-and gems that they aquired do to the 
-the hundreds of miles of tunnels which effectively double 
-as an extremely large mine.
+A subrace of <<rep setup.trait.race_lizardkin>> that can be mostly found
+in the <<lore region_deep>>.
+Like the <<lore race_lizardkin>> and the <<lore race_dragonkin>>,
+their body is covered in scales, complete with a long and relatively powerful tail.
+Their most distinctive feature is their height --
+almost all kobolds are small in stature, around half the height of an average human.
+Kobolds have very visible draconic heritage, and very rarely a kobold would be born
+with dragon wings that they can use to fly.
 </p>
 
+</p>
+As a result of their height, most
+<<rep setup.trait.subrace_dragonkin>> and <<rep setup.trait.subrace_lizardkin>>
+would look down on them (both metaphorically and literally),
+and consider them as nothing but useful servants.
+Historians have theorized that this is perhaps the main reason why
+a kobold exodus occurred in the past, driving most of them to retreat into the
+<<lore region_deep>>, away from their more haughty lizardkin relatives.
+Many kobold settlements have grown and thrived beneath the grounds.
+</p>
+
+<p>
+Many kobolds share the same beliefs,
+and most community would follow the counsels of high priests and priestesses.
+The archpriest presides in Gaiakthal, located within the largest kobold city of Drak Xoth.
+It is unclear what exactly they worship -- some says it is some long-lost gods of the dragonkin,
+while others say it is a living dragonkin deity that still lives somewhere even today.
+</p>
+
+<p>
+In addition to making use of the grand <<lore region_deep>> highways,
+the kobolds also maintain an elaborate tunnel systems, providing a secondary connection
+between nearby settlements.
+While people do not usually look up to kobolds, they would still do trading with them.
+The kobolds are excellent miners, and precious metals are abundant in the <<lore region_deep>>.
+Some kobolds are often <<rep setup.trait.skill_creative>>, making them excellent craftsman.
+Some kobolds are capable of creating intricate traps and buildings,
+perhaps to compensate for their relative lack of combat abilities.
+</p>
+
+<p>
+Kobolds are attuned to the domain of the <<lore magic_earth>>, a gift they would
+utilize very well in tunneling through the earth.
+</p>
 
 :: LORESETUP_race_dragonkin [lore]
 

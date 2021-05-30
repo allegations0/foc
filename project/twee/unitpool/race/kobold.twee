@@ -19,6 +19,7 @@
     bg_merchant: setup.POOL_BG_COMMON_1,
 
     bg_artisan: setup.POOL_BG_UNCOMMON_2,
+    bg_priest: setup.POOL_BG_UNCOMMON_2,
 
     bg_slave: setup.POOL_BG_UNCOMMON_2,
     bg_unemployed: setup.POOL_BG_UNCOMMON_2,
@@ -41,7 +42,6 @@
     bg_mercenary: setup.POOL_BG_EPIC_4,
     bg_monk: setup.POOL_BG_EPIC_4,
     bg_slaver: setup.POOL_BG_EPIC_4,
-    bg_priest: setup.POOL_BG_EPIC_4,
     bg_wiseman: setup.POOL_BG_EPIC_4,
 
     bg_nomad: setup.POOL_BG_EPIC_4,
@@ -85,8 +85,8 @@
     /* =========== */
 
     skill_creative: 0.1,
-    magic_earth: 0.1,
-    magic_earth_master: 0.01,
+    magic_earth: 0.05,
+    magic_earth_master: 0.005,
 
     /* =========== */
     /* PHYSICAL */
@@ -111,7 +111,7 @@
     legs_dragonkin: 1.0,
     tail_dragonkin: 1.0,
     dick_dragonkin: 0.9,
-    wings_dragonkin: 0.01,
+    wings_dragonkin: 0.005,
 
   },
   {  /* trait dispreferences */
