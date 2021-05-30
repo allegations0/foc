@@ -111,8 +111,13 @@ setup.Unit.prototype.addTrait = function (trait, trait_group, is_replace) {
         if (current.length >= limit) {
           tag_limit_reached = true
           if (this.isYourCompany() || State.variables.gDebug) {
-            setup.notify(`a|Rep <<dangertext 'a|fail'>> to gain ${new_trait.rep()} because a|they already a|have too many traits of this same type`,
-              { a: this })
+            if (new_trait.getTags().includes('perk')) {
+              setup.notify(`a|Rep <<dangertext 'a|fail'>> to gain ${new_trait.rep()} because a|they already a|have too many perks! You can reset a|their perks using the ${setup.item.potion_perk.rep()}.`,
+                { a: this })
+            } else {
+              setup.notify(`a|Rep <<dangertext 'a|fail'>> to gain ${new_trait.rep()} because a|they already a|have too many traits of this same type`,
+                { a: this })
+            }
           }
           break
         }

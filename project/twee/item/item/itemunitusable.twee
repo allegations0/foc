@@ -111,7 +111,10 @@
   value: 10000,   /* value */
   unit_restrictions: [ /* restrictions */
     setup.qres.Job(setup.job.slaver),
-    setup.qres.AnyTrait(setup.TraitHelper.getAllTraitsOfTags(['perk'])),
+    setup.qres.Through(
+      setup.qres.AnyTrait(setup.TraitHelper.getAllTraitsOfTags(['perk'])),
+      "Knows any perk",
+    ),
     setup.qres.Building('warroom'),
   ],
   effects: [ /* outcomes */
