@@ -43,8 +43,6 @@
 <<include InitItemClass>>
 <<include InitItem>>
 
-<<include InitRarity>>
-
 <<include InitFurniture>>
 
 <<include InitGenericQuestDifficulties>>

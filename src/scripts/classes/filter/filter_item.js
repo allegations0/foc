@@ -73,6 +73,12 @@ setup.MenuFilter._MENUS.item = {
     icon_menu: true,
     options: getFurnitureSlotFilters,
   },
+  rarity: {
+    title: 'Rarity',
+    default: 'All',
+    icon_menu: true,
+    options: MenuFilterHelper.rarityFilters,
+  },
   sortskill: {
     title: 'Skill',
     default: 'All',
@@ -86,6 +92,8 @@ setup.MenuFilter._MENUS.item = {
       nameup: MenuFilterHelper.nameup,
       valuedown: MenuFilterHelper.valuedown,
       valueup: MenuFilterHelper.valueup,
+      raritydown: MenuFilterHelper.raritydown,
+      rarityup: MenuFilterHelper.rarityup,
     }
   },
   display: {

@@ -1,3 +1,5 @@
+import { IMPORTABLE } from "../../constants"
+
 setup.rarity = {}
 
 setup.Rarity = class Rarity extends setup.TwineClass {
@@ -44,10 +46,33 @@ setup.Rarity = class Rarity extends setup.TwineClass {
     return `setup.rarity.${this.key}`
   }
 
+  getIconTriangleClass() {
+    return `rarity-${this.key}`
+  }
+
+  getTextColorClass() {
+    return `text-rarity-${this.key}`
+  }
+
+  getBorderColorClass() {
+    return `border-rarity-${this.key}`
+  }
+
+  getImage() {
+    return `img/rarity/${this.key}.svg`
+  }
+
+  getImageRep() {
+    const img = `<img src="${setup.escapeHtml(setup.resolveImageUrl(this.getImage()))}" />`
+    return `<span class='trait' data-tooltip="${this.getName()}">${img}</span>`;
+  }
+
   /**
    * @returns {string}
    */
-  rep() { return `<span data-tooltip="${setup.escapeHtml(this.getDescription())}">${this.getName()}</span>` }
+  rep() {
+    return this.getImageRep()
+  }
 
   /**
    * @returns {number}
@@ -80,54 +105,62 @@ setup.Rarity = class Rarity extends setup.TwineClass {
     )
   }
 
-  static initRarities() {
-    setup.rarity.always = new setup.Rarity({
-      key: 'always',
-      name: 'Always',
-      description: `Will triggered/scouted whenever possible`,
-      is_forced: true,
-    })
-
-    setup.rarity.common = new setup.Rarity({
-      key: 'common',
-      name: 'Common',
-      description: `1 every 2 quests/events`,
-      frequency: setup.RARITY_COMMON_FREQUENCY
-    })
-
-    setup.rarity.uncommon = new setup.Rarity({
-      key: 'uncommon',
-      name: 'Uncommon',
-      description: `1 every 4 quests/events`,
-      frequency: setup.RARITY_UNCOMMON_FREQUENCY
-    })
-
-    setup.rarity.rare = new setup.Rarity({
-      key: 'rare',
-      name: 'Rare',
-      description: `1 every 8 quests/events`,
-      frequency: setup.RARITY_RARE_FREQUENCY
-    })
-
-    setup.rarity.epic = new setup.Rarity({
-      key: 'epic',
-      name: 'Epic',
-      description: `1 every 16 quests/events`,
-      frequency: setup.RARITY_EPIC_FREQUENCY
-    })
-
-    setup.rarity.legendary = new setup.Rarity({
-      key: 'legendary',
-      name: 'Legendary',
-      description: `1 every 32 quests/events`,
-      frequency: setup.RARITY_LEGENDARY_FREQUENCY
-    })
-
-    setup.rarity.never = new setup.Rarity({
-      key: 'never',
-      name: 'Never',
-      description: `Never gets scouted/triggered`,
-      frequency: setup.RARITY_NEVER_FREQUENCY
-    })
+  /**
+   * @param {setup.Rarity} rarity1 
+   * @param {setup.Rarity} rarity2 
+   */
+  static RarityCmp(rarity1, rarity2) {
+    const idx1 = Object.keys(setup.rarity).indexOf(rarity1.key)
+    const idx2 = Object.keys(setup.rarity).indexOf(rarity2.key)
+    return idx1 - idx2
   }
 }
+
+setup.rarity.always = new setup.Rarity({
+  key: 'always',
+  name: 'Always',
+  description: `Will triggered/scouted whenever possible`,
+  is_forced: true,
+})
+
+setup.rarity.common = new setup.Rarity({
+  key: 'common',
+  name: 'Common',
+  description: `1 every 2 quests/events`,
+  frequency: setup.RARITY_COMMON_FREQUENCY
+})
+
+setup.rarity.uncommon = new setup.Rarity({
+  key: 'uncommon',
+  name: 'Uncommon',
+  description: `1 every 4 quests/events`,
+  frequency: setup.RARITY_UNCOMMON_FREQUENCY
+})
+
+setup.rarity.rare = new setup.Rarity({
+  key: 'rare',
+  name: 'Rare',
+  description: `1 every 8 quests/events`,
+  frequency: setup.RARITY_RARE_FREQUENCY
+})
+
+setup.rarity.epic = new setup.Rarity({
+  key: 'epic',
+  name: 'Epic',
+  description: `1 every 16 quests/events`,
+  frequency: setup.RARITY_EPIC_FREQUENCY
+})
+
+setup.rarity.legendary = new setup.Rarity({
+  key: 'legendary',
+  name: 'Legendary',
+  description: `1 every 32 quests/events`,
+  frequency: setup.RARITY_LEGENDARY_FREQUENCY
+})
+
+setup.rarity.never = new setup.Rarity({
+  key: 'never',
+  name: 'Never',
+  description: `Never gets scouted/triggered`,
+  frequency: setup.RARITY_NEVER_FREQUENCY
+})

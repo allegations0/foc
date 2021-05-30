@@ -38,6 +38,21 @@ setup.MarketObject = class MarketObject extends setup.TwineClass {
     market.addObject(this)
   }
 
+  /**
+   * @return {setup.Rarity}
+   */
+  getRarity() {
+    if (this.isInfinite()) {
+      return setup.rarity.always
+    }
+    const object = this.getObject()
+    if ('getRarity' in object) {
+      return object.getRarity()
+    } else {
+      return setup.rarity.common
+    }
+  }
+
   rep() { return this.getObject().rep() }
 
   getExpiresIn() { return this.expires_in }

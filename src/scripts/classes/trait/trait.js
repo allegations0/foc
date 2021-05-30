@@ -133,41 +133,25 @@ setup.Trait = class Trait extends setup.TwineClass {
   }
 
   /**
-   * @returns {Rarity}
+   * @returns {setup.Rarity}
    */
   getRarity() {
     const value = this.getSlaveValue()
     if (value >= setup.MONEY_TRAIT_UNICORN)
-      return 'legendary'
+      return setup.rarity.legendary
     else if (value >= setup.MONEY_TRAIT_RARE)
-      return 'rare'
+      return setup.rarity.rare
     else if (value >= setup.MONEY_TRAIT_MEDIUM)
-      return 'uncommon'
+      return setup.rarity.uncommon
     else if (value < 0)
-      return 'negative'
+      return setup.rarity.never
     else
-      return 'common'
-  }
-
-  _getRarityCssClass() {
-    const value = this.getSlaveValue()
-    if (value >= setup.MONEY_TRAIT_UNICORN)
-      return "rarity-legendary"
-    else if (value >= setup.MONEY_TRAIT_RARE)
-      return "rarity-epic"
-    else if (value >= setup.MONEY_TRAIT_MEDIUM)
-      return "rarity-rare"
-    else if (value < 0)
-      return "rarity-negative"
-    else
-      return "rarity-common"
+      return setup.rarity.common
   }
 
   _getCssAttrs() {
     let style = ''
-    let classes = "trait " + this._getRarityCssClass()
-
-    classes += ` ${this._getRarityCssClass()}`
+    let classes = "trait " + this.getRarity().getIconTriangleClass()
 
     if (this.icon_settings.tier)
       classes += " trait-tier" + this.icon_settings.tier

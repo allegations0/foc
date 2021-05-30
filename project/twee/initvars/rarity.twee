@@ -1,3 +1,0 @@
-:: InitRarity [nobr]
-
-<<run setup.Rarity.initRarities()>>

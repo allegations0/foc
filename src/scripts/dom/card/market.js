@@ -19,6 +19,10 @@ function marketObjectNameActionMenu(market, market_object, market_refresh_callba
    */
   const extras = []
 
+  menus.push(menuItemTitle({
+    text: market_object.getRarity().rep(),
+  }))
+
   if ('rep' in market_object.getObject()) {
     menus.push(menuItemTitle({
       text: domCardRep(market_object.getObject()),
@@ -32,6 +36,7 @@ function marketObjectNameActionMenu(market, market_object, market_refresh_callba
         text: price ? html`Buy for ${setup.DOM.Util.money(price)}` :
           html`Get for ${setup.DOM.Text.successlite('Free')}`,
         callback: () => {
+          setup.DevToolHelper.saveScrollPos()
           market.buyObject(market_object)
           market_refresh_callback()
         }
@@ -111,7 +116,7 @@ function marketObjectNameActionMenu(market, market_object, market_refresh_callba
 function marketObjectFragment(
   market, market_object, market_refresh_callback, market_object_display_callback, hide_actions, is_can_delete) {
   return html`
-      <div class='marketobjectcard'>
+      <div class='marketobjectcard ${market_object.getRarity().getBorderColorClass()}'>
         ${setup.DOM.Util.menuItemToolbar(
     marketObjectNameActionMenu(
       market, market_object, market_refresh_callback, hide_actions, is_can_delete,
@@ -192,16 +197,20 @@ setup.DOM.Card.market = function ({ market, on_buy_callback, is_can_delete }) {
   const market_display_settings = State.variables.menufilter.get(menu, 'display')
   const hide_actions = false
 
-  return setup.DOM.Util.filterAll({
-    menu: menu,
-    filter_objects: for_filter,
-    display_objects: display_objects,
-    display_callback: (display_obj) => {
-      if (market_display_settings == 'compact') {
-        return marketObjectCompactFragment(market, display_obj, market_refresh_callback, hide_actions, is_can_delete)
-      } else {
-        return marketObjectFragment(market, display_obj, market_refresh_callback, display_callback, hide_actions, is_can_delete)
-      }
-    },
+  return setup.DOM.Util.async(() => {
+    const res = setup.DOM.Util.filterAll({
+      menu: menu,
+      filter_objects: for_filter,
+      display_objects: display_objects,
+      display_callback: (display_obj) => {
+        if (market_display_settings == 'compact') {
+          return marketObjectCompactFragment(market, display_obj, market_refresh_callback, hide_actions, is_can_delete)
+        } else {
+          return marketObjectFragment(market, display_obj, market_refresh_callback, display_callback, hide_actions, is_can_delete)
+        }
+      },
+    })
+    setup.DevToolHelper.restoreScrollPos()
+    return res
   })
 }

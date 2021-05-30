@@ -219,6 +219,8 @@ delete setup.MenuFilter._MENUS.unitmarket.sort.options.joindown
 delete setup.MenuFilter._MENUS.unitmarket.sort.options.joinup
 delete setup.MenuFilter._MENUS.unitmarket.sort.options.leveldown
 delete setup.MenuFilter._MENUS.unitmarket.sort.options.levelup
+setup.MenuFilter._MENUS.unitmarket.sort.options.raritydown = MenuFilterHelper.raritydown
+setup.MenuFilter._MENUS.unitmarket.sort.options.rarityup = MenuFilterHelper.rarityup
 
 setup.MenuFilter._MENUS.unitmarket['display'] = {
   title: 'Display',
@@ -230,6 +232,13 @@ setup.MenuFilter._MENUS.unitmarket['display'] = {
       title: 'Compact',
     },
   }
+}
+
+setup.MenuFilter._MENUS.unitmarket.rarity = {
+  title: 'Rarity',
+  default: 'All',
+  icon_menu: true,
+  options: MenuFilterHelper.rarityFilters,
 }
 
 setup.MenuFilter._MENUS.unitduty = Object.assign({}, setup.MenuFilter._MENUS.unit)

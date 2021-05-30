@@ -48,6 +48,12 @@ setup.MenuFilter._MENUS.equipment = {
     icon_menu: true,
     options: getEquipmentSlotFilters,
   },
+  rarity: {
+    title: 'Rarity',
+    default: 'All',
+    icon_menu: true,
+    options: MenuFilterHelper.rarityFilters,
+  },
   sortskill: {
     title: 'Skill',
     default: 'All',
@@ -63,6 +69,8 @@ setup.MenuFilter._MENUS.equipment = {
       valueup: MenuFilterHelper.valueup,
       sluttinessdown: MenuFilterHelper.sluttinessdown,
       sluttinessup: MenuFilterHelper.sluttinessup,
+      raritydown: MenuFilterHelper.raritydown,
+      rarityup: MenuFilterHelper.rarityup,
     }
   },
   display: {

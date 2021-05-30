@@ -1,3 +1,32 @@
+/**
+ * @param {setup.Market} market 
+ * @returns {string | null}
+ */
+function marketObjectsDescriptor(market) {
+  const objects = market.getMarketObjects()
+  const rarity_map = {}
+  for (const rarity of Object.values(setup.rarity)) {
+    rarity_map[rarity.key] = 0
+  }
+  for (const object of objects) {
+    const rarity_class = object.getRarity()
+    rarity_map[rarity_class.key] += 1
+  }
+  const rarities = []
+  for (const rarity_key in rarity_map) {
+    const amount = rarity_map[rarity_key]
+    /**
+     * @type {setup.Rarity}
+     */
+    const rarity = setup.rarity[rarity_key]
+    if (amount) {
+      rarities.push(`<span data-tooltip="${rarity.getName()}" class="${rarity.getTextColorClass()}">${amount}</span>`)
+    }
+  }
+  if (!rarities.length) return null
+  return `(${rarities.join('|')})`
+}
+
 function getMainMenuItems() {
   if (!('MAINMENU' in setup.DOM.Card)) {
 
@@ -56,29 +85,19 @@ function getMainMenuItems() {
 
       [  /* Row: new hires */
         {
-          title: 'Prospect',
+          title: 'Hall',
           passage: 'MarketSlaver',
           restrictions: [setup.qres.Building('prospectshall'),],
           extra() {
-            const prospects = State.variables.market.slavermarket.countMarketObjects()
-            if (prospects) {
-              return html`(${setup.DOM.Text.successlite(prospects)})`
-            } else {
-              return null
-            }
+            return marketObjectsDescriptor(State.variables.market.slavermarket)
           },
         },
         {
-          title: 'Slave Pen',
+          title: 'Pen',
           passage: 'MarketSlave',
           restrictions: [setup.qres.Building('slavepens'),],
           extra() {
-            const slaves = State.variables.market.slavemarket.countMarketObjects()
-            if (slaves) {
-              return html`(${setup.DOM.Text.successlite(slaves)})`
-            } else {
-              return null
-            }
+            return marketObjectsDescriptor(State.variables.market.slavemarket)
           },
         },
       ],
@@ -124,6 +143,19 @@ function getMainMenuItems() {
           },
         },
         {
+          title: 'Injury',
+          passage: 'Hospital',
+          restrictions: [setup.qres.Building('hospital'),],
+          extra() {
+            const injured = State.variables.company.player.getUnits({ injured: true }).length
+            if (injured) {
+              return html`(${setup.DOM.Text.dangerlite(injured)})`
+            } else {
+              return null
+            }
+          },
+        },
+        {
           title: 'Order',
           passage: 'SlaveOrderList',
           restrictions: [setup.qres.Building('marketingoffice'),],
@@ -144,25 +176,15 @@ function getMainMenuItems() {
           passage: 'MarketCombatEquipment',
           restrictions: [setup.qres.Building('forge'),],
           extra() {
-            const objects = State.variables.market.combatequipmentmarket.countMarketObjects()
-            if (objects) {
-              return html`(${objects})`
-            } else {
-              return null
-            }
+            return marketObjectsDescriptor(State.variables.market.combatequipmentmarket)
           },
         },
         {
-          title: 'Sex Shop',
+          title: 'Sex',
           passage: 'MarketSexEquipment',
           restrictions: [setup.qres.Building('sexshop'),],
           extra() {
-            const objects = State.variables.market.sexequipmentmarket.countMarketObjects()
-            if (objects) {
-              return html`(${objects})`
-            } else {
-              return null
-            }
+            return marketObjectsDescriptor(State.variables.market.sexequipmentmarket)
           },
         },
       ],
@@ -173,31 +195,13 @@ function getMainMenuItems() {
           passage: 'MarketItem',
           restrictions: [setup.qres.Building('market'),],
           extra() {
-            const objects = State.variables.market.itemmarket.countMarketObjects()
-            if (objects) {
-              return html`(${objects})`
-            } else {
-              return null
-            }
+            return marketObjectsDescriptor(State.variables.market.itemmarket)
           },
         },
         {
-          title: 'Items',
+          title: 'Item',
           passage: 'Inventory',
           restrictions: [setup.qres.Building('warehouse'),],
-        },
-        {
-          title: 'Injury',
-          passage: 'Hospital',
-          restrictions: [setup.qres.Building('hospital'),],
-          extra() {
-            const injured = State.variables.company.player.getUnits({ injured: true }).length
-            if (injured) {
-              return html`(${setup.DOM.Text.dangerlite(injured)})`
-            } else {
-              return null
-            }
-          },
         },
       ],
 

@@ -66,6 +66,16 @@ export class MenuFilterHelper extends setup.TwineClass {
     sort: (a, b) => b.getSluttiness() - a.getSluttiness(),
   }
 
+  static raritydown = {
+    title: down('Rarity'),
+    sort: (a, b) => setup.Rarity.RarityCmp(a.getRarity(), b.getRarity())
+  }
+
+  static rarityup = {
+    title: up('Rarity'),
+    sort: (a, b) => setup.Rarity.RarityCmp(b.getRarity(), a.getRarity())
+  }
+
   static templateleveldown = {
     title: down('Level'),
     sort: (a, b) => a.getTemplate().getDifficulty().getLevel() - b.getTemplate().getDifficulty().getLevel(),
@@ -85,6 +95,23 @@ export class MenuFilterHelper extends setup.TwineClass {
     title: up('Level'),
     sort: (a, b) => b.getDifficulty().getLevel() - a.getDifficulty().getLevel(),
   }
+
+  static _getRarityFilter(rarity_key) {
+    return obj => obj.getRarity().key == rarity_key
+  }
+
+  static rarityFilters() {
+    const options = []
+
+    for (const rarity of Object.values(setup.rarity)) {
+      options.push({
+        title: rarity.rep(),
+        filter: MenuFilterHelper._getRarityFilter(rarity.key),
+      })
+    }
+
+    return options
+  }
 }
 
 
@@ -95,7 +122,7 @@ export class MenuFilterHelper extends setup.TwineClass {
  * @param {string} payload 
  * @returns {setup.DOM.Node}
  */
-setup.FilterHelper.loadItemsFast = function(filter_objects, display_objects, payload) {
+setup.FilterHelper.loadItemsFast = function (filter_objects, display_objects, payload) {
   const fragments = []
   for (let i = 0; i < filter_objects.length; ++i) {
     if (display_objects) {
@@ -112,7 +139,7 @@ setup.FilterHelper.loadItemsFast = function(filter_objects, display_objects, pay
   }
   return setup.DOM.create(
     'div',
-    {style: 'display: flex; flex-direction: column;'},
+    { style: 'display: flex; flex-direction: column;' },
     fragments,
   )
 }

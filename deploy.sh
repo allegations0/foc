@@ -131,6 +131,7 @@ if ! [ "$debug" = "sanity" ]; then
 
       rm -r deploy/img/panorama/big
 
+      rm -r deploy/img/rarity
       rm -r deploy/img/role
       rm -rf deploy/img/room/*/
       rm -r deploy/img/room/*.svg

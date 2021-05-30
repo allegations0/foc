@@ -72,16 +72,21 @@ setup.Furniture = class Furniture extends setup.Item {
     return setup.skill[index]
   }
 
-  _getRarityCssClass() {
+  /**
+   * @returns {setup.Rarity}
+   */
+  getRarity() {
     const value = this.getValue()
     if (value >= setup.FURNITURE_PRICE_MASTER)
-      return "rarity-legendary"
+      return setup.rarity.legendary
+    else if (value >= setup.FURNITURE_PRICE_GOODMASTER)
+      return setup.rarity.epic
     else if (value >= setup.FURNITURE_PRICE_GOOD)
-      return "rarity-epic"
+      return setup.rarity.rare
     else if (value >= setup.FURNITURE_PRICE_NORMAL)
-      return "rarity-rare"
+      return setup.rarity.uncommon
     else
-      return "rarity-common"
+      return setup.rarity.common
   }
 
   getImageRep() {
@@ -95,7 +100,7 @@ setup.Furniture = class Furniture extends setup.Item {
       classes = "colorize-white"
     }
 
-    classes += ` ${this._getRarityCssClass()}`
+    classes += ` ${this.getRarity().getIconTriangleClass()}`
 
     const tooltip = `<<itemcardkey '${this.key}'>>`
     const url = setup.escapeHtml(setup.resolveImageUrl(image_path_raw))

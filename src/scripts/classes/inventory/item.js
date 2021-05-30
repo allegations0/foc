@@ -43,24 +43,28 @@ setup.Item = class Item extends setup.TwineClass {
    */
   getTags() { return this.tags }
 
-  _getRarityCssClass() {
+  /**
+   * @returns {setup.Rarity}
+   */
+  getRarity() {
     const value = this.getValue()
     if (value >= setup.ITEM_PRICE_MASTER)
-      return "rarity-legendary"
+      return setup.rarity.legendary
     else if (value >= setup.ITEM_PRICE_GOOD)
-      return "rarity-epic"
+      return setup.rarity.epic
     else if (value >= setup.ITEM_PRICE_NORMAL)
-      return "rarity-rare"
+      return setup.rarity.rare
+    else if (value >= setup.ITEM_PRICE_LOW)
+      return setup.rarity.uncommon
     else
-      return "rarity-common"
+      return setup.rarity.common
   }
 
   getImageRep() {
     const image_path_raw = this.getItemClass().getImage()
     const tooltip = `<<itemcardkey '${this.key}'>>`
     const url = setup.escapeHtml(setup.resolveImageUrl(image_path_raw))
-    let classes = this._getRarityCssClass()
-    return `<span class="trait ${classes}" data-tooltip="${tooltip}"><img src="${url}"/></span>`
+    return `<span class="trait" data-tooltip="${tooltip}"><img src="${url}"/></span>`
   }
 
   /**
@@ -71,7 +75,7 @@ setup.Item = class Item extends setup.TwineClass {
       instance: this,
       macroname: 'itemcardkey',
       icontext: this.getImageRep(),
-      text_class: `text-${this._getRarityCssClass()}`
+      text_class: this.getRarity().getTextColorClass(),
     })
   }
 

@@ -680,6 +680,24 @@ setup.Unit = class Unit extends setup.TwineClass {
     }
   }
 
+  /**
+   * @returns {setup.Rarity}
+   */
+  getRarity() {
+    const value = this.getSlaveValue()
+    if (value >= 40000) {
+      return setup.rarity.legendary
+    } else if (value >= 20000) {
+      return setup.rarity.epic
+    } else if (value >= 10000 || State.variables.titlelist.getAllTitles(this).length) {
+      return setup.rarity.rare
+    } else if (value >= 5000) {
+      return setup.rarity.uncommon
+    } else {
+      return setup.rarity.common
+    }
+  }
+
   static BUSY_QUEST_URL = 'img/special/busy_quest.svg'
   static BUSY_OPPORTUNITY_URL = 'img/special/busy_opportunity.svg'
   static BUSY_LEAVE_URL = 'img/special/busy_leave.svg'
