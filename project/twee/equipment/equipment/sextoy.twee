@@ -183,7 +183,7 @@
 
 <<run new setup.Equipment(
   'golddildoanus',
-  'Gold Dildo (Anus)',
+  'Gold Dildo (Anal)',
   setup.equipmentslot.rear,
   ['dildo', 'banuse', ],
   setup.EQUIPMENT_PRICE_GOOD, /* value */
