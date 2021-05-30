@@ -4,6 +4,19 @@
 
 ### v1.7.0.x
 
+v1.7.0.18:
+
+  - New perk: Needy bottom (thanks to Matthew Lang)
+  - Anal sex enjoyment skill adjustments (thanks to Matthew Lang)
+  - Better error message on visiting the captured
+  - New sex action: Step on dick
+  - Drows now give step on dick manual
+  - Various anal dildoes. Closes #335
+  - Rarity indicators / filters / sort for market objects
+  - Rarity indicators for item/equipments.
+  - Rarity refactored.
+  - Rarity icons.
+
 v1.7.0.17: [TODO BEFORE COMMIT]
 
   - Updated Potion of lust Quests for repeatability (thanks to Matthew Lang)

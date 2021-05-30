@@ -2629,7 +2629,8 @@ http://twinery.org/forum/discussion/comment/17617/
 .rarity-epic::before,
 .rarity-rare::before,
 .rarity-uncommon::before,
-.rarity-negative::before {
+.rarity-always::before,
+.rarity-never::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -2648,7 +2649,8 @@ http://twinery.org/forum/discussion/comment/17617/
 .rarity-epic::after,
 .rarity-rare::after,
 .rarity-uncommon::after,
-.rarity-negative::after {
+.rarity-always::after,
+.rarity-never::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -2678,8 +2680,12 @@ http://twinery.org/forum/discussion/comment/17617/
   border-right-color: rgb(43, 255, 0);
 }
 
-.rarity-negative::after {
+.rarity-never::after {
   border-right-color: red;
+}
+
+.rarity-always::after {
+  border-right-color: rgb(0, 255, 213);
 }
 
 .text-rarity-legendary:not(:hover) {
@@ -2698,8 +2704,54 @@ http://twinery.org/forum/discussion/comment/17617/
   color: rgb(151, 255, 130) !important;
 }
 
-.text-rarity-negative:not(:hover) {
+.text-rarity-never:not(:hover) {
   color: rgb(255, 133, 133) !important;
+}
+
+.text-rarity-always:not(:hover) {
+  color: rgb(0, 255, 213);
+}
+
+.border-rarity-legendary {
+  --border-color: rgb(255, 226, 129);
+  border-bottom-color: var(--border-color);
+  border-right-color: var(--border-color);
+}
+
+.border-rarity-epic {
+  --border-color: rgb(196, 132, 255);
+  border-bottom-color: var(--border-color);
+  border-right-color: var(--border-color);
+}
+
+.border-rarity-rare {
+  --border-color: rgb(134, 156, 255);
+  border-bottom-color: var(--border-color);
+  border-right-color: var(--border-color);
+}
+
+.border-rarity-uncommon {
+  --border-color: rgb(151, 255, 130);
+  border-bottom-color: var(--border-color);
+  border-right-color: var(--border-color);
+}
+
+.border-rarity-common {
+  --border-color: rgb(255, 255, 255);
+  border-bottom-color: var(--border-color);
+  border-right-color: var(--border-color);
+}
+
+.border-rarity-never {
+  --border-color: rgb(255, 133, 133);
+  border-bottom-color: var(--border-color);
+  border-right-color: var(--border-color);
+}
+
+.border-rarity-always {
+  --border-color: rgb(0, 255, 213);
+  border-bottom-color: var(--border-color);
+  border-right-color: var(--border-color);
 }
 
 .negtraitcard {
