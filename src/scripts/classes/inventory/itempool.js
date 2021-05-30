@@ -49,7 +49,7 @@ setup.ItemPool = class ItemPool {
   }
 
   generateItem() {
-    var item_key = setup.rng.sampleObject(this.getItemChances(), true)
+    var item_key = setup.rng.sampleObject(this.item_chances, true)
     return setup.item[item_key]
   }
 }

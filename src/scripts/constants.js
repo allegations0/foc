@@ -643,7 +643,7 @@ setup.HISTORY_UNIT_MAX = 100
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
 // maximum amount of favor? minimum is 0
-setup.FAVOR_MAX = 1200
+setup.FAVOR_MAX = 2000
 
 // thresholds at which favor effects will proc
 setup.FAVOR_EFFECT_THRESHOLDS = [300, 600, 900]

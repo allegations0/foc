@@ -2,23 +2,23 @@
 
 <<run new setup.Equipment(
   'dwarf_armor_torso',
-  'Ancient Dwarven Mail',
+  'Ancient Dwarven Breastplate',
   setup.equipmentslot.torso,
   ['armor', 'covering', ],
   setup.EQUIPMENT_PRICE_GOOD, /* value */
   0, /* sluttines */
   {
     combat: setup.EQUIPMENT_STAT_BOOST_GOOD,
-    brawn: setup.EQUIPMENT_STAT_BOOST_LOW,
   },
   {  /* traits */
+    muscle_verystrong: 3,
   },
   [  /* restrictions */
     setup.qres.Trait(setup.trait.height_dwarf),
   ],
   { image: 'torso_chestplate_heavy' },
   {
-    description: 'An ancient dwarven armor that survived the test of the ages. It is designed to be worn only by the shorter races.',
+    description: 'An ancient dwarven armor that survived the test of the ages. It is designed to be worn only by the shorter races. The full set consists of a breastplate, greaves, and an extremely rare axe.',
     flavor: 'The dwarven armor smells ancient, but its craftmanship is masterful and definitely offers great protection',
   },
   )>>
@@ -33,19 +33,44 @@
   0, /* sluttines */
   {
     combat: setup.EQUIPMENT_STAT_BOOST_GOOD,
-    brawn: setup.EQUIPMENT_STAT_BOOST_LOW,
   },
   {  /* traits */
+    muscle_verystrong: 3,
   },
   [  /* restrictions */
     setup.qres.Trait(setup.trait.height_dwarf),
   ],
   { image: 'legs_faulds_heavy' },
   {
-    description: 'An ancient dwarven armor that survived the test of the ages. Its stubby length means it could only be worn by the shorter races.',
+    description: 'An ancient dwarven armor that survived the test of the ages. Its stubby length means it could only be worn by the shorter races. The full set consists of a breastplate, greaves and an extremely rare axe.',
     flavor: 'Despite the apparent age, the masterful craftsmanship of this piece of armor stood the test of time, still offering great protection to its wearer',
   },
   )>>
+
+
+<<run new setup.Equipment(
+  'dwarf_axe',
+  "Ancient Dwarven Battleaxe",
+  setup.equipmentslot.weapon,
+  ['legendary', ],
+  setup.EQUIPMENT_PRICE_MASTER, /* value */
+  0, /* sluttines */
+  {
+    combat: setup.EQUIPMENT_STAT_BOOST_MASTER,
+  },
+  { /* traits */
+    muscle_verystrong: 3,
+  },
+  [  /* unit restrictions */
+    setup.qres.Trait(setup.trait.height_dwarf),
+    setup.qres.Job(setup.job.slaver),
+  ],
+  { image: 'weapon_axe_dwarf' },
+  {
+    description: 'An ancient dwarven axe, bearing masterful craftsmanship of days long past. It is designed specifically to be wielded by people who are short in stature. The full set consists of a breastplate, greaves, and an extremely rare axe.',
+    flavor: "The Ancient Dwarven Battleaxe is certainly a masterwork, designed specifically to be wielded by the shorter races",
+  },
+)>>
 
 
 <<run new setup.EquipmentPool(

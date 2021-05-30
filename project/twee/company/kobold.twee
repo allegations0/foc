@@ -6,10 +6,13 @@
   'CompanyTemplateKobold',
   [ /* favor effects */
     [
+      setup.qc.RandomDeeprealmItem(500),
     ],
     [
+      setup.qc.RandomDeeprealmItem(1000),
     ],
     [
+      setup.qc.RandomDeeprealmItem(1500),
     ],
   ],
 )>>
