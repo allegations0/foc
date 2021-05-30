@@ -450,7 +450,7 @@
 <<run new setup.Perk(
     'perk_switch',
     'perk: switch',
-    "When at home, switches from dominant to submissive and vice-versa every " + setup.PERK_SWITCH_WEEKS + " weeks.",
+    "When at home, switches between <<rep setup.trait.per_dominant>> and <<rep setup.trait.per_submissive>> every " + setup.PERK_SWITCH_WEEKS + " weeks.",
     0,
     {},
     ['perk', 'perkstandard', ],
@@ -517,8 +517,11 @@
     },
     {
         perk_choice_restrictions: [
-            setup.qres.NoTraits(
-                setup.TraitHelper.getAllTraitsOfTags(['tail']),
+            setup.qres.Through(
+                setup.qres.NoTraits(
+                    setup.TraitHelper.getAllTraitsOfTags(['tail']),
+                ),
+                "Must NOT have a tail",
             ),
         ],
         perk_end_of_week_effect: [
@@ -552,9 +555,12 @@
     },
     {
         perk_choice_restrictions: [
-            setup.qres.AnyTrait([
-                'bg_scholar', 'bg_engineer', 'bg_boss', 'bg_mythical', 'bg_royal', 'bg_noble', 'bg_metalworker', 'bg_informer', 'bg_artist', 'bg_laborer', 'bg_clerk', 'bg_merchant', 'bg_foodworker', 'bg_entertainer', 'per_frugal', 'skill_alchemy', 'skill_entertain',
-            ], true)
+            setup.qres.Through(
+                setup.qres.AnyTrait([
+                    'bg_scholar', 'bg_engineer', 'bg_boss', 'bg_mythical', 'bg_royal', 'bg_noble', 'bg_metalworker', 'bg_informer', 'bg_artist', 'bg_laborer', 'bg_clerk', 'bg_merchant', 'bg_foodworker', 'bg_entertainer', 'per_frugal', 'skill_alchemy', 'skill_entertain',
+                ], true),
+                "Must have some kind of background, skill, or personality that allows them to take side-jobs",
+            ),
         ],
         perk_end_of_week_effect: [
             setup.qc.IfThenElse(
@@ -577,9 +583,12 @@
     },
     {
         perk_choice_restrictions: [
-            setup.qres.AnyTrait([
-                'bg_thief', 'bg_nomad', 'bg_raider', 'bg_wildman', 'bg_woodsman', 'bg_adventurer', 'bg_mercenary', 'bg_hunter', 'bg_soldier', 'bg_pirate', 'per_attentive', 'skill_animal',
-            ], true)
+            setup.qres.Through(
+                setup.qres.AnyTrait([
+                    'bg_thief', 'bg_nomad', 'bg_raider', 'bg_wildman', 'bg_woodsman', 'bg_adventurer', 'bg_mercenary', 'bg_hunter', 'bg_soldier', 'bg_pirate', 'per_attentive', 'skill_animal',
+                ], true),
+                "Must have some kind of background, skill, or personality related to scavenging",
+            ),
         ],
         perk_end_of_week_effect: [],
     },
@@ -620,7 +629,10 @@
     },
     {
         perk_choice_restrictions: [
-            setup.qres.AnyTrait(setup.TraitHelper.getAllTraitsOfTags(['magic'])),
+            setup.qres.Through(
+                setup.qres.AnyTrait(setup.TraitHelper.getAllTraitsOfTags(['magic'])),
+                "Knows some magic",
+            ),
         ],
         perk_end_of_week_effect: [],
         perk_null_traits: setup.TraitHelper.getAllTraitsOfTags(['magic']),
@@ -642,7 +654,10 @@
     },
     {
         perk_choice_restrictions: [
-            setup.qres.AnyTrait(setup.TraitHelper.getAllTraitsOfTags(['nonmagic'])),
+            setup.qres.Through(
+                setup.qres.AnyTrait(setup.TraitHelper.getAllTraitsOfTags(['nonmagic'])),
+                "Knows some non-magic skill",
+            ),
         ],
         perk_end_of_week_effect: [],
         perk_null_traits: setup.TraitHelper.getAllTraitsOfTags(['nonmagic']),
@@ -663,9 +678,7 @@
         cross: true,
     },
     {
-        perk_choice_restrictions: [
-            setup.qres.AnyTrait(setup.TraitHelper.getAllTraitsOfTags(['genital'])),
-        ],
+        perk_choice_restrictions: [],
         perk_end_of_week_effect: [],
         perk_null_traits: setup.TraitHelper.getAllTraitsOfTags(['genital']),
     },
@@ -708,7 +721,10 @@
     },
     {
         perk_choice_restrictions: [
-            setup.qres.AnyTrait(setup.TraitHelper.getAllTraitsOfTags(['skin'])),
+            setup.qres.Through(
+                setup.qres.AnyTrait(setup.TraitHelper.getAllTraitsOfTags(['skin'])),
+                "Has a non-human bodypart",
+            ),
         ],
         perk_end_of_week_effect: [],
         perk_null_traits: setup.TraitHelper.getAllTraitsOfTags(['skin']),
@@ -731,7 +747,10 @@
     },
     {
         perk_choice_restrictions: [
-            setup.qres.AnyTrait(setup.TraitHelper.getAllTraitsOfTags(['bg'])),
+            setup.qres.Through(
+                setup.qres.AnyTrait(setup.TraitHelper.getAllTraitsOfTags(['bg'])),
+                "Has some kind of background",
+            ),
         ],
         perk_end_of_week_effect: [],
         perk_null_traits: setup.TraitHelper.getAllTraitsOfTags(['bg']),
@@ -754,7 +773,10 @@
     },
     {
         perk_choice_restrictions: [
-            setup.qres.AnyTrait(setup.TraitHelper.getAllTraitsOfTags(['nongenital'])),
+            setup.qres.Through(
+                setup.qres.AnyTrait(setup.TraitHelper.getAllTraitsOfTags(['nongenital'])),
+                "Has some kind of physical trait",
+            ),
         ],
         perk_end_of_week_effect: [],
         perk_null_traits: setup.TraitHelper.getAllTraitsOfTags(['nongenital']),
@@ -838,7 +860,7 @@
                 setup.trait.per_chaste,
                 setup.trait.per_lustful,
                 setup.trait.per_sexaddict,
-            ]),
+            ], true),
         ],
         perk_end_of_week_effect: [],
         perk_null_traits: [
