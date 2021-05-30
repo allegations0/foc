@@ -4,6 +4,20 @@
 
 ### v1.7.0.x
 
+v1.7.0.19:
+
+  - More description updates and text fixes (thanks to Elannil)
+  - Add legendary/epic rarities for traits
+  - Add trait rarity filters
+  - Kobold race lores (thanks to Fae)
+  - Adjusted unit rarity thresholds
+  - Fix missing "at home" conditions for some perks
+  - Fix trait-changing perks triggering when not at home
+  - slight nerf to "increase boon" perk
+  - Added 40+ kobold images (by Fae) For #332
+  - 20 more kobold images
+  - A bunch of other images
+
 v1.7.0.18:
 
   - New perk: Needy bottom (thanks to Matthew Lang)
