@@ -14,9 +14,9 @@ setup.DOM.Menu.changeskillfocus = function (unit) {
         Skill focus is the priority skill that the unit will try to focus on.
         These skills will always increase whenever the unit gains a level.
         Set the skill focus according to which skills the unit is talented at!
+        More details below.
         </p>
         <div>
-        <b>Details</b>:
         If a skill is one of the skill focuses, then it is guaranteed to gain at least one point per
         level up.
         However, they can sometimes gain more than one point:
@@ -31,7 +31,7 @@ setup.DOM.Menu.changeskillfocus = function (unit) {
         It has roughly
         ${setup.DOM.Util.help(html`
           Each skill focus chance is calculated independently. So
-          [${setup.skill.brawn.rep()}${setup.skill.brawn.rep()}${setup.skill.arcane.rep()}]
+          ${setup.skill.brawn.rep()}${setup.skill.brawn.rep()}${setup.skill.arcane.rep()}
           means that there are two chances, each with
           ${(setup.SKILL_FOCUS_MULTI_INCREASE_CHANCE * 100).toFixed(0)}% probability,
           that the unit will get an extra
@@ -47,8 +47,12 @@ setup.DOM.Menu.changeskillfocus = function (unit) {
         ${(setup.SKILL_FOCUS_MULTI_INCREASE_CHANCE * 100).toFixed(0)}% chance to get
         an extra ${setup.skill.arcane.rep()} point.
         The order of the skill focuses does not matter.
-        Note that a unit always gain six skill points on level up -- the remaining points
-        after the skill focuses are assigned to random skills.
+        </div>
+        <p>
+        A unit always gain six skill points on level up -- the remaining points
+        after those taken by the skill focuses are allocated to the remaining skills,
+        skewed towards the skills they are particularly good at.
+        </p>
         </div>
       `)
     }
