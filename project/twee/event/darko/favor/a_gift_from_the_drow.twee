@@ -18,10 +18,10 @@
   'drow': 'subrace_drow',
 },
 [ /* outcomes */
-  setup.qc.Item(setup.item.sexmanual_spit_face, 1),
+  setup.qc.Item(setup.item.sexmanual_step_on_dick, 1),
 ],
 [ /* restrictions */
-  setup.qres.NoItem(setup.item.sexmanual_spit_face),
+  setup.qres.NoItem(setup.item.sexmanual_step_on_dick),
   setup.qres.FavorAtLeast('drow', 800),
 ],
 0, /* Cooldown */
@@ -36,5 +36,5 @@ setup.rarity.always, /* Rarity */
 </p>
 
 <p>
-    The book, the <<rep setup.item.sexmanual_spit_face>> describes how to abuse slaves by spitting on their face. A fitting gift, given how cruel drow culture could be. But you get the feeling this might just be a thinly veiled threat that you should never go against the drows...
+    The book, the <<rep setup.item.sexmanual_step_on_dick>> describes how to assert a slave's place by stepping on their very manhood. A fitting gift, given how cruel drow culture could be. But you get the feeling this might just be a thinly veiled threat that you should never go against the drows...
 </p>

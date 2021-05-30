@@ -2,22 +2,19 @@
  * darko original
  */
 
-setup.SexActionClass.LegsPenisStepOn = class LegsPenisStepOn extends setup.SexAction {
-  getTags() { return super.getTags().concat(['dom', 'legs', 'penis', 'discomfort',]) }
-  desc() { return 'Step-on-dick' }
+import { LegsPenisFreeBaseDom } from "./LegsPenisFreeBase"
 
-  getPenetratorBodypart() { return setup.sexbodypart.mouth }
-  getPenetrationTarget() { return setup.sexbodypart.mouth }
+setup.SexActionClass.LegsPenisStepOn = class LegsPenisStepOn extends LegsPenisFreeBaseDom {
+  getTags() { return super.getTags().concat(['dom', 'discomfort',]) }
+  desc() { return 'Step-on-dick' }
 
   /**
    * @returns {setup.Restriction[]}
    */
   getRestrictions() {
-    return [
-      setup.qres.HasItem('sexmanual_nibble_neck'),
-      setup.qres.SexBodypartsCanReach(
-        'a', this.getPenetratorBodypart(), 'b', this.getPenetrationTarget()),
-    ]
+    return super.getRestrictions().concat([
+      setup.qres.HasItem('sexmanual_step_on_dick'),
+    ])
   }
 
   getActorDescriptions() {
@@ -26,46 +23,22 @@ setup.SexActionClass.LegsPenisStepOn = class LegsPenisStepOn extends setup.SexAc
         energy: setup.Sex.ENERGY_SMALL,
         arousal: setup.Sex.AROUSAL_SMALLMEDIUM,
         paces: [setup.sexpace.dom, setup.sexpace.normal],
-        restrictions: [
-          setup.qres.SexCanUseBodypart(this.getPenetratorBodypart()),
-          setup.qres.AnyTrait([
-            setup.trait.mouth_neko,
-            setup.trait.mouth_werewolf,
-            setup.trait.mouth_dragonkin,
-          ], true)
-        ],
       },
       {
         energy: setup.Sex.ENERGY_MEDIUM,
-        arousal: setup.Sex.AROUSAL_SMALLMEDIUM,
+        arousal: -setup.Sex.AROUSAL_MEDIUM,
         discomfort: setup.Sex.DISCOMFORT_LARGE,
         paces: setup.SexPace.getAllPaces(),
       },
     ]
   }
 
-  /**
-   * Discomfort multiplied by this
-   * @param {string} actor_name 
-   * @param {setup.Unit} unit
-   * @param {setup.SexInstance} sex 
-   * @returns {number}
-   */
-  getDiscomfortMultiplier(actor_name, unit, sex) {
-    if (actor_name == 'a') {
-      return 1.0
-    } else {
-      // multiply discomfort based on skin type
-      return setup.SexUtil.skinDiscomfortMultiplier(this.getActorUnit('b'), sex)
-    }
-  }
-
   rawTitle(sex) {
-    return `Nibble neck`
+    return `Step on dick`
   }
 
   rawDescription(sex) {
-    return `Give in to your animalistic mating urge and chomp down b|reps neck.`
+    return `Step on b|reps useless dick.`
   }
 
   /**
@@ -84,138 +57,56 @@ setup.SexActionClass.LegsPenisStepOn = class LegsPenisStepOn extends setup.SexAc
 
     let story = ''
 
-    let is_penetrating = (
-      setup.qres.SexIsOngoing('a', setup.sexbodypart.penis, 'b', setup.sexbodypart.vagina).isOk(this) ||
-      setup.qres.SexIsOngoing('a', setup.sexbodypart.penis, 'b', setup.sexbodypart.anus).isOk(this))
-
     let t
-    if (is_penetrating) {
-      const hole = sex.getBodypartPenetrationTarget(them, setup.sexbodypart.penis).bodypart.rep(me, sex)
-      t = [
-        `With a|their a|dick still deep inside b|reps ${hole}, a|rep `,
-        `Sinking a|their a|dick even deeper inside b|reps ${hole}, a|rep `,
-        `Still feeling a|their a|dick inside b|reps ${hole}, a|rep `,
-        `Breathing in b|reps b|scent, a|rep a|thrust a|their a|dick deeper inside b|reps ${hole} as a|they `,
-        `a|Rep a|slide a|their a|dick even deeper into b|reps ${hole} before a|they `,
-      ]
-    } else {
-      t = [
-        `Breathing in b|reps b|scent, a|rep `,
-        `a|Rep `,
-        `Acompanied with b|reps warmth, a|rep `,
-      ]
-      if (me.isCanSee()) {
-        t.push(`After gazing into b|rep, a|rep `)
-      }
-    }
+    t = [
+      `With a cruel smirk, a|rep a|move a|their a|cfeet closer to b|reps exposed dick and a|eagerly a|crush it under a|their a|cfeet.`,
+      `a|Rep a|shift a|their a|cfeet over so that they are hovering just above b|reps exposed dick before bringing them down and a|eagerly stepping on the member.`,
+      `a|Rep a|press a|their a|cfeet on b|reps exposed dick, exerting more and more pressure on the defenseless dick.`,
+    ]
 
     story += setup.rng.choice(t) + ' '
 
-    if (mypace == setup.sexpace.dom) {
-      t = [
-        `a|guide a|their a|mouth closer to b|reps b|neck, before giving in to a|their
-         animalistic mating urges and harshly chomp down b|reps flesh.`,
-        `a|give in fully into a|their animalistic mating urge and a|bite down b|reps b|neck.`,
-        `lustfully a|bite into b|reps b|neck, solidifying b|their status as a|their current playmate.`,
-        `possessively a|bite into b|reps b|neck, claiming b|them as a|their mate for the day.`,
-      ]
-    } else {
-      t = [
-        `a|guide a|their head close to b|reps b|neck, before gently chomping on b|reps flesh
-         as urged by a|their animalistic instincts.`,
-        `a|give b|reps b|neck a couple of tentative licks before softly biting on its flesh.`,
-        `gently a|bite in b|reps b|neck, surrendering to a|their animalistic instincts of marking a|their mate.`,
-      ]
-    }
-
-    story += setup.rng.choice(t) + ' '
-
-    const is_thickfur = them.isHasAnyTraitExact([
-      setup.trait.body_werewolf,
-      setup.trait.body_neko,
-      setup.trait.body_dragonkin,
-    ])
-
-    let painful = ''
-    let painfully = ''
-    let pained = ''
-    if (!is_thickfur) {
-      painful = 'painful'
-      painfully = 'painfully'
-      pained = 'pained'
-    }
-
-    let to, tp
-    const skin = setup.Text.Unit.Trait.skin(them, /* with eq = */ false, /* with adj = */ true)
-    if (is_thickfur) {
-      tp = [
-        `b|their ${skin} protecting b|their flesh from actually being ruptured.`,
-        `the ${skin} covering b|their b|body prevents the bite from drawing any blood.`,
-        `b|their ${skin} muffling the pain from the chomp.`,
-      ]
-    } else {
-      tp = [
-        `trace of blood is drawn as the teeth pierce b|their ${skin} and rupture b|their flesh.`,
-        `b|their ${skin} pierced by the invading teeth, drawing traces of blood.`,
-        `b|their ${skin} ${painfully} pierced by the show of dominance.`,
-      ]
-    }
     if (them.isMasochistic()) {
-      const base = setup.SexUtil.masochistReaction(me, them, [
-        `being painfully chomped down`,
-        `having b|their neck painfully bitten`,
-        `having a|their teeths tearing down b|their flesh`,
+      t = setup.SexUtil.masochistReaction(me, them, [
+        `having b|their dick abused`,
+        `being stepped on`,
+        `having b|their dick tortured`,
       ], sex)
-      to = [
-        `${base} Accompanying b|their masochistic bliss, `,
-        `${base} All the while, `,
-      ]
     } else if (theirpace == setup.sexpace.dom) {
-      to = [
-        `b|Rep b|let out a protesting moan at the ${painful} chomp,`,
-        `Trying to wrest control, b|rep b|growl at a|rep for the dominant treatment and
-         the ${painful} sensation it delivers via the chomp,`,
+      t = [
+        `b|Rep b|let out a pained grunt at having b|their dick abused, internally promising to return the favor later.`,
+        `b|Rep b|let out a yelp at the sudden pain on b|their dick.`,
       ]
     } else if (theirpace == setup.sexpace.normal || theirpace == setup.sexpace.sub) {
-      to = [
-        `b|Rep b|eagerly b|let out a ${pained} moan from the sensual act, `,
-        `Despite the rough treatment, b|rep b|let out a ${pained} but clearly aroused moan, `,
+      t = [
+        `b|Rep b|let out a pained moan from having b|their dick abused, and the sudden pain ruined a part of b|their arousal.`,
+        `b|Rep b|let out a yelp at the sudden pain on b|their dick, reducing b|their arousal.`,
       ]
     } else if (theirpace == setup.sexpace.resist) {
-      const base = setup.SexUtil.repResist(me, them, sex,
+      t = setup.SexUtil.repResist(me, them, sex,
         [
-          `dislodge a|reps teeth from b|them`,
-          `push a|reps away from b|them`,
-          `struggle uselessly`,
+          `push a|reps a|feet away`,
+          `lessen the pain`,
+          `withdraw b|their dick away`,
         ],
         [
-          `a|rep a|feels the taste of b|reps flesh in a|their tongue`,
-          `a|rep possessively a|assert a|their ownership over b|rep`,
+          `a|rep a|continue to press on b|their worthless dick`,
+          `a|rep a|grin, having received exactly the reaction a|they a|was hoping for`,
         ])
-      to = [
-        `${base} -- All the while `,
-        `${base} b|Rep continues to cry and struggle, `,
-      ]
     } else if (theirpace == setup.sexpace.forced) {
-      to = [
-        `b|Rep b|grimace ${painfully} at a|their assertion of dominance, `,
-        `${is_thickfur ? 'A mixture of fear and pleasure' : 'A mixture of fear and pain'} can be seen in b|reps eyes, `,
+      t = [
+        `A helpless cry of pain came out of b|reps mouth -- the pleading for mercy apparent in b|their eyes.`,
+        `b|Rep b|let out a pained moan, but completely helpless to do anything but endure the pain.`,
       ]
     } else {
-      const base = setup.SexUtil.mindbrokenReactionNoun(them, sex, [
-        `the bite`,
-        `the rough chomp`,
-        `a|reps dominant bite`,
-        `a|reps possessive bite`,
+      t = setup.SexUtil.mindbrokenReactionNoun(them, sex, [
+        `the cock abuse`,
+        `the abuse`,
+        `having b|their dick crushed`,
       ])
-      to = [
-        `${base} b|They does not respond to the stimulus, `,
-        `${base} b|They remains perfectly still, almost like a doll, `,
-      ]
     }
 
-    story += setup.rng.choice(to) + ' '
-    story += setup.rng.choice(tp) + ' '
+    story += setup.rng.choice(t) + ' '
 
     return story
   }

@@ -163,9 +163,17 @@
 
 
 <<run new setup.ItemSexManual({
+  key: 'sexmanual_step_on_dick',
+  name: 'Sex Manual: Step on Dick',
+  description: "A gift from the enigmatic drow who lived in V'errmyrdn, perhaps a sign of whatever limited trust drow can put in others. Unlocks 'Step on dick' sex action.",
+  tags: [],
+ } )>>
+
+
+<<run new setup.ItemSexManual({
   key: 'sexmanual_spit_face',
   name: 'Sex Manual: Spit in Face',
-  description: "A gift from the enigmatic drow who lived in V'errmyrdn, perhaps a sign of whatever limited trust drow can put in others. Unlocks 'Spit in face' sex action.",
+  description: "XXX TODO XXX KOBOLDS. Unlocks 'Spit in face' sex action.",
   tags: [],
  } )>>
 

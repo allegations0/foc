@@ -310,6 +310,7 @@ setup.SexUtil.masochistReaction = function (me, them, actions, sex) {
       letting a|rep know that b|they a|is a masochist who's getting turned on by being abused like this.`,
     ` A a|let out an obviously aroused moan from ${action}, a|their masochistic urges winning out and deriving
       pleasure from the rough treatment.`,
+    ` An obviously horny scream escapes from b|reps b|mouth, the masochist deriving pleasure from ${action}.`,
   ]
 
   const text = setup.SexUtil.convert(t, { a: me, b: them }, sex)
