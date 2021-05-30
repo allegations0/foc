@@ -9,15 +9,22 @@ setup.DOM.Menu.changeskillfocus = function (unit) {
   fragments.push(html`
     <div>
       Change ${unit.rep()}'s skill focuses.
-      ${setup.DOM.Util.help(`
+      ${setup.DOM.Util.help(html`
+        <p>
         Skill focus is the priority skill that the unit will try to focus on.
+        These skills will always increase whenever the unit gains a level.
+        Set the skill focus according to which skills the unit is talented at!
+        </p>
+        <div>
+        <b>Details</b>:
         If a skill is one of the skill focuses, then it is guaranteed to gain at least one point per
-        level up, but can sometimes gain more than one:
+        level up.
+        However, they can sometimes gain more than one point:
         Each skill focus grants a ${(setup.SKILL_FOCUS_MULTI_INCREASE_CHANCE * 100).toFixed(0)}% chance
         the skill will get another extra point at level up.
         You can select the same skills multiple times as a skill focus, which will increase the chance further.
         For example,
-        [${setup.skill.brawn.rep()}${setup.skill.brawn.rep()}${setup.skill.arcane.rep()}]
+        ${setup.skill.brawn.rep()}${setup.skill.brawn.rep()}${setup.skill.arcane.rep()}
         means the unit will always gain
         ${setup.skill.brawn.rep()}${setup.skill.arcane.rep()}
         on level up.
@@ -35,13 +42,14 @@ setup.DOM.Menu.changeskillfocus = function (unit) {
           during one level up.
         `)}
         ${(2 * setup.SKILL_FOCUS_MULTI_INCREASE_CHANCE * 100).toFixed(0)}%
-        chhance to get
+        chance to get
         an extra ${setup.skill.brawn.rep()} point, and
         ${(setup.SKILL_FOCUS_MULTI_INCREASE_CHANCE * 100).toFixed(0)}% chance to get
         an extra ${setup.skill.arcane.rep()} point.
         The order of the skill focuses does not matter.
         Note that a unit always gain six skill points on level up -- the remaining points
         after the skill focuses are assigned to random skills.
+        </div>
       `)
     }
     </div>
