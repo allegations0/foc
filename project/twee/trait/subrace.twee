@@ -94,7 +94,7 @@
   new setup.Trait(
     'subrace_lizardkin',
     'lizardkin',
-    'These relatively aggressive variant of <<rep setup.trait.race_lizardkin>> that can occasionally be met across the <<lore region_sea>>. They are adept swimmers and also make excellent scouts, but hiring them is problematic as most lizardkins would prefer their own company. Unsurprisingly, these people are often attuned to <<lore magic_water>>.',
+    'These relatively aggressive variant of <<rep setup.trait.race_lizardkin>> that can occasionally be met across the <<lore region_sea>>. They are adept swimmers and also make excellent scouts, but hiring them is problematic as most lizardkin would prefer their own company. Unsurprisingly, these people are often attuned to <<lore magic_water>>.',
     3000,
     {},
     ['rare', 'race_lizardkin', ],
@@ -103,7 +103,7 @@
   new setup.Trait(
     'subrace_demonkin',
     'demonkin',
-    'The most common <<rep setup.trait.race_demon>>, it is said that demonkins are the result of the numerous virgins violated by purebred demons. There are some who managed to cross the fog into our world, but those are extremely rare. Attuned to darkness, which is perhaps the strongest element. Most demonkins are found serving their pureblooded demon masters, although there are exceptions of free and master-less demonkins. Like all other demons, demonkins are unaffected by the negative skill and value penalties of demonic bodyparts.',
+    'The most common <<rep setup.trait.race_demon>>, it is said that demonkin are the result of the numerous virgins violated by purebred demons. There are some who managed to cross the fog into our world, but those are extremely rare. Attuned to darkness, which is perhaps the strongest element. Most demonkin are found serving their pureblooded demon masters, although there are exceptions of free and master-less demonkin. Like all other demons, demonkin are unaffected by the negative skill and value penalties of demonic bodyparts.',
     7500,
     {},
     ['rare', 'race_demon', ],
@@ -138,7 +138,7 @@
   new setup.Trait(
     'subrace_dragonkin',
     'dragonkin',
-    'A mythical subrace of <<rep setup.trait.race_lizardkin>> said to dwell somewhere beyond the <<lore region_sea>>. Even compared to the lizardkins, these winged relatives of them are extremely rare. Attuned to <<lore magic_light>>, which they are often able to breathe out from their snouts.',
+    'A mythical subrace of <<rep setup.trait.race_lizardkin>> said to dwell somewhere beyond the <<lore region_sea>>. Even compared to the lizardkin, these winged relatives of them are extremely rare. Attuned to <<lore magic_light>>, which they are often able to breathe out from their snouts.',
     15000,
     {},
     ['unicorn', 'race_lizardkin', ],
@@ -153,5 +153,3 @@
     ['rare', 'race_demon', ],
   ),
 ], ['subrace'], true)>>
-
-

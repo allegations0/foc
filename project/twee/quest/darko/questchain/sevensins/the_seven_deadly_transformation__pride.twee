@@ -87,7 +87,7 @@ setup.qres.ExistUnit([
 <<else>>
 
 <p>
-The dragonkins are proud people, and they showcase their pride quite often. Parades
+The dragonkin are proud people, and they showcase their pride quite often. Parades
 are often held within their territory, where their warriors proudly march
 displaying their loots from their most recent skirmishes. Bystanders can
 watch in awe as these powerful and yet sexy warriors marched for days in
@@ -147,7 +147,7 @@ been impossible. But during the march, your slavers noticed that the slave's
 which somehow kept it <<if $g.fated.isHasDick()>>erect<<else>>hard<</if>>
 throughout the long brutal march. Even more, scales slowly grew out of their
 entire body and by the end of the march, <<reps $g.fated>> body had been
-fully transformed into that of dragonkins — covered by strong protective
+fully transformed into that of dragonkin — covered by strong protective
 scales.
 </p>
 

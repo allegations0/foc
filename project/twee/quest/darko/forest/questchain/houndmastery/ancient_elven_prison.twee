@@ -164,7 +164,7 @@ setup.qdiff.hardest46, /* difficulty */
 
 <p>
 The <<lore region_forest>> is full of ancient ruins, from bygone era when
-ancient elves and tigerkins inhabited the land. However, thanks to the elven
+ancient elves and tigerkin inhabited the land. However, thanks to the elven
 enchantments which are still present until today, most of these ruins are hidden
 from human eyes and has so far remains mostly untouched.
 </p>
@@ -173,7 +173,7 @@ from human eyes and has so far remains mostly untouched.
 Normally, it would be impossible for anyone to breach these compounds. But
 <<yourrep _u>> reminded you that currently you are being lent a certain
 tigerkin pet with you blessed with a very keen nose. As the history books tell, some
-tigerkins are capable of sniffing out these ancient enchanted ruins, and
+tigerkin are capable of sniffing out these ancient enchanted ruins, and
 discover them even without breaking the enchantment.
 Perhaps this particular pet can be used for that...
 </p>
@@ -202,7 +202,7 @@ a certain direction, no doubt feeling something inhabiting the place.
 Soon enough, your slavers can feel the air around them suddenly turned
 ancient, and the open field before them morphed into an ancient building — no
 doubt the ancient elven prison they had been looking for. It looked both
-derelict and pristine, with ancient pots still unsmashed. But instead of
+derelict and pristine, with ancient pots still intact. But instead of
 looking like a regular prison, the ancient elves seemed to use their
 petrification magic to store their prisoners. Lines and lines of ancient
 tigerkin statues filled the halls, no doubt prisoners of some bygone era forced
@@ -290,7 +290,7 @@ elven teleporting trap, which teleported all of them all around the place.
 <<Rep $g.adventurer1>> adventurer1|was teleported to a faraway land, but a
 safe one and should return to your company given some time. <<Rep
 $g.adventurer2>> adventurer2|was not as lucky, and got teleported into
-another slaver company, which you happenped to get in contact with. You can
+another slaver company, which you happened to get in contact with. You can
 rebuy <<them $g.adventurer2>> immediately. And nobody knew where <<rep
 $g.muscle>> muscle|was teleported to...
 All the while <<rep $g.pet>> pet|was conveniently teleported back to your

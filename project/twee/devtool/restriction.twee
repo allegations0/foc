@@ -507,7 +507,7 @@ Choose restriction type:
           <div class='helpcard'>
             Innate trait are traits that the unit will have when fully purified.
             Generally, this is the skin traits they started with, e.g.,
-            <<rep setup.trait.body_dragonkin>> for most dragonkins.
+            <<rep setup.trait.body_dragonkin>> for most dragonkin.
           </div>
         <</message>>
       </div>

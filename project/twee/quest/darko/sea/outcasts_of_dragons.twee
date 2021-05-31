@@ -89,19 +89,19 @@ setup.qres.QuestUnique(), ], /* restrictions to generate */
 :: Quest_outcasts_of_dragons [nobr]
 
 <p>
-The mysterious dragonkins are said to live somewhere across the southern
+The mysterious dragonkin are said to live somewhere across the southern
 seas. These rare people are very much prized as both a slave and a slaver, for
 they are usually adept in many fields, as well as having the rare ability to take flight.
-While there are instances of dragonkins found in the main continent of
+While there are instances of dragonkin found in the main continent of
 <<lore continent_main>>, they are incredibly rare.
 </p>
 
 <p>
-You have heard rumors that the dragonkins had recently exiled one of their own for
-some unspeakable crime. This makes the exilee extremely vulnerable, and it
+You have heard rumors that the dragonkin had recently exiled one of their own for
+some unspeakable crime. This makes the exiled extremely vulnerable, and it
 might be a good idea to send a group of slavers to try and capture the
 dragonkin. If done correctly, such slave would make an extremely valuable
-piece of meat, but even when naked, dragonkins are never defenseless. You
+piece of meat, but even when naked, dragonkin are never defenseless. You
 must prepare for the worst if you were to take on this mission.
 </p>
 
@@ -135,7 +135,7 @@ against the exiled dragonkin.
   <<Reps _agg>> natural aggression gave <<them _agg>> an edge during the intense fight.
 <</if>>
 
-After an intense fight, emerged victorious.
+After an intense fight, <<rep $g.tamer1>> and <<rep $g.tamer2>> emerged victorious.
 Your slavers were not taking any chances and bound the captive dragonkin fully
 from top to bottom to ensure that nothing happened on their trip back
 home.
@@ -147,11 +147,11 @@ home.
 <p>
 While <<rep $g.informer>> managed to track the exiled dragonkin, once your
 slavers spotted the dragonkin, they were met with something they did not
-expect. The dragonkin were obviously already broken, either from the torture
-inflicted by <<their $g.broken>> fellow dragonkins, or by the mental pressure
-they must had endured being exiled so far from home. Either way, your
+expect. The dragonkin was obviously already broken, either from the torture
+inflicted by <<their $g.broken>> fellow dragonkin, or by the mental pressure
+they must had endured from being exiled so far from home. Either way, your
 slavers <<uadv $g.tamer1>>
-subdued <<rep $g.broken>> to be brought home as a slave. At its current
+subdued <<rep $g.broken>> to be brought home as a slave. In its current
 state, the slave will not be able to sell for very high, but perhaps you can
 fix that somehow?
 </p>
@@ -177,7 +177,7 @@ returned home, but after sustaining heavy injuries.
 <<rep $g.tamer2>> fought <<uadv $g.tamer1>> against the exiled dragonkin.
 But even with the sheer advantage of number, your slavers were
 no match for the mighty dragonkin. They were incinerated by the
-dragonkin's fire breath, and got severely injured.
+dragonkin's fire breath, and were severely injured.
 <<Yourrep $g.informer>> had to basically beg to allow <<them $g.informer>>
 to take <<their $g.informer>>
 comrades back home and forget that all this humiliation ever happened, which
@@ -185,4 +185,3 @@ the dragonkin allowed with the exception of <<rep $g.tamer2>>, whom <<they $g.dr
 to keep as a pet.
 <<urescuenow $g.tamer2>>.
 </p>
-

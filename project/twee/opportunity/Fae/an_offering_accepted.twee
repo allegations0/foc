@@ -147,7 +147,7 @@ Raid
 
 :: Opportunity_an_offering_accepted2_0_flavor [nobr]
 <p>
-    After patiently hearing out the demonkins offers, you stand and extend your hand for a handshake. As the demonkin clasps your hand you yank <<them $g.demonkinnegotiator>> over your desk, grabbing <<their $g.demonkinnegotiator>> <<uneck $g.demonkinnegotiator>> with your other hand. As <<rep $g.demonkinnegotiator>> is trying to figure out what happened to cause this, you drag <<their $g.demonkinnegotiator>> squirming body all through the halls before throwing them out your front gate. Loudly you tell the demonkin that you have no interest in further business dealings with them and order them off your property.
+    After patiently hearing out the demonkin's offer, you stand and extend your hand for a handshake. As the demonkin clasps your hand you yank <<them $g.demonkinnegotiator>> over your desk, grabbing <<their $g.demonkinnegotiator>> <<uneck $g.demonkinnegotiator>> with your other hand. As <<rep $g.demonkinnegotiator>> is trying to figure out what happened to cause this, you drag <<their $g.demonkinnegotiator>> squirming body all through the halls before throwing them out your front gate. Loudly you tell the demonkin that you have no interest in further business dealings with them and order them off your property.
 </p>
 
 

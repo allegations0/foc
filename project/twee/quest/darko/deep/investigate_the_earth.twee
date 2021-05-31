@@ -118,11 +118,11 @@ setup.qdiff.normal30, /* difficulty */
 </p>
 
 <p>
-    A bunch of tiny lizardkins could be seen busily repairing parts of a collapsed wall. Despite being tiny, they work fast and efficiently, hammering the walls back into shape. It seems you have found the cause for your tremor — your fort is just right above the highway, and their repairs must have caused tremors upwards.
+    A bunch of tiny lizardkin could be seen busily repairing parts of a collapsed wall. Despite being tiny, they work fast and efficiently, hammering the walls back into shape. It seems you have found the cause for your tremor — your fort is just right above the highway, and their repairs must have caused tremors upwards.
 </p>
 
 <p>
-    Inspecting them closer, <<rep $g.sur>> finally realized that these are no lizardkins. They are kobolds, who apparently has made the underworld their home. A thriving kobold civilization seems to exist down here, and who knows what else.
+    Inspecting them closer, <<rep $g.sur>> finally realized that these are no lizardkin. They are kobolds, who apparently has made the underworld their home. A thriving kobold civilization seems to exist down here, and who knows what else.
 </p>
 
 <<if $gOutcome == 'crit' || $gOutcome == 'success'>>
