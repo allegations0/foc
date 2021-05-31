@@ -18,8 +18,7 @@
 <<attach _dom>>
 
 <</nobr>>
-<div id='devtoolcoderesult'  class='companycard'> <code>
-"""::""" <<= $ipassagesetup >> [nobr interaction]
+<div id='devtoolcoderesult'  class='companycard'> <code>"""::""" <<= $ipassagesetup >> [nobr interaction]
 
 <<dtprintmeta>>
 """<<run new setup.Interaction("""

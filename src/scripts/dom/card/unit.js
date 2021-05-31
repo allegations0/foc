@@ -203,7 +203,7 @@ setup.DOM.Card.unit = function (unit, hide_actions) {
           + ${extra_traits.map(trait => html`${trait.rep()}`)}
           ${setup.DOM.Util.help(
           html`
-              These are extra traits granted by the equipment that the unit worn.
+              These are extra traits that the unit possess.
               While these traits will affect the unit's skills and the critical/disaster
               traits on missions, the units themselves are ${setup.DOM.Text.danger('not')}
               counted as having these traits for satisfying requirements or for story purposes.

@@ -1519,6 +1519,59 @@ In this example, this option will not be displayed if the player is female.
 `)
             },
           }),
+          menuItem({
+            text: 'Get unit in your company...',
+            tooltip: `Allows you to select a non-actor unit among units in your company`,
+            callback: () => {
+              insertTextIntoEditor(`<<set _u = setup.getUnit({
+  /* Delete entries that you do not need: */
+
+  /* only pick units of this job. Leaving this empty allow picking NPCs. Possible options: 'slaver', 'slave' */
+  job: 'slaver',
+
+  /* unit must have this specific tag. */
+  tag: 'unittagname',
+
+  /* unit must have the title with this title key */
+  title: 'quest_slave_leader_of_the_company_0',
+
+  /* unit must be available to go on some quest. Note that on duty units are eligible */
+  available: true,
+
+  /* unit is chosen at random from all possible units that satisfy these conditions */
+  random: true,
+
+  /* unit must have ALL of these traits. */
+  alltraits: ['per_cruel', 'per_evil', ],
+
+  /* unit must have ANY of these traits. */
+  anytraits: ['muscle_verystrong', 'muscle_extremelystrong', 'tough_tough', ],
+
+  /* unit cannot be the player character */
+  notyou: true,
+
+  /* unit must be injured */
+  injured: true,
+
+  /* will return the unit that has maximum skill at this skill, among all eligible units */
+  skill_max: setup.skill.arcane,
+})>>
+
+<<if _u>>
+  <<Rep _u>> tells you to continue writing the quest.
+<<else>>
+  <<missingunitquest>>
+<</if>>
+`)
+            },
+          }),
+          menuItem({
+            text: 'Unit required for this mission is no longer available',
+            tooltip: `Give a generic message telling player that a certain quest is no longer complete-able because you are missing a unit`,
+            callback: () => {
+              insertTextIntoEditor(`<<missingunitquest>>`)
+            },
+          }),
         ],
       })
     )

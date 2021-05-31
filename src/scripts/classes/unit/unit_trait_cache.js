@@ -1,10 +1,10 @@
-import {removeMindbrokenTraits} from "./unit_traits"
+import { removeMindbrokenTraits } from "./unit_traits"
 
 
 /**
  * Resets unit's cached trait map
  */
-setup.Unit.prototype.resetTraitMapCache = function() {
+setup.Unit.prototype.resetTraitMapCache = function () {
   State.variables.cache.clear('unitbasetrait', this.key)
   State.variables.cache.clear('unittrait', this.key)
   State.variables.cache.clear('unitextratrait', this.key)
@@ -18,7 +18,7 @@ setup.Unit.prototype.resetTraitMapCache = function() {
  * @param {Function} callback 
  */
 function getTraitMapCacheBackend(unit, varkey, callback) {
-  let map = State.variables.cache.get(varkey, unit.key) 
+  let map = State.variables.cache.get(varkey, unit.key)
 
   if (!map) {
     const trait_list = callback()
@@ -35,7 +35,7 @@ function getTraitMapCacheBackend(unit, varkey, callback) {
 /**
  * Get unit's cached trait value. Set it first if it was unset.
  */
-setup.Unit.prototype.getTraitMapCache = function() {
+setup.Unit.prototype.getTraitMapCache = function () {
   return getTraitMapCacheBackend(this, 'unittrait', () => this._computeAllTraits())
 }
 
@@ -43,7 +43,7 @@ setup.Unit.prototype.getTraitMapCache = function() {
 /**
  * Get unit's cached trait value. Set it first if it was unset.
  */
-setup.Unit.prototype.getExtraTraitMapCache = function() {
+setup.Unit.prototype.getExtraTraitMapCache = function () {
   return getTraitMapCacheBackend(this, 'unitextratrait', () => this._computeAllExtraTraits())
 }
 
@@ -51,7 +51,7 @@ setup.Unit.prototype.getExtraTraitMapCache = function() {
 /**
  * Get unit's cached trait value. Set it first if it was unset.
  */
-setup.Unit.prototype.getBaseTraitMapCache = function() {
+setup.Unit.prototype.getBaseTraitMapCache = function () {
   return getTraitMapCacheBackend(this, 'unitbasetrait', () => this._computeAllBaseTraits())
 }
 
@@ -59,9 +59,8 @@ setup.Unit.prototype.getBaseTraitMapCache = function() {
 /**
  * Compute units extra traits. Also cached for performance.
  */
-setup.Unit.prototype._computeAllExtraTraits = function() {
-
-  let traits = []
+setup.Unit.prototype._computeAllExtraTraits = function () {
+  const trait_map = {}
   /**
    * Extra traits from equipment sets:
    */
@@ -70,12 +69,29 @@ setup.Unit.prototype._computeAllExtraTraits = function() {
     const trait_obj = equipment_set.getTraitsObj()
     for (const trait_key in trait_obj) {
       const trait = setup.trait[trait_key]
-      if (trait.isAttachable() && !this.isHasTrait(trait)) {
+      if (trait.isAttachable()) {
         // only attachable traits become extra traits. Computed traits go with "standard" traits.
-        traits.push(trait)
+        trait_map[trait.key] = true
       }
     }
   }
+
+  /**
+   * Extra traits form perks:
+   */
+  for (const perk_raw of this.getAllTraitsWithTag('perk')) {
+    /**
+     * @type {setup.Perk}
+     */
+    const perk = perk_raw
+    for (const extra of perk.getPerkExtraTraits()) {
+      trait_map[extra.key] = true
+    }
+  }
+
+  let traits = Object.keys(trait_map).map(key => setup.trait[key]).filter(
+    trait => !this.isHasTrait(trait)
+  )
 
   // Remove mindbroken traits
   // Can do this since mindbroken code is special
@@ -91,7 +107,7 @@ setup.Unit.prototype._computeAllExtraTraits = function() {
 /**
  * Compute all unit's base traits and return them as a list. Used internally once then cached.
  */
-setup.Unit.prototype._computeAllBaseTraits = function() {
+setup.Unit.prototype._computeAllBaseTraits = function () {
   let traits = Object.keys(this.trait_key_map).map(trait_key => setup.trait[trait_key])
   if (this.isMindbroken()) {
     traits = removeMindbrokenTraits(traits)
@@ -141,7 +157,7 @@ setup.Unit.prototype._computeAllBaseTraits = function() {
 /**
  * Compute all unit's traits and return them as a list. Used internally once then cached.
  */
-setup.Unit.prototype._computeAllTraits = function() {
+setup.Unit.prototype._computeAllTraits = function () {
   let traits = this.getBaseTraits()
   const base_trait_map = this.getBaseTraitMapCache()
 
@@ -185,7 +201,7 @@ setup.Unit.prototype._computeAllTraits = function() {
     } else {
       for (var i = setup.TRAIT_VALUE_HIGH_THRESHOLDS.length - 1; i >= 0; --i) {
         if (value >= setup.TRAIT_VALUE_HIGH_THRESHOLDS[i]) {
-          traits.push(setup.trait[`value_high${i+1}`])
+          traits.push(setup.trait[`value_high${i + 1}`])
           break
         }
       }

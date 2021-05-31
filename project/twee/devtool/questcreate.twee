@@ -23,8 +23,7 @@
 <<attach _dom>>
 
 <</nobr>>
-<div id='devtoolcoderesult' class='companycard'> <code>
-"""::""" <<= $qpassagesetup >> [nobr quest]
+<div id='devtoolcoderesult' class='companycard'> <code>"""::""" <<= $qpassagesetup >> [nobr quest]
 
 <<dtprintmeta>>
 <<for _irole, _role range $dtquest.getUnitCriterias()>> <<if !_role.criteria.key>> <<set _rolename = `_criteria${_irole}`>>

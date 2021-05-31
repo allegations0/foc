@@ -575,12 +575,6 @@ Select from these options:
           <</message>>
         </div>
 
-        <hr/>
-        <div><b>Advanced</b></div>
-
-        <div>
-          [['Remove all mental traits'|CostClearMentalTraits]]
-        </div>
       </div>
     <</message>>
   </div>
@@ -747,6 +741,13 @@ Select from these options:
               </div>
             </div>
           <</message>>
+        </div>
+
+        <hr/>
+        <div><b>Advanced</b></div>
+
+        <div>
+          [['Remove all mental traits'|CostClearMentalTraits]]
         </div>
       </div>
     <</message>>

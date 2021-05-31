@@ -4,6 +4,22 @@
 
 ### v1.7.0.x
 
+v1.7.0.23:
+
+  - The Shunned Kobold quest chain (7 event, 7 mail. 3 quest)
+  - New activity: Warehouse help around
+  - New special perks: Savior kobold and Kobold heritage
+  - Some new portraits.
+  - 1.75 and 2.5 zoom for fort
+  - Dragonkin now has dual light/fire affinities.
+  - Kobold background rarities adjustments
+  - setup.getUnit to CC toolbar.
+  - Remove escapedslaves unit group
+  - Support for injured recruits.
+  - Fixed dildo (anus) -> dildo (anal)
+  - Fixed most* instances of -kins to proper plural -kin (thanks to Elannil)
+  - Fix extra whitespace at start of CC result.
+
 v1.7.0.22:
 
   - Added 1.25x zoom to fort
