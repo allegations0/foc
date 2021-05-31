@@ -521,8 +521,8 @@ For example, a werewolf unit's primary race is `wolfkin`,
 and its subrace is `werewolf`.
 
 **The list of seven playable primary races are final.**
-There are seven playable **primary races** in the game: humans, wolfkins,
-elves, catkins, greenskins, lizardkins, and demons.
+There are seven playable **primary races** in the game: humans, wolfkin,
+elves, catkin, greenskins, lizardkin, and demons.
 There are no plan to add more fully-playable primary races.
 Writers can rest assured that as long as their writing covers all these
 seven races, their writing will forever be good.
@@ -583,15 +583,15 @@ and writing out
 the contents for them. Once that's done, the subrace can then be added into the game. Adding a subrace requires
 a lot of effort from all parties involved, both writers and code maintainers.
 
-As an example, tigerkins have:
+As an example, tigerkin have:
 
 - 26 images
 - Its own lore thats intertwined with the world (i.e., as ancestors of the neko, and therefore is mainly found
-as petrified statues in the western forests, from the ancient war between elves and tigerkins. Multiple quests
+as petrified statues in the western forests, from the ancient war between elves and tigerkin. Multiple quests
 reference this)
 - Many bodypart texts
-- 4 quests (3 of them form a long quest chain), 3 events, and 2 opportunities (this is on the lower side, but tigerkins have been part of the game since the start so their bar is lower)
-- And they are still basically neko, sharing many attributes with them. Treating tigerkins as neko will not cause writing or coherency problems.
+- 4 quests (3 of them form a long quest chain), 3 events, and 2 opportunities (this is on the lower side, but tigerkin have been part of the game since the start so their bar is lower)
+- And they are still basically neko, sharing many attributes with them. Treating tigerkin as neko will not cause writing or coherency problems.
 
 Example races that probably would **not** be addable as a playable race:
 

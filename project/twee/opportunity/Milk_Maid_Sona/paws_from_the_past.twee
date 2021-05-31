@@ -89,7 +89,7 @@ and recondite village somehow found out about one of your latest missions,
 where you freed an ancient <<urace $g.neko>>
 by breaking the spell that kept them as a living statue.
 This group of neko has great interest in their ancestors, the
-tigerkins, and also on the war between the elves and the neko from centuries ago.
+tigerkin, and also on the war between the elves and the neko from centuries ago.
 Thanks to their obsession, they believe
 that someone who had lived in those ancient times can be an incredible source of
 information and wisdom. Unfortunately (and concerningly for you), they also know
@@ -103,7 +103,7 @@ it was.
 That's why they are asking, if possible, that you use your resources
 to give <<rep $g.neko>> <<their $g.neko>> sanity back, and nothing else.
 Whatever you decide to do with the slave afterwards,
-just the knowledge that 
+just the knowledge that
 one of their ancestors has regained their mind would be enough to cheer up all
 the villagers there.
 </p>
@@ -122,7 +122,7 @@ if you have or willing to gather the facilities and materials to do so.
 Maybe this will net you some favor with the neko.
 Or, you could simply ignore the letter and use
 your new slave as the brainless sexdoll it currently is.
-After all, not healing <<them $g.neko>> now doesn't mean you can't heal <<them $g.neko>> 
+After all, not healing <<them $g.neko>> now doesn't mean you can't heal <<them $g.neko>>
 in the future, if you consider it necessary.
 And what slaving company worth their name does charity
 work without the possibility of a juicy reward?

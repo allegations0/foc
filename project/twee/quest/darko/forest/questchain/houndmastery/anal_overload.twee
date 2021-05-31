@@ -172,10 +172,10 @@ setup.qdiff.normal1, /* difficulty */
 <<set _u = setup.getAnySlaver()>>
 
 <p>
-According to the tomes, the magic binding these tigerkins are concentrated in
+According to the tomes, the magic binding these tigerkin are concentrated in
 the pole lodged deep within their anus. These statues with no exception are held upright by a
 cruelly shoved stone dildo impaled from below. The dildos
-are enchanted with magic, keeping these poor tigerkins barely alive in their statue
+are enchanted with magic, keeping these poor tigerkin barely alive in their statue
 form.
 </p>
 
@@ -274,4 +274,3 @@ Having inserted their chosen phallus to such an ancient and rare hole brought co
 <<run setup.qc.BoonizeRandom('anal1', 9).apply($gQuest)>>
 <</if>>
 </p>
-

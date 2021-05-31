@@ -422,8 +422,8 @@ They have adapted to having demonic bodyparts, and suffer no penalties from havi
 <p>
 These now-extinct <<rep setup.trait.race_catkin>> are ancestors of the
 <<rep setup.trait.subrace_neko>>.
-Unlike their modern counterpart, tigerkins posses fully furry bodies.
-In times past, these tiger anthros
+Unlike their modern counterpart, tigerkin posses fully furry bodies.
+In times past, these anthropomorphic tigers
 inhabited the <<lore region_forest>> alongside their enemies, the ancient elves.
 Books tell of many dual-wielding <<rep setup.trait.skill_ambidextrous>>,
 and their great mastery over <<lore magic_earth>>.
@@ -509,10 +509,10 @@ The most populous species of the relatively rare <<rep setup.trait.race_lizardki
 Although rarely found within <<lore continent_main>>, they are a rather common sight
 far beyond the <<lore region_sea>>.
 They share many traits with their close relative, the <<rep setup.trait.subrace_dragonkin>>,
-being a big, tall, proud, brave, and dominant species, but unlike the dragonkins, lizardkins are also
-quite aggressive, and would take jobs such as raiders and thugs that dragonkins abhor with passion.
+being a big, tall, proud, brave, and dominant species, but unlike the dragonkin, lizardkin are also
+quite aggressive, and would take jobs such as raiders and thugs that dragonkin abhor with passion.
 They are quite <<rep setup.trait.skill_intimidating>> to look at.
-Lizardkins are excellent swimmers, and many are attuned to <<lore magic_water>>.
+Lizardkin are excellent swimmers, and many are attuned to <<lore magic_water>>.
 </p>
 
 
@@ -530,20 +530,20 @@ Lizardkins are excellent swimmers, and many are attuned to <<lore magic_water>>.
 :: LORE_race_demonkin [nobr]
 
 <p>
-Demonkins hail from the same location with their more demonic counterpart,
+Demonkin hail from the same location with their more demonic counterpart,
 the <<rep setup.trait.subrace_demon>>, but their corruptions are generally much more subdued.
-Most demonkins still have almost normal limbs, although their body, tail, and horns
+Most demonkin still have almost normal limbs, although their body, tail, and horns
 still make them stand out from others.
-Many lives beyond <<lore concept_mist>>, serving their pureblooded demon masters, and demonkins
+Many lives beyond <<lore concept_mist>>, serving their pureblooded demon masters, and demonkin
 that are found within the mortal plane are often in the middle of doing some biddings of their masters.
 There are exceptions however, and tales of brave but evil demonkin adventurers are quite popular
 across the land.
 </p>
 
 <p>
-Like most demons, demonkins tend to be evil, cruel lunatics.
+Like most demons, demonkin tend to be evil, cruel lunatics.
 In addition,
-demonkins eyes are quite something, some even possessing qualities that make them good at
+demonkin eyes are quite something, some even possessing qualities that make them good at
 <<rep setup.trait.skill_hypnotic>> which they use to lure in potential slaves.
 Thanks to their demonic heritage, they are unaffected by the negative effects of demonic bodypart.
 </p>

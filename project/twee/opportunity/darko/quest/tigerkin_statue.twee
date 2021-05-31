@@ -69,8 +69,8 @@ misadventure, it is time to decide what to do with them.
 <p>
 The first option is to simply keep the statue as prestigious decorations.
 After being imprisoned for so long, there is no doubt that the minds of these
-tigerkins are long gone, and it might best to leave them as statues which
-will surely worth more than the actual tigerkins. Plus,
+tigerkin are long gone, and it might best to leave them as statues which
+will surely worth more than the actual tigerkin. Plus,
 <<if $g.gender.isHasDick()>>
 there is surely fun to be had with a statue blessed with a permanently erect and leaking dick...
 <<else>>

@@ -125,7 +125,7 @@
 <<run new setup.ItemTechnology({
   key: 'wings_technology',
   name: 'Technology: Way of the Wings',
-  description: "Old teachings of the dragonkins on the workings of theirs and demonic wings. A tightly guarded secret of the dragonkins who live somewhere in the southern seas.",
+  description: "Old teachings of the dragonkin on the workings of theirs and demonic wings. A tightly guarded secret of the dragonkin who live somewhere in the southern seas.",
   tags: [],
 })>>
 

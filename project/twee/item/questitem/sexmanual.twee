@@ -157,7 +157,7 @@
 <<run new setup.ItemSexManual({
   key: 'sexmanual_nibble_neck',
   name: 'Sex Manual: Nibble Neck',
-  description: "A gift from the lizardkins, as a sign of their respect. Unlocks 'Nibble neck' sex action.",
+  description: "A gift from the lizardkin, as a sign of their respect. Unlocks 'Nibble neck' sex action.",
   tags: [],
  } )>>
 

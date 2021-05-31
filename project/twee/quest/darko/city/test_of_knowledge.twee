@@ -125,7 +125,7 @@ setup.qres.SkillAtLeast(setup.skill.knowledge, 100)
 <p>
 <<set $g.smart = _smart>>
 <<Yourrep $g.smart>> smart|is really knowledgeable.
-Smarter than the average rock, smarter than the average person, and some even say <<they $g.smart>> smart|is smarter than the smartest of dragonkins.
+Smarter than the average rock, smarter than the average person, and some even say <<they $g.smart>> smart|is smarter than the smartest of dragonkin.
 <<if !$g.smart.isYou()>>
 <<They $g.smart>> might even be smarter than you!
 <</if>>

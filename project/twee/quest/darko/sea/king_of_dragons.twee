@@ -237,7 +237,7 @@ The king were impressed by the quality of <<yourrep $g.slave>> and the presentat
 Your slavers did not even need to negotiate that hard for the king to agree
 to
 <<if $inventory.isHasItem('wings_technology')>>
-put out good words about your company to his fellow dragonkins in exchange for the slave
+put out good words about your company to his fellow dragonkin in exchange for the slave
 <<else>>
 exchange the slave with a copy of the artifact <<rep
 setup.item.wings_technology>>
@@ -256,7 +256,7 @@ convinced him and presented the slave in such an alluring way that king
 finally agreed on the exchange. <<Rep $g.slave>> will forever serve the king,
 in exchange for
 <<if $inventory.isHasItem('wings_technology')>>
-putting out good words about your company to the rest of the dragonkins.
+putting out good words about your company to the rest of the dragonkin.
 <<else>>
 a copy of <<rep setup.item.wings_technology>>.
 <</if>>
