@@ -2,7 +2,7 @@
 
 <<run new setup.ActivityTemplate({
 key: 'grand_hall_gossip',
-name: "Grand Hall Gossip", /* Title */
+name: "Great Hall Gossip", /* Title */
 author: { /* Author */
   name: "darko",
   url: "",
@@ -87,6 +87,6 @@ dialogues: [
 }, /* End of Dialogue #2 */
 ],
 room_templates: [
-  setup.roomtemplate.grandhall,
+  setup.roomtemplate.greathall,
 ],
 })>>

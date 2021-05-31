@@ -4,7 +4,7 @@
 
 <<run new setup.Event(
 'lizardkins_at_your_doorstep', /* key */
-"Lizardkins at Your Doorstep", /* Title */
+"Lizardkin at Your Doorstep", /* Title */
 "darko", /* Author */
 [ ], /* tags */
 'Event_lizardkins_at_your_doorstep',

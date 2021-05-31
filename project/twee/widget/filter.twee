@@ -3,7 +3,7 @@
 <<focwidgetpayload 'filterall'>>
   <div>
     <<set _sucallback = $menufilter.getFilterFunc($args[0], $args[1])>>
-    <<if $fort.player.isHasBuilding('grandhall')>>
+    <<if $fort.player.isHasBuilding('greathall')>>
       <<if $menufilter.getOption($args[0], 'sticky')>>
         <<set _class = 'tagtoolbarsticky'>>
       <<else>>

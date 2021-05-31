@@ -181,7 +181,7 @@ setup.qdiff.harder40, /* difficulty */
 ],
 [ /* restrictions */
   setup.qres.QuestUnique(),
-  setup.qres.Building(setup.buildingtemplate.grandhall),
+  setup.qres.Building(setup.buildingtemplate.greathall),
 ],
 [ /* expiration outcomes */
 

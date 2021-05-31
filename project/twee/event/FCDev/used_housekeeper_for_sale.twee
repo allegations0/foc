@@ -38,7 +38,7 @@
   setup.qc.Slave('slave', "a|was a slave being used as nothing but a regular maid before being sold to you", true, 0.8),
 ],
 [ /* restrictions */
-  setup.qres.Building(setup.buildingtemplate.grandhall),
+  setup.qres.Building(setup.buildingtemplate.greathall),
   setup.qres.FavorAtLeast('bank', 300),
   setup.qres.VarNull('quest_tiger_bank_repo_resale'),
 ],

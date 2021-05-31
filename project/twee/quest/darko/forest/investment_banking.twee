@@ -108,7 +108,7 @@ setup.qc.Ire('bank', 10)
 [ /* restrictions */
   setup.qres.QuestUnique(),
   setup.qres.Cooldown(12),
-  setup.qres.Building(setup.buildingtemplate.grandhall),
+  setup.qres.Building(setup.buildingtemplate.greathall),
 ],
 [ /* expiration outcomes */
 

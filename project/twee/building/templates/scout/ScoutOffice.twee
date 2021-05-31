@@ -11,7 +11,7 @@
       type: "near",
       skill_key: "survival",
       room_keys: [
-        'grandhall',
+        'greathall',
         'scouthut',
         'scoutcarriage',
         'scouttunnel',
@@ -44,7 +44,7 @@
   restrictions: [
     [
       setup.qres.Building('scouthut'),
-      setup.qres.Building('grandhall'),
+      setup.qres.Building('greathall'),
     ],
   ],
   on_build: [

@@ -25,7 +25,7 @@
   restrictions: [
     [
       setup.qres.Building('scouthut'),
-      setup.qres.Building('grandhall'),
+      setup.qres.Building('greathall'),
       setup.qres.HasItem('lorebook_deep'),
     ],
   ],

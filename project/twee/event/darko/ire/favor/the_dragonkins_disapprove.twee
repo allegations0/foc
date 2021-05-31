@@ -4,7 +4,7 @@
 
 <<run new setup.Event(
 'the_dragonkin_disapprove', /* key */
-"The Dragonkins Disapprove", /* Title */
+"The Dragonkin Disapprove", /* Title */
 "darko", /* Author */
 [ ], /* tags */
 'Event_the_dragonkin_disapprove',

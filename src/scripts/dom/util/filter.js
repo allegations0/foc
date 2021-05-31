@@ -36,7 +36,7 @@ setup.DOM.Util.filterAll = function ({ menu, filter_objects, display_objects, di
 
   const filter_callback = State.variables.menufilter.getFilterFunc(menu, filter_objects)
 
-  if (State.variables.fort.player.isHasBuilding('grandhall')) {
+  if (State.variables.fort.player.isHasBuilding('greathall')) {
     let toolbarclass = ''
     if (State.variables.menufilter.getOption(menu, 'sticky')) {
       toolbarclass = 'tagtoolbarsticky'

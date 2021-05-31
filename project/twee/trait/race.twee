@@ -35,8 +35,8 @@
   ),
   new setup.Trait(
     'race_greenskin',
-    'orc',
-    'Greenskins often found maraudings in the eastern deserts. The orc race actually comprises of a much larger family, including goblins, trolls, and ogres, but among them orcs are much, much more intelligent.',
+    'greenskin',
+    'Greenskin often found maraudings in the eastern deserts. The orc race actually comprises of a much larger family, including goblins, trolls, and ogres, but among them orcs are much, much more intelligent.',
     0,
     {},
     [],

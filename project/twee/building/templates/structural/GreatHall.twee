@@ -1,9 +1,9 @@
-:: InitBuildingGrandHall [nobr]
+:: InitBuildingGreatHall [nobr]
 
 /* TODO: rename to Great Hall */
 
 <<run new setup.RoomTemplate({
-  key: 'grandhall',
+  key: 'greathall',
   tags: [],
   width: 6,
   height: 6,
@@ -28,10 +28,10 @@
 })>>
 
 <<run new setup.BuildingTemplate({
-  key: 'grandhall',
-  name: 'Grand Hall',
+  key: 'greathall',
+  name: 'Great Hall',
   tags: ['critical', 'unlocker', 'structural', ],
-  description_passage: 'BuildingGrandHall',
+  description_passage: 'BuildingGreatHall',
   costs: [
     [setup.qc.Money(-2000)],
   ],
@@ -55,14 +55,14 @@
       setup.qc.Event('open_for_visitors', 1),
     ]
   ],
-  main_room_template_key: 'grandhall',
+  main_room_template_key: 'greathall',
 })>>
 
 
-:: BuildingGrandHall [nobr]
+:: BuildingGreatHall [nobr]
 
 <p>
-Renovate the first floor of your fort into a grand hall suitable for your fledging company.
+Renovate the first floor of your fort into a great hall suitable for your fledging company.
 Unlocks seeing your company information, as well as many filter options in various menus.
 This improvement is also required to build many of the advanced improvements.
 </p>

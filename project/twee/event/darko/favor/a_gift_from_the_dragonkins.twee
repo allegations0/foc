@@ -4,7 +4,7 @@
 
 <<run new setup.Event(
 'a_gift_from_the_dragonkins', /* key */
-"A Gift from the Dragonkins", /* Title */
+"A Gift from the Dragonkin", /* Title */
 "darko", /* Author */
 [ /* tags */
   'item',
@@ -40,7 +40,7 @@ A winged dragonkin messenger clad in full armor has come to your compound
 today. The mighty messenger brings you a gift, as a token of your strong
 friendship with <<rep $company.dragonkin>>. You open the carefully wrapped
 gift, and discover the <<rep setup.item.sexmanual_bodypart_tail>> instead.
-This book is the "karmasutra" of the dragonkins, depicting the various sexual
+This book is the "karmasutra" of the dragonkin, depicting the various sexual
 acts one could do if should they are blessed with a tail. A fitting gift for a
 slaving company such as yours.
 </p>

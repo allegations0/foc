@@ -74,7 +74,7 @@ v1.7.0.0 (28 May 2021): Base-Building, Content, Content images, Imagepacks, Cont
     - Knight of Honor
     - Court Gossip
     - New activities:
-      - Grand hall gossip.
+      - Great hall gossip.
       - Clean shoes.
       - Library study
       - Marketer Marketing
@@ -239,7 +239,7 @@ v1.7.0.0 (28 May 2021): Base-Building, Content, Content images, Imagepacks, Cont
     - Choosing new pc in new game plus now allows choosing 3 slavers to retire with now, instead of 2
     - Starting slaver choice: 10 -> 12
     - Major fort expansion cost balance adjustments again.
-    - Library is now a prerequisite for grand hall, and decrease its price to 5000g
+    - Library is now a prerequisite for great hall, and decrease its price to 5000g
     - Updated Prince of Cups slave order to be more lucrative and fix text issues. (thanks to Matthew Lang)
     - Rec wing pimp rework: number of pimps down from 5 to 3, profit per pimp increased slightly, capped at three slaves each
     - Rivalry and friendship bonus now always active whenever both are slavers, but toned down by 20%.
@@ -1315,7 +1315,7 @@ v1.3.0.0 (December 26, 2020): Lots of content, new features, UI rewrites, icon r
    - Quests have icons now
    - Can set quests as ignored, which will hide them from the UI
    - Increase default quest expiration from 4 to 6 wks.
-   - Hide quest hub flavor text after grand hall is built
+   - Hide quest hub flavor text after great hall is built
  - Unit portraits:
    - Direct support for custom image-packs (thanks to Naraden)
    - Unit portrait picker (Naraden)

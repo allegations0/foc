@@ -397,7 +397,7 @@ setup.QuestAssignHelper.getAssignMenu = function (quest) {
       const extramenu = []
 
       // ignore quests
-      if (State.variables.fort.player.isHasBuilding(setup.buildingtemplate.grandhall)) {
+      if (State.variables.fort.player.isHasBuilding(setup.buildingtemplate.greathall)) {
         let ignore_checked = false
         if (State.variables.company.player.isIgnored(quest.getTemplate())) {
           ignore_checked = true

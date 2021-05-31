@@ -26,7 +26,7 @@
   restrictions: [
     [
       setup.qres.Building('hospital'),
-      setup.qres.Building('grandhall'),
+      setup.qres.Building('greathall'),
     ],
   ],
   main_room_template_key: 'moraleoffice',

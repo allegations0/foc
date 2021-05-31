@@ -2,14 +2,14 @@
 
 <<set $gMenuVisible = true>>
 
-<<set _room = $fort.player.getBuilding(setup.buildingtemplate.grandhall)>>
+<<set _room = $fort.player.getBuilding(setup.buildingtemplate.greathall)>>
 <<set _veteranroom = $fort.player.getBuilding(setup.buildingtemplate.veteranhall)>>
 <<set _viceleader = $dutylist.getDuty('viceleader')>>
 
 <h2><<= _room.getTitleRep()>></h2>
 
 <p>
-You enter the grand hall of your fort. The room is the centerpiece of your fort,
+You enter the great hall of your fort. The room is the centerpiece of your fort,
 and this is where you gather your slavers for important occassions.
 A
 <<message 'map of the region'>>
@@ -25,11 +25,11 @@ is displayed on the walls (Click to show).
       But you know <<they _unit>> is not available for the job right now.
     <</if>>
   <<else>>
-    The room overseeing your grand hall has been made into an office
+    The room overseeing your great hall has been made into an office
     for your <<rep _viceleader>>, although it is empty right now.
   <</if>>
 <</if>>
-<<if _veteranroom>>You have renovated the floor above your grand hall as
+<<if _veteranroom>>You have renovated the floor above your great hall as
 a <<rep _veteranroom>>, which displays the various achivements of your company.<</if>>
 </p>
 

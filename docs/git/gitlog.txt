@@ -108,7 +108,7 @@ commit 26e733313a6efa12a2f007b065a26668d256d60e
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Tue May 18 14:27:47 2021 +0700
 
-    Library is now a prerequisite for grand hall.
+    Library is now a prerequisite for great hall.
 
 commit 72c30175f3c410d0fd49fe158e699dc008f48da1
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -2469,7 +2469,7 @@ commit 72a46d3fa0bf8979e6e9380dabb6555c9b749803
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Mon May 3 17:19:45 2021 +0700
 
-    Grand hall + veteran hall images.
+    Great hall + veteran hall images.
 
 commit 571846c73bcfdbb8b890ef0fc56c4ca371865ceb
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -3277,7 +3277,7 @@ commit 41cf783e25ea25dc220e8e7e08dab891e15cb5d9
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Tue Apr 20 20:44:58 2021 +0700
 
-    Grand Hall and passable buildings
+    Great Hall and passable buildings
 
 commit f585c8dccb83d8ae553f3aefb33a0bc135bd47b6
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
@@ -16181,7 +16181,7 @@ commit da8c92b211f01f52196827bd42dfaf8bfff53259
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Mon Dec 14 23:59:16 2020 +0700
 
-    QuestHub hides the description after grand hall is built.
+    QuestHub hides the description after great hall is built.
     
     And some text fixes.
 
@@ -20133,7 +20133,7 @@ commit 8725bda56da53b113acf02bf0e6cae7d416bf15b
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>
 Date:   Thu Nov 19 23:09:17 2020 +0700
 
-    typos and scheduled events for grand hall / vet hall
+    typos and scheduled events for great hall / vet hall
 
 commit f6d6c533e768437fcf3aeed2fa5ed8f7ff50b4a8
 Author: darkofoc <17909-darkofocdarko@users.noreply.gitgud.io>

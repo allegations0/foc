@@ -37,7 +37,7 @@
   setup.qc.Slave('slave', "a|was the private slave of a con artist cult leader before being taken by the Tiger Bank repo-men", true, 0.8),
 ],
 [ /* restrictions */
-  setup.qres.Building(setup.buildingtemplate.grandhall),
+  setup.qres.Building(setup.buildingtemplate.greathall),
   setup.qres.FavorAtLeast('bank', 500),
   setup.qres.VarNull('quest_tiger_bank_repo_resale'),
 ],

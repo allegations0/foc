@@ -25,7 +25,7 @@
   ],
   restrictions: [
     [
-      setup.qres.Building('grandhall'),
+      setup.qres.Building('greathall'),
     ],
   ],
   on_build: [

@@ -32,7 +32,7 @@
       type: "near",
       skill_key: "knowledge",
       room_keys: [
-        'grandhall',
+        'greathall',
         'market',
         'inn',
         'lodgings',
@@ -57,7 +57,7 @@
   ],
   restrictions: [
     [
-      setup.qres.Building('grandhall'),
+      setup.qres.Building('greathall'),
       setup.qres.Building('trainingchamber'),
       setup.qres.Building('dutyroom'),
     ],

@@ -48,7 +48,7 @@ This week marks the <<= $calendar.getWeek()>>-th week of your slaving career.
 Finally, the fort is looking like a proper villains headquarters — the walls
 surrounding the fort has been fully repaired. Visitors are greeted with an
 imposing iron gate, behind which stands your mighty fort. The <<rep
-setup.buildingtemplate.grandhall>> greets the visitors entering your fort,
+setup.buildingtemplate.greathall>> greets the visitors entering your fort,
 and the newly built <<rep setup.buildingtemplate.veteranhall>> majestically
 tower over it.
 </p>

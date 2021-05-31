@@ -35,7 +35,7 @@
   setup.qc.Slave('debtor', "a|was enslaved after a|they fell into a debt far too big for a|their own worth", true, 0.8),
 ],
 [ /* restrictions */
-  setup.qres.Building(setup.buildingtemplate.grandhall),
+  setup.qres.Building(setup.buildingtemplate.greathall),
   setup.qres.FavorAtLeast('bank', 300),
   setup.qres.VarNull('quest_tiger_bank_repo_resale'),
 ],

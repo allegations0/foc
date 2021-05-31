@@ -21,7 +21,7 @@
       type: "near",
       skill_key: "social",
       room_keys: [
-        'grandhall',
+        'greathall',
         'prospectshall',
         'inn',
         'market',

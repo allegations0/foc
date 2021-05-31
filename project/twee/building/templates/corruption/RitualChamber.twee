@@ -11,7 +11,7 @@
       type: "near",
       skill_key: "arcane",
       room_keys: [
-        'grandhall',
+        'greathall',
         'poolofmist',
         'mirrorofthedamned',
         'altarofdarkness',

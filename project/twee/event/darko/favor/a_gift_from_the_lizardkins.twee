@@ -4,7 +4,7 @@
 
 <<run new setup.Event(
 'a_gift_from_the_lizardkins', /* key */
-"A Gift from the Lizardkins", /* Title */
+"A Gift from the Lizardkin", /* Title */
 "darko", /* Author */
 [ /* tags */
   'item',
@@ -47,7 +47,7 @@ Being a lizardkin yourself, you know these techniques well, but you can
 only guess what kind of face your other slavers would make when they read this book
 once it's stored in your classroom...
 <<elseif $unit.player.isHasTrait('race_lizardkin')>>
-As a <<urace $unit.player>>, you are closely related to lizardkins, and hence
+As a <<urace $unit.player>>, you are closely related to lizardkin, and hence
 you are somewhat familiar with these mating rituals. Despite that, the depth
 to which this book goes to explicitly describe the acts still intrigues you,
 and before you know it you have finished reading the book.

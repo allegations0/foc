@@ -161,12 +161,12 @@ setup.BuildingTemplate = class BuildingTemplate extends setup.TwineClass {
     // if already built, hide it
     if (State.variables.fort.player.isHasBuilding(this)) return true
 
-    // grand hall is always shown
-    if (this.key == setup.buildingtemplate.grandhall.key) return false
+    // great hall is always shown
+    if (this.key == setup.buildingtemplate.greathall.key) return false
 
-    // veteran hall is always shown after grand hall is built
+    // veteran hall is always shown after great hall is built
     if (this.key == setup.buildingtemplate.veteranhall.key &&
-      State.variables.fort.player.isHasBuilding('grandhall')) return false
+      State.variables.fort.player.isHasBuilding('greathall')) return false
 
     const restrictions = this.getPrerequisite(0)
     for (const restriction of restrictions) {
@@ -234,7 +234,7 @@ setup.BuildingTemplate = class BuildingTemplate extends setup.TwineClass {
       [],
       [],
       /* 10 people */
-      [setup.qres.Building('grandhall')],
+      [setup.qres.Building('greathall')],
       [],
 
       [],

@@ -10,7 +10,7 @@
       type: "near",
       skill_key: "slaving",
       room_keys: [
-        'grandhall',
+        'greathall',
         'bedchamberwing',
         'dungeons',
         'inn',
@@ -84,7 +84,7 @@
 :: BuildingVeteranHall [nobr]
 
 <p>
-Renovates the floor above your grand hall into a grand area suitable to display your company's
+Renovates the floor above your great hall into a grand area suitable to display your company's
 achievements.
 Unlocks seeing your company statistics in the company info.
 Also enables veteran quests to be scouted, which are considerably harder than normal quests.

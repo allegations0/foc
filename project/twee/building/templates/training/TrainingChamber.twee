@@ -48,7 +48,7 @@
     [setup.qc.Money(-1700)],
   ],
   restrictions: [
-    [setup.qres.Building('grandhall')],
+    [setup.qres.Building('greathall')],
   ],
   main_room_template_key: 'trainingchamber',
 })>>

@@ -183,7 +183,7 @@ You take a look at the details of these quests...
 
 <<set _room = $fort.player.getBuilding(setup.buildingtemplate.questoffice)>>
 
-<<if $fort.player.isHasBuilding(setup.buildingtemplate.grandhall)>>
+<<if $fort.player.isHasBuilding(setup.buildingtemplate.greathall)>>
   <div>
   <<message '(Observe your office)'>>
     <div class='helpcard'>

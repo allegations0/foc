@@ -11,7 +11,7 @@
       type: "near",
       skill_key: "aid",
       room_keys: [
-        'grandhall',
+        'greathall',
         'doctoroffice',
         'moraleoffice',
         'mysticoffice',
@@ -40,7 +40,7 @@
     [setup.qc.Money(-2900)],
   ],
   restrictions: [
-    [setup.qres.Building('grandhall')],
+    [setup.qres.Building('greathall')],
   ],
   main_room_template_key: 'hospital',
 })>>

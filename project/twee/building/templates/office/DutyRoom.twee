@@ -11,7 +11,7 @@
       type: "near",
       skill_key: "knowledge",
       room_keys: [
-        'grandhall',
+        'greathall',
         'questoffice',
         'specialistoffice',
         'viceleaderoffice',
@@ -38,7 +38,7 @@
   ],
   restrictions: [
     [
-      setup.qres.Building('grandhall')
+      setup.qres.Building('greathall')
     ],
   ],
   on_build: [

@@ -41,7 +41,7 @@ setup.qc.TraitReplace('slave', setup.trait.muscle_thin)
 ], undefined)),
 ],
 [ /* restrictions */
-  setup.qres.Building(setup.buildingtemplate.grandhall),
+  setup.qres.Building(setup.buildingtemplate.greathall),
   setup.qres.VarNull('quest_tiger_bank_repo_resale'),
   setup.qres.FavorAtLeast('bank', 300),
 ],

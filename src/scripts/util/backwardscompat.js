@@ -110,6 +110,7 @@ setup.BackwardsCompat.upgradeSave = function (sv) {
       'recreationwingdining',
       'bar',
       'edgingtrainingroom',
+      'grandhall',
     ]
     if ('fort' in sv) {
       for (const rm of removed_buildings) {
@@ -132,6 +133,7 @@ setup.BackwardsCompat.upgradeSave = function (sv) {
       'recreationwingscenery',
       'bar',
       'edgingtrainingroom',
+      'grandhall',
     ]
     if (sv.roominstance) {
       for (const key of Object.keys(sv.roominstance)) {

@@ -11,7 +11,7 @@
       type: "near",
       skill_key: "intrigue",
       room_keys: [
-        'grandhall',
+        'greathall',
         'mailroom',
         'messengerpost',
         'viceleaderoffice',

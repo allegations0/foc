@@ -39,7 +39,7 @@
   setup.qc.VarSet('quest_tiger_bank_repo_resale', '1', 250),
 ],
 [ /* restrictions */
-  setup.qres.Building(setup.buildingtemplate.grandhall),
+  setup.qres.Building(setup.buildingtemplate.greathall),
   setup.qres.FavorAtLeast('bank', 300),
   setup.qres.VarNull('quest_tiger_bank_repo_resale'),
 ],

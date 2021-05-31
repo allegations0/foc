@@ -39,7 +39,7 @@
 })>>
 
 <<set _restrictions = setup.BuildingTemplate.getLodgingsRestrictions()>>
-<<run _restrictions[0].push(setup.qres.Building('grandhall'))>>
+<<run _restrictions[0].push(setup.qres.Building('greathall'))>>
 
 <<run new setup.BuildingTemplate({
   key: 'inn',

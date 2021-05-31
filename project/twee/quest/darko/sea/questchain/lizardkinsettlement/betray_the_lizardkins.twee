@@ -32,7 +32,7 @@
 
 <<run new setup.QuestTemplate(
 'betray_the_lizardkins', /* key */
-"Betray the Lizardkins", /* Title */
+"Betray the Lizardkin", /* Title */
 "darko", /* Author */
 [ /* tags */
   'sea',

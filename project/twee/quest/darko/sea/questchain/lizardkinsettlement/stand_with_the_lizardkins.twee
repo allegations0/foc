@@ -32,7 +32,7 @@
 
 <<run new setup.QuestTemplate(
 'stand_with_the_lizardkins', /* key */
-"Stand with the Lizardkins", /* Title */
+"Stand with the Lizardkin", /* Title */
 "darko", /* Author */
 [ /* tags */
   'sea',

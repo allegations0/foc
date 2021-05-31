@@ -76,7 +76,7 @@
   ],
   restrictions: [
     [
-      setup.qres.Building('grandhall'),
+      setup.qres.Building('greathall'),
     ],
     [
       setup.qres.Building('veteranhall'),

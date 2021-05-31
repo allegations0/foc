@@ -70,7 +70,7 @@ v1.3.0.0 (December 26, 2020): Lots of content, new features, UI rewrites, icon r
    - Quests have icons now
    - Can set quests as ignored, which will hide them from the UI
    - Increase default quest expiration from 4 to 6 wks.
-   - Hide quest hub flavor text after grand hall is built
+   - Hide quest hub flavor text after great hall is built
 
  - Unit portraits:
    - Direct support for custom image-packs (thanks to Naraden)

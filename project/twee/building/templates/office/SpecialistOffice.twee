@@ -23,7 +23,7 @@
     [setup.qc.Money(-5000)],
   ],
   restrictions: [
-    [setup.qres.Building('grandhall')],
+    [setup.qres.Building('greathall')],
   ],
   main_room_template_key: 'specialistoffice',
 })>>

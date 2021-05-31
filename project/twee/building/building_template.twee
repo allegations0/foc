@@ -6,7 +6,7 @@
 /* Unique buildings */
 
 /* Structural */
-<<include 'InitBuildingGrandHall'>>
+<<include 'InitBuildingGreatHall'>>
 <<include 'InitBuildingVeteranHall'>>
 
 /* Accomodation */

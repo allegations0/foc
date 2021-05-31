@@ -4,7 +4,7 @@
 
 <<run new setup.Event(
 'renovation_feast', /* key */
-"Grand Hall Built", /* Title */
+"Great Hall Built", /* Title */
 "darko", /* Author */
 [ ], /* tags */
 'Event_renovation_feast',
@@ -36,7 +36,7 @@ setup.qres.NotYou(),
 ],
 [ /* restrictions to generate */
   setup.qres.NoItem(setup.item.sexmanual_sit),
-  setup.qres.Building('grandhall'),
+  setup.qres.Building('greathall'),
 ],
 0,
 setup.rarity.always,  /* Rarity */
@@ -45,7 +45,7 @@ setup.rarity.always,  /* Rarity */
 :: Event_renovation_feast [nobr]
 <p>
 This week, you have built the
-<<rep setup.buildingtemplate.grandhall>> of your fort. The fort is starting
+<<rep setup.buildingtemplate.greathall>> of your fort. The fort is starting
 to feel like home now, with all the basic improvements required for a slaving
 career finally fully built.
 You decide to do a little tour of the fort for today.
@@ -59,7 +59,7 @@ Exiting the lodging area, you arrive at an open space designated as the
 <<rep setup.buildingtemplate.hiringsquare>>, where you can hire new slavers
 into your fort, who will then go into the <<rep
 setup.buildingtemplate.prospectshall>>. Next is the newly built <<rep
-setup.buildingtemplate.grandhall>> — a wide open space where you can gather
+setup.buildingtemplate.greathall>> — a wide open space where you can gather
 your slavers for important occassions and celebrations. It is empty right now, save for <<yourrep
 $g.slaver2>> who slaver2|is busy <<uadv $g.slaver2>> arguing with <<rep $g.slaver3>>.
 </p>
@@ -89,7 +89,7 @@ Your fellow slaver, <<rep $g.slaver4>>, <<uadv $g.slaver4>> slaver4|greet you, a
 slaver4|express <<their $g.slaver4>> appreciation for all your work leading the group so
 far. The team indeed feels a little more like family now. Still, there are
 more work to be done. Perhaps you can aim to renovate the empty space above
-your <<rep setup.buildingtemplate.grandhall>> — a <<rep
+your <<rep setup.buildingtemplate.greathall>> — a <<rep
 setup.buildingtemplate.veteranhall>> would surely be a nice addition to your
 fort.
 </p>

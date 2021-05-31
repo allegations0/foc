@@ -1,8 +1,8 @@
 (function () {
   /* Image credit information. */
   ROOMIMAGE_CREDITS = {
-    "grandhall.png": {
-      title: "Grand Hall",
+    "greathall.png": {
+      title: "Great Hall",
       artist: "darko",
       url: "https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/tileset_credits.md",
       license: "CC-BY-SA 3.0",

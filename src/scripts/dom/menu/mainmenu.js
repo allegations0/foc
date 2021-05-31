@@ -263,7 +263,7 @@ function getMainMenuItems() {
         {
           title: 'Company',
           passage: 'CompanyInfo',
-          restrictions: [setup.qres.Building('grandhall'),],
+          restrictions: [setup.qres.Building('greathall'),],
         },
       ],
 

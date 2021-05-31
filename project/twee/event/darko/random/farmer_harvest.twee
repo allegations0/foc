@@ -30,7 +30,7 @@
 [ /* outcomes */
 ],
 [ /* restrictions */
-  setup.qres.Building(setup.buildingtemplate.grandhall),
+  setup.qres.Building(setup.buildingtemplate.greathall),
 ],
 setup.EVENT_DEFAULT_COOLDOWN, /* Cooldown */
 setup.rarity.rare, /* Rarity */

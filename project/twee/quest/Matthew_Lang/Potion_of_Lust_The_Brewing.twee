@@ -173,7 +173,7 @@ anytraits: ['skill_alchemy'],
     </p>
     <p>
         It's
-        <<if setup.qres.QuestDone().isOk($gQuest) OR setup.qres.VarEqual("mlang_lustpotionquestfail", "1").isOk($gQuest)>>
+        <<if setup.qres.QuestDone().isOk($gQuest) or setup.qres.VarEqual("mlang_lustpotionquestfail", "1").isOk($gQuest)>>
             actually
         <<else>>
             finally
@@ -189,9 +189,9 @@ anytraits: ['skill_alchemy'],
     </p>
 
 <<else>>
-    It is nearing midnight when <<name $g.alchemist>> comes running into the <<rep setup.buildingtemplate.grandhall>>, clutching a small wooden box, filled with straw and containing a single glass bottle filled with a glowing orange-red liquid. <<Their $g.alchemist>> hair is wild and unkempt, <<their $g.alchemist>> clothes rumpled and there are dark bags under <<their $g.alchemist>> eyes.<br>
+    It is nearing midnight when <<name $g.alchemist>> comes running into the <<rep setup.buildingtemplate.greathall>>, clutching a small wooden box, filled with straw and containing a single glass bottle filled with a glowing orange-red liquid. <<Their $g.alchemist>> hair is wild and unkempt, <<their $g.alchemist>> clothes rumpled and there are dark bags under <<their $g.alchemist>> eyes.<br>
     "It's done," <<they $g.alchemist>> says, holding the box out to you.<br>
-    <<if setup.qres.QuestDone().isOk($gQuest) OR setup.qres.VarEqual("mlang_lustpotionquestfail", "1").isOk($gQuest)>>
+    <<if setup.qres.QuestDone().isOk($gQuest) or setup.qres.VarEqual("mlang_lustpotionquestfail", "1").isOk($gQuest)>>
         "Does it work?" You ask, looking up from your chair.<br>
     <<else>>
         "Have you tested it?" You ask, looking up from your chair.<br>
@@ -237,7 +237,7 @@ anytraits: ['skill_alchemy'],
     </p>
 
 <<else>>
-    It is around noon when <<name $g.alchemist>> stumbles into the <<rep setup.buildingtemplate.grandhall>>, feet dragging and clutching a small wooden box with a couple of ceramic bottles nestled inside, padded with hay from the stables. <<Their $g.alchemist>> hair is wild and unkempt, <<their $g.alchemist>> clothes rumpled and there are dark bags under <<their $g.alchemist>> eyes.<br>
+    It is around noon when <<name $g.alchemist>> stumbles into the <<rep setup.buildingtemplate.greathall>>, feet dragging and clutching a small wooden box with a couple of ceramic bottles nestled inside, padded with hay from the stables. <<Their $g.alchemist>> hair is wild and unkempt, <<their $g.alchemist>> clothes rumpled and there are dark bags under <<their $g.alchemist>> eyes.<br>
     "It didn't work, <<unickname $g.alchemist>>," <<they $g.alchemist>> says glumly.<br>
     "No result at all?"<br>
     "Oh it's a perfectly drinkable and very tasty drink and it'll give you a naughty buzz, but nothing like what we wanted," <<they $g.alchemist>> says, running a finger through <<their $g.alchemist>> hair. "I thought about distilling it, but the effects just aren't strong enough. Maybe the fruit was too old given how long it took to get back here, or maybe I got the quantities wrong—"<br>

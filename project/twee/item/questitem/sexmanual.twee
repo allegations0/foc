@@ -7,7 +7,7 @@
 <<run new setup.ItemSexManual({
   key: 'sexmanual_sit',
   name: 'Sex Manual: Sit',
-  description: "A thank-you gift given to you by your slavers to celebrate the inauguration of the <<rep setup.buildingtemplate.grandhall>>. Unlocks <<rep setup.sexpose.sit>>.",
+  description: "A thank-you gift given to you by your slavers to celebrate the inauguration of the <<rep setup.buildingtemplate.greathall>>. Unlocks <<rep setup.sexpose.sit>>.",
   tags: [],
  } )>>
 

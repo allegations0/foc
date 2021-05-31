@@ -4,7 +4,7 @@
 
 <<run new setup.Event(
 'gift_of_the_lizardkin', /* key */
-"Gift of the Lizardkins", /* Title */
+"Gift of the Lizardkin", /* Title */
 "darko", /* Author */
 [ ], /* tags */
 'Event_gift_of_the_lizardkin',

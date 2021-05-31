@@ -36,7 +36,7 @@
   setup.qc.Slave('thug', "a|was an overthrown gang leader who was subsequently enslaved by the bank for being unable to pay off a|their debts", true, 0.8),
 ],
 [ /* restrictions */
-  setup.qres.Building(setup.buildingtemplate.grandhall),
+  setup.qres.Building(setup.buildingtemplate.greathall),
   setup.qres.VarNull('quest_tiger_bank_repo_resale'),
   setup.qres.FavorAtLeast('bank', 500),
 ],

@@ -11,7 +11,7 @@
       type: "near",
       skill_key: "arcane",
       room_keys: [
-        'grandhall',
+        'greathall',
         'hospital',
         'blessingroom',
         'penitenceroom',
@@ -37,7 +37,7 @@
   ],
   restrictions: [
     [
-      setup.qres.Building('grandhall'),
+      setup.qres.Building('greathall'),
       setup.qres.HasSlaverWithTraits([setup.trait.magic_fire]),
     ],
   ],

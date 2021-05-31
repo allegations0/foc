@@ -191,7 +191,7 @@ Full changelog [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/mast
     - Knight of Honor
     - Court Gossip
     - New activities:
-      - Grand hall gossip.
+      - Great hall gossip.
       - Clean shoes.
       - Library study
       - Marketer Marketing
@@ -356,7 +356,7 @@ Full changelog [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/mast
     - Choosing new pc in new game plus now allows choosing 3 slavers to retire with now, instead of 2
     - Starting slaver choice: 10 -> 12
     - Major fort expansion cost balance adjustments again.
-    - Library is now a prerequisite for grand hall, and decrease its price to 5000g
+    - Library is now a prerequisite for great hall, and decrease its price to 5000g
     - Updated Prince of Cups slave order to be more lucrative and fix text issues. (thanks to Matthew Lang)
     - Rec wing pimp rework: number of pimps down from 5 to 3, profit per pimp increased slightly, capped at three slaves each
     - Rivalry and friendship bonus now always active whenever both are slavers, but toned down by 20%.
