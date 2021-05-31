@@ -4,6 +4,11 @@
 
 ### v1.7.0.x
 
+v1.7.0.24:
+
+  - Grand hall -> Great hall
+  - Some other text fixes
+
 v1.7.0.23:
 
   - The Shunned Kobold quest chain (7 event, 7 mail. 3 quest)
