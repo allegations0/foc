@@ -141,6 +141,12 @@
       url: "https://www.deviantart.com/imanika/art/City-evening-811223812",
       license: "CC-BY-NC-ND 3.0",
     },
+    24: {
+      title: "Luka",
+      artist: "Blazbaros",
+      url: "https://www.deviantart.com/blazbaros/art/Luka-876387979",
+      license: "CC-BY-NC-ND 3.0",
+    },
   }
 
 }());

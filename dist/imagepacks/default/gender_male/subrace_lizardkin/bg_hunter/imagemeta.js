@@ -16,6 +16,12 @@ UNITIMAGE_CREDITS = {
     url: "https://www.deviantart.com/themefinland/art/Trailing-the-tracks-829390973",
     license: "CC-BY-NC-ND 3.0",
   },
+  3: {
+    title: "Dragonborn Archer",
+    artist: "Blazbaros",
+    url: "https://www.deviantart.com/blazbaros/art/Dragonborn-Archer-878344197",
+    license: "CC-BY-NC-ND 3.0",
+  },
 }
 
 }());

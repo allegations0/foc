@@ -4,7 +4,9 @@ const ZOOM_AMOUNT = {
   zoom0_75: 0.75,
   zoom1_25: 1.25,
   zoom1_5: 1.5,
+  zoom1_75: 1.75,
   zoom2: 2.0,
+  zoom2_5: 2.5,
   zoom3: 3.0,
   zoom4: 4.0,
 }

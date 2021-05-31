@@ -90,6 +90,12 @@
       url: "https://www.deviantart.com/angusburgers/art/Nilbog-Pathfinder-Kobold-Character-774481483",
       license: "CC-BY-NC-ND 3.0",
     },
+    13: {
+      title: "Tak-tak the kobold",
+      artist: "carloscara",
+      url: "https://www.deviantart.com/carloscara/art/Tak-tak-the-kobold-330462385",
+      license: "CC-BY-NC-ND 3.0",
+    },
     14: {
       title: "Myrtel the kobold necromancer (revision)",
       artist: "aGentleGiant",
