@@ -98,8 +98,10 @@
     skill_hypnotic: 0.015,
     skill_entertain: 0.015,
 
-    magic_light: 0.1,
-    magic_light_master: 0.01,
+    magic_light: 0.055,
+    magic_light_master: 0.0055,
+    magic_fire: 0.055,
+    magic_fire_master: 0.0055,
 
     /* =========== */
     /* PHYSICAL */
