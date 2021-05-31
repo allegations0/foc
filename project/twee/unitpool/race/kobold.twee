@@ -17,13 +17,19 @@
     bg_soldier: setup.POOL_BG_COMMON_1,
     bg_foodworker: setup.POOL_BG_COMMON_1,
     bg_merchant: setup.POOL_BG_COMMON_1,
+    bg_entertainer: setup.POOL_BG_COMMON_1,
 
     bg_artisan: setup.POOL_BG_UNCOMMON_2,
     bg_priest: setup.POOL_BG_UNCOMMON_2,
+    bg_mercenary: setup.POOL_BG_UNCOMMON_2,
 
     bg_slave: setup.POOL_BG_UNCOMMON_2,
     bg_unemployed: setup.POOL_BG_UNCOMMON_2,
     bg_thug: setup.POOL_BG_UNCOMMON_2,
+    bg_raider: setup.POOL_BG_UNCOMMON_2,
+
+    bg_adventurer: setup.POOL_BG_RARE_3,
+    bg_mystic: setup.POOL_BG_RARE_3,
 
     bg_hunter: setup.POOL_BG_RARE_3,
     bg_assassin: setup.POOL_BG_RARE_3,
@@ -33,13 +39,8 @@
     bg_apprentice: setup.POOL_BG_RARE_3,
     bg_artist: setup.POOL_BG_RARE_3,
 
-    bg_raider: setup.POOL_BG_RARE_3,
-
-    bg_adventurer: setup.POOL_BG_EPIC_4,
-    bg_mystic: setup.POOL_BG_EPIC_4,
     bg_scholar: setup.POOL_BG_EPIC_4,
 
-    bg_mercenary: setup.POOL_BG_EPIC_4,
     bg_monk: setup.POOL_BG_EPIC_4,
     bg_slaver: setup.POOL_BG_EPIC_4,
     bg_wiseman: setup.POOL_BG_EPIC_4,
@@ -48,7 +49,6 @@
     bg_seaman: setup.POOL_BG_EPIC_4,
     bg_pirate: setup.POOL_BG_EPIC_4,
     bg_woodsman: setup.POOL_BG_EPIC_4,
-    bg_entertainer: setup.POOL_BG_EPIC_4,
     bg_farmer: setup.POOL_BG_EPIC_4,
     bg_clerk: setup.POOL_BG_EPIC_4,
     bg_maid: setup.POOL_BG_EPIC_4,
