@@ -148,9 +148,13 @@ setup.Hospital = class Hospital extends setup.TwineClass {
     return this.getInjury(unit) > 0
   }
 
+  /**
+   * @param {setup.Unit} unit 
+   * @returns {number}
+   */
   getInjury(unit) {
     if (!(unit.key in this.unit_injury_map)) return 0
-    if (!unit.isYourCompany()) {
+    if (!unit.isYourCompany() && !unit.getMarket()) {
       this.healUnit(unit, setup.INFINITY)
       return 0
     }

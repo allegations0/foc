@@ -224,6 +224,49 @@
     },
 )>>
 
+<<run new setup.Perk(
+    'perk_kobold_heritage',
+    'perk: kobold heritage',
+    "Passable as a kobold. Grant a little <<rep setup.skill.survival>> as well as an extra trait: <<rep setup.trait.subrace_kobold>>.",
+    0,
+    {},
+    ['perk', 'perkspecial', ],
+    {
+        survival: setup.PERK_GENERALIST_SKILL_GAIN,
+    },
+    {
+        perk_choice_restrictions: [],
+        perk_end_of_week_effect: [],
+        perk_extra_traits: [
+            setup.trait.subrace_kobold,
+        ],
+    },
+)>>
+
+<<run new setup.Perk(
+    'perk_savior_kobold',
+    'perk: savior kobold',
+    "Worshipped by a village of kobolds. Grant 3.0 favor with <<rep $company.kobold>> every 10 weeks.",
+    0,
+    {},
+    ['perk', 'perkspecial', ],
+    {
+    },
+    {
+        perk_choice_restrictions: [],
+        perk_end_of_week_effect: [
+            setup.qc.IfThenElse(
+                setup.qres.And([
+                    setup.qres.Function(() => {
+                        return State.variables.calendar.getWeek() % 10 == 0;
+                    }),
+                ]),
+                setup.qc.Favor('kobold', 30),
+            ),
+        ],
+    },
+)>>
+
 /* ####################### */
 /* RANDOM PERKS */
 /* ####################### */

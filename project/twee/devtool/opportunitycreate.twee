@@ -32,8 +32,7 @@
 <<attach _dom>>
 
 <</nobr>>
-<div id='devtoolcoderesult' class='companycard'> <code>
-"""::""" <<= $opassagesetup >> [nobr opportunity]
+<div id='devtoolcoderesult' class='companycard'> <code>"""::""" <<= $opassagesetup >> [nobr opportunity]
 
 <<dtprintmeta>>
 """<<run new setup.OpportunityTemplate("""

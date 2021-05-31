@@ -18,8 +18,7 @@
 <<attach _dom>>
 
 <</nobr>>
-<div id='devtoolcoderesult' class='companycard'> <code>
-"""::""" <<= $apassagesetup >> [nobr activity]
+<div id='devtoolcoderesult' class='companycard'> <code>"""::""" <<= $apassagesetup >> [nobr activity]
 <<dtprintmeta>>
 """<<run new setup.ActivityTemplate({"""
   key: '<<= $akey>>',

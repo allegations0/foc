@@ -18,8 +18,7 @@
 <<attach _dom>>
 
 <</nobr>>
-<div id='devtoolcoderesult'  class='companycard'> <code>
-"""::""" <<= $epassagesetup >> [nobr event]
+<div id='devtoolcoderesult'  class='companycard'> <code>"""::""" <<= $epassagesetup >> [nobr event]
 
 <<dtprintmeta>>
 """<<run new setup.Event("""

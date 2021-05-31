@@ -593,5 +593,11 @@
       url: "https://www.deviantart.com/tomprante/art/Smuggler-s-Cave-489434510",
       license: "CC-BY-SA 3.0",
     },
+    "kobold_mirror.jpg": {
+      title: "The Queen and the Magic Mirror",
+      artist: "Julian-Faylona",
+      url: "https://www.deviantart.com/julian-faylona/art/The-Queen-and-the-Magic-Mirror-326948189",
+      license: "CC-BY-NC-ND 3.0",
+    },
   }
 }());
