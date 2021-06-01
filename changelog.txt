@@ -4,6 +4,10 @@
 
 ### v1.7.0.x
 
+v1.7.0.26:
+
+  - Lore entries for kobold companies + city.
+
 v1.7.0.25:
 
   - New quest: Elven Hot Springs: Mens Business (by Matthew Lang: 2 quests, 2 mails, 1 event)
