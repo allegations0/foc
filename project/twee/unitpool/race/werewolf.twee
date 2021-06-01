@@ -81,9 +81,10 @@
     /* PERSONALITY */
     /* =========== */
 
+    per_loner: setup.POOL_PER_UNCOMMON_2,
+
     per_calm: setup.POOL_PER_RARE_3,
     per_dominant: setup.POOL_PER_RARE_3,
-    per_loner: setup.POOL_PER_RARE_3,
     per_independent: setup.POOL_PER_RARE_3,
 
     /* =========== */

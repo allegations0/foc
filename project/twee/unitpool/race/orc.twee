@@ -82,9 +82,9 @@
     /* =========== */
 
     per_slow: setup.POOL_PER_UNCOMMON_2,
+    per_aggressive: setup.POOL_PER_UNCOMMON_2,
 
     per_active: setup.POOL_PER_RARE_3,
-    per_aggressive: setup.POOL_PER_RARE_3,
     per_dominant: setup.POOL_PER_RARE_3,
 
     per_masochistic: setup.POOL_PER_LEGENDARY_5,

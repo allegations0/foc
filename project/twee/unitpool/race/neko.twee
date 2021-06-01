@@ -77,8 +77,9 @@
     /* PERSONALITY */
     /* =========== */
 
+    per_playful: setup.POOL_PER_UNCOMMON_2,
+
     per_lustful: setup.POOL_PER_RARE_3,
-    per_playful: setup.POOL_PER_RARE_3,
     per_active: setup.POOL_PER_RARE_3,
     per_dreamy: setup.POOL_PER_RARE_3,
 
