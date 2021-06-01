@@ -517,6 +517,9 @@ List of all possible options:
   // unit must be injured
   injured: true,
 
+  // unit must be of this duty:
+  duty: 'rescuer',
+
   // will return the unit with the maximum skill at:
   skill_max: setup.skill.arcane,
 })>>

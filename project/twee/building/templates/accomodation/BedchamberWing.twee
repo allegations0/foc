@@ -77,6 +77,7 @@
   restrictions: [
     [
       setup.qres.Building('greathall'),
+      setup.qres.Building('dutyroom'),
     ],
     [
       setup.qres.Building('veteranhall'),
@@ -157,6 +158,10 @@ is to roleplay.
 
 <p>
 Each upgrade unlocks one extra bedchamber.
+</p>
+
+<p>
+You can assign slaves to bedchambers via the "Duty" menu.
 </p>
 
 

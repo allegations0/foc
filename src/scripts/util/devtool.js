@@ -171,6 +171,22 @@ function dialogMaker(menu, objects, temporary_varname) {
   })
 }
 
+setup.DevToolHelper.pickCompany = function () {
+  return setup.Dialogs.open({
+    title: "Pick company",
+    classnames: "trait-picker-dialog",
+    content: dialogMaker('company', Object.values(State.variables.company), 'selcompany')
+  }).then(() => State.temporary.selcompany)
+}
+
+setup.DevToolHelper.pickDutyTemplate = function () {
+  return setup.Dialogs.open({
+    title: "Pick duty template",
+    classnames: "trait-picker-dialog",
+    content: dialogMaker('dutytemplate', Object.values(setup.dutytemplate), 'seldutytemplate')
+  }).then(() => State.temporary.seldutytemplate)
+}
+
 /**
  * Opens a dialog to pick a title
  * When closed, resolves the promise with the lore (or undefined if cancelled)

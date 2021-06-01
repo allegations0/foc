@@ -1074,15 +1074,13 @@ No unit has ALL of the traits above.
         menuItem({
           text: "Company",
           tooltip: `Prints a company name with tooltips`,
-          children:
-            Object.values(setup.companytemplate).map(company =>
-              menuItem({
-                text: company.key === 'player' ? '[Player Company]' : company.getName(),
-                callback: () => {
-                  insertTextIntoEditor(`<<rep $company.${company.key}>>`)
-                }
-              })
-            )
+          callback: () => {
+            retainEditorFocus(setup.DevToolHelper.pickCompany()).then(company => {
+              if (company) {
+                insertTextIntoEditor(`<<rep $company.${company.key}>>`)
+              }
+            })
+          },
         }),
         menuItem({
           text: 'Trait',
@@ -1135,7 +1133,7 @@ No unit has ALL of the traits above.
           },
         }),
         menuItem({
-          text: 'Set variable """_u""" to any slaver on duty',
+          text: 'Set variable """_u""" to any slaver',
           tooltip: `Setups a variable to be any slaver within your company, with a bigger preference towards your vice leader and your on-duty slavers. This can be used to generate a unit that can comments on various situations without actually partaking in the content itself.`,
           callback: () => {
             insertTextIntoEditor(`<<set _u = setup.getAnySlaver()>>`)
@@ -1148,12 +1146,41 @@ No unit has ALL of the traits above.
             insertTextIntoEditor('<<topic>>')
           }
         }),
+        menuItem({
+          text: 'Slaver on a certain duty',
+          tooltip: `Set a variable to be the slaver on a particular duty, if any`,
+          callback: () => {
+            retainEditorFocus(setup.DevToolHelper.pickDutyTemplate()).then(template => {
+              if (template)
+                insertTextIntoEditor(`<<set _u = setup.getUnit({duty: '${template.key}'})>>
+<<if _u>>
+<<Rep _u>> is your ${template.getName()}.
+<<else>>
+You do not have a ${template.getName()}.
+<</if>>`)
+            })
+          },
+        }),
       ]
     }),
     menuItem({
       text: 'Formatting',
       tooltip: 'Related to text formatting',
       children: () => [
+        menuItem({
+          text: 'Money',
+          tooltip: 'Formats a money amount. The example formats 2000g',
+          callback: () => {
+            insertTextIntoEditor(`<<money 2000>>`)
+          },
+        }),
+        menuItem({
+          text: 'Favor',
+          tooltip: 'Formats a favor amount. The example formats 15.0 favor. Note that the amount is multiplied by 10 inside the code.',
+          callback: () => {
+            insertTextIntoEditor(`<<favor 150>>`)
+          },
+        }),
         menuItem({
           text: 'Font',
           tooltip: 'Create a segment of text using race font. You can also use a font name instead.',
@@ -1444,28 +1471,24 @@ Variable variable_name is set
               menuItem({
                 text: 'Gain favor',
                 tooltip: `Gain favor with some company. You can adjust the numbers by changing the number inside the "setup.qc.Favor()".`,
-                children:
-                  Object.values(setup.companytemplate).map(company =>
-                    menuItem({
-                      text: company.key === 'player' ? '[Player Company]' : company.getName(),
-                      callback: () => {
-                        insertTextIntoEditor(`<<run setup.qc.Favor('${company.key}', 25).apply($gQuest)>>`)
-                      },
-                    }),
-                  )
+                callback: () => {
+                  retainEditorFocus(setup.DevToolHelper.pickCompany()).then(company => {
+                    if (company) {
+                      insertTextIntoEditor(`<<run setup.qc.Favor('${company.key}', 25).apply($gQuest)>>`)
+                    }
+                  })
+                },
               }),
               menuItem({
                 text: 'Gain ire',
                 tooltip: `Gain ire with some company. You can adjust the numbers by changing the number inside the "setup.qc.Ire()".`,
-                children:
-                  Object.values(setup.companytemplate).map(company =>
-                    menuItem({
-                      text: company.key === 'player' ? '[Player Company]' : company.getName(),
-                      callback: () => {
-                        insertTextIntoEditor(`<<run setup.qc.Ire('${company.key}', 2).apply($gQuest)>>`)
-                      },
-                    }),
-                  )
+                callback: () => {
+                  retainEditorFocus(setup.DevToolHelper.pickCompany()).then(company => {
+                    if (company) {
+                      insertTextIntoEditor(`<<run setup.qc.Ire('${company.key}', 2).apply($gQuest)>>`)
+                    }
+                  })
+                },
               }),
               menuItem({
                 text: 'Advanced',

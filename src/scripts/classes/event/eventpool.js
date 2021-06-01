@@ -282,6 +282,10 @@ setup.EventPool = class EventPool extends setup.TwineClass {
       event_key: event.key,
       default_assignment_keys: parsed_default_assignment,
     })
+
+    if (State.variables.gDebug) {
+      setup.notify(`DEBUG: Event ${event.getName()} is scheduled to trigger in week ${occur_week}.`)
+    }
   }
 
   isEventScheduled(event) {

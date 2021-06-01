@@ -39,6 +39,9 @@ setup.Calendar = class Calendar extends setup.TwineClass {
     }
     this.cooldowns[obj.TYPE][obj.key] = duration
     if (duration <= 0) delete this.cooldowns[obj.TYPE][obj.key]
+    if (State.variables.gDebug) {
+      setup.notify(`DEBUG: ${obj.TYPE} ${obj.key} is on cooldown for ${duration} weeks.`)
+    }
   }
 
   /**

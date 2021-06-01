@@ -716,6 +716,7 @@ setup.Unit = class Unit extends setup.TwineClass {
  * @param {{
  * job?: setup.Job | string
  * tag?: string
+ * duty?: string
  * title?: string | setup.Title
  * available?: boolean
  * skill_max?: setup.Skill
@@ -731,6 +732,7 @@ setup.Unit = class Unit extends setup.TwineClass {
 setup.getUnit = function ({
   job,
   tag,
+  duty,
   title,
   available,
   skill_max,
@@ -742,6 +744,9 @@ setup.getUnit = function ({
   injured,
 }) {
   var candidates = []
+  if (duty && !(duty in setup.dutytemplate)) {
+    throw new Error(`Unrecognized duty template key: ${duty}`)
+  }
   for (var unitkey in State.variables.unit) {
     const unit = State.variables.unit[unitkey]
     if (job && unit.getJob() != setup.selfOrObject(job, setup.job)) continue
@@ -753,6 +758,7 @@ setup.getUnit = function ({
     if (anytraits && !unit.isHasAnyTraitExact(anytraits)) continue
     if (notyou && unit.isYou()) continue
     if (injured && !unit.isInjured()) continue
+    if (duty && (!unit.getDuty() || unit.getDuty().getTemplate().key != duty)) continue
     if (!random && !skill_max) return unit
     candidates.push(unit)
   }
