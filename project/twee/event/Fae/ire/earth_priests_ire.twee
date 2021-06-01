@@ -54,7 +54,7 @@ setup.rarity.always, /* Rarity */
   left around at your fort and blocking the paths.
   The fort structures look undamaged thankfully, but someone will have to work and remove all the
   debris around.
-  Two of your slavers, <<pep $g.tiredone>> and <<pep $g.tiredtwo>> would (forcefully) be
+  Two of your slavers, <<rep $g.tiredone>> and <<rep $g.tiredtwo>> would (forcefully) be
   volunteered to clean the vines and the rubbles.
   They will work overtime as you mull just what in the earth had just happened... perhaps you angered
   something within the earth itself?

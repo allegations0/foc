@@ -63,9 +63,9 @@ setup.rarity.always, /* Rarity */
   You quickly ordered
   another slaver, <<rep _v>>, to scout outside,
   looking for any trail the slaves may had left behind.
-  <<else>>
+  <</if>>
   One of the escaped slaves seems to have hurt themselves, and there are visible trails that may
-  lead to <<them $g.escapeone>>.
+  lead to <<them $g.escapeeone>>.
   There are no trace of the other one, however.
   <<uneedrescue $g.escapeetwo>>.
 </p>
