@@ -35,6 +35,8 @@ setup.rarity.always, /* Rarity */
 <p>
     A group of small kobolds have climbed up from the <<lore region_deep>> and into your fort, bearing a gift.
     The gift turns out to be the <<rep setup.item.sexmanual_spit_face>>, and incredibly rare tome.
+    The kobolds have apparently grown quite fond of you and your companies,
+    and hope the book would make a suitable present to express their feelings.
     You thank the kobolds for the gifts, and they went on their way back into the dark underground world.
 </p>
 

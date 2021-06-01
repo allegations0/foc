@@ -80,7 +80,18 @@
 :: QuestRecruitmentDeep [nobr]
 
 <p>
-XXX TODO XXX
+The <<lore region_deep>> is inhabited by both the
+<<rep setup.trait.subrace_kobold>> and the <<rep setup.trait.subrace_kobold>>.
+Despite being physically inadept, kobolds are often cunning and creative,
+a very useful trait to have as a slaver.
+</p>
+
+<p>
+Meanwhile, the drows are natural slavers, having practiced slavery for a very long time.
+Like their surface elf counterpart, the drows retained great affinity to alchemy,
+and often employ their gift in mixing potions to help break or enhance their many slaves.
+The drows are also attuned to dark magic, making them great corruptors.
+All these traits mean that one could never go wrong inviting a drow or two into a slaving company.
 </p>
 
 <p>

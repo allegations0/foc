@@ -173,7 +173,7 @@
 <<run new setup.ItemSexManual({
   key: 'sexmanual_spit_face',
   name: 'Sex Manual: Spit in Face',
-  description: "XXX TODO XXX KOBOLDS. Unlocks 'Spit in face' sex action.",
+  description: "A gift from the kobolds of Drak Xoth, a sign of their adoration for you. Unlocks 'Spit in face' sex action.",
   tags: [],
  } )>>
 
