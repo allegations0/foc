@@ -170,7 +170,7 @@ setup.qdiff.normal30, /* difficulty */
     Once a year, the Cult of Caledain holds a sacred gathering at one of the many hot springs deep within the <<lore region_forest>>. In line with the cult's beliefs, the gathering is open to any male elf who wishes to attend, and the festivities mostly include drinking lots of wine, pissing in the open, and orgies in the hot springs. The Cultists believe that taking the cum of a strong warrior into one's body increases both strength and virility, and with clothing being strictly prohibited, the gathering sounds like a lot of fun for those inclined towards mansex. Or elves so inclined anyway.
 </p>
 <p>
-    You've decided it would also be a great opportunity for you to acquire on the the revellers as a slave.
+    You've decided it would also be a great opportunity for you to acquire on the revellers as a slave.
     <<if $unit.player.isHasTrait('race_elf')>>
 
     <<else>>
