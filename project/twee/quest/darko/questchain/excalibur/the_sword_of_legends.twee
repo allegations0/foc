@@ -191,6 +191,8 @@ worthy.
 
 :: Quest_the_sword_of_legendsCrit [nobr]
 
+<<questimage 'the_sword_of_legends.jpg'>>
+
 <p>
 <<Yourrep $g.navigator>> skillfully navigated the ship through the
 treacherous waters, following <<reps $g.diviner>> <<uadv $g.diviner>>-delivered

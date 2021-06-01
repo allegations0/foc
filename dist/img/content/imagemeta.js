@@ -599,5 +599,19 @@
       url: "https://www.deviantart.com/julian-faylona/art/The-Queen-and-the-Magic-Mirror-326948189",
       license: "CC-BY-NC-ND 3.0",
     },
+    "the_sword_of_legends.jpg": {
+      title: "Sword in Stone",
+      artist: "KeeningAndSunder",
+      url: "https://www.deviantart.com/keeningandsunder/art/Sword-in-Stone-686189643",
+      license: "CC-BY-NC 3.0",
+      extra: "removed the triforce symbol",
+    },
+    "drak_xoth.jpg": {
+      title: "Underground",
+      artist: "KeeningAndSunder",
+      url: "https://www.deviantart.com/keeningandsunder/art/Underground-775451819",
+      license: "CC-BY-NC 3.0",
+      extra: "cropped into the settlements only",
+    },
   }
 }());
