@@ -4,12 +4,16 @@
 
 ### v1.7.0.x
 
-v1.7.0.27: [TODO BEFORE COMMIT]
+v1.7.0.28:
+
+  - Fixes
+
+v1.7.0.27:
 
   - New event: Prison Break (by Fae). New event: Earth Priests Ire (by Fae)
-  - Event: Pit Traps
-  - Fixes for kobold ire events.
+  - New event: Pit Traps
   - New event: A gift from the kobolds.
+  - Fixes for kobold ire events.
 
 v1.7.0.26:
 
