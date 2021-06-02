@@ -1,19 +1,7 @@
-
 :: QuestSetup_elven_hotsprings_men_s_business_raid_ [nobr quest]
 
 
-<<run new setup.UnitGroup(
-"elven_hotsprings_men_s_business_raid_1",
-"Elf: Male",
-[ /* pools */
-  [setup.unitpool.subrace_elf_male, 0.8333333333333334],
-  [setup.unitpool.subrace_drow_male, 0.16666666666666669],
-],
-0, /* reuse chance */
-[ /* unit post process */
-  setup.qc.Trait('unit', setup.trait.face_attractive),
-],
-)>>
+
 
 
 
@@ -98,40 +86,34 @@ setup.qdiff.normal30, /* difficulty */
     [
       setup.qc.Slave('elfslave', "a|was captured at an annual men\'s gathering at a remote hot springs in the Western Forests", undefined),
       setup.qc.DoAll([
-        setup.qc.IfThenElse(
-            setup.qres.Actor(
-                'guard',
-                setup.qres.And([
-                    setup.qres.NotYou(),
-                    setup.qres.AllTraits([setup.trait.race_elf, setup.trait.join_junior], true),
-                    setup.qres.AnyTrait([setup.trait.per_kind, setup.trait.per_honorable], true),
-                ]),
-            ),
-            setup.qc.Event('elven_hot_springs_consequences', 2, {elf: 'guard'}),
-            setup.qc.IfThenElse(
-                setup.qres.Actor(
-                    'infiltrator',
-                    setup.qres.And([
-                        setup.qres.NotYou(),
-                        setup.qres.AllTraits([setup.trait.race_elf, setup.trait.join_junior], true),
-                        setup.qres.AnyTrait([setup.trait.per_kind, setup.trait.per_honorable], true),
-                    ]),
-                ),
-                setup.qc.Event('elven_hot_springs_consequences', 2, {elf: 'infiltrator'}),
-                setup.qc.IfThenElse(
-                    setup.qres.Actor(
-                        'slaver',
-                        setup.qres.And([
-                            setup.qres.NotYou(),
-                            setup.qres.AllTraits([setup.trait.race_elf, setup.trait.join_junior], true),
-                            setup.qres.AnyTrait([setup.trait.per_kind, setup.trait.per_honorable], true),
-                        ]),
-                    ),
-                    setup.qc.Event('elven_hot_springs_consequences', 2, {elf: 'slaver'}),
-                ),
-            ),
-        ),
-      ], 0.3),
+setup.qc.IfThenElse(
+setup.qres.Actor('guard', setup.qres.And([
+setup.qres.NotYou(),
+setup.qres.AllTraits([setup.trait.race_elf, setup.trait.join_junior], true),
+setup.qres.AnyTrait([setup.trait.per_kind, setup.trait.per_honorable], true)
+])),
+setup.qc.Event('elven_hot_springs_consequences', 2, {
+elf: "guard",
+}),
+setup.qc.IfThenElse(
+setup.qres.Actor('infiltrator', setup.qres.And([
+setup.qres.NotYou(),
+setup.qres.AllTraits([setup.trait.race_elf, setup.trait.join_junior], true),
+setup.qres.AnyTrait([setup.trait.per_kind, setup.trait.per_honorable], true)
+])),
+setup.qc.Event('elven_hot_springs_consequences', 2, {
+elf: "infiltrator",
+}),
+setup.qc.IfThenElse(setup.qres.Actor('slaver', setup.qres.And([
+setup.qres.NotYou(),
+setup.qres.AllTraits([setup.trait.race_elf, setup.trait.join_junior], true),
+setup.qres.AnyTrait([setup.trait.per_kind, setup.trait.per_honorable], true)
+])),
+setup.qc.Event('elven_hot_springs_consequences', 2, {
+elf: "slaver",
+}),
+null)))
+], 0.3),
       setup.qc.BoonizeRandom('infiltrator', 5),
     ],
   ],
@@ -162,6 +144,7 @@ setup.qdiff.normal30, /* difficulty */
 [ /* restrictions */
 ],
 [ /* expiration outcomes */
+
 ],
 )>>
 
@@ -177,6 +160,7 @@ setup.qdiff.normal30, /* difficulty */
         All you need is a wood elf willing to betray their people.
     <</if>>
 </p>
+<<dangertext "Warning:">> Some of your wood elven slavers may hate you doing something as dishonourable as raiding a sacred festival. If you do that, you could risk them leaving your service. Or worse.
 
 
 
@@ -250,7 +234,6 @@ Despite asking around, <<rep $g.infiltrator>> infiltrator|was unable to find the
 
 
 
-
 :: Quest_elven_hotsprings_men_s_business_raid_Disaster [nobr]
 <<if $g.guard.isYou() or $g.infiltrator.isYou() or $g.slaver.isYou()>>
 
@@ -310,7 +293,6 @@ Despite asking around, <<rep $g.infiltrator>> infiltrator|was unable to find the
         The heat and humidity of the water and a roaring bonfire smacked them in the face as they burst into the clearing, and at first neither of them saw <<name $g.infiltrator>>. What they did see was a mob of naked men, surrounding and beating down on something—someone. Charging in with <<their $g.guard>> <<uweapon $g.guard>>, <<name $g.guard>> forced <<their $g.guard>>way in and found <<name $g.infiltrator>> curled up in a ball, his arms trying to shield his head from the blows that had been rained down upon him. Being armed, <<name $g.guard>> and <<name $g.slaver>> were able to fight their way free, but the sheer number of enraged men meant they took a fair number of blows before being able to escape, and all of your slavers are going to need some time to heal - <<name $g.infiltrator>> more than the rest in all likelihood.
     </p>
 <</if>>
-
 
 
 

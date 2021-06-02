@@ -1,4 +1,3 @@
-
 :: OpportunitySetup_elven_hot_springs_men_s_business [nobr opportunity]
 
 
@@ -73,6 +72,7 @@ setup.qdiff.normal25, /* difficulty */
   'elf': [
     setup.qres.Job(setup.job.slaver),
     setup.qres.AllTraits([setup.trait.gender_male, setup.trait.race_elf], true),
+    setup.qres.Home(),
   ],
 },
 [ /* expiration outcomes */
@@ -90,7 +90,7 @@ anytraits: ['race_human', 'race_catkin', 'race_lizardkin', 'race_wolfkin', 'race
 })>>
 
 <<if !_u>>
-  <<set _u = setup.getAnySlaver([$g.elf])>>
+    <<set _u = setup.getAnySlaver([$g.elf])>>
 <</if>>
 
 <<if $g.elf.isYou()>>
@@ -151,8 +151,7 @@ anytraits: ['race_human', 'race_catkin', 'race_lizardkin', 'race_wolfkin', 'race
 
 <</if>>
 
-
-
+<<dangertext "Warning:">> Some of your wood elven slavers may hate you doing something as dishonourable as raiding a sacred festival. If you do that, you could risk them leaving your service. Or worse.
 
 
 
