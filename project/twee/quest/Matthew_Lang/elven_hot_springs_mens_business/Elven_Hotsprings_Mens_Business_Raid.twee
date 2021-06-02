@@ -1,8 +1,17 @@
 :: QuestSetup_elven_hotsprings_men_s_business_raid_ [nobr quest]
 
-
-
-
+<<run new setup.UnitGroup(
+"elven_hotsprings_men_s_business_raid_1",
+"Elf: Male",
+[ /* pools */
+  [setup.unitpool.subrace_elf_male, 0.8333333333333334],
+  [setup.unitpool.subrace_drow_male, 0.16666666666666669],
+],
+0, /* reuse chance */
+[ /* unit post process */
+  setup.qc.Trait('unit', setup.trait.face_beautiful),
+],
+)>>
 
 
 <<set _criteriainfiltrator = new setup.UnitCriteria(
@@ -89,31 +98,34 @@ setup.qdiff.normal30, /* difficulty */
 setup.qc.IfThenElse(
 setup.qres.Actor('guard', setup.qres.And([
 setup.qres.NotYou(),
-setup.qres.AllTraits([setup.trait.race_elf, setup.trait.join_junior], true),
+setup.qres.AllTraits([setup.trait.race_elf], true),
 setup.qres.AnyTrait([setup.trait.per_kind, setup.trait.per_honorable], true)
 ])),
-setup.qc.Event('elven_hot_springs_consequences', 2, {
+setup.qc.Event('elven_hot_springs_consequences', 0, {
 elf: "guard",
 }),
 setup.qc.IfThenElse(
 setup.qres.Actor('infiltrator', setup.qres.And([
 setup.qres.NotYou(),
-setup.qres.AllTraits([setup.trait.race_elf, setup.trait.join_junior], true),
+setup.qres.AllTraits([setup.trait.race_elf], true),
 setup.qres.AnyTrait([setup.trait.per_kind, setup.trait.per_honorable], true)
 ])),
-setup.qc.Event('elven_hot_springs_consequences', 2, {
+setup.qc.Event('elven_hot_springs_consequences', 0, {
 elf: "infiltrator",
 }),
 setup.qc.IfThenElse(setup.qres.Actor('slaver', setup.qres.And([
 setup.qres.NotYou(),
-setup.qres.AllTraits([setup.trait.race_elf, setup.trait.join_junior], true),
+setup.qres.AllTraits([setup.trait.race_elf], true),
 setup.qres.AnyTrait([setup.trait.per_kind, setup.trait.per_honorable], true)
 ])),
-setup.qc.Event('elven_hot_springs_consequences', 2, {
+setup.qc.Event('elven_hot_springs_consequences', 0, {
 elf: "slaver",
 }),
-null)))
+setup.qc.DoAll([
+setup.qc.Event('elven_hot_springs_consequences', 0, {}),
 ], 0.3),
+)))
+], undefined),
       setup.qc.BoonizeRandom('infiltrator', 5),
     ],
   ],
@@ -160,8 +172,10 @@ null)))
         All you need is a wood elf willing to betray their people.
     <</if>>
 </p>
-<<dangertext "Warning:">> Some of your wood elven slavers may hate you doing something as dishonourable as raiding a sacred festival. If you do that, you could risk them leaving your service. Or worse.
 
+<p>
+<<dangertext "Warning:">> Some of your wood elven slavers may hate you doing something as dishonourable as raiding a sacred festival. If you do that, you could risk them leaving your service. Or worse.
+</p>
 
 
 :: Quest_elven_hotsprings_men_s_business_raid_Crit [nobr]

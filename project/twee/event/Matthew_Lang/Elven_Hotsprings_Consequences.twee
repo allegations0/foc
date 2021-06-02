@@ -15,7 +15,11 @@
 { /* roles (LEGACY) */
 },
 { /* actors */
-  'elf': [],
+  'elf': [
+    setup.qres.NotYou(),
+    setup.qres.AllTraits([setup.trait.race_elf], true),
+    setup.qres.AnyTrait([setup.trait.per_kind, setup.trait.per_honorable], true)
+  ],
 },
 [ /* outcomes */
   setup.qc.MissingUnitForever('elf'),
@@ -49,7 +53,14 @@ When you enter your office today it's obvious that someone else has been here. A
         <<name $unit.player>>,
     </p>
     <p>
-        After a lot of soul searching I cannot continue on with <<rep $company.player>> any longer. Your transgression against the sacred rites of the Wood Elves is not something I will be party to any longer. By the time you see this I will have returned to my people, along with as many wood elf slaves as I have had the chance to free.
+        After a lot of soul searching I cannot continue on with <<rep $company.player>> any longer. Your transgression against the sacred rites of the Wood Elves is
+        <<if $g.elf.isHasTrait('per_honorable')>>
+          dishonorable, and
+        <<elseif $g.elf.isHasTrait('per_kind')>>
+          cruel, and
+        <</if>>
+        not something I will be party to any longer.
+        By the time you see this I will have returned to my people, along with as many wood elf slaves as I have had the chance to free.
     </p>
     <p>
         Should we ever meet again, it will be with my <<uweapon $g.elf>> at your throat.

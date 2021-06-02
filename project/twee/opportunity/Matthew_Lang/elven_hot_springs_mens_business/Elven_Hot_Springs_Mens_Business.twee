@@ -151,7 +151,7 @@ anytraits: ['race_human', 'race_catkin', 'race_lizardkin', 'race_wolfkin', 'race
 
 <</if>>
 
-<<dangertext "Warning:">> Some of your wood elven slavers may hate you doing something as dishonourable as raiding a sacred festival. If you do that, you could risk them leaving your service. Or worse.
+<<dangertext "Warning:">> Some of your wood elven slavers may <<dangertextlite 'hate you'>> doing something as dishonourable as raiding a sacred festival. If you do that, you could risk them leaving your service. Or worse.
 
 
 
@@ -161,7 +161,7 @@ Attend the Gathering
 
 
 :: Opportunity_elven_hot_springs_men_s_business_1 [nobr]
-Raid the Gathering
+Raid the Gathering (!!!)
 
 
 
