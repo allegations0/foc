@@ -4,6 +4,14 @@
 
 ### v1.7.0.x
 
+v1.7.0.29:
+
+  - New quest: Kobold Rescue
+  - Updated Elven Hot Springs Men's Business Quest Line to include warnigns that raiding could cost you a slaver (thanks to Matthew Lang)
+  - Fixes for Elven Hot Springs: Mens Business
+  - Race trait rarity adjustments
+  - Fix article toUpperFirst on undefined article.
+
 v1.7.0.28:
 
   - Fixes
