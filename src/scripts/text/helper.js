@@ -241,7 +241,7 @@ setup.Text.fixArticles = function (text, ending) {
       } else {
         next = splitted[i + 1].match(/\b(\w+)\b/g)[0] || ''
       }
-      let article = setup.ArticleOnly(next)
+      let article = setup.ArticleOnly(next) || 'a'
       if (word_parsed[0] == 'A') {
         article = article.toUpperFirst()
       }
