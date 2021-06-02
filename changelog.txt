@@ -4,6 +4,10 @@
 
 ### v1.7.0.x
 
+v1.7.0.30: [TODO BEFORE COMMIT]
+
+  - New quest: Trading Mission: Drak Xoth
+
 v1.7.0.29:
 
   - New quest: Kobold Rescue
