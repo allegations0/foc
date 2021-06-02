@@ -4,7 +4,7 @@
 
 ### v1.7.0.x
 
-v1.7.0.30: [TODO BEFORE COMMIT]
+v1.7.0.30:
 
   - New quest: Trading Mission: Drak Xoth
 
