@@ -14,7 +14,7 @@
   { /* roles */
     'recruiter1': setup.qu.recruiter,
     'recruiter2': setup.qu.recruiter,
-    'fighter': setup.qu.fighter,
+    'fighter': setup.qu.fighter_deep,
   },
   { /* actors */
     'recruit1': 'deep_all',

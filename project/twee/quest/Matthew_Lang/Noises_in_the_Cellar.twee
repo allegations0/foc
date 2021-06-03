@@ -93,7 +93,7 @@ null, /* key */
 1, /* weeks */
 setup.QUEST_DEFAULT_EXPIRATION, /* expiration weeks */
 { /* roles */
-  'exterminator1': [ setup.qu.fighter, 1],
+  'exterminator1': [ setup.qu.fighter_city, 1],
   'exterminator2': [ _criteriaexterminator2, 1],
   'wizard': [ _criteriawizard, 1],
 },

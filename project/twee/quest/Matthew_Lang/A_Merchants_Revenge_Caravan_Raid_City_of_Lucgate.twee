@@ -95,7 +95,7 @@ null, /* key */
 1, /* weeks */
 2, /* expiration weeks */
 { /* roles */
-  'fighter': [ setup.qu.fighter, 1],
+  'fighter': [ setup.qu.fighter_city, 1],
   'raider': [ _criteriaraider, 1],
   'scout': [ _criteriascout, 1],
 },

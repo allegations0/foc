@@ -13,7 +13,7 @@
 1, /* weeks */
 setup.QUEST_DEFAULT_EXPIRATION,  /* expiration weeks */
 { /* roles */
-  'fighter': [ setup.qu.fighter, 1],
+  'fighter': [ setup.qu.fighter_vale, 1],
   'hunter': [ setup.qu.hunter, 1],
   'tracker': [ setup.qu.scout_vale, 1],
 },

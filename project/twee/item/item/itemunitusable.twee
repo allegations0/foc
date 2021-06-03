@@ -361,3 +361,15 @@
   tags: [],
 })>>
 
+<<run new setup.ItemUnitUsable({
+  key: 'potion_pain',
+  name: 'Potion of Pain',
+  description: 'Inflict four weeks of injuries',
+  value: 2000,   /* value */
+  unit_restrictions: [ /* restrictions */
+  ],
+  effects: [ /* effects */
+    setup.qc.Injury('unit', 4),
+  ],
+  tags: [],
+})>>

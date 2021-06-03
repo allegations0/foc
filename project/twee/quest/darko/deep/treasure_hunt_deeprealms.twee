@@ -15,7 +15,7 @@
 2, /* weeks */
 setup.QUEST_DEFAULT_EXPIRATION, /* expiration weeks */
 { /* roles */
-  'fighter': [ setup.qu.fighter, 1],
+  'fighter': [ setup.qu.fighter_deep, 1],
   'healer': [ setup.qu.support, 1],
   'scholar': [ setup.qu.explorer, 1],
 },

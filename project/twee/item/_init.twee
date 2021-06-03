@@ -30,6 +30,7 @@
     potion_slavertraining: 0.004,
     healing_potion: 1.0,
     healing_potion_greater: 0.3,
+    potion_pain: 0.002,
     level_up_potion_basic: 0.1,
     potion_trauma_reduce: 0.1,
     potion_combat_boost: 0.0002,

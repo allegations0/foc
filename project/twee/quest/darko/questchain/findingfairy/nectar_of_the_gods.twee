@@ -15,7 +15,7 @@
 setup.QUEST_DEFAULT_EXPIRATION,  /* expiration weeks */
 { /* roles */
   'biologist': [ setup.qu.biologist, 1],
-  'fighter': [ setup.qu.fighter, 1],
+  'fighter': [ setup.qu.fighter_sea, 1],
   'healer': [ setup.qu.healer, 1],
 },
 { /* actors */

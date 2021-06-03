@@ -26,7 +26,7 @@
 1, /* weeks */
 setup.QUEST_DEFAULT_EXPIRATION,  /* expiration weeks */
 { /* roles */
-'fighter': setup.qu.fighter,
+'fighter': setup.qu.fighter_deep,
 'spotter': setup.qu.spotter,
 'healer': setup.qu.support, },
 { /* actors */
