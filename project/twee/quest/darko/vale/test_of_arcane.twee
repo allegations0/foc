@@ -38,6 +38,14 @@ null, /* key */
   setup.qres.Job(setup.job.slaver),
   setup.qres.NoTitle('quest_master_of_arcane_0'),
   setup.qres.SkillAtLeast(setup.skill.arcane, 150),
+  setup.qres.AnyTrait([
+    setup.trait.magic_fire_master,
+    setup.trait.magic_water_master,
+    setup.trait.magic_wind_master,
+    setup.trait.magic_earth_master,
+    setup.trait.magic_light_master,
+    setup.trait.magic_dark_master,
+  ], true),
 ],
 {
   arcane: 3,
@@ -205,6 +213,12 @@ As a master flesh-shaper, <<they $g.a>> could also link the source to a blob of 
 <<if $g.a.isHasTrait('magic_earth_master')>>
 <<Rep $g.a>> closed <<their $g.a>> eyes and put <<their $g.a>> <<uhand $g.a>> into the earth, asking for directions. The earth of course complies with <<their $g.a>> <<master $g.a>>.
 <</if>>
+<<if $g.a.isHasTrait('magic_dark_master')>>
+<<Rep $g.a>> attuned <<themself $g.a>> with the shadows, asking tracing the assailant from the shadows.
+<</if>>
+<<if $g.a.isHasTrait('magic_light_master')>>
+<<Rep $g.a>> used <<their $g.a>> mastery over light domain to help divine for directions.
+<</if>>
 </p>
 
 <p>
@@ -219,14 +233,18 @@ Using a couple of honeyed words, <<rep $g.a>> lowered the challenger's guard bef
 Taking advantage of <<their $g.a>> <<upraisenoun $g.a>>, <<rep $g.a>> lowered the challenger's guard before
 <</if>>
 knocking <<them $g.wiz>> out with a simple
-<<if $g.wiz.isHasTrait('magic_wind')>>
+<<if $g.a.isHasTrait('magic_wind')>>
 wind of sleep spell.
-<<elseif $g.wiz.isHasTrait('magic_water')>>
+<<elseif $g.a.isHasTrait('magic_water')>>
 cold snap spell.
-<<elseif $g.wiz.isHasTrait('magic_fire')>>
+<<elseif $g.a.isHasTrait('magic_fire')>>
 fire twist spell.
-<<elseif $g.wiz.isHasTrait('magic_earth')>>
+<<elseif $g.a.isHasTrait('magic_earth')>>
 pollen spell.
+<<elseif $g.a.isHasTrait('magic_dark')>>
+mind-disabling spell.
+<<elseif $g.a.isHasTrait('magic_light')>>
+relaxation spell.
 <</if>>
 The helpless <<urace $g.wiz>> was then tied up, and the preparations was complete.
 </p>
@@ -249,6 +267,10 @@ the miniature tornado.
 the ice trident.
 <<elseif $g.a.isHasTrait('magic_fire')>>
 the volcano strike.
+<<elseif $g.a.isHasTrait('magic_dark')>>
+the dark bolt.
+<<elseif $g.a.isHasTrait('magic_light')>>
+the spears of light.
 <</if>>
 It requires utmost concentration to prepare, and because of that, they failed to notice when
 another demonkin wizard approached — a wizard so vile and malicious that the locals would simply call <<them $g.owner>> the dark lord. The fort was not so uninhabited, it turned out, and the owner was very angry at whoever dared to attack their homefort.
@@ -271,6 +293,10 @@ the miniature tornado.
 the ice trident.
 <<elseif $g.a.isHasTrait('magic_fire')>>
 the volcano strike.
+<<elseif $g.a.isHasTrait('magic_dark')>>
+the dark bolt.
+<<elseif $g.a.isHasTrait('magic_light')>>
+the spears of light.
 <</if>>
 It required quite a bit of concentration, but <<rep $g.a>> managed to pull it off, blasting a large hole on one of the walls. The challenger upped the intensity next by blasting another part of the wall, and so on until the fort was almost flattened into the ground.
 </p>
