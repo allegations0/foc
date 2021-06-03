@@ -65,7 +65,10 @@ setup.qcImpl.Blessing = class Blessing extends setup.Cost {
 
     if (!max_trait.getTags().includes('curse') && unit.isHasTrait(max_trait)) {
       if (unit.isYourCompany()) {
-        setup.notify(`a|Rep a|is supposed to obtain ${max_trait.rep()}, but a|they already a|have it`)
+        setup.notify(
+          `a|Rep a|is supposed to obtain ${max_trait.rep()}, but a|they already a|have it`,
+          { a: unit },
+        )
       }
 
     } else {
