@@ -246,14 +246,31 @@ export function CodeJar(editor, highlight, opt = {}) {
         }
     }
     function doUndo() {
-        at--;
-        const record = history[at];
-        if (record) {
-            editor.innerHTML = record.html;
-            restore(record.pos);
+        const do_undo = () => {
+            at--;
+            const record = history[at];
+            if (record) {
+                editor.innerHTML = record.html;
+                restore(record.pos);
+            }
+            if (at < 0)
+                at = 0;
         }
-        if (at < 0)
-            at = 0;
+        setup.Dialogs.open({
+            title: "Undo confirm",
+            content: html`
+                <div>
+                Are you sure you want to UNDO your work? You may lose your work. It is advised to save your work first."
+                </div>
+                ${setup.DOM.Nav.button(
+                `Yes, I am sure I want to undo`,
+                () => {
+                    do_undo()
+                    Dialog.close()
+                },
+            )}
+            `
+        })
     }
     function doRedo() {
         at++;

@@ -234,3 +234,41 @@
 )>>
 
 
+<<run new setup.UnitCriteria(
+  'thug', /* key */
+  'Thug', /* title */
+  [
+    setup.trait.height_giant,
+    setup.trait.muscle_strong,
+    setup.trait.muscle_verystrong,
+    setup.trait.muscle_extremelystrong,
+    setup.trait.face_scary,
+    setup.trait.face_hideous,
+    setup.trait.skill_intimidating,
+    setup.trait.per_stubborn,
+    setup.trait.per_aggressive,
+    setup.trait.per_dominant,
+  ], /* critical traits */
+  [
+    setup.trait.height_dwarf,
+    setup.trait.muscle_thin,
+    setup.trait.muscle_verythin,
+    setup.trait.muscle_extremelythin,
+    setup.trait.face_attractive,
+    setup.trait.face_beautiful,
+    setup.trait.per_curious,
+    setup.trait.per_calm,
+    setup.trait.per_submissive,
+    setup.trait.per_kind,
+    setup.trait.per_masochistic,
+  ], /* disaster traits */
+  [setup.qres.Job(setup.job.slaver)], /* requirement */
+  { /* skill effects, sums to 3.0 */
+    brawn: 2.0,
+    slaving: 1.0,
+  }
+)>>
+
+
+
+
