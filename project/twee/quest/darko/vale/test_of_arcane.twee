@@ -219,13 +219,13 @@ Using a couple of honeyed words, <<rep $g.a>> lowered the challenger's guard bef
 Taking advantage of <<their $g.a>> <<upraisenoun $g.a>>, <<rep $g.a>> lowered the challenger's guard before
 <</if>>
 knocking <<them $g.wiz>> out with a simple
-<<if $g.a.isHasTrait('magic_wind')>>
+<<if $g.wiz.isHasTrait('magic_wind')>>
 wind of sleep spell.
-<<elseif $g.a.isHasTrait('magic_water')>>
+<<elseif $g.wiz.isHasTrait('magic_water')>>
 cold snap spell.
-<<elseif $g.a.isHasTrait('magic_fire')>>
+<<elseif $g.wiz.isHasTrait('magic_fire')>>
 fire twist spell.
-<<elseif $g.a.isHasTrait('magic_earth')>>
+<<elseif $g.wiz.isHasTrait('magic_earth')>>
 pollen spell.
 <</if>>
 The helpless <<urace $g.wiz>> was then tied up, and the preparations was complete.

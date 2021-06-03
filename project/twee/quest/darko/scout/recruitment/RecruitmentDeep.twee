@@ -81,7 +81,11 @@
 
 <p>
 The <<lore region_deep>> is inhabited by both the
-<<rep setup.trait.subrace_kobold>> and the <<rep setup.trait.subrace_kobold>>.
+<<rep setup.trait.subrace_kobold>> and the <<rep setup.trait.subrace_drow>>.
+</p>
+
+<p>
+Between the two, the kobolds are much more numerous, being commonly found in the realm.
 Despite being physically inadept, kobolds are often cunning and creative,
 a very useful trait to have as a slaver.
 </p>
