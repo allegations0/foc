@@ -19,18 +19,20 @@
     bg_merchant: setup.POOL_BG_COMMON_1,
     bg_entertainer: setup.POOL_BG_COMMON_1,
 
+    bg_slave: setup.POOL_BG_COMMON_1,
+
     bg_artisan: setup.POOL_BG_UNCOMMON_2,
-    bg_priest: setup.POOL_BG_UNCOMMON_2,
     bg_mercenary: setup.POOL_BG_UNCOMMON_2,
 
-    bg_slave: setup.POOL_BG_UNCOMMON_2,
-    bg_unemployed: setup.POOL_BG_UNCOMMON_2,
     bg_thug: setup.POOL_BG_UNCOMMON_2,
     bg_raider: setup.POOL_BG_UNCOMMON_2,
+
+    bg_unemployed: setup.POOL_BG_UNCOMMON_2,
 
     bg_adventurer: setup.POOL_BG_RARE_3,
     bg_mystic: setup.POOL_BG_RARE_3,
 
+    bg_priest: setup.POOL_BG_RARE_3,
     bg_hunter: setup.POOL_BG_RARE_3,
     bg_assassin: setup.POOL_BG_RARE_3,
     bg_informer: setup.POOL_BG_RARE_3,
@@ -73,12 +75,11 @@
     /* PERSONALITY */
     /* =========== */
 
-    per_submissive: setup.POOL_PER_UNCOMMON_2,
     per_cautious: setup.POOL_PER_UNCOMMON_2,
-    per_smart: setup.POOL_PER_UNCOMMON_2,
+    per_humble: setup.POOL_PER_UNCOMMON_2,
 
-    per_aggressive: setup.POOL_PER_RARE_3,
-    per_humble: setup.POOL_PER_RARE_3,
+    per_smart: setup.POOL_PER_RARE_3,
+    per_submissive: setup.POOL_PER_RARE_3,
 
     /* =========== */
     /* MAGIC */
@@ -91,10 +92,6 @@
     /* =========== */
     /* PHYSICAL */
     /* =========== */
-
-    muscle_thin: 0.15,
-    muscle_verythin: 0.03,
-    muscle_extremelythin: 0.005,
 
     height_dwarf: 1000.0,
     height_short: 10.0,
