@@ -571,12 +571,10 @@ setup.DebugInit.debugModeInit = function () {
   {
     console.log('market objects')
     setup.qc.EquipmentForSale(
-      'combatequipmentmarket',
       setup.equipmentpool.all_combat,
       /* amount = */ 8,
     ).apply(setup.costUnitHelper(null, 'debug'))
     setup.qc.EquipmentForSale(
-      'sexequipmentmarket',
       setup.equipmentpool.all_sex,
       /* amount = */ 8,
     ).apply(setup.costUnitHelper(null, 'debug'))

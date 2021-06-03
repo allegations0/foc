@@ -1,19 +1,16 @@
 
 setup.qcImpl.EquipmentForSale = class EquipmentForSale extends setup.Cost {
   /**
-   * @param {setup.Market | string} market 
    * @param {setup.EquipmentPool | string} equipment_pool 
    * @param {number} amount 
    * @param {number} [markup]
    */
-  constructor(market, equipment_pool, amount, markup) {
+  constructor(equipment_pool, amount, markup) {
     super()
 
-    if (!market) throw new Error(`Missing market in equipmentforsale`)
-    if (!equipment_pool) throw new Error(`Missing equipment pool for equipment for sale in ${market}`)
+    if (!equipment_pool) throw new Error(`Missing equipment pool for equipment for sale`)
 
     this.equipment_pool_key = setup.keyOrSelf(equipment_pool)
-    this.market_key = setup.keyOrSelf(market)
     this.markup = markup || 1.0
 
     if (!amount) {
@@ -24,7 +21,7 @@ setup.qcImpl.EquipmentForSale = class EquipmentForSale extends setup.Cost {
   }
 
   text() {
-    return `setup.qc.EquipmentForSale('${this.market_key}', '${this.equipment_pool_key}', ${this.amount}, ${this.markup})`
+    return `setup.qc.EquipmentForSale('${this.equipment_pool_key}', ${this.amount}, ${this.markup})`
   }
 
   apply(quest) {
@@ -42,7 +39,7 @@ setup.qcImpl.EquipmentForSale = class EquipmentForSale extends setup.Cost {
     }
   }
 
-  getMarket() { return State.variables.market[this.market_key] }
+  getMarket() { return State.variables.market.equipmentmarket }
 
   explain(quest) {
     return `${this.amount} new items in ${this.getMarket().rep()} at ${this.markup}x price`

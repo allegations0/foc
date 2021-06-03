@@ -7,7 +7,6 @@
   'ContactBlacksmithPeddler',
   [
     setup.qc.EquipmentForSale(
-      'combatequipmentmarket',
       setup.equipmentpool.blacksmith,
       /* amount = */ 1,
       /* markup = */ setup.CONTACT_PEDDLER_MARKUP,

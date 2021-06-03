@@ -4,7 +4,7 @@
   'nipplechains',
   'Nipple Chains',
   setup.equipmentslot.nipple,
-  ['accessory', 'nipplechains'],
+  ['accessory', 'nipplechains', 'sextoy', ],
   setup.EQUIPMENT_PRICE_NORMAL, /* value */
   20, /* sluttines */
   {},
@@ -23,7 +23,7 @@
   'buttplug',
   'Buttplug',
   setup.equipmentslot.rear,
-  ['buttplug', 'banuse', ],
+  ['buttplug', 'banuse', 'sextoy', ],
   setup.EQUIPMENT_PRICE_NORMAL, /* value */
   20, /* sluttines */
   {}, /* skills */
@@ -43,7 +43,7 @@
   'dildo',
   'Dildo (Vaginal)',
   setup.equipmentslot.genital,
-  ['dildo', 'vagina', 'banuse', ],
+  ['dildo', 'vagina', 'banuse', 'sextoy', ],
   setup.EQUIPMENT_PRICE_NORMAL, /* value */
   20, /* sluttines */
   {}, /* skills */
@@ -64,7 +64,7 @@
   'dildoanus',
   'Dildo (Anal)',
   setup.equipmentslot.rear,
-  ['dildo', 'banuse', ],
+  ['dildo', 'banuse', 'sextoy', ],
   setup.EQUIPMENT_PRICE_NORMAL, /* value */
   20, /* sluttines */
   {}, /* skills */
@@ -84,7 +84,7 @@
   'dildogag',
   'Dildo Gag',
   setup.equipmentslot.mouth,
-  ['gag', 'dildogag', 'banuse', ],
+  ['gag', 'dildogag', 'banuse', 'sextoy', ],
   setup.EQUIPMENT_PRICE_NORMAL, /* value */
   20, /* sluttines */
   {}, /* skills */
@@ -104,7 +104,7 @@
   'dickplug',
   'Dick Plug',
   setup.equipmentslot.genital,
-  ['dickplug', 'dick', 'banuse', ],
+  ['dickplug', 'dick', 'banuse', 'sextoy', ],
   setup.EQUIPMENT_PRICE_NORMAL, /* value */
   20, /* sluttines */
   {},
@@ -125,7 +125,7 @@
   'goldnipplechains',
   'Gold Nipple Chains',
   setup.equipmentslot.nipple,
-  ['accessory', 'nipplechains', 'nipples', ],
+  ['accessory', 'nipplechains', 'nipples', 'sextoy', ],
   setup.EQUIPMENT_PRICE_GOOD, /* value */
   20, /* sluttines */
   {},
@@ -144,7 +144,7 @@
   'goldbuttplug',
   'Gold Buttplug',
   setup.equipmentslot.rear,
-  ['buttplug', 'banuse', ],
+  ['buttplug', 'banuse', 'sextoy', ],
   setup.EQUIPMENT_PRICE_GOOD, /* value */
   20, /* sluttines */
   {}, /* skills */
@@ -164,7 +164,7 @@
   'golddildo',
   'Gold Dildo (Vaginal)',
   setup.equipmentslot.genital,
-  ['dildo', 'vagina', 'banuse', ],
+  ['dildo', 'vagina', 'banuse', 'sextoy', ],
   setup.EQUIPMENT_PRICE_GOOD, /* value */
   20, /* sluttines */
   {}, /* skills */
@@ -185,7 +185,7 @@
   'golddildoanus',
   'Gold Dildo (Anal)',
   setup.equipmentslot.rear,
-  ['dildo', 'banuse', ],
+  ['dildo', 'banuse', 'sextoy', ],
   setup.EQUIPMENT_PRICE_GOOD, /* value */
   20, /* sluttines */
   {}, /* skills */
@@ -205,7 +205,7 @@
   'golddildogag',
   'Gold Dildo Gag',
   setup.equipmentslot.mouth,
-  ['dildogag', 'banuse', ],
+  ['dildogag', 'banuse', 'sextoy', ],
   setup.EQUIPMENT_PRICE_GOOD, /* value */
   20, /* sluttines */
   {}, /* skills */
@@ -225,7 +225,7 @@
   'golddickplug',
   'Gold Dick Plug',
   setup.equipmentslot.genital,
-  ['dickplug', 'dick', 'banuse', ],
+  ['dickplug', 'dick', 'banuse', 'sextoy', ],
   setup.EQUIPMENT_PRICE_GOOD, /* value */
   20, /* sluttines */
   {},
@@ -273,7 +273,7 @@
   'buttplug_master',
   'Ancient Neko Buttplug',
   setup.equipmentslot.rear,
-  ['buttplug', 'legendary',],
+  ['buttplug', 'legendary', 'sextoy', ],
   setup.EQUIPMENT_PRICE_MASTER, /* value */
   30, /* sluttines */
   {}, /* skills */
@@ -293,7 +293,7 @@
   'dildo_cucumber',
   'Enchanted Cucumber (Vaginal)',
   setup.equipmentslot.genital,
-  ['dildo', 'vagina', 'banuse', 'vegetable', ],
+  ['dildo', 'vagina', 'banuse', 'vegetable', 'sextoy', ],
   100, /* value */
   20, /* sluttines */
   {}, /* skills */
@@ -314,7 +314,7 @@
   'dildo_cucumber_anus',
   'Enchanted Cucumber (Anal)',
   setup.equipmentslot.rear,
-  ['dildo', 'banuse', 'vegetable', ],
+  ['dildo', 'banuse', 'vegetable', 'sextoy', ],
   100, /* value */
   20, /* sluttines */
   {}, /* skills */

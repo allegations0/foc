@@ -7,7 +7,6 @@
   'ContactWeaverPeddler',
   [
     setup.qc.EquipmentForSale(
-      'combatequipmentmarket',
       setup.equipmentpool.weaver,
       /* amount = */ 1,
       /* markup = */ setup.CONTACT_PEDDLER_MARKUP,

@@ -4,7 +4,7 @@
   'tailplug_pony',
   'Pony Tail Plug',
   setup.equipmentslot.rear,
-  ['pony', 'buttplug', 'tailplug', 'banuse', ],
+  ['pony', 'buttplug', 'tailplug', 'banuse', 'sextoy', ],
   setup.EQUIPMENT_PRICE_NORMAL, /* value */
   20, /* sluttiness */
   {}, /* skills */
@@ -25,7 +25,7 @@
   'gag_pony',
   'Pony Bit Gag',
   setup.equipmentslot.mouth,
-  ['pony', 'gag', 'bitgag', 'banuse', ],
+  ['pony', 'gag', 'bitgag', 'banuse', 'sextoy', ],
   setup.EQUIPMENT_PRICE_NORMAL, /* value */
   10, /* sluttiness */
   {}, /* skills */
@@ -46,7 +46,7 @@
   'eyecover_pony',
   'Pony Blinders',
   setup.equipmentslot.eyes,
-  ['pony', 'ponyeyecover', 'banuse', ],
+  ['pony', 'ponyeyecover', 'banuse', 'sextoy', ],
   setup.EQUIPMENT_PRICE_NORMAL, /* value */
   10, /* sluttiness */
   {},
@@ -66,7 +66,7 @@
   'hooves_front_pony',
   'Pony Hooves (Front)',
   setup.equipmentslot.arms,
-  ['pony', 'hooves', 'banuse'],
+  ['pony', 'hooves', 'banuse', 'sextoy', ],
   setup.EQUIPMENT_PRICE_NORMAL, /* value */
   10, /* sluttiness */
   {}, /* skills */
@@ -88,7 +88,7 @@
   'hooves_rear_pony',
   'Pony Hooves (Rear)',
   setup.equipmentslot.feet,
-  ['pony', 'hooves', 'banuse', 'covering', ],
+  ['pony', 'hooves', 'banuse', 'covering', 'sextoy', ],
   setup.EQUIPMENT_PRICE_NORMAL, /* value */
   10, /* sluttiness */
   {}, /* skills */
@@ -110,7 +110,7 @@
   'large_tailplug_pony',
   'Extra Large Pony Tail Plug',
   setup.equipmentslot.rear,
-  ['pony', 'buttplug', 'tailplug', 'banuse', ],
+  ['pony', 'buttplug', 'tailplug', 'banuse', 'sextoy', ],
   setup.EQUIPMENT_PRICE_GOOD, /* value */
   30, /* sluttiness */
   {}, /* skills */
@@ -131,7 +131,7 @@
   'large_gag_pony',
   'Extra Large Pony Bit Gag',
   setup.equipmentslot.mouth,
-  ['pony', 'gag', 'bitgag', 'banuse', ],
+  ['pony', 'gag', 'bitgag', 'banuse', 'sextoy', ],
   setup.EQUIPMENT_PRICE_GOOD, /* value */
   20, /* sluttiness */
   {}, /* skills */
@@ -152,7 +152,7 @@
   'large_eyecover_pony',
   'Extra Dark Pony Blinders',
   setup.equipmentslot.eyes,
-  ['pony', 'ponyeyecover'],
+  ['pony', 'ponyeyecover', 'sextoy', ],
   setup.EQUIPMENT_PRICE_GOOD, /* value */
   20, /* sluttiness */
   {},
@@ -173,7 +173,7 @@
   'constricting_hooves_front_pony',
   'Extra Constricting Pony Hooves (Front)',
   setup.equipmentslot.arms,
-  ['pony', 'hooves', 'banuse'],
+  ['pony', 'hooves', 'banuse', 'sextoy', ],
   setup.EQUIPMENT_PRICE_GOOD, /* value */
   20, /* sluttiness */
   {}, /* skills */
@@ -195,7 +195,7 @@
   'constricting_hooves_rear_pony',
   'Extra Constricting Pony Hooves (Rear)',
   setup.equipmentslot.feet,
-  ['pony', 'hooves', 'banuse', 'covering', ],
+  ['pony', 'hooves', 'banuse', 'covering', 'sextoy', ],
   setup.EQUIPMENT_PRICE_GOOD, /* value */
   20, /* sluttiness */
   {}, /* skills */

@@ -208,6 +208,12 @@ setup.updatePostProcess = function () {
   // @ts-ignore
   if (!State.variables.gUpdatePostProcess) throw new Error('Post process called mistakenly')
 
+  /* equipment market. v1.7.1 */
+  if (State.variables.market && !('equipmentmarket' in State.variables.market)) {
+    console.log(`Creating equipment market`)
+    new setup.MarketEquipment('equipmentmarket', 'Market (Equipment)')
+  }
+
   // Init missing companies v1.6.5.0
   {
     for (const template of Object.values(setup.companytemplate)) {
@@ -217,7 +223,6 @@ setup.updatePostProcess = function () {
       }
     }
   }
-
 
   // remove obsolete buildings v1.5.5.7
   /*

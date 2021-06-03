@@ -1,6 +1,17 @@
 setup.Equipment_keygen = 1
 
 setup.Equipment = class Equipment extends setup.TwineClass {
+  static NONSEX_URL = 'img/special/equipment_nonsex.svg'
+  static SEX_URL = 'img/special/equipment_sex.svg'
+
+  static repNonSexIcon() {
+    return setup.repImgIcon(setup.Equipment.NONSEX_URL, 'Equipments unrelated to sexual intercourse')
+  }
+
+  static repSexIcon() {
+    return setup.repImgIcon(setup.Equipment.SEX_URL, 'Sex toys and sex-related equipments')
+  }
+
   /**
    * 
    * @param {string} key 

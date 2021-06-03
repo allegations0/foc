@@ -7,7 +7,6 @@
   'ContactSexPeddler',
   [
     setup.qc.EquipmentForSale(
-      'sexequipmentmarket',
       setup.equipmentpool.all_sex,
       /* amount = */ 1,
       /* markup = */ setup.CONTACT_PEDDLER_MARKUP,

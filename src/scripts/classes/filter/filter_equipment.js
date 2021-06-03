@@ -42,6 +42,23 @@ function getSkillModsSort() {
 
 
 setup.MenuFilter._MENUS.equipment = {
+  sextoy: {
+    title: 'Class',
+    default: 'All',
+    icon_menu: true,
+    options: () => {
+      return {
+        sex: {
+          title: setup.Equipment.repSexIcon(),
+          filter: equipment => equipment.getTags().includes('sextoy'),
+        },
+        nonsex: {
+          title: setup.Equipment.repNonSexIcon(),
+          filter: equipment => !equipment.getTags().includes('sextoy'),
+        },
+      }
+    },
+  },
   type: {
     title: 'Type',
     default: 'All',

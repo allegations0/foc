@@ -87,9 +87,9 @@ setup.Market = class Market extends setup.TwineClass {
       State.variables.statistics.add('slaves_offered', 1)
     } else if (this == State.variables.market.itemmarket) {
       State.variables.statistics.add('items_offered', 1)
-    } else if (this == State.variables.market.combatequipmentmarket) {
+    } else if (this == State.variables.market.equipmentmarket) {
       State.variables.statistics.add('equipment_offered', 1)
-    } else if (this == State.variables.market.sexequipmentmarket) {
+    } else if (this == State.variables.market.equipmentmarket) {
       State.variables.statistics.add('equipment_offered', 1)
     }
 
@@ -128,9 +128,9 @@ setup.Market = class Market extends setup.TwineClass {
     // statistic first
     if (this == State.variables.market.itemmarket) {
       State.variables.statistics.add('items_bought', 1)
-    } else if (this == State.variables.market.combatequipmentmarket) {
+    } else if (this == State.variables.market.equipmentmarket) {
       State.variables.statistics.add('equipment_bought', 1)
-    } else if (this == State.variables.market.sexequipmentmarket) {
+    } else if (this == State.variables.market.equipmentmarket) {
       State.variables.statistics.add('equipment_bought', 1)
     }
 

@@ -65,7 +65,7 @@
   'strapon',
   'Strap-On',
   setup.equipmentslot.genital,
-  ['basic', 'strapon', ],
+  ['basic', 'strapon', 'sextoy', ],
   0, /* value */
   0, /* sluttines */
   {}, /* skills */

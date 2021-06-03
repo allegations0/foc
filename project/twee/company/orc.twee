@@ -1,13 +1,11 @@
 :: InitCompanyOrc [nobr company]
 
 <<set _item = setup.qc.EquipmentForSale(
-  'combatequipmentmarket',
   'blacksmith',
   /* amount = */ 1,
 )>>
 
 <<set _rare = setup.qc.EquipmentForSaleSingle(
-  'combatequipmentmarket',
   'combat_arms_master',
 )>>
 

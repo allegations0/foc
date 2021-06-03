@@ -170,21 +170,18 @@ function getMainMenuItems() {
         },
       ],
 
-      [  /* Forge, sex shop */
+      [  /* Equipment market */
         {
-          title: 'Forge',
-          passage: 'MarketCombatEquipment',
-          restrictions: [setup.qres.Building('forge'),],
+          title: 'Buy Equipment',
+          passage: 'MarketEquipment',
+          restrictions: [
+            setup.qres.Or([
+              setup.qres.Building('forge'),
+              setup.qres.Building('sexshop'),
+            ]),
+          ],
           extra() {
-            return marketObjectsDescriptor(State.variables.market.combatequipmentmarket)
-          },
-        },
-        {
-          title: 'Sex',
-          passage: 'MarketSexEquipment',
-          restrictions: [setup.qres.Building('sexshop'),],
-          extra() {
-            return marketObjectsDescriptor(State.variables.market.sexequipmentmarket)
+            return marketObjectsDescriptor(State.variables.market.equipmentmarket)
           },
         },
       ],

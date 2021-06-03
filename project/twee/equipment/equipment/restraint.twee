@@ -4,7 +4,7 @@
   'manacles_up',
   'Manacles',
   setup.equipmentslot.arms,
-  ['restraints'],
+  ['restraints', 'sextoy', ],
   setup.EQUIPMENT_PRICE_NORMAL, /* value */
   5, /* sluttines */
   {}, /* skills */
@@ -24,7 +24,7 @@
   'manacles_down',
   'Fetters',
   setup.equipmentslot.feet,
-  ['restraints'],
+  ['restraints', 'sextoy', ],
   setup.EQUIPMENT_PRICE_NORMAL, /* value */
   5, /* sluttines */
   {}, /* skills */
@@ -44,7 +44,7 @@
   'blindfold',
   'Blindfold',
   setup.equipmentslot.eyes,
-  ['blindfold', 'banuse', ],
+  ['blindfold', 'banuse', 'sextoy', ],
   setup.EQUIPMENT_PRICE_NORMAL, /* value */
   10, /* sluttines */
   {}, /* skills */
@@ -64,7 +64,7 @@
   'ballgag',
   'Ball Gag',
   setup.equipmentslot.mouth,
-  ['gag', 'ballgag', 'banuse', ],
+  ['gag', 'ballgag', 'banuse', 'sextoy', ],
   setup.EQUIPMENT_PRICE_NORMAL, /* value */
   20, /* sluttines */
   {}, /* skills */
@@ -84,7 +84,7 @@
   'metal_collar',
   'Heavy Metal Collar',
   setup.equipmentslot.neck,
-  ['collar'],
+  ['collar', 'sextoy', ],
   setup.EQUIPMENT_PRICE_NORMAL, /* value */
   10, /* sluttines */
   {}, /* skills */
@@ -117,7 +117,7 @@
   'cowbell_collar',
   'Cowbell Collar',
   setup.equipmentslot.neck,
-  ['collar', 'bellcollar', ],
+  ['collar', 'bellcollar', 'sextoy', ],
   setup.EQUIPMENT_PRICE_GOOD, /* value */
   15, /* sluttines */
   {}, /* skills */

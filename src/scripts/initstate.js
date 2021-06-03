@@ -104,8 +104,7 @@ setup.initState = function () {
     new setup.MarketUnit('slavemarket', 'Temporary Slave Pens', 'unit', setup.job.slave)
     new setup.MarketUnit('initslavermarket', 'Initial Slavers', 'unit', setup.job.slaver)
 
-    new setup.MarketEquipment('combatequipmentmarket', 'Forge')
-    new setup.MarketEquipment('sexequipmentmarket', 'Sex Shop')
+    new setup.MarketEquipment('equipmentmarket', 'Buy Equipment')
     new setup.MarketItem('itemmarket', 'Market')
   }
 
