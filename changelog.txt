@@ -4,6 +4,12 @@
 
 ### v1.7.0.x
 
+v1.7.0.31:
+
+  - Equipment market and Sex market are combined.
+  - Fix changelog [CHANGELOG] not removed
+  - Fixed borked blessing texts when getting one when already at cap.
+
 v1.7.0.30:
 
   - New quest: Trading Mission: Drak Xoth
