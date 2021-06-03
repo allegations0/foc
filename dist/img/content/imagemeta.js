@@ -61,10 +61,16 @@
       url: "https://www.deviantart.com/batailleant/art/Kitten-670601397",
       license: "CC-BY-NC-ND 3.0",
     },
-    "unit_training_pet_advanced_male.jpg": {
+    "unit_training_pet_master_male.jpg": {
       title: "Kinky challenge - Pet play",
       artist: "Ruchiel",
       url: "https://www.deviantart.com/ruchiel/art/Kinky-challenge-Pet-play-821219220",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    "unit_training_pet_advanced_male.jpg": {
+      title: "BTD Vincent humiliation",
+      artist: "Z0m-b",
+      url: "https://www.newgrounds.com/art/view/z0m-b/btd-vincent-humiliation",
       license: "CC-BY-NC-ND 3.0",
     },
     "unit_training_pet_advanced_female.jpg": {

@@ -66,6 +66,7 @@ and that dog food is all they need for sustenance, among other things.
 :: QuestUnitTrainingPetMasterCrit [nobr]
 
 <<if $g.trainee.isMale()>>
+  <<questimage 'unit_training_pet_master_male.jpg'>>
 <<else>>
   <<questimage 'unit_training_pet_master_female.jpg'>>
 <</if>>

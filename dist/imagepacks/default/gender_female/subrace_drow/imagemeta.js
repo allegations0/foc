@@ -1,7 +1,7 @@
 (function () {
 
   /* The following is list of direct subdirectories. */
-  UNITIMAGE_LOAD_FURTHER = ["bg_assassin", "bg_mercenary", "bg_mystic", "bg_hunter", "bg_thief", "bg_soldier",
+  UNITIMAGE_LOAD_FURTHER = ["bg_assassin", "bg_mercenary", "bg_mystic", "bg_hunter", "bg_thief", "bg_soldier", "bg_artist", 
   ]
 
 
@@ -88,6 +88,12 @@
       title: "Ka'ori [C]",
       artist: "Jeleynai",
       url: "https://www.deviantart.com/jeleynai/art/Ka-ori-C-792305096",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    15: {
+      title: "As The Moon",
+      artist: "NanFe",
+      url: "https://www.deviantart.com/nanfe/art/As-The-Moon-766968610",
       license: "CC-BY-NC-ND 3.0",
     },
   }
