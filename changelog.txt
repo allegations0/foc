@@ -4,6 +4,16 @@
 
 ### v1.7.0.x
 
+v1.7.0.32:
+
+  - New quest: Dwarven Alchemy.
+  - New quest: Kobold Benevolent Agency.
+  - Region fighter roles.
+  - UNDO warning in CC.
+  - Kobold race balance adjustments.
+  - Potion cleanup and text fixes
+  - Documentation for where to get items and items that are not obtainable
+
 v1.7.0.31:
 
   - Equipment market and Sex market are combined.
