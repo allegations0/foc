@@ -60,35 +60,6 @@
   tags: [],
 })>>
 
-
-/* ========================
-  TRAIT GIVING POTIONS
-======================== */
-
-<<run new setup.ItemUnitUsable({
-  key: 'potion_lust',
-  name: 'Potion of Lust',
-  description: 'Give a unit <<rep setup.trait.per_lustful>>, but having their sexuality altered this way will surely dazzle them for a very long time. Ineffective on particularly chaste individuals',
-  value: 16000,   /* value */
-  unit_restrictions: [ /* restrictions */
-    setup.qres.NoTrait(setup.trait.per_lustful),
-    setup.qres.NoTrait(setup.trait.training_mindbreak),
-    setup.qres.NoTrait(setup.trait.per_chaste),
-    setup.qres.Available(),
-  ],
-  effects: [ /* effects */
-    setup.qc.Trait('unit', setup.trait.per_lustful),
-    setup.qc.Trauma('unit', setup.trait.trauma_sex, 100),
-  ],
-  tags: [],
-})>>
-
-<<run setup.ItemUnitUsable.make_perk_potions()>>
-
-/* ========================
-  LEVEL POTIONS
-======================== */
-
 <<run new setup.ItemUnitUsable({
   key: 'level_up_potion_basic',
   name: 'Potion of Level Up',
@@ -123,6 +94,31 @@
   tags: [],
 })>>
 
+
+
+/* ========================
+  TRAIT GIVING POTIONS
+======================== */
+
+<<run new setup.ItemUnitUsable({
+  key: 'potion_lust',
+  name: 'Potion of Lust',
+  description: 'Give a unit <<rep setup.trait.per_lustful>>, but having their sexuality altered this way will surely dazzle them for a very long time. Ineffective on particularly chaste individuals',
+  value: 16000,   /* value */
+  unit_restrictions: [ /* restrictions */
+    setup.qres.NoTrait(setup.trait.per_lustful),
+    setup.qres.NoTrait(setup.trait.training_mindbreak),
+    setup.qres.NoTrait(setup.trait.per_chaste),
+    setup.qres.Available(),
+  ],
+  effects: [ /* effects */
+    setup.qc.Trait('unit', setup.trait.per_lustful),
+    setup.qc.Trauma('unit', setup.trait.trauma_sex, 100),
+  ],
+  tags: [],
+})>>
+
+<<run setup.ItemUnitUsable.make_perk_potions()>>
 
 /* ========================
   BLESSING POTIONS

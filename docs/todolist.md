@@ -7,6 +7,8 @@ set of current todos.
 
 ### Writing
 
+See [https://gitgud.io/darkofocdarko/fort-of-chains/-/issues/343](here) if you are looking for potential rewards
+
 - High priority
   - New quest / opportunities / events are always high priority.
   - In particular, quest chains are always in high-demand, especially if they flesh out

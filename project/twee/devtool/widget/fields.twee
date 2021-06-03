@@ -762,7 +762,10 @@
         </tr>
         <tr>
           <td>Items</td>
-          <td>Equal to their value</td>
+          <td>Equal to their value
+          See [[here|https://gitgud.io/darkofocdarko/fort-of-chains/-/issues/343]]
+          for the list of items that are still missing quests to give them out.
+          </td>
         </tr>
         <tr>
           <td>Equipment / Furniture</td>
