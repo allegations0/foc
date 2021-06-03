@@ -76,6 +76,21 @@
 })>>
 
 <<run new setup.ItemUnitUsable({
+  key: 'potion_level_up_advanced',
+  name: 'Potion of Greater Level Up',
+  description: 'Level up the unit to level ' + setup.LEVEL_PLATEAU + '.',
+  value: Math.round(6000),   /* value */
+  unit_restrictions: [ /* restrictions */
+    setup.qres.Job(setup.job.slaver),
+    setup.qres.LevelAtMost(setup.LEVEL_PLATEAU - 1),
+  ],
+  effects: [ /* effects */
+    setup.qc.LevelUpTo('unit', setup.LEVEL_PLATEAU),
+  ],
+  tags: [],
+})>>
+
+<<run new setup.ItemUnitUsable({
   key: 'potion_perk',
   name: 'Potion of Past-Erasure',
   description: "Resets a unit's perks, allowing them to learn other ones",
