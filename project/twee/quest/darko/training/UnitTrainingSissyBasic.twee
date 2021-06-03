@@ -27,7 +27,7 @@
       ]
     ],
     [
-      'QuestUnitTrainingSissyBasicSuccess',
+      'QuestUnitTrainingSissyBasicCrit',
       [
         setup.qc.Trait('trainee', setup.trait.training_sissy_basic),
         
@@ -61,6 +61,13 @@ kept permanently in a chastity cage.
 </p>
 
 :: QuestUnitTrainingSissyBasicCrit [nobr]
+
+<<if $g.trainee.isMale()>>
+  <<questimage 'unit_training_sissy_advanced_male.jpg'>>
+<<else>>
+<</if>>
+
+<<if $gOutcome == 'crit'>>
 <p>
 The training was a complete success.
 With the right makeup,
@@ -68,11 +75,12 @@ With the right makeup,
 while your slavers gain a lot of experience from the training.
 </p>
 
-:: QuestUnitTrainingSissyBasicSuccess [nobr]
+<<else>>
 <p>
 At the end of the week, <<rep $g.trainee>> can now be
 passed as a girl with the right attire.
 </p>
+<</if>>
 
 :: QuestUnitTrainingSissyBasicFailure [nobr]
 <p>

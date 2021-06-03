@@ -271,6 +271,12 @@
       url: "https://www.newgrounds.com/art/view/skajrzombie/starfire-s-roleplay-dcau",
       license: "CC-BY-NC 3.0",
     },
+    "unit_training_sissy_basic_male.jpg": {
+      title: "Pet Boy - Commission",
+      artist: "Kaimo",
+      url: "https://www.newgrounds.com/art/view/kaimo/pet-boy-commission",
+      license: "CC-BY-NC-ND 3.0",
+    },
     "unit_training_sissy_advanced_male.jpg": {
       title: "Fucking a Sissy",
       artist: "TheShadling",
