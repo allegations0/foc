@@ -71,6 +71,14 @@ sent on this mission however. The stuffs the demons would do to whoever become t
 
 
 :: Quest_raid_the_mistCrit [nobr]
+
+<<if $gOutcome == 'crit'>>
+  <<if $g.slave.isMale()>>
+  <<else>>
+    <<questimage "raid_the_mist_female.jpg">>
+  <</if>>
+<</if>>
+
 <p>
 Once your slavers arrived at the area, <<yourrep $g.warrior1>> and
 <<utheirrel $g.warrior1 $g.warrior2>> <<rep $g.warrior2>> <<uadv $g.warrior1>>

@@ -625,5 +625,17 @@
       license: "CC-BY-NC 3.0",
       extra: "cropped into the settlements only",
     },
+    "raid_desert_settlement_female.jpg": {
+      title: "Dancer Fillia's after service",
+      artist: "Faymantra",
+      url: "https://www.newgrounds.com/art/view/faymantra/dancer-fillia-s-after-service",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    "raid_the_mist_female.jpg": {
+      title: "Doom Eternal - Hellish Landscape",
+      artist: "frynler",
+      url: "https://www.newgrounds.com/art/view/frynler/doom-eternal-hellish-landscape",
+      license: "CC-BY-NC 3.0",
+    },
   }
 }());
