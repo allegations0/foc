@@ -303,7 +303,25 @@
       and hence higher level quests (e.g., Lv 60 quests) can be tackled by lv40 but optimized slavers.
       <br/>
       <br/>
-      Quest level should be chosen in the following way:
+      In order to decide the appropriate difficulty for your content,
+      you must first decide whether or not this content is a <b>Veteran</b>
+      content or not.
+      A Veteran content is expected to be tackled after building the Veteran Hall.
+      They are the bulk of the end-game content.
+      Meanwhile, non-veteran content is expected to be tackled as part of the "early game".
+      <br/>
+      <br/>
+      To decide whether or not you should make your content veteran, it is helpful to think
+      about how much the reward will help player in the early game.
+      If it will help a lot, for example money, then it might be a good idea to make it an early-game
+      quest. If it rewards something collectible or cosmetic (for example: furniture, potion), then it
+      might be a good idea to make it a late-game quest.
+      These are not hard rule, however, and you should use your best judgment to determine which
+      is more fun for players.
+      <br/>
+      <br/>
+      Once you decide whether the quest veterancy, you can then set its difficulty
+      using the following guideline:
       <br/>
       <table class='table table-sm table-striped table-bordered'>
         <thead>
@@ -316,32 +334,32 @@
         <tbody>
           <tr>
             <td><<lore region_vale>></td>
-            <td>Normal Quests</td>
+            <td>Non-Veteran</td>
             <td>Lv. 1 - Lv. 20</td>
           </tr>
           <tr>
             <td><<lore region_forest>></td>
-            <td>Normal Quests</td>
+            <td>Non-Veteran</td>
             <td>Lv. 15 - Lv. 30</td>
           </tr>
           <tr>
             <td>City of Lucgate</td>
-            <td>Normal Quests</td>
+            <td>Non-Veteran</td>
             <td>Lv. 25 - Lv. 40</td>
           </tr>
           <tr>
             <td><<lore region_deep>></td>
-            <td>Normal Quests</td>
+            <td>Non-Veteran</td>
             <td>Lv. 30 - Lv. 45</td>
           </tr>
           <tr>
             <td><<lore region_desert>></td>
-            <td>Normal Quests</td>
+            <td>Non-Veteran</td>
             <td>Lv. 35 - Lv. 50</td>
           </tr>
           <tr>
             <td>All Locations</td>
-            <td>Veteran Quests</td>
+            <td>Veteran</td>
             <td>Lv. 45 - Lv. 100</td>
           </tr>
         </tbody>
@@ -741,8 +759,8 @@
     <br/>
     The total recommended reward is computed based on the number of units,
     the difficulty, whether it's a critical result, and so on.
-    To get this amount of reward, you can combine multiple rewards.
-    Their monetary values are the following:
+    To get this amount of reward, you can combine multiple rewards, and their monetary is in
+    a table below.
     <br/>
     <table class='table table-sm table-striped table-bordered'>
       <thead>
@@ -762,9 +780,11 @@
         </tr>
         <tr>
           <td>Items</td>
-          <td>Equal to their value
+          <td>Equal to their value.
           See [[here|https://gitgud.io/darkofocdarko/fort-of-chains/-/issues/343]]
           for the list of items that are still missing quests to give them out.
+          If your quest only gives out cosmetic / collectibles, consider making it a
+          veteran quest.
           </td>
         </tr>
         <tr>
