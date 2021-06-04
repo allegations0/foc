@@ -2,6 +2,181 @@
 
 Full changelog [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/changelog.txt).
 
+v1.7.1.0: (4 June 2021)
+
+  - Content
+    - New quest chain: Elven Hot Springs: Mens Business (by Matthew Lang) (2 quests, 2 mails, 1 event)
+    - New quest chain: Potion of Lust (by Matthew Lang) (2 quests)
+    - New quest chain: The Shunned Kobold (7 event, 7 mail. 3 quest)
+    - New quest: Trade Ship Escort: Lucgate to Neko Port City (by Matthew Lang)
+    - New event: Prison Break (by Fae)
+    - New event: Earth Priests Ire (by Fae)
+    - New quest: Investigate the Earth (1 quest, 1 event)
+    - New quest: Endurance Trainer for Hire (2 quests, 1 opportunities)
+    - New quest: Drow Rite of Adulthood
+    - New quest: Kobold Rescue
+    - New quest: Treasure Hunt: Deeprealms.
+    - New quest: Trading Mission: Drak Xoth
+    - New quest: Demon Hunting Party
+    - New quest: Dwarven Alchemy
+    - New quest: Kobold Benevolent Agency
+    - New quest: Gateway Gamble.
+    - New quest: Trading mission: V'errmyrdn.
+    - New quest: Secret Seller
+    - New quest: Owner Magnifique
+    - New quest: Bounty hunt: Spiders
+    - New quest: Recruiment: Deep
+    - New quest: Scout: Deep
+    - New quest: Contact: Deep
+    - New event: Pit Traps
+    - New event: A gift from the kobolds.
+    - New event: Revenge of the Drow
+    - New event: Drow Hex
+    - New event: Slave Appropriation
+    - New event: A Gift from the Drow
+    - New activity: Warehouse help around
+    - New lore: Kobold (by Fae)
+    - New lore: Drak Xoth (by Fae)
+    - New lore: Temple of Gaiatal (by Fae)
+    - New lore: Drow
+    - New lore: Drow Rite of Adulthood
+  - New region: The Deeprealm
+    - Unlock by building the Library
+    - Ships with 19 quests
+    - New buildings:
+      - Scout Tunnel
+      - Scout Outpost: Deeprealm
+    - New duty:
+      - Deeprealm scout
+    - New contact:
+      - Deeprealm contact
+  - New race: Kobolds
+    - Includes nameset
+    - Includes company
+    - Includes new sex action
+    - Includes font
+    - Ships with more than 60 portraits
+  - New race: Drow
+    - Includes nameset
+    - Includes company
+    - Includes new sex action
+    - Includes font
+    - Ships with more than 60 portraits
+  - Content Creator
+    - New toolbar additions:
+      - Duty selector
+      - Money formatting
+      - Favor formatting
+      - setup.getUnit
+    - New cost:
+      - CleanMentalTraits.
+    - Can override existing content in CC.
+    - Company selector in CC now use dialogs.
+    - Pressing UNDO now shows a big warning
+  - Images
+    - New room images (by toyRubberDucky):
+      - Milker Room
+      - Anal Training Room
+      - Oral Training Room
+      - Vaginal Training Room
+      - Sitty Training Room
+      - Pet Training Room
+      - Dominance Training Room
+      - Masochist Training Room
+      - Brainwashing Room
+    - Updated CCSubmission Imagepack to separate out Drow portraits (thanks to Matthew Lang)
+    - 154 new portraits
+    - 19 new content images.
+  - Trait
+    - New special perk: Savior kobold
+    - New special perk: Kobold heritage
+    - New special perk: Wild magic.
+    - New perk: Needy bottom (thanks to Matthew Lang)
+    - New trait: value high tier (7)
+    - Add values required to the value trait
+    - Add legendary/epic rarities for traits
+    - Race trait rarity adjustments
+    - Dragonkin now has dual light/fire affinities.
+    - Slight nerf to "increase boon" perk
+  - Balancing
+    - Increase limit of relationship manager from 5 -> 7
+    - Added different fighter roles per region
+    - Increase favor limit from 120.0 to 200.0
+    - Library cost reduced to 2000
+    - Owner magnifique and daring escapade level adjustments.
+    - Slave Merchant no longer generate order with rare/unicorn bg traits
+  - Item
+    - Potion of Greater Level Up
+    - Potion of Pain
+    - Potion of Lust
+    - A huge bunch of new perk potions
+    - Show potion restrictions in text
+  - Interactive Sex
+    - New sex action: Spit in face (Innoxia)
+    - New sex action: Step on dick
+    - Anal sex enjoyment skill adjustments (thanks to Matthew Lang)
+  - QoL
+    - Add trait rarity filters
+    - Rarity indicators / filters / sort for market objects
+    - Rarity indicators for item/equipments.
+    - Equipment market and Sex market are combined.
+    - 1.25x, 1.75x and 2.5x zoom for fort
+    - Quest skill filter added to in-game wiki
+  - Documentation
+    - Updated help texts for CC difficulty.
+    - Documentation for where to get items and items that are not obtainable in gitgud
+    - Removed unused companies.md
+    - Add Duty room to bedchamber prerequisites + help texts.
+    - Skill focus help text readability fixes.
+    - Adjacency bonus clarification.
+    - Race faq updated with drow and kobold.
+  - Engine
+    - DOM-ification:
+      - ItemPool card
+      - EquipmentPool card
+    - Support for injured recruits.
+    - Rarity refactored.
+  - Misc
+    - New lore tag: culture lores
+    - Added generic value-increasing titles
+    - Added various anal dildoes
+    - Renamed Grand hall -> Great hall
+    - Remove escapedslaves unit group
+    - Adjusted unit rarity thresholds
+    - Rarity icons.
+  - Debug mode
+    - Add debug info for scheduled content
+    - Add debug info for change in variable values
+  - Bugfix
+    - Fix soft lock by hiding building before building great hall.
+    - Fixes for Elven Hot Springs: Mens Business
+    - Fix article toUpperFirst on undefined article.
+    - Fixes for kobold ire events.
+    - Fix missing "at home" conditions for some perks
+    - Fix trait-changing perks triggering when not at home
+    - Fix wrong key used when overriding existing quest
+    - Fix missing rarity tag in CC
+    - Fix title generation bug.
+    - Fix kobold sometimes not getting the dwarf trait
+    - Fix missing orc in mansion of hypnotism
+    - Fix mystifying obelisk slave order crashing
+  - Text fixes
+    - Updated Potion of lust Quests for repeatability (thanks to Matthew Lang)
+    - Fixed most* instances of -kins to proper plural -kin (thanks to Elannil)
+    - More description updates and text fixes (thanks to Elannil)
+    - Fixed broken blessing texts when getting one when already at cap.
+    - Fix test of arcane missing magic conditionals.
+    - Fix changelog "CHANGELOG" not removed
+    - Fixed dildo (anus) -> dildo (anal)
+    - Fix extra whitespace at start of CC result.
+    - Fix spoilery perk texts in perk potions.
+    - Fix change skill focus texts
+    - Better error message on visiting the captured
+    - Various building description fixes (thanks to Elannil)
+    - Fix some inconsistencies in pimp/rec wing descriptions
+    - Some text fixes for trading mission.
+    - Defiant slave event text fixes (thanks to Elannil)
+
 v1.7.0.0 (28 May 2021): Base-Building, Content, Content images, Imagepacks, Content Creator QoL, Lore
 
   The repository is **moved permanently** to:

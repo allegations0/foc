@@ -60,7 +60,7 @@ setup.Bodyshift = class Bodyshift extends setup.TwineClass {
    * @param {setup.Unit} unit 
    */
   bodyshift(unit) {
-    if (!(unit.key in this.unit_bodyswap_map)) throw new Error(`unit ${unit.key} is not a bodyshifter!`)
+    if (!(unit.key in this.unit_bodyswap_map)) new Error(`unit ${unit.key} is not a bodyshifter!`)
     const target = this.getBody(unit)
     State.variables.notification.disable()
     setup.qcImpl.Bodyswap.doBodySwap(unit, target)
