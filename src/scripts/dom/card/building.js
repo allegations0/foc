@@ -226,18 +226,20 @@ function buildingTemplateNameActionMenu(template, hide_actions) {
   const extras = []
 
   if (!hide_actions) {
-    extras.push(menuItemAction({
-      text: `Hidden`,
-      checked: State.variables.fort.player.isTemplateIgnored(template),
-      callback: () => {
-        if (State.variables.fort.player.isTemplateIgnored(template)) {
-          State.variables.fort.player.unignoreTemplate(template)
-        } else {
-          State.variables.fort.player.ignoreTemplate(template)
-        }
-        setup.DOM.Nav.goto()
-      },
-    }))
+    if (State.variables.fort.player.isHasBuilding(setup.buildingtemplate.greathall)) {
+      extras.push(menuItemAction({
+        text: `Hidden`,
+        checked: State.variables.fort.player.isTemplateIgnored(template),
+        callback: () => {
+          if (State.variables.fort.player.isTemplateIgnored(template)) {
+            State.variables.fort.player.unignoreTemplate(template)
+          } else {
+            State.variables.fort.player.ignoreTemplate(template)
+          }
+          setup.DOM.Nav.goto()
+        },
+      }))
+    }
   }
 
   if (extras.length) {
