@@ -17,7 +17,7 @@
 'food_for_the_pack', /* key */
 "Food for the Pack", /* Title */
 { /* Author */
-  name: "Zerutti",
+  name: "Zerutti (edited by Matthew Lang)",
   url: "https://www.reddit.com/r/FortOfChains/comments/kk9fhu/food_for_the_pack_test_quest/",
 },
 [ /* tags */

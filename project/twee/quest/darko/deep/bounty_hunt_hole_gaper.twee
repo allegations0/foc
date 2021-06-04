@@ -84,6 +84,7 @@ null, /* key */
 [ /* tags */
   'deep',
   'money',
+  'scaley',
 ],
 1, /* weeks */
 setup.QUEST_DEFAULT_EXPIRATION, /* expiration weeks */

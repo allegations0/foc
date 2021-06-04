@@ -4,6 +4,14 @@
 
 ### v1.7.1.x
 
+v1.7.1.2:
+
+  - New Quest: Bounty Hunt: Hole Gaper.
+  - Redrafted Food For the Pack for grammar and consistency. (thanks to Matthew Lang)
+  - A bunch of new portrait and content images.
+  - Add "has ever completed this quest?" to CC toolbar
+  - Fixed extra space in lore mentions.
+
 v1.7.1.1:
 
   - Endurance, horny, obedience training room images (by toyRubberDucky)
