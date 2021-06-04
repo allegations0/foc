@@ -41,7 +41,7 @@ function unitNameFragment(unit) {
           ${setup.DOM.Util.level(unit.getLevel())}
         </span>
       `)
-  } else if (!unit.isSlave()) {
+  } else if (!unit.isSlaveOrInSlaveMarket()) {
     fragments.push(setup.DOM.Util.level(unit.getLevel()))
   }
 
@@ -220,7 +220,7 @@ setup.DOM.Card.unit = function (unit, hide_actions) {
     }
 
     { /* skills */
-      if (!unit.isSlave()) {
+      if (!unit.isSlaveOrInSlaveMarket()) {
         const skill_fragments = []
         skill_fragments.push(html`
           ${setup.SkillHelper.explainSkillsWithAdditives(unit)}

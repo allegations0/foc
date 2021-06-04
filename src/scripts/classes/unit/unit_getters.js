@@ -108,6 +108,21 @@ setup.Unit.prototype.isSlaver = function () { return this.getJob() == setup.job.
 
 setup.Unit.prototype.isSlave = function () { return this.getJob() == setup.job.slave }
 
+setup.Unit.prototype.isSlaveOrInSlaveMarket = function () {
+  // case one: unit already has the job
+  if (this.isSlave()) return true
+
+  // case two: unit is a free unit in market of that particular job
+  if (!this.isYourCompany()) {
+    const market = this.getMarket()
+    if (market && market.getJob() == setup.job.slave) {
+      return true
+    }
+  }
+
+  return false
+}
+
 setup.Unit.prototype.isObedient = function () { return this.isHasTrait('training_obedience_advanced') }
 
 setup.Unit.prototype.isCompliant = function () { return this.isHasTrait('training_obedience_basic') }

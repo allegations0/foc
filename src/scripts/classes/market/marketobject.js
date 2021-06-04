@@ -105,6 +105,9 @@ setup.MarketObject = class MarketObject extends setup.TwineClass {
     }
     */
     this_obj.market_key = marketkey
+    if ('resetCache' in this_obj) {
+      this_obj.resetCache()
+    }
   }
 
 }

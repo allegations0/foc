@@ -35,6 +35,7 @@ declare namespace setup {
     getJob()
     isSlaver(): boolean
     isSlave(): boolean
+    isSlaveOrInSlaveMarket(): boolean
     isObedient(): boolean
     isCompliant(): boolean
     isMindbroken(): boolean
