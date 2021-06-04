@@ -755,6 +755,9 @@
   <div class='helpcard'>
     This is the recommended total reward that your $devtooltype should give.
     The EXP reward is given automatically.
+    If you have a good reason, you can deviate from this.
+    For example, if your quest requires a very specific slaver (e.g., slaver with <<rep setup.trait.muscle_verystrong>>),
+    you can increase the reward slightly to reflect this.
     <br/>
     <br/>
     The total recommended reward is computed based on the number of units,
