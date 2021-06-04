@@ -5,6 +5,12 @@
 
   /* Image credit information. */
   UNITIMAGE_CREDITS = {
+    1: {
+      title: "VIP Treatment",
+      artist: "Jasonafex",
+      url: "https://www.newgrounds.com/art/view/jasonafex/vip-treatment",
+      license: "CC-BY-NC 3.0",
+    },
     28: {
       title: "Chained",
       artist: "FelixGuara",

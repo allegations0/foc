@@ -6,6 +6,7 @@
     "bg_raider", "bg_slaver", "bg_thief", "bg_thug", "bg_woodsman",
     "bg_assassin", "bg_adventurer", "bg_monk", "bg_metalworker",
     "bg_clerk", "bg_healer", "bg_noble", "bg_courtesan", "bg_seaman",
+    "bg_mystic",
   ]
 
 

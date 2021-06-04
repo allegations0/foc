@@ -16,6 +16,12 @@ UNITIMAGE_CREDITS = {
     url: "https://www.deviantart.com/artofbeng/art/Mistweaver-Monk-499041460",
     license: "CC-BY-NC-ND 3.0",
   },
+  3: {
+    title: "Legendary Saiyan",
+    artist: "KabsCorner",
+    url: "https://www.newgrounds.com/art/view/kabscorner/legendary-saiyan",
+    license: "CC-BY-NC-ND 3.0",
+  },
   4: {
     title: "KOF XIV - Andy",
     artist: "coldrim",

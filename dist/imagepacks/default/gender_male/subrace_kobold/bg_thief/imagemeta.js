@@ -4,6 +4,12 @@
 
   /* Image credit information. */
   UNITIMAGE_CREDITS = {
+    1: {
+      title: "Night Prowler",
+      artist: "KabsCorner",
+      url: "https://www.newgrounds.com/art/view/kabscorner/night-prowler",
+      license: "CC-BY-NC-ND 3.0",
+    },
     5: {
       title: "Avarian the Rogue",
       artist: "saucysorc",
