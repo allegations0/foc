@@ -4,6 +4,16 @@
 
 ### v1.7.0.x
 
+v1.7.0.33:
+
+  - Sissy basic male image.
+  - Potion of Greater Level Up
+  - Drow company descriptino updated
+  - Pet training image + drow females
+  - Text fixes.
+  - Fix test of arcane missing magic conditionals.
+  - Fix soft lock by hiding building before building great hall.
+
 v1.7.0.32:
 
   - New quest: Dwarven Alchemy.
