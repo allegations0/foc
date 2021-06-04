@@ -175,6 +175,12 @@
       url: "https://www.newgrounds.com/art/view/undeadkitty13/smack-down",
       license: "CC-BY-NC 3.0",
     },
+    "unit_training_anal_advanced_male_kobold.jpg": {
+      title: "Vergence Spread (M/M)",
+      artist: "KabsCorner",
+      url: "https://www.newgrounds.com/art/view/kabscorner/vergence-spread-m-m",
+      license: "CC-BY-NC-ND 3.0",
+    },
     "bargain_with_the_devil_male.jpg": {
       title: "[NSFW] Corruption of the Incubus [NSFW]",
       artist: "Tk-A",
@@ -624,6 +630,36 @@
       url: "https://www.deviantart.com/keeningandsunder/art/Underground-775451819",
       license: "CC-BY-NC 3.0",
       extra: "cropped into the settlements only",
+    },
+    "raid_desert_settlement_female.jpg": {
+      title: "Dancer Fillia's after service",
+      artist: "Faymantra",
+      url: "https://www.newgrounds.com/art/view/faymantra/dancer-fillia-s-after-service",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    "raid_the_mist_female.jpg": {
+      title: "Doom Eternal - Hellish Landscape",
+      artist: "frynler",
+      url: "https://www.newgrounds.com/art/view/frynler/doom-eternal-hellish-landscape",
+      license: "CC-BY-NC 3.0",
+    },
+    "seven_petal_baths_female.jpg": {
+      title: "Onsen View",
+      artist: "DinocoZero",
+      url: "https://www.deviantart.com/dinocozero/art/Onsen-View-836151774",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    "seven_petal_baths_male.jpg": {
+      title: "Sea of Pink",
+      artist: "Crescentia-Fortuna",
+      url: "https://www.newgrounds.com/art/view/crescentia-fortuna/sea-of-pink",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    "human_vs_were_offense_female.jpg": {
+      title: "Railed by a Werewolf",
+      artist: "Crescentia-Fortuna",
+      url: "https://www.newgrounds.com/art/view/crescentia-fortuna/sea-of-pink",
+      license: "CC-BY-NC-ND 3.0",
     },
   }
 }());

@@ -108,5 +108,23 @@
       url: "https://www.newgrounds.com/art/view/sirevisconde/knox-the-kobold-brawler",
       license: "CC-BY-NC-ND 3.0",
     },
+    16: {
+      title: "Hard Workout",
+      artist: "Jasonafex",
+      url: "https://www.newgrounds.com/art/view/jasonafex/hard-workout",
+      license: "CC-BY-NC 3.0",
+    },
+    17: {
+      title: "Speedbust",
+      artist: "Jasonafex",
+      url: "https://www.newgrounds.com/art/view/jasonafex/speedbust",
+      license: "CC-BY-NC 3.0",
+    },
+    18: {
+      title: "Welcome to the Jungle",
+      artist: "Jasonafex",
+      url: "https://www.newgrounds.com/art/view/jasonafex/welcome-to-the-jungle",
+      license: "CC-BY-NC 3.0",
+    },
   }
 }());

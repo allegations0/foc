@@ -131,7 +131,8 @@ setup.Unit.prototype._computeAllBaseTraits = function () {
     }
   }
 
-  if (trainings == 0 && this.getJob() == setup.job.slave) {
+  // use this check to also check if unit is in market
+  if (trainings == 0 && this.isSlaveOrInSlaveMarket()) {
     traits.push(setup.trait.training_none)
   }
 
@@ -192,18 +193,16 @@ setup.Unit.prototype._computeAllTraits = function () {
   }
 
   /**
-   * Computed (base) traits: slave value
+   * Computed (base) traits: unit value
    */
-  if (this.isSlave()) {
-    var value = this.getSlaveValue()
-    if (value < setup.TRAIT_VALUE_LOW_THRESHOLD) {
-      traits.push(setup.trait.value_low)
-    } else {
-      for (var i = setup.TRAIT_VALUE_HIGH_THRESHOLDS.length - 1; i >= 0; --i) {
-        if (value >= setup.TRAIT_VALUE_HIGH_THRESHOLDS[i]) {
-          traits.push(setup.trait[`value_high${i + 1}`])
-          break
-        }
+  var value = this.getSlaveValue()
+  if (value < setup.TRAIT_VALUE_LOW_THRESHOLD) {
+    traits.push(setup.trait.value_low)
+  } else {
+    for (var i = setup.TRAIT_VALUE_HIGH_THRESHOLDS.length - 1; i >= 0; --i) {
+      if (value >= setup.TRAIT_VALUE_HIGH_THRESHOLDS[i]) {
+        traits.push(setup.trait[`value_high${i + 1}`])
+        break
       }
     }
   }

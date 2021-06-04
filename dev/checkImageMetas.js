@@ -91,6 +91,7 @@ if (room) {
     CREDITS_SCHEMA['directional'] = ['boolean', 'undefined']
     CREDITS_SCHEMA['norotate'] = ['boolean', 'undefined']
     CREDITS_SCHEMA['nowalls'] = ['boolean', 'undefined']
+    CREDITS_SCHEMA['url'] = ["string", 'undefined']
 }
 
 let IMAGE_MAX_FILESIZE

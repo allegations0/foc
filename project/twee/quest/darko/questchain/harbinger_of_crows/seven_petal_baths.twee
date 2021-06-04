@@ -129,6 +129,13 @@ If you're mad enough to believe in such a tale, you could try to purge the unluc
 
 
 :: Quest_seven_petal_bathsCrit [nobr]
+
+<<if $g.a.isMale()>>
+  <<questimage "seven_petal_baths_male.jpg">>
+<<else>>
+  <<questimage "seven_petal_baths_female.jpg">>
+<</if>>
+
 <p>
 <<Yourrep $g.bio1>> and <<utheirrel $g.bio1 $g.bio2>> <<rep $g.bio2>> spent weeks scouring through the vales for the seven flowers.
 <<set _unit = setup.selectUnit([$g.a, $g.bio1, $g.bio2], {trait: 'per_studious'})>>

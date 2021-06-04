@@ -68,10 +68,16 @@ some fresh villagers.
 
 :: QuestHumanVsWereOffenseCrit [nobr]
 
+<<if $g.a.isMale()>>
+<<else>>
+  <<questimage "human_vs_were_offense_female.jpg">>
+<</if>>
+
 <p>
 Your slavers waited in tow in a nearby shrubbery, until they finally heard the
 ringing sound of the village's alarm bells.
-Chaos ensued as the werewolves flung themselves into the village, ransacking whatever
+Chaos ensued as the werewolves flung themselves into the village, raping the unsuspecting
+villagers and ransacking whatever
 valuable stored in it.
 <<set _calm = setup.selectUnit([$g.raider1, $g.raider2, $g.raidersupport], {trait: 'per_calm'})>>
 <<if _calm>>

@@ -228,11 +228,11 @@ setup.Unit.prototype.getNonInnateSkinTraits = function () {
  * @param {setup.Trait[]} traits 
  */
 export function removeMindbrokenTraits(traits) {
-  return traits.filter(trait => !trait.getTags().includes('per')).filter(
-    trait => !trait.getTags().includes('skill')).filter(
-      trait => trait != setup.trait.will_defiant).filter(
-        trait => (trait == setup.trait.training_mindbreak || !trait.getTags().includes('training'))
-      )
+  const disabled_traits_base = ['per', 'skill', 'perk']
+  return traits.filter(trait => !trait.getTags().includesAny(disabled_traits_base)).filter(
+    trait => trait != setup.trait.will_defiant).filter(
+      trait => (trait == setup.trait.training_mindbreak || !trait.getTags().includes('training'))
+    )
 }
 
 

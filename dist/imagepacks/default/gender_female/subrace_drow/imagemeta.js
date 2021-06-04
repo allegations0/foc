@@ -1,7 +1,7 @@
 (function () {
 
   /* The following is list of direct subdirectories. */
-  UNITIMAGE_LOAD_FURTHER = ["bg_assassin", "bg_mercenary", "bg_mystic", "bg_hunter", "bg_thief", "bg_soldier", "bg_artist", 
+  UNITIMAGE_LOAD_FURTHER = ["bg_assassin", "bg_mercenary", "bg_mystic", "bg_hunter", "bg_thief", "bg_soldier", "bg_artist", "bg_informer",
   ]
 
 
@@ -94,6 +94,30 @@
       title: "As The Moon",
       artist: "NanFe",
       url: "https://www.deviantart.com/nanfe/art/As-The-Moon-766968610",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    16: {
+      title: "Dota 2 Drow ranger commission",
+      artist: "inferno0droga",
+      url: "https://www.deviantart.com/inferno0droga/art/Dota-2-Drow-ranger-commission-733097290",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    17: {
+      title: "Shano the Wizard Milf",
+      artist: "Blazbaros",
+      url: "https://www.deviantart.com/blazbaros/art/Shano-the-Wizard-Milf-741829094",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    18: {
+      title: "Dark Melf",
+      artist: "Blazbaros",
+      url: "https://www.deviantart.com/blazbaros/art/Dark-Melf-559497595",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    19: {
+      title: "Butterfly",
+      artist: "A6A7",
+      url: "https://www.deviantart.com/a6a7/art/Butterfly-170884862",
       license: "CC-BY-NC-ND 3.0",
     },
   }

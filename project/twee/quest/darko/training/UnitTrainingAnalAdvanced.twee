@@ -63,6 +63,10 @@ the slave's brain to connect anal penetration with pleasure.
 <<if $g.trainee.isMale()>>
   <<if $g.trainee.isHasTrait('race_demon')>>
     <<questimage 'unit_training_anal_advanced_male_demon.jpg'>>
+  <<elseif $g.trainee.isHasTrait('subrace_kobold')>>
+    <<questimage 'unit_training_anal_advanced_male_kobold.jpg'>>
+  <<elseif $g.trainee.isHasTrait('race_lizardkin')>>
+    <<questimage 'unit_training_anal_advanced_male_lizardkin.jpg'>>
   <<else>>
     <<questimage 'unit_training_anal_advanced_male_orc.jpg'>>
   <</if>>

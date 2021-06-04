@@ -41,7 +41,7 @@ function unitNameFragment(unit) {
           ${setup.DOM.Util.level(unit.getLevel())}
         </span>
       `)
-  } else if (!unit.isSlave()) {
+  } else if (!unit.isSlaveOrInSlaveMarket()) {
     fragments.push(setup.DOM.Util.level(unit.getLevel()))
   }
 
@@ -104,12 +104,9 @@ function unitNameActionMenus(unit) {
     }))
   }
 
-  if (unit.isSlaver()) {
-  } else {
-    menus.push(menuItemText({
-      text: html`<span data-tooltip="This is the unit's value. It has little effect on slavers, but for slaves, this is roughly how much they are worth when being sold.">${setup.DOM.Util.money(unit.getSlaveValue())}</span>`
-    }))
-  }
+  menus.push(menuItemText({
+    text: html`<span data-tooltip="This is the unit's value. It has little effect on slavers, but for slaves, this is roughly how much they are worth when being sold.">${setup.DOM.Util.money(unit.getSlaveValue())}</span>`
+  }))
 
   if (State.variables.gMenuVisible) {
     menus.push(menuItemExtras({
@@ -220,7 +217,7 @@ setup.DOM.Card.unit = function (unit, hide_actions) {
     }
 
     { /* skills */
-      if (!unit.isSlave()) {
+      if (!unit.isSlaveOrInSlaveMarket()) {
         const skill_fragments = []
         skill_fragments.push(html`
           ${setup.SkillHelper.explainSkillsWithAdditives(unit)}

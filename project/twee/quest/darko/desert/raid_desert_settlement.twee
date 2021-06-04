@@ -70,6 +70,13 @@ these settlements, if you really need the money.
 
 :: Quest_raid_desert_settlementCrit [nobr]
 
+<<if $gOutcome == 'crit'>>
+  <<if $g.villager.isMale()>>
+  <<else>>
+    <<questimage "raid_desert_settlement_female.jpg">>
+  <</if>>
+<</if>>
+
 <p>
 Led by <<rep $g.raider1>>, your slavers
 <<uadv $g.raider1>> raided the settlement and was met with little resistance.

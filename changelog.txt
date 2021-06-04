@@ -2,6 +2,35 @@
 
 [Changelog summary](docs/changelog_summary.md)
 
+### v1.7.1.x
+
+v1.7.1.1:
+
+  - Endurance, horny, obedience training room images (by toyRubberDucky)
+  - Oral training room images made more androgynous (by toyRubberDucky)
+  - Slave pen slaves now get training_none if they have no training
+  - Value traits now also displayed on slavers.
+  - Display slaver value on their cards
+  - Scarier warning for itch.io people.
+
+v1.7.1.0:
+
+  - New quest: Demon Hunting Party. Closes #345.
+  - Room images by toyRubberDucky:
+    - Milker Room
+    - Anal Training Room
+    - Oral Training Room
+    - Vaginal Training Room
+    - Sitty Training Room
+    - Pet Training Room
+    - Dominance Training Room
+    - Masochist Training Room
+    - Brainwashing Room
+  - Updated CCSubmission Imagepack to separate out Drow portraits (thanks to Matthew Lang)
+  - New drow portraits.
+  - New content images.
+  - Updated help texts for CC difficulty.
+
 ### v1.7.0.x
 
 v1.7.0.33:
