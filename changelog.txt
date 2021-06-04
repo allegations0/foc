@@ -4,6 +4,15 @@
 
 ### v1.7.1.x
 
+v1.7.1.1:
+
+  - Endurance, horny, obedience training room images (by toyRubberDucky)
+  - Oral training room images made more androgynous (by toyRubberDucky)
+  - Slave pen slaves now get training_none if they have no training
+  - Value traits now also displayed on slavers.
+  - Display slaver value on their cards
+  - Scarier warning for itch.io people.
+
 v1.7.1.0:
 
   - New quest: Demon Hunting Party. Closes #345.
