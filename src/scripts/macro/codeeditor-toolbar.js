@@ -1346,6 +1346,19 @@ Variable variable_name is set
                 }
               }),
             )
+            children.push(
+              menuItem({
+                text: "If ever successfully completed this quest",
+                tooltip: `Conditionals based on whether you've completed (success or critical) on this quest in the past before`,
+                callback: () => {
+                  insertTextIntoEditor(`<<if setup.qres.QuestDone().isOk($gQuest)>>
+  You have completed this quest in the past.
+<<else>>
+  You have never completed this quest in the past.
+<</if>>`)
+                }
+              }),
+            )
           }
           children.push(
             menuItem({
