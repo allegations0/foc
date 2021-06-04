@@ -104,12 +104,9 @@ function unitNameActionMenus(unit) {
     }))
   }
 
-  if (unit.isSlaver()) {
-  } else {
-    menus.push(menuItemText({
-      text: html`<span data-tooltip="This is the unit's value. It has little effect on slavers, but for slaves, this is roughly how much they are worth when being sold.">${setup.DOM.Util.money(unit.getSlaveValue())}</span>`
-    }))
-  }
+  menus.push(menuItemText({
+    text: html`<span data-tooltip="This is the unit's value. It has little effect on slavers, but for slaves, this is roughly how much they are worth when being sold.">${setup.DOM.Util.money(unit.getSlaveValue())}</span>`
+  }))
 
   if (State.variables.gMenuVisible) {
     menus.push(menuItemExtras({

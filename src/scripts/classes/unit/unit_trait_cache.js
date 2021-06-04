@@ -193,19 +193,16 @@ setup.Unit.prototype._computeAllTraits = function () {
   }
 
   /**
-   * Computed (base) traits: slave value
+   * Computed (base) traits: unit value
    */
-  // use this check to also check if unit is in market
-  if (this.isSlaveOrInSlaveMarket()) {
-    var value = this.getSlaveValue()
-    if (value < setup.TRAIT_VALUE_LOW_THRESHOLD) {
-      traits.push(setup.trait.value_low)
-    } else {
-      for (var i = setup.TRAIT_VALUE_HIGH_THRESHOLDS.length - 1; i >= 0; --i) {
-        if (value >= setup.TRAIT_VALUE_HIGH_THRESHOLDS[i]) {
-          traits.push(setup.trait[`value_high${i + 1}`])
-          break
-        }
+  var value = this.getSlaveValue()
+  if (value < setup.TRAIT_VALUE_LOW_THRESHOLD) {
+    traits.push(setup.trait.value_low)
+  } else {
+    for (var i = setup.TRAIT_VALUE_HIGH_THRESHOLDS.length - 1; i >= 0; --i) {
+      if (value >= setup.TRAIT_VALUE_HIGH_THRESHOLDS[i]) {
+        traits.push(setup.trait[`value_high${i + 1}`])
+        break
       }
     }
   }
