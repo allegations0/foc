@@ -35,6 +35,12 @@
       url: "https://www.newgrounds.com/art/view/oblivionscribe/cullen-approaching",
       license: "CC-BY-NC-ND 3.0",
     },
+    6: {
+      title: "Innocence",
+      artist: "A6A7",
+      url: "https://www.deviantart.com/a6a7/art/Innocence-178908798",
+      license: "CC-BY-NC-ND 3.0",
+    },	
   }
 
 
