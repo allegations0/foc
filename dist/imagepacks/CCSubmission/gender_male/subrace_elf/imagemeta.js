@@ -1,7 +1,7 @@
 (function () {
 
   /* The following is list of direct subdirectories. */
-  UNITIMAGE_LOAD_FURTHER = ["bg_mystic", "bg_wildman", "bg_monk", "bg_thief",]
+  UNITIMAGE_LOAD_FURTHER = ["bg_mystic", "bg_wildman", "bg_thief",]
 
   /* Image credit information. */
   /* Image credit information. */
@@ -40,12 +40,6 @@
       title: "Flash Guy Halloween 2014",
       artist: "Humbuged",
       url: "https://www.deviantart.com/humbuged/art/Flash-Guy-Halloween-2014-488823241",
-      license: "CC-BY-NC-ND 3.0",
-    },
-    7: {
-      title: "Drow Warlock",
-      artist: "Ioana-Muresan",
-      url: "https://www.deviantart.com/ioana-muresan/art/Drow-warlock-799738843",
       license: "CC-BY-NC-ND 3.0",
     },
     9: {
