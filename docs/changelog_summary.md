@@ -4,6 +4,17 @@ Full changelog [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/mast
 
 v1.7.1.0: (4 June 2021)
 
+  **Important**: the Grand Hall has been renamed to Great Hall.
+  If you are loading an existing save, you need to re-build the building.
+  If the building isn't showing due to filters, open your javascript console (Ctrl + Shift + J),
+  then type:
+
+  ```
+    SugarCube.State.variables.menufilter.filters = {}
+  ```
+
+  This will reset all filters.
+
   - Content
     - New quest chain: Elven Hot Springs: Mens Business (by Matthew Lang) (2 quests, 2 mails, 1 event)
     - New quest chain: Potion of Lust (by Matthew Lang) (2 quests)
