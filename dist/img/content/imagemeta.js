@@ -253,6 +253,18 @@
       url: "https://www.newgrounds.com/art/view/kiddeathxv/good-morning",
       license: "CC-BY-NC 3.0",
     },
+    "unit_training_domestic_basic_male.jpg": {
+      title: "TransMan Bakugou",
+      artist: "akth555",
+      url: "https://www.newgrounds.com/art/view/akth555/transman-bakugou",
+      license: "CC-BY-NC 3.0",
+    },
+    "unit_training_domestic_advanced_male.jpg": {
+      title: "07 2020",
+      artist: "akth555",
+      url: "https://www.newgrounds.com/art/view/akth555/07-2020",
+      license: "CC-BY-NC 3.0",
+    },
     "unit_training_domestic_master_female.jpg": {
       title: "Shimei Ryomou Slave",
       artist: "Zoftig",

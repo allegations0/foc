@@ -61,6 +61,7 @@ skills for such work.
 :: QuestUnitTrainingDomesticBasicCrit [nobr]
 
 <<if $g.trainee.isMale()>>
+  <<questimage 'unit_training_domestic_basic_male.jpg'>>
 <<else>>
   <<questimage 'unit_training_domestic_basic_female.jpg'>>
 <</if>>
