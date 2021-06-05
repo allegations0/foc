@@ -661,5 +661,17 @@
       url: "https://www.newgrounds.com/art/view/crescentia-fortuna/sea-of-pink",
       license: "CC-BY-NC-ND 3.0",
     },
+    "bounty_hunt_cave_slime_male.jpg": {
+      title: "Blue Lagoon (Male)",
+      artist: "Jasonafex",
+      url: "https://www.newgrounds.com/art/view/jasonafex/blue-lagoon-male",
+      license: "CC-BY-NC 3.0",
+    },
+    "bounty_hunt_cave_slime_female.jpg": {
+      title: "Blue Lagoon (Female)",
+      artist: "Jasonafex",
+      url: "https://www.newgrounds.com/art/view/jasonafex/blue-lagoon-female",
+      license: "CC-BY-NC 3.0",
+    },
   }
 }());

@@ -245,7 +245,14 @@ setup.qc.Favor('kobold', 50)
 
             The failure weighted on <<reps $g.o>> mind quite a bit, and eventually <<therace $g.o>> felt that <<they $g.o>> <<themself $g.o>> might actually need the services of the
             Kobold Benevolent Agency.
-            The agency was very happy to find one of your slavers as their client. They almost shooed your other two slavers as <<rep $g.o>> would go inside to undergo some kind of "therapy".
+            <<if $g.o.isHasTrait('subrace_kobold')>>
+                After all <<rep $g.o>> is a kobold, a potential customer for the agency.
+            <</if>>
+            The agency was very happy to find one of your slavers
+            <<if $g.o.isHasTrait('subrace_kobold')>>
+                (a kobold, no less!)
+            <</if>>
+            as their client. They almost shooed your other two slavers as <<rep $g.o>> would go inside to undergo some kind of "therapy".
             The other two slavers did not come back with <<rep $g.o>>...
 
             <<run setup.qc.MissingUnit('unit').apply(setup.costUnitHelper($g.o))>>

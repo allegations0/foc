@@ -14,10 +14,6 @@
   <<lorecard setup.lore[$args[0]] $args[1]>>
 <</focwidget>>
 
-<<focwidget 'lore'>>
-  <<= setup.Lore.repLore($args[0])>>
-<</focwidget>>
+<<focwidget 'lore'>><<= setup.Lore.repLore($args[0])>><</focwidget>>
 
-<<focwidget 'Lore'>>
-  <<= setup.Lore.repLore($args[0], true)>>
-<</focwidget>>
+<<focwidget 'Lore'>><<= setup.Lore.repLore($args[0], true)>><</focwidget>>

@@ -107,24 +107,40 @@ by FCdev.
 <<include 'InnoxiaCredits'>>
 
 <h3>Playtesters</h3>
+
+<p>
 Thanks to the many playtesters for feedback, bug reports, and playtestings.
+</p>
 
 <h3>Unit names</h3>
+
+<p>
 Norse names from:
 Coats, Steven. (2019). Language choice and gender in a Nordic social media corpus. Nordic Journal of Linguistics 42(1).
+</p>
 
+<p>
 TES names:
 https://en.uesp.net/wiki/Main_Page
 https://github.com/KieranMcCool/TESGen
 Name data are scraped from UESP and in accordance with their Copyright & Ownership guidelines, they are provided freely under the Creative Commons Attribution-ShareAlike 2.5 Generic license.
 https://en.uesp.net/wiki/Lore:Khajiit_Names
 https://en.uesp.net/wiki/Lore:Orc_Names
+</p>
 
+<p>
+Kobold names are taken from: [[Fantasy Name Generators|https://www.fantasynamegenerators.com/]].
+They are being used respecting the following policy from the website:
+"You're free to use names on this site to name anything in any of your own works, assuming they aren't already trademarked by others of course."
+</p>
 
 <h3>Others</h3>
+
+<p>
 Thanks to ChapelR for various Twine and SugarCube templates.
 And of course, many thanks to Chris Klimas for making Twine, and
 Thomas M. Edwards for making SugarCube 2.
+</p>
 
 :: PortraitCredits [nobr]
 
