@@ -115,6 +115,12 @@ and just happened to be in the right place at the right time during a rain, avoi
 <<set _powerful = "tight">>
 <<set _take = "take even by the largest phallus without being stretched">>
 
+<<opt 'Dominant'>>
+
+<<set _blessing = setup.trait.blessing_wolf8>>
+<<set _powerful = "dominant">>
+<<set _take = "take on the most rebellious slave">>
+
 <<includereplace "EventParadoxicalSlaverCommon">>
 
 <</choose>>
