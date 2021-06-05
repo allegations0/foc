@@ -12,7 +12,7 @@ setup.qresImpl.QuestFortRestorationAwards = class QuestFortRestorationAwards ext
 
   getAmount() {
     const wins = State.variables.varstore.get('quest_fort_restoration_win') || 0
-    const frac = 0.5 + (0.5 * wins / 4.0)
+    const frac = 0.35 + (0.6 * wins / 4.0)
     return Math.round(setup.ROOM_BONUS_SKILL_BONUS_DEFAULT * frac)
   }
 
