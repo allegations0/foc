@@ -4,6 +4,16 @@
 
 ### v1.7.1.x
 
+v1.7.1.4:
+
+  - New blessing: Blessing of Wolf
+  - New curse: Curse of Lamb
+  - Kobold name credits
+  - Grand hall rename fix added to changelog.
+  - Fort Restoration Awards is made slightly easier.
+  - Busy units can be taken to new game plus now.
+  - More images.
+
 v1.7.1.3:
 
   - Fixed crashing when undo and redo with gOldPassage set to null
