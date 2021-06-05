@@ -150,8 +150,9 @@ function newGamePlusChooseUnitsFragment(is_new_pc, selected_units = []) {
   )
   candidates = candidates.filter(unit => {
     if (unit.isYou()) return false
-    if (unit.isYourCompany() && !unit.isAvailable()) return false
-    if (unit.isRetired() && unit.isEngaged()) return false
+    // if (unit.isYourCompany() && !unit.isAvailable()) return false
+    // if (unit.isRetired() && unit.isEngaged()) return false
+    if (unit.isHasTrait(setup.trait.will_indomitable)) return false
     if (selected_units.includes(unit)) return false
     if (selected_units.filter(u => u.isSlaver()).length >= slaver_limit && unit.isSlaver()) return false
     if (selected_units.filter(u => u.isSlave()).length >= slaves_limit && unit.isSlave()) return false
