@@ -120,7 +120,7 @@ setup.qdiff.hard45, /* difficulty */
     [
       setup.qc.Outcomes("failure"),
       setup.qc.Slave('slave1', "a|was a kobold villager in the Deeprealm who officially \"fell victim to a spider invasion\"", undefined),
-      setup.qc.Slave('slave3', "a|was a kobold villager in the Deeprealm who officially \"fell victim to a spider invasion\"", undefined),
+      setup.qc.Slave('slave2', "a|was a kobold villager in the Deeprealm who officially \"fell victim to a spider invasion\"", undefined),
     ],
   ],
   [
