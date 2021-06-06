@@ -398,26 +398,12 @@ traits, they can be upgraded to a stronger version later in the game.)
         <<if _trait == setup.trait.skill_ambidextrous && $i.race_key == 'subrace_neko'>>
           <<set $i.race_key = 'subrace_tigerkin'>>
         <</if>>
-        <<if _trait == setup.trait.skill_creative && $i.race_key == 'subrace_lizardkin'>>
-          <<set $i.race_key = 'subrace_kobold'>>
-        <</if>>
-        <<if _trait == setup.trait.magic_dark && $i.race_key == 'subrace_elf'>>
-          <<set $i.race_key = 'subrace_drow'>>
-        <</if>>
       <</link>>:
       <<= _trait.getDescriptionDisplay()>>
 
       <<if _trait == setup.trait.skill_ambidextrous && $i.race_key == 'subrace_neko'>>
         (Choosing this option will change your race from
         <<rep setup.trait[$i.race_key]>> to <<rep setup.trait.subrace_tigerkin>>)
-      <</if>>
-      <<if _trait == setup.trait.skill_creative && $i.race_key == 'subrace_lizardkin'>>
-        (Choosing this option will change your race from
-        <<rep setup.trait[$i.race_key]>> to <<rep setup.trait.subrace_kobold>>)
-      <</if>>
-      <<if _trait == setup.trait.magic_dark && $i.race_key == 'subrace_elf'>>
-        (Choosing this option will change your race from
-        <<rep setup.trait[$i.race_key]>> to <<rep setup.trait.subrace_drow>>)
       <</if>>
     <</capture>>
   <</if>>
