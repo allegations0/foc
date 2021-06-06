@@ -83,7 +83,7 @@ setup.DOM.Menu.changeskillfocus = function (unit) {
      */
     const veryin = []
     setup.skill.forEach(skill => {
-      const text = html`${setup.SkillHelper.explainSkillWithAdditive(unit, focus)}`
+      const text = html`${setup.SkillHelper.explainSkillWithAdditive(unit, skill)}`
 
       if (skill == focus) {
         veryin.push(menuItemText({
