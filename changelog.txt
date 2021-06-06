@@ -4,6 +4,16 @@
 
 ### v1.7.1.x
 
+v1.7.1.6:
+
+  - Skill now cached for performance
+  - Skill breakdown in tooltips.
+  - Unit value now cached for performance
+  - Unit value breakdown
+  - Can start as a winged kobold.
+  - Fix comment on lorebook page.
+  - Fix kobold/drow starting options.
+
 v1.7.1.5:
 
   - New quests: A Merchant's Revenge: Embarras A Rival (by Matthew Lang) (3 quests, 1 mail)
