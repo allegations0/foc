@@ -71,8 +71,14 @@ setup.onSave = function (save) {
     }
   }
 
-  // discard tile information
+
   for (var i = 0; i < save.state.history.length; ++i) {
+    // discard caches
+    if (save.state.history[i].variables.cache) {
+      save.state.history[i].variables.cache.clearAll()
+    }
+
+    // discard tile information
     if (save.state.history[i].variables.roomlist) {
       save.state.history[i].variables.roomlist.resetCache()
     }

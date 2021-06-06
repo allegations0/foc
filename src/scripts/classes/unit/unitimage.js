@@ -35,6 +35,11 @@ setup.UnitImage = class UnitImage extends setup.TwineClass {
      */
     this.image_ignored = {}
 
+    /**
+     * @type {Object<*, boolean>}
+     */
+    this.image_need_reset = {}
+
     // counter for image_last_used
     this.image_use_counter = 1
   }
@@ -62,12 +67,14 @@ setup.UnitImage = class UnitImage extends setup.TwineClass {
     this.unit_image_map = {}
     this.image_last_used = {}
     this.image_ignored = {}
+    this.image_need_reset = {}
     this.image_use_counter = 1
   }
 
   /** @param {setup.Unit} unit */
   deleteUnit(unit) {
     delete this.unit_image_map[unit.key]
+    delete this.image_need_reset[unit.key]
   }
 
   advanceWeek() {
@@ -76,6 +83,7 @@ setup.UnitImage = class UnitImage extends setup.TwineClass {
 
   /** @param {setup.Unit} unit */
   getImagePath(unit) {
+    this._doResetImage(unit)
     if (!(unit.key in this.unit_image_map)) this._updateImage(unit)
     return this.unit_image_map[unit.key]
   }
@@ -188,8 +196,21 @@ setup.UnitImage = class UnitImage extends setup.TwineClass {
    * @param {boolean} [is_forced]
    */
   resetImage(unit, is_forced) {
+    this.image_need_reset[unit.key] = is_forced
+  }
+
+  /**
+   * @param {setup.Unit} unit 
+   * @returns 
+   */
+  _doResetImage(unit) {
+    if (!(unit.key in this.image_need_reset)) return
+    const is_forced = this.image_need_reset[unit.key]
+
     // images not loaded yet due to async computation:
     if (!setup.UnitImage.IMAGES_LOADED) return
+
+    delete this.image_need_reset[unit.key]
 
     if (!is_forced && (unit.key in this.unit_image_map)) {
       // if current image is still valid, do nothing.
@@ -213,6 +234,7 @@ setup.UnitImage = class UnitImage extends setup.TwineClass {
    */
   setImage(unit, image) {
     this.resetImage(unit, /* is forced = */ true)
+    this._doResetImage(unit)
 
     const image_path = typeof image === "string" ? image : image.path
     this.unit_image_map[unit.key] = image_path

@@ -64,6 +64,13 @@ setup.Skill = class Skill extends setup.TwineClass {
     }
     return result
   }
+
+  /**
+   * @return {Skills}
+   */
+  static makeEmptySkills() {
+    return Array(setup.skill.length).fill(0)
+  }
 }
 
 
@@ -127,14 +134,15 @@ setup.SkillHelper.explainSkillModsShort = function (skill_mod_array_raw, is_hide
 
 
 /**
- * 
- * @typedef {{val: number, add: number, modifier: number, skill: setup.Skill, modifier_add: number, innate_add?: number}} ExplainSkillWithAdditiveArgs
- * 
- * @param {ExplainSkillWithAdditiveArgs} args
+ * @param {setup.Unit} unit
+ * @param {setup.Skill} skill
+ * @returns {string}
  */
-setup.SkillHelper.explainSkillWithAdditive = function ({ val, add, modifier, modifier_add, skill, innate_add }) {
-  var image_rep = skill.rep()
-  if (!innate_add) innate_add = 0
+setup.SkillHelper.explainSkillWithAdditive = function (unit, skill) {
+  const image_rep = skill.rep()
+  const innate_add = State.variables.skillboost.getBoosts(unit)[skill.key]
+  const val = unit.getSkillsBase()[skill.key]
+  const add = unit.getSkillsAdd()[skill.key]
 
   let val_text
   if (innate_add) {
@@ -143,53 +151,18 @@ setup.SkillHelper.explainSkillWithAdditive = function ({ val, add, modifier, mod
     val_text = `${val}`
   }
 
-  var add_text = ''
+  let add_text = ''
   if (add > 0) {
     add_text += setup.DOM.toString(setup.DOM.Text.successlite(`+${add}`))
   } else if (add < 0) {
     add_text += setup.DOM.toString(setup.DOM.Text.dangerlite(`-${-add}`))
   }
 
-  const modifier_texts = []
-  if (innate_add) {
-    modifier_texts.push(`+${innate_add} (boosts)`)
-  }
-
-  modifier = Math.round(modifier * 100)
-  if (modifier > 0) {
-    modifier_texts.push(`+${modifier}%`)
-  } else if (modifier < 0) {
-    modifier_texts.push(`-${-modifier}%`)
-  }
-
-  if (modifier_add) {
-    if (modifier_add > 0) {
-      modifier_texts.push(`+${modifier_add}`)
-    } else {
-      modifier_texts.push(`-${modifier_add}`)
-    }
-  }
-
-  let modifier_text
-  if (modifier_texts.length) {
-    modifier_text = ` (${modifier_texts.join(',')} from modifiers)`
-  } else {
-    modifier_text = ''
-  }
-
+  const tooltip = `<<unitskillcardkey "${unit.key}" ${skill.key}>>`
   if (!State.variables.settings.summarizeunitskills) {
-    return `<span data-tooltip="${modifier_text}">${val_text}${add_text}</span> ${image_rep}`
+    return `<span data-tooltip='${tooltip}'>${val_text}${add_text}</span> ${image_rep}`
   } else {
-    var base = `${val + add}`
-
-    val_text = `${val}`
-
-    var addtext = `${val_text} + 0`
-    if (add > 0) {
-      addtext = `${val_text} + ${add}`
-    } else if (add < 0) {
-      addtext = `${val_text} - ${-add}`
-    }
+    let base = `${unit.getSkill(skill)}`
     if (innate_add > 0 && add >= 0) {
       base = setup.DOM.toString(setup.DOM.Text.infolite(base))
     } else if (add > 0) {
@@ -198,7 +171,7 @@ setup.SkillHelper.explainSkillWithAdditive = function ({ val, add, modifier, mod
       base = setup.DOM.toString(setup.DOM.Text.dangerlite(base))
     } else {
     }
-    return `<span data-tooltip="${addtext}${modifier_text}">${base}</span> ${image_rep}`
+    return `<span data-tooltip='${tooltip}'>${base}</span> ${image_rep}`
   }
 }
 
@@ -206,33 +179,11 @@ setup.SkillHelper.explainSkillWithAdditive = function ({ val, add, modifier, mod
  * @param {setup.Unit} unit 
  */
 setup.SkillHelper.explainSkillsWithAdditives = function (unit) {
-  const skill_array_raw = unit.getSkillsBase(/* ignore skill boosts = */ true)
-  const additives = unit.getSkillsAdd()
-  const mods = unit.getSkillModifiers()
-  const mod_additive = unit.getSkillAdditives()
-
-  // given [0, 1, 2, 4, ...] explain it.
-  // additives: can add +xx to the stat
-  const skill_array = setup.Skill.translate(skill_array_raw)
-  const additive_array = setup.Skill.translate(additives)
-  const mod_array = setup.Skill.translate(mods)
-  const mod_additive_array = setup.Skill.translate(mod_additive)
-  const skill_boost = State.variables.skillboost.getBoosts(unit)
-
+  const skill_array = unit.getSkillsBase(/* ignore skill boosts = */ true)
   var texts = []
   for (var i = 0; i < skill_array.length; ++i) {
     if (skill_array[i]) {
-      const val = Math.round(skill_array[i])
-      const add = Math.round(additive_array[i])
-      const innate_add = skill_boost[i]
-      texts.push(setup.SkillHelper.explainSkillWithAdditive({
-        val: val,
-        add: add,
-        modifier: mod_array[i],
-        modifier_add: mod_additive_array[i],
-        skill: setup.skill[i],
-        innate_add: innate_add,
-      }))
+      texts.push(setup.SkillHelper.explainSkillWithAdditive(unit, setup.skill[i]))
     }
   }
   return texts.join('║')

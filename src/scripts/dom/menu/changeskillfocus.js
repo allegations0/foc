@@ -63,11 +63,6 @@ setup.DOM.Menu.changeskillfocus = function (unit) {
     unit, /* hide actions = */ true
   ))
 
-  const skill_base = unit.getSkillsBase()
-  const skill_add = unit.getSkillsAdd()
-  const skill_mod = unit.getSkillModifiers()
-  const skill_modadd = unit.getSkillAdditives()
-
   const focuses = unit.getSkillFocuses(/* no sort = */ true)
   let z = []
   for (let i = 0; i < focuses.length; ++i) {
@@ -79,13 +74,7 @@ setup.DOM.Menu.changeskillfocus = function (unit) {
     inner.push(html`
       <div>
       Change focus #${i + 1} from
-      ${setup.SkillHelper.explainSkillWithAdditive({
-      val: skill_base[focus.key],
-      add: skill_add[focus.key],
-      modifier: skill_mod[focus.key],
-      modifier_add: skill_modadd[focus.key],
-      skill: focus,
-    })}
+      ${setup.SkillHelper.explainSkillWithAdditive(unit, focus)}
       to:
       </div>
     `)
@@ -94,13 +83,7 @@ setup.DOM.Menu.changeskillfocus = function (unit) {
      */
     const veryin = []
     setup.skill.forEach(skill => {
-      const text = html`${setup.SkillHelper.explainSkillWithAdditive({
-        val: skill_base[skill.key],
-        add: skill_add[skill.key],
-        modifier: skill_mod[skill.key],
-        modifier_add: skill_add[skill.key],
-        skill: skill,
-      })}`
+      const text = html`${setup.SkillHelper.explainSkillWithAdditive(unit, focus)}`
 
       if (skill == focus) {
         veryin.push(menuItemText({

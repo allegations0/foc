@@ -202,6 +202,9 @@ setup.DutyInstance = class DutyInstance extends setup.TwineClass {
     unit.duty_key = this.key
 
     this.getTemplate().onAssign(this, unit)
+
+    // reset cache on player in case vice leader
+    State.variables.unit.player.resetCache()
   }
 
   unassignUnit() {
@@ -211,6 +214,9 @@ setup.DutyInstance = class DutyInstance extends setup.TwineClass {
 
     this.unit_key = null
     unit.duty_key = null
+
+    // reset cache on player in case vice leader
+    State.variables.unit.player.resetCache()
   }
 
   advanceWeek() {

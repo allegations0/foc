@@ -10,3 +10,17 @@
   <<unitcard $unit[$args[0]] $args[1]>>
 <</focwidget>>
 
+
+
+<<focwidget "unitskillcard">>
+  <<set _dom = setup.DOM.Card.unitskill($args[0], $args[1])>>
+  <<attach _dom>>
+<</focwidget>>
+
+
+<<focwidget "unitskillcardkey">>
+  <<unitskillcard $unit[$args[0]] setup.skill[$args[1]]>>
+<</focwidget>>
+
+
+

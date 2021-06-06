@@ -86,6 +86,7 @@ setup.SkillBoost = class SkillBoost extends setup.TwineClass {
     }
 
     this.unit_key_to_skill_boosts[unit.key][skill.key] += amount
+    unit.resetCache()
   }
 
   /**

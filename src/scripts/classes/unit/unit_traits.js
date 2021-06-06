@@ -779,6 +779,9 @@ setup.Unit.prototype.corruptPermanently = function () {
 }
 
 setup.Unit.prototype.getSpeech = function () {
+  if (this.is_speech_reset) {
+    this.recomputeSpeech()
+  }
   return setup.speech[this.speech_key]
 }
 
@@ -794,6 +797,10 @@ setup.Unit.prototype.getSpeechChances = function () {
 
 // recompute a unit's speech.
 setup.Unit.prototype.resetSpeech = function () {
+  this.is_speech_reset = true
+}
+
+setup.Unit.prototype.recomputeSpeech = function () {
   var scores = this.getSpeechChances()
   var arr = Object.values(scores)
   var maxscore = Math.max(...arr)
@@ -812,6 +819,7 @@ setup.Unit.prototype.resetSpeech = function () {
     }
   }
   if (!this.speech_key) throw new Error(`??????`)
+  this.is_speech_reset = false
 }
 
 setup.Unit.prototype.isAllowedTalk = function () {

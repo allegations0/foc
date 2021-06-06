@@ -118,8 +118,7 @@ setup.Unit = class Unit extends setup.TwineClass {
     if (this.key in State.variables.unit) throw new Error(`Unit ${this.key} duplicated`)
     State.variables.unit[this.key] = this
 
-    this.resetSpeech()
-
+    this.is_speech_reset = true
     this.reSeed()
   }
 
@@ -407,7 +406,7 @@ setup.Unit = class Unit extends setup.TwineClass {
     const result = []
     result.push({
       value: setup.SLAVE_BASE_VALUE,
-      title: 'Base value',
+      title: 'Base',
     })
 
     // increase value based on traits. Cannot use computed traits, because computed traits depend on this
@@ -647,12 +646,12 @@ setup.Unit = class Unit extends setup.TwineClass {
    * Resets this unit's cache, because something has changed.
    */
   resetCache() {
-    this.resetSpeech()
     this.resetTraitMapCache()
-
+    this.resetSkillCache()
     // reset unit value cache
     State.variables.cache.clear('unitvalue', this.key)
 
+    this.resetSpeech()
     State.variables.unitimage.resetImage(this)
   }
 

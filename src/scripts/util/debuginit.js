@@ -530,6 +530,7 @@ setup.DebugInit.debugModeInit = function () {
     setup.qc.MissingUnit('unit').apply(setup.costUnitHelper(missing_slave))
 
     /* Retired slaver */
+    console.log('retired slaver')
     units[13].weeks_with_you = setup.TRAIT_SENIOR_THRESHOLD + 3
     State.variables.retiredlist.retire(units[13])
   }

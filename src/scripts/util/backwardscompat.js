@@ -172,6 +172,11 @@ setup.BackwardsCompat.upgradeSave = function (sv) {
       sv.titlelist.last_obtained_negative = {}
     }
 
+    /* image need reset v1.6.2 */
+    if (!sv.unitimage.image_need_reset) {
+      sv.unitimage.image_need_reset = {}
+    }
+
     if (isOlderThan(saveVersion.map(a => +a), [1, 6, 3, 12])) {
       // @ts-ignore
       if (!setup.globalsettings.disabledefaultimagepack) {
