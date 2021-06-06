@@ -85,7 +85,7 @@
   new setup.Trait(
     'subrace_kobold',
     'kobold',
-    'Distinct from their other <<rep setup.trait.race_lizardkin>> relatives, kobolds are often meek and small in stature. Compared to the other lizardkin species, kobolds are fairly common: Kobolds are present throughout the <<lore continent_main>>, but most kobolds live in the <<lore region_sea>>. Kobolds may be lacking in the size and strength department, but they make up for it in cunning and cleverness. Having lived inside burrows for so long has attuned them to <<lore magic_earth>>.',
+    'Distinct from their other <<rep setup.trait.race_lizardkin>> relatives, kobolds are often meek and small in stature. Compared to the other lizardkin species, kobolds are fairly common: Kobolds are present throughout the <<lore continent_main>>, but most kobolds live in the <<lore region_sea>>. Kobolds may be lacking in the size and strength department, but they make up for it in cunning and cleverness. Attuned to both <<lore magic_fire>> and <<lore magic_earth>>.',
     0,
     {},
     ['common', 'race_lizardkin', ],
