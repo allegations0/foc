@@ -206,6 +206,7 @@ setup.qdiff.hardest54, /* difficulty */
 [
 'Quest_gift_of_the_magiCrit',
 [
+setup.qc.ItemIfNew(setup.item.lorebook_kurdwisec),
 setup.qc.Item(setup.item.f_foodtray_normal_hermit),
 setup.qc.MissingUnitForever('loveslave'),
 setup.qc.Equipment(setup.equipmentpool.sex_good),
@@ -219,6 +220,7 @@ setup.qc.MoneyCustom(20000), ],
 ], [
 'Quest_gift_of_the_magiCrit',
 [
+setup.qc.ItemIfNew(setup.item.lorebook_kurdwisec),
 setup.qc.MoneyCustom(35000),
 setup.qc.MissingUnitForever('loveslave'),
 setup.qc.Equipment(setup.equipmentpool.sex_good),
@@ -229,6 +231,7 @@ setup.qc.Friendship('firemagus', 'watermagus', 500), ],
 ], [
 'Quest_gift_of_the_magiFailure',
 [
+setup.qc.ItemIfNew(setup.item.lorebook_kurdwisec),
 setup.qc.TraumatizeRandom('firemagus', 5),
 setup.qc.TraumatizeRandom('windmagus', 5),
 setup.qc.TraumatizeRandom('watermagus', 5),
@@ -245,6 +248,7 @@ setup.qc.OneRandom([
 ], [
 'Quest_gift_of_the_magiFailure',
 [
+setup.qc.ItemIfNew(setup.item.lorebook_kurdwisec),
 setup.qc.TraumatizeRandom('firemagus', 7),
 setup.qc.TraumatizeRandom('windmagus', 7),
 setup.qc.TraumatizeRandom('watermagus', 7),

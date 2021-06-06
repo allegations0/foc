@@ -34,6 +34,31 @@
 })>>
 
 /* ==============
+   LOCATION
+============== */
+
+<<run new setup.ItemLorebook({
+  key: 'lorebook_institute_of_higher_learning',
+  name: 'Lorebook: Institute of Higher Learning',
+  lore: 'location_institute_of_higher_learning',
+  tags: [],
+})>>
+
+<<run new setup.ItemLorebook({
+  key: 'lorebook_location_princeofcups',
+  name: 'Lorebook: Prince of Cups',
+  lore: 'location_princeofcups',
+  tags: [],
+})>>
+
+<<run new setup.ItemLorebook({
+  key: 'lorebook_location_purrloin',
+  name: 'Lorebook: Purrloin',
+  lore: 'location_purrloin',
+  tags: [],
+})>>
+
+/* ==============
    KURDWISEC
 ============== */
 

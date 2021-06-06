@@ -69,6 +69,7 @@ setup.qdiff.hard39, /* difficulty */
   [
     'Quest_obedience_101Crit',
     [
+      setup.qc.ItemIfNew(setup.item.lorebook_institute_of_higher_learning),
       setup.qc.Outcomes("success"),
       setup.qc.Favor('humankingdom', 150),
     ],
@@ -76,6 +77,7 @@ setup.qdiff.hard39, /* difficulty */
   [
     'Quest_obedience_101Crit',
     [
+      setup.qc.ItemIfNew(setup.item.lorebook_institute_of_higher_learning),
       setup.qc.VarRemove('obedience_lesson'),
       setup.qc.AddTitle('student', 'quest_learning_instructor_0'),
     ],
@@ -83,11 +85,13 @@ setup.qdiff.hard39, /* difficulty */
   [
     'Quest_obedience_101Failure',
     [
+      setup.qc.ItemIfNew(setup.item.lorebook_institute_of_higher_learning),
     ],
   ],
   [
     'Quest_obedience_101Failure',
     [
+      setup.qc.ItemIfNew(setup.item.lorebook_institute_of_higher_learning),
       setup.qc.MoneyCustom(-5000),
     ],
   ],

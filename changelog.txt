@@ -4,6 +4,18 @@
 
 ### v1.7.1.x
 
+v1.7.1.5:
+
+  - New quests: A Merchant's Revenge: Embarras A Rival (by Matthew Lang) (3 quests, 1 mail)
+  - Refactor Matthew Lang's folders into subfolders
+  - Kobold now has dual fire/earth affinity.
+  - Lore refactored into individual files
+  - New lore type: person lores
+  - New lores: Kurdwisec, Gaius the Just
+  - Lorebook now automatically set it to be prerequisite for its lore
+  - A bunch of new lorebooks
+  - Some text fixes.
+
 v1.7.1.4:
 
   - New blessing: Blessing of Wolf
