@@ -50,6 +50,13 @@ setup.DOM.Card.lore = function (lore, hide_actions) {
   <div class='lorecard'>
     <div>${setup.DOM.Util.menuItemToolbar(loreNameActionMenu(lore, hide_actions))}
     <div>
+      ${setup.DOM.Card.restriction(
+    lore.getRestrictions(),
+        /* obj = */ null,
+        /* show all = */ true,
+  )}
+    </div>
+    <div>
       ${setup.DOM.Util.include(lore.getDescriptionPassage())}
     </div>
   </div>

@@ -40,6 +40,8 @@
 <<include InitTitle>>
 <<include InitSpeech>>
 
+<<include InitLore>>
+
 <<include InitItemClass>>
 <<include InitItem>>
 
@@ -77,8 +79,6 @@
 <<include InitInteraction>>
 
 <<include InitFamilyRelation>>
-
-<<include InitLore>>
 
 <<include InitActivity>>
 

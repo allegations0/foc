@@ -48,7 +48,7 @@ setup.rarity.rare, /* Rarity */
 <<include 'Event_TigerBankRepoCommon'>>
 
 <p>
-Crime are rather rampant in <<lore continent_main>>, and thug gangs are numerous across the continent.
+Crime are rather rampant in <<lore geo_mestia>>, and thug gangs are numerous across the continent.
 The <<rep $company.bank>> is not picky about their customer as long as the money is good, and occasionally these gangs would loan a bag of coins or two for urgent business.
 And occasionally, some gang would collapse just right when their debts are due, and their leader would be taken by the repo-men when nothing else of value was found.
 </p>

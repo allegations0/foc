@@ -7,7 +7,6 @@
     'culture',
   ],
   [  /* visibility requirements */
-    setup.qres.HasItem('lorebook_drowriteofadulthood'),
   ],
 )>>
 

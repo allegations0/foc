@@ -286,7 +286,7 @@ setup.qres.Building(setup.buildingtemplate.veteranhall),
   <</if>>
 <</for>>
 
-<p>Beyond the Eastern Wasteland dwells Kurdwisec, an eccentric monarch who is rarely a good customer for slave-dealers. His coin is as good as anyone's and he has plenty of it, but his tastes are too outlandish. He tends to place orders for races that don't exist, skin tones not found in nature, and sexual accomplishments that are physically impossible. As far as <i>you</i> know. And he always wants them at strange, portentous times set by his court astrologers, so that there's never time to even try to fill his freakish requests.
+<p>Beyond the Eastern Wasteland dwells <<lore person_kurdwisec>>, an eccentric monarch who is rarely a good customer for slave-dealers. His coin is as good as anyone's and he has plenty of it, but his tastes are too outlandish. He tends to place orders for races that don't exist, skin tones not found in nature, and sexual accomplishments that are physically impossible. As far as <i>you</i> know. And he always wants them at strange, portentous times set by his court astrologers, so that there's never time to even try to fill his freakish requests.
 </p>
 <p>
 Now, for once, you have received advance warning of what he is after, and you may even have a way to get your hands on it. Your slavers always have their ears open, and

@@ -60,7 +60,7 @@ setup.qres.Building(setup.buildingtemplate.dungeons), ], /* restrictions to gene
 :: Quest_community_service [nobr]
 <p>
 The humans living in the <<rep $company.humankingdom>> are the most
-populous of all the races in <<lore continent_main>>. People
+populous of all the races in <<lore geo_mestia>>. People
 from all sort of occupations live in the <<lore region_city>>, from the noblest of
 nobles to the lowliest of beggars.
 </p>

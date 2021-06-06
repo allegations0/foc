@@ -89,7 +89,7 @@ false, /* is must be answered */
 <<set _wins = $varstore.get('quest_fort_restoration_win') || 0>>
 
 <p>
-You have received another somewhat expected visitor, another forst inspector from the so-called "History Preservation" society located in some hidden land in <<lore continent_main>>. As you recall, you've been patronizing them for quite some time, even changing your fort layout to fit whatever idealistic ideals they impose upon your fort, all for the sole reason of obtaining the secret technology held by the community.
+You have received another somewhat expected visitor, another forst inspector from the so-called "History Preservation" society located in some hidden land in <<lore geo_mestia>>. As you recall, you've been patronizing them for quite some time, even changing your fort layout to fit whatever idealistic ideals they impose upon your fort, all for the sole reason of obtaining the secret technology held by the community.
 </p>
 
 <p>

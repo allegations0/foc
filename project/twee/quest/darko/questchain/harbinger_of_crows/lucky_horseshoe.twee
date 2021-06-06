@@ -110,7 +110,7 @@ setup.qdiff.hard59, /* difficulty */
 <<else>>
 
 <p>
-In the continent of <<lore continent_main>>, horseshoes have long been considered lucky. One would nail a horseshoe inside their room upwards, so that the horseshoe would catch luck and bestow it upon the room's resident. <<Yourrep _unit>>, being the unlucky <<urace _unit>> that <<they _unit>> is, had tried this, of course, but as expected it didn't work out. But <<they _unit>> has come to you with another attempt, this time using a specially made horseshoe from a famous blacksmith in the <<lore region_desert>>.
+In the continent of <<lore geo_mestia>>, horseshoes have long been considered lucky. One would nail a horseshoe inside their room upwards, so that the horseshoe would catch luck and bestow it upon the room's resident. <<Yourrep _unit>>, being the unlucky <<urace _unit>> that <<they _unit>> is, had tried this, of course, but as expected it didn't work out. But <<they _unit>> has come to you with another attempt, this time using a specially made horseshoe from a famous blacksmith in the <<lore region_desert>>.
 </p>
 
 <p>

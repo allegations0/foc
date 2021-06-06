@@ -102,7 +102,7 @@ setup.qdiff.hard48, /* difficulty */
 
 :: Quest_totally_pirates [nobr]
 <p>
-The <<lore region_sea>> is extremely dangerous, and everyone in <<lore continent_main>> knows that. Anyone who dares travel south must accept the risk that it might be their last, and ferry services going into the south usually accept that one or two of its passengers will be unfortunately lost in the sea — be it to the pirates, the weather, or even to the various sea monsters that infest the ocean.
+The <<lore region_sea>> is extremely dangerous, and everyone in <<lore geo_mestia>> knows that. Anyone who dares travel south must accept the risk that it might be their last, and ferry services going into the south usually accept that one or two of its passengers will be unfortunately lost in the sea — be it to the pirates, the weather, or even to the various sea monsters that infest the ocean.
 </p>
 
 <<set _u = setup.getAnySlaver()>>
@@ -175,7 +175,7 @@ and set sail into the south.
 <<if $gOutcome == 'disaster'>>
 
 <p>
-Unfortunately, <<rep $g.ferry>> was instead met with a real rowdy pirate of the south. The ship was completely unprepared against such a danger, and the ship never returned back to <<lore continent_main>>.
+Unfortunately, <<rep $g.ferry>> was instead met with a real rowdy pirate of the south. The ship was completely unprepared against such a danger, and the ship never returned back to <<lore geo_mestia>>.
 <<uneedrescue $g.ferry>>, preferably before the pirates sold <<therace $g.ferry>> away to some distant land...
 </p>
 

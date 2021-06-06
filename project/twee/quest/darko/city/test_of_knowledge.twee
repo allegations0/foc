@@ -133,7 +133,7 @@ Smarter than the average rock, smarter than the average person, and some even sa
 
 <p>
 Thanks to this,
-you had received an invitation to participate in the rare and elusive secret quiz event being held every now and then in the <<lore region_city>>. The reward is absolutely tantalizing: an extremely rare piece of clothing fit for the smartest person on <<lore continent_main>>.
+you had received an invitation to participate in the rare and elusive secret quiz event being held every now and then in the <<lore region_city>>. The reward is absolutely tantalizing: an extremely rare piece of clothing fit for the smartest person on <<lore geo_mestia>>.
 But winning is going to be incredibly tough, and whoever you send on this mission would need to defeat the incredibly knowledgeable savant in a deadly quiz.
 <<if $statistics.isHasSuccess('test_of_knowledge')>>
 One of your slavers had won the event before, but the outcome might just be completely different this time around.

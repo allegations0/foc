@@ -119,8 +119,8 @@ setup.qc.Ire('bank', 10)
 
 <p>
 The <<rep $company.bank>> is headquartered in the <<lore location_npc>>.
-As the largest banking institution in <<lore continent_main>>,
-they are one of the most powerful institutions in <<lore continent_main>>, weilding
+As the largest banking institution in <<lore geo_mestia>>,
+they are one of the most powerful institutions in <<lore geo_mestia>>, weilding
 considerable influence over many aspects of life that often go quite unnoticed by everyday people.
 It is always wise to have them as allies, even for a slaving company such as yourself.
 </p>

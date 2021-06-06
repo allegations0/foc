@@ -206,7 +206,7 @@ setup.rarity.rare, /* Rarity */
     </p>
 
     <p>
-        It's not exactly true, but it's what most people in <<lore continent_main>> believes, and it's good enough for what you have in mind.
+        It's not exactly true, but it's what most people in <<lore geo_mestia>> believes, and it's good enough for what you have in mind.
         You then ask <<them $g.slave>> whether <<they $g.slave>> would like to feed off you.
     </p>
 

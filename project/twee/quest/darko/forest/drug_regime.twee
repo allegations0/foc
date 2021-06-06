@@ -153,7 +153,7 @@ mind of <<rep _u>>...
 
 <p>
 The ingredients were not easy to come by at all, having to scour the entire
-continent of <<lore continent_main>> to search for the potions. <<Rep
+continent of <<lore geo_mestia>> to search for the potions. <<Rep
 $g.trainer>> <<uadv $g.trainer>> led the team into the elven alchemist's hut,
 and delivered the potions to <<them $g.trainer>>. In the coming days, <<rep
 $g.alchemist1>> and <<utheirrel $g.alchemist1 $g.alchemist2>> <<rep

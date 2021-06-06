@@ -1,62 +1,3 @@
-:: LORESETUP_region_vale [lore]
-
-<<run new setup.Lore(
-  'region_vale',  /* key */
-  'Northern Vales',  /* name */
-  [  /* tags */
-    'region',
-  ],
-  [  /* visibility requirements */
-  ],
-)>>
-
-:: LORE_region_vale [nobr]
-<p>
-The unnamed swathing fields reaching up into the cold mountains of the north.
-The northerners and the werewolf folks live in this area.
-</p>
-
-
-:: LORESETUP_region_forest [lore]
-
-<<run new setup.Lore(
-  'region_forest',  /* key */
-  'Western Forests',  /* name */
-  [  /* tags */
-    'region',
-  ],
-  [  /* visibility requirements */
-  ],
-)>>
-
-:: LORE_region_forest [nobr]
-<p>
-The dense forests west of the <<lore region_city>>, and south from your fort.
-It is inhabited by the elven and neko people.
-</p>
-
-
-:: LORESETUP_region_city [lore]
-
-<<run new setup.Lore(
-  'region_city',  /* key */
-  'City of Lucgate',  /* name */
-  [  /* tags */
-    'region',
-  ],
-  [  /* visibility requirements */
-  ],
-)>>
-
-:: LORE_region_city [nobr]
-<p>
-The most populated city in <<lore continent_main>>.
-This city is mostly populated by the
-<<lore race_humankingdom>>s,
-and is governed by royalties from the <<rep $company.humankingdom>>.
-</p>
-
-
 :: LORESETUP_region_deep [lore]
 
 <<run new setup.Lore(
@@ -66,7 +7,6 @@ and is governed by royalties from the <<rep $company.humankingdom>>.
     'region',
   ],
   [  /* visibility requirements */
-    setup.qres.HasItem('lorebook_deep'),
   ],
 )>>
 
@@ -111,41 +51,3 @@ demons take great delight in taking those fools who wandered into the Deeprealm 
 They would be taken into the demon realm, to be remade as one of their countless playthings...
 </p>
 
-
-:: LORESETUP_region_desert [lore]
-
-<<run new setup.Lore(
-  'region_desert',  /* key */
-  'Eastern Deserts',  /* name */
-  [  /* tags */
-    'region',
-  ],
-  [  /* visibility requirements */
-  ],
-)>>
-
-:: LORE_region_desert [nobr]
-<p>
-The scorching deserts of the east. Some hardy
-desertfolks as well as the orcs call the hellish place a home.
-<<lore concept_mist>> is often thin here, inviting demons from beyond to cross to the mortal plane.
-</p>
-
-
-:: LORESETUP_region_sea [lore]
-
-<<run new setup.Lore(
-  'region_sea',  /* key */
-  'Southern Seas',  /* name */
-  [  /* tags */
-    'region',
-  ],
-  [  /* visibility requirements */
-  ],
-)>>
-
-:: LORE_region_sea [nobr]
-<p>
-The vast seas south of <<lore continent_main>>.
-The land beyond hold many mysteries.
-</p>

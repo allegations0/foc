@@ -62,7 +62,7 @@ various devices from the many needs in the land beyond the <<lore region_sea>>.
 <<elseif $g.slaver.getHomeland() == setup.Text.Race.REGIONS.mist>>
 demonic bondage tools in the land beyond <<lore concept_mist>>
 <<else>>
-many weapons in the land far beyond <<lore continent_main>>.
+many weapons in the land far beyond <<lore geo_mestia>>.
 <</if>>
 The resident blacksmith enjoys the company of your slaver, and occasional help too.
 </p>

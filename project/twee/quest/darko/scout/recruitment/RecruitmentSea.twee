@@ -80,7 +80,7 @@
 :: QuestRecruitmentSea [nobr]
 
 <p>
-The <<lore continent_main>> is not the only continent in the world.
+The <<lore geo_mestia>> is not the only continent in the world.
 Many people live far across the <<lore region_sea>> -- people with cultures
 unlike any other you have probably ever seen.
 There are hulking <<rep setup.trait.subrace_lizardkin>>

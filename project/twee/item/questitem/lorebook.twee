@@ -7,7 +7,7 @@
 <<run new setup.ItemLorebook({
   key: 'lorebook_doppelganger',
   name: 'Lorebook: Doppelganger',
-  description: "Unlocks the doppelganger lore once you build the <<rep setup.buildingtemplate.library>>",
+  lore: 'race_doppelganger',
   tags: [],
 })>>
 
@@ -18,7 +18,7 @@
 <<run new setup.ItemLorebook({
   key: 'lorebook_deep',
   name: 'Lorebook: Deeprealm',
-  description: "Unlocks the Deeprealm lore once you build the <<rep setup.buildingtemplate.library>>",
+  lore: 'region_deep',
   tags: [],
 })>>
 
@@ -29,6 +29,18 @@
 <<run new setup.ItemLorebook({
   key: 'lorebook_drowriteofadulthood',
   name: 'Lorebook: Drow Rite of Adulthood',
-  description: "Unlocks the Drow Rite of Adulthood lore once you build the <<rep setup.buildingtemplate.library>>",
+  lore: 'culture_drowriteofadulthood',
   tags: [],
 })>>
+
+/* ==============
+   KURDWISEC
+============== */
+
+<<run new setup.ItemLorebook({
+  key: 'lorebook_kurdwisec',
+  name: 'Lorebook: Kurdwisec',
+  lore: 'person_kurdwisec',
+  tags: [],
+})>>
+

@@ -99,7 +99,7 @@
 :: QuestAcademyOfWind [nobr]
 
 <p>
-The Academy of Wind is one the most well known magic institutes spread throughout <<lore continent_main>>.
+The Academy of Wind is one the most well known magic institutes spread throughout <<lore geo_mestia>>.
 The academy accepts students of any background, so long they display aptitude for <<lore magic_wind>>.
 The vast majority of them are the citizens of the wind-attuned <<rep $company.humankingdom>>, however.
 Graduates of the academy are highly sought after, and many important positions in the kingdom

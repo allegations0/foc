@@ -102,7 +102,7 @@ informed you that
 a most noble visitor is planning a visit to <<attach _describe>>. The visitor
 is no ordinary noble — in fact, <<they $g.target>> target|is a member of the
 neko royalty, a title held by an extreme select few within <<lore
-continent_main>>. The official reason for the visit is as follows: the royal
+geo_mestia>>. The official reason for the visit is as follows: the royal
 has heard of the many wonders provided by your brothel, especially the
 <<if _attraction == 'gravity'>>
 Magic Gravity Room,

@@ -32,7 +32,7 @@ setup.DOM.Menu.newgameplus = function () {
       you traveling around the land.
       Or if you are feeling particularly crazy, you could band up with a few of your slavers
       to start anew and create yet another slaving company in the continent of
-      ${setup.lore.continent_main.rep()}...
+      ${setup.lore.geo_mestia.rep()}...
     </p>
 
     <p>
