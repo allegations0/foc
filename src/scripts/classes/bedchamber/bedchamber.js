@@ -248,12 +248,18 @@ setup.Bedchamber = class Bedchamber extends setup.TwineClass {
     return State.variables.unit[this.slaver_key]
   }
 
+  /**
+   * @param {setup.Unit} unit 
+   */
   setSlaver(unit) {
     if (!unit) throw new Error(`must have unit for set slaver at ${this.key}`)
+    const old_slaver = this.getSlaver()
     this.slaver_key = unit.key
     if (unit != State.variables.unit.player) {
       this.autoSetOptions()
     }
+    old_slaver.resetCache()
+    unit.resetCache()
   }
 
   /**
@@ -354,6 +360,7 @@ setup.Bedchamber = class Bedchamber extends setup.TwineClass {
     } else {
       this.furniture_map[slot.key] = null
     }
+    this.getSlaver().resetCache()
   }
 
   getSkillAddition() {
