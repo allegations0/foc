@@ -412,7 +412,8 @@ traits, they can be upgraded to a stronger version later in the game.)
 <<if ['subrace_elf',
       'subrace_lizardkin',
       'subrace_demonkin',
-      'subrace_humankingdom'].includes($i.race_key)>>
+      'subrace_humankingdom',
+      'subrace_kobold',].includes($i.race_key)>>
   <br/>
   <<set _text = `${setup.trait.skill_flight.getName()}`>>
   <<rep setup.trait.skill_flight>>
@@ -432,12 +433,18 @@ traits, they can be upgraded to a stronger version later in the game.)
 
   <<capture _target_race>>
     <<link _text 'PrologueGenerateChar'>>
-      <<set $i.race_key = _target_race>>
+      <<if $i.race_key == 'subrace_kobold'>>
+        <<run $i.trait_keys.push('wings_dragonkin')>>
+      <<else>>
+        <<set $i.race_key = _target_race>>
+      <</if>>
     <</link>>:
   <</capture>>
   <<= setup.trait.skill_flight.getDescriptionDisplay()>>
-  (Choosing this option will change your race from
-   <<rep setup.trait[$i.race_key]>> to <<rep setup.trait[_target_race]>>)
+  <<if _target_race != $i.race_key>>
+    (Choosing this option will change your race from
+    <<rep setup.trait[$i.race_key]>> to <<rep setup.trait[_target_race]>>)
+  <</if>>
 <</if>>
 
 
@@ -460,6 +467,10 @@ can be changed anytime later in the game. You can also change your player's port
   /* remove background and skills */
   <<run _unit.removeTraitsWithTag('bg')>>
   <<run _unit.removeTraitsWithTag('skill')>>
+
+  <<if _unit.isHasTrait('subrace_kobold')>>
+    <<run _unit.removeTraitsWithTag('wings')>>
+  <</if>>
 
   /* add traits */
   <<for _itraitkey, _traitkey range $i.trait_keys>>
