@@ -4,6 +4,12 @@
 
 ### v1.7.1.x
 
+v1.7.1.7:
+
+  - Leopold Pavo lore
+  - Add Merchant Revenge painting texts (by Matthew Lang)
+  - Fix bedchamber switching not changing unti skills
+
 v1.7.1.6:
 
   - Skill now cached for performance
