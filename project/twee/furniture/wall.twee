@@ -84,8 +84,8 @@
 
 <<run new setup.Furniture(
   'f_wall_good_merchant_revenge_watersport',
-  'placeholder watersport painting',
-  'A painting description. Should describe the painting', 
+  "A Piss Slut's Lunch",
+  'A painting of a bound piss slut. Painted by Leopold Pavo', 
   /* value = */ setup.FURNITURE_PRICE_GOOD,
   setup.furnitureslot.wall,
   ['good'],
@@ -95,16 +95,16 @@
   },
   {  /* texts */
     ambience: [
-      'your figure inside the a|rep watches over the ensuing debauchery',
+      'the painting of a thirsty piss slut on the wall inspires you into further acts of debauchery'
     ],
-    bedchamber: "The painting is quite beautiful to look at.",
+    bedchamber: "A soaked, degraded noble kneels bound in a puddle of cooling piss. They are blindfolded, a funnel gag lodged in their mouth and have the words 'All Loads Taken' is inked across their forehead. This commemorative painting by Leopold Pavo captures an unexpected turn of events at a Lucgate Merchant luncheon.",
   },
 )>>
 
 <<run new setup.Furniture(
   'f_wall_good_merchant_revenge_master',
-  'placeholder legendary merchant revenge painting',
-  'A legendary painting description. Should describe the painting', 
+  "A Merchant's Luncheon",
+  "A painting of a lusty slut, bound on a banquet table. Painted by Leopold Pavo",
   /* value = */ setup.FURNITURE_PRICE_MASTER,
   setup.furnitureslot.wall,
   ['master'],
@@ -114,8 +114,8 @@
   },
   {  /* texts */
     ambience: [
-      'your figure inside the a|rep watches over the ensuing debauchery',
+      'the painting of a needy slut who is begging to be filled urges you on to further acts of debauchery',
     ],
-    bedchamber: "The painting is quite beautiful to look at.",
+    bedchamber: "A lust addled noble lies bound on a banquet table, back arched and mouth open as they beg to be used. Merchants, nobility and the cream of Toran society stand around in shock, outrage, and barely concealed arousal. This commemorative painting by Leopold Pavo captures an unexpected turn of events at a Lucgate Merchant luncheon - and part of the revenge plotting of a particular Merchant friend of yours.",
   },
 )>>

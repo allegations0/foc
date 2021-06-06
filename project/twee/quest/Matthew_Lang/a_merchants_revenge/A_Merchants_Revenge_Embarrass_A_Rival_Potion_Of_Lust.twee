@@ -78,6 +78,7 @@ setup.qdiff.hard41, /* difficulty */
   [
     'Quest_a_merchant_s_revenge_embarrass_a_rival_potion_of_lustCrit',
     [
+      setup.qc.ItemIfNew(setup.item.lorebook_person_leopold),
       setup.qc.Outcomes('success'),
       setup.qc.MoneyCustom(3000),
     ],
@@ -85,6 +86,7 @@ setup.qdiff.hard41, /* difficulty */
   [
     'Quest_a_merchant_s_revenge_embarrass_a_rival_potion_of_lustCrit',
     [
+      setup.qc.ItemIfNew(setup.item.lorebook_person_leopold),
       setup.qc.VarSet('mlangmerchantprincequest', '10', -1),
       setup.qc.MoneyCustom(1000),
       setup.qc.Item('f_wall_good_merchant_revenge_master'),

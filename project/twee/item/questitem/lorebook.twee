@@ -69,3 +69,11 @@
   tags: [],
 })>>
 
+<<run new setup.ItemLorebook({
+  key: 'lorebook_person_leopold',
+  name: 'Lorebook: Leopold Pavo',
+  lore: 'person_leopold',
+  tags: [],
+})>>
+
+
