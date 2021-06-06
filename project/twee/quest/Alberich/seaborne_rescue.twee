@@ -379,7 +379,7 @@ He roars orders, and your former slaver is soon hauled up…looking somewhat the
 “Hold on,” says Captain <<rep $g.captain>>. “You're slavers?”
 </p>
 <p>
-“Yes,” you reply. “I'm you from the ancient and honorable company of <<rep $company.player>>.”
+“Yes,” you reply. “I'm from the ancient and honorable company of <<rep $company.player>>.”
 </p>
 <p>
 “Well,” he says, looking disgustedly over the remains of his crew, “we might have an order or two for you.” He sends for ink and paper. “In particular, I could use an untamed demon to make up for the one you just tamed.”
