@@ -36,8 +36,8 @@
 
 <<run new setup.Furniture(
   'f_tile_good',
-  '[UNOBTAINABLE] exotic rug',
-  'Exotic rugs from the southern seas that makes for a beautiful decoration', 
+  'plush rug',
+  'Plush rug that makes for a beautiful decoration', 
   /* value = */ setup.FURNITURE_PRICE_GOOD,
   setup.furnitureslot.tile,
   ['good'],

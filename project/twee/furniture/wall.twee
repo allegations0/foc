@@ -81,3 +81,41 @@
     bedchamber: "A figure much to your liking is painted on it too, alongside some of the slavers you are very familiar with.",
   },
 )>>
+
+<<run new setup.Furniture(
+  'f_wall_good_merchant_revenge_watersport',
+  'placeholder watersport painting',
+  'A painting description. Should describe the painting', 
+  /* value = */ setup.FURNITURE_PRICE_GOOD,
+  setup.furnitureslot.wall,
+  ['good'],
+  {
+    sex: 1,
+    arcane: setup.FURNITURE_SKILL_NORMAL,
+  },
+  {  /* texts */
+    ambience: [
+      'your figure inside the a|rep watches over the ensuing debauchery',
+    ],
+    bedchamber: "The painting is quite beautiful to look at.",
+  },
+)>>
+
+<<run new setup.Furniture(
+  'f_wall_good_merchant_revenge_master',
+  'placeholder legendary merchant revenge painting',
+  'A legendary painting description. Should describe the painting', 
+  /* value = */ setup.FURNITURE_PRICE_MASTER,
+  setup.furnitureslot.wall,
+  ['master'],
+  {
+    sex: 1,
+    arcane: setup.FURNITURE_SKILL_GOOD,
+  },
+  {  /* texts */
+    ambience: [
+      'your figure inside the a|rep watches over the ensuing debauchery',
+    ],
+    bedchamber: "The painting is quite beautiful to look at.",
+  },
+)>>
