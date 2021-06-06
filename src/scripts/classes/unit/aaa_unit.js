@@ -395,17 +395,20 @@ setup.Unit = class Unit extends setup.TwineClass {
   /**
    * TRAITS ARE UNRELIABLE here, due to being called when traits are refreshed.
    * Do NOT use trait methods like isMindbroken
+   * 
+   * @typedef {Array<{value: number, title: string}>} ValueBreakdown
+   * 
+   * @returns {ValueBreakdown}
    */
-  getSlaveValue() {
-    var value = setup.SLAVE_BASE_VALUE
-
-    /*
-    // increase value based on equipment
-    var equipment = this.getEquipmentSet()
-    if (equipment) {
-      value += equipment.getValue()
-    }
-    */
+  getSlaveValueBreakdown() {
+    /**
+     * @type {ValueBreakdown}
+     */
+    const result = []
+    result.push({
+      value: setup.SLAVE_BASE_VALUE,
+      title: 'Base value',
+    })
 
     // increase value based on traits. Cannot use computed traits, because computed traits depend on this
     let traits = this.getBaseTraits()
@@ -422,16 +425,43 @@ setup.Unit = class Unit extends setup.TwineClass {
         continue
       }
 
-      value += trait_value
+      if (trait_value) {
+        result.push({
+          value: trait_value,
+          title: trait.rep(),
+        })
+      }
     }
 
     // increase value based on ALL titles
-    var titles = State.variables.titlelist.getAllTitles(this)
-    for (var i = 0; i < titles.length; ++i) {
-      value += titles[i].getSlaveValue()
+    for (const title of State.variables.titlelist.getAllTitles(this)) {
+      const value = title.getSlaveValue()
+      if (value) {
+        result.push({
+          value: value,
+          title: title.rep()
+        })
+      }
+    }
+    return result
+  }
+
+  /**
+   * TRAITS ARE UNRELIABLE here, due to being called when traits are refreshed.
+   * Do NOT use trait methods like isMindbroken
+   * 
+   * @returns {number}
+   */
+  getSlaveValue() {
+    // reset unit value cache
+    if (!State.variables.cache.has('unitvalue', this.key)) {
+      const value = Math.round(this.getSlaveValueBreakdown().map(breakdown => breakdown.value).reduce(
+        (a, b) => a + b, 0
+      ))
+      State.variables.cache.set('unitvalue', this.key, value)
     }
 
-    return Math.max(0, Math.round(value))
+    return State.variables.cache.get('unitvalue', this.key)
   }
 
   getSluttinessLimit() {
@@ -619,6 +649,10 @@ setup.Unit = class Unit extends setup.TwineClass {
   resetCache() {
     this.resetSpeech()
     this.resetTraitMapCache()
+
+    // reset unit value cache
+    State.variables.cache.clear('unitvalue', this.key)
+
     State.variables.unitimage.resetImage(this)
   }
 

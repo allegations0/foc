@@ -1,4 +1,4 @@
-import { menuItemExtras, menuItemText, menuItemTitle } from "../../ui/menu"
+import { menuItemAction, menuItemExtras, menuItemText, menuItemTitle } from "../../ui/menu"
 import { getRosterListMenuItems } from "../roster/rosterlist"
 import { domCardNameBold } from "../util/cardnamerep"
 
@@ -104,8 +104,16 @@ function unitNameActionMenus(unit) {
     }))
   }
 
-  menus.push(menuItemText({
-    text: html`<span data-tooltip="This is the unit's value. It has little effect on slavers, but for slaves, this is roughly how much they are worth when being sold.">${setup.DOM.Util.money(unit.getSlaveValue())}</span>`
+  menus.push(menuItemAction({
+    text: html`${setup.DOM.Util.money(unit.getSlaveValue())}`,
+    tooltip: `This is the unit's value. Click for more information`,
+    is_no_close: true,
+    callback: () => {
+      setup.Dialogs.open({
+        title: "Unit value",
+        content: setup.DOM.Card.unitvalue(unit, /* hide actions = */ true),
+      })
+    }
   }))
 
   if (State.variables.gMenuVisible) {

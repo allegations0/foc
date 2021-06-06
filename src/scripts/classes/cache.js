@@ -18,14 +18,22 @@ setup.Cache = class Cache extends setup.TwineClass {
   }
 
   /**
+   * @param {string} menu 
+   * @param {*} key 
+   * @returns {boolean}
+   */
+  has(menu, key) {
+    return (menu in this.cache && key in this.cache[menu])
+  }
+
+  /**
    * Gets a cached value
    * @param {string} menu 
    * @param {any} key 
    * @returns {any}
    */
   get(menu, key) {
-    if (!(menu in this.cache)) return null
-    if (!(key in this.cache[menu])) return null
+    if (!this.has(menu, key)) return null
     return this.cache[menu][key]
   }
 
