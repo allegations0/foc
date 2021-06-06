@@ -4,6 +4,10 @@
 
 ### v1.7.1.x
 
+v1.7.1.8:
+
+  - Fix broken skill focus display.
+
 v1.7.1.7:
 
   - Leopold Pavo lore
