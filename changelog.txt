@@ -4,6 +4,12 @@
 
 ### v1.7.1.x
 
+v1.7.1.9:
+
+  - Updated download links in various places
+  - Add actors to quests that are missing them in backwards compat
+  - Fixed extra "pert smart" critical for blacksmith orders
+
 v1.7.1.8:
 
   - Fix broken skill focus display.
