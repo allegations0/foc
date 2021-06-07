@@ -10,3 +10,10 @@ setup.debugPrintRoomLocations = function () {
     }
   }
 }
+
+/**
+ * @returns {setup.Unit}
+ */
+setup.generateAnyUnit = function () {
+  return setup.unitgroup.all.getUnit()
+}

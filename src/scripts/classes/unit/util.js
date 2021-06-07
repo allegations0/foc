@@ -4,7 +4,7 @@
  * @returns {setup.Unit}
  */
 export function createLevelOneUnitCopy(unit) {
-  const created = setup.unitgroup.all.getUnit()
+  const created = setup.generateAnyUnit()
   const replace_over = [
     'first_name',
     'surname',

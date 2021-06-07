@@ -150,9 +150,9 @@ setup.Interaction = class Interaction extends ContentTemplate {
     }
     if (!unit) {
       // force
-      unit = setup.unitgroup.all.getUnit()
+      unit = setup.generateAnyUnit()
       State.variables.company.player.addUnit(unit, setup.job.slave)
-      var unit2 = setup.unitgroup.all.getUnit()
+      var unit2 = setup.generateAnyUnit()
       State.variables.company.player.addUnit(unit2, setup.job.slave)
 
       var bc = State.variables.bedchamberlist.newBedchamber()

@@ -148,25 +148,6 @@ setup.BackwardsCompat.upgradeSave = function (sv) {
       }
     }
 
-    /* quests that gain additional actor */
-    const quest_change = [
-      ['damsel_in_distress_save', [1, 6, 5, 6]],
-    ]
-    if (sv.questinstance) {
-      for (const [template_key, version] of quest_change) {
-        if (isOlderThan(saveVersion.map(a => +a), version)) {
-          const keys = Object.keys(sv.questinstance).filter(key => sv.questinstance[key].quest_template_key == template_key)
-          if (keys.length) {
-            console.log(`Removing quest ${template_key}`)
-            for (const ikey of keys) {
-              delete sv.questinstance[ikey]
-            }
-            sv.company.player.quest_keys = sv.company.player.quest_keys.filter(k => !keys.includes(k.toString()))
-          }
-        }
-      }
-    }
-
     /* last obtained negative title. v1.6.5.9 */
     if (sv.titlelist && !sv.titlelist.last_obtained_negative) {
       sv.titlelist.last_obtained_negative = {}
@@ -225,6 +206,18 @@ setup.updatePostProcess = function () {
       if (!Object.values(State.variables.company).filter(company => company.template_key == template.key).length) {
         console.log(`Creating new company: ${template.key}`)
         new setup.Company(template.key, template)
+      }
+    }
+  }
+
+  /* Add actors to quests whose actors change */
+  {
+    for (const quest_instance of Object.values(State.variables.questinstance)) {
+      for (const actor_key in quest_instance.getTemplate().getActorUnitGroups()) {
+        if (!quest_instance.getActorUnit(actor_key)) {
+          console.log(`Adding actor ${actor_key} to existing quest ${quest_instance.getName()}`)
+          quest_instance.actor_unit_key_map[actor_key] = setup.generateAnyUnit().key
+        }
       }
     }
   }
