@@ -70,8 +70,6 @@ setup.trait.training_oral_basic,
 setup.trait.training_masochist_basic,
 setup.trait.vagina_tight,
 setup.trait.anus_tight,
-setup.trait.vagina_loose,
-setup.trait.anus_loose,
 setup.trait.face_attractive,
 setup.trait.per_lustful
 ], 2, 0, 0),
@@ -94,12 +92,12 @@ setup.rarity.uncommon, /* Rarity */
 I'm looking for an...employee with special qualities. I understand you can help me obtain them?
 <</dialogue>>
 
-<p>The late morning finds you in your office, bored and with little to do except paperwork that you're putting off until at least this afternoon. The day is overcast and cloudy, and with nothing else to do you 
+<p>The late morning finds you in your office, bored and with little to do except paperwork that you're putting off until at least this afternoon. The day is overcast and cloudy, and with nothing else to do you
 <<set _eq = $unit.player.getGenitalCovering()>>
 <<if _eq>>
-  <<ustripverb $unit.player _eq>> revealing 
+  <<ustripverb $unit.player _eq>> revealing
 <<else>>
-  reach down to play with 
+  reach down to play with
 <</if>>
 
 your <<ugenital $unit.player>>.

@@ -121,7 +121,7 @@ setup.qdiff.normal35, /* difficulty */
         <p>
             <<Rep $g.scholar>>,
             <<if $g.scholar.isHasTrait('per_attentive')>>
-                being the attentive <<urace $g.slaver>>,
+                being the attentive <<urace $g.scholar>>,
             <<else>>
                 by pure chance,
             <</if>>
@@ -180,7 +180,7 @@ setup.qdiff.normal35, /* difficulty */
                     <<set $g.o = $g.scholar>>
                 <</if>>
                 <<rep $g.o>>
-                for the desceration...
+                for the desecration...
                 <<run setup.qc.Blessing('unit', 1, null, true).apply(setup.costUnitHelper($g.o))>>
             <</if>>
         <</if>>

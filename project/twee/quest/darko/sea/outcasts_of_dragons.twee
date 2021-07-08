@@ -173,7 +173,7 @@ returned home, but after sustaining heavy injuries.
 
 <p>
 <<Rep $g.informer>> managed to track the dragonkin to a remote island in the
-<<lore region_sea>>. Once there, <<rep $g.tamer1>> and <<utheirrel $g.tamer1 $g.tamer>>
+<<lore region_sea>>. Once there, <<rep $g.tamer1>> and <<utheirrel $g.tamer1 $g.tamer2>>
 <<rep $g.tamer2>> fought <<uadv $g.tamer1>> against the exiled dragonkin.
 But even with the sheer advantage of number, your slavers were
 no match for the mighty dragonkin. They were incinerated by the
