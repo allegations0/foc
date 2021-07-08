@@ -4,6 +4,10 @@
 
 ### v1.7.1.x
 
+v1.7.1.10
+
+ - Grammar fix -kins to -kin suffix as kin is already plural. Thanks to Elannil
+
 v1.7.1.9:
 
   - Updated download links in various places
