@@ -101,7 +101,7 @@
 <<run new setup.ItemNotUsable({
   key: 'potion_portal',
   name: 'Potion of Portal-Shaping',
-  description: "The content of this potion rise and fall, as if perpetually absorbed and expulsed by a tiny portal within. With the right technology, can be used in a procedure to restore anus or vagina to almost virgin-like tightness. Required for building and upgrading <<rep setup.buildingtemplate.portalindoors>> or <<rep setup.buildingtemplate.portaloutdoors>>.",
+  description: "The contents of this potion rise and fall, as if perpetually absorbed and expulsed by a tiny portal within. With the right technology, can be used to create portals for your fort. Required for building and upgrading <<rep setup.buildingtemplate.portalindoors>> or <<rep setup.buildingtemplate.portaloutdoors>>.",
   value: 0,   /* cannot be sold */
   tags: [],
 })>>
