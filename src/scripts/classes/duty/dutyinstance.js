@@ -33,6 +33,18 @@ setup.DutyInstance = class DutyInstance extends setup.TwineClass {
   }
 
   /**
+   * @param {setup.Unit} [unit]
+   */
+  resetCache(unit) {
+    unit.resetCache()
+    if (this.getTemplate() == setup.dutytemplate.viceleader) {
+      State.variables.unit.player.resetCache()
+    } else if (this instanceof setup.DutyInstanceBedchamberSlave) {
+      this.getBedchamber().getSlaver().resetCache()
+    }
+  }
+
+  /**
    * @returns {string}
    */
   getName() {
@@ -202,6 +214,8 @@ setup.DutyInstance = class DutyInstance extends setup.TwineClass {
     unit.duty_key = this.key
 
     this.getTemplate().onAssign(this, unit)
+
+    this.resetCache(unit)
   }
 
   unassignUnit() {
@@ -211,6 +225,8 @@ setup.DutyInstance = class DutyInstance extends setup.TwineClass {
 
     this.unit_key = null
     unit.duty_key = null
+
+    this.resetCache(unit)
   }
 
   advanceWeek() {

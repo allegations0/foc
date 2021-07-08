@@ -271,40 +271,41 @@ setup.qc.Favor('kobold', 50)
             Your slavers did not get paid a single penny for their charitable efforts, but words quickly spread about the good deeds in the city of <<lore location_drak_xoth>>.
             Still, it's nowhere near enough to compensate for the time lost, but good deed is its own reward no?
         </p>
-    <</if>>
-    <p>
-        As expected, the agency is a complete scam, designed to lure desperate kobolds to be converted to slaves.
-        Once the kobolds are inside and secure, all pretense were dropped. The kobolds were knocked out, before being stripped and measured for their values.
-        Meanwhile, your slavers were rewarded for a job well done with
+    <<else>>
+        <p>
+            As expected, the agency is a complete scam, designed to lure desperate kobolds to be converted to slaves.
+            Once the kobolds are inside and secure, all pretense were dropped. The kobolds were knocked out, before being stripped and measured for their values.
+            Meanwhile, your slavers were rewarded for a job well done with
 
-        <<if $gQuest.getSeed() % 4 == 0>>
-            <<if $gOutcome == 'crit'>>
-                two of the kobolds.
-            <<else>>
-                one of the kobolds.
+            <<if $gQuest.getSeed() % 4 == 0>>
+                <<if $gOutcome == 'crit'>>
+                    two of the kobolds.
+                <<else>>
+                    one of the kobolds.
+                <</if>>
+                <<Rep $g.intern1>> picked
+                <<if $g.kobold1.isHasTrait('per_slow')>>
+                    a kobold whose mind isn't particularly bright, perfect as a slave.
+                <<elseif $g.kobold1.isHasTrait('per_sexaddict')>>
+                    a kobold that got way too addicted to sex.
+                <<else>>
+                    a kobold who was just looking for a job.
+                <</if>>
+            <<elseif $gQuest.getSeed() % 4 == 1>>
+                <<if $gOutcome == 'crit'>>
+                    a large bag of gold.
+                <<else>>
+                    a bag of gold.
+                <</if>>
+            <<elseif $gQuest.getSeed() % 4 == 2>>
+                <<if $gOutcome == 'crit'>>
+                    a couple of slaving apparatus, as well as a piece of dwarven equipment found in one of the victim kobolds.
+                <<else>>
+                    a couple of slaving apparatus.
+                <</if>>
             <</if>>
-            <<Rep $g.intern1>> picked
-            <<if $g.kobold1.isHasTrait('per_slow')>>
-                a kobold whose mind isn't particularly bright, perfect as a slave.
-            <<elseif $g.kobold1.isHasTrait('per_sexaddict')>>
-                a kobold that got way too addicted to sex.
-            <<else>>
-                a kobold who was just looking for a job.
-            <</if>>
-        <<elseif $gQuest.getSeed() % 4 == 1>>
-            <<if $gOutcome == 'crit'>>
-                a large bag of gold.
-            <<else>>
-                a bag of gold.
-            <</if>>
-        <<elseif $gQuest.getSeed() % 4 == 2>>
-            <<if $gOutcome == 'crit'>>
-                a couple of slaving apparatus, as well as a piece of dwarven equipment found in one of the victim kobolds.
-            <<else>>
-                a couple of slaving apparatus.
-            <</if>>
-        <</if>>
-    </p>
+        </p>
+    <</if>>
 
 <</if>>
 

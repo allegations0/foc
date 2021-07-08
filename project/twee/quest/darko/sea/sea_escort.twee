@@ -168,7 +168,7 @@ this job, however, you're not sure that <<their $g.merc>> impression about your 
 <<else>>
 
 <p>
-The exotic species living across the seas fetch for a wonderful price in the continent of <<lore continent_main>>, and as a result many slaver ships are abound in the seas.
+The exotic species living across the seas fetch for a wonderful price in the continent of <<lore geo_mestia>>, and as a result many slaver ships are abound in the seas.
 Your slavers had the misfortune of encountering one such ship, but fortunately,
 <<yourrep $g.guard1>> and <<utheirrel $g.guard1 $g.guard2>> were quite good at their job.
 When the slaver ship decided to board the merchant ship your slavers were guarding,

@@ -68,7 +68,7 @@ some fresh villagers.
 
 :: QuestHumanVsWereOffenseCrit [nobr]
 
-<<if $g.a.isMale()>>
+<<if $g.target.isMale()>>
 <<else>>
   <<questimage "human_vs_were_offense_female.jpg">>
 <</if>>

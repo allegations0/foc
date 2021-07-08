@@ -459,7 +459,7 @@ It takes just over a week for your hired ship to make it to
         <</if>>
 
     <<elseif _location == "shipwrecks">>
-        a rocky stretch of ocean running along a coastline of cliffs and jungles. Large waves continually battered up against the rocks, and frequently battered ships up into those same rocks. Still, it was one of the only known trade routes to the distant land of <<lore continent_cathay>>, and a ship going missing here would not be suspicious. You just don't want it to be yours.
+        a rocky stretch of ocean running along a coastline of cliffs and jungles. Large waves continually battered up against the rocks, and frequently battered ships up into those same rocks. Still, it was one of the only known trade routes to the distant land of <<lore geo_cathay>>, and a ship going missing here would not be suspicious. You just don't want it to be yours.
 
         <<if $gOutcome == 'crit'>>
             <p>
@@ -790,7 +790,7 @@ It takes just over a week for your hired ship to make it to
         <</if>>
 
     <<elseif _location == "shipwrecks">>
-        a rocky stretch of ocean running along a coastline of cliffs and jungles. Large waves continually battered up against the rocks, and frequently battered ships up into those same rocks. It was, unfortunately, one of the only known trade routes to the distant land of <<lore continent_cathay>>, and a ship going missing there would not be suspicious.
+        a rocky stretch of ocean running along a coastline of cliffs and jungles. Large waves continually battered up against the rocks, and frequently battered ships up into those same rocks. It was, unfortunately, one of the only known trade routes to the distant land of <<lore geo_cathay>>, and a ship going missing there would not be suspicious.
 
         <<if $gOutcome == 'crit'>>
             <p>

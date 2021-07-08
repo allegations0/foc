@@ -172,7 +172,7 @@
 <<run new setup.ItemUnitUsable({
   key: 'potion_purity',
   name: 'Potion of Purity',
-  description: 'Grant a unit one stack of Blessing of Purity, which can prevent purity',
+  description: 'Grant a unit one stack of Blessing of Purity, which can prevent corruption',
   value: 5000,   /* value */
   unit_restrictions: [ /* restrictions */
     setup.qres.NoTrait(setup.trait.blessing_purity8),
@@ -224,6 +224,21 @@
   ],
   effects: [ /* effects */
     setup.qc.Blessing('unit', 1, setup.trait.blessing_virginity8),
+  ],
+  tags: [],
+})>>
+
+
+<<run new setup.ItemUnitUsable({
+  key: 'potion_wolf',
+  name: 'Potion of Wolf',
+  description: 'Grant a unit one stack of Blessing of Wolf, which can prevent unit from becoming submissive',
+  value: 5000,   /* value */
+  unit_restrictions: [ /* restrictions */
+    setup.qres.NoTrait(setup.trait.blessing_wolf8),
+  ],
+  effects: [ /* effects */
+    setup.qc.Blessing('unit', 1, setup.trait.blessing_wolf8),
   ],
   tags: [],
 })>>

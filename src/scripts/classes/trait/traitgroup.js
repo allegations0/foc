@@ -6,15 +6,15 @@
 
 // tags is shorthand to add the same tag to all traits in this group
 
-// isNotOrdered = true means that the trait does not have an order
-// e.g., gender is isNotOrdered.
+// is_not_ordered = true means that the trait does not have an order
+// e.g., gender is is_not_ordered.
 setup.TraitGroup = class TraitGroup extends setup.TwineClass {
 
   static keygen = 1
 
-  constructor(trait_list, tags, isNotOrdered) {
+  constructor(trait_list, tags, is_not_ordered) {
     super()
-    
+
     this.key = setup.TraitGroup.keygen++
 
     var nullcnt = 0
@@ -37,10 +37,10 @@ setup.TraitGroup = class TraitGroup extends setup.TwineClass {
     }
     if (nullcnt > 1) throw new Error(`Too many nulls for ${tags}. Did you forgot to add new to the trait?`)
 
-    if (isNotOrdered) {
-      this.isNotOrdered = true
+    if (is_not_ordered) {
+      this.is_not_ordered = true
     } else {
-      this.isNotOrdered = false
+      this.is_not_ordered = false
     }
 
     if (this.key in setup.traitgroup) throw new Error(`${this.key} duplicated on trait group`)
@@ -49,7 +49,7 @@ setup.TraitGroup = class TraitGroup extends setup.TwineClass {
 
 
   isOrdered() {
-    return !this.isNotOrdered
+    return !this.is_not_ordered
   }
 
 
@@ -58,7 +58,7 @@ setup.TraitGroup = class TraitGroup extends setup.TwineClass {
    * @returns {number}
    */
   _getTraitIndex(trait) {
-    if (this.isNotOrdered) throw new Error(`trait group is unordered index`)
+    if (this.is_not_ordered) throw new Error(`trait group is unordered index`)
 
     var all_traits = this.getTraits()
     for (var i = 0; i < all_traits.length; ++i) {
@@ -77,7 +77,7 @@ setup.TraitGroup = class TraitGroup extends setup.TwineClass {
     // if unit_trait is after the 0 position, then try to increase trait up to unit_trait
     // otherwise, try to decrease trait up to unit_trait
 
-    if (this.isNotOrdered) throw new Error(`trait group is unordered`)
+    if (this.is_not_ordered) throw new Error(`trait group is unordered`)
 
     // find the existing trait
     var existing_trait = null
@@ -169,7 +169,7 @@ setup.TraitGroup = class TraitGroup extends setup.TwineClass {
     // otherwise the opposite
 
     // if is_opposite is given, then direction is reversed.
-    if (this.isNotOrdered) return [trait]
+    if (this.is_not_ordered) return [trait]
 
     var position = this._getTraitIndex(trait)
     var nullposition = this._getTraitIndex(null)

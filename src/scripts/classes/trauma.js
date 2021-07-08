@@ -101,16 +101,22 @@ setup.Trauma = class Trauma extends setup.TwineClass {
     unit.resetCache()
   }
 
-  // return a random skill, weighted by unit's base skills.
+  /**
+   * return a random skill, weighted by unit's base skills.
+   * 
+   * @param {setup.Unit} unit 
+   * @returns {setup.Skill}
+   */
   _unitSkillSampleWeighted(unit) {
-    var skills = unit.getSkills(/* is base only = */ true)
-    var weighted = []
+    const skills = unit.getSkills(/* is base only = */ true)
+    /**
+     * @type {Array<[setup.Skill, number]>}
+     */
+    const weighted = []
     for (var i = 0; i < skills.length; ++i) {
       weighted.push([setup.skill[i], skills[i]])
     }
-    setup.rng.normalizeChanceArray(weighted)
-    var sampled = setup.rng.sampleArray(weighted)
-    return sampled
+    return setup.rng.sampleArray(weighted, /* normalize = */ true)
   }
 
   // randomly traumatize unit

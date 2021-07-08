@@ -501,35 +501,36 @@ setup.DebugInit.debugModeInit = function () {
     console.log('duty unit')
     sv.dutylist.getDuty('doctor').assignUnit(units[8])
 
-    const slave_entertain = setup.unitgroup.all.getUnit()
+    const slave_entertain = setup.generateAnyUnit()
     sv.company.player.addUnit(slave_entertain, setup.job.slave)
     slave_entertain.addTrait(setup.trait.training_obedience_master, null, true)
     sv.dutylist.getDuty('entertainmentslave').assignUnit(slave_entertain)
 
     /* Injure slaver and slave */
     console.log('injuries')
-    const injured_slaver = setup.unitgroup.all.getUnit()
+    const injured_slaver = setup.generateAnyUnit()
     sv.company.player.addUnit(injured_slaver, setup.job.slaver)
     sv.hospital.injureUnit(injured_slaver, 3)
 
-    const injured_slave = setup.unitgroup.all.getUnit()
+    const injured_slave = setup.generateAnyUnit()
     sv.company.player.addUnit(injured_slave, setup.job.slave)
     sv.hospital.injureUnit(injured_slave, 1)
 
     /* Missing units */
     /* Lovers with a missing unit */
     console.log('missing units')
-    const missing_slaver = setup.unitgroup.all.getUnit()
+    const missing_slaver = setup.generateAnyUnit()
     sv.company.player.addUnit(missing_slaver, setup.job.slaver)
     sv.friendship.adjustFriendship(missing_slaver, units[12], 1000)
     sv.friendship.hookup(missing_slaver, units[12])
     setup.qc.MissingUnit('unit').apply(setup.costUnitHelper(missing_slaver))
 
-    const missing_slave = setup.unitgroup.all.getUnit()
+    const missing_slave = setup.generateAnyUnit()
     sv.company.player.addUnit(missing_slave, setup.job.slave)
     setup.qc.MissingUnit('unit').apply(setup.costUnitHelper(missing_slave))
 
     /* Retired slaver */
+    console.log('retired slaver')
     units[13].weeks_with_you = setup.TRAIT_SENIOR_THRESHOLD + 3
     State.variables.retiredlist.retire(units[13])
   }
@@ -538,28 +539,28 @@ setup.DebugInit.debugModeInit = function () {
   {
     console.log('market units')
     new setup.MarketObject(
-      setup.unitgroup.all.getUnit(),
+      setup.generateAnyUnit(),
       0,  /* price */
       4,  /* expires in */
       State.variables.market.slavermarket,
       'debug',
     )
     new setup.MarketObject(
-      setup.unitgroup.all.getUnit(),
+      setup.generateAnyUnit(),
       5000,  /* price */
       1,  /* expires in */
       State.variables.market.slavermarket,
       'debug',
     )
     new setup.MarketObject(
-      setup.unitgroup.all.getUnit(),
+      setup.generateAnyUnit(),
       0,  /* price */
       1,  /* expires in */
       State.variables.market.slavemarket,
       'debug',
     )
     new setup.MarketObject(
-      setup.unitgroup.all.getUnit(),
+      setup.generateAnyUnit(),
       5000,  /* price */
       4,  /* expires in */
       State.variables.market.slavemarket,

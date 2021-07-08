@@ -121,6 +121,12 @@
       url: "https://www.deviantart.com/dungeon-spirit/art/Gift-Ice-Blue-Eyes-812565424",
       license: "CC-BY-NC-ND 3.0",
     },
+    21: {
+      title: "Arjuna",
+      artist: "KiraNi",
+      url: "https://www.newgrounds.com/art/view/kirani/arjuna",
+      license: "CC-BY 3.0",
+    },
   }
 
 }());

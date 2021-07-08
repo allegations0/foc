@@ -82,6 +82,7 @@ setup.DOM.Menu.Settings.Debug.activity_debug_one = function (template, is_debug_
   for (const speech of Object.values(setup.speech)) {
     for (const [actor, unit] of activity.getActorsList()) {
       unit.speech_key = speech.key
+      unit.is_speech_reset = false
     }
     fragments.push(html`
       <div>

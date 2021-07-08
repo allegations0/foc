@@ -21,7 +21,6 @@ null, /* key */
   setup.trait.muscle_strong,
   setup.trait.muscle_verystrong,
   setup.trait.muscle_extremelystrong,
-  setup.trait.per_smart,
   setup.trait.tough_nimble,
   setup.trait.per_gregarious,
   setup.trait.skill_ambidextrous,

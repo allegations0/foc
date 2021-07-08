@@ -241,7 +241,7 @@ setup.qc.MissingUnit('healer')
 <</if>>
 
 <p>
-    The voyage started out with fresh winds and sunshine as _ship cut through the coastal waters along the southern coast of <<lore continent_main>>. <<Rep $g.lookout>> climbed up the rigging to the crow's nest, enjoying the view as the coast slipped along the starboard side of the ship, while <<rep $g.sailor>> pitched in with the crew,
+    The voyage started out with fresh winds and sunshine as _ship cut through the coastal waters along the southern coast of <<lore geo_mestia>>. <<Rep $g.lookout>> climbed up the rigging to the crow's nest, enjoying the view as the coast slipped along the starboard side of the ship, while <<rep $g.sailor>> pitched in with the crew,
     <<if $g.sailor.isHasAnyTraitExact(["bg_pirate", "bg_seaman"])>>
         happy to be back on the seas once more.
     <<else>>

@@ -20,7 +20,7 @@
 :: CompanyTemplateRoyal [nobr]
 
 <p>
-The royal court, headed by King Gaius the Just, who rules over the
+The royal court, headed by <<lore person_gaius>>, who rules over the
 <<rep $company.humankingdom>>.
 While the direct members of the ruling families are known to be upstanding people,
 many other members of the court are less so, and may be convinced that your company

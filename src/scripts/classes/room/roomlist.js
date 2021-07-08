@@ -148,5 +148,10 @@ setup.RoomList = class RoomList extends setup.TwineClass {
     }
 
     this.cached_skill_bonuses = skill_bonuses
+
+    // reset cache on all units
+    for (const unit of State.variables.company.player.getUnits({})) {
+      unit.resetCache()
+    }
   }
 }

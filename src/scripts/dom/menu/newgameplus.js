@@ -32,7 +32,7 @@ setup.DOM.Menu.newgameplus = function () {
       you traveling around the land.
       Or if you are feeling particularly crazy, you could band up with a few of your slavers
       to start anew and create yet another slaving company in the continent of
-      ${setup.lore.continent_main.rep()}...
+      ${setup.lore.geo_mestia.rep()}...
     </p>
 
     <p>
@@ -150,8 +150,9 @@ function newGamePlusChooseUnitsFragment(is_new_pc, selected_units = []) {
   )
   candidates = candidates.filter(unit => {
     if (unit.isYou()) return false
-    if (unit.isYourCompany() && !unit.isAvailable()) return false
-    if (unit.isRetired() && unit.isEngaged()) return false
+    // if (unit.isYourCompany() && !unit.isAvailable()) return false
+    // if (unit.isRetired() && unit.isEngaged()) return false
+    if (unit.isHasTrait(setup.trait.will_indomitable)) return false
     if (selected_units.includes(unit)) return false
     if (selected_units.filter(u => u.isSlaver()).length >= slaver_limit && unit.isSlaver()) return false
     if (selected_units.filter(u => u.isSlave()).length >= slaves_limit && unit.isSlave()) return false

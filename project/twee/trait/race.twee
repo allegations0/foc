@@ -44,7 +44,7 @@
   new setup.Trait(
     'race_lizardkin',
     'lizardkin',
-    'A fully scaley human-like species. Most of the member of these race are found outside of <<lore continent_main>>. It is said that these species descent directly from the dragons of old.',
+    'A fully scaley human-like species. Most of the member of these race are found outside of <<lore geo_mestia>>. It is said that these species descent directly from the dragons of old.',
     0,
     {},
     [],

@@ -62,3 +62,5 @@ interface DialogueRaw {
   actor: string
   texts: DialogueText | string[]
 }
+
+interface Skills extends Array<number> { }

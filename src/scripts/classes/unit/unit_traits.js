@@ -6,7 +6,7 @@
  */
 setup.Unit.prototype.addTrait = function (trait, trait_group, is_replace) {
   // effectively, give trait to unit.
-  // there are caveats. First, if trait is from a trait group with isNotOrdered = false,
+  // there are caveats. First, if trait is from a trait group with is_not_ordered = false,
   // then, will either increase or decrease the trait "value":
   // if trait is a positive trait, then will increase it. Otherwise, will decrease it.
   // otherwise, will replace trait.
@@ -16,7 +16,7 @@ setup.Unit.prototype.addTrait = function (trait, trait_group, is_replace) {
   // trait can be null, but trait_group must be non null in this case.
   // e.g., if you want to neutralize muscle traitgroups
 
-  // is_replace=True means that forces the replace behavior, even when isNotOrdered = true
+  // is_replace=True means that forces the replace behavior, even when is_not_ordered = true
 
   // return the newly added trait, if any.
 
@@ -37,7 +37,7 @@ setup.Unit.prototype.addTrait = function (trait, trait_group, is_replace) {
 
   // get the trait
   var new_trait = trait
-  if (trait_group && !is_replace && !trait_group.isNotOrdered) {
+  if (trait_group && !is_replace && trait_group.isOrdered()) {
     new_trait = trait_group.computeResultingTrait(this, trait)
   }
 
@@ -79,6 +79,39 @@ setup.Unit.prototype.addTrait = function (trait, trait_group, is_replace) {
           setup.notify(`a|Reps Blessing of Virginity prevents a|their ${vagina} from being gaped`, { a: this })
         }
         return null
+      }
+    }
+  }
+
+  // check for blessing of wolf and curse of lamb
+  {
+    const sub = setup.trait.per_submissive
+    const dom = setup.trait.per_dominant
+    if (trait_group && [sub, dom].includes(trait_group.getTraits()[0])) {
+      if (
+        (new_trait == sub && !this.isHasTrait(sub)) ||
+        (!new_trait && this.isHasTrait(dom))
+      ) {
+        // gaining sub or losing dom
+        if (this.isHasTrait(setup.trait.blessing_wolf1)) {
+          this.decreaseTrait(setup.trait.blessing_wolf8.getTraitGroup())
+          if (this.isYourCompany()) {
+            setup.notify(`a|Reps Blessing of Wolf prevents a|them from becoming more submissive`, { a: this })
+          }
+          return null
+        }
+      } else if (
+        (new_trait == dom && !this.isHasTrait(dom)) ||
+        (!new_trait && this.isHasTrait(sub))
+      ) {
+        // losing sub or gaining dom
+        if (this.isHasTrait(setup.trait.curse_lamb1)) {
+          this.decreaseTrait(setup.trait.curse_lamb8.getTraitGroup())
+          if (this.isYourCompany()) {
+            setup.notify(`a|Reps Curse of Lamb prevents a|them from becoming more dominant`, { a: this })
+          }
+          return null
+        }
       }
     }
   }
@@ -746,6 +779,9 @@ setup.Unit.prototype.corruptPermanently = function () {
 }
 
 setup.Unit.prototype.getSpeech = function () {
+  if (this.is_speech_reset) {
+    this.recomputeSpeech()
+  }
   return setup.speech[this.speech_key]
 }
 
@@ -761,6 +797,10 @@ setup.Unit.prototype.getSpeechChances = function () {
 
 // recompute a unit's speech.
 setup.Unit.prototype.resetSpeech = function () {
+  this.is_speech_reset = true
+}
+
+setup.Unit.prototype.recomputeSpeech = function () {
   var scores = this.getSpeechChances()
   var arr = Object.values(scores)
   var maxscore = Math.max(...arr)
@@ -779,6 +819,7 @@ setup.Unit.prototype.resetSpeech = function () {
     }
   }
   if (!this.speech_key) throw new Error(`??????`)
+  this.is_speech_reset = false
 }
 
 setup.Unit.prototype.isAllowedTalk = function () {

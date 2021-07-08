@@ -147,7 +147,7 @@ you've wrote one final quest for <<them _u>>...
 
 <p>
 You clear your throat, before you begin your elaborate tale.
-In a nameless land, far, far to the south of <<lore continent_main>>,
+In a nameless land, far, far to the south of <<lore geo_mestia>>,
 live a <<princess $g.prince>>
 of unimaginable
 <<if $g.prince.isFemale()>>

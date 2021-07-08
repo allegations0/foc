@@ -3,6 +3,11 @@
 // (to make type checker aware of them, and not complain)
 // TODO: find a more maintenable way to handle this...
 
+interface SkillBreakdown {
+  value: number,
+  title: string,
+}
+
 declare namespace setup {
   interface Unit {
     // "unit_exp.js"
@@ -87,11 +92,11 @@ declare namespace setup {
 
     // "unit_rep.js"
     skill_focus_keys: number[]
-    getSkillModifiers(is_base_only?)
-    getSkillAdditives(is_base_only?)
-    getSkillsBase(ignore_skill_boost?)
-    getSkillsAdd(is_base_only?)
-    getSkills(is_base_only?)
+    getSkillModifiers(is_base_only?): Skills
+    getSkillAdditives(is_base_only?): Skills
+    getSkillsBase(ignore_skill_boost?): Skills
+    getSkillsAdd(is_base_only?): Skills
+    getSkills(is_base_only?): Skills
     getSkill(skill)
     setSkillFocus(index, skill)
     getRandomSkillIncreases()
@@ -99,6 +104,11 @@ declare namespace setup {
     _increaseSkill(skill, amt)
     increaseSkills(skill_gains)
     initSkillFocuses()
+
+    resetSkillCache()
+    getSkillModifiersBreakdown(is_base_only?: boolean): Array<SkillBreakdown[]>
+    getSkillsBaseBreakdown(ignore_skill_boost?: boolean): Array<SkillBreakdown[]>
+    getSkillAdditivesBreakdown(is_base_only?: boolean): Array<SkillBreakdown[]>
 
     // "unit_tag.js"
     getTags(): string[]
@@ -172,6 +182,7 @@ declare namespace setup {
     getSpeech()
     getSpeechChances()
     resetSpeech()
+    recomputeSpeech()
     isCanPhysicallyTalk(): boolean
     isCanTalk(): boolean
     isCanPhysicallyWalk(): boolean

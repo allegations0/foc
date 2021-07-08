@@ -108,6 +108,7 @@ setup.qdiff.hard34, /* difficulty */
   [
     'Quest_the_school_of_hard_knobs2Crit',
     [
+      setup.qc.ItemIfNew(setup.item.lorebook_institute_of_higher_learning),
       setup.qc.Slave('student1', "a|was a nobleman taken from a harsh school", undefined),
       setup.qc.QuestDirect('the_principle_of_the_matter2', {
         headteacher: "headteacher",
@@ -118,6 +119,7 @@ setup.qdiff.hard34, /* difficulty */
   [
     'Quest_the_school_of_hard_knobs2Crit',
     [
+      setup.qc.ItemIfNew(setup.item.lorebook_institute_of_higher_learning),
       setup.qc.Slave('student1', "a|was a nobleman mysteriously broken before your slavers took ", undefined),
       setup.qc.Mindbreak('student1'),
       setup.qc.SetCooldownQuest(null, 20),
@@ -126,12 +128,14 @@ setup.qdiff.hard34, /* difficulty */
   [
     'Quest_the_school_of_hard_knobs2Crit',
     [
+      setup.qc.ItemIfNew(setup.item.lorebook_institute_of_higher_learning),
       setup.qc.SetCooldownQuest(null, 10),
     ],
   ],
   [
     'Quest_the_school_of_hard_knobs2Crit',
     [
+      setup.qc.ItemIfNew(setup.item.lorebook_institute_of_higher_learning),
       setup.qc.Trait('teachersassisstant', setup.trait.per_submissive),
       setup.qc.Trait('teachersass2', setup.trait.per_submissive),
       setup.qc.SetCooldownQuest(null, 10),

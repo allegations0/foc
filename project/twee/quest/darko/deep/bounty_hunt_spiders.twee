@@ -195,6 +195,8 @@ setup.qc.MissingUnit('support')
     <</if>>
 </p>
 
+<<set _unit = setup.selectUnit([$g.fighter1, $g.fighter2, $g.support], {anytrait: ['magic_fire', 'magic_fire_master']})>>
+
 <<if $gOutcome == 'crit' && !_unit>>
     <p>
         Without the aid of fire magic, your slavers had a much harder time than normal to best these critters. But eventually, through pure skill (or so they claimed to you) they managed to prevail after the last of the spiders fell to their weapons. With the giant spiders defeated, the lesser and smallers ones all scattered and fled, and the den was ripe for the looting.

@@ -128,10 +128,10 @@ and I can take a back seat as just a regular contributor :)
 
 ## How to Play the Latest Version of the Game
 
-1. Download this repository (top right button),
+1. Download this repository [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/archive/master/fort-of-chains-master.zip)
 2. Open the `dist/precompiled.html` file in your favorite browser.
-3. Alternatively, you can directly play a somewhat outdated version of
-this game on your browser [here](https://darkofoc.itch.io/fort-of-chains).
+3. Alternatively, you can download a somewhat outdated version of
+this game in [itch.io](https://darkofoc.itch.io/fort-of-chains#download).
 
 If you encounter problems such as images not loading, pleasee see the [F.A.Q](docs/faq.md).
 

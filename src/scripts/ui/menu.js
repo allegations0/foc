@@ -18,11 +18,12 @@
  * @property {boolean} [MenuItemArgs.clickonly] If true, will open on click instead of on hover
  * @property {JQuery<HTMLElement, HTMLElement>[] | (() => JQuery<HTMLElement, HTMLElement>[])} [MenuItemArgs.children]
  * @property {string} [tooltip]
+ * @property {boolean} [is_no_close]
  * 
  * @param {MenuItemArgs} args
  * @returns {JQLite}
  */
-export function menuItem({ text, cssclass, checked, clickonly, callback, children, tooltip }) {
+export function menuItem({ text, cssclass, checked, clickonly, callback, children, tooltip, is_no_close }) {
   let checked_html = ''
   if (checked != undefined) {
     if (checked)
@@ -120,15 +121,17 @@ export function menuItem({ text, cssclass, checked, clickonly, callback, childre
     }
 
     if (callback) {
-      // force-close the menu
-      let elem = ev.target
-      while (elem.parentElement) {
-        if (elem.parentElement.classList.contains('menu')) {
-          // @ts-ignore
-          elem.lastElementChild.style.display = 'none'
-          break
+      if (!is_no_close) {
+        // force-close the menu
+        let elem = ev.target
+        while (elem.parentElement) {
+          if (elem.parentElement.classList.contains('menu')) {
+            // @ts-ignore
+            elem.lastElementChild.style.display = 'none'
+            break
+          }
+          elem = elem.parentElement
         }
-        elem = elem.parentElement
       }
 
       callback()

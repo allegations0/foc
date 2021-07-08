@@ -226,7 +226,7 @@ Well, what is it that you wish for?
     <<elseif _rew == 'luck'>>
     for luck.
     <<else>>
-    for the most dangerous thing in <<lore continent_main>>: power.
+    for the most dangerous thing in <<lore geo_mestia>>: power.
     <</if>>
     <<break>>
   <</if>>
@@ -457,7 +457,7 @@ But strangely enough, there wasn't any noticable change on <<rep $g.a>>...
 <<elseif _rew == 'luck'>>
 
 <p>
-<<Yourrep $g.a>> prays to make <<them $g.a>> the luckiest <<urace $g.a>> on <<lore continent_main>>, and the well obliged.
+<<Yourrep $g.a>> prays to make <<them $g.a>> the luckiest <<urace $g.a>> on <<lore geo_mestia>>, and the well obliged.
 <<Rep $g.a>> a|was showered with blessings of luck, making <<therace $g.a>> almost like a beacon of luck.
 But in exchange the well also peppered <<therace $g.a>> with an equal amount of curses...
 <<run setup.qc.Blessing('a', 8, setup.trait.blessing_luck8).apply($gQuest)>>

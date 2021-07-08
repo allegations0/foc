@@ -194,6 +194,7 @@ setup.Friendship = class Friendship extends setup.TwineClass {
       this.best_friend[unit.key] = maxfrenkey
       this.is_lovers[unit.key] = !!set_as_lover
     }
+    unit.resetCache()
   }
 
   /**
@@ -289,6 +290,9 @@ setup.Friendship = class Friendship extends setup.TwineClass {
     if (new_friendship == 0) {
       delete this.friendship_map[unit.key][target.key]
     }
+
+    unit.resetCache()
+    target.resetCache()
 
     return new_friendship - old_friendship
   }
@@ -460,6 +464,9 @@ setup.Friendship = class Friendship extends setup.TwineClass {
     delete this.is_lovers[lover.key]
     delete this.lover_timer[unit.key]
     delete this.lover_timer[lover.key]
+
+    unit.resetCache()
+    lover.resetCache()
   }
 
   /**
@@ -481,6 +488,9 @@ setup.Friendship = class Friendship extends setup.TwineClass {
         setup.notify(`a|rep and b|rep become <<successtextlite 'lovers'>>...`, { a: unit, b: lover })
       }
     }
+
+    unit.resetCache()
+    lover.resetCache()
   }
 
   /**

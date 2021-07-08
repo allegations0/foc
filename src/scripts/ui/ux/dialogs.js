@@ -12,6 +12,11 @@ setup.Dialogs = {}
  * @param {OpenDialogArgs} options 
  */
 setup.Dialogs.open = function ({ title, classnames, passage, content }) {
+  if (Dialog.isOpen()) {
+    // dialog is already open
+    alert('There is already an open dialog')
+    return
+  }
   return new Promise((resolve, reject) => {
     Dialog.setup(title, classnames)
 

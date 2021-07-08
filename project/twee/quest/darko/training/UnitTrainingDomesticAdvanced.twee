@@ -27,7 +27,7 @@
       ]
     ],
     [
-      'QuestUnitTrainingDomesticAdvancedSuccess',
+      'QuestUnitTrainingDomesticAdvancedCrit',
       [
         setup.qc.Trait('trainee', setup.trait.training_domestic_advanced),
         
@@ -60,12 +60,19 @@ have some fun.
 
 :: QuestUnitTrainingDomesticAdvancedCrit [nobr]
 
+<<if $g.trainee.isMale()>>
+  <<questimage 'unit_training_domestic_advanced_male.jpg'>>
+<<else>>
+<</if>>
+
+<<if $gOutcome == 'crit'>>
+
 <p>
 <<Rep $g.trainee>> trainee|is now a proud slave capable of
 doing mundane work in the least mundane way possible. <<Rep $g.head>> and your slavers also gain a lot of experience from the training.
 </p>
 
-:: QuestUnitTrainingDomesticAdvancedSuccess [nobr]
+<<else>>
 
 <p>
 It was not easy, but through both <<reps $g.trainee>> willingness,
@@ -73,6 +80,8 @@ as well as your slaver's dedications, <<rep $g.trainee>>
 managed to acquire all the necessary skils to graduate from this
 training.
 </p>
+
+<</if>>
 
 :: QuestUnitTrainingDomesticAdvancedFailure [nobr]
 <p>

@@ -187,7 +187,7 @@ setup.qc.Item(setup.item.f_drinktray_normal_pitfight)
 
 :: Quest_southern_isle_pit_fights [nobr]
 <p>
-The land beyond the <<lore region_sea>> holds many culture strange and unusual compared those found in <<lore continent_main>>. Among the many traditions hold there is the annual Southern Isle Pit Fights festival. The festival is a celebration for the bountiful service slaves have rendered towards their owners, and the pinnacle of the festival is the pit fighting competition.
+The land beyond the <<lore region_sea>> holds many culture strange and unusual compared those found in <<lore geo_mestia>>. Among the many traditions hold there is the annual Southern Isle Pit Fights festival. The festival is a celebration for the bountiful service slaves have rendered towards their owners, and the pinnacle of the festival is the pit fighting competition.
 </p>
 
 <p>

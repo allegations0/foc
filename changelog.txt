@@ -4,6 +4,54 @@
 
 ### v1.7.1.x
 
+v1.7.1.9:
+
+  - Updated download links in various places
+  - Add actors to quests that are missing them in backwards compat
+  - Fixed extra "pert smart" critical for blacksmith orders
+
+v1.7.1.8:
+
+  - Fix broken skill focus display.
+
+v1.7.1.7:
+
+  - Leopold Pavo lore
+  - Add Merchant Revenge painting texts (by Matthew Lang)
+  - Fix bedchamber switching not changing unti skills
+
+v1.7.1.6:
+
+  - Skill now cached for performance
+  - Skill breakdown in tooltips.
+  - Unit value now cached for performance
+  - Unit value breakdown
+  - Can start as a winged kobold.
+  - Fix comment on lorebook page.
+  - Fix kobold/drow starting options.
+
+v1.7.1.5:
+
+  - New quests: A Merchant's Revenge: Embarras A Rival (by Matthew Lang) (3 quests, 1 mail)
+  - Refactor Matthew Lang's folders into subfolders
+  - Kobold now has dual fire/earth affinity.
+  - Lore refactored into individual files
+  - New lore type: person lores
+  - New lores: Kurdwisec, Gaius the Just
+  - Lorebook now automatically set it to be prerequisite for its lore
+  - A bunch of new lorebooks
+  - Some text fixes.
+
+v1.7.1.4:
+
+  - New blessing: Blessing of Wolf
+  - New curse: Curse of Lamb
+  - Kobold name credits
+  - Grand hall rename fix added to changelog.
+  - Fort Restoration Awards is made slightly easier.
+  - Busy units can be taken to new game plus now.
+  - More images.
+
 v1.7.1.3:
 
   - Fixed crashing when undo and redo with gOldPassage set to null

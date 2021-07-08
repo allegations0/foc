@@ -97,4 +97,22 @@ from overly large invaders.
 <<run setup.qc.Blessing('you', 1, setup.trait.blessing_virginity8).apply($gQuest)>>
 
 
+<<opt "Something to protect my integrity">>
+
+<p>
+After a whooshing and gestures of hand that are entirely unusual to you, the blessing was complete.
+<<if $unit.player.isSubmissive()>>
+Despite your usually submissive self, you feel awkwardly dominant at the same time,
+<<elseif $unit.player.isDominant()>>
+Your already dominant self feels even more dominant,
+<<else>>
+You feel strong and dominant,
+<</if>>
+the blessing protecting you from succumbing to submissive desires<<if $unit.player.isSubmissive()>>
+even more<</if>>.
+</p>
+
+<<run setup.qc.Blessing('you', 1, setup.trait.blessing_wolf8).apply($gQuest)>>
+
+
 <</choose>>

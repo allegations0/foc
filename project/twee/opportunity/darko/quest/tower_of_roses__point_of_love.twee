@@ -59,7 +59,7 @@ false,  /* must be answered */
 the <<lore region_forest>>, asking <<them _headunit>> to come privately on a full
 moon night to <<their $g.prince>> tower. It seems that <<reps _headunit>>
 efforts have borne fruit, and the <<prince $g.prince>> is now deeply infatuated
-with your slaver. Now you have to decide what to do.
+with <<yourrep _headunit>>. Now you have to decide what to do.
 </p>
 
 <p>

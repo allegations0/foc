@@ -19,6 +19,11 @@ setup.TAG_LORE = {
     title: 'Location',
     description: 'Man-made landmark of the land',
   },
+  person: {
+    type: 'type',
+    title: 'Person',
+    description: 'A person of particular importance',
+  },
   geo: {
     type: 'type',
     title: 'Geo',

@@ -69,6 +69,9 @@ setup.SKILL_BOOST_DECAY_RATE = 0.2
 // Starting skills for units
 setup.DEFAULT_INITIAL_SKILLS = Array(10).fill([7, 12])
 
+// Minimum modifier for skills
+setup.SKILL_MODIFIER_MIN_MULT = -0.9
+
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 /* Money related */

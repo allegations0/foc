@@ -54,7 +54,7 @@ setup.qres.QuestUnique(), ], /* restrictions to generate */
 :: Quest_alchemist_of_the_seven_seas [nobr]
 
 <p>
-Wondrous potions are abound in the <<lore continent_main>> —
+Wondrous potions are abound in the <<lore geo_mestia>> —
 from simple potions that can heal wounds, to complex potions that can
 erase memories or even restore the mind of mindbroken slaves.
 While usually you have to resort to buying

@@ -86,8 +86,10 @@
     /* =========== */
 
     skill_creative: 0.1,
-    magic_earth: 0.05,
-    magic_earth_master: 0.005,
+    magic_earth: 0.03,
+    magic_earth_master: 0.003,
+    magic_fire: 0.03,
+    magic_fire_master: 0.003,
 
     /* =========== */
     /* PHYSICAL */

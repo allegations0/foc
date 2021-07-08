@@ -1,4 +1,4 @@
-import { menuItemExtras, menuItemText, menuItemTitle } from "../../ui/menu"
+import { menuItemAction, menuItemExtras, menuItemText, menuItemTitle } from "../../ui/menu"
 import { getRosterListMenuItems } from "../roster/rosterlist"
 import { domCardNameBold } from "../util/cardnamerep"
 
@@ -33,19 +33,8 @@ setup.DOM.Card.leave = function (unit) {
 function unitNameFragment(unit) {
   const fragments = []
 
-  fragments.push(html`${unit.repBusyState(/* show duty icon = */ true)}`)
-
-  if (unit.isSlaver()) {
-    fragments.push(html`
-        <span data-tooltip="Wage: <<money ${unit.getWage()}>>, Exp: ${unit.getExp()} / ${unit.getExpForNextLevel()}">
-          ${setup.DOM.Util.level(unit.getLevel())}
-        </span>
-      `)
-  } else if (!unit.isSlaveOrInSlaveMarket()) {
-    fragments.push(setup.DOM.Util.level(unit.getLevel()))
-  }
-
   fragments.push(html`
+      ${unit.repBusyState(/* show duty icon = */ true)}
       ${setup.DOM.Card.job(unit.getJob(), /* hide actions = */ true)}
       <span data-tooltip="Full name: <b>${setup.escapeJsString(unit.getFullName())}</b>">
         ${domCardNameBold(unit)}
@@ -59,12 +48,7 @@ function unitNameFragment(unit) {
       `)
   }
 
-  fragments.push(html`
-      ${setup.DOM.Card.injury(unit)}
-    `)
-
   return setup.DOM.create('div', {}, fragments)
-
 }
 
 
@@ -99,13 +83,32 @@ function unitNameActionMenus(unit) {
       focus = html`${setup.DOM.Card.skillFocus(unit)} `
     }
 
+    let lv_text = null
+    if (unit.isSlaver()) {
+      lv_text = html`
+          <span data-tooltip="Wage: <<money ${unit.getWage()}>>, Exp: ${unit.getExp()} / ${unit.getExpForNextLevel()}">
+            ${setup.DOM.Util.level(unit.getLevel())}
+          </span>
+        `
+    } else if (!unit.isSlaveOrInSlaveMarket()) {
+      lv_text = setup.DOM.Util.level(unit.getLevel())
+    }
+
     menus.push(menuItemText({
-      text: html`<span data-tooltip="${title_help}">${focus}${unit.getTitle()}</span>`
+      text: html`<span data-tooltip="${title_help}">${focus}${lv_text}${unit.getTitle()}</span>`
     }))
   }
 
-  menus.push(menuItemText({
-    text: html`<span data-tooltip="This is the unit's value. It has little effect on slavers, but for slaves, this is roughly how much they are worth when being sold.">${setup.DOM.Util.money(unit.getSlaveValue())}</span>`
+  menus.push(menuItemAction({
+    text: html`${setup.DOM.Util.money(unit.getSlaveValue())}`,
+    tooltip: `This is the unit's value. Click for more information`,
+    is_no_close: true,
+    callback: () => {
+      setup.Dialogs.open({
+        title: "Unit value",
+        content: setup.DOM.Card.unitvalue(unit, /* hide actions = */ true),
+      })
+    }
   }))
 
   if (State.variables.gMenuVisible) {

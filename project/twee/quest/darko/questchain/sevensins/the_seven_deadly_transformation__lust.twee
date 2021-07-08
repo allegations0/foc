@@ -47,6 +47,7 @@ setup.qdiff.hard23, /* difficulty */
 [
 'Quest_the_seven_deadly_transformation__lustCrit',
 [
+setup.qc.ItemIfNew(setup.item.lorebook_location_purrloin),
 setup.qc.Outcomes('success'),
 setup.qc.BoonizeRandom('trainer', 4),
 setup.qc.BoonizeRandom('whore1', 4),
@@ -55,16 +56,19 @@ setup.qc.BoonizeRandom('whore2', 4),
 ], [
 'Quest_the_seven_deadly_transformation__lustCrit',
 [
+setup.qc.ItemIfNew(setup.item.lorebook_location_purrloin),
 setup.qc.Trait('fated', setup.trait.training_obedience_basic),
 setup.qc.Trait('fated', setup.trait.training_endurance_basic),
 setup.qc.Trait('fated', setup.trait.eyes_neko), ],
 ], [
 'Quest_the_seven_deadly_transformation__lustCrit',
 [
+setup.qc.ItemIfNew(setup.item.lorebook_location_purrloin),
 ],
 ], [
 'Quest_the_seven_deadly_transformation__lustCrit',
 [
+setup.qc.ItemIfNew(setup.item.lorebook_location_purrloin),
 setup.qc.MoneyCustom(-1500),
 setup.qc.SlaveMarker('whore'), ],
 ], ],

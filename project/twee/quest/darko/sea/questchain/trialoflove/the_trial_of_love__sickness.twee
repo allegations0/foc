@@ -200,7 +200,7 @@ $g.healer>> ventured into the wilds in search for rare ingredients.
 <p>
 The venture was successful, and <<rep $g.healer>> <<uadv $g.healer>>
 collected many wondrous fruits from the jungle, the variants you have never
-encountered in <<lore continent_main>>.
+encountered in <<lore geo_mestia>>.
 
 <<if $g.knight.isHasTrait('bg_scholar') or $g.knight.isHasTrait('bg_wiseman')>>
 It did not take the educated slaver <<rep $g.knight>> long to figure out that
