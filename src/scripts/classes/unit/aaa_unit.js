@@ -653,6 +653,9 @@ setup.Unit = class Unit extends setup.TwineClass {
 
     this.resetSpeech()
     State.variables.unitimage.resetImage(this)
+    delete State.variables.unitimage.image_need_reset[this.key]
+    delete State.variables.unitimage.unit_image_map[this.key]
+    this.resetTraitMapCache()
   }
 
   /**
