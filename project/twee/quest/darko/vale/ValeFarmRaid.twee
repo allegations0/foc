@@ -83,15 +83,15 @@ Your slavers launched a very textbook raid on the farm.
 <<set _agg = setup.selectUnit([$g.raider1, $g.raider2, $g.support], {trait: 'per_aggressive'})>>
 
 <<if _intim>>
-  <<Rep _intim>> used <<their _intim>> intimidation skills to scare off the farmerhands, leaving the farm
+  <<Rep _intim>> used <<their _intim>> intimidation skills to scare off the farmhands, leaving the farm
   empty for the moment.
 
 <<elseif _muscle>>
-  <<Rep _muscle>> used <<their _muscle>> bulging muscles to scare off the farmerhands, leaving the farm
+  <<Rep _muscle>> used <<their _muscle>> bulging muscles to scare off the farmhands, leaving the farm
   empty for the moment.
 
 <<elseif _scary>>
-  <<Rep _scary>> used <<their _scary>> scary face to scare off the farmerhands, leaving the farm
+  <<Rep _scary>> used <<their _scary>> scary face to scare off the farmhands, leaving the farm
   empty for the moment.
 
 <<elseif _cruel>>

@@ -413,7 +413,7 @@ An' a rogue is married to, etc.<br>
 
 <p>He wanted a title, and now he's got two: "fool" and "cuckold." And now he learns the worst of married life in the tender arms of <<rep $g.blushingbride>>.
 <<if $g.blushingbride.isHasTraitExact('per_aggressive')>>She takes out her natural aggression on her husband in a thousand tiny ways.<</if>>
-<<if $g.blushingbride.isHasTraitExact('per_sly')>>As a practiced decever, she takes lovers at will. <</if>>
+<<if $g.blushingbride.isHasTraitExact('per_sly')>>As a practiced deceiver, she takes lovers at will. <</if>>
 <<if $g.blushingbride.isHasTraitExact('per_proud')>>Her bad-tempered ways don't leave him in peace for long. <</if>>
 <<if $g.blushingbride.isHasTraitExact('per_stubborn')>>Her mulish temper makes every little domestic dispute into a shouting match or a day of cold silence. <</if>>
 <<if $g.blushingbride.isHasTraitExact('per_dominant')>>She's determined to "rule the roost" and turn her man into a hen-pecked shadow. <</if>>

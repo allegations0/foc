@@ -178,6 +178,6 @@ chieftain
 <<default>>
 <<name $g.tracker>>
 <<run setup.qc.Injury('tracker', 6).apply($gQuest)>>
-<</switch>> slumped against a tree, bleeding from several wounds. They weren't able to describe the creature they fought, but they hope it was a bear. The wounds <i>look</i> like they could be from bear claws.
+<</switch>> slumped against a tree, bleeding from several wounds. <<They $g.tracker>> wasn't able to describe the creature <<they $g.tracker>> fought, but <<they $g.tracker>> hopes it was a bear. The wounds <i>look</i> like they could be from bear claws.
 </p>
 <</if>>

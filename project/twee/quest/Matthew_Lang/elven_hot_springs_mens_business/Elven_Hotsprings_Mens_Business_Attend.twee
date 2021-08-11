@@ -192,7 +192,7 @@ setup.qdiff.easy20, /* difficulty */
     You've decided it would also be a great opportunity
 
     <<if $unit.player.isHasTraitsExact(["race_elf", "gender_male"])>>
-        for you to attend the revelries and build goodwill with your elven neighbours in the <<lore region_forest>>. You'd need another male elf to come with you, assuming you go yourself, and you also think that bringing a helper slave would be a good idea as well. They'd need to be male, not an elf, and trained in domestic duties.
+        for you to attend the revelries and build goodwill with your elven neighbors in the <<lore region_forest>>. You'd need another male elf to come with you, assuming you go yourself, and you also think that bringing a helper slave would be a good idea as well. They'd need to be male, not an elf, and trained in domestic duties.
         <<if $settings.bannedtags.watersport>>
         <<else>>
             A trained piss drinker would likely score you bonus points as well.
@@ -233,7 +233,7 @@ setup.qdiff.easy20, /* difficulty */
             Your grin falters, but you force yourself down onto your knees, eyeing his throbbing cock warily. This is, after all, what you signed up for. Taking a deep breath, you close your eyes and open your mouth, flinching slightly as you feel the warm slick heat of his penis on your tongue.<br>
             "That's it," he says gently, and you feel his hands on the sides of your head, not demanding, but supporting. "Daddy's going to make you big and strong."
         <<else>>
-            Grinning, you sink to your knees and take his throbbing cock into your mouth, savouring the rich taste of his precum, your hand running down you tug on your own stiffening prick. This is exactly what you signed up for, after all.
+            Grinning, you sink to your knees and take his throbbing cock into your mouth, savoring the rich taste of his precum, your hand running down you tug on your own stiffening prick. This is exactly what you signed up for, after all.
         <</if>>
     </p>
     <p>
@@ -241,7 +241,7 @@ setup.qdiff.easy20, /* difficulty */
         <<if $settings.bannedtags.watersport>>
             leads <<name $g.offering>> over towards the wine, and starts him on his duties, all while keeping close enough so that <<name $g.offering>> doesn't have any chance to escape. The leg shackles help with that too, of course, but it's good that <<name _o1>> isn't taking any chances.
         <<else>>
-            pushes <<name $g.offering>> down onto his knees and feeds him the first of many loads of piss. Soon, <<name $g.offering>> is surrounded by elves, each eager to fill his mouth and belly with more recycled wine than he can manage. Eventually they thow him in a hastily dug pit and hose him down, looping his chain around the trunk of a nearby tree to keep him in place.<br>
+            pushes <<name $g.offering>> down onto his knees and feeds him the first of many loads of piss. Soon, <<name $g.offering>> is surrounded by elves, each eager to fill his mouth and belly with more recycled wine than he can manage. Eventually they throw him in a hastily dug pit and hose him down, looping his chain around the trunk of a nearby tree to keep him in place.<br>
             "Stay, slut," <<name _o1>> says with a chuckle as he turns and offers his hard cock to a nearby elf, who eagerly drops to his knees and starts worshipping <<name _o1>>'s prick.
         <</if>>
     </p>
@@ -250,7 +250,7 @@ setup.qdiff.easy20, /* difficulty */
         <<if $settings.bannedtags.watersport>>
             exhausted from two days of non stop cooking, cleaning, and pouring wine.
         <<else>>
-            stomach gurgling from the final loads of piss he'd been granted as a farewell 'gift' from the revelling cultists.
+            stomach gurgling from the final loads of piss he'd been granted as a farewell 'gift' from the reveling cultists.
         <</if>>
     </p>
 <<else>>
@@ -328,7 +328,7 @@ Despite asking around, <<rep $g.participant>> participant|was unable to find the
             Your grin falters, but you force yourself down onto your knees, eyeing his throbbing cock warily. This is, after all, what you signed up for. Taking a deep breath, you close your eyes and open your mouth, flinching slightly as you feel the warm slick heat of his penis on your tongue.<br>
             "That's it," he says gently, and you feel his hands on the sides of your head, not demanding, but supporting. "Daddy's going to make you big and strong."
         <<else>>
-            Grinning, you sink to your knees and take his throbbing cock into your mouth, savouring the rich taste of his precum, your hand running down you tug on your own stiffening prick. This is exactly what you signed up for, after all.
+            Grinning, you sink to your knees and take his throbbing cock into your mouth, savoring the rich taste of his precum, your hand running down you tug on your own stiffening prick. This is exactly what you signed up for, after all.
         <</if>>
     </p>
     <p>
@@ -336,7 +336,7 @@ Despite asking around, <<rep $g.participant>> participant|was unable to find the
         <<if $settings.bannedtags.watersport>>
             leads <<name $g.offering>> over towards the wine, and starts him on his duties, before bending over and taking a cock up his ass right there at the wine table.
         <<else>>
-            pushes <<name $g.offering>> down onto his knees and feeds him the first of many loads of piss. Soon, <<name $g.offering>> is surrounded by elves, each eager to fill his mouth and belly with more recycled wine than he can manage. Eventually they thow him in a hastily dug pit and hose him down.<br>
+            pushes <<name $g.offering>> down onto his knees and feeds him the first of many loads of piss. Soon, <<name $g.offering>> is surrounded by elves, each eager to fill his mouth and belly with more recycled wine than he can manage. Eventually they throw him in a hastily dug pit and hose him down.<br>
             "Stay, slut," <<name _o1>> says with a chuckle as he turns and offers his hard cock to a nearby elf, who eagerly drops to his knees and starts worshipping <<name _o1>>'s prick.
         <</if>>
     </p>

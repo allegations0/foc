@@ -92,13 +92,13 @@ setup.qc.Injury('labourer', 1)
 )>>
 
 :: Quest_harvesting_the_fields [nobr]
-<p>It's late autumn and the farmers of the <<lore region_vale>> are getting ready to harvest their crops before the winter snows set in. Harvest is, of course, traditionally a time when everyone pitches in the help—and get paid. It's not exactly adventure—or the flesh trade—but it is honest work and guaranteed pay—if your slavers are up to the physical labour.</p>
-<p>Of course, if your slavers make it through, farmers usually throw one hell of a harvest party. And who knows, you might even be able to pick up a drunken farmhand and bring them back to a new life that'll be even more profitable for you. And even if you don't, helping with the harvest will go some way to earning a bit of goodwill with your neighbours.</p>
+<p>It's late autumn and the farmers of the <<lore region_vale>> are getting ready to harvest their crops before the winter snows set in. Harvest is, of course, traditionally a time when everyone pitches in the help—and get paid. It's not exactly adventure—or the flesh trade—but it is honest work and guaranteed pay—if your slavers are up to the physical labor.</p>
+<p>Of course, if your slavers make it through, farmers usually throw one hell of a harvest party. And who knows, you might even be able to pick up a drunken farmhand and bring them back to a new life that'll be even more profitable for you. And even if you don't, helping with the harvest will go some way to earning a bit of goodwill with your neighbors.</p>
 
 
 
 :: Quest_harvesting_the_fieldsCrit [nobr]
-<p>Your slavers grumbled at the job assignment—until they realised there was a party afterward. <<name $g.labourer>> and <<name $g.labourer2>> worked tirelessly cutting and stooking golden sheaves of wheat,
+<p>Your slavers grumbled at the job assignment—until they realized there was a party afterward. <<name $g.labourer>> and <<name $g.labourer2>> worked tirelessly cutting and stooking golden sheaves of wheat,
 <<if $g.slaver.isHasTrait('bg_farmer')>>
 easily keeping up with <<name $g.slaver>>, whose familiarity with the work saw <<them $g.slaver>> leading from the front of the pack.
 <<elseif $g.slaver.isHasTrait('muscle_strong')>>
@@ -124,7 +124,7 @@ and eventually <<they $g.labourer>> disappeared into the hayloft with a well end
 
 
 :: Quest_harvesting_the_fieldsFailure [nobr]
-<p>Your slavers grumbled at the job assignment—until they realised there was a party afterward, and they set out with high hopes.
+<p>Your slavers grumbled at the job assignment—until they realized there was a party afterward, and they set out with high hopes.
 <<set _unit = setup.selectUnit([$g.labourer, $g.labourer2, $g.slaver], {trait: 'bg_farmer'})>>
 <<if _unit>>
 However, it's been a long time since any of them had done serious farm work, and they didn't last beyond lunch time.
@@ -137,7 +137,7 @@ With the scornful laughs of the farmers ringing in their ears, your slavers slun
 
 
 :: Quest_harvesting_the_fieldsDisaster [nobr]
-<p>Your slavers grumbled at the job assignment—until they realised there was a party afterward. <<name $g.labourer>> and <<name $g.labourer2>> worked tirelessly cutting and stooking golden sheaves of wheat,
+<p>Your slavers grumbled at the job assignment—until they realized there was a party afterward. <<name $g.labourer>> and <<name $g.labourer2>> worked tirelessly cutting and stooking golden sheaves of wheat,
 <<if $g.slaver.isHasTrait('bg_farmer')>>
 easily keeping up with <<name $g.slaver>>, whose familiarity with the work saw <<them $g.slaver>> leading from the front of the pack.
 <<elseif $g.slaver.isHasTrait('muscle_strong')>>

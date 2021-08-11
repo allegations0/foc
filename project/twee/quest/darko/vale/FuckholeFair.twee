@@ -119,7 +119,7 @@ were used quite a lot
 throughout the festival, with the villagers
 becoming more and more creative as the festival go.
 <<Rep $g.slave>> became familiar with the feeling of having all types of garden vegetables
-shoved up their <<uhole $g.slave>>, while your slavers happily count the money they managed
+shoved up <<their $g.slave>> <<uhole $g.slave>>, while your slavers happily count the money they managed
 to make out of this festival.
 <<if $gOutcome == 'crit'>>
 One of the well off attendee was so impressed with <<rep $g.slave>> after the slave took

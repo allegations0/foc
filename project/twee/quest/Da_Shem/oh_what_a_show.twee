@@ -141,15 +141,15 @@ setup.qdiff.normal20, /* difficulty */
 
 <p>
 <<if $statistics.isHasSuccess('oh_what_a_show')>>
-The travelling circus has once again reached the <<rep $company.humanvale>> and the rumours are flying high and wide.
+The travelling circus has once again reached the <<rep $company.humanvale>> and the rumors are flying high and wide.
 <<else>>
-A travelling circus company has reached the <<rep $company.humanvale>> and the rumours are flying high and wide.
+A travelling circus company has reached the <<rep $company.humanvale>> and the rumors are flying high and wide.
 <</if>>
 They'll bring not only acrobats and entertainers but also foreign creatures not often seen in these parts. Fire breathing dragonkin, mysterious tigerkin and also a demon and angel couple, once ancient enemies, now passionate lovers!
 </p>
 
 <p>
-Or so the flyers say at least. You are personally highly sceptical to these claims (for a good reason!) but some of your slavers have pointed out that if even one of them are true you could stand to gain some very valuable pieces of merchandise.
+Or so the flyers say at least. You are personally highly skeptical to these claims (for a good reason!) but some of your slavers have pointed out that if even one of them are true you could stand to gain some very valuable pieces of merchandise.
 You could send the slavers to the show.
 You just hope that they are motivated by something else other than just a desire to watch and enjoy the show.
 </p>
@@ -216,7 +216,7 @@ the performance itself was very good.
 <<elseif $g.fp1.getSpeech() == setup.speech.witty>>
 <<rep $g.fp1>> started heckling shamelessly hoping to get a rise out of the circus people
 <<elseif $g.fp1.getSpeech() == setup.speech.debauched>>
-<<rep $g.fp1>> got inspired from the show and started feeling up <<their $g.fp1>> neighbour
+<<rep $g.fp1>> got inspired from the show and started feeling up <<their $g.fp1>> neighbor
 <</if>>
 when suddenly a commotion was heard.
 </p>

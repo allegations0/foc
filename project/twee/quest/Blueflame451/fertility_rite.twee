@@ -137,7 +137,7 @@ You'll also need a (lucky) slaver with a ready cock, or “holy phallus,” to b
 
 :: Quest_fertility_riteCrit [nobr]
 <p>
-Donning their new robes, setting out the ritual accountrements, and pitching their tent on a hill overlooking a village, your slavers are ready to hold their "holy" sex rites.
+Donning their new robes, setting out the ritual accoutrements, and pitching their tent on a hill overlooking a village, your slavers are ready to hold their "holy" sex rites.
 <<Rep $g.guard>> <<uadv $g.guard>> invited the people of the nearby village to come receive the sacred fertility blessing.
 </p>
 
@@ -169,9 +169,9 @@ for <<they $g.shepherd>> was much impressed by <<reps $g.phallus>> <<upraisenoun
 <p>
 In the coming days many <<women $g.shepherd>> from the village, including
 <<if $g.shepherd.isFemale()>>
-wives, widows and daughters,
+wives, widows, and daughters,
 <<else>>
-husbands, widows, and sons,
+husbands, widowers, and sons,
 <</if>>
 came to receive their blessings, all eagerly slobbering or bouncing on <<rep $g.phallus>> <<udick $g.phallus>>,
 <<if $g.phallus.isHasTrait('per_chaste')>>

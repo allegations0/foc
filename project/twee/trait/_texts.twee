@@ -107,10 +107,10 @@
   ======================= */
 
   bg_royal: {
-    hobby: ["reading a book on ettiquette for when a|they return to the court", "sitting in the sun with a few friends--or possibly flunkies", "trying to explain the joys of fattened goose liver to the cook",],
+    hobby: ["reading a book on etiquette for when a|they return to the court", "sitting in the sun with a few friends--or possibly flunkies", "trying to explain the joys of fattened goose liver to the cook",],
   },
   bg_boss: {
-    hobby: ["having a quiet conversation with some nondescript looking individuals in the corner of the courtyard", "enjoying a very expensive glass of wine. The fruits of a|their labours, no doubt",],
+    hobby: ["having a quiet conversation with some nondescript looking individuals in the corner of the courtyard", "enjoying a very expensive glass of wine. The fruits of a|their labors, no doubt",],
   },
   bg_mythical: {
     hobby: ["sitting crossed legged on a small cushion, itself placed within a chalk circle a|they a|have drawn onto the ground", "talking to nobody. Or at least, nobody you can see"],
@@ -119,7 +119,7 @@
     hobby: ["grinning madly", "regaling a|their friends with tales from other planes of existence",],
   },
   bg_knight: {
-    hobby: ["practicing swordsmanship", "polishing a|their armour", "drinking ale with a group of friends",],
+    hobby: ["practicing swordsmanship", "polishing a|their armor", "drinking ale with a group of friends",],
   },
   bg_adventurer: {
     hobby: ["reminiscing on a|their past adventures", "talking to a passing peddler",],
@@ -131,7 +131,7 @@
     hobby: ["longing for the embrace of the wilds", "staring out over the walls towards the northern forests", "entering the courtyard with a basket of foraged mushrooms",],
   },
   bg_assassin: {
-    hobby: ["sharpening a|their deadly daggers", "throwing dice with some visiting travellers", "writing in a|their journal,"],
+    hobby: ["sharpening a|their deadly daggers", "throwing dice with some visiting travelers", "writing in a|their journal,"],
   },
   bg_engineer: {
     hobby: ["working on a|their latest invention", "mixing chemicals outside after the last incident in the living quarters," ],
@@ -152,7 +152,7 @@
     hobby: ["gazing at a|their visage in the mirrors", "combing a|their hair", "playing the panflute, the music making your toes twitch",],
   },
   bg_mercenary: {
-    hobby: ["counting a|their money", "repairing a leather strap on a|their bag", "practising archery"],
+    hobby: ["counting a|their money", "repairing a leather strap on a|their bag", "practicing archery"],
   },
   bg_monk: {
     hobby: ["meditating", "exercising meditatively, a|their motions slow and fluid as water",],
@@ -182,7 +182,7 @@
     hobby: ["painting", "attempting poetry", "carving a wooden dick", "carving a very large wooden dick",],
   },
   bg_soldier: {
-    hobby: ["doing weapon drills", "polishing a|their armour", "using beeswax and oil to waterproof a|their boots",],
+    hobby: ["doing weapon drills", "polishing a|their armor", "using beeswax and oil to waterproof a|their boots",],
   },
   bg_pirate: {
     hobby: ["carousing", "heading into the dungeons to let off some steam", "playing cards", "coiling rope", "standing on the walls of the fort gazing out at the distant glimmer of the sea",],
@@ -194,7 +194,7 @@
     hobby: ["chopping firewood", "splitting logs into planks", "helping in the kitchens", ],
   },
   bg_thug: {
-    hobby: ["bullying the slaves", "telling off colour jokes to a|their friends",],
+    hobby: ["bullying the slaves", "telling off color jokes to a|their friends",],
   },
   bg_seaman: {
     hobby: ["gazing towards the sea", "splicing ropes", "carving fish hooks out of bone", "off fishing"],
@@ -215,19 +215,19 @@
     hobby: ["going over the company's finances", "sorting through missives", "talking quietly to one of your contacts over a tankard of ale",],
   },
   bg_merchant: {
-    hobby: ["talking boisterously with some travellers", "packing goods for trade with a nearby settlement", "making plans to visit the city markets" ],
+    hobby: ["talking boisterously with some travelers", "packing goods for trade with a nearby settlement", "making plans to visit the city markets" ],
   },
   bg_farmer: {
     hobby: ["tending to a|their personal garden", "digging up carrots", "tending to a bee hive", "turning a garden bed for re-planting",],
   },
   bg_entertainer: {
-    hobby: ["telling jokes", "practising juggling", "mending a rip in a pair of trousers",],
+    hobby: ["telling jokes", "practicing juggling", "mending a rip in a pair of trousers",],
   },
   bg_foodworker: {
     hobby: ["cooking", "slow roasting a goat on a spit", "kneading bread dough", "brewing ale",],
   },
   bg_whore: {
-    hobby: ["looking for a partner", "flirting with travellers", "eating bread and cheese in the kitchens", "combing a|their hair", "heating water for a bath",],
+    hobby: ["looking for a partner", "flirting with travelers", "eating bread and cheese in the kitchens", "combing a|their hair", "heating water for a bath",],
   },
   bg_unemployed: {
     hobby: ["learning new skills", "drinking ale", "helping tend the kitchen garden", "scrubbing the floors", "making rushlights",],
@@ -325,8 +325,8 @@
 
     description: "a|have a humiliatingly small dick",
     increase: '',
-    decrease: 'reducing it to a mere few centimetres long',
-    nounbad: ['embarrasingly small dick', ], 
+    decrease: 'reducing it to a mere few centimeters long',
+    nounbad: ['embarrassingly small dick', ], 
   },
   dick_small: {
     size_adjective: ['small', 'below-average', 'little', ],
@@ -427,7 +427,7 @@
     description: "a|have a tiny almost mannish pair of breasts",
     increase: '',
     decrease: 'a|their breasts now barely visible and is almost mannish in appearance',
-    nounbad: ['embarrasingly small breasts', ], 
+    nounbad: ['embarrassingly small breasts', ], 
   },
   breast_small: {
     size_adjective: ['small', 'modest', 'cute', ],
@@ -484,7 +484,7 @@
   vagina_loose: {
     size_adjective: ['loose', 'well-used', 'well-stretched', ],
     description: "a|have a well-used vagina",
-    increase: 'it noticably loosen allowing easier access',
+    increase: 'it noticeably loosen allowing easier access',
     decrease: 'the previous gape closing slowly into a more normal-looking opening',
   },
   vagina_gape: {
@@ -503,7 +503,7 @@
   anus_loose: {
     size_adjective: ['loose', 'well-used', 'well-stretched', ],
     description: "a|have a well-used anus",
-    increase: 'it noticably loosen allowing easier access',
+    increase: 'it noticeably loosen allowing easier access',
     decrease: 'the previous gape closing slowly into a more normal-looking opening',
   },
   anus_gape: {
@@ -542,7 +542,7 @@
     adjgood: ['attractive', 'good-looking', 'pretty', ],
 
     description: "a|have an attractive face",
-    increase: 'becoming a face that would attract attention from passerbies',
+    increase: 'becoming a face that would attract attention from passersby',
     decrease: 'although it still retains quite a bit of attractiveness',
     noungoodmale: ['handsomeness', ],
     noungoodfemale: ['beauty', ],
@@ -689,8 +689,8 @@
   ears_demon: {
     size_adjective: ['demonic', ],
 
-    noun: "distored demonic ears",
-    description: "a|possess a pair of distored demonic ears",
+    noun: "distorted demonic ears",
+    description: "a|possess a pair of distorted demonic ears",
     flavor: "a|They also have a pair of horns jutting from atop a|their head.",
   },
   mouth_werewolf: {
@@ -724,9 +724,9 @@
   mouth_demon: {
     size_adjective: ['demonic', ],
 
-    noun: "demonic mouth complete with dextrous lengthy tongue",
-    description: "a|possess a demonic mouth complete with dextrous lengthy tongue",
-    flavor: "It is not visible from the outside, but inside a|their mouth is an incredibly long and dextrous tongue.",
+    noun: "demonic mouth complete with dexterous lengthy tongue",
+    description: "a|possess a demonic mouth complete with dexterous lengthy tongue",
+    flavor: "It is not visible from the outside, but inside a|their mouth is an incredibly long and dexterous tongue.",
   },
   body_drow: {
     size_adjective: ['dark-purplish', 'drow', ],
@@ -777,7 +777,7 @@
     flavor: "a|Their entire body is tinted purple and emits an intoxicating smell.",
   },
   wings_elf: {
-    size_adjective: ['transluscent', ],
+    size_adjective: ['translucent', ],
 
     noun: "beautiful pair of semi-transparent butterfly wings",
     description: "a|possess a beautiful pair of semi-transparent butterfly wings",
@@ -1061,7 +1061,7 @@
     adverbs: ['bravely', 'courageously', 'fearlessly', 'boldly',],
     noungood: ['bravado', 'bravery', ],
     nounbad: ['carelessness', ], 
-    hobby: ["challenging others to increasinly risky dares", ],
+    hobby: ["challenging others to increasingly risky dares", ],
     abuse: true,
   },
   per_cautious: {
@@ -1110,7 +1110,7 @@
 
     description: 'a|act unpredictably',
 
-    hobby: ["laughing maniacally", "staring unblinkingly at people without saying anything", "talking to Mr squigglesworth, the invisible pink rabbit no one else can see",],
+    hobby: ["laughing maniacally", "staring unblinkingly at people without saying anything", "talking to Mr. Squigglesworth, the invisible pink rabbit no one else can see",],
     noungood: ['unpredictability', ], 
     nounbad: ['madness', 'lunacy', ], 
     abuse: true,
@@ -1130,7 +1130,7 @@
   },
   per_loyal: {
     adjective: ['loyal', 'reliable', ],
-    adjbad: ['codependant', ],
+    adjbad: ['codependent', ],
     adjgood: ['loyal', 'reliable', ],
 
     adverbs: ['loyally', 'staunchly', 'firmly',],
@@ -1144,7 +1144,7 @@
     adjective: ['independent', 'selfish', ],
     adjbad: ['disloyal', 'selfish', 'self-centered', ],
 
-    adverbs: ['selfishly', 'self-centeredly', 'egocentrically', 'narcistically', 'egosticially',],
+    adverbs: ['selfishly', 'self-centeredly', 'egocentrically', 'narcissistically', 'egoistically',],
 
     description: 'a|is more selfish than most',
     noungood: ['self-sufficiency', ],
@@ -1260,9 +1260,9 @@
     abuse: true,
   },
   per_honorable: {
-    adjective: ['honorable', 'chivalrious', 'virtuous', ],
+    adjective: ['honorable', 'chivalrous', 'virtuous', ],
     adjbad: ['honorbound', ],
-    adjgood: ['honorable', 'chivalrious', 'virtuous', ],
+    adjgood: ['honorable', 'chivalrous', 'virtuous', ],
 
     adverbs: ['honorably', 'ethically', 'virtuously',],
 
@@ -1319,7 +1319,7 @@
 
     description: 'a|is quick both to anger and to come into action',
     noungood: ['decisiveness', ],
-    nounbad: ['aggresiveness', ], 
+    nounbad: ['aggressiveness', ], 
     hobby: ["looking for others interested in bare-knuckle boxing", "running an impromptu boxing tournament", ],
     abuse: true,
   },
@@ -1328,7 +1328,7 @@
     adjbad: ['slow-to-act', 'indecisive', ],
     adjgood: ['calm', 'tranquil', 'patient', 'stoic', ],
 
-    adverbs: ['patiently', 'calmly', 'stoicly', 'coolly',],
+    adverbs: ['patiently', 'calmly', 'stoically', 'coolly',],
 
     description: 'always a|maintain composure',
     noungood: ['calming presence', ],
@@ -1414,7 +1414,7 @@
   skill_connected: {
     description: 'a|know many important people in the region',
     noungood: ['wide connections', ],
-    hobby: ["talking with visitors", "making new freinds",],
+    hobby: ["talking with visitors", "making new friends",],
   },
   skill_creative: {
     description: 'a|is blessed with a creative mind',
@@ -1427,7 +1427,7 @@
     hobby: ["working on a|their voice", "breaking slaves",],
   },
   skill_hypnotic: {
-    description: 'a|know how to subconciously influence others',
+    description: 'a|know how to subconsciously influence others',
     noungood: ['hypnotic gaze', ],
     hobby: ["practicing hypnotism", "making slaves think they're animals"],
   },
@@ -1462,7 +1462,7 @@
     description: 'a|is exceptionally gifted in the domain of <<lore magic_water>> and fleshshaping',
     noun: 'fleshshaping',
     noungood: ['affinity for water', ],
-    hobby: ["altering little bits of a|their appearance", "forming orbs of water in the air and watching fish swim inside of them", "doing eeriely accurate impresonations of other slavers",],
+    hobby: ["altering little bits of a|their appearance", "forming orbs of water in the air and watching fish swim inside of them", "doing eeriely accurate impersonations of other slavers",],
   },
   magic_wind: {
     description: 'a|is gifted in the domain of <<lore magic_wind>>',
@@ -1518,7 +1518,7 @@
   ======================= */
 
   trauma_combat: {
-    description: 'greatly a|fear confrontrations',
+    description: 'greatly a|fear confrontations',
   },
   trauma_brawn: {
     description: 'a|have little energy during daytime',
@@ -1656,7 +1656,7 @@
     title: 'Anal Slave',
   },
   training_anal_master: {
-    description: 'a|is a masterful anal slut capable of taking the largest of dicks comfortably up a|their rear and contract a|their anal splinchters to give maximum pleasure in return',
+    description: 'a|is a masterful anal slut capable of taking the largest of dicks comfortably up a|their rear and contract a|their anal sphincters to give maximum pleasure in return',
     title: 'Masterful Anal Slave',
   },
   training_dominance_basic: {
