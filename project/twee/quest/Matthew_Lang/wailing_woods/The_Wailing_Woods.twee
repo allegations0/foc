@@ -344,9 +344,9 @@ You wait while <<name $g.sage>> finishes <<their $g.sage>> drink and slams the t
 <</if>>
 
 <<if $gOutcome == 'crit'>>
-<p>While your slavers thought they'd already taken anything of value from the village the last time, <<name $g.guardian>> found a hidden cache of gemstones under a loose floorboard, warped now with the damp and rain. There were also some decent sets of clothing and armour from those who had fallen afoul of the spirit, as well as the contents of their pockets. Maybe you should start keeping track of places you raid.</p>
+<p>While your slavers thought they'd already taken anything of value from the village the last time, <<name $g.guardian>> found a hidden cache of gemstones under a loose floorboard, warped now with the damp and rain. There were also some decent sets of clothing and armor from those who had fallen afoul of the spirit, as well as the contents of their pockets. Maybe you should start keeping track of places you raid.</p>
 <<elseif $gOutcome == 'success'>>
-<p>Your slavers had already taken anything of value from the village the last time. So this time they stole the furniture, selling most of it for less than you'd want but more than you might have got otherwise. There were also some decent sets of clothing and armour from those who had fallen afoul of the spirit, as well as the contents of their pockets. Maybe you should start keeping track of places you raid.</p>
+<p>Your slavers had already taken anything of value from the village the last time. So this time they stole the furniture, selling most of it for less than you'd want but more than you might have got otherwise. There were also some decent sets of clothing and armor from those who had fallen afoul of the spirit, as well as the contents of their pockets. Maybe you should start keeping track of places you raid.</p>
 <</if>>
 
 

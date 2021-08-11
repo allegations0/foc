@@ -165,12 +165,12 @@ Unfortunately, your hospitality as well as your slaver's less than thuggish beha
 </p>
 <<elseif $gOutcome == 'failure'>>
 <p>
-In the end, your meager hospitaly won you two very subpar offers from the merchant.
-With the merchant long gone, you glared at the slavers you've assigned to the task, who no doubt must have spent way too much time drinking and lazying around instead of properly impressing the merchant...
+In the end, your meager hospitality won you two very subpar offers from the merchant.
+With the merchant long gone, you glared at the slavers you've assigned to the task, who no doubt must have spent way too much time drinking and lazing around instead of properly impressing the merchant...
 </p>
 <<else>>
 <p>
-Thankfully, your slavers prove competent for once and the merchant offered you a plethora of options for selling your slaves to <<them $g.merchant>>. The merchant specialize in "wholesale slave distribution", however, and hence all the deals you receive would be a little subpar compared to most deals you find anywhere else. Still, it's probably much better than selling your more valuable slaves off as simple laborers.
+Thankfully, your slavers prove competent for once and the merchant offered you a plethora of options for selling your slaves to <<them $g.merchant>>. The merchant specializes in "wholesale slave distribution", however, and hence all the deals you receive would be a little subpar compared to most deals you find anywhere else. Still, it's probably much better than selling your more valuable slaves off as simple laborers.
 </p>
 
 <<if $gOutcome == 'crit'>>

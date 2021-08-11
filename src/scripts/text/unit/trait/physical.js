@@ -211,7 +211,7 @@ setup.Text.Unit.Trait.cleavage = function (unit, is_with_equipment) {
     ]
   } else {
     t = [
-      `non-existant cleavage`,
+      `non-existent cleavage`,
       `flat cleavage`,
     ]
   }

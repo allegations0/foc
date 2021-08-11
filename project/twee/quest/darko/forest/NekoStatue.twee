@@ -168,7 +168,7 @@ After successfully learning the rituals required to undo the spells,
 <<yourrep $g.scout>> proceeded to
 <<uadv $g.scout>> scour the forest for one of these moai fields.
 <<if $gOutcome == 'success'>>
-Upon finding one, they searched for a relatively unscatched statue.
+Upon finding one, they searched for a relatively unscathed statue.
 After finding one,
 <<else>>
 Upon finding one, they found a magnificent specimen of a neko there,
@@ -229,7 +229,7 @@ scout <<rep $g.scout>> scout|was not able to find any of the moai statue fields.
 Your slavers were too aggressive trying to learn how to undo the spell,
 which drew the ire of one particularly sadistic elf.
 She tricked your slavers, pretending to teach them how to undo the spell,
-while in reality casting the petrifiation spell directly on your slavers.
+while in reality casting the petrification spell directly on your slavers.
 Fortunately, the spell's power had been lost over time, and the partly
 petrified dicks and breasts of your slavers will return to normal in time.
 </p>

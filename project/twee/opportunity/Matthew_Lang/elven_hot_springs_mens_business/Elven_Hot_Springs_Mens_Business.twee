@@ -99,7 +99,7 @@ anytraits: ['race_human', 'race_catkin', 'race_lizardkin', 'race_wolfkin', 'race
         A stretch of blustery cold weather reminds you that the seasons are turning, and it's getting close to that time of the year again, when the Cult of Caledain holds a sacred gathering at one of the many hot springs deep within the <<lore region_forest>>. In line with the cult's beliefs, the gathering is open to any male elf who wishes to attend, and the festivities mostly include drinking lots of wine, pissing in the open, and orgies in the hot springs. The Cultists believe that taking the cum of a strong warrior into one's body increases both strength and virility, and with clothing being strictly prohibited, the gathering sounds like a lot of fun for those inclined towards mansex. Or elves so inclined anyway.
     </p>
     <p>
-        This could be a great chance to either raid the event to capture a slave or two, or send some of your own slavers as attendees, along with a dometically trained slave, to build goodwill with your wood elf neighbours. Either decision would mean being able to convince the wood elves to share the location of the gathering with you, and raiding a holy festival specifically intended to be a neutral, conflict free zone might annoy some of your wood elven slavers. Of course, if those options seem like too much work, you could just pass on the entire thing this year. It's not like you're expected to attend every year. Or any year, for that matter.
+        This could be a great chance to either raid the event to capture a slave or two, or send some of your own slavers as attendees, along with a domestically trained slave, to build goodwill with your wood elf neighbors. Either decision would mean being able to convince the wood elves to share the location of the gathering with you, and raiding a holy festival specifically intended to be a neutral, conflict free zone might annoy some of your wood elven slavers. Of course, if those options seem like too much work, you could just pass on the entire thing this year. It's not like you're expected to attend every year. Or any year, for that matter.
     </p>
 <<else>>
     <<if $g.elf.isHasTrait('per_chaste')>>
@@ -147,12 +147,12 @@ anytraits: ['race_human', 'race_catkin', 'race_lizardkin', 'race_wolfkin', 'race
         the Cult of Caledain holds a sacred gathering at one of the many hot springs deep within the <<lore region_forest>>. In line with the cult's beliefs, the gathering is open to any male elf who wishes to attend, and the festivities mostly include drinking lots of wine, pissing in the open, and orgies in the hot springs. The Cultists believe that taking the cum of a strong warrior into one's body increases both strength and virility, and with clothing being strictly prohibited, the gathering sounds like a lot of fun for those inclined towards mansex. Or elves so inclined anyway.
     </p>
     <p>
-        This could be a great chance to either raid the event to capture a slave or two, or send some of your own slavers as attendees, along with a dometically trained slave, to build goodwill with your wood elf neighbours. Either decision would mean being able to convince the wood elves to share the location of the gathering with you, and raiding a holy festival specifically intended to be a neutral, conflict free zone might annoy some of your wood elven slavers. Of course, if those options seem like too much work, you could just pass on the entire thing this year. It's not like you're expected to attend every year. Or any year, for that matter.
+        This could be a great chance to either raid the event to capture a slave or two, or send some of your own slavers as attendees, along with a domestically trained slave, to build goodwill with your wood elf neighbors. Either decision would mean being able to convince the wood elves to share the location of the gathering with you, and raiding a holy festival specifically intended to be a neutral, conflict free zone might annoy some of your wood elven slavers. Of course, if those options seem like too much work, you could just pass on the entire thing this year. It's not like you're expected to attend every year. Or any year, for that matter.
     </p>
 
 <</if>>
 
-<<dangertext "Warning:">> Some of your wood elven slavers may <<dangertextlite 'hate you'>> doing something as dishonourable as raiding a sacred festival. If you do that, you could risk them leaving your service. Or worse.
+<<dangertext "Warning:">> Some of your wood elven slavers may <<dangertextlite 'hate you'>> doing something as dishonorable as raiding a sacred festival. If you do that, you could risk them leaving your service. Or worse.
 
 
 

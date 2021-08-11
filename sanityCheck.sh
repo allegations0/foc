@@ -31,7 +31,7 @@ $GREP "<<[ ]*elseif[^>=]*[^><\!=]=[^=][^>]*>>" -- 'project/twee/*' | myprint "Ac
 $GREP -e "<<[^\"<>]*\"[^\"<>]*>>" -- 'project/twee/*' | myprint "MissingSpeechMark"
 # Check for missing ".  e.g.:   <<if $foo = "hello)
 $GREP -e "<<[^\"<>]*\([^\"<>]*\"[^><\"]*\"\| [<>] \)*\"\([^\"<>]*\"[^><\"]*\"\| [<>] \)*\([^\"<>]\| [<>] \)*>>" --and --not -e "*[^']*" -- 'project/twee/*' | myprint "MissingSpeechMark2"
-# Check for colours like: @@color:red   - should be @@.red
+# Check for colors like: @@color:red   - should be @@.red
 $GREP -e "@@color:" --and --not -e  "@@color:rgb([0-9 ]\+,[0-9 ]\+,[0-9 ]\+)" -- "project/twee/*" | myprint "UseCssColors"
 # Check for closing bracket without opening bracket.  e.g.:  <<if foo)>>	  (but  <<case "foo")>>   is valid, so ignore those
 $GREP -e "<<[ a-zA-Z]\+\([^()<>]\|[^()<>][<>][^()<>]\)*)" --and --not -e "<< *case"  -- "project/twee/*" | myprint "MissingOpeningBracket"

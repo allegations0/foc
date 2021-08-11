@@ -382,7 +382,7 @@ A few days later, a large package came to the fort, along with a note.
         Dear <<name $unit.player>>,
     </p>
     <p>
-        Your strike was masterful. I saw everything first hand, as of course, in polite society, one must gloat over one's rivals in public. Please find an artist's commemoration of the fruits of your labour. It's amazing how they've spread so quickly throughout the city. I suppose it's just lucky for <<name $g.artist>> that I'd invited <<them $g.artist>> to the luncheon.
+        Your strike was masterful. I saw everything first hand, as of course, in polite society, one must gloat over one's rivals in public. Please find an artist's commemoration of the fruits of your labor. It's amazing how they've spread so quickly throughout the city. I suppose it's just lucky for <<name $g.artist>> that I'd invited <<them $g.artist>> to the luncheon.
         <<if setup.qres.VarEqual("mlangmerchantprinceflirt", "1").isOk($gQuest)>>
             Maybe you can accompany me to another event in the future if you're interested.
         <<else>>
@@ -420,7 +420,7 @@ A few days later, a large package came to the fort, along with a note.
     <<if $g.target.isHasTrait('gender_male')>>
         <<set _role = "distant nephew">>
     <<else>>
-        <<set _role = "distant neice">>
+        <<set _role = "distant niece">>
     <</if>>
 <<elseif $gQuest.getSeed() % 6 == 1>>
     <<set _role = "distant cousin">>
@@ -649,7 +649,5 @@ A few days later, a message in familiar handwriting arrived in the mail.
         </p>
     <</if>>
 </div>
-
-
 
 

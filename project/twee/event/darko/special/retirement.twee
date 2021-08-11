@@ -29,11 +29,10 @@ It's been quite a long while since you've started commanding this company. With 
 </p>
 
 <p>
-You never really consider it until now, but there is now an option for you to simply retire. After all, you know better than anyone the dangers of being in a slaving company, and it might just be in your best interest to retire while you're still healthy and has all limbs intact.
+You never really consider it until now, but there is now an option for you to simply retire. After all, you know better than anyone the dangers of being in a slaving company, and it might just be in your best interest to retire while you're still healthy and with all your limbs intact.
 </p>
 
 <p>
 <<successtextlite 'Important:'>>
 You can retire from the current company and start a <<successtext 'New Game+'>> from the bottom of the "Company" menu.
 </p>
-

@@ -323,23 +323,23 @@ Bring <<them $g.covalescent>> food
 :: Opportunity_visiting_the_injured_1_flavor [nobr]
 <p>"Hi <<rep $g.covalescent>>. I thought you could use some food."<br><br>
 <<if $g.you.isHasTrait('per_empath')>>
-<<rep $g.covalescent>> looks at the bowl in your hands. "That's my favourite! How did you know?"<br><br>
+<<rep $g.covalescent>> looks at the bowl in your hands. "That's my favorite! How did you know?"<br><br>
 You shrug. "You're my crew. It's my job to know."<br><br>
 <<rep $g.covalescent>> smiles broadly and reaches for the bowl. "Thank you so much. You are the best boss ever."<br><br>
 "I try to be," you say with a smile as you take a seat next to their bed.<br><br>
 <p>You spend an hour or so just talking in general before you take your leave, bringing the bowl and spoon with you.</p>
 <<elseif $g.you.isHasTrait('per_kind')>>
-<<rep $g.covalescent>> looks at the bowl in your hands. "That's my favourite! How did you know?"<br><br>
+<<rep $g.covalescent>> looks at the bowl in your hands. "That's my favorite! How did you know?"<br><br>
 You shrug. "You're my crew. It's my job to know."<br><br>
 <<rep $g.covalescent>> smiles broadly and reaches for the bowl. "Thank you so much. You are the best boss ever."<br><br>
 "I try to be," you say with a smile as you take a seat next to their bed.
 <p>You spend an hour or so just talking in general before you take your leave, bringing the bowl and spoon with you.</p>
 <<elseif $g.you.isHasTrait('per_cruel')>>
-<<rep $g.covalescent>> looks at the bowl and their face pales as you try to suppress a grin. It's nourishing, absolutely, but it's heavily laced with the red chillis from across the seas. An acquired taste and one that you love, but <<rep $g.covalescent>> is known for not being great with the spice. "Burns twice" as the joke goes.<br><br>
+<<rep $g.covalescent>> looks at the bowl and their face pales as you try to suppress a grin. It's nourishing, absolutely, but it's heavily laced with the red chilis from across the seas. An acquired taste and one that you love, but <<rep $g.covalescent>> is known for not being great with the spice. "Burns twice" as the joke goes.<br><br>
 <<if $g.covalescent.isHasTrait('per_submissive')>>
 <<rep $g.covalescent>> meets your gaze for a moment and then drops their eyes.<br><br>
 "Yes boss," <<they $g.covalescent>> say, opening their mouth.<br><br>
-With two injured arms, they accept you spooning the curry into them and swallow without complaint, even as sweat starts to dot their brow. You almost consider letting them have some milk, or yoghurt to help with the heat but then, maybe this will incentivise them to not get injured in the future.
+With two injured arms, they accept you spooning the curry into them and swallow without complaint, even as sweat starts to dot their brow. You almost consider letting them have some milk, or yoghurt to help with the heat but then, maybe this will incentivize them to not get injured in the future.
 <<elseif $g.covalescent.isHasTrait('per_masochistic')>>
 <<rep $g.covalescent>> meets your gaze for a moment and then drops their eyes, and for a moment you see the ghost of a smile on their face.<br><br>
 "Yes <<mistress $g.you>>," <<they $g.covalescent>> say, opening their mouth.<br><br>
@@ -352,7 +352,7 @@ With two injured arms, they accept you spooning the curry into them and swallow 
 Honestly, sometimes you wonder why you even try.
 <<elseif $g.you.isHasTrait('per_dominant')>>
 You smile your best smile at them. You're proud of your smile. It's the one that makes all the slaves cower when it's turned on them. "That's fair," you say. "And it's not like I can force you."<br><br>
-You see the realisation in <<Reps $g.covalescent>> eyes as it hits <<them $g.covalescent>>, and the way they try not to glance down at their injured arms—both injured arms—is really adorable.<br><br>
+You see the realization in <<Reps $g.covalescent>> eyes as it hits <<them $g.covalescent>>, and the way they try not to glance down at their injured arms—both injured arms—is really adorable.<br><br>
 "Oh wait," you say. "I can."<br><br>
 Placing the bowl of curry on the bedside table you reach out and grab their nose. "Open," you say firmly.
 <p>Eventually the need to breathe forces them to comply, and you spoon in a mouthful of the extra spicy curry, and then use your spare hand to force their jaw closed.<br><br>
@@ -370,7 +370,7 @@ You shrug and place the bowl down on the bedside table.<br><br>
 
 <<elseif $g.covalescent.isHasTrait('per_stubborn')>>
 <<name $g.covalescent>> shakes their head firmly.<br><br>
-"I'm not eating that. You know I'm not good with chilli at the best of times, and I'm not going to suffer through that while I'm hurt."<br><br>
+"I'm not eating that. You know I'm not good with chili at the best of times, and I'm not going to suffer through that while I'm hurt."<br><br>
 
 <<if $g.you.isHasTrait('per_submissive')>>
 "Fine," you say turning around to leave. "I'll have someone send something else up to you."<br><br>
@@ -378,7 +378,7 @@ Honestly, sometimes you wonder why you even try.
 
 <<elseif $g.you.isHasTrait('per_dominant')>>
 You smile your best smile at them. You're proud of your smile. It's the one that makes all the slaves cower when it's turned on them. "That's fair," you say. "And it's not like I can force you."<br><br>
-You see the realisation in <<Reps $g.covalescent>> eyes as it hits <<them $g.covalescent>>, and the way they try not to glance down at their injured arms—both injured arms—is really adorable.<br><br>
+You see the realization in <<Reps $g.covalescent>> eyes as it hits <<them $g.covalescent>>, and the way they try not to glance down at their injured arms—both injured arms—is really adorable.<br><br>
 "Oh wait," you say. "I can."<br><br>
 Placing the bowl of curry on the bedside table you reach out and grab their nose. "Open," you say firmly.
 <p>Eventually the need to breathe forces them to comply, and you spoon in a mouthful of the extra spicy curry, and then use your spare hand to force their jaw closed.<br><br>
@@ -463,14 +463,14 @@ yourself getting moist down below.
 
 <p>
 <<if !$g.covalescent.isHasDick()>>
-Looking up into <<reps $g.covalescent>>'s eyes you lower your head to <<their
+Looking up into <<reps $g.covalescent>> eyes you lower your head to <<their
 $g.covalescent>> pussy and eat <<them $g.covalescent>> with <<their
 $g.covalescent>> mouth, running your tongue inside the <<them
 $g.covalescent>> and exploring the sensitive area that always sets <<them $g.covalescent>> off.<br><br>
 "Fuck, <<name $unit.player>> I'm gonna-"
-<<their $g.covalescent>> body shudders in response as they climax in ecstacy.
+<<their $g.covalescent>> body shudders in response as they climax in ecstasy.
 <<else>>
-Looking up into <<reps $g.covalescent>>'s eyes you lower your head to <<their
+Looking up into <<reps $g.covalescent>> eyes you lower your head to <<their
 $g.covalescent>> groin and take <<them $g.covalescent>> into <<their
 $g.covalescent>> mouth, running your tongue into the spot beneath <<their
 $g.covalescent>> cockhead that always sets <<them $g.covalescent>> off.<br><br>
@@ -546,7 +546,7 @@ yourself getting moist down below.
 <</if>>
 
 <<if !$g.covalescent.isHasDick()>>
-<p>Looking up into <<reps $g.covalescent>>'s eyes you lower your head to <<their
+<p>Looking up into <<reps $g.covalescent>> eyes you lower your head to <<their
 $g.covalescent>> pussy and eat <<them $g.covalescent>> with <<their
 $g.covalescent>> mouth, running your tongue inside the <<them
 $g.covalescent>> and exploring the sensitive area hidden within.<br><br>
@@ -554,10 +554,10 @@ Given how horny <<they $g.covalescent>> is, it doesn't take long for <<them $g.c
 lose control as you feel <<their $g.covalescent>> body tense as
 <<they $g.covalescent>> gets closer to closer to release.<br><br>
 "Fuck, <<name $unit.player>> I'm gonna-"
-<<their $g.covalescent>> body shudders in response as they climax in ecstacy.
+<<their $g.covalescent>> body shudders in response as they climax in ecstasy.
 </p>
 <<else>>
-<p>Looking up into <<reps $g.covalescent>>'s eyes you lower your head to <<their
+<p>Looking up into <<reps $g.covalescent>> eyes you lower your head to <<their
 $g.covalescent>> groin and take <<them $g.covalescent>> into <<their
 $g.covalescent>> mouth, using your tongue to tease <<their $g.covalescent>>
 cockhead and suck as <<their $g.covalescent>> precum starts flowing, sweet and
@@ -576,7 +576,7 @@ $g.covalescent>> breathing returns to normal.<br><br>
 You chuckle and wipe your mouth with the back of your hand.
 "Glad I could
 help."<br><br>
-"Guess I owe you a favour next time you get injured," <<rep $g.covalescent>>
+"Guess I owe you a favor next time you get injured," <<rep $g.covalescent>>
 says, gazing up at you.<br><br>
 "Or I might just collect that when you're back on your feet," you say with a
 smirk. "Why wait?"<br><br>

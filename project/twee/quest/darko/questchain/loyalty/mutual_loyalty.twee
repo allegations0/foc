@@ -242,7 +242,7 @@ skilled in alchemy?
 <<elseif _trait == setup.trait.skill_animal>>
 slaver|rouse the settlement's animals to create a commotion. The rampaging animals
 force the guards to abandon their post. You never know that <<rep $g.slaver>> slaver|have a way
-with animals — slaver|have <<they $g.slaver>> always have this skill?
+with animals — slaver|have <<they $g.slaver>> always had this skill?
 <<else>>
 <<run alert('unrecognized trait. please report bug to the devs')>>
 <</if>>

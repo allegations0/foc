@@ -77,7 +77,7 @@ setup.qdiff.normal21, /* difficulty */
 
 :: Quest_broken_soul [nobr]
 <p>
-It has been several weeks since you obtain <<yourrep $g.slave>>. On the
+It has been several weeks since you obtained <<yourrep $g.slave>>. On the
 surface, the slave appears to be a simple mindbroken slave.
 But
 <<set _m = $unit.player.getTraitWithTag('magic')>>
