@@ -32,7 +32,6 @@ null, /* key */
   setup.trait.per_loner,
   setup.trait.per_submissive,
   setup.trait.per_lunatic,
-  setup.trait.magic_fire_master,
 ],
 [
   setup.qres.Job(setup.job.slaver),
@@ -315,4 +314,3 @@ As luck would have it, yet another foolish challenger came challenging for an od
 
 
 <</if>>
-

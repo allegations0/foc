@@ -76,7 +76,7 @@ bureaucratic mess and your slaving team were able to collect the land on your be
 <<set _stu = setup.selectUnit([$g.bureaucrat1, $g.bureaucrat2], {trait: 'per_studious'})>>
 <<if _stu>>
 Despite the boring and confusing job, <<rep _stu>> diligently shifted through the numerous
-paperwokr.
+paperwork.
 <</if>>
 
 <<set _act = setup.selectUnit([$g.bureaucrat1, $g.bureaucrat2], {trait: 'per_active'})>>

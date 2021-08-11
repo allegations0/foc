@@ -10,7 +10,7 @@
   1,  /* deadline weeks, */
   'OpportunityMilkFactory',  /* passage */
   setup.qdiff.normal29, /* difficulty */
-  [  /* choices */ 
+  [  /* choices */
     [
       'OpportunityMilkFactoryOptionRaid',
       null,
@@ -48,8 +48,7 @@
 :: OpportunityMilkFactory [nobr]
 
 <p>
-The <<rep $company.humankingdom>> had outlawed
-outlawed slavery over ten years ago.
+The <<rep $company.humankingdom>> had outlawed slavery over ten years ago.
 But that does not mean
 all of the numerous slaves in the city were immediately freed. Some unscrupulous owner proceeded to sell them
 immediately to the undercity.

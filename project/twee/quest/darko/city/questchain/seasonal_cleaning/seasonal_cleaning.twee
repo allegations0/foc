@@ -16,7 +16,7 @@
 <<run new setup.Title(
   'seasonal_cleaning_head_full',  /* key */
   "A Noble's Master",   /* name */
-  'Has full control over certain submissive noble in the city',   /* name */
+  'Has full control over a certain submissive noble in the city',   /* name */
   'a|have effectively enslaved a certain submissive noble in the city',
   0,   /* slave value */
   {
