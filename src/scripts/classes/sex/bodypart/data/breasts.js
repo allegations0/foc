@@ -52,7 +52,7 @@ setup.SexBodypartClass.Breasts = class Breasts extends setup.SexBodypart {
     } else if (size >= 1) {
       return setup.trait.breast_tiny.repSizeAdjective()
     } else {
-      return setup.rng.choice([`flat`, `non-existant`,])
+      return setup.rng.choice([`flat`, `non-existent`,])
     }
   }
 

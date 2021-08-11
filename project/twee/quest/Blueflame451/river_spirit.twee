@@ -151,7 +151,7 @@ Just make sure they have fiery passions, strong hands, and most importantly good
 
 
 <p>
-With <<their $g.mage>> magical experties, <<yourrep $g.mage>> tracked the source of the spirit
+With <<their $g.mage>> magical expertise, <<yourrep $g.mage>> tracked the source of the spirit
 into a particular site of the river.
 After being imbued with the magic protections <<rep $g.mage>> could muster,
 <<if $g.swimmer.isHasTrait('per_chaste')>>
@@ -162,7 +162,7 @@ After being imbued with the magic protections <<rep $g.mage>> could muster,
 <<rep $g.swimmer>> stripped off <<their $g.swimmer>> <<uequipment $g.swimmer>> and entered the river.
 <</if>>
 <<if $g.swimmer.isHasTrait('race_lizardkin')>>
-Being a lizardkin, swimmming came naturally for <<them $g.swimmer>>.
+Being a lizardkin, swimming came naturally for <<them $g.swimmer>>.
 <</if>>
 </p>
 
@@ -177,7 +177,7 @@ At the same time,
 <<if $g.swimmer.isHasDick()>>
 The tongue wrapped about <<their $g.swimmer>> <<udick $g.swimmer>> drawing <<them $g.swimmer>> between slurping lips.
 <<else>>
-The determined tongue discovered and fluttered deep inside <<their $g.swimmer>> <<uvagina $g.swimmer>>. The mouth follows soonafter, sealing the wiggling tongue inside with a kiss.
+The determined tongue discovered and fluttered deep inside <<their $g.swimmer>> <<uvagina $g.swimmer>>. The mouth follows soon after, sealing the wiggling tongue inside with a kiss.
 <</if>>
 
 Filled with overstimulation, <<rep $g.swimmer>> took a few deep breaths before <<they $g.swimmer>> disappeared under the water.
@@ -231,7 +231,7 @@ and it felt as if the spirit wanted to suck the air out of <<their $g.swimmer>> 
 <p>
 Meanwhile, <<rep $g.mage>> and <<rep $g.defender>> who were waiting on the shore began to hear the musical river voice again.
 Only this time, the voice is accompanied by lewd moans and contented sighs.
-Just moments after that, <<rep $g.swimmer>> bursted back into the surface, gasping for breath
+Just moments after that, <<rep $g.swimmer>> burst back into the surface, gasping for breath
 from the underwater ordeal.
 </p>
 
@@ -253,7 +253,7 @@ Along the way back, <<rep $g.swimmer>>
 <<if $g.swimmer.isHasTrait('per_lustful')>>
 just couldn't seem to quit grinning lustfully.
 <<else>>
-kept shivering, slowly recovering from the cold embracce of the river water.
+kept shivering, slowly recovering from the cold embrace of the river water.
 <</if>>
 <</if>>
 </p>

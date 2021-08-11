@@ -208,7 +208,7 @@ It's come to your attention that a new village of elves has been founded at the 
 			<<else>>
 			<<set _unit = setup.selectUnit([$g.raider1, $g.raider2, $g.support], {trait: 'per_evil'})>>
 				<<if _unit>>
-				"Stuck <<their $g.elves>> mum with my knife, she really didn't want us to take <<them $g.elves>>," <<name _unit>> says with a coarse laugh.<br>
+				"Stuck <<their $g.elves>> mum with my knife; she really didn't want us to take <<them $g.elves>>," <<name _unit>> says with a coarse laugh.<br>
 				<<else>>
 				"Had to kill the mother though," <<name $g.raider2>> says <<uadv $g.raider2>>. "She was a scrapper, but she got in our way."<br>
 				<</if>>
