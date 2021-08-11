@@ -71,7 +71,7 @@ false, /* is must be answered */
 :: Opportunity_good_slaver_bad_slaver [nobr]
 <p>
 <<Yourrep $g.good>> is an oddity among slavers — slaving naturally requires the slavers to be ruthless, but <<theslaver $g.good>> is actually a kind <<urace $g.good>>.
-It is unclear how or why <<they $g.good>> good|choose to become a slaver in the first place,
+It is unclear how or why <<they $g.good>> chose to become a slaver in the first place,
 <<if $g.good.isHasTrait('per_honorable')>>
 especially considering how honorable <<they $g.good>> good|is,
 <<elseif $g.good.isHasTrait('per_submissive')>>
@@ -111,11 +111,11 @@ brutally penetrating the slave's <<uanus $g.slave>> with an oversized strap-on.
 </p>
 
 <p>
-You expect the slave to be left to recover alone from the abuse in <<their $g.slave>> dungeon cells, but to your surprise, the <<rep $g.good>> is in there, tending and reassuring the slave. It seems the kind <<urace $g.good>> good|is moved by the slave's plight, and could not help but try to make it somewhat more comfortable for the suffering slave. <<They $g.good>> lovingly kiss and hug the slave, before massaging <<their $g.good>> broken anus. The slave even reciprocated the affection on some occasion, seeing <<rep $g.good>> as <<their $g.good>> only ray of light in your accursed fort.
+You expect the slave to be left to recover alone from the abuse in <<their $g.slave>> dungeon cells, but to your surprise, the <<rep $g.good>> is in there, tending and reassuring the slave. It seems the kind <<urace $g.good>> good|is moved by the slave's plight, and could not help but try to make it somewhat more comfortable for the suffering slave. <<They $g.good>> lovingly kiss and hug the slave, before massaging <<their $g.slave>> broken anus. The slave even reciprocated the affection on some occasion, seeing <<rep $g.good>> as <<their $g.slave>> only ray of light in your accursed fort.
 </p>
 
 <p>
-Once <<rep $g.good>> good|leave the cell, <<rep $g.slave>> slave|is left alone to ponder on the strangeness of the situation. The combination of <<reps $g.bad>> abuse and <<reps $g.good>> care has left an impact on the slave — a perfect reenaction of the infamous "good cop bad cop" action. You see an opportunity here: with a little more push, you could instill a permanent obedience into the slave's mind. Alternatively, you could just abuse the slave again, which will probably break <<their $g.slave>> mind. If you have other plans for slave, you could alternatively simply ignore this opportunity and move on with your day.
+Once <<rep $g.good>> good|leave the cell, <<rep $g.slave>> slave|is left alone to ponder on the strangeness of the situation. The combination of <<reps $g.bad>> abuse and <<reps $g.good>> care has left an impact on the slave — a perfect reenactment of the infamous "good cop bad cop" action. You see an opportunity here: with a little more push, you could instill permanent obedience into the slave's mind. Alternatively, you could just abuse the slave again, which will probably break <<their $g.slave>> mind. If you have other plans for slave, you could alternatively simply ignore this opportunity and move on with your day.
 </p>
 
 
@@ -127,7 +127,7 @@ Instill obedience
 
 :: Opportunity_good_slaver_bad_slaver_0_flavor [nobr]
 <p>
-You come up with the plan to let <<rep $g.bad>> and <<rep $g.good>> continue alternating abusing and caring for the slave. <<Yourrep $g.bad>> bad|agree easily, as expected, but it took you some convincing to make the kind <<rep $g.good>> agree on the plan. <<They $g.good>> eventually see that the slave's suffering would be smaller should <<they $g.slave>> decide to be obedient quickly, and reluctantly agree to go through with the plan.
+You come up with the plan to let <<rep $g.bad>> and <<rep $g.good>> continue alternating abusing and caring for the slave. <<Yourrep $g.bad>> bad|agree easily, as expected, but it took you some convincing to make the kind <<rep $g.good>> agree on the plan. <<They $g.good>> eventually see that the slave's suffering would be smaller should <<they $g.slave>> learn to be obedient quickly, and reluctantly agree to go through with the plan.
 </p>
 
 <p>

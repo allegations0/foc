@@ -38,7 +38,7 @@ setup.rarity.rare, /* Rarity */
 
 :: Event_farmer_harvest [nobr]
 <p>
-Your slavers come from quite a variety of backgrounds, and most have not forgotten their old craft even as slavers. This includes <<yourrep $g.slaver>>, who slaver|was a farmer before <<they $g.slaver>> slaver|become your slaver. As a hobby, <<therace $g.slaver>> slaver|tend to a small garden just outside of your fort, growing various mundane crops like tomatoes and corn.
+Your slavers come from quite a variety of backgrounds, and most have not forgotten their old craft even as slavers. This includes <<yourrep $g.slaver>>, who slaver|was a farmer before <<they $g.slaver>> became your slaver. As a hobby, <<therace $g.slaver>> slaver|tend to a small garden just outside of your fort, growing various mundane crops like tomatoes and corn.
 </p>
 
 <p>

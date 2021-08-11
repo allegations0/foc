@@ -63,7 +63,7 @@ Looking at <<their $g.slaver>> handiwork, <<yourrep $g.slaver>>
 <<if $g.slaver.isHasTrait('per_frugal')>>
 slaver|rub <<their $g.slaver>> <<uhands $g.slaver>> together in front of you, no doubt demanding payment for <<their $g.slaver>> services. You almost forgot the slaver is a greedy little <<urace $g.slaver>>...
 <<run setup.qc.Money(-1000).apply($gQuest)>>
-<<elseif $g.slaver.isHasTrait('per_lavish')>>
+<<else>>
 slaver|grin <<uadv $g.slaver>>, feeling a little more confident from <<their $g.slaver>> pastime.
 <</if>>
 
