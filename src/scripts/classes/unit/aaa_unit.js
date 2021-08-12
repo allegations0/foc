@@ -313,7 +313,8 @@ setup.Unit = class Unit extends setup.TwineClass {
     const check_obj = State.variables.unit[this.key]
 
     if (check_obj && check_obj._isCanDelete()) {
-      this.resetCache()
+      this.clearCache()
+      State.variables.unitimage.deleteUnit(this)
       State.variables.activitylist.removeUnitActivity(this)
       State.variables.hospital.deleteUnit(this)
       State.variables.friendship.deleteUnit(this)
@@ -643,19 +644,23 @@ setup.Unit = class Unit extends setup.TwineClass {
   getMainTraining() { return setup.UnitTitle.getMainTraining(this) }
 
   /**
-   * Resets this unit's cache, because something has changed.
+   * Clears this unit's cache.
    */
-  resetCache() {
+  clearCache()
+  {
     this.resetTraitMapCache()
     this.resetSkillCache()
     // reset unit value cache
     State.variables.cache.clear('unitvalue', this.key)
-
     this.resetSpeech()
+  }
+  /**
+   * Resets this unit's cache, because something has changed.
+   * resetImage can repopulate the cleared cache. Do not use this method when preparing to delete a unit.
+   */
+  resetCache() {
+    this.clearCache()
     State.variables.unitimage.resetImage(this)
-    delete State.variables.unitimage.image_need_reset[this.key]
-    delete State.variables.unitimage.unit_image_map[this.key]
-    this.resetTraitMapCache()
   }
 
   /**

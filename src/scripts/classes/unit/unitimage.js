@@ -199,6 +199,14 @@ setup.UnitImage = class UnitImage extends setup.TwineClass {
     this.image_need_reset[unit.key] = is_forced
   }
 
+  /** called when unit is deleted
+   * @param {setup.Unit} unit
+   */
+  deleteUnit(unit){
+    delete this.image_need_reset[unit.key]
+    delete this.unit_image_map[unit.key]
+  }
+
   /**
    * @param {setup.Unit} unit 
    * @returns 
