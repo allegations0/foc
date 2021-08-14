@@ -4,6 +4,8 @@
 
 ### v1.7.1.x
 
+- Logic fix for autoselect by stevejackson121
+
 v1.7.1.10
 
  - Grammar fix -kins to -kin suffix as kin is already plural. Thanks to Elannil
