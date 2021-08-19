@@ -274,6 +274,21 @@ setup.Trait = class Trait extends setup.TwineClass {
   isHasTag(tag) {
     return this.getTags().includes(tag)
   }
+  /**
+   * @param {Array} tag_array
+   * @returns boolean
+   */
+  isHasAnyTag(tag_array) {
+    return this.getTags().includesAny(tag_array);
+  }
+
+  /**
+   * @param {Array} tag_array
+   * @returns boolean
+   */
+  isHasAllTags(tag_array){
+    return this.getTags().includesAll(tag_array);
+  }
 
   /**
    * @returns {setup.Trait[]}

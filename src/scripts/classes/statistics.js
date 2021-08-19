@@ -218,6 +218,10 @@ setup.Statistics = class Statistics extends setup.TwineClass {
     // e.g., {'quest_a': {'crit': true, 'failure': true}}
     this.quest_history = {}
 
+    // If regalixir quest has been completed before NG+ by the same player.
+    // TODO: Generalize this to enable tracking other quests across NG+
+    this.regalixir_completed_previous_games = false
+
     /**
      * Number of times you have scouted from each of these quest pools
      * pool_key: number
