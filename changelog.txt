@@ -12,6 +12,8 @@ v1.8.0.0
 
 ### v1.7.1.x
 
+- Logic fix for autoselect by stevejackson121
+- Bugfix in Quest Kobold Benevolent Agency
 
 v1.7.1.10
 
