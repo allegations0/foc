@@ -163,7 +163,7 @@ setup.qc.Favor('kobold', 50)
     <<if $unit.player.isHasTrait('per_slow')>>
         Whatever the real intention is, you are too dumb to read between the lines. If you want to find out, you'll just have to send a group of slavers. Sending kobolds to be interns could be rewarding, but you get the feeling that <<dangertextlite "it could also backfire...">>
     <<else>>
-        You are not that dumb. Reading between the lines, you get a feeling that there might be something more to this "agency". Sending your slavers, particularly kobolds, on this mission might just give you something nice in return, but <<dangertextlite "it could also backfire...">
+        You are not that dumb. Reading between the lines, you get a feeling that there might be something more to this "agency". Sending your slavers, particularly kobolds, on this mission might just give you something nice in return, but <<dangertextlite "it could also backfire...">>
     <</if>>
 </p>
 
