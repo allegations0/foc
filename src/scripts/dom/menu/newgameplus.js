@@ -102,7 +102,7 @@ function newGamePlusChooseUnitsFragment(is_new_pc, selected_units = []) {
   let slaver_limit = setup.NEW_GAME_PLUS_SLAVERS
   const slaves_limit = setup.NEW_GAME_PLUS_SLAVES
   if (selected_units.length >= slaver_limit + slaves_limit) {
-    return proceedFromChooseUnits(is_new_pc, selected_units)
+    return newGamePlusShowEpilogue(is_new_pc, selected_units)
   }
   if (is_new_pc) {
     fragments.push(html`
@@ -192,66 +192,6 @@ function selectunitfornewgameplus(units, is_new_pc, selected_units) {
       return menus
     }
   })
-}
-
-
-/**
- * @param {boolean} is_new_pc 
- * @param {setup.Unit[]} selected_units
- * @returns {setup.DOM.Node}
- */
-function proceedFromChooseUnits(is_new_pc, selected_units) {
-  const player = State.variables.unit.player
-  const skill_traits = player.getRemovableTraits().filter(trait => trait.getTags().includes('skill'))
-  if (skill_traits.length >= 2) {
-    return newGamePlusChoosePlayerSkillToRetain(is_new_pc, selected_units)
-  } else {
-    return newGamePlusShowEpilogue(is_new_pc, selected_units)
-  }
-}
-
-
-/**
- * @param {boolean} is_new_pc 
- * @param {setup.Unit[]} selected_units
- * @returns {setup.DOM.Node}
- */
-function newGamePlusChoosePlayerSkillToRetain(is_new_pc, selected_units) {
-  const fragments = []
-
-  fragments.push(html`
-    <p>
-      Starting a new will be a difficult endeavor, and you may be unable to maintain
-      all your current set of skills.
-      It would be prudent to re-focus on just one of them, and forget the rest...
-    </p>
-  `)
-
-  const player = State.variables.unit.player
-
-  /**
-   * @param {setup.Trait} trait
-   */
-  function chooseTraitCallback(trait) {
-    return () => {
-      setup.qc.RemoveTraitsWithTag('unit', 'skill').apply(setup.costUnitHelper(player))
-      setup.qc.TraitReplace('unit', trait).apply(setup.costUnitHelper(player))
-      setup.DOM.Helper.replace(
-        `#${CONTAINER_DIV_ID}`,
-        newGamePlusShowEpilogue(is_new_pc, selected_units),
-      )
-    }
-  }
-
-  const skill_traits = player.getRemovableTraits().filter(trait => trait.getTags().includes('skill'))
-  for (const trait of skill_traits) {
-    fragments.push(setup.DOM.Nav.button(
-      `Choose ${trait.rep()}`,
-      chooseTraitCallback(trait),
-    ))
-  }
-
-  return setup.DOM.create('div', {}, fragments)
 }
 
 
@@ -748,6 +688,11 @@ export function initNewGamePlus(is_new_pc, selected_units) {
     setup.costUnitHelper(player)
   )
 
+  let regalixir_completed = false
+  if(State.variables.statistics.isHasSuccess(setup.questtemplate['regalixir'])){
+    regalixir_completed = true
+  }
+
   const keep_keys = {
     'gVersion': true,
     'gDebugWasTurnedOn': true,
@@ -765,6 +710,11 @@ export function initNewGamePlus(is_new_pc, selected_units) {
   // Put info about new game plus, including selected units and is new pc, as
   // well as meta info about the game (how many times have you clicked new game plus)
   State.variables.statistics.add('new_game_plus_count', new_game_pluses + 1)
+
+  // Track whether the Player for the next playthrough has already used the regalixir.
+  if(!is_new_pc && regalixir_completed){
+    State.variables.statistics.add('regalixir_completed_previous_games', !is_new_pc)
+  }
 
   function copyUnit(unit) {
     const copy = createLevelOneUnitCopy(unit)
