@@ -4,6 +4,8 @@
 
 ### v1.8.0.x
 
+ - Bugfix in Trading Mission: Neko Port City where critfail logic had player fuck themselves as punishment.
+
 v1.8.0.0
 
  - Removed limits on Player Character trait retention during New Game Plus
