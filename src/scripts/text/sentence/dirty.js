@@ -51,7 +51,7 @@ function noPenetrationDialogue(me, them, sex) {
       `This is going to be good!`,
       `Ready for some fun?`,
       `I'll be gentle, don't worry!`,
-      `You're going to be a good [npc2.girl] now, aren't you?`,
+      `You're going to be a good ${slut} now, aren't you?`,
       `Let's have some fun!`,
       `You're going to love this!`,
       `You're going to be a good ${slut}`,
