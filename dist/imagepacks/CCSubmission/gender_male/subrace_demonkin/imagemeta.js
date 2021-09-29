@@ -1,7 +1,7 @@
 (function () {
 
   /* The following is list of direct subdirectories. */
-  UNITIMAGE_LOAD_FURTHER = ["bg_slave", "bg_thief", "bg_mystic", "bg_noble", "bg_wildman",]
+  UNITIMAGE_LOAD_FURTHER = ["bg_slave", "bg_thief", "bg_mystic", "bg_noble", "bg_pirate", "bg_wildman",]
 
   /* Image credit information. */
   /* Image credit information. */
@@ -95,13 +95,13 @@
       artist: "giums",
       url: "https://www.deviantart.com/giums/art/ADOPT-5-BLACK-KING-NAGA-PORTRAIT-737969933",
       license: "CC-BY-NC-ND 3.0",
-    },	
+    },
     18: {
       title: "Commission for Nagareboshi93 - Tella",
       artist: "giums",
       url: "https://www.deviantart.com/giums/art/COMM-For-Nagareboshi93-TELLA-796064837",
       license: "CC-BY-NC-ND 3.0",
-    },		
+    },
   }
 
 

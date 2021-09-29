@@ -127,7 +127,7 @@ setup.qdiff.normal24, /* difficulty */
 		"Take off your pants and brace your hands on the desk!" you snapped.<br>
 		<<if $g.trader1.isHasTrait('per_submissive')>>
 			Meekly, <<they $g.trader1>> did as you asked.
-		<<else if $g.trader1.isHasTrait('per_dominant')>>
+		<<elseif $g.trader1.isHasTrait('per_dominant')>>
 			Scowling, <<rep $g.trader1>> slowly stripped off <<their $g.trader1>> pants and undergarments.
 		<<else>>
 			Hesitantly, <<rep $g.trader1>> slowly stripped off <<their $g.trader1>> pants and undergarments.

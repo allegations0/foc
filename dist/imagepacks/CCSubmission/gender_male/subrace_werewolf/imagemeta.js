@@ -1,7 +1,7 @@
 (function () {
 
   /* The following is list of direct subdirectories. */
-  UNITIMAGE_LOAD_FURTHER = []
+  UNITIMAGE_LOAD_FURTHER = ["bg_adventurer",]
 
   /* Image credit information. */
   /* Image credit information. */
@@ -65,7 +65,7 @@
       artist: "Blazbaros",
       url: "https://www.deviantart.com/blazbaros/art/Rogar-the-Ruthless-829767549",
       license: "CC-BY-NC-ND 3.0",
-    },    
+    },
   }
 
 

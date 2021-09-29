@@ -1,7 +1,7 @@
 (function () {
 
   /* The following is list of direct subdirectories. */
-  UNITIMAGE_LOAD_FURTHER = ["bg_engineer", "bg_adventurer", "bg_slave",]
+  UNITIMAGE_LOAD_FURTHER = ["bg_engineer", "bg_adventurer", "bg_slave", "bg_noble",]
 
   /* Image credit information. */
 

@@ -4,7 +4,18 @@
 
 ### v1.8.0.x
 
- - Bugfix in Trading Mission: Neko Port City where critfail logic had player fuck themselves as punishment.
+v1.8.0.1:
+
+  - Add missing `>` causing error on executing if/else statement. (thanks to steven)
+  - Update changelog.txt (thanks to Matthew Lang)
+  - New Quest: Tiger Bank Debt Collection - Vale (thanks to Matthew Lang)
+  - Update Changelog. (thanks to Matthew Lang)
+  - Updating changelog and precompiled.html (thanks to Matthew Lang)
+  - Bugfix for Trading Mission: Neko Port City (thanks to Matthew Lang)
+  - Update README.md
+  - Deployment guide.
+  - Fix test of social requiring unit with test of social tittle
+  - Fix bug in Trading Mission: Neko Port City where critfail logic had player fuck themselves as punishment.
 
 v1.8.0.0
 
@@ -12,7 +23,7 @@ v1.8.0.0
  - Enforced limit of 1 Regalixir Quest spawn for a PC (tracked across NG+) to prevent abuse with removed NG+ limits.
  - Logic improvement for Quest Auto-Assign by stevejackson121
  - Bugfix in Quest Kobold Benevolent Agency
- - New Quest: Tiger Bank Debt Collection - Vale
+ - New Quest: Tiger Bank Debt Collection - Vale (by Matthew Lang)
 
 v1.7.1.10
 

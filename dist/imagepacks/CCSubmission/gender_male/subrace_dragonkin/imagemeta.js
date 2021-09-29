@@ -1,7 +1,7 @@
 (function () {
 
   /* The following is list of direct subdirectories. */
-  UNITIMAGE_LOAD_FURTHER = []
+  UNITIMAGE_LOAD_FURTHER = ["bg_slave",]
 
   /* Image credit information. */
   /* Image credit information. */

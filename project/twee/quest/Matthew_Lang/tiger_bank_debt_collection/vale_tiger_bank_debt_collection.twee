@@ -130,7 +130,7 @@ setup.qc.TraumatizeRandom('enforcer2', 5)
     <</if>>
 <</dialogue>>
 
-The <<rep $company.bank>> in <<lore location_npc>> is a lifeline for many who fall upon hard times and do their best to make wise investments. Unfortunately, some people are unable to to pay back the loans they take out. Sometimes the bank needs people to convince the debtors to pay up. This is where you come in.
+The <<rep $company.bank>> in <<lore location_npc>> is a lifeline for many who fall upon hard times and do their best to make wise investments. Unfortunately, some people are unable to pay back the loans they take out. Sometimes the bank needs people to convince the debtors to pay up. This is where you come in.
 
 Your contact <<rep $g.agent>> at the Tiger Bank has directed you to
 /* set target location */
@@ -193,7 +193,7 @@ why they're visiting, the <<woman $g.villager>> eyes <<rep $g.enforcer>> and <<r
         "I sell people for a living. Do you think I'm going to blink at some spilt ale?"<br>
         Begrudgingly, the innkeeper tugged a golden ring off his finger and pushed it across the bar. "That was my grandfathers. I hope you're happy."<br>
     <<elseif $gQuest.getSeed() % 3 == 2>>
-        "All right," <<rep $g.negotiator>> says <<uadv $g.negotiator>>. "I'll tell you what. You hand over the payment, and <name $g.enforcer>> and <<name $g.enforcer2>> won't burn all your nets, rope and lines."<br>
+        "All right," <<rep $g.negotiator>> says <<uadv $g.negotiator>>. "I'll tell you what. You hand over the payment, and <<name $g.enforcer>> and <<name $g.enforcer2>> won't burn all your nets, rope and lines."<br>
         "Are you threatening me?"<br>
         "Yes. But I like to think of it as a statement of fact."<br>
         Under threat of losing their livelihood, the villagers begrudgingly put together a small pile of gold, jewellery and other trinkets, including a near perfect pearl, which your slavers brought back to the fort.<br>
