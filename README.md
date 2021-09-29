@@ -110,7 +110,7 @@ and I can take a back seat as just a regular contributor :)
 [Content Creator Cheat Sheet](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/textcheatsheet.md) |
 [Adding Sex Actions](docs/sexaction.md) |
 [Special Commands in Content Creator](docs/text.md) |
-[Merge Request Tutorial](docs/mergerequest.md)
+[Merge Request Tutorial](docs/mergerequest.md) |
 [Deployment Guide](docs/deploy.md)
 
 ### Wiki
@@ -124,7 +124,7 @@ and I can take a back seat as just a regular contributor :)
 [Creating Image Pack](docs/images.md) |
 [Adding Room Image](docs/roomimages.md) |
 [Repository Structure](docs/structure.md) |
-[Stats](docs/stats.md) |
+[Stats](docs/stats.md)
 
 ## How to Play the Latest Version of the Game
 
