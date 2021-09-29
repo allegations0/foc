@@ -1,13 +1,3 @@
-# IMPORTANT NOTICE
-
-This repository is no longer maintained. Please check the following repository instead, maintained currently by keldaryth (thank you!):
-
-https://gitgud.io/keldaryth/fort-of-chains/
-
----
-
-# Old information
-
 # Notice
 
 This is the new home of Fort of Chains codebase,
