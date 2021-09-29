@@ -1,6 +1,6 @@
 {
   "name": "darkofoc",
-  "version": "1.7.1",
+  "version": "1.8.0",
   "description": "Fort of Chains: a text-only NSFW slaver and slaves management game",
   "main": "./dist/index.html",
   "config": {

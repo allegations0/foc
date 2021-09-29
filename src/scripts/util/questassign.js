@@ -1,7 +1,8 @@
 import { menuItem, menuItemText, menuItemAction, menuItemDanger, menuItemExtras } from "../ui/menu"
 
-setup.QuestAssignHelper = {}
 
+setup.QuestAssignHelper = {}
+setup.QUEST_AUTO_ASSIGN_MAX_PERMUTATIONS = 24
 /**
  * 
  * @param {string} actor_name 
@@ -148,6 +149,40 @@ setup.QuestAssignHelper.initialize = function (quest) {
 }
 
 
+setup.QuestAssignHelper.computeGreedyAutoAssignment = function(criterias, units, actor_name_permutation, criteria_actor_score_map){
+  const actor_unitkey_map = {}
+  const used_unitkeys = {}
+
+    let total_score = 0;
+
+    for (const actor_name of actor_name_permutation) {
+    /**
+     * @type {setup.UnitCriteria}
+     */
+    const criteria = criterias[actor_name].criteria
+    let best_unit = null
+    let best_score = null
+    for (const unit of units) {
+      if (unit.key in used_unitkeys || !criteria.isCanAssign(unit)) continue
+      const score = criteria_actor_score_map[criteria.key][unit.key]
+      if (!best_unit || score > best_score) {
+        best_unit = unit
+        best_score = score
+      }
+    }
+
+    // no assignment case:
+    if (!best_unit) return {"actor_unitkey_map": null, "total_score": -Infinity};
+
+    used_unitkeys[best_unit.key] = true
+    actor_unitkey_map[actor_name] = best_unit.key
+    total_score += best_score
+  }
+
+  // all found:
+  return {"actor_unitkey_map": actor_unitkey_map, "total_score": total_score};
+}
+
 /**
  * Returns null if no assignment is found.
  * @param {setup.QuestInstance} quest 
@@ -177,34 +212,26 @@ setup.QuestAssignHelper.computeAutoAssignment = function (quest, forced_units) {
   const criterias = quest.getTemplate().getUnitCriterias()
   const difficulty = quest.getTemplate().getDifficulty()
 
-  const actor_unitkey_map = {}
-  const used_unitkeys = {}
-
+  const criteria_actor_score_map = {}
   for (const actor_name in criterias) {
     /**
      * @type {setup.UnitCriteria}
      */
     const criteria = criterias[actor_name].criteria
-    let best_unit = null
-    let best_score = null
     for (const unit of units) {
-      if (unit.key in used_unitkeys || !criteria.isCanAssign(unit)) continue
-      const score = criteria[score_func](unit, difficulty)
-      if (!best_unit || score > best_score) {
-        best_unit = unit
-        best_score = score
-      }
+      if (!criteria.isCanAssign(unit)) continue;
+      if(criteria_actor_score_map[criteria.key] === undefined) criteria_actor_score_map[criteria.key] = {};
+      criteria_actor_score_map[criteria.key][unit.key] = criteria[score_func](unit, difficulty)
     }
-
-    // no assignment case:
-    if (!best_unit) return null
-
-    used_unitkeys[best_unit.key] = true
-    actor_unitkey_map[actor_name] = best_unit.key
   }
-
-  // all found:
-  return actor_unitkey_map
+    let best_result = {"actor_unitkey_map": null, "total_score": -Infinity};
+    for (const permutation of setup.PermuteHelper.permute(Object.keys(criterias), setup.QUEST_AUTO_ASSIGN_MAX_PERMUTATIONS)){
+    const result = setup.QuestAssignHelper.computeGreedyAutoAssignment(criterias, units, permutation, criteria_actor_score_map)
+    if(result.total_score > best_result.total_score){
+      best_result = result;
+    }
+  }
+  return best_result.actor_unitkey_map;
 }
 
 

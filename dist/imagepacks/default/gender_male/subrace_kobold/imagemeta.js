@@ -9,7 +9,6 @@
     "bg_mystic",
     "bg_raider",
     "bg_scholar",
-    "bg_slave",
     "bg_soldier",
     "bg_thief",
     "wings_dragonkin",

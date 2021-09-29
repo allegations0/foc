@@ -2,7 +2,17 @@
 
 [Changelog summary](docs/changelog_summary.md)
 
-### v1.7.1.x
+### v1.8.0.x
+
+ - Bugfix in Trading Mission: Neko Port City where critfail logic had player fuck themselves as punishment.
+
+v1.8.0.0
+
+ - Removed limits on Player Character trait retention during New Game Plus
+ - Enforced limit of 1 Regalixir Quest spawn for a PC (tracked across NG+) to prevent abuse with removed NG+ limits.
+ - Logic improvement for Quest Auto-Assign by stevejackson121
+ - Bugfix in Quest Kobold Benevolent Agency
+ - New Quest: Tiger Bank Debt Collection - Vale
 
 v1.7.1.10
 

@@ -114,6 +114,7 @@ setup.qdiff.hard47, /* difficulty */
 [setup.questpool.sea, setup.rarity.epic],
 ],
 [ /* restrictions */
+  setup.qres.NoRegalixir(),
   setup.qres.QuestUnique(),
   setup.qres.Not(setup.qres.QuestDone('regalixir')),
 ],

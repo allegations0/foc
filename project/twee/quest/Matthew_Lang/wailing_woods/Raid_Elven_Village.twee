@@ -98,8 +98,8 @@ It's come to your attention that a new village of elves has been founded at the 
 				"Leave my <<girl $g.elves>> alone!"<br>
 				A woman throws herself at <<name $g.raider2>>, trying to pull <<their $g.raider2>> <<uhands $g.raider2>> from the <<girl $g.elves>>. Pulling out your <<uweapon $unit.player>> you strike down at her once, twice, and then her grip goes limp as she falls to the ground.<br>
 				"Mothe--" the <<girl $g.elves>>'s cry is muffled by <<name $g.raider2>>'s <<uhands $g.raider2>> over <<their $g.elves>> mouth.<br>
-				The woman's eyes dim as she stares up into your face. "Curse...you...
-					<<if $unit.player.isHasTrait('subrace_elf')>>
+-				The woman's eyes dim as she stares up into your face. "Curse...you...
+-					<<if $unit.player.isHasTrait('subrace_elf')>>
 					traitor...
 					<<else>>
 					invader...
@@ -170,7 +170,7 @@ It's come to your attention that a new village of elves has been founded at the 
 				<<else>>
 				<<name $g.raider1>>	hauling a young <<woman $g.elves>> out of a house.<br>
 				"Leave my <<girl $g.elves>> alone!"<br>
-				A woman throws herself at <<name _raider1>>, trying to pull <<their $g.raider1>> <<uhands $g.raider1>> from the <<girl $g.elves>>. Pulling out your <<uweapon $unit.player>> you strike her once, twice. Almost immediately her grip goes limp as she falls to the ground.<br>
+				A woman throws herself at <<name $g.raider1>>, trying to pull <<their $g.raider1>> <<uhands $g.raider1>> from the <<girl $g.elves>>. Pulling out your <<uweapon $unit.player>> you strike her once, twice. Almost immediately her grip goes limp as she falls to the ground.<br>
 				"Mothe--" the <<girl $g.elves>>'s cry is muffled by <<name $g.raider1>>'s <<uhands $g.raider1>> over <<their $g.elves>> mouth.<br>
 				The woman's eyes dim as she stares up into your face. "Curse...you...
 					<<if $unit.player.isHasTrait('subrace_elf')>>
