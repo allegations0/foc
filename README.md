@@ -124,7 +124,6 @@ and I can take a back seat as just a regular contributor :)
 [Adding Room Image](docs/roomimages.md) |
 [Repository Structure](docs/structure.md) |
 [Stats](docs/stats.md) |
-[Patreon](https://www.patreon.com/darkofoc)
 
 ## How to Play the Latest Version of the Game
 
