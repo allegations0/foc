@@ -102,7 +102,7 @@ setup.qdiff.hardest100, /* difficulty */
   setup.qres.QuestUnique(),
   setup.qres.ExistUnit([
 setup.qres.Job(setup.job.slaver),
-setup.qres.HasTitle('quest_master_of_social_0'),
+setup.qres.NoTitle('quest_master_of_social_0'),
 setup.qres.SkillAtLeast(setup.skill.social, 100)
 ], 1),
   setup.qres.Building(setup.buildingtemplate.veteranhall),
