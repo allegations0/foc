@@ -685,5 +685,11 @@
       url: "https://www.newgrounds.com/art/view/jasonafex/blue-lagoon-female",
       license: "CC-BY-NC 3.0",
     },
+    "kobold_rescue.jpg": {
+      title: "Drow and slaves lead freshly captured heroes into a drow city",
+      artist: "James Jacobs and Greg A. Vaughan",
+      url: "https://paizo.com/community/blog/v5748dyo5l9xt",
+      license: "Paizo Inc. Community Use Policy",
+    },
   }
 }());

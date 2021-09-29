@@ -44,3 +44,13 @@ Please note this may take a while.
   - Run: `npm run deployfull`
 
 This will generate a `focfull.zip` containing the full game.
+
+## Release notes and documentation
+
+It might be good to recap the changes with a release notes. See
+https://gitgud.io/darkofocdarko/fort-of-chains/-/tree/master/docs/update for past
+release notes.
+
+You want to link the new release notes in the main
+README page too: https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/README.md
+

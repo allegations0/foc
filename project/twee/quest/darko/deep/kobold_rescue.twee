@@ -80,6 +80,9 @@ setup.qdiff.hard34, /* difficulty */
 )>>
 
 :: Quest_kobold_rescue [nobr]
+
+<<questimage 'kobold_rescue.jpg'>>
+
 <p>
     The drow economy relies much on slaves, to the point that the slaves are said to outnumber the drows. Among these slaves are a large number of kobold slaves, who are forced to mine in the many drow mineshafts in the <<lore region_deep>>.
     Despite this, the drow and kobolds are not "technically" enemies — the drows maintained that these kobolds are criminals and scums they have captured somewhere. But one would be foolish to blindly trust a drow.
