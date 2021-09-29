@@ -16,3 +16,7 @@ Once that's done:
 - Windows: execute `build.bat`, and once it finished, open `dist/index.html`
 
 - Linux: run `npm run build`, and your browser should automatically open the compiled file at the end.
+
+## Version bump, precompiling, and deploying
+
+Please check [Deployment Guide](docs/deploy.md).

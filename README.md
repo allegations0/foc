@@ -111,6 +111,7 @@ and I can take a back seat as just a regular contributor :)
 [Adding Sex Actions](docs/sexaction.md) |
 [Special Commands in Content Creator](docs/text.md) |
 [Merge Request Tutorial](docs/mergerequest.md)
+[Deployment Guide](docs/deploy.md)
 
 ### Wiki
 [Lore](docs/lore.md) |
