@@ -4,6 +4,14 @@
 
 ### v1.8.0.x
 
+v1.8.0.2:
+
+  - New image for Kobold rescue
+  - Family now refer to each other with their family titles.
+  - Fixed readme.
+  - Add deployment guide links to readme.
+  - Fix favor not decaying above 120.0
+
 v1.8.0.1:
 
   - Add missing `>` causing error on executing if/else statement. (thanks to steven)
