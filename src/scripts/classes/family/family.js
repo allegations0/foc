@@ -86,7 +86,12 @@ setup.Family = class Family extends setup.TwineClass {
     this._uniteSurname(unit, target)
   }
 
-  // unit is target's what?
+  /**
+   * unit is target's xxx (if any)
+   * @param {setup.Unit} unit 
+   * @param {setup.Unit} target 
+   * @returns {setup.FamilyRelation | null}
+   */
   getRelation(unit, target) {
     if (!(unit.key in this.family_map)) return null
     if (!(target.key in this.family_map[unit.key])) return null

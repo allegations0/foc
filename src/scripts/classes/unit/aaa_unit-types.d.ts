@@ -179,7 +179,7 @@ declare namespace setup {
     purify(trait_tag)
     corrupt(trait_tag?: string, is_return_anyways?: boolean): setup.Trait | null
     corruptPermanently(): setup.Trait | null
-    getSpeech()
+    getSpeech(): setup.Speech
     getSpeechChances()
     resetSpeech()
     recomputeSpeech()

@@ -40,6 +40,7 @@ setup.Text.Greeting.nickname = function ({
     if (target.isYou()) {
       names.push(
         `boss`,
+        `chief`,
       )
     }
 
@@ -136,6 +137,12 @@ setup.Text.Greeting.nickname = function ({
     names.push(
       `friend`,
     )
+  }
+
+  // override for relationship
+  const relation = State.variables.family.getRelation(target, unit)
+  if (relation) {
+    names = relation.getNicknames()[speech.key]
   }
 
   // override for lovers
