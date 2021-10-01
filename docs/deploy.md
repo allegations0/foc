@@ -1,6 +1,8 @@
-# Development Guide
+# Deployment Guide
 
 This guide details deployment process for the game.
+To deploy, you must first [install NodeJS|https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/javascript.md].
+
 The deployment process consist of several steps:
 
 - Increase version number
@@ -39,11 +41,26 @@ This will automatically update the `dist` folder with the latest precompiled ver
 Please note this may take a while.
 
 - Windows:
-  - Execute `deploy.bat`
+  - Execute `deployfull.bat`
 - Linux:
   - Run: `npm run deployfull`
 
-This will generate a `focfull.zip` containing the full game.
+This will generate a `focfull.zip` containing the full game with all images.
+
+## Building the itch.io zip version
+
+- Windows:
+  - Execute `deployitch.bat`
+- Linux:
+  - Run: `npm run deployitch`
+
+This will generate a `focitch.zip` containing the game version suitable to be played
+on browser in itch.io.
+Note that itch.io has a strict requirement of "at most 1000 files".
+To reduce the number of files, you can remove some of the unit images found in the `dist`
+folder.
+The easiest way to do this is to download a previous version from `itch.io`,
+then override the `dist/imagepacks` folder with the one from the previous `itch.io` version.
 
 ## Release notes and documentation
 
