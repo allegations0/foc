@@ -656,13 +656,13 @@ setup.FAVOR_DECAY = [
   [250, 1],
   [525, 20],
   [800, 50],
-  [1200, 80],
+  [2000, 80],
 ]
 
 // favor decay with the relationship manager assigned to this company
 setup.FAVOR_DECAY_RELATIONSHIP_MANAGER = [
   [800, 0],
-  [1200, 30],
+  [2000, 30],
 ]
 
 // Probability for master equipment at medium and high favor
