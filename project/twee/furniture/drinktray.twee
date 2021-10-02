@@ -33,7 +33,7 @@
 
 <<run new setup.Furniture(
   'f_drinktray_good',
-  '[UNOBTAINABLE] gilded water bowl',
+  'gilded water bowl',
   'Luxurious-looking water bowl placed on the floor for your slaves to lap water from', 
   /* value = */ setup.FURNITURE_PRICE_GOOD,
   setup.furnitureslot.drinktray,

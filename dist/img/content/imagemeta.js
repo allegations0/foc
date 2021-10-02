@@ -715,5 +715,11 @@
       url: "https://paizo.com/community/blog/v5748dyo5lapb&sort=3&page=1?Andoran-Spirit-of-Liberty-Preview",
       license: "Paizo Inc. Community Use Policy",
     },
+    "tomb_raider.jpg": {
+      title: "Look, these tombs aren't just going to plunder themselves",
+      artist: "Maichol Quinto",
+      url: "https://paizo.com/community/blog/v5748dyo5lj95?Tis-the-Season-of-Plundered-Tombs",
+      license: "Paizo Inc. Community Use Policy",
+    },
   }
 }());
