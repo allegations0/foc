@@ -16,6 +16,12 @@ UNITIMAGE_CREDITS = {
     url: "https://www.deviantart.com/kachima/art/Kitana-Mortal-Kombat-9-818598402",
     license: "CC-BY-NC-ND 3.0",
   },
+  3: {
+    title: "(XXX BIMBO VERSION) Porsha Bentley",
+    artist: "JugganautMind",
+    url: "https://www.newgrounds.com/art/view/jugganautmind/xxx-bimbo-version-porsha-bentley",
+    license: "CC-BY-NC 3.0",
+  },
 }
 
 }());

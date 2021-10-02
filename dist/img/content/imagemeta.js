@@ -307,6 +307,12 @@
       url: "https://www.newgrounds.com/art/view/theshadling/fucking-a-sissy",
       license: "CC-BY-NC 3.0",
     },
+    "unit_training_sissy_master_male.jpg": {
+      title: "(Threesome) 3-Way Dance (STORY)",
+      artist: "JugganautMind",
+      url: "https://www.newgrounds.com/art/view/jugganautmind/threesome-3-way-dance-story",
+      license: "CC-BY-NC 3.0",
+    },
     "unit_training_endurance_basic_female.jpg": {
       title: "BDSM lessons",
       artist: "knotgames",

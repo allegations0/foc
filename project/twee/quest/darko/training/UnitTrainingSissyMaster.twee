@@ -61,6 +61,12 @@ Let it be outward appearance, demeanor, even sexual preference.
 </p>
 
 :: QuestUnitTrainingSissyMasterCrit [nobr]
+
+<<if $g.trainee.isMale()>>
+  <<questimage 'unit_training_sissy_master_male.jpg'>>
+<<else>>
+<</if>>
+
 <p>
 Thanks to the skill of the training team,
 the training went much smoother than expected. <<Reps $g.trainee>> transformation into an elite sissy
