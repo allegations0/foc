@@ -119,6 +119,11 @@ much coins from nearby settlements.
 
 :: QuestBountyHuntKrakenCrit [nobr]
 
+<<if $g.merc1.isMale() || $g.merc2.isMale() || $g.merc3.isMale()>>
+  <<questimage 'bounty_hunt_kraken_result_male.jpg'>>
+<<else>>
+<</if>>
+
 <p>
 As planned, your slavers managed to bait the kraken into attacking the actually prepared
 ship. Your slavers fought

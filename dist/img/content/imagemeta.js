@@ -703,5 +703,17 @@
       url: "https://paizo.com/community/blog/v5748dyo5lhfm",
       license: "Paizo Inc. Community Use Policy",
     },
+    "carnal_experience_desc_male.jpg": {
+      title: "Wrapping Up Iron Gods",
+      artist: "Kari Christensen",
+      url: "https://paizo.com/community/blog/tags/ironGods",
+      license: "Paizo Inc. Community Use Policy",
+    },
+    "bounty_hunt_kraken_result_male.jpg": {
+      title: "Andoran, Spirit of Liberty Preview",
+      artist: "Craig J. Spearing",
+      url: "https://paizo.com/community/blog/v5748dyo5lapb&sort=3&page=1?Andoran-Spirit-of-Liberty-Preview",
+      license: "Paizo Inc. Community Use Policy",
+    },
   }
 }());

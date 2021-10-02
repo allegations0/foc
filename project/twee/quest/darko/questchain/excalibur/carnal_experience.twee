@@ -65,6 +65,12 @@ setup.qc.EmptyUnitGroup('opportunity_aspect_of_experience1'), ],
 )>>
 
 :: Quest_carnal_experience [nobr]
+
+<<if $g.chief.isMale()>>
+  <<questimage 'carnal_experience_desc_male.jpg'>>
+<<else>>
+<</if>>
+
 <p>
 Your company has received a most unexpected visitor: A young <<lady $g.daughter>> who introduces <<themself $g.daughter>> as <<name $g.daughter>>, <<daughter $g.daughter>> of <<name $g.chief>>. <<They $g.daughter>> has came with a most unusual problem for your company to solve.
 </p>
