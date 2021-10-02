@@ -15,7 +15,10 @@ Once that's done:
 
 - Windows: execute `build.bat`, and once it finished, open `dist/index.html`
 
-- Linux: run `npm run build`, and your browser should automatically open the compiled file at the end.
+- Linux:
+  - run `npm run build`, and your browser should automatically open the compiled file at the end.
+  - Alternatively, you can run `npm run buildtwee` to compile only the twee files.
+    This compilation is much faster than the above.
 
 ## Version bump, precompiling, and deploying
 
