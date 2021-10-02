@@ -4,6 +4,15 @@
 
 ### v1.8.0.x
 
+v1.8.0.3:
+
+  - New Quest: Desert Spring
+  - New quest: Tomb Raider
+  - Itch.io deployment instructions.
+  - Fix errors occuring during test + documentations
+  - Buildtwee docs.
+  - Various new images and unit portraits.
+
 v1.8.0.2:
 
   - New image for Kobold rescue
