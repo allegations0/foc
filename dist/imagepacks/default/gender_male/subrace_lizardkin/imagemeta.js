@@ -86,6 +86,18 @@
       url: "https://www.deviantart.com/ioana-muresan/art/Commission-7-714250258",
       license: "CC-BY-NC-ND 3.0",
     },
+    13: {
+      title: "A cliffscale lizardfolk of Jaha",
+      artist: "Mary Jane Pajaron",
+      url: "https://paizo.com/community/blog/v5748dyo6sgx3",
+      license: "Paizo Inc. Community Use Policy",
+    },
+    14: {
+      title: "A wetlander lizardfolk diver shucks a clam",
+      artist: "Mary Jane Pajaron",
+      url: "https://paizo.com/community/blog/v5748dyo6sgx3",
+      license: "Paizo Inc. Community Use Policy",
+    },
     16: {
       title: "General crocodile warrior",
       artist: "ThemeFinland",

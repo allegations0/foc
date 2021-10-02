@@ -30,6 +30,9 @@ This test will try and run all quest, opportunity, event, interaction, epilogue,
 This will usually cover the entire code base, so if the test succeed, the game is likely to be
 in a good state.
 
+If you have `npm` installed, the game also has a sanity checking that spots various common mistakes.
+You can run it with `npm run sanity`.
+
 ## Increasing version number
 
 - The first step depends on your OS:

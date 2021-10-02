@@ -16,6 +16,12 @@ UNITIMAGE_CREDITS = {
     url: "https://www.deviantart.com/arcan-anzas/art/Dota-2-Drow-Ranger-Poster-554544812",
     license: "CC-BY-NC-ND 3.0",
   },
+  3: {
+    title: "Depora Azrinae, drow fighter",
+    artist: "Steve Prescott",
+    url: "https://paizo.com/community/blog/v5748dyo5la0i",
+    license: "Paizo Inc. Community Use Policy",
+  },
 }
 
 }());

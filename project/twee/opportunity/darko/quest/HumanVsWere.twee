@@ -32,6 +32,8 @@
 
 :: OpportunityHumanVsWere [nobr]
 
+<<questimage "human_vs_were.jpg">>
+
 <<set _u = setup.getAnySlaver()>>
 
 <p>

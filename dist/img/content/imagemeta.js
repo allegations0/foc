@@ -697,5 +697,11 @@
       url: "https://paizo.com/community/blog/v5748dyo5l9xt",
       license: "Paizo Inc. Community Use Policy",
     },
+    "human_vs_were.jpg": {
+      title: "Feiya and Merisiel guard the Stairs of the Moon from a pack of werewolves",
+      artist: "Craig J Spearing",
+      url: "https://paizo.com/community/blog/v5748dyo5lhfm",
+      license: "Paizo Inc. Community Use Policy",
+    },
   }
 }());
