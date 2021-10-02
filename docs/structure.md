@@ -103,6 +103,21 @@ Instead, the game uses [custom navigation macros](#navigation).
 
 **Document as much as you can with JSDocs!**
 
+- Write the types for the parameters and output values for functions using JSDocs. Example:
+
+```
+/**
+  * Builds a room
+  *
+  * @param {setup.BuildingTemplate} template 
+  * @param {setup.RoomInstance} [room]
+  * @returns {setup.RoomInstance | null}
+  */
+build(template, room) {
+  ...
+}
+```
+
 - PascalCase for classes `setup.BuildingInstance`
 
 - camelCase for methods `unit.getTraits()`

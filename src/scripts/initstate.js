@@ -225,31 +225,42 @@ setup.initEstablishBase = function () {
   const grid = State.variables.fortgrid
   // build construction office
   {
-    const room = State.variables.fort.player.build(setup.buildingtemplate.constructionoffice)
-    room.rotate90anticlockwise()
-    grid.relocateRoom(room, { row: 1, col: 0 })
+    if (State.variables.gDebug && State.variables.fort.player.isHasBuilding(
+      setup.buildingtemplate.constructionoffice)) {
+      // this can happen during testing phase.
+    } else {
+      const room = State.variables.fort.player.build(setup.buildingtemplate.constructionoffice)
+      room.rotate90anticlockwise()
+      grid.relocateRoom(room, { row: 1, col: 0 })
+    }
   }
 
   // build lodgings
   {
-    const room = State.variables.fort.player.build(setup.buildingtemplate.lodgings)
-    room.rotate180()
-    grid.relocateRoom(room,
-      { row: -2, col: State.variables.fortgrid.getWidth() / 2 + 2 })
+    if (State.variables.gDebug && State.variables.fort.player.isHasBuilding(
+      setup.buildingtemplate.lodgings)) {
+      // this can happen during testing phase.
+    } else {
+      const room = State.variables.fort.player.build(setup.buildingtemplate.lodgings)
+      room.rotate180()
+      grid.relocateRoom(room,
+        { row: -2, col: State.variables.fortgrid.getWidth() / 2 + 2 })
 
-    // upgrade it twice
-    const building = State.variables.fort.player.getBuilding(setup.buildingtemplate.lodgings)
-    const room_upgr1 = building.upgrade()
-    grid.relocateRoom(room_upgr1,
-      {
-        row: -3, col: grid.getWidth() / 2 - 9
-      })
-    const room_upgr2 = building.upgrade()
-    room_upgr2.rotate180()
-    grid.relocateRoom(room_upgr2,
-      {
-        row: -2, col: State.variables.fortgrid.getWidth() / 2 + 8
-      })
+      // upgrade it twice
+      const building = State.variables.fort.player.getBuilding(setup.buildingtemplate.lodgings)
+      const room_upgr1 = building.upgrade()
+      grid.relocateRoom(room_upgr1,
+        {
+          row: -3, col: grid.getWidth() / 2 - 9
+        })
+      const room_upgr2 = building.upgrade()
+      room_upgr2.rotate180()
+      grid.relocateRoom(room_upgr2,
+        {
+          row: -2, col: State.variables.fortgrid.getWidth() / 2 + 8
+        }
+      )
+    }
   }
 }
 

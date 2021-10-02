@@ -133,12 +133,17 @@ setup.Fort = class Fort extends setup.TwineClass {
   }
 
 
+  /**
+   * @param {setup.BuildingTemplate | string} template 
+   * @param {number} [level]  // if given, building must be at least this level to return true
+   * @returns {boolean}
+   */
   isHasBuilding(template, level) {
-    if (setup.isString(template)) {
-      if (!(template in setup.buildingtemplate)) throw new Error(`Template ${template} not found: isHasBuilding`)
-      template = setup.buildingtemplate[template]
-    }
-    const building = this.getBuilding(template)
+    /**
+     * @type {setup.BuildingTemplate}
+     */
+    const building_template = setup.selfOrObject(template, setup.buildingtemplate)
+    const building = this.getBuilding(building_template)
     if (!building) return false
     if (!level) return true
     return building.getLevel() >= level

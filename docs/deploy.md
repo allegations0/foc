@@ -1,15 +1,34 @@
-# Deployment Guide
+# Test / Deployment Guide
 
 This guide details deployment process for the game.
-To deploy, you must first [install NodeJS|https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/javascript.md].
+To deploy, you must first [install NodeJS](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/javascript.md).
 
 The deployment process consist of several steps:
 
+- Test
 - Increase version number
 - Build the precompiled version
 - Optionally, build the zip version to upload on itch.io
 
 These three steps are detailed as follows:
+
+## Test
+
+The game has a semi-automated testing built into the game:
+
+1. [Compile the game](docs/javascript.md)
+2. Open the game, then from the main menu, select `(Debug start)`
+3. Go to `Settings`
+4. Scroll down and select `(TEST EVERYTHING)`
+5. Wait for a few minutes until the testing is completed
+6. Open the Javascript Console (e.g., `Ctrl + Shift + J`), and look for errors there
+7. If you found an error there, you can do a search in the page
+(not in the javascript console) for `error`. This should lead you to the particular quest /
+content that has problems.
+
+This test will try and run all quest, opportunity, event, interaction, epilogue, activity, and more.
+This will usually cover the entire code base, so if the test succeed, the game is likely to be
+in a good state.
 
 ## Increasing version number
 

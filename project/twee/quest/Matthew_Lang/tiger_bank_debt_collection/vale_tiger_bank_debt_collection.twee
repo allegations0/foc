@@ -279,7 +279,7 @@ why they're visiting, the <<woman $g.villager>> eyes <<rep $g.enforcer>> and <<r
     How about you and I sit down and talk about this, and <<name $g.enforcer>> and <<name $g.enforcer2>> head down into your cellar and play with their axes and your barrels of ale?"<br>
     "All right," the innkeeper says. "Sounds good. Would you like some pork? We've been slow roasting it all day. It should just be about perfect."<br>
     "Sounds wonderful." Something was off, but they'd called the bluff.<br>
-    <<Rep $g.enforcer>> and <<name $g.enforcer2>> headed down to the cellar as a skinny, simpering girl brought over a plate of roasted pork and potatoes, cringing away from <<rep #g.negotiator>> as she places the dish in front of <<them $g.negotiator>>. Then she lunges, and there's a heavy knife impaling <<their $g.negotiator>> hand to the table.<br>
+    <<Rep $g.enforcer>> and <<name $g.enforcer2>> headed down to the cellar as a skinny, simpering girl brought over a plate of roasted pork and potatoes, cringing away from <<rep $g.negotiator>> as she places the dish in front of <<them $g.negotiator>>. Then she lunges, and there's a heavy knife impaling <<their $g.negotiator>> hand to the table.<br>
     "We saw off the bandits," the innkeeper says evenly. "And you're about to see why. When you crawl back to your fortress, tell the bank that they will get their money. And you will stay away from my inn."
 
 <<elseif $gQuest.getSeed() % 3 == 2>>

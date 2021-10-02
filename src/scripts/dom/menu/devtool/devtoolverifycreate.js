@@ -25,7 +25,8 @@ export function display_errors({
   if (!error_details.length) {
     fragments.push(html`
     <p>
-      Congratulations! No errors were detected.
+      Test is completed! No fatal errors found, but there may be textual errors.
+      Please check the javascript console (Ctrl + Shift + J) for leftover errors.
     </p>
     `)
   } else {

@@ -111,7 +111,7 @@ and I can take a back seat as just a regular contributor :)
 [Adding Sex Actions](docs/sexaction.md) |
 [Special Commands in Content Creator](docs/text.md) |
 [Merge Request Tutorial](docs/mergerequest.md) |
-[Deployment Guide](docs/deploy.md)
+[Test / Deployment Guide](docs/deploy.md)
 
 ### Wiki
 [Lore](docs/lore.md) |
@@ -201,6 +201,7 @@ for common problems you might encounter.
 **If you are a programmer:** This compilation method only compiles the [twine files](https://gitgud.io/darkofocdarko/fort-of-chains/-/tree/master/project/twee),
 and not the [javascript or css files](https://gitgud.io/darkofocdarko/fort-of-chains/-/tree/master/src).
 To compile the javascript or css files, see instructions [here](docs/javascript.md).
+To test the game / deploy the game, see instructions [here](docs/deploy.md).
 
 ## Submitting your Content
 

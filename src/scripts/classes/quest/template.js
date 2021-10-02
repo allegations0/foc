@@ -319,7 +319,7 @@ setup.QuestTemplate = class QuestTemplate extends ContentTemplate {
           unit = all_slavers[j_slaver]
           j_slaver += 1
         } else {
-          console.log(`generating new unit for quest ${this.key}`)
+          // console.log(`generating new unit for quest ${this.key}`)
           unit = setup.unitpool.subrace_humankingdom_male.generateUnit()
           State.variables.company.player.addUnit(unit, slave ? setup.job.slave : setup.job.slaver)
         }
