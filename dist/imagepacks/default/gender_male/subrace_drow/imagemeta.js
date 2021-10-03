@@ -25,6 +25,12 @@
       url: "https://www.deviantart.com/robusta-art/art/DnD-commission-Drow-Wizard-865873380",
       license: "CC-BY-ND 3.0",
     },
+    4: {
+      title: "Clover Fish",
+      artist: "Tk-A",
+      url: "https://www.newgrounds.com/art/view/tk-a/clover-fish",
+      license: "CC-BY-NC-ND 3.0",
+    },
     5: {
       title: "Drow - Commission",
       artist: "captdiablo",

@@ -151,6 +151,12 @@
       url: "https://www.newgrounds.com/art/view/oblivionscribe/alistair-x-zevran",
       license: "CC-BY-NC-ND 3.0",
     },
+    "unit_training_anal_basic_male_neko.jpg": {
+      title: "Warming Up NSFW",
+      artist: "kirielin",
+      url: "https://www.newgrounds.com/art/view/kirielin/warming-up-nsfw",
+      license: "CC-BY-NC-SA 3.0",
+    },
     "unit_training_anal_advanced_male_demon.jpg": {
       title: "Tiefling/Orc Lovin'",
       artist: "oblivionscribe",
@@ -216,6 +222,12 @@
       artist: "Eronautics",
       url: "https://www.newgrounds.com/art/view/eronautics/ochako-s-anal-practice",
       license: "CC-BY-NC 3.0",
+    },
+    "unit_training_anal_basic_female_neko.jpg": {
+      title: "Atago bondage",
+      artist: "roleplaysluts",
+      url: "https://www.newgrounds.com/art/view/roleplaysluts/atago-bondage",
+      license: "CC-BY-NC-ND 3.0",
     },
     "unit_training_oral_basic_female2.jpg": {
       title: "Can't bite you",
@@ -432,6 +444,12 @@
       title: "Iron Bull & Qunari Inquisitor",
       artist: "Karhumies",
       url: "https://www.newgrounds.com/art/view/karhumies/iron-bull-qunari-inquisitor",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    "unit_training_masochist_advanced_female.jpg": {
+      title: "Nancy's Outdoors Bondage",
+      artist: "DarkShadow777",
+      url: "https://www.newgrounds.com/art/view/darkshadow777/nancy-s-outdoors-bondage",
       license: "CC-BY-NC-ND 3.0",
     },
     "high_demon_society_male.jpg": {

@@ -63,9 +63,17 @@ take in the actual shaft.
 :: QuestUnitTrainingAnalBasicCrit [nobr]
 
 <<if $g.trainee.isMale()>>
-  <<questimage 'unit_training_anal_basic_male_humankingdom.jpg'>>
+  <<if $g.trainee.isHasTrait('race_catkin')>>
+    <<questimage 'unit_training_anal_basic_male_neko.jpg'>>
+  <<else>>
+    <<questimage 'unit_training_anal_basic_male_humankingdom.jpg'>>
+  <</if>>
 <<else>>
-  <<questimage 'unit_training_anal_basic_female.jpg'>>
+  <<if $g.trainee.isHasTrait('race_catkin')>>
+    <<questimage 'unit_training_anal_basic_female_neko.jpg'>>
+  <<else>>
+    <<questimage 'unit_training_anal_basic_female.jpg'>>
+  <</if>>
 <</if>>
 
 <p>

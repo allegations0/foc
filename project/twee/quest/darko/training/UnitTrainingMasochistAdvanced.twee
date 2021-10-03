@@ -64,6 +64,7 @@ is a good or a bad thing.
 <<if $g.trainee.isMale()>>
   <<questimage 'unit_training_masochist_advanced_male_demonkin.jpg'>>
 <<else>>
+  <<questimage 'unit_training_masochist_advanced_female.jpg'>>
 <</if>>
 
 <<if $gOutcome == 'crit'>>
