@@ -15,6 +15,7 @@ v1.8.1.1:
   - New activity: Noticeboards reading
   - Images for academy of wind quest
   - Some text and wording fixes here and there
+  - Rewrote top left menu into DOM
 
 v1.8.1.0:
 
