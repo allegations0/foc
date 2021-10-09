@@ -132,7 +132,7 @@ function newGamePlusChooseUnitsFragment(is_new_pc, selected_units = []) {
         () => {
           setup.DOM.Helper.replace(
             `#${CONTAINER_DIV_ID}`,
-            proceedFromChooseUnits(is_new_pc, selected_units),
+            newGamePlusShowEpilogue(is_new_pc, selected_units)
           )
         },
       )}
@@ -689,7 +689,7 @@ export function initNewGamePlus(is_new_pc, selected_units) {
   )
 
   let regalixir_completed = false
-  if(State.variables.statistics.isHasSuccess(setup.questtemplate['regalixir'])){
+  if (State.variables.statistics.isHasSuccess(setup.questtemplate['regalixir'])) {
     regalixir_completed = true
   }
 
@@ -712,7 +712,7 @@ export function initNewGamePlus(is_new_pc, selected_units) {
   State.variables.statistics.add('new_game_plus_count', new_game_pluses + 1)
 
   // Track whether the Player for the next playthrough has already used the regalixir.
-  if(!is_new_pc && regalixir_completed){
+  if (!is_new_pc && regalixir_completed) {
     State.variables.statistics.add('regalixir_completed_previous_games', !is_new_pc)
   }
 
