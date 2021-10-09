@@ -2,7 +2,7 @@
 
 Full changelog [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/changelog.txt).
 
-v1.7.1.0: (4 June 2021)
+v1.8.1.0: (9 October 2021)
 
   **Important**: the Grand Hall has been renamed to Great Hall.
   If you are loading an existing save, you need to re-build the building.
@@ -19,7 +19,12 @@ v1.7.1.0: (4 June 2021)
     - New quest chain: Elven Hot Springs: Mens Business (by Matthew Lang) (2 quests, 2 mails, 1 event)
     - New quest chain: Potion of Lust (by Matthew Lang) (2 quests)
     - New quest chain: The Shunned Kobold (7 event, 7 mail. 3 quest)
+    - New quests: A Merchant's Revenge: Embarras A Rival (by Matthew Lang) (3 quests, 1 mail)
     - New quest: Trade Ship Escort: Lucgate to Neko Port City (by Matthew Lang)
+    - New Quest: Bounty Hunt: Hole Gaper.
+    - New Quest: Tiger Bank Debt Collection - Vale (by Matthew Lang)
+    - New Quest: Desert Spring
+    - New quest: Tomb Raider
     - New event: Prison Break (by Fae)
     - New event: Earth Priests Ire (by Fae)
     - New quest: Investigate the Earth (1 quest, 1 event)
@@ -51,6 +56,10 @@ v1.7.1.0: (4 June 2021)
     - New lore: Temple of Gaiatal (by Fae)
     - New lore: Drow
     - New lore: Drow Rite of Adulthood
+    - New lore: Leopold Pavo
+    - New lores: Kurdwisec, Gaius the Just
+    - New blessing: Blessing of Wolf
+    - New curse: Curse of Lamb
   - New region: The Deeprealm
     - Unlock by building the Library
     - Ships with 19 quests
@@ -67,18 +76,24 @@ v1.7.1.0: (4 June 2021)
     - Includes new sex action
     - Includes font
     - Ships with more than 60 portraits
+    - Dual fire/earth affinity
+    - Can start as a winged kobold.
   - New race: Drow
     - Includes nameset
     - Includes company
     - Includes new sex action
     - Includes font
     - Ships with more than 60 portraits
+  - Lore
+    - New lore type: person lores
+    - Lorebook now automatically set it to be prerequisite for its lore
   - Content Creator
     - New toolbar additions:
       - Duty selector
       - Money formatting
       - Favor formatting
       - setup.getUnit
+      - "has ever completed this quest?"
     - New cost:
       - CleanMentalTraits.
     - Can override existing content in CC.
@@ -95,9 +110,11 @@ v1.7.1.0: (4 June 2021)
       - Dominance Training Room
       - Masochist Training Room
       - Brainwashing Room
+      - Endurance, horny, obedience training room
     - Updated CCSubmission Imagepack to separate out Drow portraits (thanks to Matthew Lang)
-    - 154 new portraits
-    - 19 new content images.
+    - Add Merchant Revenge painting texts (by Matthew Lang)
+    - A bunch of new portrait and content images.
+    - New image for Kobold rescue
   - Trait
     - New special perk: Savior kobold
     - New special perk: Kobold heritage
@@ -116,6 +133,9 @@ v1.7.1.0: (4 June 2021)
     - Library cost reduced to 2000
     - Owner magnifique and daring escapade level adjustments.
     - Slave Merchant no longer generate order with rare/unicorn bg traits
+    - Fort Restoration Awards is made slightly easier.
+    - Removed limits on Player Character trait retention during New Game Plus
+    - Enforced limit of 1 Regalixir Quest spawn for a PC (tracked across NG+) to prevent abuse with removed NG+ limits.
   - Item
     - Potion of Greater Level Up
     - Potion of Pain
@@ -133,6 +153,10 @@ v1.7.1.0: (4 June 2021)
     - Equipment market and Sex market are combined.
     - 1.25x, 1.75x and 2.5x zoom for fort
     - Quest skill filter added to in-game wiki
+    - Slave pen slaves now get training_none if they have no training
+    - Value traits now also displayed on slavers.
+    - Display slaver value on their cards
+    - Busy units can be taken to new game plus now.
   - Documentation
     - Updated help texts for CC difficulty.
     - Documentation for where to get items and items that are not obtainable in gitgud
@@ -141,12 +165,27 @@ v1.7.1.0: (4 June 2021)
     - Skill focus help text readability fixes.
     - Adjacency bonus clarification.
     - Race faq updated with drow and kobold.
+    - Scarier warning for itch.io people.
+    - Kobold name credits
+    - Updated download links in various places
+    - Added deployment guide
   - Engine
     - DOM-ification:
       - ItemPool card
       - EquipmentPool card
     - Support for injured recruits.
     - Rarity refactored.
+    - Refactor Matthew Lang's folders into subfolders
+    - Lore refactored into individual files
+    - Skill now cached for performance
+    - Skill breakdown in tooltips.
+    - Unit value now cached for performance
+    - Unit value breakdown
+    - Fix bedchamber switching not changing unti skills
+    - Add actors to quests that are missing them in backwards compat
+    - Logic improvement for Quest Auto-Assign by stevejackson121
+  - Rewrites
+    - Redrafted Food For the Pack for grammar and consistency. (thanks to Matthew Lang)
   - Misc
     - New lore tag: culture lores
     - Added generic value-increasing titles
@@ -155,6 +194,7 @@ v1.7.1.0: (4 June 2021)
     - Remove escapedslaves unit group
     - Adjusted unit rarity thresholds
     - Rarity icons.
+    - Family now refer to each other with their family titles.
   - Debug mode
     - Add debug info for scheduled content
     - Add debug info for change in variable values
@@ -171,7 +211,19 @@ v1.7.1.0: (4 June 2021)
     - Fix kobold sometimes not getting the dwarf trait
     - Fix missing orc in mansion of hypnotism
     - Fix mystifying obelisk slave order crashing
+    - Fixed crashing when undo and redo with gOldPassage set to null
+    - Fixed "Revenge of the Kobold" giving the same slave twice
+    - Fix broken skill focus display.
+    - Fixed extra "pert smart" critical for blacksmith orders
+    - Bugfix in Quest Kobold Benevolent Agency
+    - Fix test of social requiring unit with test of social tittle
+    - Fix bug in Trading Mission: Neko Port City where critfail logic had player fuck themselves as punishment.
+    - Add missing `>` causing error on executing if/else statement. (thanks to steven)
+    - Fix favor not decaying above 120.0
+    - Fix errors occuring during test + documentations
+    - Fix new game plus breaking the game.
   - Text fixes
+    - Grammar fix -kins to -kin suffix as kin is already plural. Thanks to Elannil
     - Updated Potion of lust Quests for repeatability (thanks to Matthew Lang)
     - Fixed most* instances of -kins to proper plural -kin (thanks to Elannil)
     - More description updates and text fixes (thanks to Elannil)
@@ -187,6 +239,10 @@ v1.7.1.0: (4 June 2021)
     - Fix some inconsistencies in pimp/rec wing descriptions
     - Some text fixes for trading mission.
     - Defiant slave event text fixes (thanks to Elannil)
+    - Fixed extra space in lore mentions.
+    - Fix comment on lorebook page.
+    - Fix kobold/drow starting options.
+    - Human -> humanoid adjective for skins
 
 v1.7.0.0 (28 May 2021): Base-Building, Content, Content images, Imagepacks, Content Creator QoL, Lore
 

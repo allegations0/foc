@@ -8,7 +8,7 @@ A critical git corruption forced us to remake the repository from scratch.
 
 ## Fort of Chains
 
-[(v1.7.0.0 release notes)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/update/readme_1_7.md)
+[(v1.8.1.0 release notes)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/update/readme_1_8.md)
 |
 [(Download instructions)](https://gitgud.io/darkofocdarko/fort-of-chains#how-to-play-the-latest-version-of-the-game)
 |

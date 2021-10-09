@@ -2,6 +2,15 @@
 
 [Changelog summary](docs/changelog_summary.md)
 
+### v1.8.1.x
+
+v1.8.1.0:
+
+  - Updated credits.
+  - Various new images.
+  - Human -> humanoid adjective for skins
+  - Fix new game plus breaking the game.
+
 ### v1.8.0.x
 
 v1.8.0.3:
