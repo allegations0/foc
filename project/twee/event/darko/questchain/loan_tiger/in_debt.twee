@@ -16,7 +16,7 @@
 { /* actors */
 },
 [ /* outcomes */
-  setup.qc.Event('loan_tiger_payment_due', 53, null),
+  setup.qc.Event('loan_tiger_payment_due', 53, null, true),
   setup.qc.SetCooldownEvent('loan_tiger_payment_due2', 27),
 ],
 [ /* restrictions */

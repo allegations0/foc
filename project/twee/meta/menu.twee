@@ -34,72 +34,8 @@
 :: StoryBanner [nobr]
 
 <<focwidget 'loadmenutopdata'>>
-
-  <div>Fort of Chains <<= setup.VERSION.join('.')>>
-  <<if $gDebug>>
-    <<dangertextlite '[DEBUG]'>>
-  <</if>>
-  </div>
-
-  <<if $calendar>>
-    <div>
-    <<= State.variables.company.player.getName()>> / Week <<= $calendar.getWeek() >>
-    </div>
-
-    <div>
-      <<money $company.player.getMoney()>>
-      <<if $fort.player.isHasBuilding('recreationwing')>>
-        / Prestige: <<= State.variables.company.player.getPrestige() >>
-      <</if>>
-    </div>
-
-    <div id='topleftnavdiv'>
-      <<if $gMenuVisible>>
-        <<if $opportunitylist.isHaveMustAnswerOpportunities()>>
-          <span class='press_on_space'>
-            <<focmove 'ANSWER MAIL' 'OpportunityList'>>
-          </span>
-          <<message '(?)'>>
-            You have some <<dangertext 'Important'>> mail that have to be answered
-            before you can end week.
-          <</message>>
-        <<else>>
-          <span class='press_on_space'>
-            <<set _text = 'END WEEK'>>
-            <<set _deployable = $company.player.getDeployableTeams()>>
-            <<if _deployable > 0>>
-              <<linkreplace _text>>
-                <span class='press_on_space'>
-                  <<link 'REALLY END WEEK?'>>
-                    <<run setup.deleteEndOfWeekCaches()>>
-                    <<focsavestategoto 'WeekEnd'>>
-                  <</link>>
-                </span>
-              <</linkreplace>>
-            <<else>>
-              <<link _text>>
-                <<focsavestategoto 'WeekEnd'>>
-              <</link>>
-            <</if>>
-          </span>
-
-          <<if _deployable > 0>>
-            <<set _text = `[${_deployable}]`>>
-            <<dangertext _text>>
-            <small>
-              <<message '(?)'>>
-                You can still send <<= _deployable>> more teams on quests.
-              <</message>>
-            </small>
-          <</if>>
-        <</if>>
-      <<else>>
-        <div id='topleftnavigation'>
-        </div>
-      <</if>>
-    </div>
-  <</if>>
-
+  <<set _dom = setup.DOM.Menu.endweekmenu()>>
+  <<attach _dom>>
 <</focwidget>>
 
 <<focwidget 'refreshmenu'>>

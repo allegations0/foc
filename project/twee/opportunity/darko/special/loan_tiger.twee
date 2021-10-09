@@ -21,7 +21,7 @@ null,
 ],
 [ /* outcomes */
 setup.qc.Money(10000),
-setup.qc.Event('loan_tiger__payment', 52),
+setup.qc.Event('loan_tiger__payment', 52, null, true),
 ],
 ], [
 'Opportunity_loan_tiger_1',

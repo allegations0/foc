@@ -4,6 +4,11 @@ setup.EventPool = class EventPool extends setup.TwineClass {
   constructor() {
     super()
 
+    /**
+     * Maps from week to event that is scheduled for that week.
+     * 
+     * @type {Object<number, Array<ScheduledEventInfo>>}
+     */
     this.schedule = {}
     this.done_on_week = null
 
@@ -35,8 +40,6 @@ setup.EventPool = class EventPool extends setup.TwineClass {
   getDeck() {
     return setup.Deck.get(`eventpooldeck`)
   }
-
-  advanceWeek() { }
 
   /**
    * @param {setup.Event} event 
@@ -132,9 +135,12 @@ setup.EventPool = class EventPool extends setup.TwineClass {
 
     // Get scheduled events
     while (week in this.schedule && this.schedule[week].length) {
-      var scheduled = this.schedule[week]
+      const scheduled = this.schedule[week]
 
-      var eventinfo = scheduled[0]
+      /**
+       * @type {ScheduledEventInfo}
+       */
+      const eventinfo = scheduled[0]
       scheduled.splice(0, 1)
 
       if (!scheduled.length) {
@@ -144,7 +150,7 @@ setup.EventPool = class EventPool extends setup.TwineClass {
       // make unit available for deletion, if appropriate
       this.cleanEvent(eventinfo)
 
-      var event = setup.event[eventinfo.event_key]
+      const event = setup.event[eventinfo.event_key]
 
       const default_assignment = {}
       let assignment_ok = true
@@ -257,15 +263,28 @@ setup.EventPool = class EventPool extends setup.TwineClass {
   }
 
   /**
+   * Schedule an event to occur in a certain future week.
+   * 
    * @param {setup.Event} event 
    * @param {number} occur_week 
    * @param {object} default_assignment 
+   * @param {boolean} [is_visible_in_calendar]
    */
-  scheduleEvent(event, occur_week, default_assignment) {
+  scheduleEvent(event, occur_week, default_assignment, is_visible_in_calendar) {
+    const current_week = State.variables.calendar.getWeek()
+    if (occur_week < current_week) {
+      throw new Error(
+        `Event ${event.getName()} is scheduled for week ${occur_week}, ` +
+        `but it's already week ${current_week}!`)
+    }
+
     if (!(occur_week in this.schedule)) {
       this.schedule[occur_week] = []
     }
 
+    /**
+     * @type {Object<string, string>}
+     */
     const parsed_default_assignment = {}
     if (default_assignment) {
       for (const actor_name in default_assignment) {
@@ -281,10 +300,14 @@ setup.EventPool = class EventPool extends setup.TwineClass {
     this.schedule[occur_week].push({
       event_key: event.key,
       default_assignment_keys: parsed_default_assignment,
+      is_visible_in_calendar: is_visible_in_calendar,
     })
 
-    if (State.variables.gDebug) {
-      setup.notify(`DEBUG: Event ${event.getName()} is scheduled to trigger in week ${occur_week}.`)
+    if (is_visible_in_calendar) {
+      const trigger = occur_week - State.variables.calendar.getWeek()
+      setup.notify(`${event.getName()} will trigger in ${trigger} weeks.`)
+    } else if (State.variables.gDebug) {
+      setup.notify(`DEBUG: Hidden event ${event.getName()} is scheduled to trigger in week ${occur_week}.`)
     }
   }
 
@@ -313,6 +336,9 @@ setup.EventPool = class EventPool extends setup.TwineClass {
     return unit.key in this.unit_scheduled_events
   }
 
+  /**
+   * @param {ScheduledEventInfo} event_info 
+   */
   cleanEvent(event_info) {
     var default_assignment_keys = event_info.default_assignment_keys
 
@@ -327,4 +353,55 @@ setup.EventPool = class EventPool extends setup.TwineClass {
       }
     }
   }
+
+  /**
+   * Get list of all scheduled events
+   * @param {{
+   *   is_visible_in_calendar: boolean
+   * }} args
+   * 
+   * @returns {Array<ScheduledEventInfoRealized>}
+   */
+  getScheduledEvents({ is_visible_in_calendar }) {
+    /**
+     * @type {Array<ScheduledEventInfoRealized>}
+     */
+    const result = []
+    /**
+     * @type {Array<number>}
+     */
+    const occur_weeks = Object.keys(this.schedule).map(week => parseInt(week))
+    occur_weeks.sort()
+    for (const occur_week of occur_weeks) {
+      let arr = this.schedule[occur_week].map(x => {
+        return {
+          event: setup.event[x.event_key],
+          is_visible_in_calendar: x.is_visible_in_calendar,
+        }
+      })
+      if (is_visible_in_calendar) {
+        arr = arr.filter(x => x.is_visible_in_calendar)
+      }
+      if (arr.length) {
+        result.push({
+          occur_week: occur_week,
+          events: arr,
+        })
+      }
+    }
+    return result
+  }
+
+  /**
+   * @returns {ScheduledEventInfoRealized | null}
+   */
+  getNextVisibleEvents() {
+    const all_events = this.getScheduledEvents({ is_visible_in_calendar: true })
+    if (!all_events.length) {
+      return null
+    } else {
+      return all_events[0]
+    }
+  }
 }
+

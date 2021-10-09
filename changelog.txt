@@ -4,6 +4,18 @@
 
 ### v1.8.1.x
 
+v1.8.1.1:
+
+  - New feature: upcoming events
+    - New building: noticeboards
+    - Once you build the noticeboards, known upcoming events are now shown
+      on the top right menu
+    - Fully integrated with content creator
+  - New activity: Noticeboards gossip
+  - New activity: Noticeboards reading
+  - Images for academy of wind quest
+  - Some text and wording fixes here and there
+
 v1.8.1.0:
 
   - Updated credits.

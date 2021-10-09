@@ -739,5 +739,17 @@
       url: "https://paizo.com/community/blog/v5748dyo5lj95?Tis-the-Season-of-Plundered-Tombs",
       license: "Paizo Inc. Community Use Policy",
     },
+    "academy_of_wind_male.jpg": {
+      title: "Tentacles",
+      artist: "EkafEliforp",
+      url: "https://www.newgrounds.com/art/view/ekafeliforp/tentacles",
+      license: "CC-BY-NC",
+    },
+    "academy_of_wind_female.jpg": {
+      title: "Nico Robin tentacle rape",
+      artist: "OosebastianoO",
+      url: "https://www.newgrounds.com/art/view/oosebastianoo/nico-robin-tentacle-rape",
+      license: "CC-BY-NC-SA",
+    },
   }
 }());

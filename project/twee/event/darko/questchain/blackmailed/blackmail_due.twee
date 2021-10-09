@@ -23,7 +23,7 @@
     setup.qres.VarEqual('rival_blackmail_active', '1'),
     setup.qc.DoAll([
       setup.qc.MoneyCustom(-2000),
-      setup.qc.Event('blackmail_due', 4),
+      setup.qc.Event('blackmail_due', 4, null, true),
     ], undefined),
     setup.qc.DoAll([
 

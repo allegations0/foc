@@ -40,7 +40,7 @@ setup.qc.DoAll([
 setup.qc.VarAdd('tiger_bank_loan', 10000, -1),
 setup.qc.VarSet('tiger_bank_loan_extension', '1', -1),
 setup.qc.Ire('bank', 5),
-setup.qc.Event('loan_tiger_payment_due', 53, null)
+setup.qc.Event('loan_tiger_payment_due', 53, null, true)
 ], undefined)),
 ],
 [ /* restrictions */

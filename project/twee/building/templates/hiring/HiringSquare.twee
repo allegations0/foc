@@ -17,18 +17,6 @@
         'hiringsquarevale',
       ],
     },
-    {
-      type: "near",
-      skill_key: "social",
-      room_keys: [
-        'greathall',
-        'prospectshall',
-        'inn',
-        'market',
-        'recreationwing',
-        'questoffice',
-      ],
-    },
   ],
   is_fixed: false,
   is_passable: true,

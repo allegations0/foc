@@ -1,16 +1,33 @@
+:: CostEventVisibleCheckbox [nobr]
+
+<div>
+  <<checkbox '_is_visible_in_calendar' false true>>
+  Visible in calendar?
+  <<message '(?)'>>
+    <div class='helpcard'>
+      If checked, this event will be visible in the player's calendar, and will be shown
+      in their list of upcoming events.
+    </div>
+  <</message>>
+</div>
+
+
 :: CostEvent [nobr]
 
+<div>
 Schedule the following event to trigger in
 <<numberbox '_weeks' 0>> weeks.
 <<message '(?)'>>
   Put 0 if you want the event to trigger in the same week.
 <</message>>
-<br/>
+</div>
+
+<<include 'CostEventVisibleCheckbox'>>
 
 <<for _ievent, _event range setup.event>>
   <<capture _event>>
     <<link _event.getName() 'QGCostDone'>>
-      <<set $qcost = setup.qc.Event(_event, _weeks)>>
+      <<set $qcost = setup.qc.Event(_event, _weeks, null, _is_visible_in_calendar)>>
     <</link>>
     <br/>
   <</capture>>
@@ -69,11 +86,14 @@ that you want to trigger in
 <</message>>
 </div>
 
+<<include 'CostEventVisibleCheckbox'>>
+
 <<for _ievent, _event range setup.event>>
   <<capture _event>>
     <<link _event.getName() 'CostEventRolesImplement'>>
       <<set $qeventchosenweeks = _weeks>>
       <<set $qeventchosen = _event>>
+      <<set $qeventisvisibleincalendar = _is_visible_in_calendar>>
     <</link>>
     <br/>
   <</capture>>
@@ -93,7 +113,7 @@ in the current thing you are making:
 </p>
 
 <<link '(Done)' 'QGCostDone'>>
-  <<set $qcost = setup.qc.Event($qeventchosen, $qeventchosenweeks, setup.deepCopy($qdevquestroles))>>
+  <<set $qcost = setup.qc.Event($qeventchosen, $qeventchosenweeks, setup.deepCopy($qdevquestroles), $qeventisvisibleincalendar)>>
   <<unset $qdevquestroles>>
 <</link>>
 

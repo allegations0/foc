@@ -45,12 +45,12 @@ import { Args_OneActor } from "../macro/_meta.js"
 // subjective, objective, dependent possessive, independent possessive, reflexive
 // + capitalized variants
 export const pronouns = {
-	"he": ["he", "him", "his", "his", "himself", "He", "Him", "His", "His", "Himself", "husband", "man", "boy", "son", "master", "handsomeness", 'hard', 'soft', 'lord', 'butler', 'incubus', 'bachelor', 'prince', 'father', 'male', 'lad', 'men', 'king', 'Master', 'guy',],
-	"she": ["she", "her", "her", "hers", "herself", "She", "Her", "Her", "Hers", "Herself", "wife", "woman", "girl", "daughter", "mistress", "beauty", 'wet', 'dry', 'lady', 'maid', 'succubus', 'maiden', 'princess', 'mother', 'female', 'lass', 'women', 'queen', 'Mistress', 'girl',],
-	"it": ["it", "it", "its", "its", "itself", "It", "It", "Its", "Its", "Itself", "partner", "person", "child", "child", "master", "beauty", 'aroused', 'unaroused', 'lord', 'servant', 'demon', 'person', 'noble', 'parent', 'male', 'guy', 'people', 'royal', 'Master', 'guy',],
-	"one": ["one", "one", "one's", "one's", "oneself", "One", "One", "One's", "One's", "Oneself", "partner", "someone", "a child", "a child", "a master", "beauty", 'aroused', 'unaroused', 'lord', 'servant', 'demons', 'person', 'noble', 'parent', 'male', 'guy', 'people', 'royal', 'Master', 'guy',],
+	"he": ["he", "him", "his", "his", "himself", "He", "Him", "His", "His", "Himself", "husband", "man", "boy", "son", "master", "handsomeness", 'hard', 'soft', 'lord', 'butler', 'incubus', 'bachelor', 'prince', 'father', 'male', 'lad', 'men', 'king', 'Master', 'guy', 'handsome',],
+	"she": ["she", "her", "her", "hers", "herself", "She", "Her", "Her", "Hers", "Herself", "wife", "woman", "girl", "daughter", "mistress", "beauty", 'wet', 'dry', 'lady', 'maid', 'succubus', 'maiden', 'princess', 'mother', 'female', 'lass', 'women', 'queen', 'Mistress', 'girl', 'beautiful',],
+	"it": ["it", "it", "its", "its", "itself", "It", "It", "Its", "Its", "Itself", "partner", "person", "child", "child", "master", "beauty", 'aroused', 'unaroused', 'lord', 'servant', 'demon', 'person', 'noble', 'parent', 'male', 'guy', 'people', 'royal', 'Master', 'guy', 'attractive',],
+	"one": ["one", "one", "one's", "one's", "oneself", "One", "One", "One's", "One's", "Oneself", "partner", "someone", "a child", "a child", "a master", "beauty", 'aroused', 'unaroused', 'lord', 'servant', 'demons', 'person', 'noble', 'parent', 'male', 'guy', 'people', 'royal', 'Master', 'guy', 'attractive',],
 	// "The default name:""
-	"they": ["they", "them", "their", "theirs", "themself", "They", "Them", "Their", "Theirs", "Themselves", "wife", "woman", "girl", "daughter", "mistress", "beauty", 'wet', 'dry', 'lady', 'maid', 'succubus', 'maiden', 'princess', 'mother', 'female', 'lass', 'women', 'queen', "Mistress", 'guy',],
+	"they": ["they", "them", "their", "theirs", "themself", "They", "Them", "Their", "Theirs", "Themselves", "wife", "woman", "girl", "daughter", "mistress", "beauty", 'wet', 'dry', 'lady', 'maid', 'succubus', 'maiden', 'princess', 'mother', 'female', 'lass', 'women', 'queen', "Mistress", 'guy', 'attractive',],
 	"you": ["you", "you", "your", "yours", "yourself", "You", "You", "Your", "Yours", "Yourself"],
 };
 
@@ -119,6 +119,7 @@ Macro_add('women', 26);
 Macro_add('queen', 27);
 Macro_add('Mistress', 28);
 Macro_add('guy', 29);
+Macro_add('beautiful', 30);
 
 // Aliases
 Macro_add('he', 'they');
@@ -156,6 +157,7 @@ Macro_add('lad', 'lass');
 Macro_add('men', 'women');
 Macro_add('king', 'queen');
 Macro_add('Master', 'Mistress');
+Macro_add('handsome', 'beautiful');
 
 Macro.add('pronounload', {
 	handler() {

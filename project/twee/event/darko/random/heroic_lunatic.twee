@@ -31,7 +31,7 @@
   setup.qc.Leave('slaver', "a|is trying to fulfill a|their dream of becoming a hero... or just being stark ravingly mad", undefined),
   setup.qc.Event('grand_lunacy', 4, {
 lunatic: "slaver",
-}),
+}, true),
 ],
 [ /* restrictions */
   setup.qres.Building(setup.buildingtemplate.veteranhall),

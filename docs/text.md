@@ -71,6 +71,7 @@ Useful command to get any slaver among healer, tank, and dps with the dominant t
 - `<<female $g.bob>>`  (female/male)
 - `<<lass $g.bob>>`  (lass/lad)
 - `<<queen $g.bob>>`  (king/queen)
+- `<<beautiful $g.bob>>`  (beautiful/handsome)
 
 
 ### Conditionals

@@ -37,6 +37,7 @@
 <<include 'InitBuildingClassroom'>>
 <<include 'InitBuildingLibrary'>>
 <<include 'InitBuildingRelationsOffice'>>
+<<include 'InitBuildingNoticeboards'>>
 
 /* activities */
 <<include 'InitBuildingDutyRoom'>>

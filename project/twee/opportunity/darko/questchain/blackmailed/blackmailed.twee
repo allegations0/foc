@@ -30,7 +30,7 @@ setup.qdiff.normal40, /* difficulty */
 slaver: "slaver",
 boss: "boss",
 }),
-      setup.qc.Event('blackmail_due', 4, null),
+      setup.qc.Event('blackmail_due', 4, null, true),
     ],
   ],
   [

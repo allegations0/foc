@@ -140,6 +140,12 @@ With the plan complete, the dropout, who introduced <<themself $g.dropout>> as <
 to join your company should your slavers helped <<them $g.dropout>> enact the plan.
 </p>
 
+<<if $g.victim.isMale()>>
+  <<questimage 'academy_of_wind_male.jpg'>>
+<<else>>
+  <<questimage 'academy_of_wind_female.jpg'>>
+<</if>>
+
 <<if $gOutcome == 'crit'>>
 
 <p>

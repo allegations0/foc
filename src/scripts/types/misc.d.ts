@@ -63,4 +63,18 @@ interface DialogueRaw {
   texts: DialogueText | string[]
 }
 
+interface ScheduledEventInfo {
+  event_key: string
+  default_assignment_keys: Object<string, string>
+  is_visible_in_calendar?: boolean
+}
+
+interface ScheduledEventInfoRealized {
+  occur_week: number,
+  events: Array<{
+    event: setup.Event,
+    is_visible_in_calendar: boolean
+  }>,
+}
+
 interface Skills extends Array<number> { }

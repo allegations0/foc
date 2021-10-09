@@ -15,7 +15,6 @@ export function advanceWeekBeforeResolvingQuests() {
   const to_advance_week = [
     State.variables.slaveorderlist,
     State.variables.contactlist,
-    State.variables.eventpool,
     State.variables.opportunitylist,
     setup.Interaction,
     State.variables.dutylist,
