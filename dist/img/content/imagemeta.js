@@ -743,13 +743,55 @@
       title: "Tentacles",
       artist: "EkafEliforp",
       url: "https://www.newgrounds.com/art/view/ekafeliforp/tentacles",
-      license: "CC-BY-NC",
+      license: "CC-BY-NC 3.0",
     },
     "academy_of_wind_female.jpg": {
       title: "Nico Robin tentacle rape",
       artist: "OosebastianoO",
       url: "https://www.newgrounds.com/art/view/oosebastianoo/nico-robin-tentacle-rape",
-      license: "CC-BY-NC-SA",
+      license: "CC-BY-NC-SA 3.0",
+    },
+    "bounty_hunt_minotaur_male.jpg": {
+      title: "[NSFW] Punishment of a Thousand Years Lust [NSFW]",
+      artist: "Tk-A",
+      url: "https://www.newgrounds.com/art/view/tk-a/nsfw-punishment-of-a-thousand-years-lust-nsfw",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    "bounty_hunt_minotaur_female.jpg": {
+      title: "Minotaur's treat",
+      artist: "Rammionn",
+      url: "https://www.newgrounds.com/art/view/chantilin/mpreg-shiro",
+      license: "CC-BY-NC 3.0",
+    },
+    "gorgon_cave_female.jpg": {
+      title: "Minotaur's treat",
+      artist: "Rammionn",
+      url: "https://www.newgrounds.com/art/view/theshadling/tangled-up",
+      license: "CC-BY-NC 3.0",
+    },
+    "desert_spring_male.jpg": {
+      title: "Tangled up",
+      artist: "TheShadling",
+      url: "https://www.newgrounds.com/art/view/chantilin/mpreg-shiro",
+      license: "CC-BY-NC 3.0",
+    },
+    "desert_spring_female.jpg": {
+      title: "TENTACLE TRAP [FALLEN BARBARIAN]",
+      artist: "zuleyka",
+      url: "https://www.newgrounds.com/art/view/zuleyka/tentacle-trap-fallen-barbarian",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    "harvest_season_male.jpg": {
+      title: "Mpreg Keith & Lance",
+      artist: "chantilin",
+      url: "https://www.newgrounds.com/art/view/chantilin/mpreg-keith-lance",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    "harvest_season_female.jpg": {
+      title: "Korra Bothered by Tentacles clear",
+      artist: "LindaDBComix",
+      url: "https://www.newgrounds.com/art/view/lindadbcomix/korra-bothered-by-tentacles-clear",
+      license: "CC-BY-NC 3.0",
     },
   }
 }());

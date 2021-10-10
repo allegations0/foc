@@ -45,6 +45,7 @@
     'merc2': _mercenary,
   },
   { /* actors */
+    'victim': 'desert_all',
   },
   [ /* costs */
   ],
@@ -68,6 +69,7 @@
     [
       'QuestBountyHuntMinotaurFailure',
       [
+        setup.qc.SlaveMarker('victim'),
       ],
     ],
     [
@@ -121,6 +123,12 @@ slavers an extra bonus.
 </p>
 
 :: QuestBountyHuntMinotaurSuccess [nobr]
+
+<<if $g.victim.isMale()>>
+    <<questimage "bounty_hunt_minotaur_male.jpg">>
+<<else>>
+    <<questimage "bounty_hunt_minotaur_female.jpg">>
+<</if>>
 
 <p>
 Your slavers happened upon one such

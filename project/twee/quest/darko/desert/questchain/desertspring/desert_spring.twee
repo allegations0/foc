@@ -15,7 +15,7 @@
   setup.qc.TraitIncreaseExisting('unit', setup.trait.dick_huge),
 ],
 )>> <<run new setup.UnitGroup(
-"desert_spring2",
+"quest_desert_spring2",
 "Guide",
 'desert_all', /* pools */
 0, /* reuse chance */
@@ -49,7 +49,7 @@ setup.QUEST_DEFAULT_EXPIRATION, /* expiration weeks */
   'fighter2': [ setup.qu.fighter_desert, 1],
 },
 { /* actors */
-  'guide': 'desert_spring2',
+  'guide': 'quest_desert_spring2',
   'victim2': 'oasis_trap0',
   'victim1': 'oasis_trap0',
 },
@@ -66,6 +66,14 @@ setup.qdiff.hard44, /* difficulty */
       setup.qc.Slave('victim1', "a|was captured by a mindless tentacle abomination in the desert, lured in by the sweet scent of nectar. a|They a|have been extensively used as an egg incubator by the horrifying monster", undefined),
       setup.qc.Slave('victim2', "a|was captured by a mindless tentacle abomination in the desert, lured in by the sweet scent of nectar. a|They a|have been extensively used as an egg incubator by the horrifying monster", undefined),
       setup.qc.Slave('guide', "a|was a poor resident of the Eastern Deserts hired as a \"guide\" by your slavers, only to be captured by a certain tentacle monster and processed into its personal breeding chamber", undefined),
+      setup.qc.IfThenElse(
+setup.qres.VarNull('desert_spring_progress'),
+setup.qc.DoAll([
+setup.qc.VarSet('desert_spring_progress', '1', -1)
+], undefined),
+setup.qc.DoAll([
+
+], undefined)),
     ],
   ],
   [
@@ -208,6 +216,12 @@ setup.qc.MissingUnit('fighter2')
                 <</if>>
             </p>
         <<else>>
+            <<if $g.guide.isMale()>>
+                <<questimage "desert_spring_male.jpg">>
+            <<else>>
+                <<questimage "desert_spring_female.jpg">>
+            <</if>>
+
             <p>
                 <<Rep $g.alchemist>> suggested to risk nothing and went back, but <<yourrep $g.fighter1>> convinced the team that there might be another opportunity hidden right here.
                 Besides, your slavers were a little too curious perhaps to know what might have happened to the poor <<urace $g.guide>>.

@@ -162,3 +162,48 @@
     bedchamber: "The bookshelf distracts from the debauched nature of the room, offering a glimpse of your company's history instead.",
   },
 )>>
+
+
+<<run new setup.Furniture(
+  'f_object_good_livingstatuemale',
+  'Male Living Statue',
+  'A living statue of a male, covered in gooey rubber, a victim of the desert tentacle monster. Its dick is kept painfully hard by the goo, and it is fed and sustained by its covering',
+  /* value = */ setup.FURNITURE_PRICE_GOOD,
+  setup.furnitureslot.object,
+  ['good'],
+  {
+    knowledge: 1,
+    brawn: setup.FURNITURE_SKILL_NORMAL,
+  },
+  {  /* texts */
+    ambience: [
+      "the a|rep stares blankly, dick kept rock hard by its gooey covering",
+      "the eyes of a|rep stares blankly at the unfolding scene, his mind already lost long, long time ago",
+    ],
+    bedchamber: "The statue houses a male specimen that was once enslaved by a certain tentacle aberration in the eastern deserts",
+  },
+)>>
+
+
+<<run new setup.Furniture(
+  'f_object_good_livingstatuefemale',
+  'Female Living Statue',
+  'A living statue of a female, covered in gooey rubber, a victim of the desert tentacle monster. Its pussy is kept painfully open and gaping by the goo, and it is fed and sustained by its covering',
+  /* value = */ setup.FURNITURE_PRICE_GOOD,
+  setup.furnitureslot.object,
+  ['good'],
+  {
+    knowledge: 1,
+    brawn: setup.FURNITURE_SKILL_NORMAL,
+  },
+  {  /* texts */
+    ambience: [
+      "the a|rep stares blankly, pussy kept open by its gooey covering, welcoming penetration",
+      "the eyes of a|rep stares blankly at the unfolding scene, her mind already lost long, long time ago",
+    ],
+    bedchamber: "The statue houses a female specimen that was once enslaved by a certain tentacle aberration in the eastern deserts",
+  },
+)>>
+
+
+

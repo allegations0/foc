@@ -177,6 +177,11 @@ Eventually, with the combined mights of your slavers, they dispatched the guardi
 and then pressed depeer into the caverns.
 </p>
 
+<<if $g.slave.isMale()>>
+<<else>>
+    <<questimage "gorgon_cave_female.jpg">>
+<</if>>
+
 <p>
 The slavers were met with a most debauched of scenery.
 Within the caves,
