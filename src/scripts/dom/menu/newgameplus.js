@@ -291,7 +291,7 @@ function getStayWithCompanyText(unit) {
   const traits = unit.getTraits()
 
   if (traits.includes(setup.trait.per_cautious)) {
-    options.push(`Given how cautious a|they are with new people, it's not surprising that a|rep decided to stay with your company.`)
+    options.push(`Given how cautious a|they a|is with new people, it's not surprising that a|rep decided to stay with your company.`)
   }
 
   if (traits.includes(setup.trait.per_calm)) {
