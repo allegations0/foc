@@ -4,6 +4,12 @@
 
 ### v1.8.1.x
 
+v1.8.1.2:
+
+  - New quest chain: Desert Spring (3 quests) with images.
+  - Male and female for Bounty Hunt: Minotaur
+  - Female image for Gorgon Cave
+
 v1.8.1.1:
 
   - New feature: upcoming events
