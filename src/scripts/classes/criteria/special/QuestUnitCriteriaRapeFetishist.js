@@ -11,23 +11,31 @@ setup.QuestUnitCriteriaRapeFetishist = class QuestUnitCriteriaRapeFetishist exte
   /**
    * @returns {number}
    */
-  getRng() {
+  static getRng() {
+    const varname = 'quest_unit_criteria_rape_fetishist_rng'
+    if (State.variables.varstore.get(varname) == null) {
+      State.variables.varstore.set(varname, Math.floor(Math.random() * 1000000000), -1)
+    }
     const base = State.variables.varstore.get('quest_unit_criteria_rape_fetishist_rng')
-    if (!base) return 0
     return parseInt(base)
   }
 
   /**
    * @returns {Array<setup.Trait>}
    */
-  getBgOptions() {
-    return [setup.trait.bg_knight, setup.trait.bg_noble, setup.trait.bg_priest, setup.trait.bg_slaver, setup.trait.bg_healer]
+  static getBgOptions() {
+    return [
+      setup.trait.bg_knight,
+      setup.trait.bg_noble,
+      setup.trait.bg_priest,
+      setup.trait.bg_slaver,
+    ]
   }
 
   /**
    * @returns {setup.Trait}
    */
-  getBgTrait() {
+  static getBgTrait() {
     const bgs = this.getBgOptions()
     const rng = this.getRng()
     return bgs[rng % bgs.length]
@@ -36,7 +44,7 @@ setup.QuestUnitCriteriaRapeFetishist = class QuestUnitCriteriaRapeFetishist exte
   /**
    * @returns {Array<setup.Trait>}
    */
-  getSubraceOptions() {
+  static getSubraceOptions() {
     return setup.TraitHelper.getAllTraitsOfTags(['subrace']).filter(
       trait => [setup.rarity.common, setup.rarity.uncommon, setup.rarity.rare].includes(trait.getRarity())
     )
@@ -45,7 +53,7 @@ setup.QuestUnitCriteriaRapeFetishist = class QuestUnitCriteriaRapeFetishist exte
   /**
    * @returns {setup.Trait}
    */
-  getSubraceTrait() {
+  static getSubraceTrait() {
     const bglength = this.getBgOptions().length
     const rng = Math.floor(this.getRng() / bglength)
     const subraces = this.getSubraceOptions()
@@ -55,7 +63,7 @@ setup.QuestUnitCriteriaRapeFetishist = class QuestUnitCriteriaRapeFetishist exte
   /**
    * @returns {Array<setup.Trait>}
    */
-  getPerOptions() {
+  static getPerOptions() {
     return [
       setup.trait.per_dominant,
       setup.trait.per_submissive,
@@ -67,7 +75,7 @@ setup.QuestUnitCriteriaRapeFetishist = class QuestUnitCriteriaRapeFetishist exte
   /**
    * @returns {setup.Trait}
    */
-  getPerTrait() {
+  static getPerTrait() {
     const bglength = this.getBgOptions().length
     const subracelength = this.getSubraceOptions().length
     const rng = Math.floor(this.getRng() / (bglength * subracelength))
@@ -80,9 +88,9 @@ setup.QuestUnitCriteriaRapeFetishist = class QuestUnitCriteriaRapeFetishist exte
    */
   getCritTraits() {
     return [
-      this.getBgTrait(),
-      this.getSubraceTrait(),
-      this.getPerTrait(),
+      setup.QuestUnitCriteriaRapeFetishist.getBgTrait(),
+      setup.QuestUnitCriteriaRapeFetishist.getSubraceTrait(),
+      setup.QuestUnitCriteriaRapeFetishist.getPerTrait(),
     ]
   }
 }
