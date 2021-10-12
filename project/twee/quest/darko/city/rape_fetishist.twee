@@ -25,7 +25,7 @@
   'master': 'city_all',
 },
 [ /* costs */
-  setup.qc.MoneyCustom(-1000),
+  setup.qc.MoneyCustom(-500),
 ],
 'Quest_rape_fetishist',
 setup.qdiff.normal40, /* difficulty */
@@ -46,7 +46,7 @@ setup.qdiff.normal40, /* difficulty */
   [
     'Quest_rape_fetishistFailure',
     [
-      setup.qc.Money(1000),
+      setup.qc.Money(500),
       setup.qc.Outcomes("success"),
     ],
   ],
@@ -55,7 +55,7 @@ setup.qdiff.normal40, /* difficulty */
     [
       setup.qc.SlaverMarker('master'),
       setup.qc.MissingUnit('slave'),
-      setup.qc.Money(1000),
+      setup.qc.Money(500),
       setup.qc.Outcomes("success"),
     ],
   ],
