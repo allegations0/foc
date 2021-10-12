@@ -4,6 +4,12 @@
 
 ### v1.8.1.x
 
+v1.8.1.4:
+
+  - New Event: Morphing Cage
+  - New Quest: Rape Fetishist
+  - New furniture: Morphing Cage
+
 v1.8.1.3:
 
   - New livings:
