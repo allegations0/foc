@@ -45,8 +45,8 @@
 
 <<run new setup.Furniture(
   'f_slavebed_master',
-  'PLACEHOLDER slavebed master title',
-  'PLACEHOLDER slavebed master description',
+  'morphing cages',
+  'A magical cage who can be shaped, distorted, and modeled by imbuing it with magic',
   /* value = */ setup.FURNITURE_PRICE_MASTER,
   setup.furnitureslot.slavebed,
   ['master'],
@@ -54,6 +54,7 @@
     intrigue: setup.FURNITURE_SKILL_MASTER,
   },
   {  /* texts */
+    bedchamber: "The cages change shape every night, in such a way that forces the slave to spend the night while training their posture.",
   },
 )>>
 

@@ -1,3 +1,4 @@
+export const IMPORTABLE = true
 
 setup.UnitCriteria = class UnitCriteria extends setup.TwineClass {
   /**
@@ -106,9 +107,7 @@ setup.UnitCriteria = class UnitCriteria extends setup.TwineClass {
    */
   getCritTraits() {
     // return list of crit traits
-    var result = []
-    for (var trait_key in this.crit_trait_map) result.push(setup.trait[trait_key])
-    return result
+    return Object.keys(this.crit_trait_map).map(key => setup.trait[key])
   }
 
   /**
@@ -116,9 +115,7 @@ setup.UnitCriteria = class UnitCriteria extends setup.TwineClass {
    */
   getDisasterTraits() {
     // return list of disaster traits
-    var result = []
-    for (var trait_key in this.disaster_trait_map) result.push(setup.trait[trait_key])
-    return result
+    return Object.keys(this.disaster_trait_map).map(key => setup.trait[key])
   }
 
   /**
