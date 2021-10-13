@@ -77,6 +77,11 @@ sexually liberated farmers.
 
 :: QuestFuckholeFairCrit [nobr]
 
+  <<if $g.slave.isMale()>>
+  <<else>>
+    <<questimage 'fuckhole_fair_female.jpg'>>
+  <</if>>
+
 <p>
 Your slavers built a makeshift pillory in the middle of the village square,
 and secured the

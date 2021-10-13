@@ -102,6 +102,11 @@ but a journey to the <<lore region_desert>> will surely take a little while.
 
 :: QuestDeliveryServiceCrit [nobr]
 
+  <<if $g.pony.isMale()>>
+  <<else>>
+    <<questimage 'delivery_service_female.jpg'>>
+  <</if>>
+
 <p>
 Your slavers and their pony slave arrived at the nomad camp earlier than expected.
 They <<uadv $g.trader1>>

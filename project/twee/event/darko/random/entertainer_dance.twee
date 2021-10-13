@@ -41,6 +41,11 @@ setup.rarity.rare, /* Rarity */
 <<Yourrep $g.slaver>> slaver|is known for having a beautiful voice, as well as expert dancing skills. Today, a small commotion is forming on the <<rep setup.buildingtemplate.hiringsquare>>, and <<rep $g.slaver>> slaver|is in the center of it. <<Therace $g.slaver>> slaver|is dancing and singing to celebrate the nice weather, and slaver|have gathered quite a crowd of both slavers and visitors around <<them $g.slaver>>.
 </p>
 
+<<if $g.slaver.isMale()>>
+  <<questimage 'entertainer_dance_male.jpg'>>
+<<else>>
+<</if>>
+
 <<choose>>
 
 <<opt "Just watch">>

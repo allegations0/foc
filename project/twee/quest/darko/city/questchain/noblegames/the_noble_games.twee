@@ -112,6 +112,11 @@ gone... probably.
 
 :: Quest_the_noble_gamesCrit [nobr]
 
+<<if $g.slave.isMale()>>
+  <<questimage 'the_noble_games_male.jpg'>>
+<<else>>
+<</if>>
+
 <p>
 With <<their $g.planner>> preparations ready, your slavers
 executed the plan drawn <<uadv $g.planner>> by <<rep $g.planner>>. <<Rep

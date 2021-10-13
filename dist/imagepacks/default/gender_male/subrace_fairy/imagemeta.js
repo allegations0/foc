@@ -47,6 +47,12 @@
       url: "https://www.deviantart.com/marcinha-jp/art/Fairy-Man-558723936",
       license: "CC-BY-NC-ND 3.0",
     },
+    8: {
+      title: "Fairy boy (OC)",
+      artist: "TheSabu",
+      url: "https://www.newgrounds.com/art/view/thesabu/fairy-boy-oc",
+      license: "CC-BY-NC 3.0",
+    },
     10: {
       title: "Fallen Angels",
       artist: "toy1989820",

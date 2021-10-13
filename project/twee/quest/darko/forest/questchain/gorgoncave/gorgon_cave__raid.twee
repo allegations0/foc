@@ -178,6 +178,7 @@ and then pressed depeer into the caverns.
 </p>
 
 <<if $g.slave.isMale()>>
+    <<questimage "gorgon_cave_male.jpg">>
 <<else>>
     <<questimage "gorgon_cave_female.jpg">>
 <</if>>

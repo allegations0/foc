@@ -63,12 +63,24 @@ followed by an hour of rest, for example.
 </p>
 
 :: QuestUnitTrainingMasochistMasterCrit [nobr]
+
+<<if $g.trainee.isMale()>>
+  <<questimage 'unit_training_masochist_master_male.jpg'>>
+<<else>>
+<</if>>
+
 <p>
 <<Rep $g.trainee>> turns out to be a natural at being
 an objectified slave.
 </p>
 
 :: QuestUnitTrainingMasochistMasterSuccess [nobr]
+
+<<if $g.trainee.isMale()>>
+  <<questimage 'unit_training_masochist_master_male.jpg'>>
+<<else>>
+<</if>>
+
 <p>
 It was not easy, but through both <<reps $g.trainee>> willingness,
 as well as your slaver's dedications, <<rep $g.trainee>>

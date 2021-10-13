@@ -144,6 +144,12 @@ can host guests and visitors alike.
 <<if _analfuckhole>>
   <<set _unit = _analfuckhole.getAssignedUnit()>>
   <<if _unit && _unit.isAvailable()>>
+
+    <<if _unit.isMale()>>
+    <<else>>
+      <<questimage 'analfuckhole_female.jpg'>>
+    <</if>>
+
     In an adjacent <<rep setup.buildingtemplate.analfuckhole>>,
     your <<rep _analfuckhole>> <<rep _unit>> works diligently
     using <<their _unit>> asshole to please customers.

@@ -217,6 +217,11 @@ depraved but surprisingly cultured sex with the bound slave.
 
 :: Quest_the_noble_games__bed_artsCrit [nobr]
 
+<<if $g.escort.isMale() && $g.maid.isMale() && $g.alchemist.isMale() && $g.slave.isMale()>>
+  <<questimage 'the_noble_games__bed_arts_male.jpg'>>
+<<else>>
+<</if>>
+
 <p>
 After successfully smuggling the slave into the room, your slavers began
 their preparation. First, <<rep $g.alchemist>> scoured the room for the

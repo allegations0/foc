@@ -592,6 +592,13 @@
       url: "https://www.newgrounds.com/art/view/slaveryart/transported-and-sold",
       license: "CC-BY-NC 3.0",
     },
+    "mobile_brothel_female_2.jpg": {
+      title: "Salazar's Bazaar Adventures - Life on the road",
+      artist: "TheSabu",
+      url: "https://www.newgrounds.com/art/view/thesabu/the-adventures-of-salazar-life-on-the-road",
+      license: "CC-BY-NC 3.0",
+      extra: "cropped",
+    },
     "a_high_class_brothel_male_classy.jpg": {
       title: "The Witcher: Zine Submission",
       artist: "AnonBunny",
@@ -763,6 +770,13 @@
       url: "https://www.newgrounds.com/art/view/chantilin/mpreg-shiro",
       license: "CC-BY-NC 3.0",
     },
+    "gorgon_cave_male.jpg": {
+      title: "Nsfw of Tobirama",
+      artist: "FutureZ00l0gist",
+      url: "https://www.newgrounds.com/art/view/futurez00l0gist/nsfw-of-tobirama",
+      license: "CC-BY-NC 3.0",
+      extra: "cropped",
+    },
     "gorgon_cave_female.jpg": {
       title: "Minotaur's treat",
       artist: "Rammionn",
@@ -792,6 +806,60 @@
       artist: "LindaDBComix",
       url: "https://www.newgrounds.com/art/view/lindadbcomix/korra-bothered-by-tentacles-clear",
       license: "CC-BY-NC 3.0",
+    },
+    "entertainer_dance_male.jpg": {
+      title: "More NSFW of Dojima",
+      artist: "FutureZ00l0gist",
+      url: "https://www.newgrounds.com/art/view/futurez00l0gist/more-nsfw-of-dojima",
+      license: "CC-BY-NC 3.0",
+    },
+    "the_noble_games__bed_arts_male.jpg": {
+      title: "Nsfw of Noland from Pokemon",
+      artist: "FutureZ00l0gist",
+      url: "https://www.newgrounds.com/art/view/futurez00l0gist/nsfw-of-noland-from-pokemon",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    "public_penance_male_furry.jpg": {
+      title: "Koors Kockade (no panel)",
+      artist: "skullydraws",
+      url: "https://www.newgrounds.com/art/view/skullydraws/koors-kockade-no-panel",
+      license: "CC-BY-NC 3.0",
+    },
+    "delivery_service_female.jpg": {
+      title: "A Fist Full of Caps 1",
+      artist: "TheSabu",
+      url: "https://www.newgrounds.com/art/view/thesabu/a-fist-full-of-caps-1",
+      license: "CC-BY-NC 3.0",
+    },
+    "fuckhole_fair_female.jpg": {
+      title: "Salazar's Bazaar Adventures -Roadside Opportunities",
+      artist: "TheSabu",
+      url: "https://www.newgrounds.com/art/view/thesabu/salazar-s-bazaar-adventures-roadside-opportunities",
+      license: "CC-BY-NC 3.0",
+    },
+    "orcish_festival_female.jpg": {
+      title: "Salazar's Bazaar Adventures - Delivering Goods",
+      artist: "TheSabu",
+      url: "https://www.newgrounds.com/art/view/thesabu/salazar-s-bazaar-adventures-delivering-goods",
+      license: "CC-BY-NC 3.0",
+    },
+    "analfuckhole_female.jpg": {
+      title: "Chel (The Road to El Dorado)",
+      artist: "TheSabu",
+      url: "https://www.newgrounds.com/art/view/thesabu/chel-the-road-to-el-dorado",
+      license: "CC-BY-NC 3.0",
+    },
+    "unit_training_masochist_master_male.jpg": {
+      title: "Commission - Barbas in torture chair",
+      artist: "Karhumies",
+      url: "https://www.newgrounds.com/art/view/karhumies/commission-barbas-in-torture-chair",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    "the_noble_games_male.jpg": {
+      title: "Hooded",
+      artist: "Karhumies",
+      url: "https://www.newgrounds.com/art/view/karhumies/hooded",
+      license: "CC-BY-NC-ND 3.0",
     },
   }
 }());

@@ -87,6 +87,11 @@ earning the orc tribe's favor might be useful someday.
 
 :: Quest_orcish_festivalCrit [nobr]
 
+  <<if $g.gift.isMale()>>
+  <<else>>
+    <<questimage 'orcish_festival_female.jpg'>>
+  <</if>>
+
 <p>
 The festival was a merry ground with all sort of fucking happening all around,
 be it regular fucking, throat fucking or even tit fucking in some cases.

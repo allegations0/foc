@@ -59,6 +59,12 @@ setup.qres.Building(setup.buildingtemplate.marketingoffice), ], /* restrictions 
 )>>
 
 :: Quest_mobile_brothel [nobr]
+
+  <<if $g.show.isMale()>>
+  <<else>>
+    <<questimage 'mobile_brothel_female_2.jpg'>>
+  <</if>>
+
 <p>
 The <<lore region_desert>> has only a few permanent settlements —
 which means that finding a whorehouse becomes a problem for these people.

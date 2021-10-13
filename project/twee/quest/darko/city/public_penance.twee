@@ -130,6 +130,16 @@ to be taken for extreme cases...
 
 
 :: Quest_public_penanceCrit [nobr]
+
+<<if $g.slave.isMale()>>
+  <<if !$settings.bannedtags.furry>>
+    <<questimage 'public_penance_male_furry.jpg'>>
+  <<else>>
+  <</if>>
+<<else>>
+<</if>>
+
+
 <p>
 With
 <<if $g.handler.isHasTrait('per_kind')>>
