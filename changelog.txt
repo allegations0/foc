@@ -4,6 +4,12 @@
 
 ### v1.8.1.x
 
+v1.8.1.5:
+
+  - New Event: Work unending
+  - New event: Skybound recreation
+  - Rape fetishist cost reduced to 500
+
 v1.8.1.4:
 
   - New Event: Morphing Cage
