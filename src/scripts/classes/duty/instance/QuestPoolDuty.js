@@ -202,7 +202,7 @@ setup.dutytemplate.scoutsea = () => new setup.DutyTemplateQuestPoolDuty({
   relevant_traits: {
     skill_flight: setup.DUTY_TRAIT_CRIT_CHANCE / 3,
     per_honorable: setup.DUTY_TRAIT_NORMAL_CHANCE / 3,
-    per_evil: setup.DUTY_TRAIT_NORMAL_CHANCE / 3,
+    per_evil: -setup.DUTY_TRAIT_NORMAL_CHANCE / 3,
   },
   is_can_replace_with_specialist: true,
   quest_pool: setup.questpool.sea,
