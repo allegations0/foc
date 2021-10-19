@@ -4,6 +4,13 @@
 
 ### v1.8.1.x
 
+v1.8.1.6:
+
+  - A bunch of new quest images
+  - Various text fixes
+  - Quest that break slaves now inform player that they can ignore it to make another one
+  - Fix unable to use healing treatments on injured units
+
 v1.8.1.5:
 
   - New Event: Work unending
