@@ -11,6 +11,7 @@ setup.UnitAction = class UnitAction extends setup.TwineClass {
    * @property {setup.Trait[]} [result_traits]
    * @property {setup.Trait[]} [prerequisite_traits]
    * @property {boolean} [is_decrease]  // whether this training will decrease the trait to achieve the final trait. For flesh-shaping
+   * @property {boolean} [is_allow_injured]  // can do this action on injured units?
    * 
    * @param {UnitActionParam} args
    */
@@ -24,6 +25,7 @@ setup.UnitAction = class UnitAction extends setup.TwineClass {
     prerequisite_traits,
     is_decrease,
     is_multitrain,
+    is_allow_injured,
   }) {
     super()
     // assumes quest has an actor named "trainee"
@@ -64,6 +66,7 @@ setup.UnitAction = class UnitAction extends setup.TwineClass {
 
     this.is_decrease = !!is_decrease
     this.is_multitrain = !!is_multitrain
+    this.is_allow_injured = !!is_allow_injured
 
     if (key in setup.unitaction) throw new Error(`Training ${this.key} duplicated`)
     setup.unitaction[key] = this
@@ -104,9 +107,18 @@ setup.UnitAction = class UnitAction extends setup.TwineClass {
     return setup.RestrictionLib.isPrerequisitesSatisfied(this, this.prerequisites)
   }
 
+  /**
+   * @param {setup.Unit} unit 
+   * @returns {boolean}
+   */
   isCanTrain(unit) {
     // if (unit.isBusy()) return false
     if (!this.isAvailable()) return false
+    if (this.is_allow_injured) {
+      if (!unit.isHome()) return false
+    } else {
+      if (!unit.isAvailable()) return false
+    }
     var restrictions = this.getUnitRequirements()
     if (!setup.RestrictionLib.isUnitSatisfyIncludeDefiancy(unit, restrictions)) return false
     return true

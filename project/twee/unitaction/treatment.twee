@@ -12,6 +12,7 @@
     setup.qres.IsInjured(),
     
   ],
+  is_allow_injured: true,
 })>>
 
 <<run new setup.UnitAction({
@@ -26,6 +27,7 @@
     setup.qres.IsInjured(),
     
   ],
+  is_allow_injured: true,
 })>>
 
 <<run new setup.UnitAction({

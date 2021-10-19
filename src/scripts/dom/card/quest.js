@@ -167,7 +167,7 @@ function questNameActionMenu(quest, hide_actions, show_open_button, show_hide_bu
   // cost
   const costs = template.getCosts()
   if (costs.length) {
-    menus.push(menuItemAction({
+    menus.push(menuItemText({
       text: html`Costs: ${setup.DOM.Card.cost(costs, quest)}`,
     }))
   }

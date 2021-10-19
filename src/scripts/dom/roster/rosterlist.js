@@ -51,28 +51,35 @@ function getNonRetiredUnitMenuItems({ unit, hide_details }) {
     }))
   }
 
-  if (unit.isAvailable() && State.variables.fort.player.isTrainingUnlocked(unit)) {
-    if (State.variables.dutylist.isViceLeaderAssigned()) {
+  if (State.variables.fort.player.isTrainingUnlocked(unit)) {
+    if (unit.isAvailable()) {
+      if (State.variables.dutylist.isViceLeaderAssigned()) {
+        menus.push(menuItemAction({
+          text: `Multi-Action`,
+          tooltip: `With a vice-leader, you can now schedule multiple actions for the unit over the next few weeks.`,
+          callback: () => {
+            // @ts-ignore
+            State.variables.gUnitMultiTraining_key = unit.key
+            delete State.temporary.chosentraits
+            setup.DOM.Nav.goto('MultiTraining')
+          },
+        }))
+      }
+    }
+    if (
+      unit.isAvailable() ||
+      (unit.isInjured() && unit.isHome() && State.variables.fort.player.isHasBuilding('treatmentroom'))
+    ) {
       menus.push(menuItemAction({
-        text: `Multi-Action`,
-        tooltip: `With a vice-leader, you can now schedule multiple actions for the unit over the next few weeks.`,
+        text: `Action`,
+        tooltip: `Arrange some activity for the unit for the next few weeks`,
         callback: () => {
           // @ts-ignore
-          State.variables.gUnitMultiTraining_key = unit.key
-          delete State.temporary.chosentraits
-          setup.DOM.Nav.goto('MultiTraining')
+          State.variables.gUnitSelected_key = unit.key
+          setup.DOM.Nav.goto('UnitActionChoose')
         },
       }))
     }
-    menus.push(menuItemAction({
-      text: `Action`,
-      tooltip: `Arrange some activity for the unit for the next few weeks`,
-      callback: () => {
-        // @ts-ignore
-        State.variables.gUnitSelected_key = unit.key
-        setup.DOM.Nav.goto('UnitActionChoose')
-      },
-    }))
   }
 
   if (unit.isYourCompany() && State.variables.fort.player.isHasBuilding('warroom') && unit.isCanLearnNewPerk()) {
