@@ -20,8 +20,6 @@ A critical git corruption forced us to remake the repository from scratch.
 |
 [(Feature / Fetish list)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/faq.md#does-this-game-contain-insert-fetish-here)
 |
-[(Subreddit)](https://www.reddit.com/r/FortOfChains/)
-|
 [(Discord)](https://discord.com/invite/PTD9D7mZyg)
 
 **Fort of Chains** is a completed, free, moddable,
@@ -66,8 +64,8 @@ To get started, open the game, and click the `Content Creator Tool` link from th
 If you need help in the game, make sure to click the `(?)` help menu found everywhere in the game.
 
 When you are done, you can submit the finished story either
-in the [subreddit](https://www.reddit.com/r/FortOfChains/)
-([example submission in the subreddit](https://www.reddit.com/r/FortOfChains/comments/jpo8hg/the_honest_slaver_example_quest_submission/)),
+in the `#your-contribution` channel in
+[Discord](https://discord.com/invite/PTD9D7mZyg),
 or directly in the [repository](https://gitgud.io/darkofocdarko/fort-of-chains).
 If the story fits the game, it will be added pronto, with a lot of thanks!
 [(More information)](https://gitgud.io/darkofocdarko/fort-of-chains#submitting-your-content).
@@ -99,7 +97,6 @@ and I can take a back seat as just a regular contributor :)
 ## Important Links and Informations
 
 ### Key resources
-[Subreddit](https://www.reddit.com/r/FortOfChains/) |
 [Discord](https://discord.com/invite/PTD9D7mZyg) |
 [Changelog (Summary)](docs/changelog_summary.md) |
 [Changelog (Detailed)](changelog.txt)
@@ -209,17 +206,14 @@ Once your quest is up and running, the final step is to add the quest
 you've written into the game permanently, to be played by everyone.
 This can be done in two ways:
 
-#### The Reddit Way
+#### The Discord Way
 
 The first option is to drop the content in
-the [subreddit](https://www.reddit.com/r/FortOfChains/).
-This can be done by copy-pasting your content into [ghostbin](https://ghostbin.co/).
-and then post the ghostbin link in the subreddit.
-
+the `#your-contribution` channel in
+[Discord](https://discord.com/invite/PTD9D7mZyg).
 Someone will then check that it fits the game, and
 may give feedbacks.
 Once the feedback loop is complete (if any), the content will be put it in the game.
-[Example submission in the subreddit](https://www.reddit.com/r/FortOfChains/comments/jpo8hg/the_honest_slaver_example_quest_submission/).
 (If you use Discord, you can tell us your discord name too so we can give you a Discord role,
 which among other things allows you to bypass the seven days wait required there.)
 

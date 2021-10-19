@@ -41,13 +41,11 @@ setup.DOM.Menu.dev_content_generated_middle = function () {
       and no error appeared in the (Test your ${devtooltype}) above,
       you are ready to add the ${devtooltype} into the game!
       There are two options for you.
-      The first option is to copy paste all the code below to the
-      ${setup.DOM.Nav.url('subreddit', 'https://www.reddit.com/r/FortOfChains/')}
-      and a contributor will put it in the game code.
-      (Hint: your code is likely to exceed reddit's word limit. In this case,
-      paste your code to
-      ${setup.DOM.Nav.url('ghostbin', 'https://ghostbin.co/')}
-      then paste the resulting link to reddit.)
+      The first option is to copy paste all the code below to a file,
+      then post the file in the #your-contribution channel inside our
+      ${setup.DOM.Nav.url('Discord', 'https://discord.com/invite/PTD9D7mZyg')}
+      server.
+      A contributor will put it in the game code.
       (If you use Discord, you can tell us your discord name too in the submission
       so we can give you a Discord role,
       which among other things allows you to bypass the seven days wait required there.)
@@ -107,7 +105,7 @@ setup.DOM.Menu.dev_content_generated_middle = function () {
     </div>
     <br/>
     <div>
-    Copy all the code below to either the subreddit,
+    Copy all the code below to either to a file for submitting via Discord,
     or, if you're planning to
       ${setup.DOM.Nav.url(
     'test it and compile your game',

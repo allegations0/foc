@@ -2,9 +2,8 @@
 
 [(Play in your browser)](https://darkofoc.itch.io/fort-of-chains) |
 [(Contributing)](https://gitgud.io/darkofocdarko/fort-of-chains#how-to-contribute-content) |
-[(Download)](https://www.reddit.com/r/FortOfChains/comments/jlhivr/fort_of_chains_and_download_link/) |
+[(Download)](https://darkofoc.itch.io/fort-of-chains) |
 [(Discord)](https://discord.gg/PTD9D7mZyg) |
-[(Subreddit)](https://www.reddit.com/r/FortOfChains/) |
 [(v1.7.0.0 release notes)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/update/readme_1_7.md) |
 [(Changelog)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/changelog_summary.md) |
 [(F.A.Q)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/faq.md)
@@ -17,7 +16,7 @@ The game is configurable and can cover all gender orientations: MM, MF, and FF.
 The game contains heavy themes of slavery and non-consensual sex.
 There are [no support](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/faq.md#can-you-play-a-submissive-in-this-game)
 for playing as a submissive character.
-[(More information)](https://www.reddit.com/r/FortOfChains/comments/jlhivr/fort_of_chains_and_download_link/)
+[(More information)](https://gitgud.io/darkofocdarko/fort-of-chains)
 [(Feature / Fetish list)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/faq.md#does-this-game-contain-insert-fetish-here)
 
 FoC v1.8 adds a new region in the Deeprealm, as well as many new content, some new features, and so on.

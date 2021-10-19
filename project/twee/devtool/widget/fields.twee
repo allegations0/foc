@@ -25,8 +25,7 @@
   <<message '(?)'>>
     <div class='helpcard'>
       OPTIONAL. Enter an URL you want the player to be redirected to when they click on the author's name.
-      You can leave this empty -- it will then be filled to either the reddit post, the merge request,
-      or the discord post.
+      You can leave this empty.
       <br/>
       <br/>
       If you are supplying your own URL,

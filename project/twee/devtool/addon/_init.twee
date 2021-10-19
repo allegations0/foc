@@ -5,7 +5,7 @@
 <p>
 Choose addon to add:
 <<message '(Need something else?)'>>
-  If you need some other addon, please drop a message in the subreddit.
+  If you need some other addon, please drop a message in the Discord server.
 <</message>>
 </p>
 
