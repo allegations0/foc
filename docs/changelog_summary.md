@@ -2,6 +2,44 @@
 
 Full changelog [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/changelog.txt).
 
+v1.8.2.0: (20 October 2021)
+
+  - Content
+    - New Quest: Rape Fetishist
+    - New quest chain: Desert Spring (3 quests) with images.
+    - New Event: Work unending
+    - New event: Skybound recreation
+    - New Event: Morphing Cage
+    - New furniture: Morphing Cage
+    - New activity: Noticeboards gossip
+    - New activity: Noticeboards reading
+    - New livings:
+      - tentacle savior
+      - tentacle slaver
+      - vice leader
+  - New feature: upcoming events
+    - New building: noticeboards
+    - Once you build the noticeboards, known upcoming events are now shown
+      on the top right menu
+    - Fully integrated with content creator
+  - Images
+    - Male and female for Bounty Hunt: Minotaur
+    - Female image for Gorgon Cave
+    - And a bunch of other new quest images
+    - Images for academy of wind quest
+  - QoL
+    - Quest that break slaves now inform player that they can ignore it to make another one
+  - Engine
+    - Rewrote top left menu into DOM
+  - Documentation
+    - Moved reddit mentions to discord.
+    - Fix sea scout having three good traits.
+  - Bugfixes
+    - Fix unable to use healing treatments on injured units
+  - Text fixes
+    - Various text fixes
+    - Some text and wording fixes here and there
+
 v1.8.1.0: (9 October 2021)
 
   **Important**: the Grand Hall has been renamed to Great Hall.

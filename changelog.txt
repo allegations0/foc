@@ -2,6 +2,13 @@
 
 [Changelog summary](docs/changelog_summary.md)
 
+### v1.8.2.x
+
+v1.8.2.0:
+
+  - Moved reddit mentions to discord.
+  - Fix sea scout having three good traits.
+
 ### v1.8.1.x
 
 v1.8.1.6:
@@ -96,6 +103,8 @@ v1.8.0.0
  - Logic improvement for Quest Auto-Assign by stevejackson121
  - Bugfix in Quest Kobold Benevolent Agency
  - New Quest: Tiger Bank Debt Collection - Vale (by Matthew Lang)
+
+### v1.7.1.x
 
 v1.7.1.10
 
