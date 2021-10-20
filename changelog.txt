@@ -4,6 +4,11 @@
 
 ### v1.8.2.x
 
+v1.8.2.1:
+
+  - New event and opportunity: Revenge Attempt
+  - More granularity of sold slave unit group
+
 v1.8.2.0:
 
   - Moved reddit mentions to discord.
