@@ -125,6 +125,9 @@ setup.SlaveOrder = class SlaveOrder extends setup.TwineClass {
     // next, book-keeping
     State.variables.slaveorderlist.archiveSlaveOrder(this)
 
+    // add history to the unit
+    unit.addHistory(` sold for ${price}g to fulfill ${this.getName()}`)
+
     // finally, remove unit from company, if it was ever there to begin with
     if (unit.isYourCompany()) {
       // remove from company

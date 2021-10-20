@@ -1,3 +1,4 @@
+export const IMPORTABLE = true
 
 // not made into proper class due to unitgroupcompose
 setup.UnitGroup = class UnitGroup extends setup.TwineClass {
