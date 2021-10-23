@@ -93,7 +93,7 @@ null, /* key */
 [
   setup.qres.Job(setup.job.slaver),
   setup.qres.AllTraits([setup.trait.subrace_kobold, setup.trait.wings_dragonkin], true),
-  setup.qres.AnyTrait([setup.trait.magic_fire, setup.trait.magic_light], true),
+  setup.qres.AnyTrait([setup.trait.magic_fire, setup.trait.magic_fire_master, setup.trait.magic_light, setup.trait.magic_light_master], true),
   setup.qres.HasTitle('quest_the_shunned_kobold_0'),
 ],
 {
