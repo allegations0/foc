@@ -33,7 +33,7 @@
 
 <<run new setup.Furniture(
   'f_foodtray_good',
-  '[UNOBTAINABLE] gilded pet food tray',
+  'gilded pet food tray',
   'Luxurious-looking doggy bowl for your slaves to eat from', 
   /* value = */ setup.FURNITURE_PRICE_GOOD,
   setup.furnitureslot.foodtray,
