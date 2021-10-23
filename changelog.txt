@@ -4,6 +4,11 @@
 
 ### v1.8.2.x
 
+v1.8.2.2:
+
+  - New event: chastity release
+  - Fixed gilded pet tray [unobtainable] name not removed.
+
 v1.8.2.1:
 
   - New event and opportunity: Revenge Attempt
