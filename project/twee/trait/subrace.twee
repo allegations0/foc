@@ -138,7 +138,7 @@
   new setup.Trait(
     'subrace_dragonkin',
     'dragonkin',
-    'A mythical subrace of <<rep setup.trait.race_lizardkin>> said to dwell somewhere beyond the <<lore region_sea>>. Even compared to the lizardkin, these winged relatives of them are extremely rare. Attuned to <<lore magic_light>>, which they are often able to breathe out from their snouts.',
+    'A mythical subrace of <<rep setup.trait.race_lizardkin>> said to dwell somewhere beyond the <<lore region_sea>>. Even compared to the lizardkin, these winged relatives of them are extremely rare. Attuned to both <<lore magic_fire>> and <<lore magic_light>>, which they are often able to breathe out from their snouts.',
     15000,
     {},
     ['unicorn', 'race_lizardkin', ],

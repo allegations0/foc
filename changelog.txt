@@ -4,6 +4,13 @@
 
 ### v1.8.2.x
 
+v1.8.2.3:
+
+  - Fix savior kobold not allowing master fire / light slavers to go (thanks to DangThings)
+  - Fix missing tags in tomb raider quest
+  - Fix missing tooltip on dragonkin's dual fire / light affinities
+  - New event: Penitent (by FCdev)
+
 v1.8.2.2:
 
   - New event: chastity release
