@@ -41,6 +41,14 @@
 [ /* outcomes */
   setup.qc.Slave('slave', "a|was a spy sent over by one of your many enemies", undefined),
   setup.qc.BoonizeRandom('slaver', 5),
+  setup.qc.IfThenElse(
+    setup.qres.Actor('you', setup.qres.Trait(setup.trait.bg_assassin)),
+    setup.qc.DoAll([
+      setup.qc.BoonizeRandom('slaver', 25),
+    ], undefined),
+    setup.qc.DoAll([
+    ], undefined),
+  ),
 ],
 [ /* restrictions */
   setup.qres.Building(setup.buildingtemplate.veteranhall),
@@ -82,5 +90,17 @@ The victim's clothes were folded neatly around — the clothes of an assassin, w
 </p>
 
 <p>
-Seems like your own spy slaver is quite resourceful. You're quite grateful to have such a slaver under your employ, loyally serving you, but you have an image to maintain and you can't just say it out loud. So you settled with a grunt and a friendly "good work" towards the slaver, although it seems the slaver already know how much you appreciate their work and looks more cheerful in the days to come.
+<<if $g.you.isHasTrait('bg_assassin')>>
+Of course, you dabbled in the assassin trade too, once.
+It's still very nice to watch the work of a fellow professional, and even better when said professional
+is loyally serving you and your company.
+Still,
+<<else>>
+Seems like your own spy slaver is quite resourceful. You're quite grateful to have such a slaver under your employ, loyally serving you,  but
+<</if>>
+you have an image to maintain and you can't just say it out loud. So you settled with a grunt and a friendly "good work" towards the slaver, although it seems the slaver already know how much you appreciate their work and looks more cheerful in the days to come.
+you have an image to maintain and you can't just say it out loud. So you settled with a grunt and a friendly "good work" towards the slaver, although it seems the slaver already know how much you appreciate their work and looks more cheerful in the days to come.
+<<if $g.you.isHasTrait('bg_assassin')>>
+Since the acknowledgement came from a fellow assassin (that is, you), <<they $g.slaver>> knows it worths more than normal.
+<</if>>
 </p>

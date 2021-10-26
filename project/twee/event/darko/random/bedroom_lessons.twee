@@ -41,6 +41,14 @@ setup.qc.Trauma('pimp', setup.trait.boon_slaving, 16)
 setup.qc.DoAll([
 setup.qc.Trauma('pimp', setup.trait.boon_slaving, 11)
 ], undefined)),
+  setup.qc.IfThenElse(
+    setup.qres.Actor('you', setup.qres.AnyTrait([setup.trait.bg_whore, setup.trait.bg_courtesan], true)),
+    setup.qc.DoAll([
+      setup.qc.Trauma('pimp', setup.trait.boon_slaving, 80)
+    ], undefined),
+    setup.qc.DoAll([
+    ], undefined),
+  ),
 ],
 [ /* restrictions */
   setup.qres.Building(setup.buildingtemplate.recreationwing),
@@ -64,8 +72,23 @@ a free whore, trading in flesh to everyone paying.
 It seems <<they $g.slaver>> still recall the experience of <<their $g.slaver>> past life, and have decided to put them to good use by imparting them unto your pimp.
 </p>
 
+<<if $g.you.isHasAnyTraitExact(['bg_whore', 'bg_courtesan'])>>
 <p>
-Given <<reps $g.pimp>> <<uinsultnoun $g.pimp>>, however, you've little doubt that whatever lesson the <<man $g.pimp>> pimp|have learned, it will be gone and forgotten before long. But at least for the next few weeks, you can expect increased expected profits from the <<rep setup.buildingtemplate.recreationwing>>.
+  Given that you, yourself, were also a former "professional",
+  you decide to give even more pointers to your pimp.
+  You tell how to best utilize the tongue to pleasure clients, how to wiggle those
+  slithery bits to lick the most sensitive parts the <<urace $g.you>> body could have.
+</p>
+<</if>>
+
+<p>
+Given <<reps $g.pimp>> <<uinsultnoun $g.pimp>>, however, you've little doubt that whatever lesson the <<man $g.pimp>> pimp|have learned, it will be gone and forgotten before long. But at least for the next few weeks, you can expect
+<<if $g.you.isHasAnyTraitExact(['bg_whore', 'bg_courtesan'])>>
+  a great increase in
+<<else>>
+  increased
+<</if>>
+expected profits from the <<rep setup.buildingtemplate.recreationwing>>.
 </p>
 
 
