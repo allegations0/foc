@@ -57,6 +57,8 @@ slave cages for the various taverns in the <<lore region_vale>>.
 iron bows for the hunters of the <<lore region_forest>>.
 <<elseif $g.slaver.getHomeland() == setup.Text.Race.REGIONS.desert>>
 weapons for the raiders of the <<lore region_desert>>.
+<<elseif $g.slaver.getHomeland() == setup.Text.Race.REGIONS.deep>>
+weapon and armor to fight the dangers of the <<lore region_deep>>
 <<elseif $g.slaver.getHomeland() == setup.Text.Race.REGIONS.sea>>
 various devices from the many needs in the land beyond the <<lore region_sea>>.
 <<elseif $g.slaver.getHomeland() == setup.Text.Race.REGIONS.mist>>
