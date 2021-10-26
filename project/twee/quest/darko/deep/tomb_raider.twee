@@ -81,6 +81,8 @@ null, /* key */
   url: "",
 },
 [ /* tags */
+  'deep',
+  'unknown',
 ],
 3, /* weeks */
 setup.QUEST_DEFAULT_EXPIRATION, /* expiration weeks */
