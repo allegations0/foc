@@ -59,6 +59,9 @@ false, /* is must be answered */
 :: Opportunity_clerk_exercise [nobr]
 <p>
 Not everyone under your employ comes from a physical background. Take <<yourrep $g.slaver>>, for example. Before joining your company, <<therace $g.slaver>> slaver|was mostly working behind the desk. Given <<their $g.slaver>> previous occupation, it's not really surprising that <<their $g.slaver>> body isn't as well-developed as some of your other slavers, and tire somewhat easily too.
+<<if $unit.player.isHasTrait('bg_clerk')>>
+You understand it too, given that you were also working behind the desk some years past.
+<</if>>
 </p>
 
 <p>

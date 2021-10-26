@@ -77,7 +77,12 @@ ex-pirate
 <<else>>
 ex-<<man $g.slaver>>-of-the-sea
 <</if>>
-miss the sea. You could lend the money to <<therace $g.slaver>>, although who knows if you'll get them back.
+miss the sea.
+<<if $unit.player.isHasAnyTraitExact(['bg_seaman', 'bg_pirate'])>>
+It's something you can relate very much, given that you did spend a good chunk of your
+life yourself in the open seas.
+<</if>>
+You could lend the money to <<therace $g.slaver>>, although who knows if you'll get them back.
 </p>
 
 

@@ -43,3 +43,40 @@ The slaver is running laps almost effortlessly on the <<rep setup.buildingtempla
 <</if>>
 And <<therace $g.slaver>> slaver|know it too. <<They $g.slaver>> slaver|is now ready to return to <<their $g.slaver>> slaving duties, and with a good mood too.
 </p>
+
+<<if $unit.player.isHasTrait('bg_clerk')>>
+<<if $unit.player.isHasTrait('muscle_strong')>>
+<p>
+Surprisingly, you are not at all out of shape, even though you were a desk worker once in your past.
+Otherwise, <<yourrep $g.slaver>> would have had some words of advice for you that you could possibly use.
+</p>
+<<else>>
+<p>
+You, on the other hand, are still quite out of shape.
+Like <<rep $g.slaver>>, you were a desk worker once in your past.
+But thankfully, 
+<<yourrep $g.slaver>> gave you quite a bit of pointer of smart exercises you can still do
+while on your desk.
+It's just a matter of choice now whether you'd like comming trying it out or not.
+</p>
+
+<<choose>>
+<<opt "Try it out">>
+<p>
+You listen to what <<yourrep $g.slaver>> had to say, and by the end, you learn that
+there are many ways to exercise even within the confines of your office.
+You can lift your body under the desk, use the chair to do push-ups, and many other
+officey ways to train your body. Within a week, you can already feel the improvements.
+</p>
+
+<<run setup.qc.Trait('you', setup.trait.muscle_strong).apply(setup.costUnitHelper($unit.player))>>
+
+<<opt "Pass">>
+<p>
+There are benefits of not being so bulky, and you'd like to keep your body this way.
+</p>
+<</choose>>
+
+<</if>>
+<</if>>
+

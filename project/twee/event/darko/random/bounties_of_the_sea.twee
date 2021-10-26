@@ -50,3 +50,17 @@ With <<their $g.slaver>> hired fishing boat, the ex-seaman was able to catch a m
 <p>
 Having voyaged into the sea once more, the slaver looks quite content with themselves, and <<their $g.slaver>> mood is much better in the coming weeks.
 </p>
+
+<<if $unit.player.isHasAnyTraitExact(['bg_pirate', 'bg_seaman'])>>
+<p>
+Hearing tales of such adventure and exploits within the sea stirred your long dormant
+seabound spirit.
+Indeed, you too once lived within the sea,
+and you have to admit, you are rather jealous of the opportunity to go back into the sea,
+away from all your responsibilities.
+Still, your slavers are depending on you now, and you know that better than anyone else.
+</p>
+
+<<run setup.qc.BoonizeRandom('you', 50).apply(setup.costUnitHelper($unit.player))>>
+
+<</if>>
