@@ -54,6 +54,16 @@ The daily combat practice had ensured <<their $g.slaver>> survival as a mercenar
 <<else>>
 The daily combat practice was drilled deep within <<their $g.slaver>> psyche by <<their $g.slaver>> previous army instructor, and it stays true even to the current day.
 <</if>>
+<<if $g.you.isHasAnyTraitExact(['bg_knight', 'bg_mercenary', 'bg_soldier'])>>
+It's something you can relate very well -- after all, you too were once a
+<<if $g.you.isHasTrait('bg_knight')>>
+knight, and hard training was something you got used to.
+<<elseif $g.you.isHasTrait('bg_mercenary')>>
+mercenary, and you had to train to survive in the unforgiving business.
+<<else>>
+soldier, being drilled by your instructions for very long hours.
+<</if>>
+<</if>>
 </p>
 
 <p>
@@ -75,6 +85,22 @@ It is actually quite sexy looking at <<therace $g.slaver>> training the various 
 <p>
 You bring your own <<uweapon $g.you>> and approach <<yourrep $g.slaver>>. <<Therace $g.slaver>> slaver|is more than happy to have a training partner, breaking the monotony of training alone, and the two of you proceed to spar earnestly.
 </p>
+
+
+<<if $g.you.isHasAnyTraitExact(['bg_knight', 'bg_mercenary', 'bg_soldier'])>>
+
+<p>
+Given your background, you are no stranger to practice fights.
+You know what maneuvers need the most practice, what are the moves to look out for,
+and most importantly how to avoid unnecessary injuries.
+By the end, both you and <<yourrep $g.slaver>> were completely drenched in sweat,
+but both of you are smiling in the satisfaction of a good training session.
+Having sweat together, it feels like you found a new friend in <<rep $g.slaver>>.
+</p>
+
+<<run setup.qc.FriendshipWithYou('slaver', 2000).apply($gQuest)>>
+
+<<else>>
 
 <<set _res = setup.Skill.skillCheckCompare($unit.player, $g.slaver, setup.skill.combat)>>
 
@@ -109,12 +135,28 @@ Still, it was all in good fun, and the two of you become closer through the exer
 <<run setup.qc.FriendshipWithYou('slaver', 200).apply($gQuest)>>
 </p>
 
+<</if>>
+
 <<opt "Watch <<them $g.slaver>> train">>
 
 <p>
-It's quite mesmerizing how <<rep $g.slaver>> slaver|is able to maintain a rhythm swinging <<their $g.slaver>> <<uweapon $g.slaver>> while counting out loud. Your focus starts to switch too — while initially you were just looking at <<their $g.slaver>> sweaty <<ubody $g.slaver>>, you start to catch some of the techniques <<they $g.slaver>> slaver|was using to keep the weapon steady. In the end, you feel you've learned a thing or two from just watching the slaver exercised.
+It's quite mesmerizing how <<rep $g.slaver>> slaver|is able to maintain a rhythm swinging <<their $g.slaver>> <<uweapon $g.slaver>> while counting out loud. Your focus starts to switch too — while initially you were just looking at <<their $g.slaver>> sweaty <<ubody $g.slaver>>, you start to catch some of the techniques <<they $g.slaver>> slaver|was using to keep the weapon steady.
+<<if $g.you.isHasAnyTraitExact(['bg_knight', 'bg_mercenary', 'bg_soldier'])>>
+These enhance upon your previous training as a
+<<if $g.you.isHasTrait('bg_knight')>>
+knight,
+<<elseif $g.you.isHasTrait('bg_mercenary')>>
+mercenary,
+<<else>>
+soldier,
+<</if>>
+and you feel as if you have learned a great deal from the experience.
+<<run setup.qc.ExpUnit('you', 12).apply($gQuest)>>
+<<else>>
+In the end, you feel you've learned a thing or two from just watching the slaver exercised.
+<<run setup.qc.ExpUnit('you', 2).apply($gQuest)>>
+<</if>>
 </p>
 
-<<run setup.qc.ExpUnit('you', 2).apply($gQuest)>>
 
 <</choose>>
