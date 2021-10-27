@@ -44,7 +44,11 @@ setup.rarity.rare, /* Rarity */
 
 :: Event_living_god [nobr]
 <p>
-Even among your slavers, <<yourrep $g.slaver>> is rather special. <<Therace $g.slaver>> exudes an aura unlike any other, drawing many people in. In fact, before <<they $g.slaver>> became a slaver, <<they $g.slaver>> slaver|was quite used to being worshipped by others.
+Even among your slavers, <<yourrep $g.slaver>> is rather special. <<Therace $g.slaver>> exudes an aura unlike any other, drawing many people in.
+<<if $g.you.isHasTrait('bg_mythical')>>
+It's not so dissimilar to your own.
+<</if>>
+In fact, before <<they $g.slaver>> became a slaver, <<they $g.slaver>> slaver|was quite used to being worshipped by others.
 </p>
 
 <p>

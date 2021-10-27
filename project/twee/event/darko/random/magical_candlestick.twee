@@ -34,6 +34,17 @@
 },
 [ /* outcomes */
   setup.qc.Item(setup.item.f_lighting_good_slaver),
+  setup.qc.IfThenElse(
+    setup.qres.Actor('you', setup.qres.AnyTrait([setup.trait.bg_mystic, setup.trait.bg_apprentice])),
+    setup.qc.DoAll([
+      setup.qc.Item(setup.item.f_lighting_good_slaver),
+      setup.qc.Item(setup.item.f_lighting_good_slaver),
+      setup.qc.Item(setup.item.f_lighting_good_slaver),
+      setup.qc.FriendshipWithYou('slaver', 200),
+    ], undefined),
+    setup.qc.DoAll([
+    ], undefined),
+  ),
   setup.qc.BoonizeRandom('slaver', 5),
   setup.qc.Injury('slave', 5),
 ],
@@ -48,7 +59,12 @@ setup.rarity.rare, /* Rarity */
 <p>
 In the past few weeks, you've seen <<yourrep $g.slaver>> doing something with
 one of your slaves, <<rep $g.slave>>. It's unclear what <<therace $g.slaver>>
-slaver|have been doing, but given <<their $g.slaver>>
+slaver|have been doing, but
+<<if $g.you.isHasAnyTraitExact(['bg_mystic', 'bg_apprentice'])>>
+given the trace of magic you can sense in the air -- something you learned
+when you were a magic student yourself,
+<<else>>
+given <<their $g.slaver>>
 <<their $g.slaver>> past as a
 <<if $g.slaver.isHasTrait('bg_mystic')>>
 wizard
@@ -57,7 +73,9 @@ student of magic
 <</if>>
 and hence <<their $g.slaver>>
 proclivity towards
-magic, and given the slave's magical abilities, it's probably something
+magic, and given the slave's magical abilities,
+<</if>>
+it's probably something
 related to the arcane.
 </p>
 
@@ -73,6 +91,24 @@ draining all the magical energies from the slave into the candlestick,
 leaving the slave severely drained and needing a few weeks to recover.
 </p>
 
+<<if $g.you.isHasAnyTraitExact(['bg_mystic', 'bg_apprentice'])>>
+
+<p>
+However, drawing from your own vast knowledge of arcane matters,
+you can sense that the device was somewhat unstable.
+But you have an idea -- you could divide the energy among multiple vessels, and it should
+bring it to a stable level.
+You share your thoughts and idea with the <<urace $g.slaver>>, who ended up appreciating
+your shared interest in mystic arts.
+The next few days were spent with the both of you locked inside your office, making more and
+more of these candlesticks.
+You finished with a couple of the valuable furniture, ready to be installed or sold.
+But more importantly, your friendship with <<yourrep $g.slaver>> grew.
+The journey is the real reward, after all.
+</p>
+
+<<else>>
+
 <p>
 You thank your slaver for such a thoughtful gift, and stow it in your office
 for the time being. Judging from how severely drained the slave is, however,
@@ -86,3 +122,5 @@ Given <<reps $g.slaver>> dominant nature, you have a feeling that the real reaso
 Given <<reps $g.slaver>> evil nature, you have a feeling that the real reason why the slaver decide to make such an enchanted candlestick is because <<they $g.slaver>> slaver|want to torture the slave by making it...
 <</if>>
 </p>
+
+<</if>>

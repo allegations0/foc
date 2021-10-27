@@ -111,4 +111,23 @@ You secretly get off too from your sadism fetish, and starting to wonder if you 
 
 <<run setup.qc.BoonizeRandom('slaver', 8).apply($gQuest)>>
 
+<<optif $unit.player.isMasochistic()>>
+<<opt "Get whipped together">>
+
+<p>
+Well, <<rep $g.slaver>> just happens to not be the only masochist in the room.
+Secretly, you too crave pain, and seeing as nobody else is around, you sit next to <<rep $g.slaver>>
+and join in the self flagellation.
+<<Rep $g.slaver>> looked surprised at first, but then found the company enjoyable.
+As a fellow masochist, you understand what needs to be done in such a situation.
+The rest of the day were filled with the sound of rope hitting flesh.
+Thankfully, all the other residents of the fort thought that some random slave were getting whipped,
+and certainly not the leader of the company <<themself $unit.player>>.
+</p>
+
+<<run setup.qc.FriendshipWithYou('slaver', 500).apply($gQuest)>>
+<<run setup.qc.BoonizeRandom('slaver', 8).apply($gQuest)>>
+<<run setup.qc.BoonizeRandom('you', 8).apply($gQuest)>>
+<<run setup.qc.Injury('you', 2).apply($gQuest)>>
+
 <</choose>>

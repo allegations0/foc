@@ -53,6 +53,21 @@ Apparently, <<they $g.rescue>> rescue|have been independently rescued by <<yourr
 <<else>>
 <<Therace $g.slaver>> slaver|have used <<their $g.slaver>> wide network of connections to ultimately rescue your missing slaver.
 <</if>>
+
+<<if $g.you.isHasTrait('bg_boss')>>
+You nod approvingly at <<their $g.slaver>> ingenuity -- were you still
+in the mob business of old, you'd make great use of such a <<woman $g.slaver>>.
+<<run setup.qc.FriendshipWithYou('slaver', 2000).apply($gQuest)>>
+<<elseif $g.you.isHasTrait('bg_informer')>>
+As a (former) informer yourself, you can appreciate the subtlety that <<they $g.slaver>>
+must had employed for such a deed.
+<<run setup.qc.FriendshipWithYou('slaver', 1000).apply($gQuest)>>
+<<elseif $g.you.isHasTrait('skill_connected')>>
+It seems you do not need to use your own contacts to rescue <<them $g.rescue>>, after all,
+and you grow to like <<rep $g.slaver>> a bit better now.
+<<run setup.qc.FriendshipWithYou('slaver', 500).apply($gQuest)>>
+<<else>>
 An incredible feat, and you make notes to thank <<theslaver $g.slaver>> personally later.
+<</if>>
 </p>
 

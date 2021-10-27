@@ -45,6 +45,7 @@
     setup.qres.Actor('you', setup.qres.Trait(setup.trait.bg_assassin)),
     setup.qc.DoAll([
       setup.qc.BoonizeRandom('slaver', 25),
+      setup.qc.FriendshipWithYou('slaver', 200),
     ], undefined),
     setup.qc.DoAll([
     ], undefined),

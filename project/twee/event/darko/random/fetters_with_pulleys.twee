@@ -28,6 +28,17 @@
 },
 [ /* outcomes */
   setup.qc.Item(setup.item.f_punishment_good_slaver),
+  setup.qc.IfThenElse(
+    setup.qres.Actor('you', setup.qres.Trait(setup.trait.bg_engineer)),
+    setup.qc.DoAll([
+      setup.qc.Item(setup.item.f_punishment_good_slaver),
+      setup.qc.Item(setup.item.f_punishment_good_slaver),
+      setup.qc.Item(setup.item.f_punishment_good_slaver),
+      setup.qc.FriendshipWithYou('slaver', 200),
+    ], undefined),
+    setup.qc.DoAll([
+    ], undefined),
+  ),
   setup.qc.BoonizeRandom('slaver', 5),
   setup.qc.IfThenElse(
 setup.qres.Actor('slaver', setup.qres.AllTraits([setup.trait.per_frugal], true)),
@@ -67,10 +78,28 @@ Being the kind slaver that <<they $g.slaver>> contradictory slaver|is, <<they $g
 <</if>>
 </p>
 
+<<if $g.you.isHasTrait('bg_engineer')>>
+
+<p>
+Engineering is a shared interest for you too. After all, you consider yourself an engineer as well.
+In fact, you've been helping <<theslaver $g.slaver>> with some unknown project in the recent days,
+something <<they $g.slaver>> kept a secret even from you.
+There are some chains involved, some wood here and there, but it was quite unclear what exactly
+<<they $g.slaver>> slaver|was making.
+And after a few weeks, only when the devices are ready that you understand what it is:
+a set of pulleys and rope to be attached to a ceiling, and to be used on a slave for some fun bondage times.
+And thanks to your help, <<they $g.slaver>> produced quite a number of them too.
+<<They $g.slaver>> slaver|is giving all of them to you... not for free though.
+</p>
+
+<<else>>
+
 <p>
 Recently, <<theslaver $g.slaver>> slaver|have been spending quite a lot of time in the fort's <<rep setup.buildingtemplate.forge>>, together with the resident blacksmith. And you finally know why today — the slaver comes to your office bringing a unique contraption: a set of pulleys and sturdy rope ending with a pair of fetters.
 The contraption could be installed in some bedchamber, and can be used to hang a slave or two from the ceiling for some fun bondage nights. Alternative, you can always find a buyer that is willing to purchase such a unique contraption for their perverted uses.
 </p>
+
+<</if>>
 
 <p>
 <<if $g.slaver.isHasTrait('per_lavish')>>

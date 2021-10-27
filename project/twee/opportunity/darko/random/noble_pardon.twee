@@ -26,6 +26,17 @@ setup.qdiff.normal40, /* difficulty */
     ],
     [ /* outcomes */
       setup.qc.Ire('humankingdom', -10),
+      setup.qc.IfThenElse(
+        setup.qres.ExistUnit([
+          setup.qres.You(),
+          setup.qres.Trait(setup.trait.bg_noble),
+        ]),
+        setup.qc.DoAll([
+          setup.qc.Favor('humankingdom', 200),
+        ], undefined),
+        setup.qc.DoAll([
+        ], undefined),
+      ),
     ],
   ],
   [
@@ -39,6 +50,17 @@ setup.qdiff.normal40, /* difficulty */
     ],
     [ /* outcomes */
       setup.qc.Ire('humanvale', -10),
+      setup.qc.IfThenElse(
+        setup.qres.ExistUnit([
+          setup.qres.You(),
+          setup.qres.Trait(setup.trait.bg_noble),
+        ]),
+        setup.qc.DoAll([
+          setup.qc.Favor('humanvale', 200),
+        ], undefined),
+        setup.qc.DoAll([
+        ], undefined),
+      ),
     ],
   ],
   [
@@ -52,6 +74,17 @@ setup.qdiff.normal40, /* difficulty */
     ],
     [ /* outcomes */
       setup.qc.Ire('humandesert', -10),
+      setup.qc.IfThenElse(
+        setup.qres.ExistUnit([
+          setup.qres.You(),
+          setup.qres.Trait(setup.trait.bg_noble),
+        ]),
+        setup.qc.DoAll([
+          setup.qc.Favor('humandesert', 200),
+        ], undefined),
+        setup.qc.DoAll([
+        ], undefined),
+      ),
     ],
   ],
   [
@@ -65,6 +98,17 @@ setup.qdiff.normal40, /* difficulty */
     ],
     [ /* outcomes */
       setup.qc.Ire('elf', -10),
+      setup.qc.IfThenElse(
+        setup.qres.ExistUnit([
+          setup.qres.You(),
+          setup.qres.Trait(setup.trait.bg_noble),
+        ]),
+        setup.qc.DoAll([
+          setup.qc.Favor('elf', 200),
+        ], undefined),
+        setup.qc.DoAll([
+        ], undefined),
+      ),
     ],
   ],
   [
@@ -78,6 +122,17 @@ setup.qdiff.normal40, /* difficulty */
     ],
     [ /* outcomes */
       setup.qc.Ire('neko', -10),
+      setup.qc.IfThenElse(
+        setup.qres.ExistUnit([
+          setup.qres.You(),
+          setup.qres.Trait(setup.trait.bg_noble),
+        ]),
+        setup.qc.DoAll([
+          setup.qc.Favor('neko', 200),
+        ], undefined),
+        setup.qc.DoAll([
+        ], undefined),
+      ),
     ],
   ],
 ],
@@ -110,6 +165,13 @@ royal
 <</if>>
 slaver|offer to make use of <<their $g.slaver>> noble connections to try and appease these companies, if you wish. But it will cost quite a few gold, to cover the bribes and gifts that must be procured, as well as some "service fee" for using <<their $g.slaver>> most noble service.
 </p>
+
+<<if $unit.player.isHasTrait('bg_noble')>>
+<p>
+As a fellow noble yourself, you can even add in your own connections to warp the words
+to your advantage, and possibly gain some of them as allies...
+</p>
+<</if>>
 
 
 

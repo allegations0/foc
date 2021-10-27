@@ -53,6 +53,10 @@ unemployed, living on the streets.
 <<else>>
 a lowly slave.
 <</if>>
+<<if $g.you.isHasAnyTraitExact(['bg_unemployed', 'bg_slave'])>>
+You grimaced a little at the thought that you too once shared a similar fate in the past,
+but you quickly put the thoughts on the back of your mind.
+<</if>>
 As a result, <<theslaver $g.slaver>> slaver|is awkwardly meek, and some would even go as far to say that <<they $g.slaver>> slaver|is not suitable as slaver.
 <<if $g.slaver.isHasTrait('per_aggressive')>>
 Nobody dares to say it out loud in front of the aggressive <<urace $g.slave>> though.

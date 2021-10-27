@@ -52,7 +52,10 @@ Your slavers are quite a handful to manage, each having their own quirks and per
 <p>
 <<Yourrep $g.slaver>>, one of the longer serving member of your company, notices you being down as well, and invite you for one of <<their $g.slaver>> pastime — a vacation! Just when you get your hopes high that one of your slavers is actually a pretty decent <<urace $g.slaver>>, <<they $g.slaver>> non-chalantly mentions the location to be... the land beyond <<lore concept_mist>>.
 You have half the idea to deduct <<their $g.slaver>> pay and throw <<therace $g.slaver>> out from your office window, but then you remember that <<rep $g.slaver>> slaver|was a mistwalker — a rare occupation whose main duty is to guide people in and out of <<lore concept_mist>>.
-<<if $unit.player.isHasTrait('race_demon')>>
+<<if $unit.player.isHasTrait('bg_mistwalker')>>
+It's something you've done a lot in the past as well, but your memory of the travel
+were not entirely full of pleasant stuffs.
+<<elseif $unit.player.isHasTrait('race_demon')>>
 While you're pretty familiar with the realm (given the demonic blood flowing in you), the act of entering and exiting the realm is still painfully difficult without a skilled mistwalker.
 <</if>>
 Perhaps this is indeed a rare opportunity for you to enjoy a vacation nobody else could enjoy, and perhaps your slaver's pay would not get deducated after all.

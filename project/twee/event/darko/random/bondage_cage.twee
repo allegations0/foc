@@ -35,7 +35,7 @@
       setup.qc.Item(setup.item.f_slavebed_good_slaver),
       setup.qc.Item(setup.item.f_slavebed_good_slaver),
       setup.qc.Item(setup.item.f_slavebed_good_slaver),
-      setup.qc.Item(setup.item.f_slavebed_good_slaver),
+      setup.qc.FriendshipWithYou('slaver', 200),
     ], undefined),
     setup.qc.DoAll([
     ], undefined),
