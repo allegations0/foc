@@ -4,6 +4,11 @@
 
 ### v1.8.2.x
 
+v1.8.2.4:
+
+  - Written player specific background variants for 40+ existing events.
+  - Dragonkin knights are more common now
+
 v1.8.2.3:
 
   - Fix savior kobold not allowing master fire / light slavers to go (thanks to DangThings)
