@@ -22,9 +22,10 @@
     bg_hunter: setup.POOL_BG_UNCOMMON_2,
     bg_priest: setup.POOL_BG_UNCOMMON_2,
 
+    bg_knight: setup.POOL_BG_RARE_3,
+
     bg_apprentice: setup.POOL_BG_RARE_3,
 
-    bg_knight: setup.POOL_BG_EPIC_4,
     bg_noble: setup.POOL_BG_EPIC_4,
 
     bg_mercenary: setup.POOL_BG_EPIC_4,
