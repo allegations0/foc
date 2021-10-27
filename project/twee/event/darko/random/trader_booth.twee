@@ -79,9 +79,44 @@ slaps the slave's exposed ass cheeks, before asking you to come over and sample 
 <</if>>
 </p>
 
+<<if $g.you.isHasTrait('bg_merchant')>>
+<p>
+Your merchant blood has been dormant for quite some time, but such a brazen show of
+money-making seems to jog your money brain quite a bit.
+Perhaps you could help <<them $g.slaver>> in <<their $g.slaver>> money-making endeavor...
+</p>
+<</if>>
+
 <<choose>>
 
 <<opt "Sample it">>
+
+<<if $g.you.isHasTrait('bg_merchant')>>
+
+<p>
+What's an easy way to attract other people to a booth? Why, by demonstrating
+just how nice the produce is!
+You put on your best acting face and sampled the produce.
+With a thrust of the big dildo hidden down under the slave, the slave's eyes
+widen at the sudden stimulation.
+Before long, you can see the slave climaxing, producing a steady stream of
+<<ucum $g.slave>>.
+You thearetically drink down the fluid and applause its taste,
+its benefit, and whatever lie you can come up with that makes people would want to
+buy the thing.
+</p>
+
+<p>
+A steady stream of visitors soon come to try out the legendary <<ucum $g.slave>>,
+and as supply and demand dictates, <<rep $g.slaver>> were able to sell the produce
+at a premium price.
+At the end of the day, <<rep $g.slaver>> had made quite a bit of money, and you
+got your cut for a job well done.
+</p>
+
+<<run setup.qc.Money(5000).apply($gQuest)>>
+
+<<else>>
 
 <p>
 When you said yes, <<therace $g.slaver>> <<uadv $g.slaver>> grins and takes
@@ -105,7 +140,9 @@ Other visitors near the <<rep setup.buildingtemplate.market>> see the demonstrat
 </p>
 
 <<run setup.qc.BoonizeRandom('slaver', 5).apply($gQuest)>>
+<</if>>
 
+<<!optif $g.you.isHasTrait('bg_merchant')>>
 <<opt "Help with the booth">>
 
 <p>

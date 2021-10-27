@@ -96,6 +96,9 @@ often slaver|venture back into the <<lore region_city>>, whom <<they $g.slaver>>
 <<else>>
 often slaver|venture far, sometimes even reaching into the <<lore region_sea>>.
 <</if>>
+<<if $g.you.isHasTrait('bg_nomad')>>
+Sometimes, you have the urge to follow <<them $g.slaver>> on their escapades. Not surprising, given your background. But you know better than to ditch your responsibilites as the fort's leader.
+<</if>>
 </p>
 
 <p>

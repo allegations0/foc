@@ -37,6 +37,9 @@
     setup.qres.AnyTrait([setup.trait.bg_raider, setup.trait.bg_thug], true),
   ],
   'slave': 'raider_instincts0',
+  'slave2': 'raider_instincts0',
+  'slave3': 'raider_instincts0',
+  'slave4': 'raider_instincts0',
 },
 [ /* outcomes */
 ],
@@ -55,6 +58,9 @@ raiding other people as a living.
 <<else>>
 roughly up other people as a thug.
 <</if>>
+<<if $g.you.isHasAnyTraitExact(['bg_raider', 'bg_thug'])>>
+It reminds you of your own background, in fact.
+<</if>>
 Their skills have been quite handy being a slaver right now, but you've never noticed how handy they are until today.
 <<Therace $g.slaver>> slaver|have apparently spotted from the <<rep setup.buildingtemplate.scouttower>>, a newly established farmstead just a few distance away from your fort, ripe for
 <<if $g.slaver.isHasTrait('bg_raider')>>
@@ -69,8 +75,25 @@ extorting.
 <<optif $g.slaver.isHasTrait('bg_raider')>>
 <<opt "Pillage it and kidnap its inhabitants">>
 
+<<if $g.you.isHasAnyTraitExact(['bg_raider', 'bg_thug'])>>
+
 <p>
-The farmers are quite oblivious to the dangers of the land, and have no idea that they were so close to the headquarters of a slaving company. Your
+Wanting to relive your past once again, you set out with
+<<rep $g.slaver>> into the village and made quick work of the defenseless farm.
+None of the farmers were able to escape the two of you, and before long you've rounded up all
+four residents of the farm, before bringing them home to be reintroduced to their new lives as your
+slaves.
+</p>
+
+<<run setup.qc.Slave('slave').apply($gQuest)>>
+<<run setup.qc.Slave('slave2').apply($gQuest)>>
+<<run setup.qc.Slave('slave3').apply($gQuest)>>
+<<run setup.qc.Slave('slave4').apply($gQuest)>>
+
+<<else>>
+<p>
+The farmers are quite oblivious to the dangers of the land, and have no idea that they were so close to the headquarters of a slaving company.
+Your
 former raider makes quick work of the defenseless farmstead, pillaging things of value and kidnapping the farmer's sole <<son $g.slave>>. While <<therace $g.slaver>> slaver|get to keep the valuables, the slave is your share of the loot.
 </p>
 
@@ -79,10 +102,27 @@ Pillaging an innocent farmstead so close to your fort is sure going to damage yo
 </p>
 
 <<run setup.qc.Slave('slave').apply($gQuest)>>
+
+<</if>>
+
 <<run setup.qc.Ire('humanvale', 2).apply($gQuest)>>
 
 <<optif $g.slaver.isHasTrait('bg_thug')>>
 <<opt "Extort them">>
+
+<<if $g.you.isHasAnyTraitExact(['bg_raider', 'bg_thug'])>>
+
+<p>
+The farmers are quite oblivious to the dangers of the land, and have no idea that they were so close to the headquarters of a slaving company.
+Hence, your former thug is doing them a favor by paying them a visit, and "educates" them on the dangers of the land.
+You were present there too, of course, and your shady past adds to the weigh of <<their $g.slaver>> words.
+The "grateful" farmers were more than happy to pay generously, no doubt
+in fear of what the two of you could have done to them.
+</p>
+
+<<run setup.qc.Money(5000).apply($gQuest)>>
+
+<<else>>
 
 <p>
 The farmers are quite oblivious to the dangers of the land, and have no idea that they were so close to the headquarters of a slaving company. Hence, your former thug is doing them a favor by paying them a visit, and "educates" them on the dangers of the land. The sizable sum of money the "grateful" farmers pay generously is no doubt far less than what could have happened to them otherwise.
@@ -90,6 +130,9 @@ The farmers are quite oblivious to the dangers of the land, and have no idea tha
 
 <<run setup.qc.Money(500).apply($gQuest)>>
 
+<</if>>
+
+<<optif !$g.you.isHasAnyTraitExact(['bg_raider', 'bg_thug'])>>
 <<opt "Warn the farmers of the dangers of the land">>
 
 <p>

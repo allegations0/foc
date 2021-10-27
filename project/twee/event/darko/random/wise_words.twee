@@ -30,6 +30,15 @@
 },
 [ /* outcomes */
   setup.qc.TraumaHeal('you', 20),
+  setup.qc.IfThenElse(
+    setup.qres.Actor('you', setup.qres.AnyTrait([setup.trait.bg_monk, setup.trait.bg_wiseman])),
+    setup.qc.DoAll([
+      setup.qc.TraumaHeal('you', 100),
+      setup.qc.FriendshipWithYou('slaver', 200),
+    ], undefined),
+    setup.qc.DoAll([
+    ], undefined),
+  ),
 ],
 [ /* restrictions */
   setup.qres.Building(setup.buildingtemplate.moraleoffice),
@@ -73,6 +82,9 @@ wiseman
 <</if>>
 is very familiar with.
 Initially, it is difficult for you to clean your thoughts, but <<theslaver $g.slaver>> keeps guiding you, almost hypnotically through the entire procedure.
+<<if $g.you.isHasAnyTraitExact(['bg_monk', 'bg_wiseman'])>>
+Your past taught you how to meditate, however, and it helped tremendously in following <<reps $g.slaver>> guidance.
+<</if>>
 </p>
 
 <p>

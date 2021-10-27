@@ -49,6 +49,10 @@ As a hunter, <<they $g.slaver>> slaver|was used to scouring for wild game inside
 As a woods<<man $g.slaver>>, <<they $g.slaver>> slaver|was used through scouring the forest for a living.
 <</if>>
 From time to time, <<therace $g.slaver>> can be seen spending a week venturing into the forests to relax and relive <<their $g.slaver>> past.
+<<if $g.you.isHasAnyTraitExact(['bg_wildman', 'bg_hunter', 'bg_woodsman'])>>
+As a former <<man $g.you>> of the woods yourself, you understand the urge to retreat into the
+woods very well.
+<</if>>
 </p>
 
 <p>

@@ -47,6 +47,9 @@ a complete turn from <<their $g.slaver>> usually aggressive self.
 <<elseif $g.slaver.isHasTrait('per_active')>>,
 a complete turn from <<their $g.slaver>> usually hyper-active self.
 <</if>>.
+<<if $g.you.isHasTrait('bg_priest')>>
+It reminds you of your past, in fact.
+<</if>>
 <</if>>
 Some of your other slavers like to ask the slaver for <<their $g.slaver>>
 <<if $g.slaver.isHasTrait('per_evil')>>
@@ -57,6 +60,24 @@ blessing, and perhaps you could ask for one today.
 
 <<choose>>
 
+<<optif $unit.player.isHasTrait('bg_priest')>>
+<<opt 'Pray together'>>
+
+<p>
+You surprise <<them $g.slaver>> by taking your own seat next to the <<urace $g.slaver>>.
+Both of you chant blessings after blessing
+<<if $g.slaver.isHasTrait('per_evil')>>
+(although you suspect it is the evil variant in case of <<rep $g.slaver>>)
+<</if>>
+filling the two of you with power.
+At the end of the ritual, you feel as if the two of you has gain quite a considerable amount
+of blessing.
+</p>
+
+<<run setup.qc.Blessing('you', 5).apply($gQuest)>>
+<<run setup.qc.Blessing('slaver', 5).apply($gQuest)>>
+
+<<optif !$unit.player.isHasTrait('bg_priest')>>
 <<opt "Ask for a blessing">>
 
 <p>
@@ -74,10 +95,20 @@ slaver|smile gently, before patting you on the shoulder and saying soothing word
 
 <<opt "Denounce <<their $g.slaver>> faith">>
 
+<<if $g.you.isHasTrait('bg_priest')>>
+<p>
+Instead of asking for a blessing, you've have enough of <<their $g.slaver>> so-called "faith" and finally decide to challenge them with your own version.
+You were a priest too, once, and a rough theological depate ensued.
+Neither side were willing to back down, and by the end of it, you feel like you've just made a new
+lifelong rival.
+</p>
+<<run setup.qc.FriendshipWithYou('slaver', -2000).apply($gQuest)>>
+<<else>>
 <p>
 Instead of asking for a blessing, you've have enough of <<their $g.slaver>> so-called "faith" and finally decide to denounce them. A short theological debate ensues after, filled with many curse words, before the two of you parting bitterly from the experience.
 </p>
-
 <<run setup.qc.FriendshipWithYou('slaver', -200).apply($gQuest)>>
+<</if>>
+
 
 <</choose>>
