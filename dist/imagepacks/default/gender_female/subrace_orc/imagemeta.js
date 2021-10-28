@@ -3,7 +3,7 @@
   /* The following is list of direct subdirectories. */
   UNITIMAGE_LOAD_FURTHER = ["bg_pirate", "bg_mystic", "bg_hunter",
     "bg_mercenary", "bg_thief", "bg_foodworker", "bg_metalworker", "bg_mist",
-    "bg_adventurer",
+    "bg_adventurer", "bg_slave", "bg_entertainer",
   ]
 
 

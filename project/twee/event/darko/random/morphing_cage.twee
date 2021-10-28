@@ -112,6 +112,11 @@ setup.rarity.rare, /* Rarity */
 
 <<opt "Morph the cage and lock the slave in a comfortable missionary position all night long">>
 
+    <<if $g.slave.isMale()>>
+    <<else>>
+        <<questimage 'morphing_cage_missionary_female.jpg'>>
+    <</if>>
+
     <p>
         You morph the magical cage, forming arms, neck, and legs restraints at just the right heights to force the slave into
         a somewhat bearable position, lying up with <<their $g.slave>> back on the floor

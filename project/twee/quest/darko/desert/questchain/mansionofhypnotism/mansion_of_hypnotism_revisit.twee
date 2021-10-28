@@ -123,6 +123,10 @@ and positively voluptuous <<rep setup.trait.race_greenskin>> slave, for your sla
 
 :: Quest_mansion_of_hypnotismCrit2 [nobr]
 
+<<if $g.slave.isMale() && $g.orc.isMale()>>
+  <<questimage "mansion_of_hypnotism_male.jpg">>
+<</if>>
+
 <p>
 Same with the last vist, your slavers were greeted by a
 <<if $g.slave.isFemale()>>
@@ -146,7 +150,9 @@ both from <<rep $g.hypnotist>> and the <<master $g.master>>, often during the wo
 As your slaver's time came to an end,
 the <<master $g.master>> again generously shared a bottle of
 <<rep setup.item.potion_slavertraining>> to aid your slavers in their work home.
-Your former slave <<rep $g.orc>> settled nicely in the mansion, serving as the <<master $g.master>>'s personal
+Your former slave <<rep $g.orc>> would receive training from the orc butler slave,
+before eventually
+settling in nicely in the mansion, serving as the <<master $g.master>>'s personal
 <<if $g.master.isFemale()>>rear-eater<<else>>cumdump<</if>>.
 <<if $gOutcome == 'crit'>>
 Before leaving, the master gave your slavers some lavish gifts, which they bring back home.

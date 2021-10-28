@@ -138,6 +138,7 @@ Alternatively, you can always ignore this quest, and try to break the slave via 
   <<if !$settings.bannedtags.furry>>
     <<questimage 'public_penance_male_furry.jpg'>>
   <<else>>
+    <<questimage 'public_penance_female_neko.jpg'>>
   <</if>>
 <<else>>
 <</if>>

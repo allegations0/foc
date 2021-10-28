@@ -123,6 +123,8 @@ Alternatively, you can always ignore this quest, and try to break the slave via 
 
 <<if $g.demon.isMale() && $g.slave.isMale()>>
   <<questimage "bargain_with_the_devil_male.jpg">>
+<<elseif $g.slave.isMale()>>
+  <<questimage "bargain_with_the_devil_female.jpg">>
 <</if>>
 
 <p>

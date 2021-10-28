@@ -144,6 +144,10 @@ company...
 
 :: Quest_mansion_of_hypnotismCrit [nobr]
 
+<<if $g.slave.isMale() && $g.orc.isMale()>>
+  <<questimage "mansion_of_hypnotism_male.jpg">>
+<</if>>
+
 <p>
 Arriving at the mansion, your slavers were greeted by a
 <<if $g.slave.isFemale()>>
@@ -180,7 +184,10 @@ knowledge.
 <p>
 Your slavers spent the remaining days enjoying the hospitality of the master while
 perusing all the various orc slaves available in the mansion.
-Your former slave <<rep $g.orc>> settled nicely in the mansion, serving as
+Your former slave <<rep $g.orc>> settled nicely in the mansion,
+currently being "trained" by the orc butler that escorted you earlier before fulfilling
+<<their $g.orc>> destiny
+serving as
 the <<master $g.master>>'s personal
 <<if $g.master.isFemale()>>rear-eater<<else>>cumdump<</if>>.
 <<if $gOutcome == 'crit'>>

@@ -2,6 +2,16 @@
 
 /* PROOFREAD COMPLETE */
 
+<<run new setup.UnitGroup(
+'quest_light_in_the_darkness__recruit1',
+"Light",
+'subrace_humansea', /* pools */
+0,
+[
+setup.qc.TraitReplace('unit', setup.trait.magic_light), ],
+)>>
+
+
 <<run new setup.OpportunityTemplate(
 'light_in_darkness', /* key */
 "Light in Darkness", /* Title */
@@ -20,7 +30,7 @@ null,
 [ /* restrictions */
 ],
 [ /* outcomes */
-setup.qc.QuestDirect('light_in_the_darkness__enslave'), ],
+setup.qc.QuestDirect('light_in_the_darkness__enslave', {'light': 'light'}), ],
 ], [
 'Opportunity_light_in_darkness_1',
 null,
@@ -29,7 +39,7 @@ null,
 [ /* restrictions */
 ],
 [ /* outcomes */
-setup.qc.QuestDirect('light_in_the_darkness__recruit'), ],
+setup.qc.QuestDirect('light_in_the_darkness__recruit', {'light': 'light'}), ],
 ], ],
 [ /* quest pool and rarity */
 [setup.questpool.city, setup.rarity.rare],
@@ -38,9 +48,17 @@ setup.qc.QuestDirect('light_in_the_darkness__recruit'), ],
 setup.qres.OpportunityUnique(),
 setup.qres.NoQuest('light_in_the_darkness__recruit'),
 setup.qres.NoQuest('light_in_the_darkness__enslave'), ],
+{ /* actors */
+  'light': 'quest_light_in_the_darkness__recruit1',
+},
 )>>
 
 :: Opportunity_light_in_darkness [nobr]
+
+<<if $g.light.isMale()>>
+  <<questimage 'light_in_darkness_male.jpg'>>
+<<else>>
+<</if>>
 
 <p>
 You have received news that an upcoming slave auction in the undercity of

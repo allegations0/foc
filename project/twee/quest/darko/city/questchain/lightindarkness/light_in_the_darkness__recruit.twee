@@ -2,15 +2,6 @@
 
 /* PROOFREAD COMPLETE */
 
-<<run new setup.UnitGroup(
-'quest_light_in_the_darkness__recruit1',
-"Light",
-'subrace_humansea', /* pools */
-0,
-[
-setup.qc.TraitReplace('unit', setup.trait.magic_light), ],
-)>>
-
 <<run new setup.QuestTemplate(
 'light_in_the_darkness__recruit', /* key */
 "Light in Darkness: Recruit", /* Title */
@@ -24,7 +15,8 @@ setup.QUEST_DEFAULT_EXPIRATION,  /* expiration weeks */
 'infiltrator2': setup.qu.infiltrator,
 'recruiter': setup.qu.recruiter, },
 { /* actors */
-'light': 'quest_light_in_the_darkness__recruit1', },
+  'light': 'quest_light_in_the_darkness__recruit1',
+},
 [ /* costs */
 ],
 'Quest_light_in_the_darkness__recruit',

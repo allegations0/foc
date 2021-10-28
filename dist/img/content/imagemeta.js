@@ -193,6 +193,12 @@
       url: "https://www.newgrounds.com/art/view/tk-a/nsfw-corruption-of-the-incubus-nsfw",
       license: "CC-BY-NC-ND 3.0",
     },
+    "bargain_with_the_devil_female.jpg": {
+      title: "Barbarian girl vs Demons [Fallen Barbarian]",
+      artist: "zuleyka",
+      url: "https://www.newgrounds.com/art/view/zuleyka/barbarian-girl-vs-demons-fallen-barbarian",
+      license: "CC-BY-NC-ND 3.0",
+    },
     "unit_training_vagina_basic_female_humankingdom.jpg": {
       title: "Beauty and Belle",
       artist: "RPTRz",
@@ -747,10 +753,10 @@
       license: "Paizo Inc. Community Use Policy",
     },
     "academy_of_wind_male.jpg": {
-      title: "Tentacles",
-      artist: "EkafEliforp",
-      url: "https://www.newgrounds.com/art/view/ekafeliforp/tentacles",
-      license: "CC-BY-NC 3.0",
+      title: "Summoner",
+      artist: "semicabbage",
+      url: "https://www.newgrounds.com/art/view/semicabbage/summoner",
+      license: "CC-BY-NC-SA 3.0",
     },
     "academy_of_wind_female.jpg": {
       title: "Nico Robin tentacle rape",
@@ -813,12 +819,6 @@
       url: "https://www.newgrounds.com/art/view/futurez00l0gist/more-nsfw-of-dojima",
       license: "CC-BY-NC 3.0",
     },
-    "the_noble_games__bed_arts_male.jpg": {
-      title: "Nsfw of Noland from Pokemon",
-      artist: "FutureZ00l0gist",
-      url: "https://www.newgrounds.com/art/view/futurez00l0gist/nsfw-of-noland-from-pokemon",
-      license: "CC-BY-NC-ND 3.0",
-    },
     "public_penance_male_furry.jpg": {
       title: "Koors Kockade (no panel)",
       artist: "skullydraws",
@@ -859,6 +859,48 @@
       title: "Hooded",
       artist: "Karhumies",
       url: "https://www.newgrounds.com/art/view/karhumies/hooded",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    "public_penance_female_neko.jpg": {
+      title: "Wolf on display [390 Variants]",
+      artist: "yeougui",
+      url: "https://www.newgrounds.com/art/view/yeougui/wolf-on-display-390-variants",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    "unit_training_pony_advanced_femdom.jpg": {
+      title: "Riding",
+      artist: "yeougui",
+      url: "https://www.newgrounds.com/art/view/yeougui/riding",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    "morphing_cage_missionary_female.jpg": {
+      title: "Caged Catering",
+      artist: "yeougui",
+      url: "https://www.newgrounds.com/art/view/yeougui/caged-catering",
+      license: "CC-BY-NC-ND 3.0",
+    },
+    "mist_merge_male.jpg": {
+      title: "Apprentice",
+      artist: "semicabbage",
+      url: "https://www.newgrounds.com/art/view/semicabbage/apprentice",
+      license: "CC-BY-NC-SA 3.0",
+    },
+    "the_noble_games__bed_arts_male.jpg": {
+      title: "Wax",
+      artist: "semicabbage",
+      url: "https://www.newgrounds.com/art/view/semicabbage/purity-seal",
+      license: "CC-BY-NC-SA 3.0",
+    },
+    "light_in_darkness_male.jpg": {
+      title: "Auction house",
+      artist: "semicabbage",
+      url: "https://www.newgrounds.com/art/view/semicabbage/auction-house",
+      license: "CC-BY-NC-SA 3.0",
+    },
+    "mansion_of_hypnotism_male.jpg": {
+      title: "Alpha Orc Smash",
+      artist: "oblivionscribe",
+      url: "https://www.newgrounds.com/art/view/oblivionscribe/alpha-orc-smash",
       license: "CC-BY-NC-ND 3.0",
     },
   }

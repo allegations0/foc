@@ -62,6 +62,9 @@ tasks, if the master so demands.
 <<if $g.trainee.isFemale()>>
   <<questimage 'unit_training_pony_advanced_female_elf.jpg'>>
 <<else>>
+  <<if $g.head.isFemale()>>
+    <<questimage 'unit_training_pony_advanced_femdom.jpg'>>
+  <<else>>
 <</if>>
 
 <<if $gOutcome == 'crit'>>

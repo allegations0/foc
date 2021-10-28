@@ -100,6 +100,12 @@ You have chosen to disrupt the ritual and make the world a slightly better place
 
 
 :: Quest_mist_merge_disrupt2Crit [nobr]
+
+<<if $g.corrupted.isMale()>>
+  <<questimage 'mist_merge_male.jpg'>>
+<<else>>
+<</if>>
+
 <p>
 Your slavers arrived at the nick of time as the victim's body was just about
 to get ravaged by the demonic magic.
