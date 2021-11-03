@@ -701,6 +701,9 @@ setup.IRE_DCO_PAY_CRIT = 2000
 // chance the child will inherit one of the parent's background traits
 setup.CHILD_TRAIT_BACKGROUND_INHERIT_CHANCE = 0.25
 
+// chance the child will inherit one of the parent's non background trait
+setup.CHILD_TRAIT_NON_BACKGROUND_INHERIT_CHANCE = 0.33
+
 
 /* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 /* Difficulty related */

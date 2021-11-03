@@ -21,7 +21,7 @@ setup.UnitBirth = class Unitbirth {
        * @type {setup.Unit}
        */
       const candidate = doGenerateChild(father, mother)
-      if (i < tries-1 && preference && !candidate.isHasTraitExact(setup.trait[preference.trait_key])) {
+      if (i < tries - 1 && preference && !candidate.isHasTraitExact(setup.trait[preference.trait_key])) {
         candidate.delete()
       } else {
         unit = candidate
@@ -69,7 +69,7 @@ function doGenerateChild(father, mother) {
   // inherit traits
   const traits = father.getInheritableTraits().concat(
     mother.getInheritableTraits()).concat(
-    base_unit.getInheritableTraits())
+      base_unit.getInheritableTraits())
 
   setup.qc.RemoveTraitsWithTag('unit', 'per').apply(setup.costUnitHelper(base_unit))
   setup.qc.RemoveTraitsWithTag('unit', 'skill').apply(setup.costUnitHelper(base_unit))
@@ -83,7 +83,7 @@ function doGenerateChild(father, mother) {
     // breast is an exception
     if (tags.includes('breast') && base_unit.isMale()) continue
 
-    if (Math.random() < 1.0 / 3.0) {
+    if (Math.random() < setup.CHILD_TRAIT_NON_BACKGROUND_INHERIT_CHANCE) {
       // inherit
       setup.qc.TraitReplace('unit', trait).apply(setup.costUnitHelper(base_unit))
     }
