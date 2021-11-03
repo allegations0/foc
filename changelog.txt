@@ -4,6 +4,13 @@
 
 ### v1.8.2.x
 
+v1.8.2.5:
+
+  - A bunch of new images
+  - Fix deleteUnit duplicated in unit image
+  - Remove hardcoded child inherit chance in unit birth
+  - New cost: Sluttify unit
+
 v1.8.2.4:
 
   - Written player specific background variants for 40+ existing events.
