@@ -660,6 +660,15 @@ Select from these options:
           <</message>>
         </div>
 
+        <div>
+          [['Sluttify'|CostSluttify]]
+          <<message '(?)'>>
+            <div class='helpcard'>
+              Randomly makes the unit more slutty. Click this cost to see more details.
+            </div>
+          <</message>>
+        </div>
+
         <hr/>
         <div><b>Genitals</b></div>
 
