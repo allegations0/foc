@@ -71,12 +71,6 @@ setup.UnitImage = class UnitImage extends setup.TwineClass {
     this.image_use_counter = 1
   }
 
-  /** @param {setup.Unit} unit */
-  deleteUnit(unit) {
-    delete this.unit_image_map[unit.key]
-    delete this.image_need_reset[unit.key]
-  }
-
   advanceWeek() {
     this.image_use_counter += setup.UNIT_IMAGE_WEEKEND_MEMORY_LAPSE
   }
@@ -202,7 +196,7 @@ setup.UnitImage = class UnitImage extends setup.TwineClass {
   /** called when unit is deleted
    * @param {setup.Unit} unit
    */
-  deleteUnit(unit){
+  deleteUnit(unit) {
     delete this.image_need_reset[unit.key]
     delete this.unit_image_map[unit.key]
   }
