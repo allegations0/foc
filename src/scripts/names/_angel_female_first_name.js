@@ -20,10 +20,10 @@ CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 setup.NAME_angel_female_first_name = function () {
   const firstpart = [
-    "adr", "ahr", "ambr",
+    "adr", "aer", "ahr", "ambr",
     "am", "han", "arar",
     "avel", "aver",
-    "azaz", "arch", "aur", "ar", "azr", "arch",
+    "azaz", "arch", "aur", "ar", "azr", "arch", "aur",
     "barach", "eloh", "cass", "celest", "cher", "criss", "triss",
     "camm", "kem", "kam", "kham", "dan", "dard",
     "ere", "gabr", "jibr", "gadr", "handran",

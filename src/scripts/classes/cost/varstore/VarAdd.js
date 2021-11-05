@@ -17,8 +17,8 @@ setup.qcImpl.VarAdd = class VarAdd extends setup.Cost {
   }
 
   apply(quest) {
-    var existing = State.variables.varstore.get(this.key) || 0
-    State.variables.varstore.set(this.key, existing + this.value, this.expires)
+    const existing = State.variables.varstore.get(this.key) || 0
+    State.variables.varstore.set(this.key, parseInt(existing) + this.value, this.expires)
   }
 
   explain(quest) {

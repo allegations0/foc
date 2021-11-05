@@ -1,5 +1,7 @@
-// sluttify this unit (one step)
-setup.qcImpl.Sluttify = class Sluttify extends setup.Cost {
+import { SluttifyDomifyCost } from "./Domify"
+
+// sluttify this unit (one step). Opposity of Domify
+setup.qcImpl.Sluttify = class Sluttify extends SluttifyDomifyCost {
   /**
    * @param {string} actor_name 
    */
@@ -17,7 +19,19 @@ setup.qcImpl.Sluttify = class Sluttify extends setup.Cost {
    * @param {setup.QuestInstance | setup.EventInstance | setup.OpportunityInstance} quest 
    */
   apply(quest) {
+    /**
+     * @type {setup.Unit}
+     */
     const unit = quest.getActorUnit(this.actor_name)
+
+    // blessing of wolf prevents sluttification
+    if (unit.isHasTrait(setup.trait.blessing_wolf1)) {
+      unit.decreaseTrait(setup.trait.blessing_wolf8.getTraitGroup())
+      if (unit.isYourCompany()) {
+        setup.notify(`a|Reps Blessing of Wolf prevents a|them from being sluttified`, { a: unit })
+      }
+      return
+    }
 
     // sluttification effects:
     const slut_candidates = [
@@ -59,7 +73,7 @@ setup.qcImpl.Sluttify = class Sluttify extends setup.Cost {
       },
       // curse of lambification
       {
-        requirements: [],
+        requirements: [setup.qres.Not(setup.qres.Job(setup.job.slave))],
         effect: setup.qc.Blessing(this.actor_name, 2, setup.trait.curse_lamb8),
         texts: [
           `a|Rep a|is cursed to forever be a submissive`,
@@ -84,22 +98,18 @@ setup.qcImpl.Sluttify = class Sluttify extends setup.Cost {
           `a|Rep a|have become much, MUCH meeker than before`,
         ],
       },
+      // mindbreak
+      {
+        requirements: [setup.qres.Job(setup.job.slave)],
+        effect: setup.qc.Mindbreak(this.actor_name),
+        texts: [
+          `a|Rep a|have finally lost it completely, a|their mind now permanently broken`,
+          `a|Rep a|have become a permanently disfunctional sex toy, incapable of higher thoughts`,
+        ],
+      },
     ]
 
-    const eligible = slut_candidates.filter(v => setup.RestrictionLib.isUnitSatisfy(
-      unit, v.requirements,
-    ))
-    const choice = setup.rng.choice(eligible)
-    /**
-     * @type {setup.Cost}
-     */
-
-    if (unit.isYourCompany()) {
-      setup.notify(setup.rng.choice(choice.texts), { a: unit })
-    }
-
-    const effect = choice.effect
-    effect.apply(quest)
+    return this._do_apply(quest, unit, slut_candidates)
   }
 
   explain(quest) {

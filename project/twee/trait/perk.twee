@@ -267,6 +267,46 @@
     },
 )>>
 
+<<run new setup.Perk(
+    'perk_aura_of_dominance',
+    'perk: aura of dominance',
+    "Despite having been made less dominant, their aura of dominance still affects those very close to them. Unit always gain <<rep setup.trait.per_dominant>>. When both the unit and their lover is at home, the lover gain <<rep setup.trait.per_submissive>>.",
+    0,
+    {},
+    ['perk', 'perkspecial', ],
+    {
+    },
+    {
+        perk_choice_restrictions: [],
+        perk_end_of_week_effect: [
+            setup.qc.IfThenElse(
+                setup.qres.And([
+                    setup.qres.Actor('unit', setup.qres.Home()),
+                ]),
+                setup.qc.TraitReplace('unit', setup.trait.per_dominant),
+            ),
+            setup.qc.IfThenElse(
+                setup.qres.And([
+                    setup.qres.Actor('unit',
+                        setup.qres.And([
+                            setup.qres.Home(),
+                            setup.qres.LoverExist(),
+                            setup.qres.BestFriend(
+                                setup.qres.Job(setup.job.slaver),
+                                setup.qres.Home(),
+                            )
+                        ]),
+                    ),
+                ]),
+                setup.qc.Function((quest) => {
+                    const unit = quest.getActorUnit('unit');
+                    setup.qc.TraitReplace('unit', setup.trait.per_submissive).apply(setup.costUnitHelper(unit.getLover()));
+                }),
+            ),
+        ],
+    },
+)>>
+
 /* ####################### */
 /* RANDOM PERKS */
 /* ####################### */

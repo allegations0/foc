@@ -39,7 +39,17 @@
       <<set _stats = _unitgroup.computeStatistics()>>
       <span class='toprightspan'>
         <div>Unit value: <<money _stats.min>> - <<money _stats.max>> (avg <<money _stats.mean>>)</div>
-        <div>Reuse chance: <<= _unitgroup.reuse_chance>></div>
+        <<if _unitgroup.reuse_chance>>
+          <div><b>Persistent</b>
+            <<message '(?)'>>
+              <div class='helpcard'>
+                Units from this unit group will not be removed when they are used.
+                Instead, the same unit will persist until explicitly removed from the unit group.
+                Useful to make quest chains that involve the same set of units.
+              </div>
+            <</message>>
+          </div>
+        <</if>>
       </span>
       <<if _unitgroup.unit_post_process.length>>
         <br/>
