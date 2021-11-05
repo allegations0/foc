@@ -669,6 +669,15 @@ Select from these options:
           <</message>>
         </div>
 
+        <div>
+          [['Domify'|CostDomify]]
+          <<message '(?)'>>
+            <div class='helpcard'>
+              Randomly makes the unit more dominant. Click this cost to see more details.
+            </div>
+          <</message>>
+        </div>
+
         <hr/>
         <div><b>Genitals</b></div>
 

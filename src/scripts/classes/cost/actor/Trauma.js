@@ -9,6 +9,10 @@ setup.qcImpl.Trauma = class Trauma extends setup.Cost {
     this.duration = duration
   }
 
+  /**
+   * @param {object} [quest]
+   * @returns {boolean}
+   */
   isOk(quest) {
     throw new Error(`Reward only`)
   }

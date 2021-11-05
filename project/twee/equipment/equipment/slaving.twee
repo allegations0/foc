@@ -276,3 +276,24 @@
   },
 )>>
 
+
+<<run new setup.Equipment(
+  'slaving_rear_master',
+  "Underwear of Absolute Dominance",
+  setup.equipmentslot.rear,
+  ['legendary', 'clothes', 'covering', ],
+  setup.EQUIPMENT_PRICE_MASTER, /* value */
+  0, /* sluttines */
+  {
+    slaving: setup.EQUIPMENT_STAT_BOOST_MASTER,
+  },
+  { /* traits */
+  },
+  [  /* unit restrictions */
+  ],
+  {},
+  {
+    description: 'A pair of underwear that once belonged to a drow so dominant they had to be exiled from their home.',
+    flavor: "The underwear used to belong to the pinnacle of doms -- a drow who had to leave their homeland after making too many fellow drows a total sub",
+  },
+)>>

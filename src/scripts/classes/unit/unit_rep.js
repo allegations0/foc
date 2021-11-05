@@ -67,8 +67,9 @@ setup.Unit.prototype.repShort = function () {
     color_class += ` text-${this.getSubrace().key}`
   }
 
-  // only show if either: (0. your unit, 1. in market, 2. contact, 3. retiree)
+  // only show if either: (0. your unit, 1. in market, 2. contact, 3. retiree, 4. in debug mode)
   if (
+    !State.variables.gDebug &&
     !this.isYourCompany() &&
     !this.getMarket() &&
     !this.getContact() &&

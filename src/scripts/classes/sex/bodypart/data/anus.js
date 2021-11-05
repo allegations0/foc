@@ -18,8 +18,19 @@ setup.SexBodypartClass.Anus = class Anus extends setup.SexBodypart {
     ]
   }
 
+  /**
+   * @param {setup.Unit} unit 
+   * @returns 
+   */
   repSimple(unit) {
-    return setup.rng.choice(['anus', 'asshole',])
+    const choices = ['anus', 'asshole']
+    if (unit.isHasTrait('anus_gape')) {
+      choices.push('asspussy')
+    }
+    if (unit.isHasTail()) {
+      choices.push('tailhole')
+    }
+    return setup.rng.choice(choices)
   }
 
   getTraitSizeMap() {

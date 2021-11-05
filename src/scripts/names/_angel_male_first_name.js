@@ -23,7 +23,7 @@ setup.NAME_angel_male_first_name = function () {
   const firstpart = [
     "abadd", "abath", "adr", "ahr", "ambr",
     "am", "an", "han", "araf", "arar",
-    "azaz", "arch", "ar", "azr",
+    "azaz", "arch", "ar", "azr", "aur",
     "barach", "eloh", "carn", "cass", "cher",
     "cam", "kem", "kam", "kham", "dan", "dard",
     "ere", "gabr", "jibr", "gadr", "godr", "handran",
@@ -44,7 +44,7 @@ setup.NAME_angel_male_first_name = function () {
     "jerem", "kephar", "kokab", "malakb",
     "nathan", "ophan", "oph", "prav",
     "pur",
-    "raduer", "ram", "raph",
+    "raduer", "raf", "ram", "raph",
     "reg",
     "rigard", "rikb",
     "sabr", "sahaq", "sarath", "shamn",

@@ -101,7 +101,7 @@ setup.Text.Unit.Trait.anus = function (unit, is_with_equipment) {
   var anus = unit.getTraitWithTag('anus')
   if (!anus) return ''
 
-  const anusname = setup.sexbodypart.anus.repSimple()
+  const anusname = setup.sexbodypart.anus.repSimple(unit)
   var base = `${setup.sexbodypart.vagina.repSizeAdjective(unit)} ${anusname}`
   return setup.Text.Unit.Trait._EquipmentHelper(unit, base, is_with_equipment, setup.equipmentslot.rear)
 }
