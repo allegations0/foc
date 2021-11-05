@@ -2,6 +2,16 @@
 
 [Changelog summary](docs/changelog_summary.md)
 
+### v1.8.3.x
+
+v1.8.3.0:
+
+  - New quest chain: Household Destruction (5 quests, 5 opportunities, 6 events)
+  - Fix VarAdd adding strings instead of integers in some cases
+  - Non-company unit rep now show details in debug mode
+  - New cost: Domify unit
+  - Curse of lamb and curse of wolf now affect sluttification / domification
+
 ### v1.8.2.x
 
 v1.8.2.5:

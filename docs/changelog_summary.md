@@ -2,6 +2,36 @@
 
 Full changelog [here](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/changelog.txt).
 
+v1.8.3.0: (5 November 2021)
+
+  - Content
+    - New quest chain: Household Destruction (5 quests, 5 opportunities, 6 events)
+    - New event and opportunity: Revenge Attempt
+    - New event: Penitent (by FCdev)
+    - New event: chastity release
+    - Written player specific background variants for 40+ existing events.
+  - Content Creator
+    - New cost: Domify unit
+    - New cost: Sluttify unit
+  - Image
+    - A bunch of new images
+  - QoL
+    - Non-company unit rep now show details in debug mode
+  - Misc
+    - Curse of lamb and curse of wolf now affect sluttification / domification
+    - Dragonkin knights are more common now
+    - More granularity of sold slave unit group
+  - Engine
+    - Remove hardcoded child inherit chance in unit birth
+  - Bugfix
+    - Fix savior kobold not allowing master fire / light slavers to go (thanks to DangThings)
+    - Fix VarAdd adding strings instead of integers in some cases
+    - Fix deleteUnit duplicated in unit image
+    - Fix missing tags in tomb raider quest
+  - Text fixes
+    - Fix missing tooltip on dragonkin's dual fire / light affinities
+    - Fixed gilded pet tray [unobtainable] name not removed.
+
 v1.8.2.0: (20 October 2021)
 
   - Content
