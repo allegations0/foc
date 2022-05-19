@@ -1,0 +1,137 @@
+:: QuestSetup_money_call [nobr quest]
+
+
+
+
+
+<<set _criteriacaller = new setup.UnitCriteria(
+null, /* key */
+'Caller', /* name */
+[
+  setup.trait.job_slaver, 
+  setup.trait.gender_male, 
+  setup.trait.gender_female, 
+  setup.trait.dick_titanic, 
+  setup.trait.balls_titanic, 
+  setup.trait.breast_titanic, 
+  setup.trait.vagina_tight, 
+  setup.trait.anus_tight, 
+  setup.trait.muscle_extremelystrong, 
+],
+[
+],
+[
+  setup.qres.Job(setup.job.slaver), 
+],
+{ 
+}
+)>> 
+<<run new setup.QuestTemplate(
+'money_call', /* key */
+"Money Call", /* Title */
+{ /* Author */
+  name: "trugam3rr",
+  url: "",
+},
+[ /* tags */
+  'special', 
+  'legendary', 
+  'contact', 
+  'money', 
+],
+1, /* weeks */
+999999999999, /* expiration weeks */
+{ /* roles */
+  'caller': [ _criteriacaller, 3], 
+},
+{ /* actors */
+}, 
+[ /* costs */
+], 
+'Quest_money_call',
+setup.qdiff.easiest1, /* difficulty */
+[ /* outcomes */
+  [ 
+    'Quest_money_callCrit', 
+    [ 
+      setup.qc.MoneyCustom(999999999999), 
+      setup.qc.Outcomes("success"), 
+      setup.qc.Outcomes("failure"), 
+      setup.qc.Outcomes("disaster"), 
+      setup.qc.TraitIncreaseExisting('caller', setup.trait.dick_titanic),
+      setup.qc.TraitIncreaseExisting('caller', setup.trait.balls_titanic), 
+      setup.qc.TraitIncreaseExisting('caller', setup.trait.breast_titanic), 
+      setup.qc.TraitsReplace('caller', [setup.trait.magic_fire_master, setup.trait.magic_water_master, setup.trait.magic_wind_master, setup.trait.magic_earth_master, setup.trait.magic_light_master, setup.trait.magic_dark_master, setup.trait.anus_tight, setup.trait.muscle_extremelystrong]), 
+      Fort of Chains v1.8.3.0 [itch.io]: YOU HAVE DEBUG MODE ACTIVE -- DO NOT REPORT BUGS INCLUDING THIS ONE WITH DEBUG MODE ACTIVE : <<=>>: bad evaluation: Error: Must be implemented : passage ???
+<<= _outcome.text()>>
+text@
+eval code@
+eval@[native code]
+@https://v6p9d9t4.ssl.hwcdn.net/html/4722727/deploy/index.html:366186:14418
+handler@https://v6p9d9t4.ssl.hwcdn.net/html/4722727/deploy/index.html:366188:5035
+handler@https://v6p9d9t4.ssl.hwcdn.net/html/4722727/deploy/index.html:366187:2500
+value@https://v6p9d9t4.ssl.hwcdn.net/html/4722727/deploy/index.html:366186:21122
+t@https://v6p9d9t4.ssl.hwcdn.net/html/4722727/deploy/index.html:366186:19888
+handleForRange@https://v6p9d9t4.ssl.hwcdn.net/html/4722727/deploy/index.html:366188:15091
+handler@https://v6p9d9t4.ssl.hwcdn.net/html/4722727/deploy/index.html:366188:13324
+handler@https://v6p9d9t4.ssl.hwcdn.net/html/4722727/deploy/index.html:366187:2500
+value@https://v6p9d9t4.ssl.hwcdn.net/html/4722727/deploy/index.html:366186:21122
+t@https://v6p9d9t4.ssl.hwcdn.net/html/4722727/deploy/index.html:366186:19888
+handler@https://v6p9d9t4.ssl.hwcdn.net/html/4722727/deploy/index.html:366188:4762
+handler@https://v6p9d9t4.ssl.hwcdn.net/html/4722727/deploy/index.html:366187:2500
+value@https://v6p9d9t4.ssl.hwcdn.net/html/4722727/deploy/index.html:366186:21122
+t@https://v6p9d9t4.ssl.hwcdn.net/html/4722727/deploy/index.html:366186:19888
+handleForRange@https://v6p9d9t4.ssl.hwcdn.net/html/4722727/deploy/index.html:366188:15091
+handler@https://v6p9d9t4.ssl.hwcdn.net/html/4722727/deploy/index.html:366188:13324
+handler@https://v6p9d9t4.ssl.hwcdn.net/html/4722727/deploy/index.html:366187:2500
+value@https://v6p9d9t4.ssl.hwcdn.net/html/4722727/deploy/index.html:366186:21122
+handler@https://v6p9d9t4.ssl.hwcdn.net/html/4722727/deploy/index.html:366187:24075
+value@https://v6p9d9t4.ssl.hwcdn.net/html/4722727/deploy/index.html:366186:21122
+handler@https://v6p9d9t4.ssl.hwcdn.net/html/4722727/deploy/index.html:366187:24075
+value@https://v6p9d9t4.ssl.hwcdn.net/html/4722727/deploy/index.html:366186:21122
+t@https://v6p9d9t4.ssl.hwcdn.net/html/4722727/deploy/index.html:366186:19888
+value@https://v6p9d9t4.ssl.hwcdn.net/html/4722727/deploy/index.html:366189:31342
+p@https://v6p9d9t4.ssl.hwcdn.net/html/4722727/deploy/index.html:366189:26060
+, 
+    ], 
+  ], 
+  [ 
+    'Quest_money_callCrit', 
+    [ 
+      setup.qc.MoneyCustom(999999999999), 
+    ], 
+  ], 
+  [ 
+    'Quest_money_callCrit', 
+    [ 
+      setup.qc.MoneyCustom(999999999999), 
+    ], 
+  ], 
+  [ 
+    'Quest_money_callCrit', 
+    [ 
+      setup.qc.MoneyCustom(999999999999), 
+    ], 
+  ], 
+],
+[ /* quest pool and rarity */
+[setup.questpool.recruitment, setup.rarity.always],
+], 
+[ /* restrictions */
+], 
+[ /* expiration outcomes */
+  setup.qc.MoneyCustom(10000000000000000), 
+
+], 
+)>>
+
+:: Quest_money_call [nobr]
+<p>
+    Easy money.
+</p>
+
+
+:: Quest_money_callCrit [nobr]
+<p>
+    You just made easy money.
+</p>
