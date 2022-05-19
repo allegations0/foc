@@ -12,7 +12,7 @@ A critical git corruption forced us to remake the repository from scratch.
 |
 [(Download instructions)](https://gitgud.io/darkofocdarko/fort-of-chains#how-to-play-the-latest-version-of-the-game)
 |
-[(Play in Browser (slightly outdated))](https://darkofoc.itch.io/fort-of-chains)
+[(Play in Browser (slightly outdated))](https://trugam3rr.github.io/foc/)
 |
 [(Contributing)](https://gitgud.io/darkofocdarko/fort-of-chains#how-to-contribute-content)
 |
