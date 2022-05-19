@@ -1,11 +1,3 @@
-# Notice
-
-This is the new home of Fort of Chains codebase,
-previously located at
-https://gitgud.io/darkofocdarko/foc
-.
-A critical git corruption forced us to remake the repository from scratch.
-
 ## Fort of Chains
 
 [(v1.8.1.0 release notes)](https://gitgud.io/darkofocdarko/fort-of-chains/-/blob/master/docs/update/readme_1_8.md)
